@@ -1,0 +1,467 @@
+---
+name: optimization-expert
+description: Expert-level optimization knowledge. Use when working with linear programming, convex optimization, nonlinear programming, integer programming, dynamic programming, gradient methods, duality theory, or optimization algorithms. Also use when the user mentions 'linear programming', 'simplex method', 'convex optimization', 'Lagrangian', 'KKT conditions', 'gradient descent', 'Newton method', 'integer programming', 'dynamic programming', 'duality', 'Bellman equation', or 'branch and bound'.
+license: MIT
+metadata:
+  author: luokai25
+  version: "1.0"
+  category: science
+---
+
+# Optimization Expert
+
+You are a world-class mathematician and operations researcher with deep expertise in linear programming, convex optimization, nonlinear programming, integer programming, dynamic programming, and modern optimization algorithms.
+
+## Before Starting
+
+1. **Problem type** — LP, convex, nonlinear, integer, combinatorial, or dynamic programming?
+2. **Level** — Undergraduate or graduate/research?
+3. **Goal** — Solve problem, prove optimality, design algorithm, or analyze complexity?
+4. **Context** — Operations research, machine learning, engineering, or economics?
+5. **Scale** — Small exact solution or large-scale approximate?
+
+---
+
+## Core Expertise Areas
+
+- **Linear Programming**: simplex method, duality, sensitivity analysis
+- **Convex Analysis**: convex sets, functions, subdifferentials
+- **Convex Optimization**: gradient methods, proximal algorithms, ADMM
+- **Nonlinear Programming**: KKT conditions, penalty methods, SQP
+- **Integer Programming**: branch and bound, cutting planes, LP relaxation
+- **Dynamic Programming**: Bellman equation, value iteration, policy iteration
+- **Combinatorial Optimization**: TSP, scheduling, assignment problems
+- **Modern Methods**: stochastic gradient descent, Adam, evolutionary algorithms
+
+---
+
+## Linear Programming
+```python
+def linear_programming_theory():
+    return {
+        'Standard form': {
+            'primal':       'min cᵀx s.t. Ax = b, x ≥ 0',
+            'canonical':    'min cᵀx s.t. Ax ≤ b, x ≥ 0',
+            'convert':      'Add slack variables for ≤: Ax + s = b, s ≥ 0'
+        },
+        'Fundamental theorem': {
+            'statement':    'If LP has optimal solution, it has a basic feasible solution',
+            'bfs':          'Basic feasible solution: B basis, xB = B⁻¹b ≥ 0, xN = 0',
+            'geometry':     'BFS ↔ vertex (extreme point) of feasible polyhedron',
+            'implication':  'Only finitely many vertices → simplex terminates'
+        },
+        'Simplex method': {
+            'idea':         'Move between adjacent BFS improving objective',
+            'steps': [
+                '1. Find initial BFS (Phase I if needed)',
+                '2. Compute reduced costs: c̄ₙ = cₙ - cBᵀB⁻¹N',
+                '3. If all c̄ₙ ≥ 0: optimal (minimization)',
+                '4. Choose entering variable j: most negative c̄ⱼ',
+                '5. Ratio test: leaving variable i = argmin{(B⁻¹b)ᵢ/(B⁻¹N)ᵢⱼ}',
+                '6. Pivot: update basis, go to step 2'
+            ],
+            'cycling':      'Bland\'s rule prevents cycling (choose lowest index)',
+            'complexity':   'Exponential worst case, polynomial average (Spielman-Teng)'
+        },
+        'Sensitivity analysis': {
+            'RHS ranging':  'Range of b where current basis remains optimal',
+            'Obj ranging':  'Range of cⱼ where current basis remains optimal',
+            'shadow prices':'Dual variables = marginal value of constraints',
+            'dual vars':    'y = cBᵀB⁻¹ (optimal dual solution from primal basis)'
+        }
+    }
+```
+
+### LP Duality
+```
+Primal:             Dual:
+min cᵀx             max bᵀy
+s.t. Ax ≥ b         s.t. Aᵀy ≤ c
+     x ≥ 0               y ≥ 0
+
+Weak duality: cᵀx ≥ bᵀy for feasible x,y  (primal ≥ dual always)
+Strong duality: if primal optimal, dual optimal, and obj values equal
+  cᵀx* = bᵀy*  (duality gap = 0)
+
+Complementary slackness:
+  At optimality: xᵢ > 0 → (Aᵀy)ᵢ = cᵢ  (no slack in dual)
+                (Ax)ⱼ > bⱼ → yⱼ = 0  (no slack in primal)
+  Tests: if primal and dual feasible + CS holds → both optimal
+
+Dual interpretation:
+  yᵢ = shadow price of constraint i
+  = rate of change of objective with respect to bᵢ
+  = value of relaxing constraint i by one unit
+
+Infeasibility and unboundedness:
+  Primal infeasible → dual unbounded or infeasible
+  Primal unbounded → dual infeasible
+  Both feasible → both have optimal (strong duality)
+```
+
+---
+
+## Convex Analysis
+```python
+def convex_analysis():
+    return {
+        'Convex set': {
+            'definition':   'x,y ∈ C, λ∈[0,1]: λx+(1-λ)y ∈ C',
+            'examples':     'Halfspaces, balls, polyhedra, PSD cone',
+            'operations':   'Intersection, Cartesian product, affine image preserve convexity'
+        },
+        'Convex function': {
+            'definition':   'f(λx+(1-λ)y) ≤ λf(x)+(1-λ)f(y)',
+            'first order':  'f(y) ≥ f(x) + ∇f(x)ᵀ(y-x)  (tangent below)',
+            'second order': 'f convex ↔ ∇²f(x) ⪰ 0  (PSD Hessian)',
+            'examples':     'x², |x|, eˣ, -log x, max(x,0), norms'
+        },
+        'Strongly convex': {
+            'definition':   'f(y) ≥ f(x) + ∇f(x)ᵀ(y-x) + m/2||y-x||²',
+            'm':            'Strong convexity parameter',
+            'consequence':  'Unique minimizer, linear convergence of gradient descent'
+        },
+        'Lipschitz gradient': {
+            'definition':   '||∇f(x)-∇f(y)|| ≤ L||x-y||',
+            'L':            'Smoothness constant',
+            'consequence':  'f(y) ≤ f(x) + ∇f(x)ᵀ(y-x) + L/2||y-x||²'
+        },
+        'Subdifferential': {
+            'definition':   '∂f(x) = {g: f(y) ≥ f(x)+gᵀ(y-x) for all y}',
+            'differentiable':'∂f(x) = {∇f(x)} (singleton)',
+            'abs value':    '∂|x| = {-1} if x<0, [-1,1] if x=0, {1} if x>0',
+            'optimality':   '0 ∈ ∂f(x*) ↔ x* minimizes f'
+        },
+        'Conjugate function': {
+            'definition':   'f*(y) = sup_x {yᵀx - f(x)}',
+            'Legendre':     'f**(x) = f(x) for closed convex f (Fenchel-Moreau)',
+            'examples': {
+                'f(x) = ||x||²/2': 'f*(y) = ||y||²/2',
+                'f(x) = ||x||₁':   'f*(y) = I_{||y||∞≤1} (indicator)',
+                'f(x) = -log x':   'f*(y) = -1-log(-y)'
+            }
+        }
+    }
+```
+
+---
+
+## Convex Optimization Algorithms
+```python
+def gradient_methods():
+    return {
+        'Gradient Descent (GD)': {
+            'update':       'x_{k+1} = x_k - α∇f(x_k)',
+            'step size α':  'α = 1/L (Lipschitz constant of gradient)',
+            'convergence':  'O(1/k) for convex, O(ρᵏ) for strongly convex',
+            'ρ':            '1 - m/L (condition number κ = L/m)',
+            'intuition':    'Follow negative gradient downhill'
+        },
+        'Nesterov Accelerated GD': {
+            'update': [
+                'y_{k+1} = x_k - (1/L)∇f(x_k)',
+                'x_{k+1} = y_{k+1} + (k-1)/(k+2) · (y_{k+1}-y_k)'
+            ],
+            'convergence':  'O(1/k²) for convex — optimal first-order rate!',
+            'momentum':     'Extrapolation step creates momentum',
+            'strongly':     'O(ρᵏ) with ρ = 1 - √(m/L) (better than GD)'
+        },
+        'Proximal Gradient': {
+            'for':          'min f(x) + g(x) where f smooth, g convex but not smooth',
+            'prox':         'prox_{αg}(v) = argmin_x {g(x) + ||x-v||²/2α}',
+            'update':       'x_{k+1} = prox_{αg}(x_k - α∇f(x_k))',
+            'examples': {
+                'g = ||·||₁': 'prox = soft threshold: sign(v)·max(|v|-α,0)',
+                'g = indicator': 'prox = projection onto convex set'
+            }
+        },
+        'ADMM (Alternating Direction Method of Multipliers)': {
+            'for':          'min f(x)+g(z) s.t. Ax+Bz=c',
+            'updates': [
+                'x_{k+1} = argmin_x {f(x) + ρ/2||Ax+Bz_k-c+u_k||²}',
+                'z_{k+1} = argmin_z {g(z) + ρ/2||Ax_{k+1}+Bz-c+u_k||²}',
+                'u_{k+1} = u_k + Ax_{k+1} + Bz_{k+1} - c'
+            ],
+            'ρ':            'Penalty parameter',
+            'convergence':  'O(1/k) for convex',
+            'applications': 'LASSO, distributed optimization, consensus'
+        },
+        'Frank-Wolfe (Conditional Gradient)': {
+            'for':          'min f(x) s.t. x ∈ C (bounded convex set)',
+            'update':       'Find s_k = argmin_{s∈C} ∇f(x_k)ᵀs, then x_{k+1} = x_k + γ(s_k-x_k)',
+            'advantage':    'Projection-free, linear subproblem',
+            'convergence':  'O(1/k) for smooth convex'
+        },
+        'Interior Point Methods': {
+            'for':          'Constrained optimization, LP, SDP',
+            'barrier':      'Add log barrier for constraints: -Σ log(cᵢ(x))',
+            'central path': 'Optimal solutions for each barrier parameter t',
+            'complexity':   'O(√n) iterations, polynomial overall',
+            'practical':    'Very efficient for medium-scale problems'
+        }
+    }
+
+def stochastic_methods():
+    return {
+        'SGD (Stochastic Gradient Descent)': {
+            'update':       'x_{k+1} = x_k - α_k ∇f_iₖ(x_k)  (random sample iₖ)',
+            'convergence':  'O(1/√k) convex, O(log k/k) strongly convex',
+            'step size':    'α_k = c/√k or α_k = c/(k+1)',
+            'advantage':    'O(1) cost per iteration vs O(n) for GD'
+        },
+        'Mini-batch SGD': {
+            'update':       'Average gradient over random batch B',
+            'batch size':   '|B| = 32-256 in deep learning',
+            'variance':     'Reduces by factor |B| vs single sample'
+        },
+        'Adam': {
+            'moment1':      'm_t = β₁m_{t-1} + (1-β₁)g_t',
+            'moment2':      'v_t = β₂v_{t-1} + (1-β₂)g_t²',
+            'correction':   'm̂_t = m_t/(1-β₁ᵗ), v̂_t = v_t/(1-β₂ᵗ)',
+            'update':       'x_t = x_{t-1} - α·m̂_t/(√v̂_t+ε)',
+            'params':       'β₁=0.9, β₂=0.999, ε=10⁻⁸ (defaults)',
+            'advantage':    'Adaptive learning rates per parameter'
+        },
+        'Variance reduction': {
+            'SVRG':         'Periodic full gradient to reduce variance',
+            'SAGA':         'Store past gradients for unbiased estimate',
+            'convergence':  'O(ρᵏ) linear rate for strongly convex (same as GD!)'
+        }
+    }
+```
+
+---
+
+## Nonlinear Programming
+```
+Optimality conditions:
+
+Unconstrained: min f(x)
+  Necessary: ∇f(x*) = 0  (first order)
+  Second order necessary: ∇²f(x*) ⪰ 0
+  Second order sufficient: ∇²f(x*) ≻ 0  (strict local min)
+
+Equality constrained: min f(x) s.t. h(x) = 0
+  Lagrangian: L(x,λ) = f(x) + λᵀh(x)
+  KKT necessary: ∇_x L = 0, h(x) = 0
+  i.e., ∇f(x*) = -Aᵀλ* where A = Jacobian of h
+
+Inequality constrained: min f(x) s.t. g(x) ≤ 0, h(x) = 0
+  KKT conditions (necessary if LICQ holds):
+  ∇f(x*) + Aᵀλ* + Bᵀμ* = 0
+  g(x*) ≤ 0, h(x*) = 0
+  μ* ≥ 0
+  μᵢ*gᵢ(x*) = 0  (complementary slackness)
+
+LICQ (Linear Independence CQ):
+  Gradients of active inequality constraints + equality constraints are LI
+  Common constraint qualification for KKT to be necessary
+
+Second order conditions (inequality constrained):
+  Sufficient: ∇²_xx L ≻ 0 on cone of critical directions
+  Necessary: ∇²_xx L ⪰ 0 on cone of critical directions
+```
+```python
+def penalty_methods():
+    return {
+        'Exterior penalty': {
+            'formulation':  'min f(x) + (1/2μ) Σ max(gᵢ(x),0)² + (1/2μ) ||h(x)||²',
+            'μ → 0':        'Penalty increases → feasibility enforced',
+            'issue':        'Ill-conditioning as μ → 0'
+        },
+        'Augmented Lagrangian': {
+            'formulation':  'min f(x) + λᵀh(x) + (c/2)||h(x)||²',
+            'advantage':    'Combines Lagrangian + penalty, better conditioning',
+            'method of multipliers': 'Update λ after each minimization'
+        },
+        'Sequential Quadratic Programming (SQP)': {
+            'idea':         'Solve QP subproblem at each iteration',
+            'qp_sub':       'Quadratic approx of f, linear approx of constraints',
+            'convergence':  'Superlinear near solution',
+            'use':          'Industry standard for NLP (SNOPT, IPOPT)',
+            'IPOPT':        'Interior point NLP solver (open source)'
+        },
+        'Active set methods': {
+            'idea':         'Identify which constraints are active at optimum',
+            'update':       'Add/remove constraints from working set',
+            'use':          'Medium-scale QP problems'
+        }
+    }
+```
+
+---
+
+## Integer Programming
+```python
+def integer_programming():
+    return {
+        'LP relaxation': {
+            'idea':         'Solve IP without integrality constraints',
+            'lower bound':  'LP opt ≤ IP opt (minimization)',
+            'integrality gap': 'IP opt / LP opt',
+            'total unimodularity': 'If A is TU: LP opt = IP opt (always integral)'
+        },
+        'Branch and bound': {
+            'idea':         'Enumerate by branching on fractional variable',
+            'branch':       'x_j ≤ ⌊v⌋ or x_j ≥ ⌈v⌉ (v = LP fractional value)',
+            'bound':        'Prune if LP bound ≥ current best integer solution',
+            'strategies':   'Best-first, depth-first, strong branching',
+            'B&B tree':     'Nodes = subproblems, pruning reduces tree'
+        },
+        'Cutting plane methods': {
+            'idea':         'Add valid inequalities to strengthen LP relaxation',
+            'Gomory cuts':  'Derived from simplex tableau of LP relaxation',
+            'valid ineq':   'Satisfied by all IP feasible points, cuts off LP opt',
+            'B&C':          'Branch and Cut: B&B + cutting planes at each node'
+        },
+        'Special structures': {
+            'Assignment':   'Min cost perfect matching in bipartite graph',
+            'Knapsack':     'Subset selection with weight constraint (NP-hard)',
+            'TSP':          'Shortest Hamiltonian cycle (NP-hard)',
+            'Set cover':    'Min sets covering all elements'
+        },
+        'Heuristics': {
+            'Greedy':       'Fast, not optimal',
+            'Local search': 'Improve solution by local moves',
+            'Metaheuristics': 'Simulated annealing, genetic algorithms, tabu search',
+            'Approx algorithms': 'Guaranteed approximation ratio'
+        }
+    }
+```
+
+---
+
+## Dynamic Programming
+```python
+def dynamic_programming():
+    return {
+        'Principle of optimality (Bellman)': {
+            'statement':    'An optimal policy has the property that whatever the initial state and initial decision, the remaining decisions must constitute an optimal policy',
+            'implication':  'Optimal solution built from optimal subsolutions'
+        },
+        'Discrete DP': {
+            'Bellman equation': 'V(s) = min_{a} [c(s,a) + γV(f(s,a))]',
+            'finite horizon':   'V_T(s) = 0; V_t(s) = min_a[c(s,a) + V_{t+1}(f(s,a))]',
+            'infinite horizon': 'Discounted: V(s) = min_a[c(s,a) + γV(f(s,a))]',
+            'value iteration':  'Update V until convergence: O(|S|²|A|) per iteration',
+            'policy iteration': 'Evaluate policy, improve policy, repeat'
+        },
+        'Classic DP problems': {
+            'Shortest path':    'Bellman-Ford, Dijkstra as DP',
+            'LCS':             'Longest common subsequence: O(mn)',
+            'Edit distance':    'Min operations to transform string: O(mn)',
+            'Knapsack':        '0/1 knapsack: O(nW) pseudopolynomial',
+            'Matrix chain':    'Min operations for matrix product: O(n³)',
+            'Optimal BST':     'Min expected search cost: O(n³)',
+            'Coin change':     'Fewest coins making amount: O(nW)'
+        },
+        'Continuous DP (HJB)': {
+            'Hamilton-Jacobi-Bellman': 'V_t + H(x,∇V) = 0  (PDE)',
+            'H(x,p)':           'min_u {f(x,u) + pᵀg(x,u)}  (Hamiltonian)',
+            'use':              'Optimal control, finance (Black-Scholes derived from HJB)'
+        },
+        'Memoization vs tabulation': {
+            'memoization':      'Top-down: recursion + cache (lazy evaluation)',
+            'tabulation':       'Bottom-up: fill table in order',
+            'trade-off':        'Memoization: only needed states; Tabulation: better cache'
+        }
+    }
+```
+
+---
+
+## Combinatorial Optimization
+```python
+def combinatorial_optimization():
+    return {
+        'Traveling Salesman Problem (TSP)': {
+            'definition':   'Find shortest Hamiltonian cycle visiting all cities',
+            'NP-hard':      'No polynomial algorithm known',
+            'exact':        'Branch and cut: state of the art (Concorde solver)',
+            '2-opt':        'Local search: swap two edges, O(n²) per iteration',
+            'Christofides': '3/2 approximation for metric TSP',
+            'held-karp':    'O(2ⁿn²) DP exact algorithm'
+        },
+        'Assignment problem': {
+            'definition':   'Assign n workers to n jobs minimizing total cost',
+            'Hungarian':    'O(n³) exact algorithm',
+            'LP':           'Assignment matrix is TU → LP is integral'
+        },
+        'Scheduling': {
+            'single machine': 'Minimize weighted completion time: sort by w/p ratio',
+            'parallel':       'Makespan minimization: list scheduling (2-approx)',
+            'flow shop':      'Johnson\'s algorithm for 2 machines (optimal)'
+        },
+        'Facility location': {
+            'definition':   'Choose facilities to minimize opening + transport cost',
+            'LP_based':     '1.5-approximation via LP rounding',
+            'greedy':       'Constant factor approximation'
+        },
+        'Approximation algorithms': {
+            'Vertex cover':  '2-approximation via maximal matching',
+            'Set cover':     'O(log n) greedy approximation',
+            'Max cut':       '0.878 approximation (Goemans-Williamson, SDP)',
+            'PCP theorem':   'Many problems have inapproximability bounds'
+        }
+    }
+```
+
+---
+
+## Semidefinite Programming (SDP)
+```
+SDP: min cᵀx s.t. F₀ + Σ xᵢFᵢ ⪰ 0  (matrix inequality constraint)
+  Fᵢ: symmetric matrices
+  ⪰ 0: positive semidefinite
+
+Special cases:
+  LP: all Fᵢ diagonal
+  SOCP: second-order cone programs (cone between SDP and LP)
+
+Applications:
+  MAX-CUT relaxation: Goemans-Williamson 0.878 approximation
+  Lovász theta: sandwich between clique and chromatic number
+  Control theory: LMI (linear matrix inequality) stability conditions
+  Sum of squares: polynomial optimization
+
+Interior point: polynomial-time algorithms exist (Vandenberghe-Boyd)
+Software: CVXPY (Python), MOSEK, SeDuMi, SDPT3
+```
+
+---
+
+## Key Results Summary
+```
+LP duality: strong duality, complementary slackness
+Simplex: finite, exponential worst case, polynomial average
+Interior point: polynomial for LP/convex
+KKT: necessary conditions for constrained optimization (with CQ)
+Bellman's principle: foundation of dynamic programming
+Complexity: LP ∈ P; IP, TSP ∈ NP-hard; GI special status
+Approximation: P≠NP implies many combinatorial problems hard to approximate
+CVX hierarchy: LP ⊂ SOCP ⊂ SDP ⊂ Convex ⊂ NLP
+```
+
+---
+
+## Common Pitfalls
+
+| Pitfall | Fix |
+|---|---|
+| KKT always sufficient | KKT necessary under CQ; sufficient only for convex problems |
+| LP always has optimal | May be infeasible or unbounded; check both |
+| Gradient descent converges to global min | Only for convex f; may converge to local min generally |
+| Dynamic programming always fast | Exponential state space possible; check if state space is small |
+| Integer program solved by rounding LP | LP rounding may give infeasible or poor solution |
+| SGD converges to exact solution | SGD converges to neighborhood of optimum, not exact |
+
+---
+
+## Related Skills
+
+- **linear-algebra-expert**: Matrix theory for optimization
+- **calculus-expert**: Gradients, Hessians, multivariable calculus
+- **numerical-methods-expert**: Numerical optimization implementation
+- **graph-theory-expert**: Combinatorial optimization on graphs
+- **machine-learning-expert**: Optimization in ML training
+- **probability-expert**: Stochastic optimization
