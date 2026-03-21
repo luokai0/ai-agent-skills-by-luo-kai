@@ -16,11 +16,11 @@ tags: [astrophysics, stars, galaxies, high-energy, telescopes, spectroscopy]
 ## Core Expertise Areas
 
 ### Stellar Physics
-Stellar structure: hydrostatic equilibrium, energy transport (radiation, convection).
+Stellar structure: hydrostatic equilibrium, energy transport by radiation and convection.
 Nuclear burning: pp chain and CNO cycle produce energy in stellar cores.
 HR diagram: luminosity vs temperature, main sequence, giants, white dwarfs.
 Stellar evolution: main sequence to red giant to white dwarf or supernova.
-Stellar remnants: white dwarf (low mass), neutron star (intermediate), black hole (high mass).
+Stellar remnants: white dwarf, neutron star, black hole depending on mass.
 
 ### Galaxy Formation
 Galaxy types: elliptical, spiral, irregular, lenticular.
@@ -31,15 +31,15 @@ Galaxy mergers: major and minor mergers, morphological transformation.
 
 ### High-Energy Astrophysics
 X-ray binaries: neutron star or black hole accreting from companion.
-Gamma-ray bursts: most energetic explosions — short (merger) and long (collapsar).
-Supernovae: Type Ia (thermonuclear), Type II (core collapse) — distance indicators.
+Gamma-ray bursts: most energetic explosions, short from mergers and long from collapsars.
+Supernovae: Type Ia thermonuclear and Type II core collapse, distance indicators.
 Cosmic rays: high-energy particles, sources include SNR and AGN jets.
 
 ### Observational Techniques
 Photometry: measuring flux in broadband filters, magnitudes and colors.
 Spectroscopy: resolving spectral features, redshift, chemical abundances.
 Interferometry: combining multiple telescopes for higher angular resolution.
-Gravitational waves: LIGO/Virgo detect mergers of compact objects.
+Gravitational waves: LIGO and Virgo detect mergers of compact objects.
 
 ## Best Practices
 - Always correct for extinction and redshift before comparing observations
@@ -50,7 +50,7 @@ Gravitational waves: LIGO/Virgo detect mergers of compact objects.
 ## Common Pitfalls
 | Pitfall | Fix |
 |---|---|
-| Ignoring dust extinction | Apply reddening correction in optical/NIR |
+| Ignoring dust extinction | Apply reddening correction in optical and NIR |
 | Confusing luminosity and flux | Convert to intrinsic luminosity using distance |
 | Wrong cosmology for distance | Specify H0 and cosmological parameters used |
 | Selection bias in samples | Characterize selection function of survey |

@@ -17,17 +17,17 @@ tags: [stellar physics, stellar evolution, nucleosynthesis, binary stars, stella
 
 ### Stellar Structure
 Hydrostatic equilibrium: pressure gradient balances gravity at each shell.
-Energy transport: radiative (diffusion of photons) or convective (bulk motion).
-Mass-luminosity relation: L proportional to M^4 approximately for main sequence.
+Energy transport: radiative diffusion of photons or convective bulk motion.
+Mass-luminosity relation: L proportional to M to the power 4 for main sequence.
 Lane-Emden equation: polytropic models of stellar structure.
 Convection zones: low-mass stars fully convective, solar-type have outer convection zone.
 
 ### Stellar Evolution
-Pre-main sequence: Hayashi track (fully convective), Henyey track (radiative).
+Pre-main sequence: Hayashi track fully convective, Henyey track radiative.
 Zero-age main sequence: star settles into stable hydrogen burning phase.
 Red giant: hydrogen shell burning, core contraction, envelope expansion.
 Horizontal branch: helium core burning, instability strip contains RR Lyrae.
-AGB: asymptotic giant branch, thermal pulses, mass loss, PN formation.
+AGB: asymptotic giant branch, thermal pulses, mass loss, planetary nebula formation.
 
 ### Nucleosynthesis
 Big Bang nucleosynthesis: H, D, He-3, He-4, Li-7 produced in first minutes.

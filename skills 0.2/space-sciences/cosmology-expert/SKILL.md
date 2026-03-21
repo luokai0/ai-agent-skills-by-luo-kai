@@ -11,32 +11,32 @@ tags: [cosmology, Big Bang, dark matter, dark energy, CMB, large-scale structure
 ## Before Starting
 1. Early universe or late-time cosmology?
 2. Theoretical or observational focus?
-3. Specific probe? (CMB, BAO, weak lensing, supernovae)
+3. Specific probe? CMB, BAO, weak lensing, or supernovae?
 
 ## Core Expertise Areas
 
 ### Big Bang and Expansion
 Friedmann equation: describes expansion of universe, derived from GR.
-Hubble law: recession velocity proportional to distance, v = H0 d.
+Hubble law: recession velocity proportional to distance.
 Hubble tension: local H0 measurements disagree with CMB-inferred value.
-Scale factor a(t): ratio of proper distance to comoving distance.
+Scale factor a: ratio of proper distance to comoving distance.
 Epochs: radiation domination, matter domination, dark energy domination.
 
 ### Dark Matter
 Evidence: rotation curves, gravitational lensing, CMB, structure formation.
-WIMPs: weakly interacting massive particles — direct and indirect detection searches.
+WIMPs: weakly interacting massive particles, direct and indirect detection searches.
 Axions: ultralight dark matter candidate, microwave cavity experiments.
-CDM: cold dark matter — non-relativistic at decoupling, forms halos.
+CDM: cold dark matter, non-relativistic at decoupling, forms halos.
 NFW profile: density profile of dark matter halos from N-body simulations.
 
 ### Dark Energy
-Cosmological constant Lambda: energy density of vacuum, constant equation of state w = -1.
-Equation of state: w = p/rho, dark energy requires w less than -1/3.
-Acceleration: dark energy drives accelerated expansion since z ~ 0.4.
-Type Ia supernovae: standardizable candles, discovery evidence for acceleration.
+Cosmological constant Lambda: energy density of vacuum, constant equation of state.
+Equation of state w: dark energy requires w less than negative one third.
+Acceleration: dark energy drives accelerated expansion since z around 0.4.
+Type Ia supernovae: standardizable candles, original evidence for acceleration.
 
 ### CMB
-Recombination: z ~ 1100, photons decouple from matter, last scattering surface.
+Recombination: z around 1100, photons decouple from matter, last scattering surface.
 Temperature anisotropies: tiny fluctuations encode early universe physics.
 Power spectrum: angular power spectrum Cl vs multipole l.
 Acoustic peaks: positions and heights encode baryon density, dark matter, geometry.

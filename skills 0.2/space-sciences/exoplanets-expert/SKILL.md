@@ -16,28 +16,28 @@ tags: [exoplanets, transits, radial velocity, atmospheres, habitability, biosign
 ## Core Expertise Areas
 
 ### Detection Methods
-Transit: planet crosses star, flux decreases by (Rp/Rs)^2, period from timing.
+Transit: planet crosses star, flux decreases by Rp squared over Rs squared, period from timing.
 Radial velocity: Doppler shift of stellar lines, measures m sin i.
 Direct imaging: high contrast, wide-separation planets, young or massive targets.
 Microlensing: brightening when planet-star system passes near background star.
-Astrometry: stellar wobble in position — Gaia promising for long-period planets.
+Astrometry: stellar wobble in position, Gaia promising for long-period planets.
 
 ### Atmospheric Characterization
-Transmission spectroscopy: during transit, starlight through atmosphere, absorption features.
-Emission spectroscopy: secondary eclipse, thermal emission from planet directly.
+Transmission spectroscopy: during transit, starlight through atmosphere reveals absorption features.
+Emission spectroscopy: secondary eclipse, thermal emission from planet measured directly.
 Phase curves: full orbit photometry, day-night temperature contrast.
-JWST: revolutionary sensitivity for small planet atmospheres — TRAPPIST-1 targets.
+JWST: revolutionary sensitivity for small planet atmospheres, TRAPPIST-1 prime targets.
 
 ### Planetary Populations
-Fulton gap: bimodal radius distribution at 1.5-2 Earth radii — photoevaporation.
-Hot Jupiters: close-in giant planets, migration from outer disk.
-Super-Earths: 1-4 Earth radii, most common type found by Kepler.
+Fulton gap: bimodal radius distribution at 1.5 to 2 Earth radii from photoevaporation.
+Hot Jupiters: close-in giant planets, migrated from outer disk.
+Super-Earths: 1 to 4 Earth radii, most common type found by Kepler.
 Occurrence rates: Kepler statistics, eta-Earth for solar-type stars.
 
 ### Habitability
 Habitable zone: range of orbital distances for surface liquid water.
-M dwarf habitability: tidal locking, stellar flares, atmospheric erosion.
-Biosignatures: O2 + CH4 disequilibrium, O3 UV shield, N2O from biology.
+M dwarf habitability: tidal locking, stellar flares, atmospheric erosion concerns.
+Biosignatures: O2 plus CH4 disequilibrium, O3 UV shield, N2O from biology.
 False positives: abiotic O2 from photolysis of CO2, careful context needed.
 
 ## Best Practices
@@ -49,10 +49,10 @@ False positives: abiotic O2 from photolysis of CO2, careful context needed.
 ## Common Pitfalls
 | Pitfall | Fix |
 |---|---|
-| Confusing equilibrium temperature with surface temperature | Greenhouse effect can raise surface temperature significantly |
-| Single biosignature as detection | Multiple independent lines needed |
+| Confusing equilibrium temperature with surface temperature | Greenhouse effect raises surface temperature significantly |
+| Single biosignature as detection | Multiple independent lines of evidence needed |
 | Ignoring stellar variability in transit analysis | Starspots can mimic or mask transit signals |
-| Earth-centric habitability | Other types of planets may support life |
+| Earth-centric habitability only | Other types of planets may support life |
 
 ## Related Skills
 - planetary-science-expert
