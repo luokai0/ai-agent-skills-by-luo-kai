@@ -3,7 +3,7 @@
 > The largest open-source skill library for Claude and AI agents.
 > Drop any skill into your agent and it instantly becomes a domain expert.
 
-[![Skills](https://img.shields.io/badge/Total_Skills-300+-blue)](https://github.com/luokai0/ai-agent-skills-by-luo-kai)
+[![Skills](https://img.shields.io/badge/Total_Skills-163-blue)](https://github.com/luokai0/ai-agent-skills-by-luo-kai)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Contributors](https://img.shields.io/badge/Contributors-2-orange)](https://github.com/luokai0/ai-agent-skills-by-luo-kai/graphs/contributors)
 
@@ -11,12 +11,12 @@
 
 ## 📦 Skill Collections
 
-| Collection | Folder | Skills | Status |
+| Collection | Folder | Real Skills | Status |
 |---|---|---|---|
 | 💻 Coding and Software Engineering | skills/ | 100 | ✅ Complete |
 | 💰 Finance and Trading | skills 0.1/ | 20 | ✅ Complete |
-| 🔬 Science and Engineering | skills 0.2/ | 170+ | 🔄 In Progress |
-| 🤖 AI Agents and Automation | skills 0.3/ | 10 | 🔄 In Progress |
+| 🔬 Science and Engineering | skills 0.2/ | 42 of 170+ | 🔄 In Progress |
+| 🤖 AI Agents and Automation | skills 0.3/ | 1 of 10 | 🔄 In Progress |
 | 🏢 Business and Entrepreneurship | skills 0.4/ | Coming | 🗓️ Planned |
 | 🏥 Health and Medicine | skills 0.5/ | Coming | 🗓️ Planned |
 | ⚖️ Law and Legal | skills 0.6/ | Coming | 🗓️ Planned |
@@ -43,6 +43,7 @@
 | scala-expert | Functional programming, Akka, Spark |
 | elixir-expert | OTP, GenServer, Phoenix, pattern matching |
 | haskell-expert | Type classes, monads, lazy evaluation |
+| deno-bun-expert | Deno and Bun runtimes, modern JS tooling |
 
 ### Frontend
 | Skill | Description |
@@ -52,10 +53,11 @@
 | vue-expert | Composition API, Pinia, Nuxt |
 | svelte-expert | Reactivity, stores, SvelteKit |
 | css-expert | Grid, Flexbox, animations, variables |
-| web-performance-expert | Core Web Vitals, lazy loading, caching |
+| webperf-expert | Core Web Vitals, lazy loading, caching |
 | accessibility-expert | WCAG, ARIA, keyboard nav, screen readers |
 | threejs-expert | 3D scenes, shaders, physics, WebGL |
 | astro-expert | Islands architecture, content collections |
+| data-visualization-expert | Charts, D3, Recharts, dashboards |
 
 ### Backend
 | Skill | Description |
@@ -64,9 +66,13 @@
 | fastapi-expert | Async Python, Pydantic, dependency injection |
 | django-expert | ORM, middleware, DRF, Celery |
 | graphql-expert | Schema design, resolvers, subscriptions |
+| graphql-federation-expert | Federated schemas, subgraphs, supergraph |
 | rest-api-expert | Design principles, versioning, pagination |
 | grpc-expert | Protobuf, streaming, interceptors |
 | websockets-expert | Real-time, Socket.io, scaling |
+| serverless-expert | Lambda, Cloud Functions, edge functions |
+| event-driven-expert | Event sourcing, CQRS, message queues |
+| apache-kafka-expert | Topics, partitions, consumers, streams |
 
 ### Databases
 | Skill | Description |
@@ -78,6 +84,11 @@
 | elasticsearch-expert | Mappings, queries, aggregations, ELK |
 | sqlite-expert | WAL mode, FTS, JSON functions |
 | prisma-expert | Schema design, migrations, type safety |
+| database-design-expert | Normalization, ERD, indexes, optimization |
+| sql-analytics-expert | Window functions, CTEs, analytical queries |
+| vector-databases-expert | Embeddings, Pinecone, Weaviate, similarity search |
+| supabase-expert | Postgres, Auth, Storage, Edge Functions |
+| stripe-payments-expert | Payments, subscriptions, webhooks |
 
 ### DevOps and Cloud
 | Skill | Description |
@@ -91,6 +102,8 @@
 | cicd-expert | GitHub Actions, GitLab CI, ArgoCD |
 | linux-expert | Shell, permissions, systemd, networking |
 | nginx-expert | Reverse proxy, load balancing, SSL |
+| monitoring-expert | Prometheus, Grafana, alerting, observability |
+| embedded-expert | Embedded systems, firmware, RTOS, microcontrollers |
 
 ### Security
 | Skill | Description |
@@ -98,43 +111,48 @@
 | appsec-expert | OWASP Top 10, threat modeling, secure SDLC |
 | auth-expert | OAuth2, JWT, OIDC, session management |
 | cryptography-expert | AES, RSA, hashing, TLS, PKI |
-| secrets-expert | Vault, env management, rotation |
+| secrets-management-expert | Vault, env management, rotation |
 | devsecops-expert | SAST, DAST, SCA, supply chain security |
 
-### Testing
+### Testing and Quality
 | Skill | Description |
 |---|---|
-| testing-strategy-expert | Test pyramid, coverage, TDD, BDD |
+| testing-expert | Test pyramid, coverage, TDD, BDD |
 | pytest-expert | Fixtures, parametrize, mocking, plugins |
 | jest-expert | Mocking, snapshots, coverage, async testing |
 | playwright-expert | E2E automation, POM, visual testing |
 | cypress-expert | Component testing, network interception |
+| debugging-expert | Debugging strategies, tools, root cause analysis |
+| code-review-expert | Review standards, feedback, refactoring |
 
-### Architecture
+### Architecture and Patterns
 | Skill | Description |
 |---|---|
 | system-design-expert | Scalability, CAP theorem, distributed systems |
 | microservices-expert | Service mesh, saga pattern, event sourcing |
-| ddd-expert | Bounded contexts, aggregates, domain events |
+| domain-driven-design-expert | Bounded contexts, aggregates, domain events |
 | clean-architecture-expert | SOLID, hexagonal, ports and adapters |
 | design-patterns-expert | GoF patterns, architectural patterns |
+| api-design-expert | API design, DX, versioning, governance |
+| devex-expert | Developer experience, tooling, productivity |
+| open-source-expert | OSS contribution, licensing, maintenance |
+| functional-programming-expert | FP concepts, immutability, composition |
 
 ### Data and AI
 | Skill | Description |
 |---|---|
 | data-engineering-expert | Pipelines, ETL, Airflow, dbt, Spark |
-| ml-expert | Supervised, unsupervised, feature engineering |
+| machine-learning-expert | Supervised, unsupervised, feature engineering |
 | deep-learning-expert | Neural nets, CNNs, transformers, PyTorch |
 | llm-engineering-expert | Prompting, RAG, fine-tuning, evals |
 | mlops-expert | Model serving, monitoring, MLflow, drift |
-| vector-db-expert | Embeddings, Pinecone, Weaviate, similarity search |
 
 ### Mobile
 | Skill | Description |
 |---|---|
-| react-native-expert | Navigation, native modules, performance |
 | ios-expert | SwiftUI, UIKit, CoreData, App Store |
 | android-expert | Jetpack Compose, ViewModel, Room, Hilt |
+| react-native-expert | Navigation, native modules, performance |
 | flutter-expert | Widgets, state management, platform channels |
 
 ### Specialized
@@ -148,10 +166,12 @@
 | git-expert | Branching strategies, hooks, rebase, bisect |
 | blockchain-expert | Solidity, Hardhat, DeFi, EVM, Web3 |
 | game-dev-expert | Game loops, physics, shaders, Unity/Godot |
+| regex-expert | Regex patterns, lookaheads, named groups |
+| performance-optimization-expert | Profiling, bottlenecks, caching, optimization |
 
 ---
 
-## 💰 skills 0.1/ — Finance and Trading (20 skills)
+## 💰 skills 0.1/ — Finance and Trading (20 skills — Complete)
 
 | Skill | Description |
 |---|---|
@@ -178,9 +198,9 @@
 
 ---
 
-## 🔬 skills 0.2/ — Science and Engineering (170+ skills)
+## 🔬 skills 0.2/ — Science and Engineering (42 of 170+ complete)
 
-### Physics (13 skills — Complete)
+### Physics (13 of 13 — Complete)
 | Skill | Description |
 |---|---|
 | classical-mechanics-expert | Newtons laws, Lagrangian, Hamiltonian, oscillations |
@@ -197,63 +217,81 @@
 | acoustics-expert | Sound waves, room acoustics, ultrasound, musical |
 | fluid-physics-expert | Navier-Stokes, turbulence, boundary layers |
 
-### Chemistry (12 skills — 4 complete, 8 coming)
+### Mathematics (15 of 15 — Complete)
+| Skill | Description |
+|---|---|
+| calculus-expert | Limits, derivatives, integrals, multivariable, series |
+| linear-algebra-expert | Vectors, matrices, eigenvalues, transformations |
+| statistics-expert | Descriptive, inferential, hypothesis testing, regression |
+| probability-expert | Distributions, Bayes, stochastic processes, expectation |
+| number-theory-expert | Primes, modular arithmetic, cryptographic applications |
+| topology-expert | Metric spaces, continuity, compactness, manifolds |
+| differential-equations-expert | ODEs, PDEs, Laplace transforms, numerical methods |
+| abstract-algebra-expert | Groups, rings, fields, Galois theory |
+| complex-analysis-expert | Complex functions, contour integration, residues |
+| real-analysis-expert | Limits, continuity, measure theory, Lebesgue integration |
+| discrete-mathematics-expert | Combinatorics, graph theory, logic, proofs |
+| numerical-methods-expert | Root finding, interpolation, numerical integration |
+| graph-theory-expert | Graphs, trees, flows, algorithms, applications |
+| optimization-expert | Linear programming, convex optimization, gradient descent |
+| mathematical-logic-expert | Propositional logic, predicate logic, proof theory |
+
+### Chemistry (12 of 12 — Complete)
+| Skill | Description |
+|---|---|
+| organic-chemistry-expert | Mechanisms, synthesis, stereochemistry, named reactions |
+| inorganic-chemistry-expert | Coordination, crystal field, organometallics, symmetry |
+| physical-chemistry-expert | Thermodynamics, kinetics, quantum chemistry, spectroscopy |
+| analytical-chemistry-expert | HPLC, GC, MS, spectroscopy, method validation |
+| biochemistry-expert | Metabolism, enzymes, DNA, proteins, pathways |
+| polymer-chemistry-expert | Polymerization, properties, characterization |
+| electrochemistry-expert | Electrodes, batteries, corrosion, electroanalysis |
+| thermochemistry-expert | Calorimetry, Hesss law, bond energies, enthalpies |
+| spectroscopy-expert | Advanced NMR, MS, IR, UV-Vis, Raman |
+| computational-chemistry-expert | DFT, MD simulation, force fields, quantum chemistry |
+| green-chemistry-expert | Sustainable synthesis, atom economy, green metrics |
+| medicinal-chemistry-expert | Drug design, SAR, ADMET, pharmacophores |
+
+### Biology (2 of 14 — In Progress)
 | Skill | Status | Description |
 |---|---|---|
-| organic-chemistry-expert | Done | Mechanisms, synthesis, stereochemistry |
-| inorganic-chemistry-expert | Done | Coordination, crystal field, organometallics |
-| physical-chemistry-expert | Done | Thermodynamics, kinetics, quantum chemistry |
-| analytical-chemistry-expert | Done | HPLC, GC, MS, spectroscopy |
-| biochemistry-expert | Coming | Metabolism, enzymes, DNA, proteins |
-| polymer-chemistry-expert | Coming | Polymerization, properties, characterization |
-| electrochemistry-expert | Coming | Electrodes, batteries, corrosion |
-| thermochemistry-expert | Coming | Calorimetry, Hesss law, bond energies |
-| spectroscopy-expert | Coming | Advanced NMR, MS, IR, UV-Vis |
-| computational-chemistry-expert | Coming | DFT, MD simulation, force fields |
-| green-chemistry-expert | Coming | Sustainable synthesis, atom economy |
-| medicinal-chemistry-expert | Coming | Drug design, SAR, ADMET |
+| molecular-biology-expert | Done | DNA, RNA, protein synthesis, CRISPR, gene expression |
+| cell-biology-expert | Done | Cell structure, organelles, signaling, division |
+| biochemistry-biology-expert | Coming | Metabolic pathways, enzymes, bioenergetics |
+| bioinformatics-expert | Coming | Sequence alignment, genomics tools, databases |
+| developmental-biology-expert | Coming | Embryogenesis, stem cells, differentiation |
+| ecology-expert | Coming | Ecosystems, population dynamics, food webs |
+| evolutionary-biology-expert | Coming | Natural selection, phylogenetics, speciation |
+| genetics-expert | Coming | Mendelian genetics, linkage, mutations, GWAS |
+| genomics-expert | Coming | Whole genome sequencing, annotation, comparative |
+| immunology-expert | Coming | Immune response, antibodies, vaccines, autoimmunity |
+| marine-biology-expert | Coming | Marine ecosystems, oceanography, conservation |
+| microbiology-expert | Coming | Bacteria, viruses, fungi, pathogenesis |
+| neuroscience-expert | Coming | Neurons, synapses, brain regions, neuroplasticity |
+| physiology-expert | Coming | Organ systems, homeostasis, cardiovascular, neural |
 
-### Mathematics (15 skills — coming)
-calculus, linear-algebra, statistics, probability, number-theory, topology,
-differential-equations, abstract-algebra, complex-analysis, real-analysis,
-discrete-mathematics, numerical-methods, graph-theory, optimization, mathematical-logic
-
-### Biology (14 skills — coming)
-molecular-biology, cell-biology, genetics, genomics, ecology, evolutionary-biology,
-neuroscience, microbiology, immunology, physiology, developmental-biology,
-marine-biology, bioinformatics
-
-### Engineering (67 skills across 8 subfolders — coming)
-| Subfolder | Topics |
-|---|---|
-| electrical | Circuit analysis, power systems, signal processing, embedded, RF, control, VLSI |
-| mechanical | Statics, dynamics, solid mechanics, fluid mechanics, heat transfer, manufacturing |
-| civil | Structural analysis, geotechnical, hydraulics, transportation, construction |
-| chemical | Transport phenomena, reaction engineering, process design, thermodynamics |
-| aerospace | Aerodynamics, propulsion, orbital mechanics, spacecraft design |
-| biomedical | Biomechanics, medical devices, biosignals, tissue engineering |
-| environmental | Air quality, water treatment, waste management, remediation |
-| materials | Material properties, phase diagrams, failure analysis, nanomaterials |
+### Engineering (67 skills — Coming)
+Subfolders: electrical, mechanical, civil, chemical, aerospace, biomedical, environmental, materials
 
 ### Other domains (all coming)
-Earth Sciences (8) — Space Sciences (8) — CS Theory (10) — Robotics (8) — Energy (8) — Interdisciplinary (8)
+Computer Science (10) — Earth Sciences (8) — Space Sciences (8) — Energy (8) — Robotics (8) — Interdisciplinary (8)
 
 ---
 
-## 🤖 skills 0.3/ — AI Agents and Automation
+## 🤖 skills 0.3/ — AI Agents and Automation (1 of 10)
 
-| Skill | Description |
-|---|---|
-| deep-intel | Context-aware exhaustive research — 8+ angle searches, full page fetch, strategic brief |
-| openclaw-setup-expert | Full OpenClaw install, SOUL.md, HEARTBEAT.md, MEMORY.md, Telegram |
-| agent-trading-expert | Autonomous crypto/stock trading pipelines — Polymarket, CEX, DeFi yield |
-| mcp-builder-expert | Build MCP servers to connect any API to any AI agent |
-| clawhub-publisher | Package and publish skills to ClawHub marketplace |
-| gumloop-automation | Gumloop pipeline design, triggers, Google Drive integration |
-| agent-wallet-expert | Virtuals Protocol ACP, agent wallets, x402 commerce protocol |
-| soul-architect | Design SOUL.md, IDENTITY.md, AGENTS.md for any agent persona |
-| free-stack-builder | Build full agent systems on zero budget — Oracle Cloud + Gemini + Telegram |
-| agent-income-expert | Autonomous income strategies: ClawHub skills, setup services, content pipelines |
+| Skill | Status | Description |
+|---|---|---|
+| deep-intel | Done | Context-aware exhaustive research — 8+ angle searches, full page fetch, strategic brief |
+| openclaw-setup-expert | Coming | Full OpenClaw install, SOUL.md, HEARTBEAT.md, MEMORY.md, Telegram |
+| agent-trading-expert | Coming | Autonomous crypto/stock trading pipelines |
+| mcp-builder-expert | Coming | Build MCP servers for any API |
+| clawhub-publisher | Coming | Package and publish skills to ClawHub marketplace |
+| gumloop-automation | Coming | Gumloop pipeline design and Google Drive integration |
+| agent-wallet-expert | Coming | Virtuals Protocol ACP, agent wallets, x402 commerce |
+| soul-architect | Coming | Design SOUL.md, IDENTITY.md, AGENTS.md for any agent |
+| free-stack-builder | Coming | Full agent system on zero budget |
+| agent-income-expert | Coming | Autonomous income strategies and pipelines |
 
 ---
 
@@ -263,7 +301,7 @@ Clone everything
     git clone https://github.com/luokai0/ai-agent-skills-by-luo-kai.git
     cp -r ai-agent-skills-by-luo-kai/skills/* .agents/skills/
 
-Git submodule (stays updated automatically)
+Git submodule
     git submodule add https://github.com/luokai0/ai-agent-skills-by-luo-kai.git .agents/skills-luo-kai
 
 One collection only
@@ -271,15 +309,20 @@ One collection only
 
 ---
 
-## 📊 Stats
+## 📊 Progress Tracker
 
-| Collection | Skills | Domain |
-|---|---|---|
-| skills/ | 100 | Coding and Software Engineering |
-| skills 0.1/ | 20 | Finance and Trading |
-| skills 0.2/ | 170+ | Science and Engineering |
-| skills 0.3/ | 10 | AI Agents and Automation |
-| Total | 300+ | All Domains |
+| Collection | Done | Total | Percent |
+|---|---|---|---|
+| skills/ Coding | 100 | 100 | 100% |
+| skills 0.1/ Finance | 20 | 20 | 100% |
+| skills 0.2/ Physics | 13 | 13 | 100% |
+| skills 0.2/ Mathematics | 15 | 15 | 100% |
+| skills 0.2/ Chemistry | 12 | 12 | 100% |
+| skills 0.2/ Biology | 2 | 14 | 14% |
+| skills 0.2/ Engineering | 0 | 67 | 0% |
+| skills 0.2/ Other domains | 0 | 58 | 0% |
+| skills 0.3/ AI Agents | 1 | 10 | 10% |
+| **TOTAL** | **163** | **309** | **53%** |
 
 ---
 
@@ -289,30 +332,6 @@ One collection only
 |---|---|
 | @luokai0 | Coding skills + AI Agents collection |
 | @luokai25 | Finance + Science and Engineering |
-
----
-
-## 🗺️ Roadmap
-
-Done
-- 100 coding skills
-- 20 finance and trading skills
-- Physics 13 skills
-- Chemistry 4 of 12 skills
-- deep-intel skill
-
-In Progress
-- Chemistry remaining 8 skills
-- Mathematics 15 skills
-- Biology 14 skills
-- Engineering 67 skills
-- AI Agents collection 9 remaining skills
-
-Planned
-- Earth Sciences, Space Sciences, CS Theory, Robotics, Energy, Interdisciplinary
-- skills 0.4 Business
-- skills 0.5 Health
-- skills 0.6 Law
 
 ---
 
