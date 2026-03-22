@@ -3,7 +3,7 @@
 > The largest open-source skill library for Claude and AI agents.
 > Drop any skill into your agent and it instantly becomes a domain expert.
 
-[![Skills](https://img.shields.io/badge/Total_Skills-163-blue)](https://github.com/luokai0/ai-agent-skills-by-luo-kai)
+[![Skills](https://img.shields.io/badge/Total_Skills-287-blue)](https://github.com/luokai0/ai-agent-skills-by-luo-kai)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Contributors](https://img.shields.io/badge/Contributors-2-orange)](https://github.com/luokai0/ai-agent-skills-by-luo-kai/graphs/contributors)
 
@@ -11,11 +11,11 @@
 
 ## 📦 Skill Collections
 
-| Collection | Folder | Real Skills | Status |
+| Collection | Folder | Skills | Status |
 |---|---|---|---|
 | 💻 Coding and Software Engineering | skills/ | 100 | ✅ Complete |
 | 💰 Finance and Trading | skills 0.1/ | 20 | ✅ Complete |
-| 🔬 Science and Engineering | skills 0.2/ | 42 of 170+ | 🔄 In Progress |
+| 🔬 Science and Engineering | skills 0.2/ | 166 | ✅ Complete |
 | 🤖 AI Agents and Automation | skills 0.3/ | 1 of 10 | 🔄 In Progress |
 | 🏢 Business and Entrepreneurship | skills 0.4/ | Coming | 🗓️ Planned |
 | 🏥 Health and Medicine | skills 0.5/ | Coming | 🗓️ Planned |
@@ -198,83 +198,28 @@
 
 ---
 
-## 🔬 skills 0.2/ — Science and Engineering (42 of 170+ complete)
+## 🔬 skills 0.2/ — Science and Engineering (166 skills — Complete)
 
-### Physics (13 of 13 — Complete)
-| Skill | Description |
-|---|---|
-| classical-mechanics-expert | Newtons laws, Lagrangian, Hamiltonian, oscillations |
-| thermodynamics-expert | Four laws, entropy, cycles, statistical mechanics |
-| electromagnetism-expert | Maxwells equations, waves, fields, potentials |
-| quantum-mechanics-expert | Schrodinger, operators, hydrogen atom, spin |
-| special-relativity-expert | Lorentz transforms, spacetime, E=mc2 |
-| general-relativity-expert | Einstein equations, black holes, gravitational waves |
-| optics-expert | Geometric, wave, interference, diffraction, lasers |
-| nuclear-physics-expert | Decay, fission, fusion, binding energy, radiation |
-| particle-physics-expert | Standard Model, quarks, bosons, Feynman diagrams |
-| condensed-matter-expert | Band theory, semiconductors, superconductivity |
-| plasma-physics-expert | MHD, waves, confinement, space plasmas |
-| acoustics-expert | Sound waves, room acoustics, ultrasound, musical |
-| fluid-physics-expert | Navier-Stokes, turbulence, boundary layers |
-
-### Mathematics (15 of 15 — Complete)
-| Skill | Description |
-|---|---|
-| calculus-expert | Limits, derivatives, integrals, multivariable, series |
-| linear-algebra-expert | Vectors, matrices, eigenvalues, transformations |
-| statistics-expert | Descriptive, inferential, hypothesis testing, regression |
-| probability-expert | Distributions, Bayes, stochastic processes, expectation |
-| number-theory-expert | Primes, modular arithmetic, cryptographic applications |
-| topology-expert | Metric spaces, continuity, compactness, manifolds |
-| differential-equations-expert | ODEs, PDEs, Laplace transforms, numerical methods |
-| abstract-algebra-expert | Groups, rings, fields, Galois theory |
-| complex-analysis-expert | Complex functions, contour integration, residues |
-| real-analysis-expert | Limits, continuity, measure theory, Lebesgue integration |
-| discrete-mathematics-expert | Combinatorics, graph theory, logic, proofs |
-| numerical-methods-expert | Root finding, interpolation, numerical integration |
-| graph-theory-expert | Graphs, trees, flows, algorithms, applications |
-| optimization-expert | Linear programming, convex optimization, gradient descent |
-| mathematical-logic-expert | Propositional logic, predicate logic, proof theory |
-
-### Chemistry (12 of 12 — Complete)
-| Skill | Description |
-|---|---|
-| organic-chemistry-expert | Mechanisms, synthesis, stereochemistry, named reactions |
-| inorganic-chemistry-expert | Coordination, crystal field, organometallics, symmetry |
-| physical-chemistry-expert | Thermodynamics, kinetics, quantum chemistry, spectroscopy |
-| analytical-chemistry-expert | HPLC, GC, MS, spectroscopy, method validation |
-| biochemistry-expert | Metabolism, enzymes, DNA, proteins, pathways |
-| polymer-chemistry-expert | Polymerization, properties, characterization |
-| electrochemistry-expert | Electrodes, batteries, corrosion, electroanalysis |
-| thermochemistry-expert | Calorimetry, Hesss law, bond energies, enthalpies |
-| spectroscopy-expert | Advanced NMR, MS, IR, UV-Vis, Raman |
-| computational-chemistry-expert | DFT, MD simulation, force fields, quantum chemistry |
-| green-chemistry-expert | Sustainable synthesis, atom economy, green metrics |
-| medicinal-chemistry-expert | Drug design, SAR, ADMET, pharmacophores |
-
-### Biology (2 of 14 — In Progress)
-| Skill | Status | Description |
+| Domain | Skills | Count |
 |---|---|---|
-| molecular-biology-expert | Done | DNA, RNA, protein synthesis, CRISPR, gene expression |
-| cell-biology-expert | Done | Cell structure, organelles, signaling, division |
-| biochemistry-biology-expert | Coming | Metabolic pathways, enzymes, bioenergetics |
-| bioinformatics-expert | Coming | Sequence alignment, genomics tools, databases |
-| developmental-biology-expert | Coming | Embryogenesis, stem cells, differentiation |
-| ecology-expert | Coming | Ecosystems, population dynamics, food webs |
-| evolutionary-biology-expert | Coming | Natural selection, phylogenetics, speciation |
-| genetics-expert | Coming | Mendelian genetics, linkage, mutations, GWAS |
-| genomics-expert | Coming | Whole genome sequencing, annotation, comparative |
-| immunology-expert | Coming | Immune response, antibodies, vaccines, autoimmunity |
-| marine-biology-expert | Coming | Marine ecosystems, oceanography, conservation |
-| microbiology-expert | Coming | Bacteria, viruses, fungi, pathogenesis |
-| neuroscience-expert | Coming | Neurons, synapses, brain regions, neuroplasticity |
-| physiology-expert | Coming | Organ systems, homeostasis, cardiovascular, neural |
-
-### Engineering (67 skills — Coming)
-Subfolders: electrical, mechanical, civil, chemical, aerospace, biomedical, environmental, materials
-
-### Other domains (all coming)
-Computer Science (10) — Earth Sciences (8) — Space Sciences (8) — Energy (8) — Robotics (8) — Interdisciplinary (8)
+| Physics | classical-mechanics, thermodynamics, electromagnetism, quantum-mechanics, special-relativity, general-relativity, optics, nuclear-physics, particle-physics, condensed-matter, plasma-physics, acoustics, fluid-physics | 13 |
+| Mathematics | calculus, linear-algebra, statistics, probability, number-theory, topology, differential-equations, abstract-algebra, complex-analysis, real-analysis, discrete-mathematics, numerical-methods, graph-theory, optimization, mathematical-logic | 15 |
+| Chemistry | organic, inorganic, physical, analytical, biochemistry, polymer, electrochemistry, thermochemistry, spectroscopy, computational, green, medicinal | 12 |
+| Biology | molecular-biology, cell-biology, genetics, genomics, neuroscience, microbiology, immunology, ecology, evolutionary-biology, physiology, developmental-biology, marine-biology, bioinformatics, biochemistry-biology | 14 |
+| Computer Science | algorithms, data-structures, operating-systems, computer-architecture, compiler-design, computer-networks, distributed-systems, database-systems, computer-graphics, formal-methods | 10 |
+| Earth Sciences | geology, geophysics, meteorology, oceanography, climatology, seismology, volcanology, hydrology | 8 |
+| Space Sciences | astrophysics, cosmology, planetary-science, stellar-physics, black-holes, dark-matter, exoplanets, radio-astronomy | 8 |
+| Energy | solar, wind, battery-technology, nuclear, power-grid, energy-storage, hydrogen, fusion | 8 |
+| Robotics and Automation | kinematics, dynamics, control-theory, path-planning, computer-vision, ROS, industrial-automation, soft-robotics | 8 |
+| Interdisciplinary | quantum-computing, nanotechnology, biophysics, computational-biology, photonics, materials-informatics, synthetic-biology, systems-biology | 8 |
+| Electrical Engineering | circuit-analysis, electronics, signal-processing, control-systems, power-systems, embedded-systems, communications, digital-electronics, VLSI, electromagnetics | 10 |
+| Mechanical Engineering | statics, dynamics, mechanics-of-materials, fluid-mechanics, heat-transfer, thermodynamics, manufacturing, vibrations, CAD-design, machine-design | 10 |
+| Civil Engineering | structural, geotechnical, hydraulics, transportation, construction-management, concrete-design, surveying, environmental | 8 |
+| Chemical Engineering | reaction-engineering, separation-processes, process-design, process-control, heat-exchanger, mass-transfer, process-simulation, safety-engineering | 8 |
+| Aerospace Engineering | aerodynamics, propulsion, orbital-mechanics, astrodynamics, flight-mechanics, aircraft-structures, spacecraft-design | 7 |
+| Biomedical Engineering | biomechanics, medical-devices, biomedical-imaging, neural-engineering, tissue-engineering, clinical-engineering | 6 |
+| Environmental Engineering | air-quality, water-treatment, environmental-remediation, waste-management, renewable-energy, climate-engineering | 6 |
+| Materials Engineering | metals, ceramics, composites, polymers, nanomaterials, biomaterials, semiconductor-materials | 7 |
 
 ---
 
@@ -282,9 +227,9 @@ Computer Science (10) — Earth Sciences (8) — Space Sciences (8) — Energy (
 
 | Skill | Status | Description |
 |---|---|---|
-| deep-intel | Done | Context-aware exhaustive research — 8+ angle searches, full page fetch, strategic brief |
+| deep-intel | Done | Context-aware exhaustive research, 8+ angle searches, full page fetch, strategic brief |
 | openclaw-setup-expert | Coming | Full OpenClaw install, SOUL.md, HEARTBEAT.md, MEMORY.md, Telegram |
-| agent-trading-expert | Coming | Autonomous crypto/stock trading pipelines |
+| agent-trading-expert | Coming | Autonomous crypto and stock trading pipelines |
 | mcp-builder-expert | Coming | Build MCP servers for any API |
 | clawhub-publisher | Coming | Package and publish skills to ClawHub marketplace |
 | gumloop-automation | Coming | Gumloop pipeline design and Google Drive integration |
@@ -300,6 +245,9 @@ Computer Science (10) — Earth Sciences (8) — Space Sciences (8) — Energy (
 Clone everything
     git clone https://github.com/luokai0/ai-agent-skills-by-luo-kai.git
     cp -r ai-agent-skills-by-luo-kai/skills/* .agents/skills/
+    cp -r "ai-agent-skills-by-luo-kai/skills 0.1"/* .agents/skills/
+    cp -r "ai-agent-skills-by-luo-kai/skills 0.2"/* .agents/skills/
+    cp -r "ai-agent-skills-by-luo-kai/skills 0.3"/* .agents/skills/
 
 Git submodule
     git submodule add https://github.com/luokai0/ai-agent-skills-by-luo-kai.git .agents/skills-luo-kai
@@ -311,18 +259,16 @@ One collection only
 
 ## 📊 Progress Tracker
 
-| Collection | Done | Total | Percent |
-|---|---|---|---|
-| skills/ Coding | 100 | 100 | 100% |
-| skills 0.1/ Finance | 20 | 20 | 100% |
-| skills 0.2/ Physics | 13 | 13 | 100% |
-| skills 0.2/ Mathematics | 15 | 15 | 100% |
-| skills 0.2/ Chemistry | 12 | 12 | 100% |
-| skills 0.2/ Biology | 2 | 14 | 14% |
-| skills 0.2/ Engineering | 0 | 67 | 0% |
-| skills 0.2/ Other domains | 0 | 58 | 0% |
-| skills 0.3/ AI Agents | 1 | 10 | 10% |
-| **TOTAL** | **163** | **309** | **53%** |
+| Collection | Done | Status |
+|---|---|---|
+| skills/ Coding | 100 | ✅ Complete |
+| skills 0.1/ Finance | 20 | ✅ Complete |
+| skills 0.2/ Science and Engineering | 166 | ✅ Complete |
+| skills 0.3/ AI Agents | 1 of 10 | 🔄 In Progress |
+| skills 0.4/ Business | Coming | 🗓️ Planned |
+| skills 0.5/ Health | Coming | 🗓️ Planned |
+| skills 0.6/ Law | Coming | 🗓️ Planned |
+| **TOTAL** | **287** | |
 
 ---
 
