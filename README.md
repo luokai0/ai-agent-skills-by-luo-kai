@@ -3,7 +3,7 @@
 > The largest open-source skill library for Claude and AI agents.
 > Drop any skill into your agent and it instantly becomes a domain expert.
 
-[![Skills](https://img.shields.io/badge/Total_Skills-287-blue)](https://github.com/luokai0/ai-agent-skills-by-luo-kai)
+[![Skills](https://img.shields.io/badge/Total_Skills-296-blue)](https://github.com/luokai0/ai-agent-skills-by-luo-kai)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Contributors](https://img.shields.io/badge/Contributors-2-orange)](https://github.com/luokai0/ai-agent-skills-by-luo-kai/graphs/contributors)
 
