@@ -1,0 +1,34 @@
+---
+name: oc-icloud-caldav
+version: 1.0.0
+description: Direct iCloud Calendar integration via CalDAV protocol.
+author: luo-kai
+tags: [icloud-caldav, openclaw, community]
+source: https://clawskills.sh/skills/icloud-caldav
+---
+
+# Icloud Caldav
+
+## Overview
+Direct iCloud Calendar integration via CalDAV protocol.
+
+## Before Starting
+1. What specific task do you need this skill for?
+2. What inputs are available?
+3. What is the expected output format?
+
+## Usage
+Install via: `npx clawhub install icloud-caldav`
+Documentation: https://clawskills.sh/skills/icloud-caldav
+
+## Core Functionality
+Direct iCloud Calendar integration via CalDAV protocol.
+
+## Best Practices
+- Test in sandbox environment first
+- Check latest version before production use
+- Review source docs for advanced configuration
+
+## Related Skills
+- agent-installer
+- clawhub-publisher
