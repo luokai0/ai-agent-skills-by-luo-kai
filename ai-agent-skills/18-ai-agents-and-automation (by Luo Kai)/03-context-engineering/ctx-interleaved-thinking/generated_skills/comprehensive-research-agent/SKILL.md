@@ -1,4 +1,5 @@
 ---
+author: luo-kai
 name: comprehensive-research-agent
 description: "Ensure thorough validation, error recovery, and transparent reasoning in research tasks with multiple tool calls"
 ---
