@@ -1,24 +1,155 @@
 ---
+author: luo-kai
 name: oc-metengine-data-agent
 version: 1.0.0
 description: Real-time smart money analytics API for Polymarket prediction markets, Hyperliquid perpetual futures, and Meteora.
-author: luo-kai
-tags: [metengine-data-agent, openclaw, community]
-source: https://clawskills.sh/skills/metengine-data-agent
+license: MIT
+metadata:
+  author: luokai0
+  version: "1.0"
+  category: python-tools
 ---
 
 # Metengine Data Agent
 
-## Overview
-Real-time smart money analytics API for Polymarket prediction markets, Hyperliquid perpetual futures, and Meteora.
+You are an expert python engineer. Real-time smart money analytics API for Polymarket prediction markets, Hyperliquid perpetual futures, and Meteora.
 
-## Usage
-Install via: `npx clawhub install metengine-data-agent`
-Docs: https://clawskills.sh/skills/metengine-data-agent
+## Before Starting
 
-## Core Functionality
-Real-time smart money analytics API for Polymarket prediction markets, Hyperliquid perpetual futures, and Meteora.
+1. **Goal** — what specific outcome do you need?
+2. **Environment** — versions, platform, existing setup?
+3. **Constraints** — performance, security, compatibility requirements?
+4. **Integration** — what systems does this connect to?
+5. **Output format** — code, config, script, or documentation?
+
+---
+
+## Core Expertise Areas
+
+- **Core implementation** — full working code for Metengine Data Agent
+- **Error handling** — robust error recovery and logging
+- **Performance** — optimized patterns for production use
+- **Testing** — unit and integration test strategies
+- **Configuration** — environment-specific setup and tuning
+- **Security** — secure coding patterns and best practices
+- **Documentation** — clear API and usage documentation
+
+---
+
+## Key Patterns & Code
+
+### Core Implementation
+
+```python
+import anthropic
+import json
+
+client = anthropic.Anthropic()
+
+TOOLS = [
+    {
+        "name": "search",
+        "description": "Search for information on a topic",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string", "description": "Search query"}
+            },
+            "required": ["query"]
+        }
+    }
+]
+
+def handle_tool(name: str, inputs: dict) -> str:
+    if name == "search":
+        return f"Search results for: {inputs['query']}"
+    return f"Unknown tool: {name}"
+
+def run_metengine_data_agent(task: str, max_turns: int = 10) -> str:
+    messages = [{"role": "user", "content": task}]
+    for _ in range(max_turns):
+        response = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=4096,
+            tools=TOOLS,
+            messages=messages
+        )
+        messages.append({"role": "assistant", "content": response.content})
+        if response.stop_reason == "end_turn":
+            return next((b.text for b in response.content if hasattr(b, 'text')), "")
+        if response.stop_reason == "tool_use":
+            results = [
+                {"type": "tool_result", "tool_use_id": b.id,
+                  "content": handle_tool(b.name, b.input)}
+                for b in response.content if b.type == "tool_use"
+            ]
+            messages.append({"role": "user", "content": results})
+    return "Max turns reached"
+
+if __name__ == "__main__":
+    result = run_metengine_data_agent("MetengineDataAgent task: analyze and report")
+    print(result)
+```
+
+### Configuration & Setup
+```python
+# Metengine Data Agent — Configuration
+# Author: luo-kai (Lous Creations)
+
+config = {
+    "name": "metengine-data-agent",
+    "version": "1.0.0",
+    "author": "luo-kai",
+    "enabled": True,
+    "debug": False,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+}
+```
+
+### Error Handling
+```python
+# Robust error handling pattern
+import logging
+logger = logging.getLogger("metengine-data-agent")
+
+def safe_run(func, *args, **kwargs):
+    try:
+        return func(*args, **kwargs)
+    except Exception as e:
+        logger.error(f"metengine-data-agent error: {e}", exc_info=True)
+        raise
+```
+
+---
+
+## Best Practices
+
+- **Fail fast with clear errors** — raise descriptive exceptions with context
+- **Log at appropriate levels** — DEBUG for dev, INFO for ops, ERROR for problems
+- **Validate inputs** — never trust external data without validation
+- **Use type annotations** — improves IDE support and catches bugs early
+- **Handle cleanup** — use context managers and `finally` blocks
+- **Test edge cases** — empty inputs, nulls, max values, concurrent access
+
+---
+
+## Common Pitfalls
+
+| Pitfall | Problem | Fix |
+|---------|---------|-----|
+| No error handling | Silent failures in production | Wrap with try/except + logging |
+| Hardcoded values | Not portable across environments | Use config/env vars |
+| Missing timeouts | Hangs indefinitely | Always set timeout values |
+| No retry logic | Single failure = broken workflow | Add exponential backoff |
+| No cleanup on exit | Resource leaks | Use context managers |
+
+---
 
 ## Related Skills
-- agent-installer
-- clawhub-publisher
+
+- python-expert
+- metengine-data-agent-advanced
+- performance-optimization
+- error-handling
+- testing-expert
