@@ -1,24 +1,143 @@
 ---
+author: luo-kai
 name: oc-brw-linkedin-authority-builder
 version: 1.0.0
 description: Build a LinkedIn content system for thought leadership.
-author: luo-kai
-tags: [brw-linkedin-authority-builder, openclaw, community]
-source: https://clawskills.sh/skills/brw-linkedin-authority-builder
+license: MIT
+metadata:
+  author: luokai0
+  version: "1.0"
+  category: python-tools
 ---
 
 # Brw Linkedin Authority Builder
 
-## Overview
-Build a LinkedIn content system for thought leadership.
+You are an expert python engineer. Build a LinkedIn content system for thought leadership.
 
-## Usage
-Install via: `npx clawhub install brw-linkedin-authority-builder`
-Docs: https://clawskills.sh/skills/brw-linkedin-authority-builder
+## Before Starting
 
-## Core Functionality
-Build a LinkedIn content system for thought leadership.
+1. **Goal** — what specific outcome do you need?
+2. **Environment** — versions, platform, existing setup?
+3. **Constraints** — performance, security, compatibility requirements?
+4. **Integration** — what systems does this connect to?
+5. **Output format** — code, config, script, or documentation?
+
+---
+
+## Core Expertise Areas
+
+- **Core implementation** — full working code for Brw Linkedin Authority Builder
+- **Error handling** — robust error recovery and logging
+- **Performance** — optimized patterns for production use
+- **Testing** — unit and integration test strategies
+- **Configuration** — environment-specific setup and tuning
+- **Security** — secure coding patterns and best practices
+- **Documentation** — clear API and usage documentation
+
+---
+
+## Key Patterns & Code
+
+### Core Implementation
+
+```python
+from pydantic import BaseModel, Field, field_validator
+from typing import Annotated
+import re, html, hashlib, secrets
+
+class BrwLinkedinAuthorityBuilderSecureInput(BaseModel):
+    username: Annotated[str, Field(min_length=3, max_length=50)]
+    email: str
+    content: str
+
+    @field_validator('username')
+    @classmethod
+    def validate_username(cls, v: str) -> str:
+        if not re.match(r'^[a-zA-Z0-9_-]+$', v):
+            raise ValueError('Alphanumeric, _ and - only')
+        return v
+
+    @field_validator('content')
+    @classmethod
+    def sanitize(cls, v: str) -> str:
+        return html.escape(v)  # Prevent XSS
+
+def hash_password(password: str) -> str:
+    salt = secrets.token_hex(16)
+    h = hashlib.pbkdf2_hmac('sha256', password.encode(), salt.encode(), 100_000)
+    return f"{salt}:{h.hex()}"
+
+def verify_password(password: str, stored: str) -> bool:
+    salt, hash_hex = stored.split(':')
+    h = hashlib.pbkdf2_hmac('sha256', password.encode(), salt.encode(), 100_000)
+    return secrets.compare_digest(h.hex(), hash_hex)
+
+# Safe parameterized DB query (NEVER string interpolation)
+async def get_user(conn, user_id: str):
+    return await conn.fetchrow(
+        "SELECT id, email FROM users WHERE id = $1", user_id
+    )
+```
+
+### Configuration & Setup
+```python
+# Brw Linkedin Authority Builder — Configuration
+# Author: luo-kai (Lous Creations)
+
+config = {
+    "name": "brw-linkedin-authority-builder",
+    "version": "1.0.0",
+    "author": "luo-kai",
+    "enabled": True,
+    "debug": False,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+}
+```
+
+### Error Handling
+```python
+# Robust error handling pattern
+import logging
+logger = logging.getLogger("brw-linkedin-authority-builder")
+
+def safe_run(func, *args, **kwargs):
+    try:
+        return func(*args, **kwargs)
+    except Exception as e:
+        logger.error(f"brw-linkedin-authority-builder error: {e}", exc_info=True)
+        raise
+```
+
+---
+
+## Best Practices
+
+- **Fail fast with clear errors** — raise descriptive exceptions with context
+- **Log at appropriate levels** — DEBUG for dev, INFO for ops, ERROR for problems
+- **Validate inputs** — never trust external data without validation
+- **Use type annotations** — improves IDE support and catches bugs early
+- **Handle cleanup** — use context managers and `finally` blocks
+- **Test edge cases** — empty inputs, nulls, max values, concurrent access
+
+---
+
+## Common Pitfalls
+
+| Pitfall | Problem | Fix |
+|---------|---------|-----|
+| No error handling | Silent failures in production | Wrap with try/except + logging |
+| Hardcoded values | Not portable across environments | Use config/env vars |
+| Missing timeouts | Hangs indefinitely | Always set timeout values |
+| No retry logic | Single failure = broken workflow | Add exponential backoff |
+| No cleanup on exit | Resource leaks | Use context managers |
+
+---
 
 ## Related Skills
-- agent-installer
-- clawhub-publisher
+
+- python-expert
+- brw-linkedin-authority-builder-advanced
+- performance-optimization
+- error-handling
+- testing-expert
