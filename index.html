@@ -2,488 +2,688 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Agent Skills — by Luo Kai</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Agent Skills — Luo Kai</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
 <style>
 :root{
-  --bg:#0d1117;--surface:#161b22;--border:#30363d;--accent:#58a6ff;
-  --accent2:#3fb950;--text:#e6edf3;--muted:#8b949e;--warn:#f0883e;
-  --sidebar-w:280px;--header-h:56px;
-  --font-mono:'JetBrains Mono',Consolas,monospace;
+  --bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;
+  --accent:#58a6ff;--green:#3fb950;--orange:#f0883e;--purple:#bc8cff;
+  --text:#e6edf3;--text2:#c9d1d9;--muted:#8b949e;
+  --sw:280px;--hh:60px;
+  --font:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',Consolas,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh}
 
-/* ── HEADER ── */
+/* SCROLLBAR */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+/* HEADER */
 header{
-  position:fixed;top:0;left:0;right:0;height:var(--header-h);
-  background:var(--surface);border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:12px;padding:0 16px;z-index:100;
+  position:fixed;top:0;left:0;right:0;height:var(--hh);z-index:200;
+  background:rgba(13,17,23,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;padding:0 16px;gap:12px;
 }
-.logo{font-weight:700;font-size:16px;color:var(--accent);white-space:nowrap}
-.logo span{color:var(--muted);font-weight:400}
+.logo{
+  display:flex;align-items:center;gap:10px;text-decoration:none;
+  font-weight:700;font-size:15px;color:var(--text);white-space:nowrap;
+}
+.logo-icon{
+  width:30px;height:30px;border-radius:8px;
+  background:linear-gradient(135deg,#58a6ff,#bc8cff);
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+}
+.logo span{color:var(--muted);font-weight:400;font-size:13px}
+
 #search{
-  flex:1;max-width:480px;background:var(--bg);border:1px solid var(--border);
-  border-radius:8px;color:var(--text);padding:8px 14px;font-size:14px;outline:none;
-  transition:border-color .15s;
+  flex:1;max-width:500px;height:36px;padding:0 14px;
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:8px;color:var(--text);font-size:14px;outline:none;
+  transition:border-color .15s,box-shadow .15s;font-family:var(--font);
 }
-#search:focus{border-color:var(--accent)}
+#search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(88,166,255,.15)}
 #search::placeholder{color:var(--muted)}
-.header-right{display:flex;gap:8px;margin-left:auto}
+
+.hbtns{display:flex;gap:8px;margin-left:auto;align-items:center}
 .btn{
-  display:flex;align-items:center;gap:6px;padding:7px 14px;border-radius:8px;
-  border:1px solid var(--border);background:var(--surface);color:var(--text);
-  cursor:pointer;font-size:13px;font-weight:500;transition:all .15s;white-space:nowrap;
-  text-decoration:none;
+  display:inline-flex;align-items:center;gap:6px;padding:7px 14px;
+  border-radius:8px;border:1px solid var(--border);background:var(--surface2);
+  color:var(--text);font-size:13px;font-weight:500;cursor:pointer;
+  text-decoration:none;transition:all .15s;white-space:nowrap;font-family:var(--font);
 }
-.btn:hover{background:var(--border);border-color:var(--accent)}
-.btn-primary{background:var(--accent);border-color:var(--accent);color:#000}
-.btn-primary:hover{opacity:.9}
-#menu-btn{display:none}
+.btn:hover{background:var(--surface);border-color:var(--muted);color:var(--text)}
+.btn-dl{
+  background:linear-gradient(135deg,#238636,#2ea043);
+  border-color:#2ea043;color:#fff;
+}
+.btn-dl:hover{opacity:.9;color:#fff}
+.btn-gh{color:var(--muted)}
+svg{flex-shrink:0}
+#mob-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--text);padding:4px}
 
-/* ── LAYOUT ── */
-.layout{display:flex;margin-top:var(--header-h)}
-aside{
-  width:var(--sidebar-w);min-height:calc(100vh - var(--header-h));
-  position:sticky;top:var(--header-h);height:calc(100vh - var(--header-h));
-  overflow-y:auto;border-right:1px solid var(--border);background:var(--surface);
-  flex-shrink:0;transition:transform .25s;
-}
-aside::-webkit-scrollbar{width:4px}
-aside::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-main{flex:1;min-width:0;padding:24px;max-width:900px}
+/* LAYOUT */
+.layout{display:flex;padding-top:var(--hh)}
 
-/* ── SIDEBAR ── */
-.cat-group{border-bottom:1px solid var(--border)}
-.cat-header{
-  display:flex;align-items:center;gap:8px;padding:10px 16px;
-  cursor:pointer;font-size:13px;font-weight:600;color:var(--text);
-  user-select:none;transition:background .1s;
+/* SIDEBAR */
+nav{
+  width:var(--sw);min-height:calc(100vh - var(--hh));flex-shrink:0;
+  background:var(--surface);border-right:1px solid var(--border);
+  overflow-y:auto;position:sticky;top:var(--hh);height:calc(100vh - var(--hh));
+  transition:transform .25s ease;
 }
-.cat-header:hover{background:rgba(255,255,255,.04)}
-.cat-header .icon{font-size:15px;flex-shrink:0}
-.cat-header .name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.cat-header .count{
-  font-size:11px;color:var(--muted);background:rgba(255,255,255,.06);
-  padding:2px 7px;border-radius:10px;flex-shrink:0;
+.nav-top{padding:12px;border-bottom:1px solid var(--border)}
+.nav-stats{
+  display:flex;gap:8px;font-size:11px;color:var(--muted);
+  background:var(--surface2);border-radius:6px;padding:8px 10px;
 }
-.cat-header .arrow{color:var(--muted);transition:transform .2s;flex-shrink:0}
-.cat-group.open .arrow{transform:rotate(90deg)}
-.skill-list{display:none;padding:4px 0}
-.cat-group.open .skill-list{display:block}
-.skill-item{
-  display:block;padding:6px 16px 6px 36px;font-size:12.5px;color:var(--muted);
-  cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  transition:all .1s;
-}
-.skill-item:hover{color:var(--text);background:rgba(88,166,255,.08)}
-.skill-item.active{color:var(--accent);background:rgba(88,166,255,.12)}
+.nav-stat{display:flex;flex-direction:column;align-items:center;flex:1}
+.nav-stat b{font-size:14px;color:var(--accent);font-weight:700}
 
-/* ── MAIN CONTENT ── */
-.hero{text-align:center;padding:48px 24px 32px}
-.hero h1{font-size:32px;font-weight:700;margin-bottom:12px}
-.hero h1 span{color:var(--accent)}
-.hero p{color:var(--muted);font-size:16px;max-width:500px;margin:0 auto 24px}
-.stats{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin:16px 0 28px}
-.stat{text-align:center}
-.stat .val{font-size:28px;font-weight:700;color:var(--accent2)}
-.stat .lbl{font-size:12px;color:var(--muted)}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+/* CATEGORY GROUPS */
+.cg{border-bottom:1px solid rgba(48,54,61,.6)}
+.cg-head{
+  display:flex;align-items:center;gap:8px;padding:9px 12px;
+  cursor:pointer;user-select:none;transition:background .1s;
+}
+.cg-head:hover{background:rgba(255,255,255,.04)}
+.cg-icon{font-size:14px;width:20px;text-align:center;flex-shrink:0}
+.cg-name{flex:1;font-size:12.5px;font-weight:600;color:var(--text2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cg-cnt{
+  font-size:10px;background:rgba(255,255,255,.07);color:var(--muted);
+  padding:2px 6px;border-radius:10px;flex-shrink:0;
+}
+.cg-arr{color:var(--muted);font-size:11px;transition:transform .2s;flex-shrink:0}
+.cg.open .cg-arr{transform:rotate(90deg)}
+.cg-skills{display:none;padding:2px 0 6px}
+.cg.open .cg-skills{display:block}
 
-/* ── SKILL VIEW ── */
+.sk-item{
+  display:flex;align-items:center;gap:6px;
+  padding:5px 12px 5px 32px;cursor:pointer;
+  font-size:12px;color:var(--muted);transition:all .1s;
+}
+.sk-item:hover{background:rgba(88,166,255,.07);color:var(--text2)}
+.sk-item.active{background:rgba(88,166,255,.12);color:var(--accent)}
+.sk-dot{
+  width:5px;height:5px;border-radius:50%;flex-shrink:0;
+  background:rgba(255,255,255,.15);transition:background .1s;
+}
+.sk-item.active .sk-dot{background:var(--accent)}
+.sk-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* MAIN */
+main{flex:1;min-width:0;padding:0}
+.content{max-width:860px;padding:32px 28px}
+
+/* HOME */
+.hero{padding:48px 0 32px;text-align:center}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.25);
+  color:var(--accent);border-radius:20px;padding:4px 14px;font-size:12px;
+  font-weight:600;margin-bottom:20px;letter-spacing:.5px;
+}
+.hero h1{font-size:38px;font-weight:800;line-height:1.1;margin-bottom:14px;
+  background:linear-gradient(135deg,var(--text) 40%,var(--accent));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero p{color:var(--muted);font-size:16px;max-width:480px;margin:0 auto 28px;line-height:1.6}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.hero-btn{
+  padding:11px 22px;border-radius:10px;font-size:14px;font-weight:600;
+  cursor:pointer;text-decoration:none;transition:all .2s;font-family:var(--font);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.hero-btn-primary{
+  background:linear-gradient(135deg,#238636,#2ea043);
+  border:1px solid #2ea043;color:#fff;
+}
+.hero-btn-primary:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(46,160,67,.4)}
+.hero-btn-sec{
+  background:var(--surface2);border:1px solid var(--border);color:var(--text);
+}
+.hero-btn-sec:hover{border-color:var(--muted);transform:translateY(-1px)}
+
+/* STATS GRID */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px}
+.stat-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:18px 16px;text-align:center;
+}
+.stat-val{font-size:26px;font-weight:800;margin-bottom:4px}
+.stat-val.blue{color:var(--accent)}
+.stat-val.green{color:var(--green)}
+.stat-val.orange{color:var(--orange)}
+.stat-val.purple{color:var(--purple)}
+.stat-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+
+/* CATEGORY CARDS */
+.section-title{font-size:13px;font-weight:600;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.cat-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:14px 16px;cursor:pointer;transition:all .15s;
+}
+.cat-card:hover{border-color:var(--accent);background:rgba(88,166,255,.05);
+  transform:translateY(-1px);}
+.cat-card-icon{font-size:22px;margin-bottom:8px}
+.cat-card-name{font-size:13px;font-weight:600;color:var(--text2);margin-bottom:4px}
+.cat-card-cnt{font-size:11px;color:var(--muted)}
+
+/* SKILL VIEW */
 #skill-view{display:none}
-.skill-header{
-  display:flex;align-items:flex-start;gap:12px;padding-bottom:20px;
-  border-bottom:1px solid var(--border);margin-bottom:24px;
+.sk-header{
+  display:flex;align-items:flex-start;justify-content:space-between;
+  gap:16px;padding:24px 28px 20px;border-bottom:1px solid var(--border);
+  background:var(--surface);
 }
-.skill-title{font-size:22px;font-weight:700;flex:1}
-.skill-cat{
-  font-size:12px;color:var(--muted);background:rgba(255,255,255,.06);
-  padding:3px 10px;border-radius:12px;white-space:nowrap;margin-top:4px;
-}
-.copy-btn{padding:6px 14px;font-size:12px}
-.loading{text-align:center;padding:48px;color:var(--muted)}
-.loading::after{content:'';display:block;margin:16px auto;
-  width:32px;height:32px;border:3px solid var(--border);
-  border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.err{color:#f85149;padding:16px;background:rgba(248,81,73,.1);border-radius:8px}
+.sk-title-wrap{}
+.sk-breadcrumb{font-size:11px;color:var(--muted);margin-bottom:6px;
+  display:flex;align-items:center;gap:6px}
+.sk-breadcrumb span{color:var(--border)}
+.sk-title{font-size:22px;font-weight:700;text-transform:capitalize;line-height:1.3}
+.sk-actions{display:flex;gap:8px;flex-shrink:0;align-items:flex-start;margin-top:4px}
+.sk-body{padding:24px 28px}
 
-/* ── MARKDOWN STYLES ── */
-.md-body{line-height:1.7;font-size:15px}
-.md-body h1,.md-body h2,.md-body h3{
-  color:var(--text);margin:28px 0 12px;font-weight:600;
+/* FRONTMATTER */
+.fm{
+  display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px;
+  background:rgba(255,255,255,.03);border:1px solid var(--border);
+  border-radius:8px;margin-bottom:20px;
 }
-.md-body h1{font-size:22px;border-bottom:1px solid var(--border);padding-bottom:8px}
-.md-body h2{font-size:18px}
-.md-body h3{font-size:15px;color:var(--accent)}
-.md-body p{margin:12px 0;color:#c9d1d9}
-.md-body ul,.md-body ol{padding-left:24px;margin:8px 0}
-.md-body li{margin:4px 0;color:#c9d1d9}
-.md-body code{
-  font-family:var(--font-mono);font-size:13px;
-  background:rgba(255,255,255,.08);border-radius:4px;padding:2px 6px;color:#e3b341;
+.fm-tag{
+  font-size:11.5px;padding:3px 10px;border-radius:20px;
+  background:var(--surface2);border:1px solid var(--border);color:var(--muted);
 }
-.md-body pre{
-  background:#0d1117;border:1px solid var(--border);border-radius:8px;
-  padding:16px;overflow-x:auto;margin:16px 0;position:relative;
+.fm-tag b{color:var(--text);font-weight:500}
+
+/* MARKDOWN */
+.md{font-size:15px;line-height:1.75;color:var(--text2)}
+.md h1,.md h2,.md h3,.md h4{color:var(--text);font-weight:700;line-height:1.3}
+.md h1{font-size:24px;margin:32px 0 14px;padding-bottom:10px;
+  border-bottom:1px solid var(--border)}
+.md h2{font-size:18px;margin:28px 0 12px}
+.md h3{font-size:15px;margin:22px 0 10px;color:var(--accent)}
+.md h4{font-size:14px;margin:18px 0 8px;color:var(--orange)}
+.md p{margin:10px 0}
+.md ul,.md ol{padding-left:22px;margin:8px 0}
+.md li{margin:5px 0}
+.md a{color:var(--accent);text-decoration:none}
+.md a:hover{text-decoration:underline}
+.md strong{color:var(--text);font-weight:600}
+.md em{color:var(--muted)}
+.md code{
+  font-family:var(--mono);font-size:12.5px;
+  background:rgba(255,255,255,.07);border-radius:4px;
+  padding:2px 6px;color:#e3b341;
 }
-.md-body pre code{background:none;padding:0;color:#c9d1d9}
-.md-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
-.md-body th{background:rgba(255,255,255,.06);padding:10px 14px;
-  text-align:left;font-weight:600;border-bottom:1px solid var(--border)}
-.md-body td{padding:9px 14px;border-bottom:1px solid rgba(255,255,255,.06)}
-.md-body tr:hover td{background:rgba(255,255,255,.03)}
-.md-body strong{color:var(--text);font-weight:600}
-.md-body a{color:var(--accent);text-decoration:none}
-.md-body a:hover{text-decoration:underline}
-.md-body blockquote{
-  border-left:3px solid var(--accent);padding:8px 16px;
-  margin:12px 0;background:rgba(88,166,255,.06);border-radius:0 6px 6px 0;
-  color:var(--muted);
+.md pre{
+  background:#010409;border:1px solid var(--border);border-radius:10px;
+  margin:16px 0;overflow-x:auto;position:relative;
 }
-.md-body hr{border:none;border-top:1px solid var(--border);margin:24px 0}
-.code-block-wrap{position:relative}
+.md pre code{
+  display:block;padding:18px 18px 18px 16px;background:none;color:#c9d1d9;
+  font-size:13px;line-height:1.65;
+}
+.md table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.md th{
+  background:rgba(255,255,255,.06);padding:10px 14px;text-align:left;
+  font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px;
+  border-bottom:2px solid var(--border);color:var(--muted);
+}
+.md td{padding:9px 14px;border-bottom:1px solid rgba(48,54,61,.6)}
+.md tr:last-child td{border-bottom:none}
+.md tr:hover td{background:rgba(255,255,255,.025)}
+.md blockquote{
+  border-left:3px solid var(--accent);padding:10px 16px;
+  margin:14px 0;background:rgba(88,166,255,.06);border-radius:0 8px 8px 0;
+}
+.md hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+.md img{max-width:100%;border-radius:8px}
+
+/* CODE BLOCK WRAP */
+.cbw{position:relative}
 .copy-code{
-  position:absolute;top:8px;right:8px;padding:4px 10px;font-size:11px;
-  background:rgba(255,255,255,.08);border:1px solid var(--border);
-  border-radius:5px;cursor:pointer;color:var(--muted);transition:all .15s;
+  position:absolute;top:10px;right:10px;
+  padding:4px 10px;font-size:11px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  border-radius:5px;cursor:pointer;color:var(--muted);
+  transition:all .15s;font-family:var(--font);
 }
 .copy-code:hover{background:rgba(255,255,255,.15);color:var(--text)}
+.copy-code.ok{color:var(--green);border-color:var(--green)}
 
-/* ── SEARCH RESULTS ── */
-#search-results{display:none}
-.results-header{font-size:13px;color:var(--muted);margin-bottom:16px}
-.result-card{
+/* SEARCH RESULTS */
+#search-view{display:none;padding:24px 28px}
+.srh{font-size:13px;color:var(--muted);margin-bottom:16px;font-weight:500}
+.rc{
   background:var(--surface);border:1px solid var(--border);border-radius:10px;
-  padding:14px 18px;margin-bottom:10px;cursor:pointer;transition:all .15s;
+  padding:14px 18px;margin-bottom:8px;cursor:pointer;transition:all .15s;
 }
-.result-card:hover{border-color:var(--accent);background:rgba(88,166,255,.05)}
-.result-name{font-size:15px;font-weight:600;color:var(--text);margin-bottom:4px}
-.result-name mark{background:rgba(88,166,255,.25);color:var(--accent);border-radius:3px;padding:0 2px}
-.result-desc{font-size:13px;color:var(--muted);overflow:hidden;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.result-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
-.result-tag{
-  font-size:11px;padding:2px 8px;border-radius:10px;
-  background:rgba(255,255,255,.06);color:var(--muted);
+.rc:hover{border-color:var(--accent);background:rgba(88,166,255,.04)}
+.rc-name{font-size:15px;font-weight:600;margin-bottom:4px;text-transform:capitalize}
+.rc-name mark{background:rgba(88,166,255,.22);color:var(--accent);
+  border-radius:3px;padding:0 2px;font-style:normal}
+.rc-desc{font-size:12.5px;color:var(--muted);margin-bottom:6px;
+  overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.rc-meta{display:flex;gap:6px;flex-wrap:wrap}
+.rc-tag{font-size:11px;padding:2px 8px;border-radius:10px;
+  background:rgba(255,255,255,.06);color:var(--muted)}
+
+/* LOADING */
+.loading{
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:64px;color:var(--muted);gap:14px;
+}
+.spin{
+  width:28px;height:28px;border:2px solid var(--border);
+  border-top-color:var(--accent);border-radius:50%;
+  animation:spin .7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.err-box{
+  background:rgba(248,81,73,.08);border:1px solid rgba(248,81,73,.3);
+  border-radius:8px;padding:14px 18px;color:#f85149;font-size:14px;
 }
 
-/* ── FRONTMATTER BADGE ── */
-.fm-bar{
-  display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;
-  padding:12px 16px;background:rgba(255,255,255,.04);
-  border-radius:8px;border:1px solid var(--border);
+/* MOBILE */
+#mob-overlay{
+  display:none;position:fixed;inset:0;top:var(--hh);
+  background:rgba(0,0,0,.6);z-index:150;
 }
-.fm-item{font-size:12px;color:var(--muted)}
-.fm-item strong{color:var(--text);font-weight:500}
-
-/* ── MOBILE ── */
-@media(max-width:768px){
-  #menu-btn{display:flex}
-  aside{
-    position:fixed;top:var(--header-h);left:0;bottom:0;z-index:90;
-    transform:translateX(-100%);box-shadow:4px 0 24px rgba(0,0,0,.5);
+@media(max-width:820px){
+  #mob-toggle{display:flex}
+  nav{
+    position:fixed;top:var(--hh);left:0;bottom:0;z-index:160;
+    transform:translateX(-100%);box-shadow:8px 0 32px rgba(0,0,0,.5);
   }
-  aside.open{transform:none}
-  main{padding:16px}
+  nav.open{transform:none}
+  #mob-overlay.show{display:block}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:28px}
+  .content{padding:20px 16px}
+  .sk-header,.sk-body{padding-left:16px;padding-right:16px}
+  #search-view{padding:16px}
+  .hbtns .dl-label{display:none}
+}
+@media(max-width:480px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:24px}
-  .header-right .btn-label{display:none}
-  #search{max-width:200px}
-  .overlay{
-    display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);
-    z-index:80;top:var(--header-h);
-  }
-  .overlay.show{display:block}
+  #search{max-width:160px}
 }
 </style>
 </head>
 <body>
 
 <header>
-  <button class="btn" id="menu-btn" onclick="toggleSidebar()" title="Menu">☰</button>
-  <div class="logo">AI Skills <span>by Luo Kai</span></div>
-  <input type="search" id="search" placeholder="Search 4,146+ skills..." autocomplete="off">
-  <div class="header-right">
-    <a id="dl-btn" class="btn btn-primary" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/releases/latest/download/skills-bundle.zip" download>
-      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M7.47 10.78a.75.75 0 0 0 1.06 0l3.75-3.75a.75.75 0 0 0-1.06-1.06L8.75 8.44V1.75a.75.75 0 0 0-1.5 0v6.69L4.78 5.97a.75.75 0 0 0-1.06 1.06z"/><path d="M1.75 13.25a.75.75 0 0 0 0 1.5h12.5a.75.75 0 0 0 0-1.5z"/></svg>
-      <span class="btn-label">Download All</span>
+  <button id="mob-toggle" onclick="toggleNav()" aria-label="Menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+
+  <a href="." class="logo" onclick="showHome()">
+    <div class="logo-icon">🧠</div>
+    AI Skills <span>by Luo Kai</span>
+  </a>
+
+  <input id="search" type="search" placeholder="Search 4,000+ skills..." autocomplete="off" spellcheck="false">
+
+  <div class="hbtns">
+    <a id="dl-btn" class="btn btn-dl" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/releases/latest/download/skills-bundle.zip" download>
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M2.75 14a.75.75 0 0 1 0-1.5h10.5a.75.75 0 0 1 0 1.5ZM5.22 9.22a.75.75 0 0 0 1.06 1.06L7.25 9.31V5.75a.75.75 0 0 1 1.5 0v3.56l.97-.97a.75.75 0 1 0-1.06 1.06l-2.25 2.25Z"/>
+      </svg>
+      <span class="dl-label">Download All</span>
     </a>
-    <a class="btn" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai" target="_blank">
-      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-      <span class="btn-label">GitHub</span>
+    <a class="btn btn-gh" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai" target="_blank" rel="noopener" title="GitHub">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
     </a>
   </div>
 </header>
 
-<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+<div id="mob-overlay" onclick="toggleNav()"></div>
 
 <div class="layout">
-  <aside id="sidebar"></aside>
+  <nav id="nav"></nav>
+
   <main id="main">
+    <!-- HOME -->
     <div id="home-view">
-      <div class="hero">
-        <h1>AI Agent <span>Skills Hub</span></h1>
-        <p>The world's largest open collection of AI coding assistant skills — with real, working code examples</p>
-        <div class="stats">
-          <div class="stat"><div class="val" id="stat-total">—</div><div class="lbl">Skills</div></div>
-          <div class="stat"><div class="val">20</div><div class="lbl">Categories</div></div>
-          <div class="stat"><div class="val">100%</div><div class="lbl">Real Code</div></div>
-          <div class="stat"><div class="val">MIT</div><div class="lbl">License</div></div>
+      <div class="content">
+        <div class="hero">
+          <div class="hero-badge">⚡ 4,146+ Skills · Real Code · MIT License</div>
+          <h1>AI Agent Skills Hub</h1>
+          <p>Every skill has working code examples. Browse, search, and download for use in Claude Code, Claude.ai, and any AI coding assistant.</p>
+          <div class="hero-btns">
+            <a class="hero-btn hero-btn-primary" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/releases/latest/download/skills-bundle.zip" download>
+              ⬇ Download All Skills (.zip)
+            </a>
+            <a class="hero-btn hero-btn-sec" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai" target="_blank">
+              ★ GitHub Repository
+            </a>
+          </div>
+          <div class="stats" id="stats-grid">
+            <div class="stat-card"><div class="stat-val blue" id="s-total">—</div><div class="stat-lbl">Total Skills</div></div>
+            <div class="stat-card"><div class="stat-val green">20</div><div class="stat-lbl">Domains</div></div>
+            <div class="stat-card"><div class="stat-val orange">100%</div><div class="stat-lbl">Real Code</div></div>
+            <div class="stat-card"><div class="stat-val purple">MIT</div><div class="stat-lbl">License</div></div>
+          </div>
         </div>
-        <div class="hero-btns">
-          <a class="btn btn-primary" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/releases/latest/download/skills-bundle.zip">
-            ⬇️ Download All Skills (ZIP)
-          </a>
-          <a class="btn" href="https://github.com/luokai0/ai-agent-skills-by-luo-kai">
-            ⭐ Star on GitHub
-          </a>
-        </div>
-        <p style="font-size:12px;color:var(--muted);margin-top:16px">by <strong style="color:var(--text)">Luo Kai</strong> — Lous Creations · MIT License</p>
+        <div class="section-title">Browse by Domain</div>
+        <div class="cat-grid" id="cat-grid"></div>
       </div>
     </div>
-    <div id="search-results"></div>
-    <div id="skill-view"></div>
+
+    <!-- SEARCH -->
+    <div id="search-view">
+      <div class="srh" id="srh-header"></div>
+      <div id="srh-results"></div>
+    </div>
+
+    <!-- SKILL -->
+    <div id="skill-view">
+      <div class="sk-header">
+        <div class="sk-title-wrap">
+          <div class="sk-breadcrumb" id="sk-breadcrumb"></div>
+          <div class="sk-title" id="sk-title"></div>
+        </div>
+        <div class="sk-actions">
+          <button class="btn" id="copy-path-btn" onclick="copyPath()">📋 Copy Path</button>
+        </div>
+      </div>
+      <div class="sk-body">
+        <div id="sk-fm"></div>
+        <div class="md" id="sk-content"></div>
+      </div>
+    </div>
   </main>
 </div>
 
 <script>
+'use strict';
+// ── CONFIG ──
+const RAW = 'https://raw.githubusercontent.com/luokai0/ai-agent-skills-by-luo-kai/main/';
+
 // ── STATE ──
-let INDEX = null;
-let activeSkill = null;
+let IDX = null;
+let activePath = null;
+const mdCache = {};
 
 // ── INIT ──
-async function init() {
+(async () => {
   try {
     const r = await fetch('skills-index.json');
-    INDEX = await r.json();
-    document.getElementById('stat-total').textContent = INDEX.total.toLocaleString() + '+';
-    buildSidebar();
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    IDX = await r.json();
+    document.getElementById('s-total').textContent = IDX.total.toLocaleString() + '+';
+    buildNav();
+    buildCatGrid();
   } catch(e) {
-    // Fallback message
-    document.getElementById('home-view').innerHTML +=
-      '<p style="color:var(--warn);margin-top:16px">⚠️ Run locally or via GitHub Pages to load skills index.</p>';
+    document.querySelector('.hero p').innerHTML =
+      '⚠️ <strong>Enable GitHub Pages</strong> in repo Settings → Pages → Source: main branch / root.<br>' +
+      'Or open locally with a dev server.';
   }
-}
+})();
 
-// ── SIDEBAR ──
-function buildSidebar(filterFn) {
-  if (!INDEX) return;
-  const skills = filterFn ? INDEX.skills.filter(filterFn) : INDEX.skills;
+// ── NAV ──
+function buildNav(filter) {
+  if (!IDX) return;
+  const list = filter ? IDX.skills.filter(filter) : IDX.skills;
 
-  // Group by category
+  // Group by category num
   const groups = {};
-  for (const s of skills) {
-    const k = s.c;
-    if (!groups[k]) groups[k] = [];
-    groups[k].push(s);
+  for (const s of list) {
+    (groups[s.c] = groups[s.c] || []).push(s);
   }
 
-  const sidebar = document.getElementById('sidebar');
-  sidebar.innerHTML = '';
-
-  const sortedKeys = Object.keys(groups).sort((a, b) => a.localeCompare(b));
-  for (const k of sortedKeys) {
-    const icon = INDEX.icons[k] || '📄';
-    const name = INDEX.cats[k] || `Category ${k}`;
-    const items = groups[k];
-
-    const div = document.createElement('div');
-    div.className = 'cat-group';
-    div.innerHTML = `
-      <div class="cat-header" onclick="toggleCat(this)">
-        <span class="icon">${icon}</span>
-        <span class="name">${name}</span>
-        <span class="count">${items.length}</span>
-        <span class="arrow">›</span>
+  const nav = document.getElementById('nav');
+  nav.innerHTML = `
+    <div class="nav-top">
+      <div class="nav-stats">
+        <div class="nav-stat"><b>${IDX.total.toLocaleString()}</b>skills</div>
+        <div class="nav-stat"><b>20</b>domains</div>
+        <div class="nav-stat"><b>MIT</b>license</div>
       </div>
-      <div class="skill-list">
-        ${items.map(s => `
-          <div class="skill-item" data-path="${s.p}" onclick="loadSkill('${s.p}','${escHtml(s.n)}','${escHtml(name)}','${icon}')">
-            ${escHtml(s.n)}
-          </div>`).join('')}
+    </div>`;
+
+  const sorted = Object.keys(groups).sort();
+  for (const k of sorted) {
+    const icon = IDX.icons[k] || '📄';
+    const name = IDX.cats[k] || `Category ${k}`;
+    const items = groups[k];
+    const div = document.createElement('div');
+    div.className = 'cg';
+    div.dataset.cat = k;
+    div.innerHTML = `
+      <div class="cg-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="cg-icon">${icon}</span>
+        <span class="cg-name">${esc(name)}</span>
+        <span class="cg-cnt">${items.length}</span>
+        <span class="cg-arr">›</span>
+      </div>
+      <div class="cg-skills">${items.map(s => `
+        <div class="sk-item" data-p="${esc(s.p)}"
+          onclick="openSkill('${esc(s.p)}','${esc(s.n)}','${esc(name)}','${icon}')">
+          <div class="sk-dot"></div>
+          <div class="sk-name">${esc(s.n.replace(/-/g,' '))}</div>
+        </div>`).join('')}
       </div>`;
-    sidebar.appendChild(div);
+    nav.appendChild(div);
   }
 }
 
-function toggleCat(header) {
-  header.parentElement.classList.toggle('open');
+// ── CAT GRID (home) ──
+function buildCatGrid() {
+  if (!IDX) return;
+  const counts = {};
+  for (const s of IDX.skills) counts[s.c] = (counts[s.c] || 0) + 1;
+  const grid = document.getElementById('cat-grid');
+  grid.innerHTML = '';
+  Object.keys(counts).sort().forEach(k => {
+    const card = document.createElement('div');
+    card.className = 'cat-card';
+    card.innerHTML = `
+      <div class="cat-card-icon">${IDX.icons[k] || '📄'}</div>
+      <div class="cat-card-name">${esc(IDX.cats[k] || k)}</div>
+      <div class="cat-card-cnt">${counts[k].toLocaleString()} skills</div>`;
+    card.onclick = () => expandCat(k);
+    grid.appendChild(card);
+  });
 }
 
-function escHtml(s) {
-  return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function expandCat(catNum) {
+  // Open that category in nav and scroll to it
+  const cg = document.querySelector(`.cg[data-cat="${catNum}"]`);
+  if (cg) {
+    cg.classList.add('open');
+    cg.scrollIntoView({behavior:'smooth',block:'start'});
+    showView('home');
+  }
 }
 
-// ── LOAD SKILL ──
-const RAW = 'https://raw.githubusercontent.com/luokai0/ai-agent-skills-by-luo-kai/main/';
-const cache = {};
+// ── SKILL LOADING ──
+async function openSkill(encodedPath, name, cat, icon) {
+  // Close mobile nav
+  document.getElementById('nav').classList.remove('open');
+  document.getElementById('mob-overlay').classList.remove('show');
 
-async function loadSkill(path, name, cat, icon) {
-  // Update active in sidebar
-  document.querySelectorAll('.skill-item').forEach(el => el.classList.remove('active'));
-  const el = document.querySelector(`.skill-item[data-path="${path}"]`);
+  // Mark active
+  document.querySelectorAll('.sk-item').forEach(el => el.classList.remove('active'));
+  const el = document.querySelector(`.sk-item[data-p="${encodedPath}"]`);
   if (el) {
     el.classList.add('active');
-    el.scrollIntoView({block:'nearest'});
+    el.scrollIntoView({block:'nearest',behavior:'smooth'});
   }
 
+  activePath = encodedPath;
   showView('skill');
-  activeSkill = {path, name, cat, icon};
 
-  const view = document.getElementById('skill-view');
-  view.innerHTML = `<div class="loading">Loading ${escHtml(name)}</div>`;
+  document.getElementById('sk-breadcrumb').innerHTML =
+    `<span>${icon}</span><span>${esc(cat)}</span>`;
+  document.getElementById('sk-title').textContent = name.replace(/-/g,' ');
+  document.getElementById('sk-content').innerHTML = '';
+  document.getElementById('sk-fm').innerHTML = '';
+  document.getElementById('sk-content').innerHTML =
+    '<div class="loading"><div class="spin"></div>Loading...</div>';
 
-  let md = cache[path];
+  let md = mdCache[encodedPath];
   if (!md) {
     try {
-      const url = RAW + path;
+      // encodedPath is already percent-encoded
+      const url = RAW + encodedPath;
       const r = await fetch(url);
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      if (!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
       md = await r.text();
-      cache[path] = md;
+      mdCache[encodedPath] = md;
     } catch(e) {
-      view.innerHTML = `<div class="err">Could not load skill: ${escHtml(e.message)}<br><small>${RAW}${path}</small></div>`;
+      document.getElementById('sk-content').innerHTML =
+        `<div class="err-box">Failed to load: ${esc(e.message)}</div>`;
       return;
     }
   }
 
-  // Strip + parse frontmatter
-  const {fm, body} = parseFrontmatter(md);
-  const html = marked.parse(body);
-
-  view.innerHTML = `
-    <div class="skill-header">
-      <div>
-        <div class="skill-title">${icon} ${escHtml(name.replace(/-/g,' '))}</div>
-        <div class="skill-cat">${escHtml(cat)}</div>
-      </div>
-      <button class="btn copy-btn" onclick="copyPath('${escHtml(path)}')">📋 Copy Path</button>
-    </div>
-    ${renderFM(fm)}
-    <div class="md-body">${addCopyButtons(html)}</div>`;
+  const {fm, body} = parseFM(md);
+  document.getElementById('sk-fm').innerHTML = renderFM(fm);
+  document.getElementById('sk-content').innerHTML = addCopyBtns(marked.parse(body));
 }
 
-function parseFrontmatter(md) {
-  const m = md.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
-  if (!m) return {fm:{}, body: md};
+// ── FRONTMATTER ──
+function parseFM(md) {
+  const m = md.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+  if (!m) return {fm:{}, body:md};
   const fm = {};
   for (const line of m[1].split('\n')) {
-    const sep = line.indexOf(':');
-    if (sep < 0) continue;
-    const k = line.slice(0,sep).trim();
-    const v = line.slice(sep+1).trim().replace(/^["']|["']$/g,'');
-    if (k && v && !v.startsWith('{') && !v.startsWith('[')) fm[k] = v;
+    const i = line.indexOf(':');
+    if (i < 0) continue;
+    const k = line.slice(0,i).trim(), v = line.slice(i+1).trim().replace(/^['"]|['"]$/g,'');
+    if (k && v && v[0] !== '{' && v[0] !== '[') fm[k] = v;
   }
   return {fm, body: m[2]};
 }
-
 function renderFM(fm) {
-  const show = ['author','version','description','license'].filter(k => fm[k]);
-  if (!show.length) return '';
-  return `<div class="fm-bar">${show.map(k =>
-    `<div class="fm-item"><strong>${k}:</strong> ${escHtml(fm[k])}</div>`
-  ).join('')}</div>`;
+  const keys = ['author','version','license','description'].filter(k => fm[k]);
+  if (!keys.length) return '';
+  return '<div class="fm">' + keys.map(k =>
+    `<div class="fm-tag"><b>${esc(k)}</b>&nbsp;${esc(fm[k])}</div>`
+  ).join('') + '</div>';
 }
 
-function addCopyButtons(html) {
-  return html.replace(/<pre><code/g,
-    '<div class="code-block-wrap"><button class="copy-code" onclick="copyCode(this)">Copy</button><pre><code')
+// ── CODE COPY BUTTONS ──
+function addCopyBtns(html) {
+  return html
+    .replace(/<pre><code/g, '<div class="cbw"><button class="copy-code" onclick="cpCode(this)">Copy</button><pre><code')
     .replace(/<\/code><\/pre>/g, '</code></pre></div>');
 }
-
-function copyCode(btn) {
-  const code = btn.nextElementSibling.querySelector('code').innerText;
+function cpCode(btn) {
+  const code = btn.parentElement.querySelector('code').innerText;
   navigator.clipboard.writeText(code).then(() => {
-    btn.textContent = '✓ Copied';
-    setTimeout(() => btn.textContent = 'Copy', 2000);
-  });
+    btn.textContent = '✓ Copied'; btn.classList.add('ok');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('ok'); }, 1800);
+  }).catch(() => {});
 }
 
-function copyPath(path) {
-  navigator.clipboard.writeText(path).then(() => {
-    const btn = document.querySelector('.copy-btn');
-    btn.textContent = '✓ Copied!';
-    setTimeout(() => btn.textContent = '📋 Copy Path', 2000);
+// ── COPY PATH ──
+let currentPath = '';
+function copyPath() {
+  if (!activePath) return;
+  const decoded = decodeURIComponent(activePath);
+  navigator.clipboard.writeText(decoded).then(() => {
+    const b = document.getElementById('copy-path-btn');
+    b.textContent = '✓ Copied';
+    setTimeout(() => b.textContent = '📋 Copy Path', 1800);
   });
 }
 
 // ── SEARCH ──
-let searchTimeout;
+let searchTmr;
 document.getElementById('search').addEventListener('input', function() {
-  clearTimeout(searchTimeout);
+  clearTimeout(searchTmr);
   const q = this.value.trim();
   if (!q) { resetSearch(); return; }
-  searchTimeout = setTimeout(() => doSearch(q), 200);
+  searchTmr = setTimeout(() => doSearch(q), 180);
 });
-
-document.getElementById('search').addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { this.value = ''; resetSearch(); }
+document.getElementById('search').addEventListener('keydown', e => {
+  if (e.key === 'Escape') { e.target.value = ''; resetSearch(); }
 });
 
 function doSearch(q) {
-  if (!INDEX) return;
+  if (!IDX) return;
   const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
-  const results = INDEX.skills.filter(s => {
-    const hay = (s.n + ' ' + s.d + ' ' + INDEX.cats[s.c]).toLowerCase();
+  const hits = IDX.skills.filter(s => {
+    const hay = `${s.n} ${s.d} ${IDX.cats[s.c] || ''}`.toLowerCase();
     return terms.every(t => hay.includes(t));
-  }).slice(0, 60);
+  }).slice(0, 80);
 
   showView('search');
-  buildSidebar(s => {
-    const hay = (s.n + ' ' + s.d + ' ' + INDEX.cats[s.c]).toLowerCase();
+  buildNav(s => {
+    const hay = `${s.n} ${s.d} ${IDX.cats[s.c] || ''}`.toLowerCase();
     return terms.every(t => hay.includes(t));
   });
 
-  const div = document.getElementById('search-results');
-  if (!results.length) {
-    div.innerHTML = `<div class="results-header">No results for "${escHtml(q)}"</div>`;
+  const header = document.getElementById('srh-header');
+  const results = document.getElementById('srh-results');
+
+  if (!hits.length) {
+    header.textContent = `No results for "${q}"`;
+    results.innerHTML = '';
     return;
   }
+  header.textContent = `${hits.length}${hits.length === 80 ? '+' : ''} results for "${q}"`;
 
-  const hl = t => terms.reduce((s, term) =>
-    s.replace(new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'),
-      '<mark>$1</mark>'), escHtml(t));
+  const hl = str => terms.reduce((s, t) =>
+    s.replace(new RegExp(`(${t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'),
+      '<mark>$1</mark>'), esc(str));
 
-  div.innerHTML = `<div class="results-header">${results.length} results for "${escHtml(q)}"</div>` +
-    results.map(s => {
-      const icon = INDEX.icons[s.c] || '📄';
-      const cat = INDEX.cats[s.c] || '';
-      return `<div class="result-card" onclick="loadSkill('${s.p}','${escHtml(s.n)}','${escHtml(cat)}','${icon}')">
-        <div class="result-name">${hl(s.n.replace(/-/g,' '))}</div>
-        ${s.d ? `<div class="result-desc">${hl(s.d)}</div>` : ''}
-        <div class="result-meta">
-          <span class="result-tag">${icon} ${escHtml(cat)}</span>
-        </div>
-      </div>`;
-    }).join('');
+  results.innerHTML = hits.map(s => {
+    const icon = IDX.icons[s.c] || '📄';
+    const cat = IDX.cats[s.c] || '';
+    return `<div class="rc" onclick="openSkill('${esc(s.p)}','${esc(s.n)}','${esc(cat)}','${icon}')">
+      <div class="rc-name">${hl(s.n.replace(/-/g,' '))}</div>
+      ${s.d ? `<div class="rc-desc">${hl(s.d)}</div>` : ''}
+      <div class="rc-meta"><span class="rc-tag">${icon} ${esc(cat)}</span></div>
+    </div>`;
+  }).join('');
 }
 
-function resetSearch() {
-  showView('home');
-  buildSidebar();
-}
+function resetSearch() { showView('home'); buildNav(); }
 
 // ── VIEWS ──
-function showView(view) {
-  document.getElementById('home-view').style.display = view === 'home' ? '' : 'none';
-  document.getElementById('search-results').style.display = view === 'search' ? '' : 'none';
-  document.getElementById('skill-view').style.display = view === 'skill' ? '' : 'none';
+function showView(v) {
+  document.getElementById('home-view').style.display   = v === 'home'   ? '' : 'none';
+  document.getElementById('search-view').style.display = v === 'search' ? '' : 'none';
+  document.getElementById('skill-view').style.display  = v === 'skill'  ? '' : 'none';
 }
 
-// ── MOBILE SIDEBAR ──
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('overlay').classList.toggle('show');
+function showHome() {
+  document.getElementById('search').value = '';
+  showView('home');
+  buildNav();
+  return false;
 }
 
-// ── MARKED CONFIG ──
-marked.setOptions({gfm: true, breaks: false});
+// ── MOBILE NAV ──
+function toggleNav() {
+  document.getElementById('nav').classList.toggle('open');
+  document.getElementById('mob-overlay').classList.toggle('show');
+}
 
-// ── START ──
-init();
+// ── UTIL ──
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── MARKED ──
+marked.setOptions({gfm:true, breaks:false});
 </script>
 </body>
 </html>

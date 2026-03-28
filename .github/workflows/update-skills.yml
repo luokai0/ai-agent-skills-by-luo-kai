@@ -5,11 +5,10 @@ on:
     branches: [main]
     paths:
       - 'ai-agent-skills/**'
-      - 'skills-index.json'
       - '.github/workflows/update-skills.yml'
   schedule:
-    - cron: '0 6 * * 1'   # Every Monday 06:00 UTC
-  workflow_dispatch:        # Manual trigger
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,25 +17,22 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Generate skills-index.json
+      - name: Generate skills-index.json (URL-encoded paths)
         run: |
-          python3 << 'SCRIPT'
+          python3 << 'PYEOF'
           import os, re, json
+          from urllib.parse import quote
 
           BASE = "ai-agent-skills"
-
           ICONS = {
             "01":"💻","02":"🎨","03":"⚙️","04":"🗄️","05":"☁️",
             "06":"🔐","07":"🧪","08":"🏗️","09":"🤖","10":"📱",
@@ -53,100 +49,83 @@ jobs:
 
           skills = []
           for root, dirs, files in os.walk(BASE):
-              dirs[:] = sorted([d for d in dirs if d != ".git"])
+              dirs[:] = sorted(d for d in dirs if d != ".git")
               if "SKILL.md" not in files:
                   continue
-              path = os.path.join(root, "SKILL.md").replace("\\", "/")
+              raw_path = os.path.join(root, "SKILL.md").replace("\\", "/")
+              # URL-encode each segment
+              encoded_path = "/".join(quote(p) for p in raw_path.split("/"))
               parts = root.replace("\\", "/").split("/")
-              cat_raw = parts[1] if len(parts) > 1 else ""
+              num = (parts[1].split("-")[0] if len(parts) > 1 else "00")
               skill_name = parts[-1]
-              num = cat_raw.split("-")[0] if cat_raw else "00"
               try:
-                  with open(path, "r", errors="replace") as f:
-                      content = f.read(500)
+                  with open(raw_path, "r", errors="replace") as f:
+                      content = f.read(400)
               except Exception:
                   continue
               desc = ""
-              dm = re.search(r"^description:\s*(.+)$", content, re.MULTILINE)
-              if dm:
-                  desc = dm.group(1).strip()[:80]
-              skills.append({"n": skill_name, "p": path, "c": num, "d": desc})
+              m = re.search(r"^description:\s*(.+)$", content, re.MULTILINE)
+              if m:
+                  desc = m.group(1).strip()[:80]
+              skills.append({"n": skill_name, "p": encoded_path, "c": num, "d": desc})
 
-          result = {"total": len(skills), "cats": CATS, "icons": ICONS, "skills": skills}
+          out = {"total": len(skills), "cats": CATS, "icons": ICONS, "skills": skills}
           with open("skills-index.json", "w") as f:
-              json.dump(result, f, separators=(",", ":"))
-
-          print(f"skills-index.json: {len(skills)} skills | {os.path.getsize('skills-index.json')//1024}KB")
-          SCRIPT
+              json.dump(out, f, separators=(",", ":"))
+          print(f"Generated: {len(skills)} skills | {os.path.getsize('skills-index.json')//1024}KB")
+          PYEOF
 
       - name: Bundle all skills into ZIP
         run: |
-          python3 << 'SCRIPT'
+          python3 -c "
           import os, zipfile
-
-          BASE = "ai-agent-skills"
-          output = "skills-bundle.zip"
           count = 0
-
-          with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
-              for root, dirs, files in os.walk(BASE):
-                  dirs[:] = [d for d in dirs if d != ".git"]
-                  for fname in files:
-                      fpath = os.path.join(root, fname)
-                      arcname = fpath.replace("\\", "/")
-                      zf.write(fpath, arcname)
-                      if fname == "SKILL.md":
-                          count += 1
-
-          size_mb = os.path.getsize(output) / (1024 * 1024)
-          print(f"skills-bundle.zip: {count} skills | {size_mb:.1f}MB")
-          SCRIPT
+          with zipfile.ZipFile('skills-bundle.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as zf:
+              for root,dirs,files in os.walk('ai-agent-skills'):
+                  dirs[:] = [d for d in dirs if d != '.git']
+                  for f in files:
+                      fp = os.path.join(root,f)
+                      zf.write(fp, fp.replace('\\\\','/'))
+                      if f == 'SKILL.md': count += 1
+          size = os.path.getsize('skills-bundle.zip')/1024/1024
+          print(f'Bundle: {count} skills | {size:.1f}MB')
+          "
 
       - name: Commit updated index
         run: |
           git config user.name "luo-kai[bot]"
           git config user.email "luokai0@users.noreply.github.com"
           git add skills-index.json
-          # Only commit if changed
           if git diff --staged --quiet; then
-            echo "skills-index.json unchanged, skipping commit"
+            echo "Index unchanged"
           else
-            TOTAL=$(python3 -c "import json; d=json.load(open('skills-index.json')); print(d['total'])")
-            git commit -m "Auto-update: skills-index.json (${TOTAL} skills) [skip ci]"
+            TOTAL=$(python3 -c "import json;print(json.load(open('skills-index.json'))['total'])")
+            git commit -m "Auto-sync: skills-index.json (${TOTAL} skills) [skip ci]"
             git push
           fi
 
-      - name: Create/Update GitHub Release with ZIP
+      - name: Create/Update GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: "Latest Skills Bundle"
+          name: Latest Skills Bundle
           body: |
             ## AI Agent Skills Bundle — by Luo Kai (Lous Creations)
-
-            Auto-generated on every push. Contains all skill files from this repository.
-
-            **Download and use:**
+            Auto-generated on every push. Contains all skill files.
             ```bash
             curl -L https://github.com/luokai0/ai-agent-skills-by-luo-kai/releases/latest/download/skills-bundle.zip -o skills.zip
             unzip skills.zip
             ```
-
-            See [README](https://github.com/luokai0/ai-agent-skills-by-luo-kai#readme) for usage.
           files: skills-bundle.zip
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Summary
+      - name: Job Summary
         run: |
-          TOTAL=$(python3 -c "import json; d=json.load(open('skills-index.json')); print(d['total'])")
-          ZIP_MB=$(python3 -c "import os; print(f'{os.path.getsize(\"skills-bundle.zip\")/1024/1024:.1f}')")
-          echo "## ✅ Skills Update Complete" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
-          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Total Skills | **${TOTAL}** |" >> $GITHUB_STEP_SUMMARY
-          echo "| Bundle Size | **${ZIP_MB} MB** |" >> $GITHUB_STEP_SUMMARY
-          echo "| Index Updated | **Yes** |" >> $GITHUB_STEP_SUMMARY
-          echo "| Release Updated | **Yes** |" >> $GITHUB_STEP_SUMMARY
+          T=$(python3 -c "import json;print(json.load(open('skills-index.json'))['total'])")
+          Z=$(python3 -c "import os;print(f'{os.path.getsize(chr(115)+chr(107)+chr(105)+chr(108)+chr(108)+chr(115)+chr(45)+chr(98)+chr(117)+chr(110)+chr(100)+chr(108)+chr(101)+chr(46)+chr(122)+chr(105)+chr(112))/1024/1024:.1f}')")
+          echo "## ✅ Auto-sync complete" >> $GITHUB_STEP_SUMMARY
+          echo "| Skills | Bundle | Pages |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| **${T}** | **${Z}MB** | **Live** |" >> $GITHUB_STEP_SUMMARY
