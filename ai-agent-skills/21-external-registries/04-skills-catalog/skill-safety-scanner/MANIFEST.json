@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agentskills.io/schemas/manifest.v1.json",
+  "manifestVersion": "1.0",
+  "generatedAt": "2026-01-03T03:32:17.221541Z",
+  "generator": "skill-manifest-generator/1.0.0",
+  "skill": {
+    "name": "skill-safety-scanner",
+    "version": "1.0.0"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "755a4170753b3f4301213a083dbea394bf5d6fdb4093ec740ea0e93f8ab52ed4"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size": 2365,
+      "sha256": "8bc4b067e561793b149fa365a3f28f1d3b2197b68b258fcd0cda6fdb3f879b31",
+      "type": "manifest"
+    },
+    {
+      "path": "scripts/safety_scan.py",
+      "size": 30740,
+      "sha256": "f1569b792ad748f492f3646ec426b56cbb1ff6c88f43b8b412377a70ed9791fd",
+      "type": "script"
+    }
+  ],
+  "externalReferences": [
+    {
+      "url": "https://hooks\\.slack\\.com/services/T[A-Z0-9",
+      "file": "scripts/safety_scan.py",
+      "line": 101,
+      "type": "unknown"
+    }
+  ],
+  "structure": {
+    "maxDepth": 1,
+    "totalFiles": 2,
+    "totalBytes": 33105,
+    "folders": [
+      "scripts"
+    ]
+  },
+  "license": {
+    "spdxId": "MIT"
+  }
+}

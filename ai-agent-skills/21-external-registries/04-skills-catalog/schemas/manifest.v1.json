@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://skillscatalog.ai/schemas/manifest.v1.json",
+  "title": "Skill Manifest",
+  "description": "Schema for MANIFEST.json files in the SkillsCatalog registry",
+  "type": "object",
+  "required": ["$schema", "manifestVersion", "generatedAt", "generator", "skill", "integrity", "files", "structure"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to this schema",
+      "const": "https://agentskills.io/schemas/manifest.v1.json"
+    },
+    "manifestVersion": {
+      "type": "string",
+      "description": "Version of the manifest format",
+      "enum": ["1.0"]
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when manifest was generated"
+    },
+    "generator": {
+      "type": "string",
+      "description": "Tool and version that generated this manifest",
+      "pattern": "^[a-z0-9-]+/[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "skill": {
+      "type": "object",
+      "description": "Skill identification",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Skill name (lowercase, hyphen-separated)",
+          "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+          "minLength": 2,
+          "maxLength": 64
+        },
+        "version": {
+          "type": "string",
+          "description": "Semantic version",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-zA-Z0-9.]+)?$"
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "description": "Overall integrity information",
+      "required": ["algorithm", "hash"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "description": "Hash algorithm used",
+          "enum": ["sha256"]
+        },
+        "hash": {
+          "type": "string",
+          "description": "Hash of all file hashes concatenated",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "description": "List of files in the skill",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path", "size", "sha256", "type"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "Relative path from skill root"
+          },
+          "size": {
+            "type": "integer",
+            "description": "File size in bytes",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "description": "SHA-256 hash of file contents",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "type": {
+            "type": "string",
+            "description": "File type classification",
+            "enum": ["manifest", "script", "config", "data", "documentation", "other"]
+          }
+        }
+      }
+    },
+    "externalReferences": {
+      "type": "array",
+      "description": "URLs and external resources referenced in skill files",
+      "items": {
+        "type": "object",
+        "required": ["url", "file", "line", "type"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "The external URL"
+          },
+          "file": {
+            "type": "string",
+            "description": "File containing the reference"
+          },
+          "line": {
+            "type": "integer",
+            "description": "Line number of reference",
+            "minimum": 1
+          },
+          "type": {
+            "type": "string",
+            "description": "Type of external reference",
+            "enum": ["api", "documentation", "download", "unknown"]
+          }
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "description": "Structural information about the skill",
+      "required": ["maxDepth", "totalFiles", "totalBytes", "folders"],
+      "properties": {
+        "maxDepth": {
+          "type": "integer",
+          "description": "Maximum folder nesting depth",
+          "minimum": 0
+        },
+        "totalFiles": {
+          "type": "integer",
+          "description": "Total number of files",
+          "minimum": 1
+        },
+        "totalBytes": {
+          "type": "integer",
+          "description": "Total size of all files in bytes",
+          "minimum": 0
+        },
+        "folders": {
+          "type": "array",
+          "description": "List of folders in the skill",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "description": "License information",
+      "properties": {
+        "spdxId": {
+          "type": "string",
+          "description": "SPDX license identifier"
+        },
+        "file": {
+          "type": "string",
+          "description": "Path to license file if custom"
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "Skill dependencies",
+      "properties": {
+        "python": {
+          "type": "string",
+          "description": "Python version requirement",
+          "pattern": "^[><=!~]+[0-9.]+"
+        },
+        "packages": {
+          "type": "array",
+          "description": "pip packages required",
+          "items": {
+            "type": "string"
+          }
+        },
+        "skills": {
+          "type": "array",
+          "description": "Other skills this skill depends on",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

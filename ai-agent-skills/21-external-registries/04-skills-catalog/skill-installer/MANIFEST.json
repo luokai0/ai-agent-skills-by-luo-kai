@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agentskills.io/schemas/manifest.v1.json",
+  "manifestVersion": "1.0",
+  "generatedAt": "2026-01-03T03:39:19.983543Z",
+  "generator": "skill-manifest-generator/1.0.0",
+  "skill": {
+    "name": "skill-installer",
+    "version": "1.0.0"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "01594ce386bce1e97fe05669cd7f2d270f2735c6bb3f3a4e51ad9db6b237d46b"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size": 2554,
+      "sha256": "3fbfb9a95020fad87ad3cf929362413f0c4c12bf157a83e3c5a576e0aaed4eb4",
+      "type": "manifest"
+    },
+    {
+      "path": "scripts/install_skill.py",
+      "size": 14632,
+      "sha256": "2df5a4271aa874269c865f4a311ac410276cd9e5f61d3ef92146569f721fe393",
+      "type": "script"
+    }
+  ],
+  "externalReferences": [],
+  "structure": {
+    "maxDepth": 1,
+    "totalFiles": 2,
+    "totalBytes": 17186,
+    "folders": [
+      "scripts"
+    ]
+  },
+  "license": {
+    "spdxId": "MIT"
+  }
+}

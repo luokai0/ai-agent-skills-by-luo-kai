@@ -1,0 +1,5 @@
+# Optional dependencies for skill-manifest-generator
+# The script works without these but provides better functionality with them
+
+# YAML parsing for SKILL.md frontmatter (falls back to basic parsing without)
+PyYAML>=6.0

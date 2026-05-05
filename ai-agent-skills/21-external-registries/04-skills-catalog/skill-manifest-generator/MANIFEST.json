@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agentskills.io/schemas/manifest.v1.json",
+  "manifestVersion": "1.0",
+  "generatedAt": "2026-01-03T01:58:33.092546Z",
+  "generator": "skill-manifest-generator/1.0.0",
+  "skill": {
+    "name": "skill-manifest-generator",
+    "version": "1.0.0"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "f46664d607f7dfafbbbd3b9b7658cb1a31126b93c5b260a44f7eded3184abfc5"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size": 2718,
+      "sha256": "393d26785ba7b3ca169b4379ef0cd8f20de6f444be66d23b7aeead13b405fb02",
+      "type": "manifest"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 221,
+      "sha256": "430f9d277dbe2b692393f61c5dff6d80ec4641b71b7872b02ce6d59e9edfa68b",
+      "type": "reference"
+    },
+    {
+      "path": "scripts/generate_manifest.py",
+      "size": 18697,
+      "sha256": "ebc67e80a0896d8ea70c28bbbf38821be2315870a97a65a2aa9025907be549b5",
+      "type": "script"
+    }
+  ],
+  "externalReferences": [],
+  "structure": {
+    "maxDepth": 1,
+    "totalFiles": 3,
+    "totalBytes": 21636,
+    "folders": [
+      "scripts"
+    ]
+  },
+  "license": {
+    "spdxId": "MIT"
+  }
+}
