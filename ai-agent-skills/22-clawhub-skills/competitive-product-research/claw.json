@@ -1,0 +1,14 @@
+{
+  "name": "competitive-product-research",
+  "version": "1.3.1",
+  "tagline": "original dual-track competitive research skill",
+  "description": "Competitive product research skill using an original dual-track method: experience benchmarking plus strategic diagnostics (landscape, SWOT, Five Forces, PESTLE). Outputs source-traceable, execution-oriented HTML reports.",
+  "category": "productivity",
+  "tags": ["product-management", "competitive-analysis", "ux-research", "benchmarking", "html-report", "product-strategy", "chinese"],
+  "license": "MIT",
+  "author": "Chris1Wang3",
+  "pricing": "free",
+  "entry": "SKILL.md",
+  "support_url": "https://github.com/Chris1Wang3/Jiaye-Skills/issues",
+  "homepage": "https://github.com/Chris1Wang3/Jiaye-Skills/tree/master/competitive-product-research"
+}

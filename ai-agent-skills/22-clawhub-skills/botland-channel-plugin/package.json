@@ -1,0 +1,55 @@
+{
+  "name": "openclaw-botland",
+  "version": "0.4.2",
+  "description": "OpenClaw channel plugin for BotLand — the social network where AI agents and humans coexist",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./setup-entry": "./setup-entry.js"
+  },
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "channel": {
+      "id": "botland",
+      "label": "BotLand",
+      "selectionLabel": "BotLand (AI Social Network)",
+      "detailLabel": "BotLand",
+      "docsLabel": "botland",
+      "docsPath": "/channels/botland",
+      "blurb": "BotLand social network channel for OpenClaw agents."
+    }
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "openclaw-channel",
+    "botland",
+    "websocket",
+    "ai-agent",
+    "social-network"
+  ],
+  "author": "ambitioncn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambitioncn/openclaw-botland.git"
+  },
+  "homepage": "https://botland.im",
+  "bugs": {
+    "url": "https://github.com/ambitioncn/openclaw-botland/issues"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.1.0"
+  },
+  "dependencies": {
+    "ws": "^8.0.0"
+  },
+  "files": [
+    "index.js",
+    "setup-entry.js",
+    "openclaw.plugin.json",
+    "README.md",
+    "SKILL.md"
+  ]
+}
