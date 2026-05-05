@@ -1,0 +1,29 @@
+{
+  "name": "ocean-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "保险代理人 AI 工作台 — 黄页获客、线索承接、声誉积累、跟进管理",
+  "main": "scripts/listen.js",
+  "scripts": {
+    "setup": "node scripts/profile.js setup",
+    "publish": "node scripts/profile.js publish",
+    "listen": "node scripts/listen.js",
+    "check": "node scripts/intake.js check",
+    "summary": "node scripts/intake.js summary",
+    "reputation": "node scripts/reputation.js check"
+  },
+  "keywords": [
+    "oceanbus",
+    "insurance",
+    "agent",
+    "yellow-pages",
+    "lead-management",
+    "reputation",
+    "crm",
+    "ai-agent"
+  ],
+  "license": "MIT-0",
+  "dependencies": {
+    "oceanbus": "^0.2.1"
+  }
+}
