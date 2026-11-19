@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-getent hosts example.com; resolvectl status (if available); cat /etc/resolv.conf
+getent hosts example.com; resolvectl status; cat /etc/resolv.conf
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-echo "$XDG_CURRENT_DESKTOP"; echo "$XDG_SESSION_TYPE"; xrandr --query (if installed); wpctl status (if installed)
+echo "$XDG_CURRENT_DESKTOP"; echo "$XDG_SESSION_TYPE"; command -v xrandr && xrandr --query; command -v wpctl && wpctl status
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

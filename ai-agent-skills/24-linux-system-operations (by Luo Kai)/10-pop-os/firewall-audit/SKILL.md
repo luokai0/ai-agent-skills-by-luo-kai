@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-ss -lntup; ufw status verbose; firewall-cmd --state; nft list ruleset (read-only; choose installed framework)
+ss -lntup; ufw status verbose; firewall-cmd --state; nft list ruleset # read-only; choose the active installed framework
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
