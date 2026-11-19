@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-nix flake metadata; nix profile list; nixos-rebuild list-generations; nix eval --raw nixpkgs#...
+if test -f /etc/nixos/flake.nix; then nix flake metadata /etc/nixos; fi; nix profile list; nixos-rebuild list-generations; nix search nixpkgs QUERY
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

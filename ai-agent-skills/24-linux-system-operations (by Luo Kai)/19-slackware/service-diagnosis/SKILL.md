@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-service status via process/rc script inspection; inspect /var/log and service-specific logs; ss -lntup
+ps -ef; ls -l /etc/rc.d/rc.*; inspect /var/log and service-specific logs; ss -lntup
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

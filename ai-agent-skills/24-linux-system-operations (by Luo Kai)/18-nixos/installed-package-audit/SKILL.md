@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-nix profile list; nix store verify --all (potentially expensive; scope first)
+nix profile list; nix store verify --all # potentially expensive; scope to relevant paths first
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

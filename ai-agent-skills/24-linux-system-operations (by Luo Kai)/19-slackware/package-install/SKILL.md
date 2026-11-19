@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-slackpkg search PACKAGE; slackpkg install --dry-run PACKAGE (if supported; otherwise review package listing)
+slackpkg search PACKAGE; slackpkg info PACKAGE; ls /var/log/packages | grep PACKAGE
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
