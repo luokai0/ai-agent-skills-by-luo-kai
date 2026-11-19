@@ -1,14 +1,15 @@
 ---
-name: agent-builder
+name: "agent-builder"
+description: "AI Agent architecture designer. Provides 10+ Agent templates (customer service/sales/dev/ops) with full personas, toolkits, and workflow patterns. Triggers: agent architecture, design agent, agent template."
 slug: skylv-agent-builder
 version: 2.0.2
-description: AI Agent architecture designer. Provides 10+ Agent templates (customer service/sales/dev/ops) with full personas, toolkits, and workflow patterns. Triggers: agent architecture, design agent, agent template.
 author: SKY-lv
 license: MIT
 tags: [agent, architecture, template, openclaw, design]
 keywords: openclaw, skill, automation, ai-agent
 triggers: agent builder
 ---
+
 
 # Agent Builder — AI Agent 架构设计器
 

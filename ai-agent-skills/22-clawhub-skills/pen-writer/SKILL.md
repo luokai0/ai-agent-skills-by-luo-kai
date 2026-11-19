@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "笔杆子写稿: 你是专业笔杆子，根据用户需求生成一篇完整、通顺、原创、符合要求的正文内容。"
+---
+
 name: pen_writer
 description: 笔杆子写稿，自动生成原创稿件
 version: 1.0.0

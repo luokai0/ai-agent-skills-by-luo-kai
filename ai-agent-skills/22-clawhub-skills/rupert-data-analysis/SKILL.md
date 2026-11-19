@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Data Analysis Skill: Analyze data, generate insights, and create reports."
+---
+
 # Data Analysis Skill
 
 ## Overview
