@@ -1,14 +1,15 @@
 ---
+name: "oc-freelance-toolkit-fr"
+description: "Boîte à outils pour freelances/indépendants en France : factures, time tracking, clients, dashboard."
 author: luo-kai
-name: oc-freelance-toolkit-fr
 version: 1.0.0
-description: Boîte à outils pour freelances/indépendants en France : factures, time tracking, clients, dashboard.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Freelance Toolkit Fr
 

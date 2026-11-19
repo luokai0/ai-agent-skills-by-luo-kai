@@ -1,14 +1,15 @@
 ---
+name: "oc-context-scope-tags"
+description: "Use when: you need strict context boundaries in chat (Telegram/Discord/Slack/etc.) and want to prevent topic bleed."
 author: luo-kai
-name: oc-context-scope-tags
 version: 1.0.0
-description: Use when: you need strict context boundaries in chat (Telegram/Discord/Slack/etc.) and want to prevent topic bleed.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Context Scope Tags
 

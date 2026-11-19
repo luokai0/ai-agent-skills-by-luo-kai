@@ -1,14 +1,15 @@
 ---
+name: "oc-sentiment-score"
+description: "Score text sentiment from -1 (negative) to +1 (positive)\"."
 author: luo-kai
-name: oc-sentiment-score
 version: 1.0.0
-description: "Score text sentiment from -1 (negative) to +1 (positive)".
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Sentiment Score
 
