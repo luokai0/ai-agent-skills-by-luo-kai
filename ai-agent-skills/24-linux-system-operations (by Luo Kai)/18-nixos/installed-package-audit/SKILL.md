@@ -3,7 +3,7 @@ name: linux-nixos-installed-package-audit
 description: Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to NixOS; verifies release and prerequisites before any system change.
 license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
-version: 1.0.0
+version: 1.1.0
 platform: NixOS
 collection: 24
 skill_id: linux-0432
@@ -84,6 +84,37 @@ Produce a review list with evidence and avoid removal; verify package database i
 - If verification fails, stop repeated retries. Preserve logs and the last known-good configuration.
 - Use only the distribution's supported rollback mechanism (for example, package transaction history, snapshots, NixOS generations, or a known-good VM/template) and obtain approval before rollback changes.
 - Do not improvise boot, repository, filesystem, or security-control recovery steps. Escalate when the state is ambiguous or data integrity is at risk.
+
+## Agent execution contract — v1.1
+
+**Skill identity:** `linux-0432` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+
+**Exact task:** Audit installed packages and provenance on NixOS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to NixOS; verifies release and prerequisites before any system change.
+
+### Execution environment contract
+
+1. Confirm the target is the intended `18-nixos` system and verify `/etc/os-release`, `uname -r`, architecture, PID 1, and whether the agent is on bare metal, a VM, container, WSL, live image, or remote host. Do not trust a hostname or prompt string as proof of distribution.
+2. Verify the native package manager, service manager, and each optional command with `command -v` before use. Use the exact distro-specific command examples already documented in this skill; do not copy commands from a related distribution.
+3. Check user identity and privilege with `id`; begin unprivileged. Do not invoke `sudo`, `su`, root shells, or privilege escalation merely because a command fails.
+4. **Distribution guard:** NixOS is declarative. Inspect the active flake or configuration and current generation before proposing changes. Do not use imperative package/service edits as a substitute for configuration changes; never run a rebuild/switch without approval and a rollback plan.
+
+### Task-specific operating procedure
+
+**Mode:** Installed package inventory.
+
+1. **Scope the target.** Use the detected package manager’s read-only query to inspect exact package names, versions, origins, and hold/pin state. Scope queries to requested packages or a bounded list; avoid dumping the full package database.
+2. **Establish baseline.** Run the read-only probes from the preceding procedure only after confirming each tool exists. Capture the exact device, unit, package, mount, interface, user, or time range relevant to this task; avoid broad dumps.
+3. **Select the native path.** Use the package/init/filesystem/network tooling identified by this skill and the verified release. If the host is immutable, declarative, live, isolated, or containerized, follow its supported mechanism rather than forcing a conventional host workflow.
+4. **Authorize any mutation.** Do not install/remove/upgrade packages, restart/enable services, edit firewall/SSH/boot settings, change permissions, restore data, or reboot without explicit approval for the exact target and transaction. Preview dependencies, removals, downtime, and rollback first.
+5. **Verify independently.** Do not update package indexes, install, remove, or upgrade. Verify installed version and origin using a second package metadata query where possible. Re-run the same read-only query and check the resulting behavior, not just the command exit code.
+
+### Stop conditions and recovery
+
+Stop on distribution/release mismatch, unexpected repository or signature state, unknown init manager, read-only filesystem, active remote-management dependency, encryption uncertainty, data-integrity warning, or unexplained permission failure. Preserve logs and the last known-good configuration. Do not repeat a failed mutation blindly; use only a documented distro-supported rollback (package transaction history, snapshot, previous NixOS generation, or known-good VM/template) after approval.
+
+### Evidence and handoff
+
+Report the distribution ID/release, kernel, execution context, target identifier, native tools actually used, baseline, approved changes, independent verification, warnings, and rollback readiness. Redact usernames, IPs, hostnames, share paths, serial numbers, mount credentials, command arguments, and all key material. Never print private keys, tokens, password hashes, or encryption recovery secrets.
 
 ## Completion checklist
 
