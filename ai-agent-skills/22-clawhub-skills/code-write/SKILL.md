@@ -1,7 +1,8 @@
 ---
-name: code-write
-description: Implement or modify code in the current local project while matching local style and handling edge cases. Use when the user asks to add a feature, patch logic, fill in missing code, update tests, or make a concrete code change inside the workspace. Do not use for spawning external coding agents or managing remote repositories. Chinese triggers: 写代码、实现功能、补全代码、修改逻辑、直接改代码、补测试.
+name: "code-write"
+description: "Implement or modify code in the current local project while matching local style and handling edge cases. Use when the user asks to add a feature, patch logic, fill in missing code, update tests, or make a concrete code change inside the workspace. Do not use for spawning external coding agents or managing remote repositories. Chinese triggers: 写代码、实现功能、补全代码、修改逻辑、直接改代码、补测试."
 ---
+
 
 # 代码编写
 

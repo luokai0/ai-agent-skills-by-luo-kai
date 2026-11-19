@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Create Discord Ticket Skill: 此技能允许机器人在 Discord 服务器中为用户创建一个专用的私密频道（Ticket）。"
+---
+
 # Create Discord Ticket Skill
 
 ## 描述

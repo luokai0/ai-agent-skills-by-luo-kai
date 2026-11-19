@@ -1,4 +1,9 @@
 ---
+name: "skill"
+description: "竞品调研（Competitive Product Research）: 本技能用于回答两类核心问题："
+---
+
+---
 
 ## name: competitive-product-research
 description: >-

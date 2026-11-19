@@ -1,9 +1,12 @@
 ---
+name: "skill"
+description: "了解 cvs: 想了解 cvs？本技能汇集了你需要的关键信息。"
 summary: "cvs 详细介绍"
 read_when:
   - 查询 cvs
   - 了解 cvs 相关信息
 ---
+
 
 # 了解 cvs
 

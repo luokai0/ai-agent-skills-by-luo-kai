@@ -1,4 +1,6 @@
 ---
+name: "skill"
+description: "Cvs Health: - 1963: Consumer Value Stores在麻州成立"
 summary: 从街角药店到医疗帝国——CVS Health如何通过Aetna收购转型为综合医疗服务商。
 read_when:
   - 研究美国医疗行业整合
@@ -6,6 +8,7 @@ read_when:
   - 讨论保险+药房+诊所的协同效应
   - 了解美国处方药定价体系
 ---
+
 
 # Cvs Health
 
