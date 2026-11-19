@@ -21,7 +21,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Check out repository and pinned submodules
         uses: actions/checkout@v4
@@ -42,6 +42,16 @@ jobs:
 
       - name: Run static security and provenance screening
         run: python .github/scripts/audit_skill_security.py --root . --report audit-report.json
+
+      - name: Install ClamAV and update malware signatures
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes clamav clamav-freshclam
+          sudo freshclam
+
+      - name: Scan skills and bundled assets for known malware
+        run: |
+          clamscan --recursive --infected --no-summary --max-filesize=200M --max-scansize=1G --max-files=1000000 ai-agent-skills
 
       - name: Preserve audit report
         if: always()
