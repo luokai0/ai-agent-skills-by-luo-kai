@@ -1,3 +1,8 @@
+---
+name: c-drive-safe-cleanup
+description: "在 Windows C 盘执行白名单范围内的安全清理，逐项解释影响并在删除前分别征求用户确认。"
+---
+
 # C盘安全清理 Skill
 
 ## 元数据（触发层）
