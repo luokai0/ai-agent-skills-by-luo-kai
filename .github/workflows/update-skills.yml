@@ -76,7 +76,8 @@ jobs:
           else
             TOTAL=$(python -c "import json; print(json.load(open('skills-index.json'))['total'])")
             git commit -m "chore: refresh skill catalog ($TOTAL skills) [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
       - name: Create versioned skills release
