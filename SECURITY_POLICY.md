@@ -14,9 +14,9 @@ Skills are executable guidance: an agent may follow instructions, read files, in
 
 ## Automated checks
 
-The repository runs YAML frontmatter validation, static content and script screening, Windows-compatible path checks, and cross-platform checkout and installation checks.
+The repository runs YAML frontmatter validation, static content and script screening, Windows-compatible path checks, cross-platform checkout and installation checks, and ClamAV signature-based scanning of skill files and bundled assets before release.
 
-The static audit is a screening control, not proof that a skill is harmless. It cannot reliably detect every malicious instruction, obfuscated payload, supply-chain compromise, or runtime behavior. Human review remains required before trusting a skill with credentials, private files, shell access, or production tools.
+The static audit and antivirus scan are screening controls, not proof that a skill is harmless. They cannot reliably detect every malicious instruction, novel payload, obfuscated behavior, supply-chain compromise, or runtime action. Human review remains required before trusting a skill with credentials, private files, shell access, or production tools.
 
 ## Severity
 
