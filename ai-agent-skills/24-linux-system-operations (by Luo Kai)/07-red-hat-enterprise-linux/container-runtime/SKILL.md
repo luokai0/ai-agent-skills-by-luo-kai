@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-podman info (if installed); docker info (if installed); flatpak --version; id
+podman info; docker info; flatpak --version; id
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
