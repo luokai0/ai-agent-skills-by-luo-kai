@@ -201,9 +201,9 @@ Community-curated skills for all AI coding assistants:
 
 ## 15. AbsolutelySkilled
 
-**Source:** https://github.com/dhuvrujainin/absolute
+**Source:** https://github.com/dhruvjainin/absolute
 **License:** MIT
-**License notes:** The original source URL redirects; canonical repository ownership and path should be verified before importing new content.
+**License notes:** The original source URL redirects to dhruvjainin/absolute; MIT license verified on 2026-11-19.
 **Skills:** 10+
 
 MDX-based skills for AI agents:
