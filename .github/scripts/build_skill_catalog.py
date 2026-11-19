@@ -64,6 +64,8 @@ def normalize_license(value: str) -> str:
 
 def infer_license_file(path: Path) -> str:
     text = path.read_text(encoding="utf-8-sig", errors="replace")[:30000].lower()
+    if "all rights reserved" in text and "luo kai" in text:
+        return "Proprietary. See repository LICENSE"
     if "apache license" in text and "version 2.0" in text:
         return "Apache-2.0"
     if "attribution-noncommercial-noderivatives 4.0" in text or "cc by-nc-nd 4.0" in text:
