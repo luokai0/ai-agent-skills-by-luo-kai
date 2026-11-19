@@ -1,0 +1,169 @@
+#!/usr/bin/env python3
+"""Static screening and provenance inventory for skills; never executes skill code."""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+try:
+    import yaml
+except ImportError:
+    print("PyYAML is required. Install it with: python -m pip install PyYAML", file=sys.stderr)
+    raise SystemExit(2)
+
+TEXT_SUFFIXES = {
+    ".md", ".markdown", ".txt", ".py", ".sh", ".bash", ".zsh", ".ps1",
+    ".bat", ".cmd", ".js", ".jsx", ".ts", ".tsx", ".mjs", ".cjs",
+    ".rb", ".pl", ".php", ".go", ".rs", ".java", ".kt", ".swift",
+    ".c", ".h", ".cpp", ".hpp", ".cs", ".yaml", ".yml", ".json",
+    ".toml", ".ini", ".cfg", ".conf", ".xml", ".html", ".htm",
+    ".sql", ".tf", ".dockerfile", ".properties",
+}
+SCRIPT_SUFFIXES = {
+    ".py", ".sh", ".bash", ".zsh", ".ps1", ".bat", ".cmd", ".js",
+    ".mjs", ".cjs", ".rb", ".pl", ".php", ".go", ".rs", ".java",
+    ".kt", ".swift", ".c", ".cpp", ".cs",
+}
+SKIP_DIRS = {".git", "node_modules", ".venv", "venv", "__pycache__", ".tox"}
+
+CRITICAL_PATTERNS = [
+    ("remote-pipe-to-shell", re.compile(r"\b(?:curl|wget)\b[^\n|]{0,500}\|\s*(?:sudo\s+)?(?:ba)?sh\b", re.I)),
+    ("encoded-powershell-execution", re.compile(r"\bpowershell(?:\.exe)?\b[^\n]{0,250}(?:-enc(?:odedcommand)?\b|frombase64string)[^\n]{0,250}\b(?:iex|invoke-expression)\b", re.I)),
+    ("base64-dynamic-execution", re.compile(r"\b(?:eval|exec)\s*\(\s*(?:base64\.(?:b64decode|urlsafe_b64decode)|atob)\s*\(", re.I)),
+    ("root-filesystem-wipe", re.compile(r"\brm\s+-[a-z]*r[a-z]*f[a-z]*\s+/(?:\s|$)", re.I)),
+    ("raw-disk-overwrite", re.compile(r"\bdd\b[^\n]{0,200}\bof=/dev/(?:sd[a-z]|nvme\d)", re.I)),
+]
+
+REVIEW_PATTERNS = [
+    ("dynamic-execution", re.compile(r"\b(?:eval|exec)\s*\(", re.I)),
+    ("shell-or-subprocess", re.compile(r"\b(?:subprocess\.(?:run|Popen|call)|os\.system|child_process\.exec|shell=True)\b", re.I)),
+    ("network-client", re.compile(r"\b(?:requests\.(?:get|post|put|delete)|urllib\.request|fetch\s*\(|axios\.|http\.request|curl\s|wget\s)", re.I)),
+    ("environment-or-secret-access", re.compile(r"(?:os\.environ|process\.env|\.env\b|id_rsa|credentials\.json|api[_-]?key|access[_-]?token)", re.I)),
+    ("prompt-override-language", re.compile(r"(?:ignore|disregard|override)\s+(?:all\s+)?(?:previous|prior|above)\s+instructions", re.I)),
+    ("obfuscation-or-decoding", re.compile(r"(?:base64\.(?:b64decode|decodebytes)|frombase64string|atob\s*\()", re.I)),
+    ("privileged-or-destructive-command", re.compile(r"\b(?:sudo\s|chmod\s+777|chown\s+-R|mkfs\.|diskpart\b|format\s+[a-z]:)", re.I)),
+]
+
+def read_frontmatter(path: Path):
+    text = path.read_text(encoding="utf-8-sig", errors="replace")
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return text, None, "missing opening frontmatter delimiter"
+    try:
+        end = next(i for i in range(1, len(lines)) if lines[i].strip() == "---")
+    except StopIteration:
+        return text, None, "missing closing frontmatter delimiter"
+    try:
+        data = yaml.safe_load("\n".join(lines[1:end]))
+    except Exception as exc:
+        return text, None, f"invalid YAML frontmatter: {exc}"
+    if not isinstance(data, dict):
+        return text, None, "frontmatter is not a YAML mapping"
+    return text, data, None
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", default=".")
+    parser.add_argument("--report", default="audit-report.json")
+    args = parser.parse_args()
+
+    repo_root = Path(args.root).resolve()
+    skills_root = repo_root / "ai-agent-skills"
+    if not skills_root.is_dir():
+        print(f"Skill root not found: {skills_root}", file=sys.stderr)
+        return 2
+
+    findings = []
+    inventory = []
+    scanned_files = 0
+    skill_files = sorted(p for p in skills_root.rglob("*") if p.is_file() and p.name.lower() == "skill.md")
+
+    for skill_file in skill_files:
+        rel_skill = skill_file.relative_to(repo_root).as_posix()
+        _, metadata, parse_error = read_frontmatter(skill_file)
+        skill_dir = skill_file.parent
+        license_value = metadata.get("license") if metadata else None
+        license_files = [n for n in ("LICENSE", "LICENSE.md", "LICENSE.txt", "NOTICE", "NOTICE.md") if (skill_dir / n).is_file()]
+        meta = (metadata or {}).get("metadata") or {}
+        author = (metadata or {}).get("author") or (meta.get("author") if isinstance(meta, dict) else None)
+        provenance = meta.get("provenance") if isinstance(meta, dict) else None
+        if not license_value and not license_files:
+            license_status = "UNKNOWN"
+        elif license_value:
+            license_status = str(license_value)
+        else:
+            license_status = "LICENSE-FILE:" + ",".join(license_files)
+
+        inventory.append({
+            "skill_path": rel_skill,
+            "name": (metadata or {}).get("name") or skill_dir.name,
+            "author": author,
+            "provenance": provenance or "unrecorded",
+            "license": license_status,
+        })
+        if parse_error:
+            findings.append({"severity": "review", "type": "frontmatter", "path": rel_skill, "line": 1, "detail": parse_error})
+
+        for file_path in sorted(p for p in skill_dir.rglob("*") if p.is_file()):
+            if any(part in SKIP_DIRS for part in file_path.parts):
+                continue
+            try:
+                if file_path.stat().st_size > 2_000_000:
+                    findings.append({"severity": "review", "type": "oversized-file-not-inspected", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": "File exceeds 2 MB static text scan limit"})
+                    continue
+                if file_path.suffix.lower() not in TEXT_SUFFIXES and file_path.name.lower() not in {"dockerfile", "makefile"}:
+                    continue
+                content = file_path.read_text(encoding="utf-8-sig", errors="replace")
+            except (OSError, UnicodeError) as exc:
+                findings.append({"severity": "review", "type": "file-read-error", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": str(exc)})
+                continue
+
+            scanned_files += 1
+            relative = file_path.relative_to(repo_root).as_posix()
+            executable = file_path.suffix.lower() in SCRIPT_SUFFIXES or file_path.name.lower() in {"dockerfile", "makefile"}
+
+            if executable:
+                for kind, pattern in CRITICAL_PATTERNS:
+                    for match in pattern.finditer(content):
+                        line_no = content.count("\n", 0, match.start()) + 1
+                        findings.append({"severity": "critical", "type": kind, "path": relative, "line": line_no, "detail": "High-confidence dangerous execution pattern; inspect and remove or justify with a safe, non-executing test."})
+
+            for kind, pattern in REVIEW_PATTERNS:
+                match = pattern.search(content)
+                if match:
+                    line_no = content.count("\n", 0, match.start()) + 1
+                    findings.append({"severity": "review", "type": kind, "path": relative, "line": line_no, "detail": "Sensitive capability or instruction pattern requires human review in context."})
+
+    counts = Counter(item["severity"] for item in findings)
+    license_counts = Counter(item["license"] for item in inventory)
+    report = {
+        "scope": "Static screening only; not a malware-free guarantee.",
+        "skills_discovered": len(skill_files),
+        "text_files_scanned": scanned_files,
+        "findings_by_severity": dict(counts),
+        "license_status_counts": dict(license_counts),
+        "skills": inventory,
+        "findings": findings,
+    }
+    report_path = Path(args.report)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    print(f"Skills discovered: {len(skill_files)}")
+    print(f"Text files scanned: {scanned_files}")
+    print(f"License status groups: {dict(license_counts)}")
+    print(f"Findings: {dict(counts)}")
+    for item in findings[:60]:
+        print(f"[{item['severity'].upper()}] {item['path']}:{item['line']} {item['type']} - {item['detail']}")
+    if len(findings) > 60:
+        print(f"... {len(findings) - 60} additional findings are in {report_path}")
+    print(f"Full report: {report_path}")
+
+    return 1 if counts.get("critical", 0) else 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())
