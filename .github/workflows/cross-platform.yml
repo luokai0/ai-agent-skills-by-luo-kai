@@ -1,0 +1,40 @@
+name: Cross-platform compatibility
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checkout-and-install:
+    name: ${{ matrix.os }} checkout and skill install
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.20.0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Scan every tracked path for Windows-incompatible names
+        run: python .github/scripts/check_windows_paths.py
+
+      - name: Install a real skill through the public skills CLI
+        run: npx --yes skills add luokai0/ai-agent-skills-by-luo-kai --skill docker-docker-sandbox-agent --agent codex --copy --yes
