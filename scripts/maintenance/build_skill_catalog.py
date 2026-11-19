@@ -21,7 +21,7 @@ ICONS = {
     "06": "🔐", "07": "🧪", "08": "🏛️", "09": "🧠", "10": "📱",
     "11": "🛠️", "12": "📈", "13": "⚛️", "14": "🧬", "15": "🌍",
     "16": "⚙️", "17": "🚀", "18": "🤖", "19": "💼", "20": "🌿",
-    "21": "🔗", "22": "🦀",
+    "21": "🔗", "22": "🦀", "23": "🖥️",
 }
 CATEGORIES = {
     "01": "Programming Languages", "02": "Frontend Development",
@@ -35,6 +35,7 @@ CATEGORIES = {
     "17": "Emerging Technology", "18": "AI Agents and Automation",
     "19": "Business and Entrepreneurship", "20": "Health and Wellness",
     "21": "External Registries", "22": "ClawHub Skills",
+    "23": "Windows Computer Operations",
 }
 
 def read_frontmatter(text: str) -> dict:
