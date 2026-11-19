@@ -7,7 +7,7 @@ metadata:
   platform: "Windows 10 and Windows 11"
   category: "Windows Computer Operations"
   skill_id: "windows-1016"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Windows Remote access and support sessions: Monitor Ongoing State
@@ -62,6 +62,32 @@ Run only commands appropriate to the current shell and Windows version. Check co
 ## Failure handling and recovery
 
 If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Stop if identity or consent is unclear; end the session visibly and preserve local access. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+## Agent execution contract — v1.1
+
+**Skill identity:** `windows-1016` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+
+**Exact task:** Windows Remote access and support sessions: Monitor Ongoing State. Carry out **monitor ongoing state** for remote desktop, quick assist, remote support, session handoff, and connectivity.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `34-remote-desktop`. **Scope:** Remote Desktop, Quick Assist, remote support, session handoff, and connectivity.; **Preferred tools:** Windows Remote Desktop UI, Quick Assist, Get-NetTCPConnection (read-only).; **Task focus:** For **monitor ongoing state**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** No covert remote access, unattended persistence, credential sharing, or enabling remote access without explicit consent.; **Verification:** Verify endpoint identity, session owner, encryption/organization policy, visible consent, and disconnect path. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+### Execution plan
+
+**Mode:** Bounded monitoring.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Define the metric, target, interval, duration, and threshold before collecting observations. Use the narrowest native status query and avoid continuous high-frequency polling or reading user content. Record timestamps so changes can be correlated.
+4. **Gate changes.** Keep this run read-only unless the user separately asks for a change. Do not turn a diagnostic result into an unrequested repair.
+5. **Verify independently.** Stop at the agreed duration or threshold. Report trends and missing samples; do not automatically remediate or restart a service unless separately approved. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
 
 ## Completion checklist
 

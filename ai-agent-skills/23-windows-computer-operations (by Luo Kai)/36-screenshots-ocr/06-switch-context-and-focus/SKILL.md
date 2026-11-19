@@ -7,7 +7,7 @@ metadata:
   platform: "Windows 10 and Windows 11"
   category: "Windows Computer Operations"
   skill_id: "windows-1056"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Windows Screenshots, screen reading, and OCR: Switch Context And Focus
@@ -62,6 +62,32 @@ Run only commands appropriate to the current shell and Windows version. Check co
 ## Failure handling and recovery
 
 If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Retake a focused crop at readable scale; report uncertainty rather than inventing text. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+## Agent execution contract — v1.1
+
+**Skill identity:** `windows-1056` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+
+**Exact task:** Windows Screenshots, screen reading, and OCR: Switch Context And Focus. Carry out **switch context and focus** for screen capture, ocr, visual grounding, region selection, and evidence handling.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `36-screenshots-ocr`. **Scope:** Screen capture, OCR, visual grounding, region selection, and evidence handling.; **Preferred tools:** Approved screenshot API, Snipping Tool, Windows OCR, UI Automation names.; **Task focus:** For **switch context and focus**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Capture only relevant windows; redact secrets and personal content; do not record without permission.; **Verification:** Compare OCR with visible source and use UIA for ambiguous labels or values. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+### Execution plan
+
+**Mode:** Focus and session control.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Identify the current foreground window, active user session, and intended destination before sending keystrokes. Use Alt+Tab, Win+Tab, taskbar selection, or an accessible window title; confirm focus after every context switch. Avoid typing into password fields or private conversations unless explicitly requested.
+4. **Gate changes.** GUI interaction can affect the active user session. Confirm foreground window and unsaved work before sending input; do not close, restart, or sign out to recover a navigation issue.
+5. **Verify independently.** If focus is uncertain, stop input and re-identify the window. Verify the intended surface is foreground and no unrelated control received keystrokes. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
 
 ## Completion checklist
 
