@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-qvm-run TEMPLATE 'dnf search QUERY' (choose guest package manager); qvm-run TEMPLATE 'dnf install --assumeno PACKAGE' (guest only)
+qvm-run TEMPLATE 'cat /etc/os-release' # identify the template family, then use apt-cache or dnf inside that template; qvm-run TEMPLATE 'apt-get -s install PACKAGE' # Debian template; use dnf --assumeno for Fedora templates
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
@@ -67,7 +67,7 @@ Preview the transaction first. Reject unexpected removals, repository changes, d
 
 ### 4. Apply only the approved, narrow action
 
-- Use the native qubes-dom0-update (dom0 only) and systemd in dom0; VM-specific tools appropriate to the detected release.
+- Install ordinary applications only in the explicitly named TemplateVM using that template’s native package manager. Do not install application packages in dom0. Use `qubes-dom0-update` only for supported dom0 updates after separate approval.
 - Change one thing at a time. Preserve existing configuration and make a timestamped backup before an approved configuration edit, unless the relevant distro uses declarative generations or an immutable image workflow.
 - Do not copy commands from another distribution family just because the package names look similar.
 

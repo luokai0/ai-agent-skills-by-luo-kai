@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-flatpak search QUERY; pacman -Ss QUERY (inspection only)
+apt-cache search QUERY
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-qubes-dom0-update --check-only (if supported); /var/log/dnf.log in the relevant template (read narrowly)
+qubes-dom0-update --check-only; /var/log/dnf.log in the relevant template (read narrowly)
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

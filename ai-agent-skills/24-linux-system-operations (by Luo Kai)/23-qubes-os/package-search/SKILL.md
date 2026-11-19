@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-qvm-run TEMPLATE 'dnf search QUERY' (choose guest package manager)
+qvm-run TEMPLATE 'cat /etc/os-release' # identify the template family, then use apt-cache or dnf inside that template
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

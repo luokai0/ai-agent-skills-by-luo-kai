@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-tails-version; apt-cache policy; tails-persistence-setup --help
+cat /etc/os-release; dpkg-query -W 'tails*' 2>/dev/null; ls -ld /live/persistence 2>/dev/null
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

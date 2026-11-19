@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-systemctl status UNIT (inspection only); inspect /var/log and service-specific logs
+systemctl status UNIT # inspection only; inspect /var/log and service-specific logs
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
