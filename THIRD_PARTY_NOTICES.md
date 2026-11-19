@@ -60,3 +60,9 @@ The repository-level LICENSE applies only to original Luo Kai material. It does 
 - Apache-2.0 and MIT sources retain their upstream notices. Luo Kai's changes are marked as modifications, not exclusive ownership of upstream work.
 
 Unverified material must not be sold, adapted, or described as exclusively owned by Luo Kai until its rights are confirmed.
+
+## Luo Kai original-work scope
+
+The repository's proprietary LICENSE is applied at the 18 Luo Kai-labeled collection roots only to skills whose metadata declares `author: luo-kai` and has no recorded `source` field. Skills with recorded sources, missing author metadata, or a more specific per-skill license are excluded. Per-skill `LICENSE_STATUS.md` files block inherited proprietary licensing where rights are not verified.
+
+ClawSkills/ClawHub community imports have no blanket collection-level license. Their licenses must be verified per skill; unverified entries must not be adapted, sold, or redistributed as Luo Kai-owned work.

@@ -378,3 +378,14 @@ Collection-level licenses were checked against upstream repository files or READ
 Sources with per-skill licensing only: Anthropic, Replicate, and Strativd. Sources with no verified repository-wide license: Rushikeshpol and Travisvn. These materials must not be relabeled as Luo Kai originals or adapted until the applicable rights are confirmed.
 
 CC BY 4.0 material requires attribution and indication of changes. CC0 material is not exclusively owned by this project. CC BY-NC-ND 4.0 material is non-commercial and may not be modified or adapted. MIT and Apache-2.0 materials retain their original copyright and license notices; Luo Kai modifications are identified separately.
+
+
+## 26. ClawSkills / ClawHub Community Skills
+
+**Source:** https://clawskills.sh/ and the individual ClawHub skill pages recorded in each skill's metadata.
+**License:** Per-skill only; no blanket collection license or ownership grant verified.
+**Imported path:** `ai-agent-skills/22-clawhub-skills` and source-linked skills in the Luo Kai-labeled collections.
+**Notes:** Every imported skill must retain its original author and license. Entries without a verified per-skill license are marked unverified and excluded from the Luo Kai proprietary license.
+
+
+The proprietary license scopes in the 18 Luo Kai-labeled collections apply only to skills declaring `author: luo-kai` with no recorded `source` metadata. Source-linked and unattributed skills are excluded through per-skill `LICENSE_STATUS.md` overrides; explicit skill licenses and upstream license files always take precedence.
