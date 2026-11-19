@@ -1,11 +1,12 @@
 ---
-name: oc-aetherlang-chef
+name: "oc-aetherlang-chef"
+description: "> Michelin-grade recipe consulting with 17 mandatory sections."
 version: 1.0.0
-description: > Michelin-grade recipe consulting with 17 mandatory sections.
 author: luo-kai
 tags: [aetherlang-chef, openclaw, community]
 source: https://clawskills.sh/skills/aetherlang-chef
 ---
+
 
 # Aetherlang Chef
 

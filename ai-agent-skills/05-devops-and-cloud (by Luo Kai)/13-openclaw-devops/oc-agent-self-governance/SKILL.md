@@ -1,11 +1,12 @@
 ---
-name: oc-agent-self-governance
+name: "oc-agent-self-governance"
+description: "Self-governance protocol for autonomous agents: WAL (Write-Ahead Log), VBR (Verify Before Reporting), ADL."
 version: 1.0.0
-description: Self-governance protocol for autonomous agents: WAL (Write-Ahead Log), VBR (Verify Before Reporting), ADL.
 author: luo-kai
 tags: [agent-self-governance, openclaw, community]
 source: https://clawskills.sh/skills/agent-self-governance
 ---
+
 
 # Agent Self Governance
 

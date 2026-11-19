@@ -1,7 +1,11 @@
 ---
+name: "makepad-router"
+description: "CRITICAL: Use for ALL Makepad/Robius questions including widgets, layout, events, and shaders."
+---
+
+
+<!-- Original nonstandard metadata retained for reference:
 author: luo-kai
-name: makepad-router
-description: "CRITICAL: Use for ALL Makepad/Robius questions including widgets, layout, events, and shaders.
 Triggers on: makepad, robius, live_design, app_main, Widget, View, Button, Label, Image, TextInput,
 ScrollView, RoundedView, SolidView, PortalList, Markdown, Html, TextFlow,
 layout, Flow, Walk, padding, margin, width, height, Fit, Fill, align, spacing,
@@ -16,7 +20,8 @@ deploy, package, APK, IPA, WASM, cargo makepad,
 makepad widget, makepad 组件, makepad 按钮, makepad 布局, makepad 事件, makepad 动画, makepad 着色器,
 创建组件, 自定义组件, 开发应用, 居中, 对齐, 点击事件, 悬停效果, 渐变, 阴影, 字体大小"
 globs: ["**/live_design!*", "**/*.rs"]
----
+-->
+
 
 # Makepad Question Router
 
