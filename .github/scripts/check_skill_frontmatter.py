@@ -33,11 +33,13 @@ UniqueKeyLoader.add_constructor(
 )
 
 def main() -> int:
-    files = sorted(SKILLS_ROOT.rglob("SKILL.md"))
+    files = sorted(p for p in SKILLS_ROOT.rglob("*") if p.is_file() and p.name.casefold() == "skill.md")
     failures = []
     for path in files:
         relative = path.relative_to(ROOT).as_posix()
         try:
+            if path.name != "SKILL.md":
+                raise ValueError("filename must be exactly SKILL.md (case-sensitive)")
             text = path.read_text(encoding="utf-8-sig")
             lines = text.splitlines()
             if not lines or lines[0].strip() != "---":
