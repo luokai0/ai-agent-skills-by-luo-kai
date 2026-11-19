@@ -1,11 +1,12 @@
 ---
-name: oc-usdc
+name: "oc-usdc"
+description: "Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill."
 version: 1.0.0
-description: Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill.
 author: luo-kai
 tags: [usdc, openclaw, community]
 source: https://clawskills.sh/skills/usdc
 ---
+
 
 # Usdc
 
