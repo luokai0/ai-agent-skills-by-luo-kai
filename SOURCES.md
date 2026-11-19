@@ -106,7 +106,7 @@ The largest installable skill library:
 ## 8. PinkPixel Skills Collection
 
 **Source:** https://github.com/pinkpixel-dev/skills-collection-1  
-**License:** MIT  
+**License:** Apache-2.0 (upstream LICENSE added 2026-08-09; imported snapshot SHA not recorded)  
 **Skills:** 969+
 
 Part 1 of a large AI skills collection:

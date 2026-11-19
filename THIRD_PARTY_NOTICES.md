@@ -39,3 +39,10 @@ New original skills use this metadata pattern:
       version: "1.0.0"
 
 This metadata is a provenance statement, not a substitute for reviewing copied code, assets, or text. Keep separate third-party notices whenever a skill includes third-party material.
+
+
+## PinkPixel source license audit (2026-11-19)
+
+The PinkPixel entry was previously labeled MIT in SOURCES.md. Inspection of the upstream repository's LICENSE history found that its Apache-2.0 LICENSE was added in commit ddcadf5896a9cce6f79e296d8b070e5224690e6e on 2026-08-09. The current upstream repository declares Apache-2.0. A copy of that LICENSE is preserved at ai-agent-skills/21-external-registries/08-pinkpixel-collection/LICENSE.
+
+The exact upstream commit from which this repository's imported snapshot was copied is not recorded. Individual files may also contain separate notices. Do not assume that this collection-level license overrides a more specific third-party notice; verify per-entry provenance before adapting any file.
