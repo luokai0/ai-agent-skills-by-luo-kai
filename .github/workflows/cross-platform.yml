@@ -60,3 +60,7 @@ jobs:
 
       - name: Install a real skill from the checked-out repository
         run: npx --yes skills add . --skill agents-md --agent codex --copy --yes
+
+      - name: Install a Linux distribution skill
+        if: runner.os == 'Linux'
+        run: npx --yes skills add . --skill linux-ubuntu-identify-release --agent codex --copy --yes
