@@ -1,8 +1,9 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
 name: "<phase-or-classification-skill-name>"
 description: "<single-line 20-100 word description; include trigger keywords and do not use folded YAML>"
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
 
 
 <!-- Original nonstandard metadata retained for reference:
