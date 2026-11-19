@@ -1,8 +1,8 @@
 <!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "define-problem-statement"
+description: "Creates a clear problem framing document with user impact, business context, and success criteria. Use when starting a new initiative, realigning a drifted project, or communicating up to leadership."
 author: luo-kai
-name: define-problem-statement
-description: Creates a clear problem framing document with user impact, business context, and success criteria. Use when starting a new initiative, realigning a drifted project, or communicating up to leadership.
 phase: define
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +12,7 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+
 # Problem Statement
 
 A problem statement is a concise document that frames the problem you're solving, articulates the impact on users and the business, and defines clear success criteria. It serves as the foundation for all subsequent product work by ensuring alignment on *what* problem to solve before jumping to *how* to solve it.

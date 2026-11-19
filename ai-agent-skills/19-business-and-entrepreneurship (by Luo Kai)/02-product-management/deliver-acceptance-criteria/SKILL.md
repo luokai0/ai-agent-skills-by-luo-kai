@@ -1,8 +1,8 @@
 <!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "deliver-acceptance-criteria"
+description: "Generates structured Given/When/Then acceptance criteria for a user story or feature slice. Use when translating product requirements into testable scenarios that cover the happy path, edge cases, error states, and non-functional expectations for engineering handoff and QA."
 author: luo-kai
-name: deliver-acceptance-criteria
-description: Generates structured Given/When/Then acceptance criteria for a user story or feature slice. Use when translating product requirements into testable scenarios that cover the happy path, edge cases, error states, and non-functional expectations for engineering handoff and QA.
 phase: deliver
 version: "1.0.0"
 updated: 2026-03-22
@@ -12,6 +12,7 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+
 # Acceptance Criteria
 
 Acceptance criteria define the observable behavior that must be true for a story or feature to be considered done. This skill turns feature context into concise, testable Given/When/Then scenarios that engineers and QA can verify without guessing intent.
