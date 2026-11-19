@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Cloud Cost Optimization Audit: Analyze cloud infrastructure spend across AWS, Azure, and GCP. Identify waste, rightsizing opportunities, and reserved instance savings."
+---
+
 # Cloud Cost Optimization Audit
 
 Analyze cloud infrastructure spend across AWS, Azure, and GCP. Identify waste, rightsizing opportunities, and reserved instance savings.
