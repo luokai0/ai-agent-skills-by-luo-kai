@@ -1,11 +1,7 @@
 ---
+name: "Vincent - Polymarket for agents"
+description: "Polymarket prediction market trading for agents. Use this skill when users want to create a Polymarket wallet, browse markets, place bets, manage positions, or withdraw funds. Triggers on \"polymarket\", \"prediction market\", \"place bet\", \"browse markets\", \"trade prediction\", \"polymarket wallet\", \"betting\", \"market odds\"."
 author: luo-kai
-name: Vincent - Polymarket for agents
-description: |
-  Polymarket prediction market trading for agents. Use this skill when users want to create a
-  Polymarket wallet, browse markets, place bets, manage positions, or withdraw funds.
-  Triggers on "polymarket", "prediction market", "place bet", "browse markets", "trade prediction",
-  "polymarket wallet", "betting", "market odds".
 allowed-tools: Read, Write, Bash(npx:@vincentai/cli*)
 version: 1.0.0
 author: luo-kai
@@ -20,6 +16,7 @@ metadata:
         - ${OPENCLAW_STATE_DIR:-$HOME/.openclaw}/credentials/agentwallet
         - ./agentwallet
 ---
+
 
 # Vincent - Polymarket for agents
 

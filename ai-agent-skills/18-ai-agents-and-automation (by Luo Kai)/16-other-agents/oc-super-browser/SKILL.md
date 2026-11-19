@@ -1,14 +1,15 @@
 ---
+name: "oc-super-browser"
+description: "**The ultimate browser automation framework.** Combines the best of 8 top-rated browser skills."
 author: luo-kai
-name: oc-super-browser
 version: 1.0.0
-description: **The ultimate browser automation framework.** Combines the best of 8 top-rated browser skills.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Super Browser
 
