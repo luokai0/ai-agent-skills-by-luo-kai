@@ -1,14 +1,15 @@
 ---
+name: "oc-sota-tracker-mcp"
+description: "**The definitive open-source database of State-of-the-Art AI models.**."
 author: luo-kai
-name: oc-sota-tracker-mcp
 version: 1.0.0
-description: **The definitive open-source database of State-of-the-Art AI models.**.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Sota Tracker Mcp
 
