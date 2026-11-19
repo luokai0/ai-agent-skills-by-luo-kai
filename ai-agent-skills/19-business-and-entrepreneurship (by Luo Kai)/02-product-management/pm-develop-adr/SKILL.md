@@ -1,7 +1,7 @@
 <!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: pm-develop-adr
-description: Creates an Architecture Decision Record following the Nygard format to document significant technical decisions, their context, and consequences. Use when making technical choices that affect system architecture, technology selection, or development patterns.
+name: "pm-develop-adr"
+description: "Creates an Architecture Decision Record following the Nygard format to document significant technical decisions, their context, and consequences. Use when making technical choices that affect system architecture, technology selection, or development patterns."
 phase: develop
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +12,7 @@ metadata:
   author: lous-creations
 author: luo-kai
 ---
+
 # Architecture Decision Record (ADR)
 
 An Architecture Decision Record documents a significant technical decision along with its context and consequences. ADRs capture the "why" behind architectural choices so future team members understand the reasoning — especially important when they question why something was done a particular way. This skill follows Michael Nygard's lightweight ADR format.
