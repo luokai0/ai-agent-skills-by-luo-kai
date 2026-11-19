@@ -1,7 +1,8 @@
 ---
-name: drift-bottle
-description: Randomly retrieve a drift bottle containing life insights, small stories, wishes, or inspirational quotes. Use when the user asks for a drift bottle, message in a bottle, random message, or needs inspiration/wisdom. Trigger words: 漂流瓶, message in a bottle, drift bottle, 随机消息, 瓶中信.
+name: "drift-bottle"
+description: "Randomly retrieve a drift bottle containing life insights, small stories, wishes, or inspirational quotes. Use when the user asks for a drift bottle, message in a bottle, random message, or needs inspiration/wisdom. Trigger words: 漂流瓶, message in a bottle, drift bottle, 随机消息, 瓶中信."
 ---
+
 
 # Drift Bottle
 

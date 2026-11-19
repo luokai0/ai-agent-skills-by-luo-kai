@@ -1,5 +1,6 @@
 ---
-name: databricks-cloud
+name: "databricks-cloud"
+description: "Databricks: - **2013**: 由Apache Spark创始人Matei Zaharia及UC Berkeley AMPLab团队成员在旧金山创立，初始愿景是让Spark在企业中更易用"
 summary: Databricks — the unified data analytics platform born from the Apache Spark creators, bridging data engineering, science, and AI on cloud infrastructure.
 read_when:
   - Exploring the evolution from batch processing to lakehouse architecture
@@ -8,6 +9,7 @@ read_when:
   - Analyzing the data warehousing vs. data lakehouse market shift
   - Studying startup-to-IPO journeys in the enterprise data infrastructure space
 ---
+
 
 # Databricks
 
