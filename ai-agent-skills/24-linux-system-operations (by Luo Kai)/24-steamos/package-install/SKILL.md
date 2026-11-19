@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-flatpak search QUERY; pacman -Ss QUERY (inspection only); flatpak install --assumeno REMOTE APPID (if supported); base OS update via Steam client
+flatpak search QUERY; flatpak remote-info REMOTE APPID; # base OS updates are managed in Steam Settings > System > Check for Updates
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
@@ -67,7 +67,7 @@ Preview the transaction first. Reject unexpected removals, repository changes, d
 
 ### 4. Apply only the approved, narrow action
 
-- Use the native read-only base / Flatpak and systemd (managed) tools appropriate to the detected release.
+- Install desktop applications only through an approved Flatpak workflow after verifying the remote. Never use pacman to mutate the SteamOS base, disable read-only mode, or replace the supported SteamOS update process.
 - Change one thing at a time. Preserve existing configuration and make a timestamped backup before an approved configuration edit, unless the relevant distro uses declarative generations or an immutable image workflow.
 - Do not copy commands from another distribution family just because the package names look similar.
 

@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-timeshift --list (if installed); inspect configured backup tool; findmnt; df -hT
+command -v timeshift && timeshift --list; findmnt; df -hT
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-flatpak list --app; flatpak repair --dry-run (if supported)
+flatpak list --app; flatpak repair --dry-run
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

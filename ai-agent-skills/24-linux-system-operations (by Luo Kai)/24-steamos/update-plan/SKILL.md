@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-flatpak remote-ls --updates; journalctl -u steamos-update (if present; read narrowly)
+flatpak remote-ls --updates; journalctl -u steamos-update --since '24 hours ago' --no-pager
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
