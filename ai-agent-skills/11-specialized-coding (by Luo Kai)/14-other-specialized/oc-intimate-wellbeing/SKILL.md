@@ -1,14 +1,15 @@
 ---
+name: "oc-intimate-wellbeing"
+description: "Professional, non-explicit guidance on intimate wellbeing and sexual performance: communication, stress reduction."
 author: luo-kai
-name: oc-intimate-wellbeing
 version: 1.0.0
-description: Professional, non-explicit guidance on intimate wellbeing and sexual performance: communication, stress reduction.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Intimate Wellbeing
 

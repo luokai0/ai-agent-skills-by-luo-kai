@@ -1,14 +1,15 @@
 ---
+name: "oc-consensus-interact"
+description: "Use the open-source @consensus-tools/consensus-tools engine to run multi-LLM policy-based decision workflows: post."
 author: luo-kai
-name: oc-consensus-interact
 version: 1.0.0
-description: Use the open-source @consensus-tools/consensus-tools engine to run multi-LLM policy-based decision workflows: post.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Consensus Interact
 
