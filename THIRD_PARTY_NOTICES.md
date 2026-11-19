@@ -46,3 +46,17 @@ This metadata is a provenance statement, not a substitute for reviewing copied c
 The PinkPixel entry was previously labeled MIT in SOURCES.md. Inspection of the upstream repository's LICENSE history found that its Apache-2.0 LICENSE was added in commit ddcadf5896a9cce6f79e296d8b070e5224690e6e on 2026-08-09. The current upstream repository declares Apache-2.0. A copy of that LICENSE is preserved at ai-agent-skills/21-external-registries/08-pinkpixel-collection/LICENSE.
 
 The exact upstream commit from which this repository's imported snapshot was copied is not recorded. Individual files may also contain separate notices. Do not assume that this collection-level license overrides a more specific third-party notice; verify per-entry provenance before adapting any file.
+
+## 2026 source license audit summary
+
+The repository-level LICENSE applies only to original Luo Kai material. It does not relicense third-party skills.
+
+- Verified collection-level license files have been copied into their corresponding source directories. Nested per-skill licenses override collection-level terms.
+- Anthropic, Replicate, and Strativd have per-skill licensing only; no blanket license has been applied.
+- The Rushikeshpol source could not be retrieved and has no verified license.
+- The Travisvn source has no explicit license grant in the checked repository contents.
+- Hesreallyhim is CC BY-NC-ND 4.0: non-commercial use only, no derivatives or adaptations, attribution required.
+- MicrosoftDocs is CC BY 4.0; SkillsDirectory is CC0 1.0.
+- Apache-2.0 and MIT sources retain their upstream notices. Luo Kai's changes are marked as modifications, not exclusive ownership of upstream work.
+
+Unverified material must not be sold, adapted, or described as exclusively owned by Luo Kai until its rights are confirmed.
