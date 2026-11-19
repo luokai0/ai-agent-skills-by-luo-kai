@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "ai-agent-builder: AI Agent 构建器 - 快速搭建自定义 AI Agent。适合：开发者、产品经理、自动化爱好者。"
+---
+
 # ai-agent-builder
 
 ## 描述

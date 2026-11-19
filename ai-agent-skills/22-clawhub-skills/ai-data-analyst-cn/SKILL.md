@@ -1,7 +1,11 @@
 ---
-name: ai-data-analyst-cn
+name: "ai-data-analyst-cn"
+description: "AI数据分析助手 - 智能图表生成、预测分析、异常检测、一键生成报告"
+---
+
+
+<!-- Original nonstandard metadata retained for reference:
 version: 1.0.0
-description: AI数据分析助手 - 智能图表生成、预测分析、异常检测、一键生成报告
 author: 赚钱小能手
 category: business
 tags:
@@ -218,8 +222,8 @@ pricing:
 2. 推出高客单价商品，提升单价
 3. 分析复购率提升原因，复制成功经验
 ```
+-->
 
----
 
 ## 🔥 为什么选择我们？
 
