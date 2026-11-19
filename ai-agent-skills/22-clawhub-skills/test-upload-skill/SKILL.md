@@ -1,9 +1,10 @@
 ---
-name: test-upload-skill
-description: Secondly: A simple test skill for verifying clawhub.ai upload functionality
+name: "test-upload-skill"
+description: "Secondly: A simple test skill for verifying clawhub.ai upload functionality"
 homepage: https://github.com/test/test-upload-skill
 metadata: {"clawdbot":{"emoji":"🧪"}}
 ---
+
 
 # Test Upload Skill
 

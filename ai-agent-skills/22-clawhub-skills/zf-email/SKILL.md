@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "name: 邮件生成助手"
+---
+
 name: 邮件生成助手
 description: 根据用户提供的要点，自动生成正式或友好的英文/中文邮件。
 trigger: 用户说“写封邮件”、“生成邮件”或“帮我起草邮件”。
