@@ -1,8 +1,8 @@
 <!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "discover-stakeholder-summary"
+description: "Documents stakeholder needs, concerns, and influence for a project or initiative. Use when starting projects, managing complex stakeholder relationships, or ensuring alignment across organizational boundaries."
 author: luo-kai
-name: discover-stakeholder-summary
-description: Documents stakeholder needs, concerns, and influence for a project or initiative. Use when starting projects, managing complex stakeholder relationships, or ensuring alignment across organizational boundaries.
 phase: discover
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +12,7 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+
 # Stakeholder Summary
 
 A stakeholder summary documents the people and groups who have interest in or influence over a project, capturing their needs, concerns, and relationships. Effective stakeholder management often determines project success more than technical execution, making this document essential for navigating organizational complexity.
