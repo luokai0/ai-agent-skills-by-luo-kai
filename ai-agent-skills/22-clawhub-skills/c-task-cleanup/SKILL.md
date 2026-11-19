@@ -1,19 +1,18 @@
-# C-Task-Cleanup · C 类任务清理工具
-
-**版本：** v1.0  
-**创建时间：** 2026-03-01 21:00  
-**用途：** 每周日 23:00 自动清理 C 类任务已完成记录
-
+---
+name: "skill"
+description: "手动运行: node /Users/abc/.openclaw/workspace/skills/c-task-cleanup/handler.js"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## 🎯 功能
 
 1. **扫描 C 类任务池** - 读取已完成任务
 2. **4D 压缩高价值内容** - 提取洞察存入 MEMORY.md
 3. **清理已完成表格** - 清空"已完成"部分
 4. **生成清理报告** - 记录清理内容
+-->
 
----
 
 ## 📋 清理规则
 

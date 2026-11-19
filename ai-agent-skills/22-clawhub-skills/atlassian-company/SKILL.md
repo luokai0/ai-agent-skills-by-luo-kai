@@ -1,5 +1,6 @@
 ---
 name: "Atlassian"
+description: "Atlassian 知识卡片: - **2002**: Scott Farquhar和Mike Cannon-Brookes在悉尼公寓中创立Atlassian，资金来自2万美元信用卡"
 slug: "atlassian-company"
 version: "1.0.0"
 summary: "全球领先的团队协作与开发工具平台，以Jira和Confluence定义了现代软件工作流程"
@@ -11,6 +12,7 @@ read_when:
   - 讨论PLG（产品驱动增长）模式时
   - 评估AI对开发者工具的影响时
 ---
+
 
 # Atlassian 知识卡片
 

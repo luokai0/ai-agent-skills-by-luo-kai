@@ -1,73 +1,10 @@
-# C-Suite Coach Video Marketing Skill
-
-## Overview
-
-This skill helps c-suite coach companies, L&D (Learning and Development) consultants, online course creators, employee training software providers, and organizational development firms create video content that demonstrates training effectiveness, generates enterprise leads, and builds authority in the corporate learning space. Corporate training video marketing operates in a B2B environment where credibility, ROI demonstration, and expertise positioning are the primary conversion levers.
-
-## Industry Context
-
-The global c-suite coach market exceeds $360 billion annually. Organizations spend an average of $1,300 per employee per year on training and development. The shift to digital and hybrid learning has accelerated dramatically. Decision-makers (CHROs, L&D Directors, Operations VPs) research training providers extensively before committing organizational budgets.
-
-Key buyer concerns video must address:
-- Does this provider understand our industry and specific challenges?
-- What measurable outcomes have they achieved for similar organizations?
-- How does their methodology differ from generic training approaches?
-- What is the implementation process and timeline?
-- What ongoing support is provided?
-
-## Video Types for C-Suite Coach Providers
-
-### 1. Training Program Showcase
-Demonstrate your flagship training programs: leadership development, sales training, compliance, DEI, customer service, technical skills. Show the learning experience, not just the curriculum.
-
-### 2. Client ROI Case Studies
-Quantified outcomes: sales performance improvement, turnover reduction, compliance incident decrease, customer satisfaction scores. Numbers-first storytelling.
-
-### 3. Methodology Explainer
-What makes your approach unique. Your learning science philosophy, delivery methodology, customization process, measurement framework.
-
-### 4. Facilitator and Expert Introductions
-The humans behind the training. Their expertise, credentials, industry experience. Decision-makers buy from people they trust.
-
-### 5. Demo Training Segments
-Short clips of actual training delivery: a workshop moment, a video module excerpt, a coaching conversation. Shows the quality of the learning experience.
-
-### 6. Industry-Specific Training Content
-Training for healthcare organizations, financial services, manufacturing, tech companies, retail. Vertical-specific content attracts highly qualified leads.
-
-### 7. L&D Trend and Thought Leadership
-Current trends in corporate learning: microlearning, AI in L&D, hybrid workforce skills, skills-based organizations. Positions you as a forward-looking thought leader.
-
-### 8. Employee Testimonials
-Learners sharing the impact of training on their performance and career. Peer-level credibility for the training investment.
-
-### 9. Training ROI Calculator Explainer
-Walk through how to calculate the ROI of training investments. Educational content that helps L&D professionals make the business case internally.
-
-### 10. New Program Launch Content
-Announce new training products, certifications, or partnerships. Creates excitement and drives immediate inquiries.
-
-## Script Templates
-
-### Template 1: Client ROI Case Study (90 seconds)
-
-**Hook (0-10s):**
-"A regional bank came to us with a specific problem: their customer-facing staff were converting only 12% of cross-sell opportunities. Industry average is 28%. Here is what happened over 18 months."
-
-**The Challenge (10-25s):**
-"Their team had technical product knowledge. What they lacked was consultative selling skills — the ability to identify customer needs, connect them to relevant products, and have the conversation without feeling salesy. Traditional sales training had not worked because it was generic, not banking-specific."
-
-**The Solution (25-55s):**
-"We designed a 12-week blended learning program: 4 virtual workshops, weekly manager coaching guides, and a custom simulation platform using real customer scenarios from their actual deposit and lending products. Managers were trained first as coaches, then supported their teams through weekly practice conversations."
-
-**The Results (55-75s):**
-"At 6 months: cross-sell conversion increased from 12% to 19%. At 18 months: 27% — nearly at industry average from a starting point 16 points below. Customer satisfaction scores increased 11 points. The program generated $4.2 million in additional deposit balances in the first year."
-
-**CTA (75-90s):**
-"We design training that solves specific business problems — not generic curriculum. If you are facing a performance gap that training should fix, let us have that conversation. Free 30-minute problem-framing call with one of our senior consultants. Link below."
-
+---
+name: "skill"
+description: "**Hook (0-8s):**"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ### Template 2: Methodology Explainer (75 seconds)
 
 **Hook (0-8s):**
@@ -84,8 +21,8 @@ Announce new training products, certifications, or partnerships. Creates excitem
 
 **CTA (68-75s):**
 "Let us audit your current training investment and show you where the Performance Bridge model could improve your ROI. Free 45-minute assessment. Book below."
+-->
 
----
 
 ### Template 3: Thought Leadership — Future of L&D (60 seconds)
 
