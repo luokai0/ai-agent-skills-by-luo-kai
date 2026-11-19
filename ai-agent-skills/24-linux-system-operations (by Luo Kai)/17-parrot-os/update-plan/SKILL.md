@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-apt list --upgradable; apt history via /var/log/apt/history.log (read narrowly)
+apt list --upgradable; grep -E ' (install|upgrade|remove) ' /var/log/dpkg.log | tail -n 40
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
