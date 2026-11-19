@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-findmnt -A; lsblk -f; blkid (if available)
+findmnt -A; lsblk -f; blkid
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

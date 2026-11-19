@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-qlist -I (if app-portage/portage-utils is installed); emerge --pretend --emptytree @world
+command -v qlist && qlist -I; emerge --pretend --emptytree @world
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

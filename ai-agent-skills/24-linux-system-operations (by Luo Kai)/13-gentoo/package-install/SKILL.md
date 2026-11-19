@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-emerge --search QUERY; emerge --pretend --ask CATEGORY/PACKAGE
+emerge --search QUERY; emerge --pretend --verbose CATEGORY/PACKAGE
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

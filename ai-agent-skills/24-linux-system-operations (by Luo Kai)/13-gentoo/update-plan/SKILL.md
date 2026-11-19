@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-emerge --pretend --update --deep @world; /var/log/emerge.log (read narrowly)
+emerge --pretend --update --deep @world; tail -n 80 /var/log/emerge.log
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
