@@ -1,14 +1,15 @@
 ---
+name: "oc-listonic"
+description: "Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists."
 author: luo-kai
-name: oc-listonic
 version: 1.0.0
-description: Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Listonic
 
