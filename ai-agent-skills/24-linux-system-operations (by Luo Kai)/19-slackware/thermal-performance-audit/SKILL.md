@@ -3,7 +3,7 @@ name: linux-slackware-thermal-performance-audit
 description: Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Slackware; verifies release and prerequisites before any system change.
 license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
-version: 1.0.0
+version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-1090
@@ -84,6 +84,37 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 - If verification fails, stop repeated retries. Preserve logs and the last known-good configuration.
 - Use only the distribution's supported rollback mechanism (for example, package transaction history, snapshots, NixOS generations, or a known-good VM/template) and obtain approval before rollback changes.
 - Do not improvise boot, repository, filesystem, or security-control recovery steps. Escalate when the state is ambiguous or data integrity is at risk.
+
+## Agent execution contract — v1.1
+
+**Skill identity:** `linux-1090` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+
+**Exact task:** Diagnose thermal throttling and system performance on Slackware. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Slackware; verifies release and prerequisites before any system change.
+
+### Execution environment contract
+
+1. Confirm the target is the intended `19-slackware` system and verify `/etc/os-release`, `uname -r`, architecture, PID 1, and whether the agent is on bare metal, a VM, container, WSL, live image, or remote host. Do not trust a hostname or prompt string as proof of distribution.
+2. Verify the native package manager, service manager, and each optional command with `command -v` before use. Use the exact distro-specific command examples already documented in this skill; do not copy commands from a related distribution.
+3. Check user identity and privilege with `id`; begin unprivileged. Do not invoke `sudo`, `su`, root shells, or privilege escalation merely because a command fails.
+4. **Distribution guard:** Slackware commonly uses BSD-style init scripts and pkgtools/slackpkg. Do not assume systemd; inspect the actual init configuration and avoid package operations that bypass the configured package source.
+
+### Task-specific operating procedure
+
+**Mode:** Thermal and performance diagnosis.
+
+1. **Scope the target.** Inspect sensors, CPU frequency/governor, fan/thermal zone state, and throttling indicators using available read-only tools such as `sensors`, `cpupower frequency-info`, and sysfs. Avoid artificial load.
+2. **Establish baseline.** Run the read-only probes from the preceding procedure only after confirming each tool exists. Capture the exact device, unit, package, mount, interface, user, or time range relevant to this task; avoid broad dumps.
+3. **Select the native path.** Use the package/init/filesystem/network tooling identified by this skill and the verified release. If the host is immutable, declarative, live, isolated, or containerized, follow its supported mechanism rather than forcing a conventional host workflow.
+4. **Authorize any mutation.** Do not install/remove/upgrade packages, restart/enable services, edit firewall/SSH/boot settings, change permissions, restore data, or reboot without explicit approval for the exact target and transaction. Preview dependencies, removals, downtime, and rollback first.
+5. **Verify independently.** Do not change governors, fan curves, power limits, or firmware. Verify readings across a short idle interval and report sensor availability/uncertainty. Re-run the same read-only query and check the resulting behavior, not just the command exit code.
+
+### Stop conditions and recovery
+
+Stop on distribution/release mismatch, unexpected repository or signature state, unknown init manager, read-only filesystem, active remote-management dependency, encryption uncertainty, data-integrity warning, or unexplained permission failure. Preserve logs and the last known-good configuration. Do not repeat a failed mutation blindly; use only a documented distro-supported rollback (package transaction history, snapshot, previous NixOS generation, or known-good VM/template) after approval.
+
+### Evidence and handoff
+
+Report the distribution ID/release, kernel, execution context, target identifier, native tools actually used, baseline, approved changes, independent verification, warnings, and rollback readiness. Redact usernames, IPs, hostnames, share paths, serial numbers, mount credentials, command arguments, and all key material. Never print private keys, tokens, password hashes, or encryption recovery secrets.
 
 ## Completion checklist
 
