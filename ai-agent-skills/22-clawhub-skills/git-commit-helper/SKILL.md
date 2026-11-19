@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Git Commit Helper Skill: 🎯 智能生成 Git commit message，遵循 Conventional Commits 规范，提升代码质量和团队协作效率。"
+---
+
 # Git Commit Helper Skill
 
 🎯 智能生成 Git commit message，遵循 Conventional Commits 规范，提升代码质量和团队协作效率。

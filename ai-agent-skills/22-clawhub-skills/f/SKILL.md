@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "**Name:** `sql-operations-mastery`"
+---
+
 #### Skill: SQL Operations Mastery
 
 **Name:** `sql-operations-mastery`
