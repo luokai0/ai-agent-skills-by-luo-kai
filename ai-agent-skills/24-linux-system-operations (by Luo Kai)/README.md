@@ -1,7 +1,7 @@
 <!-- Copyright (c) 2026 Luo Kai. All rights reserved for original work. -->
 # Linux System Operations — Collection 24
 
-An original library of **1,250 Linux operations skills** for AI agents, organized into **25 distribution-specific folders**, with **50 task-focused skills per distribution**. The collection is capped by usefulness, not by a quota: 88,000 is an upper ceiling, not a target. No filler or artificial variants are added merely to inflate the count.
+An original library of **1,250 Linux operations skills** for AI agents, organized into **25 distribution-specific folders**, with **50 task-focused skills per distribution**. All 1,250 skills are upgraded to **v1.1** with a task-bound agent execution contract. The collection is capped by usefulness, not by a quota: 88,000 is an upper ceiling, not a target. No filler or artificial variants are added merely to inflate the count.
 
 ## 25 supported distributions
 
@@ -30,6 +30,10 @@ An original library of **1,250 Linux operations skills** for AI agents, organize
 - [Qubes OS](23-qubes-os/) — 50 focused skills; `qubes-dom0-update (dom0 only)`; systemd in dom0; VM-specific
 - [SteamOS](24-steamos/) — 50 focused skills; `read-only base / Flatpak`; systemd (managed)
 - [Garuda Linux](25-garuda-linux/) — 50 focused skills; `pacman`; systemd
+
+## v1.1 agent-grade upgrade
+
+Every skill now includes a distribution-aware execution contract with environment detection, native tool selection, task-specific control points, risk classification, explicit authorization gates, independent verification, stop conditions, safe recovery, and privacy-safe evidence reporting. Special rules are enforced for Tails, Qubes OS, NixOS, SteamOS, Alpine, Void, Slackware, Gentoo, and MX Linux. Original procedures, IDs, distribution-specific commands, and rights boundaries are preserved. See [`SKILL_QUALITY_STANDARD.md`](SKILL_QUALITY_STANDARD.md).
 
 ## What each skill contains
 

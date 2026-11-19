@@ -3,7 +3,7 @@
 
 An original, task-oriented library for AI agents that operate Windows 10 and Windows 11 desktops and laptops. It is designed for real interactive machines, including older laptops, standard user accounts, multi-monitor setups, and managed workstations.
 
-**Collection size:** 1,200 individual `SKILL.md` files, organized into 40 domains with 30 operational workflows per domain.
+**Collection size:** 1,200 individual `SKILL.md` files, organized into 40 domains with 30 operational workflows per domain. All skills are upgraded to **v1.1** with a task-bound agent execution contract.
 
 ## Operating principles
 
@@ -57,6 +57,10 @@ An original, task-oriented library for AI agents that operate Windows 10 and Win
 38. **Printers, scanners, docks, and peripherals** — 30 focused workflows
 39. **Backup, restore, and recovery** — 30 focused workflows
 40. **Windows provisioning and account lifecycle** — 30 focused workflows
+
+## v1.1 agent-grade upgrade
+
+Every skill now carries its own execution contract bound to its domain and task. It adds explicit target identification, baseline capture, risk classification, concrete task controls, approval rules, independent success checks, stop conditions, bounded recovery, and a privacy-safe handoff. The original procedures, IDs, command examples, safety rules, and licensing boundaries are preserved. See [`SKILL_QUALITY_STANDARD.md`](SKILL_QUALITY_STANDARD.md) for the maintenance and acceptance criteria.
 
 ## Layout
 

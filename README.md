@@ -17,7 +17,7 @@
 
 Built for discovery, practical reuse, and a growing ecosystem of AI assistants.
 
-**[Explore the library](#-explore-the-library) · [Get started](#-get-started) · [Windows agent playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Browse sources](SOURCES.md) · [Quality checks](#-quality-and-cross-platform-checks)**
+**[Explore the library](#-explore-the-library) · [Get started](#-get-started) · [Windows agent playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md) · [Linux agent playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Browse sources](SOURCES.md) · [Quality checks](#-quality-and-cross-platform-checks)**
 
 </div>
 
@@ -78,13 +78,13 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 
 ### 🐧 Featured collection: Linux System Operations
 
-**1,250 original, distribution-specific skills for AI agents operating 25 well-known Linux systems.** Each distribution has its own folder and 25 independently addressable workflows.
+**1,250 original, distribution-specific skills for AI agents operating 25 well-known Linux systems.** Each distribution has its own folder and 50 independently addressable workflows.
 
 Explore the [Linux System Operations collection](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) and its [Linux AI Agent Operating Playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md).
 
 Coverage includes Ubuntu, Debian, Linux Mint, Fedora, Arch, Kali, RHEL, openSUSE, Manjaro, Pop!_OS, Rocky, AlmaLinux, Gentoo, Alpine, elementary OS, Zorin, Parrot, NixOS, Slackware, Void, MX Linux, Tails, Qubes OS, SteamOS, and Garuda.
 
-Every skill detects the actual distribution and init system, uses native package/service tooling, applies least privilege, requires approval for consequential changes, and verifies outcomes. Special safeguards protect Tails privacy, Qubes isolation, NixOS declarative configuration, and SteamOS immutable-system behavior.
+Every skill now includes a v1.1 agent execution contract: exact task binding, environment preflight, risk classification, task-specific decision points, approval gates, independent verification, stop/recovery conditions, and a privacy-safe handoff. Special safeguards protect Tails privacy, Qubes isolation, NixOS declarative configuration, and SteamOS immutable-system behavior. See the collection’s [skill quality standard](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/SKILL_QUALITY_STANDARD.md).
 
 Original instructional text and workflow design are authored by Luo Kai. Distribution names and third-party tool names are descriptive references; their respective owners retain their rights.
 
@@ -107,7 +107,7 @@ Coverage includes:
 - **Laptop care:** Battery and power management, sleep and hibernation, displays, docks, thermals and peripheral troubleshooting.
 - **Security and reliability:** Defender status, privacy, event logs, performance analysis, safe recovery and evidence-based verification.
 
-Each workflow is a separate `SKILL.md` with stable metadata, prerequisites, Windows-aware procedures, verification, failure recovery and a completion checklist. The shared playbook establishes common rules: observe before acting, use least privilege, protect user data and secrets, obtain approval for consequential changes, and verify outcomes instead of assuming a click worked.
+Each workflow is a separate `SKILL.md` with stable metadata, prerequisites, Windows-aware procedures, verification, failure recovery, a completion checklist, and a v1.1 agent execution contract tailored to its domain and task. The contract adds target binding, risk classification, task-specific decision points, approval gates, independent verification, stop/recovery conditions, and a privacy-safe handoff. See the [Windows skill quality standard](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/SKILL_QUALITY_STANDARD.md). The shared playbook establishes common rules: observe before acting, use least privilege, protect user data and secrets, obtain approval for consequential changes, and verify outcomes instead of assuming a click worked.
 
 **Rights and attribution:** This is original instructional material authored for Luo Kai. Microsoft and third-party product names are used descriptively; their software, trademarks and documentation remain the property of their respective owners.
 
