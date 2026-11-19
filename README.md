@@ -47,26 +47,26 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 
 | # | Collection | What you'll find |
 |---:|---|---|
-| 01 | [Programming languages](ai-agent-skills/01-programming-languages%20(by%20Luo%20Kai)/) | Python, JavaScript, TypeScript, Rust, Go, and language tooling |
-| 02 | [Frontend development](ai-agent-skills/02-frontend-development%20(by%20Luo%20Kai)/) | Web interfaces, frameworks, UI engineering, and design systems |
-| 03 | [Backend development](ai-agent-skills/03-backend-development%20(by%20Luo%20Kai)/) | APIs, services, application architecture, and server-side systems |
-| 04 | [Databases and storage](ai-agent-skills/04-databases-and-storage%20(by%20Luo%20Kai)/) | Data stores, querying, caching, and persistence |
-| 05 | [DevOps and cloud](ai-agent-skills/05-devops-and-cloud%20(by%20Luo%20Kai)/) | Cloud platforms, containers, infrastructure, and CI/CD |
-| 06 | [Security and authentication](ai-agent-skills/06-security-and-auth%20(by%20Luo%20Kai)/) | Application security, identity, access, and authentication |
-| 07 | [Testing and quality](ai-agent-skills/07-testing-and-quality%20(by%20Luo%20Kai)/) | Automated testing, test strategy, debugging, and quality practices |
-| 08 | [Architecture and patterns](ai-agent-skills/08-architecture-and-patterns%20(by%20Luo%20Kai)/) | System design, architecture, maintainability, and design patterns |
-| 09 | [Data and AI](ai-agent-skills/09-data-and-ai%20(by%20Luo%20Kai)/) | Machine learning, LLMs, data engineering, and retrieval systems |
-| 10 | [Mobile development](ai-agent-skills/10-mobile-development%20(by%20Luo%20Kai)/) | Android, iOS, Flutter, and cross-platform applications |
-| 11 | [Specialized coding](ai-agent-skills/11-specialized-coding%20(by%20Luo%20Kai)/) | Game development, Git, blockchain, and specialist tooling |
-| 12 | [Finance and trading](ai-agent-skills/12-finance-and-trading%20(by%20Luo%20Kai)/) | Financial analysis, quantitative workflows, and trading tools |
-| 13 | [Physics and mathematics](ai-agent-skills/13-physics-and-mathematics%20(by%20Luo%20Kai)/) | Mathematical methods, simulation, and scientific computing |
-| 14 | [Chemistry and biology](ai-agent-skills/14-chemistry-and-biology%20(by%20Luo%20Kai)/) | Bioinformatics, chemistry, and life-science workflows |
-| 15 | [Earth and space sciences](ai-agent-skills/15-earth-and-space-sciences%20(by%20Luo%20Kai)/) | Geospatial work, climate, astronomy, and Earth sciences |
-| 16 | [Engineering](ai-agent-skills/16-engineering%20(by%20Luo%20Kai)/) | Mechanical, electrical, civil, and other engineering domains |
-| 17 | [Emerging technology](ai-agent-skills/17-emerging-tech%20(by%20Luo%20Kai)/) | Robotics, Web3, AR/VR, quantum, and new technologies |
-| 18 | [AI agents and automation](ai-agent-skills/18-ai-agents-and-automation%20(by%20Luo%20Kai)/) | Agent frameworks, MCP, orchestration, and automation |
-| 19 | [Business and entrepreneurship](ai-agent-skills/19-business-and-entrepreneurship%20(by%20Luo%20Kai)/) | Product, marketing, sales, operations, and entrepreneurship |
-| 20 | [Health and wellness](ai-agent-skills/20-health-and-wellness%20(by%20Luo%20Kai)/) | Health, fitness, nutrition, and wellness-related resources |
+| 01 | [Programming languages](ai-agent-skills/01-programming-languages%20%28by%20Luo%20Kai%29/) | Python, JavaScript, TypeScript, Rust, Go, and language tooling |
+| 02 | [Frontend development](ai-agent-skills/02-frontend-development%20%28by%20Luo%20Kai%29/) | Web interfaces, frameworks, UI engineering, and design systems |
+| 03 | [Backend development](ai-agent-skills/03-backend-development%20%28by%20Luo%20Kai%29/) | APIs, services, application architecture, and server-side systems |
+| 04 | [Databases and storage](ai-agent-skills/04-databases-and-storage%20%28by%20Luo%20Kai%29/) | Data stores, querying, caching, and persistence |
+| 05 | [DevOps and cloud](ai-agent-skills/05-devops-and-cloud%20%28by%20Luo%20Kai%29/) | Cloud platforms, containers, infrastructure, and CI/CD |
+| 06 | [Security and authentication](ai-agent-skills/06-security-and-auth%20%28by%20Luo%20Kai%29/) | Application security, identity, access, and authentication |
+| 07 | [Testing and quality](ai-agent-skills/07-testing-and-quality%20%28by%20Luo%20Kai%29/) | Automated testing, test strategy, debugging, and quality practices |
+| 08 | [Architecture and patterns](ai-agent-skills/08-architecture-and-patterns%20%28by%20Luo%20Kai%29/) | System design, architecture, maintainability, and design patterns |
+| 09 | [Data and AI](ai-agent-skills/09-data-and-ai%20%28by%20Luo%20Kai%29/) | Machine learning, LLMs, data engineering, and retrieval systems |
+| 10 | [Mobile development](ai-agent-skills/10-mobile-development%20%28by%20Luo%20Kai%29/) | Android, iOS, Flutter, and cross-platform applications |
+| 11 | [Specialized coding](ai-agent-skills/11-specialized-coding%20%28by%20Luo%20Kai%29/) | Game development, Git, blockchain, and specialist tooling |
+| 12 | [Finance and trading](ai-agent-skills/12-finance-and-trading%20%28by%20Luo%20Kai%29/) | Financial analysis, quantitative workflows, and trading tools |
+| 13 | [Physics and mathematics](ai-agent-skills/13-physics-and-mathematics%20%28by%20Luo%20Kai%29/) | Mathematical methods, simulation, and scientific computing |
+| 14 | [Chemistry and biology](ai-agent-skills/14-chemistry-and-biology%20%28by%20Luo%20Kai%29/) | Bioinformatics, chemistry, and life-science workflows |
+| 15 | [Earth and space sciences](ai-agent-skills/15-earth-and-space-sciences%20%28by%20Luo%20Kai%29/) | Geospatial work, climate, astronomy, and Earth sciences |
+| 16 | [Engineering](ai-agent-skills/16-engineering%20%28by%20Luo%20Kai%29/) | Mechanical, electrical, civil, and other engineering domains |
+| 17 | [Emerging technology](ai-agent-skills/17-emerging-tech%20%28by%20Luo%20Kai%29/) | Robotics, Web3, AR/VR, quantum, and new technologies |
+| 18 | [AI agents and automation](ai-agent-skills/18-ai-agents-and-automation%20%28by%20Luo%20Kai%29/) | Agent frameworks, MCP, orchestration, and automation |
+| 19 | [Business and entrepreneurship](ai-agent-skills/19-business-and-entrepreneurship%20%28by%20Luo%20Kai%29/) | Product, marketing, sales, operations, and entrepreneurship |
+| 20 | [Health and wellness](ai-agent-skills/20-health-and-wellness%20%28by%20Luo%20Kai%29/) | Health, fitness, nutrition, and wellness-related resources |
 | 21 | [External registries](ai-agent-skills/21-external-registries/) | Imported and indexed collections from external projects |
 | 22 | [ClawHub skills](ai-agent-skills/22-clawhub-skills/) | Skills collected from the ClawHub ecosystem |
 
