@@ -10,7 +10,7 @@
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/stargazers"><img src="https://img.shields.io/github/stars/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&label=STARS&color=8B5CF6" alt="GitHub stars" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/network/members"><img src="https://img.shields.io/github/forks/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&color=0891B2" alt="GitHub forks" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/actions/workflows/cross-platform.yml"><img src="https://img.shields.io/github/actions/workflow/status/luokai0/ai-agent-skills-by-luo-kai/cross-platform.yml?branch=main&style=for-the-badge&logo=githubactions&label=LINUX%20%2B%20WINDOWS" alt="Cross-platform CI" /></a>
-<img src="https://img.shields.io/badge/SKILL%20FILES-11%2C018-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="11,018 validated skill files" />
+<img src="https://img.shields.io/badge/SKILL%20FILES-11%2C643-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="11,643 validated skill files" />
 <img src="https://img.shields.io/badge/SOURCE%20PROJECTS-25%2B-A78BFA?style=for-the-badge&logo=github" alt="25 plus source projects" />
 
 **A large, organized library of AI-agent skills, workflows, references, scripts, and resources.**
@@ -27,13 +27,13 @@ Built for discovery, practical reuse, and a growing ecosystem of AI assistants.
 
 **Luo Kai's AI Agent Skills Library** brings together skills and resources from a broad range of AI-agent ecosystems and technical communities.
 
-The collection is organized into **23 top-level collections**, spanning software engineering, AI agents, automation, science, business, health, and external skill registries. Depending on the source, an entry may include agent instructions, reusable workflows, reference material, scripts, templates, examples, or supporting assets.
+The collection is organized into **24 top-level collections**, spanning software engineering, AI agents, automation, science, business, health, and external skill registries. Depending on the source, an entry may include agent instructions, reusable workflows, reference material, scripts, templates, examples, or supporting assets.
 
 This is a curated and organized collection, not a claim that every imported item was written by Luo Kai or that every entry contains executable code. Original sources and their attribution matter.
 
 <div align="center">
 
-| **11,018** | **23** | **25+** | **2** |
+| **11,643** | **24** | **25+** | **2** |
 |:---:|:---:|:---:|:---:|
 | validated `SKILL.md` files | top-level collections | source projects documented | CI operating systems |
 
@@ -70,9 +70,23 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 | 21 | [External registries](ai-agent-skills/21-external-registries/) | Imported and indexed collections from external projects |
 | 22 | [ClawHub skills](ai-agent-skills/22-clawhub-skills/) | Skills collected from the ClawHub ecosystem |
 | 23 | [Windows computer operations](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) | 1,200 detailed Windows desktop and laptop agent workflows across 40 domains |
+| 24 | [Linux system operations](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) | 625 Linux agent workflows across 25 distributions, with 25 skills per distribution |
 
 > Collection names and contents may evolve. The folders in the repository are the source of truth.
 
+
+
+### 🐧 Featured collection: Linux System Operations
+
+**625 original, distribution-specific skills for AI agents operating 25 well-known Linux systems.** Each distribution has its own folder and 25 independently addressable workflows.
+
+Explore the [Linux System Operations collection](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) and its [Linux AI Agent Operating Playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md).
+
+Coverage includes Ubuntu, Debian, Linux Mint, Fedora, Arch, Kali, RHEL, openSUSE, Manjaro, Pop!_OS, Rocky, AlmaLinux, Gentoo, Alpine, elementary OS, Zorin, Parrot, NixOS, Slackware, Void, MX Linux, Tails, Qubes OS, SteamOS, and Garuda.
+
+Every skill detects the actual distribution and init system, uses native package/service tooling, applies least privilege, requires approval for consequential changes, and verifies outcomes. Special safeguards protect Tails privacy, Qubes isolation, NixOS declarative configuration, and SteamOS immutable-system behavior.
+
+Original instructional text and workflow design are authored by Luo Kai. Distribution names and third-party tool names are descriptive references; their respective owners retain their rights.
 
 ### 🖥️ Featured collection: Windows Computer Operations
 
