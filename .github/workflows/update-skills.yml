@@ -68,11 +68,11 @@ jobs:
             git push
           fi
 
-      - name: Create or update latest skills release
+      - name: Create versioned skills release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: latest
-          name: Latest Skills Bundle
+          tag_name: skills-${{ github.run_number }}
+          name: Skills Bundle ${{ github.run_number }}
           body: |
             ## Luo Kai AI Agent Skills
 
