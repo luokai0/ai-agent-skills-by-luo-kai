@@ -1,33 +1,79 @@
 #!/usr/bin/env python3
-"""Memory Forensics Agent - Automates Volatility 3 analysis of memory dumps for incident response."""
+# Adapted by Luo Kai on 2026-11-19 from the PinkPixel Skills Collection.
+# Original upstream author: mahipal. Licensed under Apache-2.0; see the
+# collection LICENSE and NOTICE.md. This file is a read-only analysis helper.
+"""Memory Forensics Agent - Automates Volatility 3 analysis of memory dumps."""
 
+import argparse
 import json
 import logging
-import argparse
+import re
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
+PLUGIN_NAME = re.compile(r"^[A-Za-z0-9_.]+$")
+MAX_PLUGIN_TIMEOUT = 600
+
 
 def run_volatility(memory_file, plugin, extra_args=None):
-    """Execute a Volatility 3 plugin and return parsed output."""
-    cmd = ["vol", "-f", memory_file, plugin]
+    """Run one Volatility plugin without a shell and return parsed tabular output."""
+    try:
+        memory_path = Path(memory_file).expanduser().resolve(strict=True)
+    except (OSError, RuntimeError) as exc:
+        logger.error("Memory image cannot be resolved: %s", exc)
+        return []
+
+    if not memory_path.is_file():
+        logger.error("Memory image is not a regular file: %s", memory_path)
+        return []
+    if not isinstance(plugin, str) or not PLUGIN_NAME.fullmatch(plugin):
+        logger.error("Rejected invalid Volatility plugin name")
+        return []
+    if extra_args is not None:
+        if not isinstance(extra_args, (list, tuple)) or any(
+            not isinstance(arg, str) or "\x00" in arg for arg in extra_args
+        ):
+            logger.error("Volatility extra arguments must be a list of safe strings")
+            return []
+
+    cmd = ["vol", "-f", str(memory_path), plugin]
     if extra_args:
         cmd.extend(extra_args)
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
-    if result.returncode != 0:
-        logger.error("Volatility plugin %s failed: %s", plugin, result.stderr[:200])
+
+    try:
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=MAX_PLUGIN_TIMEOUT,
+            check=False,
+        )
+    except subprocess.TimeoutExpired:
+        logger.error("Volatility plugin %s exceeded %d seconds", plugin, MAX_PLUGIN_TIMEOUT)
         return []
-    lines = result.stdout.strip().split("\n")
+    except FileNotFoundError:
+        logger.error("Volatility 3 executable 'vol' was not found on PATH")
+        return []
+    except OSError as exc:
+        logger.error("Could not start Volatility plugin %s: %s", plugin, exc)
+        return []
+
+    if result.returncode != 0:
+        logger.error("Volatility plugin %s failed (exit %d): %s", plugin, result.returncode, result.stderr[:300])
+        return []
+
+    lines = result.stdout.strip().splitlines()
     if len(lines) < 2:
         return []
-    headers = [h.strip() for h in lines[0].split("\t")]
+    headers = [header.strip() for header in lines[0].split("\t")]
     rows = []
     for line in lines[1:]:
         if line.strip() and not line.startswith("*"):
-            fields = [f.strip() for f in line.split("\t")]
+            fields = [field.strip() for field in line.split("\t")]
             if len(fields) == len(headers):
                 rows.append(dict(zip(headers, fields)))
     logger.info("Plugin %s returned %d rows", plugin, len(rows))
@@ -45,46 +91,45 @@ def analyze_processes(memory_file):
     ]
     for proc in processes:
         name = proc.get("ImageFileName", "").lower()
-        if any(s in name for s in suspicious_names):
-            proc["suspicious_reason"] = "Known offensive tool"
+        if any(indicator in name for indicator in suspicious_names):
+            proc["suspicious_reason"] = "Known offensive-tool name; validate in context"
             suspicious.append(proc)
     logger.info("Processes: %d total, %d suspicious", len(processes), len(suspicious))
     return processes, suspicious
 
 
 def analyze_network_connections(memory_file):
-    """Extract network connections and identify C2 communication."""
+    """Extract network connections and identify possible command-and-control activity."""
     connections = run_volatility(memory_file, "windows.netscan")
-    established = [c for c in connections if c.get("State") == "ESTABLISHED"]
+    established = [connection for connection in connections if connection.get("State") == "ESTABLISHED"]
     logger.info("Network connections: %d total, %d established", len(connections), len(established))
     return connections, established
 
 
 def detect_process_injection(memory_file):
-    """Detect process injection using malfind plugin."""
-    malfind_results = run_volatility(memory_file, "windows.malfind")
+    """Detect possible process injection using the Volatility malfind plugin."""
+    results = run_volatility(memory_file, "windows.malfind")
     injected = []
-    for entry in malfind_results:
+    for entry in results:
         injected.append({
             "pid": entry.get("PID", ""),
             "process": entry.get("Process", ""),
-            "start_vpn": entry.get("Start VPN", ""),
+            "start": entry.get("Start VPN", ""),
             "protection": entry.get("Protection", ""),
             "tag": entry.get("Tag", ""),
         })
-    logger.info("Malfind: %d potential injections detected", len(injected))
+    logger.info("Malfind: %d potential injection regions detected", len(injected))
     return injected
 
 
 def analyze_dlls(memory_file, pid=None):
     """List loaded DLLs for a process or all processes."""
-    args = ["--pid", str(pid)] if pid else None
-    dlls = run_volatility(memory_file, "windows.dlllist", args)
-    return dlls
+    args = ["--pid", str(pid)] if pid is not None else None
+    return run_volatility(memory_file, "windows.dlllist", args)
 
 
 def extract_command_history(memory_file):
-    """Extract command line history from process memory."""
+    """Extract command-line history and flag suspicious indicators for review."""
     cmdline = run_volatility(memory_file, "windows.cmdline")
     suspicious_cmds = []
     indicators = [
@@ -94,8 +139,8 @@ def extract_command_history(memory_file):
     ]
     for entry in cmdline:
         args = entry.get("Args", "").lower()
-        if any(ind in args for ind in indicators):
-            entry["suspicious_reason"] = "Suspicious command pattern"
+        if any(indicator in args for indicator in indicators):
+            entry["suspicious_reason"] = "Suspicious command indicator; verify surrounding evidence"
             suspicious_cmds.append(entry)
     logger.info("Command lines: %d total, %d suspicious", len(cmdline), len(suspicious_cmds))
     return cmdline, suspicious_cmds
@@ -109,24 +154,24 @@ def extract_registry_hives(memory_file):
 
 
 def check_kernel_modules(memory_file):
-    """List kernel modules and detect potential rootkits."""
+    """List kernel modules and detect drivers absent from the active module list."""
     modules = run_volatility(memory_file, "windows.modules")
     drivers = run_volatility(memory_file, "windows.driverscan")
+    module_names = {module.get("Name", "").lower() for module in modules}
     hidden = []
-    module_names = {m.get("Name", "").lower() for m in modules}
     for driver in drivers:
         if driver.get("Name", "").lower() not in module_names:
             hidden.append(driver)
-            logger.warning("Hidden driver detected: %s", driver.get("Name"))
+            logger.warning("Driver absent from active module list: %s", driver.get("Name"))
     return modules, hidden
 
 
 def generate_forensics_report(memory_file, processes, suspicious_procs, connections,
                                injections, suspicious_cmds, hidden_drivers):
-    """Generate memory forensics analysis report."""
+    """Generate a structured memory-forensics report."""
     report = {
-        "memory_image": memory_file,
-        "analysis_timestamp": datetime.utcnow().isoformat(),
+        "memory_image": str(Path(memory_file).expanduser()),
+        "analysis_timestamp": datetime.now(timezone.utc).isoformat(),
         "process_summary": {
             "total": len(processes),
             "suspicious": len(suspicious_procs),
@@ -150,23 +195,33 @@ def generate_forensics_report(memory_file, processes, suspicious_procs, connecti
 
 def main():
     parser = argparse.ArgumentParser(description="Memory Forensics Agent (Volatility 3)")
-    parser.add_argument("--memory-file", required=True, help="Path to memory dump file")
-    parser.add_argument("--output", default="memory_forensics_report.json")
+    parser.add_argument("--memory-file", required=True, type=Path, help="Path to an authorized memory dump")
+    parser.add_argument("--output", type=Path, default=Path("memory_forensics_report.json"))
     args = parser.parse_args()
 
-    processes, suspicious = analyze_processes(args.memory_file)
-    connections, established = analyze_network_connections(args.memory_file)
-    injections = detect_process_injection(args.memory_file)
-    cmdlines, suspicious_cmds = extract_command_history(args.memory_file)
-    modules, hidden = check_kernel_modules(args.memory_file)
+    memory_path = args.memory_file.expanduser().resolve()
+    if not memory_path.is_file():
+        parser.error(f"memory image does not exist or is not a file: {memory_path}")
+
+    output_path = args.output.expanduser().resolve()
+    if output_path == memory_path:
+        parser.error("report output must not overwrite the source memory image")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    processes, suspicious = analyze_processes(memory_path)
+    connections, established = analyze_network_connections(memory_path)
+    injections = detect_process_injection(memory_path)
+    _, suspicious_cmds = extract_command_history(memory_path)
+    _, hidden = check_kernel_modules(memory_path)
 
     report = generate_forensics_report(
-        args.memory_file, processes, suspicious, established,
+        memory_path, processes, suspicious, established,
         injections, suspicious_cmds, hidden,
     )
-    with open(args.output, "w") as f:
-        json.dump(report, f, indent=2)
-    logger.info("Report saved to %s", args.output)
+    with output_path.open("w", encoding="utf-8") as report_file:
+        json.dump(report, report_file, indent=2, ensure_ascii=False)
+        report_file.write("\n")
+    logger.info("Report saved to %s", output_path)
 
 
 if __name__ == "__main__":
