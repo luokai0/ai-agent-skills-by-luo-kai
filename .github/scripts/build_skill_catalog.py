@@ -86,7 +86,7 @@ def resolve_license(skill_file: Path, metadata: dict) -> str:
 
     current = skill_file.parent
     while current != BASE:
-        for notice_name in ("UPSTREAM_LICENSE_NOTICE.md", "NOTICE.md"):
+        for notice_name in ("UPSTREAM_LICENSE_NOTICE.md", "NOTICE.md", "LICENSE_SCOPE.md"):
             notice = current / notice_name
             if notice.is_file():
                 notice_text = notice.read_text(encoding="utf-8-sig", errors="replace")
