@@ -30,10 +30,12 @@ SCRIPT_SUFFIXES = {
 }
 SKIP_DIRS = {".git", "node_modules", ".venv", "venv", "__pycache__", ".tox"}
 
-# These patterns indicate highly dangerous execution in executable files.
-# Remote installer pipes are review findings, not proof of malware by themselves.
+# Critical rules require evidence of execution, not merely a forensic indicator string.
 CRITICAL_PATTERNS = [
-    ("encoded-powershell-execution", re.compile(r"\bpowershell(?:\.exe)?\b[^\n]{0,250}(?:-enc(?:odedcommand)?\b|frombase64string)[^\n]{0,250}\b(?:iex|invoke-expression)\b", re.I)),
+    ("encoded-powershell-execution", re.compile(
+        r"(?:subprocess\.(?:run|Popen|call)|os\.system|child_process\.exec)\s*\([^)]{0,1200}"
+        r"(?:powershell(?:\.exe)?)[^)]{0,400}(?:-enc(?:odedcommand)?|frombase64string)[^)]{0,400}"
+        r"(?:iex|invoke-expression)", re.I | re.S)),
     ("base64-dynamic-execution", re.compile(r"\b(?:eval|exec)\s*\(\s*(?:base64\.(?:b64decode|urlsafe_b64decode)|atob)\s*\(", re.I)),
     ("root-filesystem-wipe", re.compile(r"\brm\s+-[a-z]*r[a-z]*f[a-z]*\s+/(?:\s|$)", re.I)),
     ("raw-disk-overwrite", re.compile(r"\bdd\b[^\n]{0,200}\bof=/dev/(?:sd[a-z]|nvme\d)", re.I)),
@@ -41,6 +43,7 @@ CRITICAL_PATTERNS = [
 
 REVIEW_PATTERNS = [
     ("remote-pipe-to-shell", re.compile(r"\b(?:curl|wget)\b[^\n|]{0,500}\|\s*(?:sudo\s+)?(?:ba)?sh\b", re.I)),
+    ("encoded-powershell-indicator", re.compile(r"powershell.{0,100}(?:-enc(?:odedcommand)?|frombase64string)", re.I)),
     ("dynamic-execution", re.compile(r"\b(?:eval|exec)\s*\(", re.I)),
     ("shell-or-subprocess", re.compile(r"\b(?:subprocess\.(?:run|Popen|call)|os\.system|child_process\.exec|shell=True)\b", re.I)),
     ("network-client", re.compile(r"\b(?:requests\.(?:get|post|put|delete)|urllib\.request|fetch\s*\(|axios\.|http\.request|curl\s|wget\s)", re.I)),
@@ -81,6 +84,7 @@ def main() -> int:
 
     findings = []
     inventory = []
+    scanned_files = 0
     skill_files = sorted(p for p in skills_root.rglob("*") if p.is_file() and p.name.lower() == "skill.md")
     skill_dirs = {p.parent for p in skill_files}
 
@@ -127,6 +131,7 @@ def main() -> int:
             findings.append({"severity": "review", "type": "file-read-error", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": str(exc)})
             continue
 
+        scanned_files += 1
         relative = file_path.relative_to(repo_root).as_posix()
         executable = file_path.suffix.lower() in SCRIPT_SUFFIXES or file_path.name.lower() in {"dockerfile", "makefile"}
 
@@ -147,7 +152,7 @@ def main() -> int:
     report = {
         "scope": "Static screening only; not a malware-free guarantee.",
         "skills_discovered": len(skill_files),
-        "text_files_scanned": sum(1 for item in findings if item.get("type") not in {"frontmatter"}),
+        "text_files_scanned": scanned_files,
         "findings_by_severity": dict(counts),
         "license_status_counts": dict(license_counts),
         "skills": inventory,
@@ -158,6 +163,7 @@ def main() -> int:
     report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"Skills discovered: {len(skill_files)}")
+    print(f"Text files scanned: {scanned_files}")
     print(f"License status groups: {dict(license_counts)}")
     print(f"Findings: {dict(counts)}")
     critical = [item for item in findings if item["severity"] == "critical"]
