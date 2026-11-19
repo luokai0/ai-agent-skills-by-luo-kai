@@ -139,7 +139,7 @@ A passing workflow confirms these automated checks for that commit. It does not 
 
 ## 🌐 Sources and attribution
 
-This library brings together material from **25+ source projects**. The source register documents known upstream repositories, descriptions, and license information:
+This library tracks **25+ upstream source projects**. Nineteen external collections are currently mirrored in this repository; the remaining entries are reference-only. The source register documents known upstream repositories, descriptions, and license information:
 
 **→ [Read the source register: SOURCES.md](SOURCES.md)**
 
