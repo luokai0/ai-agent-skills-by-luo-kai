@@ -10,7 +10,7 @@
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/stargazers"><img src="https://img.shields.io/github/stars/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&label=STARS&color=8B5CF6" alt="GitHub stars" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/network/members"><img src="https://img.shields.io/github/forks/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&color=0891B2" alt="GitHub forks" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/actions/workflows/cross-platform.yml"><img src="https://img.shields.io/github/actions/workflow/status/luokai0/ai-agent-skills-by-luo-kai/cross-platform.yml?branch=main&style=for-the-badge&logo=githubactions&label=LINUX%20%2B%20WINDOWS" alt="Cross-platform CI" /></a>
-<img src="https://img.shields.io/badge/SKILL%20FILES-9%2C812-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="9,812 validated skill files" />
+<img src="https://img.shields.io/badge/SKILL%20FILES-9%2C818-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="9,818 validated skill files" />
 <img src="https://img.shields.io/badge/SOURCE%20PROJECTS-25%2B-A78BFA?style=for-the-badge&logo=github" alt="25 plus source projects" />
 
 **A large, organized library of AI-agent skills, workflows, references, scripts, and resources.**
@@ -33,7 +33,7 @@ This is a curated and organized collection, not a claim that every imported item
 
 <div align="center">
 
-| **9,812** | **22** | **25+** | **2** |
+| **9,818** | **22** | **25+** | **2** |
 |:---:|:---:|:---:|:---:|
 | validated `SKILL.md` files | top-level collections | source projects documented | CI operating systems |
 
@@ -122,6 +122,9 @@ Open the installed skill's `SKILL.md` and follow its instructions. Some skills n
 Cross-platform reliability is part of the project, not an afterthought.
 
 The repository's GitHub Actions workflow checks both **Ubuntu** and **Windows**. It currently:
+- Runs a static security and provenance audit over the skill collection without executing imported scripts.
+- Scans skill files and bundled assets with ClamAV signatures before publishing a release.
+- Keeps original and third-party licensing boundaries documented in LICENSE, THIRD_PARTY_NOTICES.md, and SECURITY_POLICY.md.
 
 - Checks out the repository and its submodules recursively.
 - Enables Git long-path support on Windows.
@@ -141,6 +144,19 @@ This library brings together material from **25+ source projects**. The source r
 **→ [Read the source register: SOURCES.md](SOURCES.md)**
 
 Imported material remains attributable to its original authors and projects. Where an upstream repository provides a license or attribution notice, that notice continues to apply to the material it covers. Please consult the original source before redistributing or using third-party content.
+
+## ✨ 2026 original skill additions
+
+Six new, independently authored skills have been added:
+
+- **Skill Supply Chain Audit** — provenance, malicious behavior, dependencies, permissions, and license review.
+- **MCP Server Hardening** — authentication, authorization, SSRF controls, validation, and audit logging.
+- **Prompt Injection Defense** — trust boundaries for browser, file, retrieval, and tool content.
+- **Agent Evaluation Design** — repeatable quality, safety, reliability, and regression evaluations.
+- **Agent Observability** — traces, cost controls, metrics, redaction, and operational alerts.
+- **AI-Generated Change Verification** — independent evidence-based checks before merge or release.
+
+Original additions are identified with Luo Kai provenance metadata. Imported works retain their original authorship, license, and notices.
 
 ## 🤝 Contributing
 
