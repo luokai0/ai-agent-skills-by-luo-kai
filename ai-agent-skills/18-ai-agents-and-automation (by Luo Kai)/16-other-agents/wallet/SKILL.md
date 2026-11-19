@@ -4,7 +4,6 @@ description: "The agent's wallet for EVM chain transactions and raw signing. Use
 author: luo-kai
 allowed-tools: Read, Write, Bash(npx:@vincentai/cli*)
 version: 1.0.0
-author: luo-kai
 license: MIT
 homepage: https://heyvincent.ai
 source: https://github.com/HeyVincent-ai/Vincent

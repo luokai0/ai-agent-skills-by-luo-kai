@@ -1,11 +1,36 @@
 #!/usr/bin/env python3
 """Validate every skill frontmatter block before packaging or installation."""
 from pathlib import Path
-import sys
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 SKILLS_ROOT = ROOT / "ai-agent-skills"
+
+class UniqueKeyLoader(yaml.SafeLoader):
+    pass
+
+def construct_unique_mapping(loader, node, deep=False):
+    mapping = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        try:
+            duplicate = key in mapping
+        except TypeError as exc:
+            raise yaml.constructor.ConstructorError(
+                "while constructing a mapping", node.start_mark,
+                "found an unhashable key", key_node.start_mark
+            ) from exc
+        if duplicate:
+            raise yaml.constructor.ConstructorError(
+                "while constructing a mapping", node.start_mark,
+                f"found duplicate key {key!r}", key_node.start_mark
+            )
+        mapping[key] = loader.construct_object(value_node, deep=deep)
+    return mapping
+
+UniqueKeyLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, construct_unique_mapping
+)
 
 def main() -> int:
     files = sorted(SKILLS_ROOT.rglob("SKILL.md"))
@@ -21,7 +46,7 @@ def main() -> int:
                 end = next(i for i in range(1, len(lines)) if lines[i].strip() == "---")
             except StopIteration:
                 raise ValueError("frontmatter closing --- not found")
-            data = yaml.safe_load("\n".join(lines[1:end]))
+            data = yaml.load("\n".join(lines[1:end]), Loader=UniqueKeyLoader)
             if not isinstance(data, dict):
                 raise ValueError("frontmatter must be a YAML mapping")
             for field in ("name", "description"):
@@ -35,7 +60,7 @@ def main() -> int:
         for path, error in failures:
             print(f" - {path}: {error}")
         return 1
-    print(f"PASS: validated YAML frontmatter and required name/description fields in all {len(files)} skill files")
+    print(f"PASS: validated YAML frontmatter, unique keys, and required name/description fields in all {len(files)} skill files")
     return 0
 
 if __name__ == "__main__":

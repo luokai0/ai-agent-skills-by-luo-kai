@@ -4,7 +4,6 @@ description: "Polymarket prediction market trading for agents. Use this skill wh
 author: luo-kai
 allowed-tools: Read, Write, Bash(npx:@vincentai/cli*)
 version: 1.0.0
-author: luo-kai
 license: MIT
 homepage: https://heyvincent.ai
 source: https://github.com/HeyVincent-ai/Vincent
