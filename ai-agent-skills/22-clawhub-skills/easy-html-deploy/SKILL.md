@@ -1,7 +1,8 @@
 ---
-name: easy-html-deploy
-description: Instantly publish a single self-contained HTML page to htmlcode.fun without GitHub, Vercel, or Netlify. Use when an agent needs the fastest path from HTML to a live URL for landing pages, demo pages, temporary microsites, QR share pages, and AI-generated single-file frontends. Supports stable short codes for overwrite-style updates and includes a ready-to-run Python deployment script. Live example and visual guide: https://www.htmlcode.fun/s/htmlcode-fun-guide
+name: "easy-html-deploy"
+description: "Instantly publish a single self-contained HTML page to htmlcode.fun without GitHub, Vercel, or Netlify. Use when an agent needs the fastest path from HTML to a live URL for landing pages, demo pages, temporary microsites, QR share pages, and AI-generated single-file frontends. Supports stable short codes for overwrite-style updates and includes a ready-to-run Python deployment script. Live example and visual guide: https://www.htmlcode.fun/s/htmlcode-fun-guide"
 ---
+
 
 # Easy HTML Deploy
 

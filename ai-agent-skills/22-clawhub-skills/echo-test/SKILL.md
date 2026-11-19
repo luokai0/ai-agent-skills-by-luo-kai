@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Echo Test: 这是一个测试技能，你输入什么，它就返回什么，同时显示当前时间。"
+---
+
 slug: echo-test
 name: Echo Test
 version: 1.0.0

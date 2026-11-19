@@ -1,7 +1,8 @@
 ---
-name: file-management
-description: Safe filesystem operations using built-in Unix tools and macOS utilities. Use when listing, searching, reading, organizing, or managing files and directories. Always confirm destructive operations before executing. Triggers on: "list files", "search for files", "find files", "organize files", "batch rename", "move files", "copy files", "delete files", "disk usage", "file search".
+name: "file-management"
+description: "Safe filesystem operations using built-in Unix tools and macOS utilities. Use when listing, searching, reading, organizing, or managing files and directories. Always confirm destructive operations before executing. Triggers on: \"list files\", \"search for files\", \"find files\", \"organize files\", \"batch rename\", \"move files\", \"copy files\", \"delete files\", \"disk usage\", \"file search\"."
 ---
+
 
 # File Management
 

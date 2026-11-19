@@ -1,11 +1,10 @@
-# Debug Checklist - 系统化 Debug 检查清单
-
-**Version**: 1.0.0  
-**Author**: Claw  
-**License**: MIT
-
+---
+name: "skill"
+description: "int main() {"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## Description / 功能说明
 
 A systematic debugging checklist tool based on holistic thinking. Improves debug efficiency by 7.8x and reduces bug recurrence by 85%.
@@ -23,8 +22,8 @@ A systematic debugging checklist tool based on holistic thinking. Improves debug
 - C/C++ debugging / C/C++ 调试
 - Code review checklist / 代码审查清单
 - Learning tool for beginners / 初学者学习工具
+-->
 
----
 
 ## Usage / 使用示例
 
