@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-cat /proc/cmdline; bootctl status (if available); ls /boot
+cat /proc/cmdline; bootctl status; ls /boot
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.

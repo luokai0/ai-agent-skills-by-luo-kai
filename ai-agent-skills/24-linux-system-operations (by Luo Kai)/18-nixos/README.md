@@ -1,6 +1,6 @@
 # NixOS agent operations
 
-This folder contains 25 independently addressable AI-agent skills for operating **NixOS** systems. The workflows are distribution-specific and intentionally do not assume that another Linux family uses the same package manager, init system, repository layout, or security defaults.
+This folder contains 50 independently addressable AI-agent skills for operating **NixOS** systems. The workflows are distribution-specific and intentionally do not assume that another Linux family uses the same package manager, init system, repository layout, or security defaults.
 
 - Package tooling: `nix`
 - Service manager: `systemd` (verify at runtime)

@@ -1,39 +1,39 @@
 <!-- Copyright (c) 2026 Luo Kai. All rights reserved for original work. -->
 # Linux System Operations — Collection 24
 
-An original library of **625 Linux operations skills** for AI agents, organized into **25 distribution-specific folders**, with **25 task-focused skills per distribution**. The collection is capped by usefulness, not by a quota: 88,000 is an upper ceiling, not a target. No filler or artificial variants are added merely to inflate the count.
+An original library of **1,250 Linux operations skills** for AI agents, organized into **25 distribution-specific folders**, with **50 task-focused skills per distribution**. The collection is capped by usefulness, not by a quota: 88,000 is an upper ceiling, not a target. No filler or artificial variants are added merely to inflate the count.
 
 ## 25 supported distributions
 
-- [Ubuntu](01-ubuntu/) — 25 focused skills; `apt`; systemd
-- [Debian](02-debian/) — 25 focused skills; `apt`; systemd
-- [Linux Mint](03-linux-mint/) — 25 focused skills; `apt`; systemd
-- [Fedora](04-fedora/) — 25 focused skills; `dnf`; systemd
-- [Arch Linux](05-arch-linux/) — 25 focused skills; `pacman`; systemd
-- [Kali Linux](06-kali-linux/) — 25 focused skills; `apt`; systemd
-- [Red Hat Enterprise Linux](07-red-hat-enterprise-linux/) — 25 focused skills; `dnf`; systemd
-- [openSUSE](08-opensuse/) — 25 focused skills; `zypper`; systemd
-- [Manjaro](09-manjaro/) — 25 focused skills; `pacman`; systemd
-- [Pop!_OS](10-pop-os/) — 25 focused skills; `apt`; systemd
-- [Rocky Linux](11-rocky-linux/) — 25 focused skills; `dnf`; systemd
-- [AlmaLinux](12-almalinux/) — 25 focused skills; `dnf`; systemd
-- [Gentoo](13-gentoo/) — 25 focused skills; `emerge`; OpenRC or systemd
-- [Alpine Linux](14-alpine-linux/) — 25 focused skills; `apk`; OpenRC
-- [elementary OS](15-elementary-os/) — 25 focused skills; `apt`; systemd
-- [Zorin OS](16-zorin-os/) — 25 focused skills; `apt`; systemd
-- [Parrot OS](17-parrot-os/) — 25 focused skills; `apt`; systemd
-- [NixOS](18-nixos/) — 25 focused skills; `nix`; systemd
-- [Slackware](19-slackware/) — 25 focused skills; `slackpkg/pkgtools`; SysV-style BSD scripts
-- [Void Linux](20-void-linux/) — 25 focused skills; `xbps`; runit
-- [MX Linux](21-mx-linux/) — 25 focused skills; `apt`; systemd or SysVinit
-- [Tails](22-tails/) — 25 focused skills; `apt (restricted)`; systemd (managed)
-- [Qubes OS](23-qubes-os/) — 25 focused skills; `qubes-dom0-update (dom0 only)`; systemd in dom0; VM-specific
-- [SteamOS](24-steamos/) — 25 focused skills; `read-only base / Flatpak`; systemd (managed)
-- [Garuda Linux](25-garuda-linux/) — 25 focused skills; `pacman`; systemd
+- [Ubuntu](01-ubuntu/) — 50 focused skills; `apt`; systemd
+- [Debian](02-debian/) — 50 focused skills; `apt`; systemd
+- [Linux Mint](03-linux-mint/) — 50 focused skills; `apt`; systemd
+- [Fedora](04-fedora/) — 50 focused skills; `dnf`; systemd
+- [Arch Linux](05-arch-linux/) — 50 focused skills; `pacman`; systemd
+- [Kali Linux](06-kali-linux/) — 50 focused skills; `apt`; systemd
+- [Red Hat Enterprise Linux](07-red-hat-enterprise-linux/) — 50 focused skills; `dnf`; systemd
+- [openSUSE](08-opensuse/) — 50 focused skills; `zypper`; systemd
+- [Manjaro](09-manjaro/) — 50 focused skills; `pacman`; systemd
+- [Pop!_OS](10-pop-os/) — 50 focused skills; `apt`; systemd
+- [Rocky Linux](11-rocky-linux/) — 50 focused skills; `dnf`; systemd
+- [AlmaLinux](12-almalinux/) — 50 focused skills; `dnf`; systemd
+- [Gentoo](13-gentoo/) — 50 focused skills; `emerge`; OpenRC or systemd
+- [Alpine Linux](14-alpine-linux/) — 50 focused skills; `apk`; OpenRC
+- [elementary OS](15-elementary-os/) — 50 focused skills; `apt`; systemd
+- [Zorin OS](16-zorin-os/) — 50 focused skills; `apt`; systemd
+- [Parrot OS](17-parrot-os/) — 50 focused skills; `apt`; systemd
+- [NixOS](18-nixos/) — 50 focused skills; `nix`; systemd
+- [Slackware](19-slackware/) — 50 focused skills; `slackpkg/pkgtools`; SysV-style BSD scripts
+- [Void Linux](20-void-linux/) — 50 focused skills; `xbps`; runit
+- [MX Linux](21-mx-linux/) — 50 focused skills; `apt`; systemd or SysVinit
+- [Tails](22-tails/) — 50 focused skills; `apt (restricted)`; systemd (managed)
+- [Qubes OS](23-qubes-os/) — 50 focused skills; `qubes-dom0-update (dom0 only)`; systemd in dom0; VM-specific
+- [SteamOS](24-steamos/) — 50 focused skills; `read-only base / Flatpak`; systemd (managed)
+- [Garuda Linux](25-garuda-linux/) — 50 focused skills; `pacman`; systemd
 
 ## What each skill contains
 
-Every skill is a separate `SKILL.md` with valid YAML frontmatter, stable ID (`linux-0001` through `linux-0625`), a precise objective, distribution/release detection, prerequisites, read-only diagnostics, approval gates, native commands, independent verification, failure recovery, and a completion checklist.
+Every skill is a separate `SKILL.md` with valid YAML frontmatter, stable ID (`linux-0001` through `linux-1250`), a precise objective, distribution/release detection, prerequisites, read-only diagnostics, approval gates, native commands, independent verification, failure recovery, and a completion checklist.
 
 ## Operating model
 
