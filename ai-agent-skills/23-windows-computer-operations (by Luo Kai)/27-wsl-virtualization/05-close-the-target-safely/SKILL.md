@@ -7,7 +7,7 @@ metadata:
   platform: "Windows 10 and Windows 11"
   category: "Windows Computer Operations"
   skill_id: "windows-0785"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Windows WSL, virtual machines, and containers: Close The Target Safely
@@ -62,6 +62,32 @@ Run only commands appropriate to the current shell and Windows version. Check co
 ## Failure handling and recovery
 
 If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Export or snapshot before approved destructive maintenance; distinguish host and guest paths. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+## Agent execution contract — v1.1
+
+**Skill identity:** `windows-0785` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+
+**Exact task:** Windows WSL, virtual machines, and containers: Close The Target Safely. Carry out **close the target safely** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `27-wsl-virtualization`. **Scope:** WSL distributions, Hyper-V/virtualization status, VM lifecycle, and container tooling.; **Preferred tools:** wsl --status, wsl --list --verbose, systeminfo, virtualization settings, Docker/Podman UI.; **Task focus:** For **close the target safely**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not delete distributions, VM disks, containers, or volumes without explicit confirmation and backup.; **Verification:** Verify distro/VM identity, resource allocation, network mode, and guest health. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+### Execution plan
+
+**Mode:** Graceful close with unsaved-work protection.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Identify the exact window and inspect for unsaved work, active transfers, dialogs, or background operations. Use the application Close command or window control and handle any save/discard prompt according to the user’s explicit instruction. Do not use taskkill or End task as a routine close method.
+4. **Gate changes.** GUI interaction can affect the active user session. Confirm foreground window and unsaved work before sending input; do not close, restart, or sign out to recover a navigation issue.
+5. **Verify independently.** If the app is hung, collect a minimal diagnostic and ask before force-closing. Verify only the intended window closed and unrelated work remains open. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
 
 ## Completion checklist
 
