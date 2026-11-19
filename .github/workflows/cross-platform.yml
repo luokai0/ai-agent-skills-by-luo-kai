@@ -21,8 +21,10 @@ jobs:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-      - name: Check out repository
+      - name: Check out repository and submodules
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
