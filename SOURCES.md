@@ -7,6 +7,7 @@ This document tracks all sources aggregated into this repository.
 ## 1. Zo Computer Official Skills
 
 **Source:** https://github.com/zocomputer/skills  
+**Imported path:** `ai-agent-skills/21-external-registries/01-zo-computer-official`
 **License:** MIT  
 **Skills:** 80+
 
@@ -20,6 +21,7 @@ Official skills for Zo Computer personal AI assistant. Includes:
 ## 2. Anthropic Official Skills
 
 **Source:** https://github.com/anthropics/skills
+**Imported path:** `ai-agent-skills/21-external-registries/02-anthropic-official`
 **License:** Apache-2.0 for skills/code; CC BY 4.0 for documentation material
 **License notes:** No single root LICENSE was found; individual skill license files and notices take precedence.
 **Skills:** 18
@@ -37,6 +39,7 @@ Includes the Agent Skills specification in `/spec/`.
 ## 3. Agent Skills Hub
 
 **Source:** https://github.com/agent-skills-hub/agent-skills-hub  
+**Imported path:** `ai-agent-skills/21-external-registries/03-agent-skills-hub`
 **License:** MIT  
 **Skills:** 793+
 
@@ -52,6 +55,7 @@ Includes catalog.json and skills_index.json for programmatic access.
 ## 4. SkillsCatalog
 
 **Source:** https://github.com/SkillsCatalog/registry  
+**Imported path:** `ai-agent-skills/21-external-registries/04-skills-catalog`
 **License:** MIT  
 **Skills:** 8
 
@@ -69,6 +73,7 @@ Includes JSON schema for skill manifests.
 ## 5. Hashgraph Registry Broker Skills
 
 **Source:** https://github.com/hashgraph-online/registry-broker-skills  
+**Imported path:** `ai-agent-skills/21-external-registries/05-hashgraph`
 **License:** Apache-2.0
 **Skills:** 1
 
@@ -81,6 +86,7 @@ Hedera-based agent registry skills:
 ## 6. Kai98k Agent Skills Registry
 
 **Source:** https://github.com/kai98k/agent-skills-registry  
+**Imported path:** `ai-agent-skills/21-external-registries/06-kai98k-registry`
 **License:** MIT  
 **Skills:** 1 (registry tools)
 
@@ -93,6 +99,7 @@ Open-source registry for AI agent skills:
 ## 7. Antigravity Awesome Skills
 
 **Source:** https://github.com/sickn33/agentic-awesome-skills
+**Imported path:** `ai-agent-skills/21-external-registries/07-antigravity-awesome`
 **License:** MIT
 **License notes:** Canonical upstream repository currently uses this name; imported folder retains its historical label.
 **Skills:** 1,436+
@@ -108,6 +115,7 @@ The largest installable skill library:
 ## 8. PinkPixel Skills Collection
 
 **Source:** https://github.com/pinkpixel-dev/skills-collection-1  
+**Imported path:** `ai-agent-skills/21-external-registries/08-pinkpixel-collection`
 **License:** Apache-2.0 (upstream LICENSE added 2026-08-09; imported snapshot SHA not recorded)  
 **Skills:** 969+
 
@@ -121,6 +129,7 @@ Part 1 of a large AI skills collection:
 ## 9. Alirezarezvani Claude Skills
 
 **Source:** https://github.com/alirezarezvani/claude-skills  
+**Imported path:** `ai-agent-skills/21-external-registries/09-alirezarezvani-skills`
 **License:** MIT  
 **Skills:** 235+
 
@@ -135,6 +144,7 @@ Production-grade engineering skills:
 ## 10. Microsoft Azure Agent Skills
 
 **Source:** https://github.com/MicrosoftDocs/Agent-Skills
+**Imported path:** `ai-agent-skills/21-external-registries/10-microsoft-azure`
 **License:** CC BY 4.0
 **License notes:** Attribution required; indicate changes; no endorsement implied.
 **Skills:** 192
@@ -149,6 +159,7 @@ Official Microsoft Azure skills:
 ## 11. Composio Awesome Claude Skills
 
 **Source:** https://github.com/ComposioHQ/awesome-claude-skills
+**Imported path:** `ai-agent-skills/21-external-registries/11-composio-skills`
 **License:** Apache-2.0
 **License notes:** Upstream README declares Apache-2.0; individual skill licenses and notices may override.
 **Skills:** 1,000+ links
@@ -163,6 +174,7 @@ Curated list of production-ready skills:
 ## 12. Addy Osmani Agent Skills
 
 **Source:** https://github.com/addyosmani/agent-skills  
+**Imported path:** `ai-agent-skills/21-external-registries/12-addyosmani-skills`
 **License:** MIT  
 **Skills:** 18
 
@@ -176,6 +188,7 @@ Production-grade engineering skills by Addy Osmani:
 ## 13. Replicate Skills
 
 **Source:** https://github.com/replicate/skills
+**Imported path:** `ai-agent-skills/21-external-registries/13-replicate-skills`
 **License:** Per-skill licenses only; repository-wide license unverified
 **License notes:** Upstream repository was unavailable during this audit; preserve individual LICENSE files and do not assume MIT.
 **Skills:** 4
@@ -190,6 +203,7 @@ Skills for building AI-powered apps with Replicate:
 ## 14. SkillsDirectory Awesome AI Skills
 
 **Source:** https://github.com/skillsdirectory/awesome-ai-skills
+**Imported path:** `ai-agent-skills/21-external-registries/14-skillsdirectory`
 **License:** CC0 1.0
 **License notes:** Public-domain dedication; do not claim exclusive ownership of the underlying material.
 **Skills:** 40+
@@ -202,6 +216,7 @@ Community-curated skills for all AI coding assistants:
 ## 15. AbsolutelySkilled
 
 **Source:** https://github.com/dhruvjainin/absolute
+**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
 **License:** MIT
 **License notes:** The original source URL redirects to dhruvjainin/absolute; MIT license verified on 2026-11-19.
 **Skills:** 10+
@@ -216,6 +231,7 @@ MDX-based skills for AI agents:
 ## 16. Strativd AI Skills
 
 **Source:** https://github.com/strativd/ai-skills
+**Imported path:** `ai-agent-skills/21-external-registries/16-strativd-skills`
 **License:** Per-skill licenses vary; no repository-wide license found
 **License notes:** Upstream README directs users to check each skill's own license.
 **Skills:** 8
@@ -227,6 +243,7 @@ Curated SKILL.md collection implementing Agent Skills standard.
 ## 17. SkillUse
 
 **Source:** https://github.com/skilluse/skilluse
+**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
 **License:** MIT
 **Skills:** 5
 
@@ -239,6 +256,7 @@ TypeScript CLI for multi-agent skill management:
 ## 18. OrganVM Skills
 
 **Source:** https://github.com/organvm-iv-taxis/a-i--skills  
+**Imported path:** `ai-agent-skills/21-external-registries/18-organvm-skills`
 **License:** Apache-2.0
 **Skills:** 101
 
@@ -252,6 +270,7 @@ TypeScript CLI for multi-agent skill management:
 ## 19. RisingWave Agent Skills
 
 **Source:** https://github.com/risingwavelabs/agent-skills  
+**Imported path:** `ai-agent-skills/21-external-registries/19-risingwave-skills`
 **License:** Apache-2.0
 **Skills:** 10+
 
@@ -264,6 +283,7 @@ Skills for RisingWave streaming SQL:
 ## 20. Iliaal AI Skills
 
 **Source:** https://github.com/iliaal/ai-skills  
+**Imported path:** `ai-agent-skills/21-external-registries/20-iliaal-skills`
 **License:** MIT  
 **Skills:** 15
 
@@ -277,6 +297,7 @@ Agent skills for coding assistants:
 ## 21. Rushikeshpol AI Skills
 
 **Source:** https://github.com/rushikeshpol02/ai-skills
+**Imported path:** `ai-agent-skills/21-external-registries/21-rushikeshpol-skills`
 **License:** Unverified; no license found
 **License notes:** Upstream repository could not be retrieved during this audit; do not assume a license or redistribute until verified.
 **Skills:** 21
@@ -291,6 +312,7 @@ Cursor & Claude skills for:
 ## 22. Hesreallyhim Awesome Claude Code
 
 **Source:** https://github.com/hesreallyhim/awesome-claude-code
+**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
 **License:** CC BY-NC-ND 4.0
 **License notes:** Non-commercial use only; no derivatives or adaptations; attribution required.
 **Skills:** 100+ resources
@@ -305,6 +327,7 @@ Curated list with 36k+ stars:
 ## 23. Travisvn Awesome Claude Skills
 
 **Source:** https://github.com/travisvn/awesome-claude-skills
+**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
 **License:** No explicit license found
 **License notes:** No repository license grant found; do not adapt or redistribute without permission.
 **Skills:** 50+ resources
@@ -316,6 +339,7 @@ Curated list of Claude skills, resources, and tools.
 ## 24. GetBindu Awesome Claude Code and Skills
 
 **Source:** https://github.com/GetBindu/awesome-claude-code-and-skills  
+**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
 **License:** Apache-2.0
 **Skills:** 40+ resources
 
@@ -329,6 +353,7 @@ Collection of Claude Skills:
 ## 25. Heilcheng Awesome Agent Skills
 
 **Source:** https://github.com/heilcheng/awesome-agent-skills  
+**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
 **License:** MIT  
 **Skills:** 4.4k stars
 
@@ -348,7 +373,7 @@ Licenses vary by source. Each imported project and its individual files remain s
 
 ## License audit notes (2026-11-19)
 
-Collection-level licenses were checked against upstream repository files or README declarations. Verified license texts and source notices are preserved in the corresponding source folders under `ai-agent-skills/21-external-registries`. Per-skill licenses and notices always take precedence over a collection-level license.
+Collection-level licenses were checked against upstream repository files or README declarations. Nineteen external source collections are currently mirrored under `ai-agent-skills/21-external-registries`; other entries in this register are reference-only and do not imply that their content is present in this repository. Verified license texts and source notices are preserved in the corresponding source folders under `ai-agent-skills/21-external-registries`. Per-skill licenses and notices always take precedence over a collection-level license.
 
 Sources with per-skill licensing only: Anthropic, Replicate, and Strativd. Sources with no verified repository-wide license: Rushikeshpol and Travisvn. These materials must not be relabeled as Luo Kai originals or adapted until the applicable rights are confirmed.
 
