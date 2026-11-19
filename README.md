@@ -11,13 +11,13 @@
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/network/members"><img src="https://img.shields.io/github/forks/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&color=0891B2" alt="GitHub forks" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/actions/workflows/cross-platform.yml"><img src="https://img.shields.io/github/actions/workflow/status/luokai0/ai-agent-skills-by-luo-kai/cross-platform.yml?branch=main&style=for-the-badge&logo=githubactions&label=LINUX%20%2B%20WINDOWS" alt="Cross-platform CI" /></a>
 <img src="https://img.shields.io/badge/SKILL%20FILES-12%2C268-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="12,268 validated skill files" />
-<img src="https://img.shields.io/badge/SOURCE%20PROJECTS-25%2B-A78BFA?style=for-the-badge&logo=github" alt="25 plus source projects" />
+<img src="https://img.shields.io/badge/WINDOWS%20%2B%20LINUX%20SKILLS-2%2C450-8B5CF6?style=for-the-badge&logo=markdown" alt="2,450 Windows and Linux skills" />
 
 **A large, organized library of AI-agent skills, workflows, references, scripts, and resources.**
 
 Built for discovery, practical reuse, and a growing ecosystem of AI assistants.
 
-**[Explore the library](#-explore-the-library) · [Get started](#-get-started) · [Windows agent playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md) · [Linux agent playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Browse sources](SOURCES.md) · [Quality checks](#-quality-and-cross-platform-checks)**
+**[Explore the library](#-explore-the-library) · [Consolidation audit](docs/SKILL_CONSOLIDATION_AUDIT.md) · [Get started](#-get-started) · [Windows agent playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md) · [Linux agent playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Quality checks](#-quality-and-cross-platform-checks)**
 
 </div>
 
@@ -25,21 +25,21 @@ Built for discovery, practical reuse, and a growing ecosystem of AI assistants.
 
 ## ✦ The project
 
-**Luo Kai's AI Agent Skills Library** brings together skills and resources from a broad range of AI-agent ecosystems and technical communities.
+**Luo Kai's AI Agent Skills Library** organizes agent skills, operational workflows, and technical resources into 24 practical collections.
 
-The collection is organized into **24 top-level collections**, spanning software engineering, AI agents, automation, science, business, health, and external skill registries. Depending on the source, an entry may include agent instructions, reusable workflows, reference material, scripts, templates, examples, or supporting assets.
+The collection is organized into **24 top-level collections**, spanning software engineering, AI agents, automation, science, business, health, Windows operations, and Linux system operations. Depending on the source, an entry may include agent instructions, reusable workflows, reference material, scripts, templates, examples, or supporting assets.
 
-This is a curated and organized collection, not a claim that every imported item was written by Luo Kai or that every entry contains executable code. Original sources and their attribution matter.
+The library includes both executable and instructional material. Each entry should be checked for its prerequisites, supported environment, and applicable rights before use.
 
 <div align="center">
 
-| **12,268** | **24** | **25+** | **2** |
+| **12,268** | **24** | **2,450** | **2** |
 |:---:|:---:|:---:|:---:|
-| validated `SKILL.md` files | top-level collections | source projects documented | CI operating systems |
+| validated `SKILL.md` files | top-level collections | Windows + Linux workflows | CI operating systems |
 
 </div>
 
-<sub>Skill-file count reflects the repository state validated by the cross-platform workflow. Counts can change as sources and collections evolve.</sub>
+<sub>Skill-file count reflects the repository state validated by the cross-platform workflow. Counts can change as collections evolve.</sub>
 
 ## ✧ Explore the library
 
@@ -67,7 +67,7 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 | 18 | [AI agents and automation](ai-agent-skills/18-ai-agents-and-automation%20%28by%20Luo%20Kai%29/) | Agent frameworks, MCP, orchestration, and automation |
 | 19 | [Business and entrepreneurship](ai-agent-skills/19-business-and-entrepreneurship%20%28by%20Luo%20Kai%29/) | Product, marketing, sales, operations, and entrepreneurship |
 | 20 | [Health and wellness](ai-agent-skills/20-health-and-wellness%20%28by%20Luo%20Kai%29/) | Health, fitness, nutrition, and wellness-related resources |
-| 21 | [External registries](ai-agent-skills/21-external-registries/) | Imported and indexed collections from external projects |
+| 21 | [External registries](ai-agent-skills/21-external-registries/) | Additional indexed skill registries |
 | 22 | [ClawHub skills](ai-agent-skills/22-clawhub-skills/) | Skills collected from the ClawHub ecosystem |
 | 23 | [Windows computer operations](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) | 1,200 detailed Windows desktop and laptop agent workflows across 40 domains |
 | 24 | [Linux system operations](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) | 1,250 Linux agent workflows across 25 distributions, with 50 skills per distribution |
@@ -165,7 +165,7 @@ The root keeps the public GitHub Pages entry point and generated catalog easy to
 Cross-platform reliability is part of the project, not an afterthought.
 
 The repository's GitHub Actions workflow checks both **Ubuntu** and **Windows**. It currently:
-- Runs a static security and provenance audit over the skill collection without executing imported scripts.
+- Runs a static safety and rights audit over the skill collection without executing scripts.
 - Scans skill files and bundled assets with ClamAV signatures before publishing a release.
 - Keeps original and third-party licensing boundaries documented in LICENSE, THIRD_PARTY_NOTICES.md, and .github/SECURITY.md.
 
@@ -180,13 +180,13 @@ The repository's GitHub Actions workflow checks both **Ubuntu** and **Windows**.
 
 A passing workflow confirms these automated checks for that commit. It does not guarantee that every third-party skill is safe, maintained, compatible with every agent, or free of external dependencies. Review individual skills before use.
 
-## 🌐 Sources and attribution
+## © Rights and reuse
 
-This library tracks **25+ upstream source projects**. Twenty-three external collections are currently mirrored in this repository; the remaining entries are reference-only. The source register documents known upstream repositories, descriptions, and license information:
+**© 2026 Luo Kai. All rights reserved** for original work authored by Luo Kai, including original skills, documentation, organization, and tooling.
 
-**→ [Read the source register: SOURCES.md](SOURCES.md)**
+No general license or blanket reuse permission is granted for original Luo Kai material in this repository. Copying, modifying, redistributing, publishing, or selling that material requires prior permission from Luo Kai. A missing license file or an author field does not create permission.
 
-Imported material remains attributable to its original authors and projects. Where an upstream repository provides a license or attribution notice, that notice continues to apply to the material it covers. Please consult the original source before redistributing or using third-party content.
+Some entries may carry independent rights notices. Those notices remain in force and are not replaced by the repository name, collection title, or author metadata. See [third-party rights notices](THIRD_PARTY_NOTICES.md) before reusing material whose rights are not exclusively held by Luo Kai.
 
 ## ✨ 2026 original skill additions
 
@@ -199,7 +199,7 @@ Six new, independently authored skills have been added:
 - **Agent Observability** — traces, cost controls, metrics, redaction, and operational alerts.
 - **AI-Generated Change Verification** — independent evidence-based checks before merge or release.
 
-Original additions are identified with Luo Kai provenance metadata. Imported works retain their original authorship, license, and notices.
+Original additions identify Luo Kai as author. Material with independent rights retains its applicable authorship, license, and notices.
 
 ## 🤝 Contributing
 
@@ -208,16 +208,8 @@ Contributions that improve organization, documentation, metadata quality, compat
 1. Check whether the skill already exists.
 2. Add it to the most relevant collection.
 3. Include a clearly named `SKILL.md` with valid YAML frontmatter containing `name` and `description`.
-4. Preserve upstream attribution and license notices for imported material.
+4. Preserve all applicable rights notices and license terms for any material you are authorized to include.
 5. Test the change and open a pull request with a concise explanation.
-
-## © Copyright and rights
-
-**© 2026 Luo Kai. All rights reserved** for the original work in this repository, including its original curation, organization, documentation, automation, validation tooling, and original contributions by Luo Kai.
-
-This notice does **not** claim ownership of third-party skills, source code, documentation, names, trademarks, or other materials included from external projects. Those remain the property of their respective owners and are governed by their applicable licenses and notices. See [SOURCES.md](SOURCES.md) and the relevant upstream repositories for attribution and licensing details.
-
-No blanket relicensing of third-party material is implied by inclusion in this collection.
 
 ---
 
@@ -225,7 +217,7 @@ No blanket relicensing of third-party material is implied by inclusion in this c
 
 **Built with curiosity. Organized for builders. Maintained by Luo Kai.**
 
-[GitHub repository](https://github.com/luokai0/ai-agent-skills-by-luo-kai) · [Source register](SOURCES.md) · [Luo Kai](https://github.com/luokai0)
+[GitHub repository](https://github.com/luokai0/ai-agent-skills-by-luo-kai) · [Rights notices](THIRD_PARTY_NOTICES.md) · [Luo Kai](https://github.com/luokai0)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,45:6D28D9,100:09090B&height=120&section=footer&animation=fadeIn" width="100%" alt="Animated footer" />
 
