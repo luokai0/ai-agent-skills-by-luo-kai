@@ -1,8 +1,8 @@
 <!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "iterate-retrospective"
+description: "Facilitates and documents a team retrospective capturing what went well, what to improve, and action items. Use at the end of sprints, projects, or milestones to reflect and improve team practices."
 author: luo-kai
-name: iterate-retrospective
-description: Facilitates and documents a team retrospective capturing what went well, what to improve, and action items. Use at the end of sprints, projects, or milestones to reflect and improve team practices.
 phase: iterate
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +12,7 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+
 # Retrospective
 
 A retrospective is a structured reflection that helps teams learn from their experiences and continuously improve. By regularly examining what went well, what didn't, and what to change, teams build a culture of learning and adaptation. The value isn't just in the discussion—it's in the documented actions and follow-through.

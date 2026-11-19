@@ -1,8 +1,8 @@
 <!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "discover-competitive-analysis"
+description: "Creates a structured competitive analysis comparing features, positioning, and strategy across competitors. Use when entering a market, planning differentiation, or understanding the competitive landscape."
 author: luo-kai
-name: discover-competitive-analysis
-description: Creates a structured competitive analysis comparing features, positioning, and strategy across competitors. Use when entering a market, planning differentiation, or understanding the competitive landscape.
 phase: discover
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +12,7 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+
 # Competitive Analysis
 
 A competitive analysis provides structured insight into the competitive landscape, helping product teams understand where they stand relative to alternatives and identify opportunities for differentiation. Rather than exhaustively cataloging every competitor, an effective analysis focuses on actionable insights that inform product strategy.
