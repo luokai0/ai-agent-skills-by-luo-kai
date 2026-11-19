@@ -37,4 +37,4 @@ jobs:
         run: python .github/scripts/check_windows_paths.py
 
       - name: Install a real skill through the public skills CLI
-        run: npx --yes skills add luokai0/ai-agent-skills-by-luo-kai --skill docker-docker-sandbox-agent --agent codex --copy --yes
+        run: npx --yes skills add luokai0/ai-agent-skills-by-luo-kai --skill agents-md --agent codex --copy --yes
