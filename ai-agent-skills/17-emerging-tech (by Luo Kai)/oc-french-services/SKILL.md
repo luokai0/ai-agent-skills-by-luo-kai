@@ -1,14 +1,15 @@
 ---
+name: "oc-french-services"
+description: "Skill pour accéder aux services français : trains SNCF, suivi."
 author: luo-kai
-name: oc-french-services
 version: 1.0.0
-description: Skill pour accéder aux services français : trains SNCF, suivi.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # French Services
 

@@ -1,14 +1,15 @@
 ---
+name: "oc-email-tool"
+description: "**Description:** Use this skill to send and read emails (IMAP/SMTP)"
 author: luo-kai
-name: oc-email-tool
 version: 1.0.0
-description: **Description:** Use this skill to send and read emails (IMAP/SMTP)
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Email Tool
 

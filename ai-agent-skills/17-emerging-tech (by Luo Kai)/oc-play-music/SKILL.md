@@ -1,14 +1,15 @@
 ---
+name: "oc-play-music"
+description: "**Controlled music player with pause/resume/stop support**."
 author: luo-kai
-name: oc-play-music
 version: 1.0.0
-description: **Controlled music player with pause/resume/stop support**.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Play Music
 
