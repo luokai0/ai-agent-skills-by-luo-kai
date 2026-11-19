@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-apk version -l '<'; /var/log/apk.log (if present)
+apk version -l '<'; tail -n 60 /var/log/apk.log 2>/dev/null
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
