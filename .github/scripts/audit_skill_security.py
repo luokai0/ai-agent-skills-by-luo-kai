@@ -69,13 +69,21 @@ def read_frontmatter(path: Path):
     return data, None
 
 def inherited_license(skill_dir: Path, skills_root: Path):
-    """Find the nearest license/notice inside the collection, never the repo-wide LICENSE."""
+    """Find the nearest license inside the collection; a local LICENSE_STATUS.md blocks inheritance."""
     for parent in (skill_dir, *skill_dir.parents):
         if parent == skills_root or skills_root not in parent.parents:
             break
-        matches = [name for name in ("LICENSE", "LICENSE.md", "LICENSE.txt", "NOTICE", "NOTICE.md") if (parent / name).is_file()]
+        matches = [
+            name for name in ("LICENSE", "LICENSE.md", "LICENSE.txt", "NOTICE", "NOTICE.md")
+            if (parent / name).is_file()
+        ]
         if matches:
-            return [((parent / name).relative_to(skills_root.parent)).as_posix() for name in matches]
+            return [
+                (parent / name).relative_to(skills_root.parent).as_posix()
+                for name in matches
+            ]
+        if (parent / "LICENSE_STATUS.md").is_file():
+            return []
     return []
 
 def main() -> int:
