@@ -36,8 +36,14 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install frontmatter validator dependency
+        run: python -m pip install --disable-pip-version-check PyYAML
+
       - name: Scan every tracked path for Windows-incompatible names
         run: python .github/scripts/check_windows_paths.py
+
+      - name: Validate every skill frontmatter block
+        run: python .github/scripts/check_skill_frontmatter.py
 
       - name: Install a real skill from the checked-out repository
         run: npx --yes skills add . --skill agents-md --agent codex --copy --yes
