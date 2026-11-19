@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'ai-agent-skills/**'
+      - '.github/scripts/**'
       - '.github/workflows/update-skills.yml'
   schedule:
     - cron: '0 6 * * 1'
@@ -13,119 +14,72 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: skills-catalog-main
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository and pinned submodules
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          submodules: recursive
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Generate skills-index.json (URL-encoded paths)
-        run: |
-          python3 << 'PYEOF'
-          import os, re, json
-          from urllib.parse import quote
+      - name: Install metadata validator dependency
+        run: python -m pip install --disable-pip-version-check PyYAML
 
-          BASE = "ai-agent-skills"
-          ICONS = {
-            "01":"💻","02":"🎨","03":"⚙️","04":"🗄️","05":"☁️",
-            "06":"🔐","07":"🧪","08":"🏗️","09":"🤖","10":"📱",
-            "11":"🛠️","12":"💹","13":"🔬","14":"🧬","15":"🌍",
-            "16":"⚗️","17":"🚀","18":"🦾","19":"📈","20":"💪",
-          }
-          CATS = {
-            "01":"Programming Languages","02":"Frontend Dev","03":"Backend Dev",
-            "04":"Databases","05":"DevOps & Cloud","06":"Security","07":"Testing",
-            "08":"Architecture","09":"Data & AI","10":"Mobile","11":"Specialized Coding",
-            "12":"Finance","13":"Physics & Math","14":"Chemistry & Bio","15":"Earth & Space",
-            "16":"Engineering","17":"Emerging Tech","18":"AI Agents","19":"Business","20":"Health",
-          }
+      - name: Validate all skill frontmatter
+        run: python .github/scripts/check_skill_frontmatter.py
 
-          skills = []
-          for root, dirs, files in os.walk(BASE):
-              dirs[:] = sorted(d for d in dirs if d != ".git")
-              if "SKILL.md" not in files:
-                  continue
-              raw_path = os.path.join(root, "SKILL.md").replace("\\", "/")
-              # URL-encode each segment
-              encoded_path = "/".join(quote(p) for p in raw_path.split("/"))
-              parts = root.replace("\\", "/").split("/")
-              num = (parts[1].split("-")[0] if len(parts) > 1 else "00")
-              skill_name = parts[-1]
-              try:
-                  with open(raw_path, "r", errors="replace") as f:
-                      content = f.read(400)
-              except Exception:
-                  continue
-              desc = ""
-              m = re.search(r"^description:\s*(.+)$", content, re.MULTILINE)
-              if m:
-                  desc = m.group(1).strip()[:80]
-              skills.append({"n": skill_name, "p": encoded_path, "c": num, "d": desc})
+      - name: Run static security and provenance screening
+        run: python .github/scripts/audit_skill_security.py --root . --report audit-report.json
 
-          out = {"total": len(skills), "cats": CATS, "icons": ICONS, "skills": skills}
-          with open("skills-index.json", "w") as f:
-              json.dump(out, f, separators=(",", ":"))
-          print(f"Generated: {len(skills)} skills | {os.path.getsize('skills-index.json')//1024}KB")
-          PYEOF
+      - name: Preserve audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-security-audit
+          path: audit-report.json
+          if-no-files-found: ignore
+          retention-days: 30
 
-      - name: Bundle all skills into ZIP
-        run: |
-          python3 -c "
-          import os, zipfile
-          count = 0
-          with zipfile.ZipFile('skills-bundle.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as zf:
-              for root,dirs,files in os.walk('ai-agent-skills'):
-                  dirs[:] = [d for d in dirs if d != '.git']
-                  for f in files:
-                      fp = os.path.join(root,f)
-                      zf.write(fp, fp.replace('\\\\','/'))
-                      if f == 'SKILL.md': count += 1
-          size = os.path.getsize('skills-bundle.zip')/1024/1024
-          print(f'Bundle: {count} skills | {size:.1f}MB')
-          "
+      - name: Generate skill index and distributable bundle
+        run: python .github/scripts/build_skill_catalog.py
 
       - name: Commit updated index
         run: |
-          git config user.name "luo-kai[bot]"
+          git config user.name "luo-kai-bot"
           git config user.email "luokai0@users.noreply.github.com"
           git add skills-index.json
-          if git diff --staged --quiet; then
-            echo "Index unchanged"
+          if git diff --cached --quiet; then
+            echo "Skill index unchanged"
           else
-            TOTAL=$(python3 -c "import json;print(json.load(open('skills-index.json'))['total'])")
-            git commit -m "Auto-sync: skills-index.json (${TOTAL} skills) [skip ci]"
+            TOTAL=$(python -c "import json; print(json.load(open('skills-index.json'))['total'])")
+            git commit -m "chore: refresh skill catalog ($TOTAL skills) [skip ci]"
             git push
           fi
 
-      - name: Create/Update GitHub Release
+      - name: Create or update latest skills release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           name: Latest Skills Bundle
           body: |
-            ## AI Agent Skills Bundle — by Luo Kai (Lous Creations)
-            Auto-generated on every push. Contains all skill files.
-            ```bash
-            curl -L https://github.com/luokai0/ai-agent-skills-by-luo-kai/releases/latest/download/skills-bundle.zip -o skills.zip
-            unzip skills.zip
-            ```
+            ## Luo Kai AI Agent Skills
+
+            Generated from the validated main branch.
+
+            The bundle contains the current skill collection. Third-party materials retain their original licenses and attribution. See LICENSE, THIRD_PARTY_NOTICES.md, and SOURCES.md.
           files: skills-bundle.zip
           make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Job Summary
-        run: |
-          T=$(python3 -c "import json;print(json.load(open('skills-index.json'))['total'])")
-          Z=$(python3 -c "import os;print(f'{os.path.getsize(chr(115)+chr(107)+chr(105)+chr(108)+chr(108)+chr(115)+chr(45)+chr(98)+chr(117)+chr(110)+chr(100)+chr(108)+chr(101)+chr(46)+chr(122)+chr(105)+chr(112))/1024/1024:.1f}')")
-          echo "## ✅ Auto-sync complete" >> $GITHUB_STEP_SUMMARY
-          echo "| Skills | Bundle | Pages |" >> $GITHUB_STEP_SUMMARY
-          echo "|--------|--------|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| **${T}** | **${Z}MB** | **Live** |" >> $GITHUB_STEP_SUMMARY
