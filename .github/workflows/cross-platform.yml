@@ -49,6 +49,9 @@ jobs:
       - name: Validate every skill frontmatter block
         run: python scripts/maintenance/check_skill_frontmatter.py
 
+      - name: Validate Windows and Linux agent execution contracts
+        run: python scripts/maintenance/validate_operating_skill_quality.py
+
       - name: Static skill security and provenance screening
         run: python scripts/maintenance/audit_skill_security.py --root . --report audit-report.json
 
