@@ -1,11 +1,12 @@
 ---
-name: oc-ghl-crm-for-realtors
+name: "oc-ghl-crm-for-realtors"
+description: "Use this skill for GoHighLevel CRM work for realtors: contact lookup and updates, opportunity/pipeline actions."
 version: 1.0.0
-description: Use this skill for GoHighLevel CRM work for realtors: contact lookup and updates, opportunity/pipeline actions.
 author: luo-kai
 tags: [ghl-crm-for-realtors, openclaw, community]
 source: https://clawskills.sh/skills/ghl-crm-for-realtors
 ---
+
 
 # Ghl Crm For Realtors
 

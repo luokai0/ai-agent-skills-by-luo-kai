@@ -1,11 +1,12 @@
 ---
-name: oc-ambit-cli
+name: "oc-ambit-cli"
+description: "Use this skill for any task involving the ambit CLI: creating or destroying private networks, deploying apps."
 version: 1.0.0
-description: Use this skill for any task involving the ambit CLI: creating or destroying private networks, deploying apps.
 author: luo-kai
 tags: [ambit-cli, openclaw, community]
 source: https://clawskills.sh/skills/ambit-cli
 ---
+
 
 # Ambit Cli
 

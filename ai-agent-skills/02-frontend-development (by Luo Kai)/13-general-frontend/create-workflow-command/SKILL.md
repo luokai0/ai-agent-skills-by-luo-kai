@@ -1,10 +1,15 @@
 ---
+name: "customaize-agent:create-workflow-command"
+description: "Create a workflow command that orchestrates multi-step execution through sub-agents with file-based task prompts"
+---
+
+
+<!-- Original nonstandard metadata retained for reference:
 author: luo-kai
-name: customaize-agent:create-workflow-command
-description: Create a workflow command that orchestrates multi-step execution through sub-agents with file-based task prompts
 argument-hint: [workflow-name] [description]
 allowed-tools: Read, Write, Glob, Grep, Bash(mkdir:*)
----
+-->
+
 
 # Create Workflow Command
 
