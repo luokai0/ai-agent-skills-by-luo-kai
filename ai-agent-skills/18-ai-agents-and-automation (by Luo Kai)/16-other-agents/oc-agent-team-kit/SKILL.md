@@ -1,14 +1,15 @@
 ---
+name: "oc-agent-team-kit"
+description: "*A framework for self-sustaining AI agent teams.*."
 author: luo-kai
-name: oc-agent-team-kit
 version: 1.0.0
-description: *A framework for self-sustaining AI agent teams.*.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Agent Team Kit
 

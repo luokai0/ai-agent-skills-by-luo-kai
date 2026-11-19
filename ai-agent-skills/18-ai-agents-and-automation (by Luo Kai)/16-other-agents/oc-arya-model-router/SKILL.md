@@ -1,11 +1,12 @@
 ---
-name: oc-arya-model-router
+name: "oc-arya-model-router"
+description: "Token-saver router: elige modelo (cheap/default/pro) y usa sub-agentes para tareas pesadas."
 version: 1.0.0
-description: Token-saver router: elige modelo (cheap/default/pro) y usa sub-agentes para tareas pesadas.
 author: luo-kai
 tags: [arya-model-router, openclaw, community]
 source: https://clawskills.sh/skills/arya-model-router
 ---
+
 
 # Arya Model Router
 

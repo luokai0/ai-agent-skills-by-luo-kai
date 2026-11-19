@@ -1,14 +1,15 @@
 ---
+name: "oc-gmail-last5"
+description: "summary: \"Show the last 5 unique emails in the inbox using gog\"."
 author: luo-kai
-name: oc-gmail-last5
 version: 1.0.0
-description: summary: "Show the last 5 unique emails in the inbox using gog".
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Gmail Last5
 
