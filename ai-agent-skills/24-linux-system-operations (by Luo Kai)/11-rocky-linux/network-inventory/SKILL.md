@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-ip -br link; ip -br addr; ip route; nmcli device status (if available)
+ip -br link; ip -br addr; ip route; nmcli device status
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
