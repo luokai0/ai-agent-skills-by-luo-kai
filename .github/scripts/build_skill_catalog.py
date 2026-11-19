@@ -4,7 +4,11 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import zipfile
+from collections import Counter
+
+import yaml
 from pathlib import Path
 from urllib.parse import quote
 
@@ -30,6 +34,74 @@ CATEGORIES = {
     "21": "External Registries", "22": "ClawHub Skills",
 }
 
+def read_frontmatter(text: str) -> dict:
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return {}
+    end = next((i for i in range(1, len(lines)) if lines[i].strip() == "---"), None)
+    if end is None:
+        return {}
+    try:
+        data = yaml.safe_load(chr(10).join(lines[1:end]))
+    except yaml.YAMLError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+def normalize_license(value: str) -> str:
+    label = str(value).strip()
+    low = label.lower()
+    if "apache" in low and "2.0" in low:
+        return "Apache-2.0"
+    if "cc by-nc-nd" in low or "attribution-noncommercial-noderivatives" in low:
+        return "CC BY-NC-ND 4.0"
+    if "cc by 4.0" in low or "attribution 4.0 international" in low:
+        return "CC BY 4.0"
+    if "cc0" in low or "publicdomain/zero/1.0" in low:
+        return "CC0 1.0"
+    if low == "mit" or "mit license" in low:
+        return "MIT"
+    return label[:80]
+
+def infer_license_file(path: Path) -> str:
+    text = path.read_text(encoding="utf-8-sig", errors="replace")[:30000].lower()
+    if "apache license" in text and "version 2.0" in text:
+        return "Apache-2.0"
+    if "attribution-noncommercial-noderivatives 4.0" in text or "cc by-nc-nd 4.0" in text:
+        return "CC BY-NC-ND 4.0"
+    if "attribution 4.0 international" in text or "creativecommons.org/licenses/by/4.0" in text:
+        return "CC BY 4.0"
+    if "cc0 1.0" in text or "creativecommons.org/publicdomain/zero/1.0" in text:
+        return "CC0 1.0"
+    if "mit license" in text or "permission is hereby granted, free of charge" in text:
+        return "MIT"
+    return "License file (unclassified)"
+
+def resolve_license(skill_file: Path, metadata: dict) -> str:
+    meta = metadata.get("metadata") or {}
+    if not isinstance(meta, dict):
+        meta = {}
+    explicit = metadata.get("license") or meta.get("license")
+    if explicit:
+        return normalize_license(explicit)
+
+    current = skill_file.parent
+    while current != BASE:
+        for notice_name in ("UPSTREAM_LICENSE_NOTICE.md", "NOTICE.md"):
+            notice = current / notice_name
+            if notice.is_file():
+                notice_text = notice.read_text(encoding="utf-8-sig", errors="replace")
+                match = re.search(r"(?im)^(?:upstream\s+)?license:\s*(.+)$", notice_text)
+                if match:
+                    return normalize_license(match.group(1))
+        for license_name in ("LICENSE", "LICENSE.md", "LICENSE.txt", "COPYING"):
+            license_file = current / license_name
+            if license_file.is_file():
+                return infer_license_file(license_file)
+        if (current / "LICENSE_STATUS.md").is_file():
+            return "Unverified"
+        current = current.parent
+    return "Unverified"
+
 def main() -> None:
     if not BASE.is_dir():
         raise SystemExit(f"Missing collection directory: {BASE}")
@@ -45,28 +117,24 @@ def main() -> None:
         parts = Path(relative).parts
         category = parts[1].split("-", 1)[0] if len(parts) > 1 else "00"
         skill_name = Path(root).name
-        description = ""
         try:
             content = path.read_text(encoding="utf-8-sig", errors="replace")
-            in_frontmatter = False
-            for line in content.splitlines():
-                if line.strip() == "---":
-                    if in_frontmatter:
-                        break
-                    in_frontmatter = True
-                    continue
-                if in_frontmatter and line.startswith("description:"):
-                    description = line.split(":", 1)[1].strip().strip('"').strip("'")
-                    break
         except OSError:
-            pass
+            content = ""
+        metadata = read_frontmatter(content)
+        description = metadata.get("description", "")
+        if not isinstance(description, str):
+            description = str(description)
+        license_label = resolve_license(path, metadata)
         encoded_path = "/".join(quote(segment, safe="") for segment in Path(relative).parts)
-        skills.append({"n": skill_name, "p": encoded_path, "c": category, "d": description[:1024]})
+        skills.append({"n": metadata.get("name") or skill_name, "p": encoded_path, "c": category, "d": description[:1024], "l": license_label})
 
     skills.sort(key=lambda item: (item["c"], item["n"].casefold(), item["p"]))
-    output = {"total": len(skills), "cats": CATEGORIES, "icons": ICONS, "skills": skills}
+    license_counts = Counter(item["l"] for item in skills)
+    output = {"total": len(skills), "cats": CATEGORIES, "icons": ICONS, "license_counts": dict(license_counts), "skills": skills}
     Path("skills-index.json").write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"Generated skills-index.json: {len(skills)} skills")
+    print(f"License status counts: {dict(license_counts)}")
 
     bundle_path = Path("skills-bundle.zip")
     excluded_dirs = {".git", "__pycache__", "node_modules"}
