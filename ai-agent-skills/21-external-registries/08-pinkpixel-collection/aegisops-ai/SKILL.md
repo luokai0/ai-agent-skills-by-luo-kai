@@ -1,13 +1,18 @@
 ---
-name: aegisops-ai
-description: "Autonomous DevSecOps & FinOps Guardrails. 
+name: "aegisops-ai"
+description: "Autonomous DevSecOps & FinOps Guardrails."
+---
+
+
+<!-- Original nonstandard metadata retained for reference:
 Orchestrates Gemini 3 Flash to audit Linux Kernel patches,
 Terraform cost drifts, and K8s compliance."
 risk: safe
 source: community
 author: Champbreed
 date_added: "2026-03-24"
----
+-->
+
 
 # /aegisops-ai — Autonomous Governance Orchestrator
 
