@@ -12,7 +12,10 @@ import yaml
 from pathlib import Path
 from urllib.parse import quote
 
-BASE = Path("ai-agent-skills")
+ROOT = Path(__file__).resolve().parents[2]
+BASE = ROOT / "ai-agent-skills"
+INDEX_PATH = ROOT / "skills-index.json"
+BUNDLE_PATH = ROOT / "skills-bundle.zip"
 ICONS = {
     "01": "⌨️", "02": "🎨", "03": "🧩", "04": "🗄️", "05": "☁️",
     "06": "🔐", "07": "🧪", "08": "🏛️", "09": "🧠", "10": "📱",
@@ -115,9 +118,9 @@ def main() -> None:
         if not skill_file:
             continue
         path = Path(root) / skill_file
-        relative = path.as_posix()
-        parts = Path(relative).parts
-        category = parts[1].split("-", 1)[0] if len(parts) > 1 else "00"
+        relative = path.relative_to(ROOT).as_posix()
+        category_parts = path.relative_to(BASE).parts
+        category = category_parts[0].split("-", 1)[0] if category_parts else "00"
         skill_name = Path(root).name
         try:
             content = path.read_text(encoding="utf-8-sig", errors="replace")
@@ -134,11 +137,11 @@ def main() -> None:
     skills.sort(key=lambda item: (item["c"], item["n"].casefold(), item["p"]))
     license_counts = Counter(item["l"] for item in skills)
     output = {"total": len(skills), "cats": CATEGORIES, "icons": ICONS, "license_counts": dict(license_counts), "skills": skills}
-    Path("skills-index.json").write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    INDEX_PATH.write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"Generated skills-index.json: {len(skills)} skills")
     print(f"License status counts: {dict(license_counts)}")
 
-    bundle_path = Path("skills-bundle.zip")
+    bundle_path = BUNDLE_PATH
     excluded_dirs = {".git", "__pycache__", "node_modules"}
     with zipfile.ZipFile(bundle_path, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for root, dirs, names in os.walk(BASE):

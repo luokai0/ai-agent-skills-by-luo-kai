@@ -17,7 +17,7 @@
 
 Built for discovery, practical reuse, and a growing ecosystem of AI assistants.
 
-**[Explore the library](#-explore-the-library) · [Get started](#-get-started) · [Browse sources](SOURCES.md) · [Quality checks](#-quality-and-cross-platform-checks)**
+**[Explore the library](#-explore-the-library) · [Get started](#-get-started) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Browse sources](SOURCES.md) · [Quality checks](#-quality-and-cross-platform-checks)**
 
 </div>
 
@@ -117,6 +117,10 @@ Replace `agents-md` with the name of the skill you want and `codex` with an agen
 
 Open the installed skill's `SKILL.md` and follow its instructions. Some skills need additional tools, packages, credentials, or configuration. Review those requirements before running scripts or granting access.
 
+## 🗂 Repository layout
+
+The root keeps the public GitHub Pages entry point and generated catalog easy to serve. Skill content lives under `ai-agent-skills/`, maintainer tooling under `scripts/`, automation under `.github/workflows/`, and project guidance in [the repository guide](docs/REPOSITORY_GUIDE.md).
+
 ## 🧰 Quality and cross-platform checks
 
 Cross-platform reliability is part of the project, not an afterthought.
@@ -124,7 +128,7 @@ Cross-platform reliability is part of the project, not an afterthought.
 The repository's GitHub Actions workflow checks both **Ubuntu** and **Windows**. It currently:
 - Runs a static security and provenance audit over the skill collection without executing imported scripts.
 - Scans skill files and bundled assets with ClamAV signatures before publishing a release.
-- Keeps original and third-party licensing boundaries documented in LICENSE, THIRD_PARTY_NOTICES.md, and SECURITY_POLICY.md.
+- Keeps original and third-party licensing boundaries documented in LICENSE, THIRD_PARTY_NOTICES.md, and .github/SECURITY.md.
 
 - Checks out the repository and its submodules recursively.
 - Enables Git long-path support on Windows.
@@ -139,7 +143,7 @@ A passing workflow confirms these automated checks for that commit. It does not 
 
 ## 🌐 Sources and attribution
 
-This library tracks **25+ upstream source projects**. Nineteen external collections are currently mirrored in this repository; the remaining entries are reference-only. The source register documents known upstream repositories, descriptions, and license information:
+This library tracks **25+ upstream source projects**. Twenty-three external collections are currently mirrored in this repository; the remaining entries are reference-only. The source register documents known upstream repositories, descriptions, and license information:
 
 **→ [Read the source register: SOURCES.md](SOURCES.md)**
 

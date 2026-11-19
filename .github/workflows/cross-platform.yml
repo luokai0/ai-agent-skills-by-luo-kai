@@ -44,16 +44,19 @@ jobs:
         run: python -m pip install --disable-pip-version-check PyYAML
 
       - name: Scan every tracked path for Windows-incompatible names
-        run: python .github/scripts/check_windows_paths.py
+        run: python scripts/maintenance/check_windows_paths.py
 
       - name: Validate every skill frontmatter block
-        run: python .github/scripts/check_skill_frontmatter.py
+        run: python scripts/maintenance/check_skill_frontmatter.py
 
       - name: Static skill security and provenance screening
-        run: python .github/scripts/audit_skill_security.py --root . --report audit-report.json
+        run: python scripts/maintenance/audit_skill_security.py --root . --report audit-report.json
 
       - name: Syntax-check adapted forensic helpers
         run: python -m py_compile "ai-agent-skills/21-external-registries/08-pinkpixel-collection/conducting-memory-forensics-with-volatility/scripts/agent.py" "ai-agent-skills/21-external-registries/08-pinkpixel-collection/hunting-for-scheduled-task-persistence/scripts/agent.py"
+
+      - name: Syntax-check the optional source installer
+        run: python -m py_compile scripts/installer/install_all_skills.py
 
       - name: Install a real skill from the checked-out repository
         run: npx --yes skills add . --skill agents-md --agent codex --copy --yes

@@ -312,7 +312,7 @@ Cursor & Claude skills for:
 ## 22. Hesreallyhim Awesome Claude Code
 
 **Source:** https://github.com/hesreallyhim/awesome-claude-code
-**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
+**Imported path:** `ai-agent-skills/21-external-registries/22-hesreallyhim-skills`
 **License:** CC BY-NC-ND 4.0
 **License notes:** Non-commercial use only; no derivatives or adaptations; attribution required.
 **Skills:** 100+ resources
@@ -327,7 +327,7 @@ Curated list with 36k+ stars:
 ## 23. Travisvn Awesome Claude Skills
 
 **Source:** https://github.com/travisvn/awesome-claude-skills
-**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
+**Imported path:** `ai-agent-skills/21-external-registries/23-travisvn-skills`
 **License:** No explicit license found
 **License notes:** No repository license grant found; do not adapt or redistribute without permission.
 **Skills:** 50+ resources
@@ -339,7 +339,7 @@ Curated list of Claude skills, resources, and tools.
 ## 24. GetBindu Awesome Claude Code and Skills
 
 **Source:** https://github.com/GetBindu/awesome-claude-code-and-skills  
-**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
+**Imported path:** `ai-agent-skills/21-external-registries/24-getbindu-skills`
 **License:** Apache-2.0
 **Skills:** 40+ resources
 
@@ -353,7 +353,7 @@ Collection of Claude Skills:
 ## 25. Heilcheng Awesome Agent Skills
 
 **Source:** https://github.com/heilcheng/awesome-agent-skills  
-**Imported path:** Reference only; no corresponding external-registry folder is currently mirrored.
+**Imported path:** `ai-agent-skills/21-external-registries/25-heilcheng-skills`
 **License:** MIT  
 **Skills:** 4.4k stars
 
@@ -373,7 +373,7 @@ Licenses vary by source. Each imported project and its individual files remain s
 
 ## License audit notes (2026-11-19)
 
-Collection-level licenses were checked against upstream repository files or README declarations. Nineteen external source collections are currently mirrored under `ai-agent-skills/21-external-registries`; other entries in this register are reference-only and do not imply that their content is present in this repository. Verified license texts and source notices are preserved in the corresponding source folders under `ai-agent-skills/21-external-registries`. Per-skill licenses and notices always take precedence over a collection-level license.
+Collection-level licenses were checked against upstream repository files or README declarations. Twenty-three external source collections are currently mirrored under `ai-agent-skills/21-external-registries`; other entries in this register are reference-only and do not imply that their content is present in this repository. Verified license texts and source notices are preserved in the corresponding source folders under `ai-agent-skills/21-external-registries`. Per-skill licenses and notices always take precedence over a collection-level license.
 
 Sources with per-skill licensing only: Anthropic, Replicate, and Strativd. Sources with no verified repository-wide license: Rushikeshpol and Travisvn. These materials must not be relabeled as Luo Kai originals or adapted until the applicable rights are confirmed.
 

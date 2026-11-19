@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'ai-agent-skills/**'
-      - '.github/scripts/**'
+      - 'scripts/maintenance/**'
       - '.github/workflows/update-skills.yml'
   schedule:
     - cron: '0 6 * * 1'
@@ -38,10 +38,10 @@ jobs:
         run: python -m pip install --disable-pip-version-check PyYAML
 
       - name: Validate all skill frontmatter
-        run: python .github/scripts/check_skill_frontmatter.py
+        run: python scripts/maintenance/check_skill_frontmatter.py
 
       - name: Run static security and provenance screening
-        run: python .github/scripts/audit_skill_security.py --root . --report audit-report.json
+        run: python scripts/maintenance/audit_skill_security.py --root . --report audit-report.json
 
       - name: Install ClamAV and update malware signatures
         run: |
@@ -64,7 +64,7 @@ jobs:
           retention-days: 30
 
       - name: Generate skill index and distributable bundle
-        run: python .github/scripts/build_skill_catalog.py
+        run: python scripts/maintenance/build_skill_catalog.py
 
       - name: Commit updated index
         run: |
