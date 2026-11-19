@@ -47,7 +47,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes clamav clamav-freshclam
-          sudo freshclam
+          sudo systemctl stop clamav-freshclam.service || true
+          sudo freshclam --stdout
 
       - name: Scan skills and bundled assets for known malware
         run: |
