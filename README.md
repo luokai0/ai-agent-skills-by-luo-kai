@@ -33,7 +33,7 @@ This is a curated and organized collection, not a claim that every imported item
 
 <div align="center">
 
-| **11,018** | **22** | **25+** | **2** |
+| **11,018** | **23** | **25+** | **2** |
 |:---:|:---:|:---:|:---:|
 | validated `SKILL.md` files | top-level collections | source projects documented | CI operating systems |
 
@@ -72,6 +72,30 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 | 23 | [Windows computer operations](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) | 1,200 detailed Windows desktop and laptop agent workflows across 40 domains |
 
 > Collection names and contents may evolve. The folders in the repository are the source of truth.
+
+
+### 🖥️ Featured collection: Windows Computer Operations
+
+**1,200 original, task-focused skills for AI agents operating Windows 10 and Windows 11 desktops and laptops.**
+
+Organized into **40 practical domains with 30 workflows each**, this collection helps agents operate real Windows computers reliably, rather than merely describing which button a person should click.
+
+Explore the [Windows Computer Operations collection](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) and its [Windows AI Agent Operating Playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md).
+
+Coverage includes:
+
+- **Desktop interaction:** Start menu, taskbar, windows, File Explorer, keyboard and mouse navigation, UI Automation, accessibility trees, OCR and screenshots.
+- **System administration:** Windows settings, users and permissions, processes, services, startup, scheduled tasks, drivers, updates and device management.
+- **Command-line operation:** PowerShell, Command Prompt, Windows Terminal, safe scripting, diagnostics and repeatable automation.
+- **Files and storage:** Search, metadata, archives, disk usage, removable drives, backup and recovery.
+- **Connectivity:** Wi-Fi, Ethernet, DNS, VPN, firewall inspection, browsers and remote desktop.
+- **Work and development:** Office workflows, Git, developer tools, WSL, virtual machines, containers and application troubleshooting.
+- **Laptop care:** Battery and power management, sleep and hibernation, displays, docks, thermals and peripheral troubleshooting.
+- **Security and reliability:** Defender status, privacy, event logs, performance analysis, safe recovery and evidence-based verification.
+
+Each workflow is a separate `SKILL.md` with stable metadata, prerequisites, Windows-aware procedures, verification, failure recovery and a completion checklist. The shared playbook establishes common rules: observe before acting, use least privilege, protect user data and secrets, obtain approval for consequential changes, and verify outcomes instead of assuming a click worked.
+
+**Rights and attribution:** This is original instructional material authored for Luo Kai. Microsoft and third-party product names are used descriptively; their software, trademarks and documentation remain the property of their respective owners.
 
 ## 🚀 Get started
 
