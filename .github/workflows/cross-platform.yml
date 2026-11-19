@@ -52,5 +52,8 @@ jobs:
       - name: Static skill security and provenance screening
         run: python .github/scripts/audit_skill_security.py --root . --report audit-report.json
 
+      - name: Syntax-check adapted forensic helpers
+        run: python -m py_compile "ai-agent-skills/21-external-registries/08-pinkpixel-collection/conducting-memory-forensics-with-volatility/scripts/agent.py" "ai-agent-skills/21-external-registries/08-pinkpixel-collection/hunting-for-scheduled-task-persistence/scripts/agent.py"
+
       - name: Install a real skill from the checked-out repository
         run: npx --yes skills add . --skill agents-md --agent codex --copy --yes
