@@ -30,8 +30,9 @@ SCRIPT_SUFFIXES = {
 }
 SKIP_DIRS = {".git", "node_modules", ".venv", "venv", "__pycache__", ".tox"}
 
+# These patterns indicate highly dangerous execution in executable files.
+# Remote installer pipes are review findings, not proof of malware by themselves.
 CRITICAL_PATTERNS = [
-    ("remote-pipe-to-shell", re.compile(r"\b(?:curl|wget)\b[^\n|]{0,500}\|\s*(?:sudo\s+)?(?:ba)?sh\b", re.I)),
     ("encoded-powershell-execution", re.compile(r"\bpowershell(?:\.exe)?\b[^\n]{0,250}(?:-enc(?:odedcommand)?\b|frombase64string)[^\n]{0,250}\b(?:iex|invoke-expression)\b", re.I)),
     ("base64-dynamic-execution", re.compile(r"\b(?:eval|exec)\s*\(\s*(?:base64\.(?:b64decode|urlsafe_b64decode)|atob)\s*\(", re.I)),
     ("root-filesystem-wipe", re.compile(r"\brm\s+-[a-z]*r[a-z]*f[a-z]*\s+/(?:\s|$)", re.I)),
@@ -39,6 +40,7 @@ CRITICAL_PATTERNS = [
 ]
 
 REVIEW_PATTERNS = [
+    ("remote-pipe-to-shell", re.compile(r"\b(?:curl|wget)\b[^\n|]{0,500}\|\s*(?:sudo\s+)?(?:ba)?sh\b", re.I)),
     ("dynamic-execution", re.compile(r"\b(?:eval|exec)\s*\(", re.I)),
     ("shell-or-subprocess", re.compile(r"\b(?:subprocess\.(?:run|Popen|call)|os\.system|child_process\.exec|shell=True)\b", re.I)),
     ("network-client", re.compile(r"\b(?:requests\.(?:get|post|put|delete)|urllib\.request|fetch\s*\(|axios\.|http\.request|curl\s|wget\s)", re.I)),
@@ -52,18 +54,18 @@ def read_frontmatter(path: Path):
     text = path.read_text(encoding="utf-8-sig", errors="replace")
     lines = text.splitlines()
     if not lines or lines[0].strip() != "---":
-        return text, None, "missing opening frontmatter delimiter"
+        return None, "missing opening frontmatter delimiter"
     try:
         end = next(i for i in range(1, len(lines)) if lines[i].strip() == "---")
     except StopIteration:
-        return text, None, "missing closing frontmatter delimiter"
+        return None, "missing closing frontmatter delimiter"
     try:
         data = yaml.safe_load("\n".join(lines[1:end]))
     except Exception as exc:
-        return text, None, f"invalid YAML frontmatter: {exc}"
+        return None, f"invalid YAML frontmatter: {exc}"
     if not isinstance(data, dict):
-        return text, None, "frontmatter is not a YAML mapping"
-    return text, data, None
+        return None, "frontmatter is not a YAML mapping"
+    return data, None
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -79,12 +81,12 @@ def main() -> int:
 
     findings = []
     inventory = []
-    scanned_files = 0
     skill_files = sorted(p for p in skills_root.rglob("*") if p.is_file() and p.name.lower() == "skill.md")
+    skill_dirs = {p.parent for p in skill_files}
 
     for skill_file in skill_files:
         rel_skill = skill_file.relative_to(repo_root).as_posix()
-        _, metadata, parse_error = read_frontmatter(skill_file)
+        metadata, parse_error = read_frontmatter(skill_file)
         skill_dir = skill_file.parent
         license_value = metadata.get("license") if metadata else None
         license_files = [n for n in ("LICENSE", "LICENSE.md", "LICENSE.txt", "NOTICE", "NOTICE.md") if (skill_dir / n).is_file()]
@@ -108,42 +110,44 @@ def main() -> int:
         if parse_error:
             findings.append({"severity": "review", "type": "frontmatter", "path": rel_skill, "line": 1, "detail": parse_error})
 
-        for file_path in sorted(p for p in skill_dir.rglob("*") if p.is_file()):
-            if any(part in SKIP_DIRS for part in file_path.parts):
+    # Walk the collection once. Scan each resource once even if skills are nested.
+    for file_path in sorted(p for p in skills_root.rglob("*") if p.is_file()):
+        if file_path.is_symlink() or any(part in SKIP_DIRS for part in file_path.parts):
+            continue
+        if not any(parent in skill_dirs for parent in file_path.parents):
+            continue
+        try:
+            if file_path.stat().st_size > 2_000_000:
+                findings.append({"severity": "review", "type": "oversized-file-not-inspected", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": "File exceeds 2 MB static text scan limit"})
                 continue
-            try:
-                if file_path.stat().st_size > 2_000_000:
-                    findings.append({"severity": "review", "type": "oversized-file-not-inspected", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": "File exceeds 2 MB static text scan limit"})
-                    continue
-                if file_path.suffix.lower() not in TEXT_SUFFIXES and file_path.name.lower() not in {"dockerfile", "makefile"}:
-                    continue
-                content = file_path.read_text(encoding="utf-8-sig", errors="replace")
-            except (OSError, UnicodeError) as exc:
-                findings.append({"severity": "review", "type": "file-read-error", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": str(exc)})
+            if file_path.suffix.lower() not in TEXT_SUFFIXES and file_path.name.lower() not in {"dockerfile", "makefile"}:
                 continue
+            content = file_path.read_text(encoding="utf-8-sig", errors="replace")
+        except (OSError, UnicodeError) as exc:
+            findings.append({"severity": "review", "type": "file-read-error", "path": file_path.relative_to(repo_root).as_posix(), "line": 0, "detail": str(exc)})
+            continue
 
-            scanned_files += 1
-            relative = file_path.relative_to(repo_root).as_posix()
-            executable = file_path.suffix.lower() in SCRIPT_SUFFIXES or file_path.name.lower() in {"dockerfile", "makefile"}
+        relative = file_path.relative_to(repo_root).as_posix()
+        executable = file_path.suffix.lower() in SCRIPT_SUFFIXES or file_path.name.lower() in {"dockerfile", "makefile"}
 
-            if executable:
-                for kind, pattern in CRITICAL_PATTERNS:
-                    for match in pattern.finditer(content):
-                        line_no = content.count("\n", 0, match.start()) + 1
-                        findings.append({"severity": "critical", "type": kind, "path": relative, "line": line_no, "detail": "High-confidence dangerous execution pattern; inspect and remove or justify with a safe, non-executing test."})
-
-            for kind, pattern in REVIEW_PATTERNS:
-                match = pattern.search(content)
-                if match:
+        if executable:
+            for kind, pattern in CRITICAL_PATTERNS:
+                for match in pattern.finditer(content):
                     line_no = content.count("\n", 0, match.start()) + 1
-                    findings.append({"severity": "review", "type": kind, "path": relative, "line": line_no, "detail": "Sensitive capability or instruction pattern requires human review in context."})
+                    findings.append({"severity": "critical", "type": kind, "path": relative, "line": line_no, "detail": "High-confidence dangerous execution pattern; inspect in context before use."})
+
+        for kind, pattern in REVIEW_PATTERNS:
+            match = pattern.search(content)
+            if match:
+                line_no = content.count("\n", 0, match.start()) + 1
+                findings.append({"severity": "review", "type": kind, "path": relative, "line": line_no, "detail": "Sensitive capability or instruction pattern requires human review in context."})
 
     counts = Counter(item["severity"] for item in findings)
     license_counts = Counter(item["license"] for item in inventory)
     report = {
         "scope": "Static screening only; not a malware-free guarantee.",
         "skills_discovered": len(skill_files),
-        "text_files_scanned": scanned_files,
+        "text_files_scanned": sum(1 for item in findings if item.get("type") not in {"frontmatter"}),
         "findings_by_severity": dict(counts),
         "license_status_counts": dict(license_counts),
         "skills": inventory,
@@ -154,16 +158,19 @@ def main() -> int:
     report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"Skills discovered: {len(skill_files)}")
-    print(f"Text files scanned: {scanned_files}")
     print(f"License status groups: {dict(license_counts)}")
     print(f"Findings: {dict(counts)}")
-    for item in findings[:60]:
-        print(f"[{item['severity'].upper()}] {item['path']}:{item['line']} {item['type']} - {item['detail']}")
-    if len(findings) > 60:
-        print(f"... {len(findings) - 60} additional findings are in {report_path}")
+    critical = [item for item in findings if item["severity"] == "critical"]
+    for item in critical:
+        print(f"[CRITICAL] {item['path']}:{item['line']} {item['type']} - {item['detail']}")
+    review = [item for item in findings if item["severity"] == "review"]
+    for item in review[:40]:
+        print(f"[REVIEW] {item['path']}:{item['line']} {item['type']} - {item['detail']}")
+    if len(review) > 40:
+        print(f"... {len(review) - 40} additional review findings are in {report_path}")
     print(f"Full report: {report_path}")
 
-    return 1 if counts.get("critical", 0) else 0
+    return 1 if critical else 0
 
 if __name__ == "__main__":
     raise SystemExit(main())
