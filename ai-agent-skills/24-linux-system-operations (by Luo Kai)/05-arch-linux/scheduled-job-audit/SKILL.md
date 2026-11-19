@@ -45,7 +45,7 @@ cat /etc/os-release
 uname -r
 uname -m
 ps -p 1 -o comm=
-crontab -l; ls -la /etc/cron.*; systemctl list-timers --all (if available)
+crontab -l; ls -la /etc/cron.*; systemctl list-timers --all
 ```
 
 - Record relevant output and note unavailable commands. Do not install a tool merely to complete an optional probe.
