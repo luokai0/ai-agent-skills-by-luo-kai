@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "AWS China What's New: Query AWS China Region (Beijing / Ningxia) service launch announcements from 2016 to present."
+---
+
 # AWS China What's New
 
 Query AWS China Region (Beijing / Ningxia) service launch announcements from 2016 to present.

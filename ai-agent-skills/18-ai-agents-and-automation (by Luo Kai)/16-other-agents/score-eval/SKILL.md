@@ -1,8 +1,10 @@
 ---
+name: "score-eval"
+description: "Score the eval diff at $ARGUMENTS against the eval rubric."
 author: luo-kai
-name: score-eval
 disable-model-invocation: true
 ---
+
 
 Score the eval diff at $ARGUMENTS against the eval rubric.
 

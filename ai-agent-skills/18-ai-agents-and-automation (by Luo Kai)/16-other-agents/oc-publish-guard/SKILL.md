@@ -1,14 +1,15 @@
 ---
+name: "oc-publish-guard"
+description: "<!-- 🌌 Aoineco-Verified | S-DNA: AOI-2026-0213-SDNA-PG01 -->."
 author: luo-kai
-name: oc-publish-guard
 version: 1.0.0
-description: <!-- 🌌 Aoineco-Verified | S-DNA: AOI-2026-0213-SDNA-PG01 -->.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Publish Guard
 

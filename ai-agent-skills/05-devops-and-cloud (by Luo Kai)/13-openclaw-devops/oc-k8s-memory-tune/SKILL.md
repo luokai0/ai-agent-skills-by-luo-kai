@@ -1,11 +1,12 @@
 ---
-name: oc-k8s-memory-tune
+name: "oc-k8s-memory-tune"
+description: "**触发词**: oomkilled, memory_limit, jvm_heap, container_memory, k8s 内存."
 version: 1.0.0
-description: **触发词**: oomkilled, memory_limit, jvm_heap, container_memory, k8s 内存.
 author: luo-kai
 tags: [k8s-memory-tune, openclaw, community]
 source: https://clawskills.sh/skills/k8s-memory-tune
 ---
+
 
 # K8S Memory Tune
 

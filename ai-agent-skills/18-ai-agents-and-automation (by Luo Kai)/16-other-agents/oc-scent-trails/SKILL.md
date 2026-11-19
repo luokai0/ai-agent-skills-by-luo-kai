@@ -1,14 +1,15 @@
 ---
+name: "oc-scent-trails"
+description: "*A stigmergic intelligence primitive for care, memory, and co-existence.*."
 author: luo-kai
-name: oc-scent-trails
 version: 1.0.0
-description: *A stigmergic intelligence primitive for care, memory, and co-existence.*.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Scent Trails
 

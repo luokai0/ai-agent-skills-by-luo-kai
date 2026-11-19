@@ -1,7 +1,12 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: <phase-or-classification-skill-name>
-description: <single-line 20-100 word description; include trigger keywords and do not use folded YAML>
+name: "<phase-or-classification-skill-name>"
+description: "<single-line 20-100 word description; include trigger keywords and do not use folded YAML>"
+---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
+
+<!-- Original nonstandard metadata retained for reference:
 phase: <discover|define|develop|deliver|measure|iterate>
 # classification: <foundation|utility>   # For non-domain skills, use classification and omit phase
 version: "1.0.0"
@@ -12,7 +17,8 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: lous-creations
 author: luo-kai
----
+-->
+
 
 # <Skill Title>
 

@@ -1,14 +1,15 @@
 ---
+name: "oc-blankfiles"
+description: "Use blankfiles.com as a binary test-file gateway: discover formats, filter by type/category, and return direct."
 author: luo-kai
-name: oc-blankfiles
 version: 1.0.0
-description: Use blankfiles.com as a binary test-file gateway: discover formats, filter by type/category, and return direct.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Blankfiles
 

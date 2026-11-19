@@ -1,4 +1,9 @@
 ---
+name: "skill"
+description: "文件管理技能 (file-manager): 模块化的文件管理规则集，用于指导 Agent 执行各类文件和文件夹的整理、分类、命名、归档操作。"
+---
+
+---
 name: dedicated-file-manager
 description:
   This skill should be used when the user asks about file management, organization, classification, cleanup, archival, or naming conventions. It handles tasks like organizing project files, managing folders, renaming files in batch, moving files to archive, cleaning up temp files, detecting duplicates, generating directory structures, or any file-related organization work. Trigger keywords include: 文件管理、整理文件、文件分类、归档、废弃文件、临时文件、重命名、文件夹结构、清理、批量处理。

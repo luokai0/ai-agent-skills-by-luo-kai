@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Web Fetch Skill: 抓取指定URL的网页内容，返回文本摘要或原始HTML。用于获取新闻、公告、数据页面等。"
+---
+
 # Web Fetch Skill
 
 ## Description

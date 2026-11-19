@@ -1,7 +1,6 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: pm-define-jtbd-canvas
-description: Creates a Jobs to be Done canvas capturing the functional, emotional, and social dimensions of a customer job. Use when deeply understanding customer motivations, designing for jobs, or reframing product positioning.
+name: "pm-define-jtbd-canvas"
+description: "Creates a Jobs to be Done canvas capturing the functional, emotional, and social dimensions of a customer job. Use when deeply understanding customer motivations, designing for jobs, or reframing product positioning."
 phase: define
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   author: lous-creations
 author: luo-kai
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Jobs to be Done Canvas
 
 A Jobs to be Done (JTBD) canvas captures the complete picture of why customers "hire" products to make progress in their lives. Based on Clayton Christensen's framework, JTBD goes beyond features and demographics to understand the underlying motivations—functional, emotional, and social—that drive customer behavior.

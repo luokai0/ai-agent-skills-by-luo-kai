@@ -1,14 +1,15 @@
 ---
+name: "oc-readx"
+description: "Twitter/X intelligence toolkit: analyze users, tweets, trends, communities, and networks."
 author: luo-kai
-name: oc-readx
 version: 1.0.0
-description: Twitter/X intelligence toolkit: analyze users, tweets, trends, communities, and networks.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Readx
 

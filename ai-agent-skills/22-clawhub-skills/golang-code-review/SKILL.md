@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "🐛 golang-code-review - Golang 代码审查技能: 此技能对 Git merge 提交的 Golang 代码进行全面的代码审查，包括："
+---
+
 # 🐛 golang-code-review - Golang 代码审查技能
 
 ## 功能描述

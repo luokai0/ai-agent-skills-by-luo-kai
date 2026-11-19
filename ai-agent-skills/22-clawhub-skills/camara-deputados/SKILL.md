@@ -1,10 +1,11 @@
 ---
-name: camara-deputados
-description: Monitor and research the Brazilian Chamber of Deputies (Câmara dos Deputados) legislative activity. Use when: (1) searching for bills/proposições by author, keyword, type or year, (2) checking today's or upcoming agenda/events, (3) looking up deputies (deputados) by name, party or state, (4) tracking voting results (votações) in plenary or committees, (5) checking committee (comissão) schedules and membership, (6) monitoring specific bills' tramitação/status, (7) retrieving deputy expenses (CEAP/cota parlamentar), (8) searching for frentes parlamentares, grupos de trabalho, (9) any question about the Câmara dos Deputados, deputies, or federal bills. Base URL: https://dadosabertos.camara.leg.br/api/v2 — no auth required, returns JSON.
+name: "camara-deputados"
+description: "Monitor and research the Brazilian Chamber of Deputies (Câmara dos Deputados) legislative activity. Use when: (1) searching for bills/proposições by author, keyword, type or year, (2) checking today's or upcoming agenda/events, (3) looking up deputies (deputados) by name, party or state, (4) tracking voting results (votações) in plenary or committees, (5) checking committee (comissão) schedules and membership, (6) monitoring specific bills' tramitação/status, (7) retrieving deputy expenses (CEAP"
 version: "1.0.1"
 author: "Daniel Marques"
 license: "MIT"
 ---
+
 
 # Câmara dos Deputados — API de Dados Abertos
 

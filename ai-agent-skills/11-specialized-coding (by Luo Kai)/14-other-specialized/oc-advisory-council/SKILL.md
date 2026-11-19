@@ -1,14 +1,15 @@
 ---
+name: "oc-advisory-council"
+description: "**You MUST actually execute the Python command using your shell/exec tool.** Read the real output."
 author: luo-kai
-name: oc-advisory-council
 version: 1.0.0
-description: **You MUST actually execute the Python command using your shell/exec tool.** Read the real output.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Advisory Council
 

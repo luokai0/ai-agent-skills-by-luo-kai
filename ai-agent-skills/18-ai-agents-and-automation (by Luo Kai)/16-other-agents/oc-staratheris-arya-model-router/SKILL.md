@@ -1,11 +1,12 @@
 ---
-name: oc-staratheris-arya-model-router
+name: "oc-staratheris-arya-model-router"
+description: "Token-saver router: elige modelo (cheap/default/pro) y usa sub-agentes para tareas pesadas."
 version: 1.0.0
-description: Token-saver router: elige modelo (cheap/default/pro) y usa sub-agentes para tareas pesadas.
 author: luo-kai
 tags: [staratheris-arya-model-router, openclaw, community]
 source: https://clawskills.sh/skills/staratheris-arya-model-router
 ---
+
 
 # Staratheris Arya Model Router
 

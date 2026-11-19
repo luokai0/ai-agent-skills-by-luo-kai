@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "HTTP Retry + Circuit Breaker Skill: Implements HTTP request retry strategies with circuit breaker pattern to improve reliability and reduce failure rates from 8% to 0.4%."
+---
+
 # HTTP Retry + Circuit Breaker Skill
 
 ## Description

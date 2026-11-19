@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "SKILL.md - AI Act Risk Check: **Description:** Quickly assesses a preliminary risk classification for an AI system based on the high-risk categories listed in Annex III of the EU AI Act (focusing on biometrics, critical infrastructure, education, employment, essential services, law enforcement, and "
+---
+
 # SKILL.md - AI Act Risk Check
 
 ## `ai-act-risk-check`

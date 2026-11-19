@@ -1,11 +1,12 @@
 ---
-name: oc-crypto-hackathon
+name: "oc-crypto-hackathon"
+description: "Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill."
 version: 1.0.0
-description: Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill.
 author: luo-kai
 tags: [crypto-hackathon, openclaw, community]
 source: https://clawskills.sh/skills/crypto-hackathon
 ---
+
 
 # Crypto Hackathon
 

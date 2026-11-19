@@ -1,3 +1,8 @@
+---
+name: sample-text-processor
+description: Example text processing skill demonstrating word counts, character analysis, and basic text transformations.
+---
+
 # Sample Text Processor
 
 ---

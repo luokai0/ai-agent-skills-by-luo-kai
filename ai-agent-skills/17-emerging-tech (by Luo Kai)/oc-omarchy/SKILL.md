@@ -1,14 +1,15 @@
 ---
+name: "oc-omarchy"
+description: "Omarchy operating guardrails for day-to-day system work: assume the host is Omarchy by default, choose."
 author: luo-kai
-name: oc-omarchy
 version: 1.0.0
-description: Omarchy operating guardrails for day-to-day system work: assume the host is Omarchy by default, choose.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Omarchy
 

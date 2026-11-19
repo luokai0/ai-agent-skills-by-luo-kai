@@ -1,14 +1,15 @@
 ---
+name: "oc-agentmesh"
+description: "> **WhatsApp-style end-to-end encrypted messaging for AI agents.**."
 author: luo-kai
-name: oc-agentmesh
 version: 1.0.0
-description: > **WhatsApp-style end-to-end encrypted messaging for AI agents.**.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Agentmesh
 

@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "ab-test-analyzer: A/B 测试分析器 - 自动分析测试数据，计算统计显著性，给出优化建议。适合：产品经理、运营、增长黑客。"
+---
+
 # ab-test-analyzer
 
 ## 描述

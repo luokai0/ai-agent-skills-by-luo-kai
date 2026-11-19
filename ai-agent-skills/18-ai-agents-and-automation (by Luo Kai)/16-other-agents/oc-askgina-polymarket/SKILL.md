@@ -1,11 +1,12 @@
 ---
-name: oc-askgina-polymarket
+name: "oc-askgina-polymarket"
+description: "Fast setup for Claw bots: paste your Gina MCP token and start trading Polymarket in minutes."
 version: 1.0.0
-description: Fast setup for Claw bots: paste your Gina MCP token and start trading Polymarket in minutes.
 author: luo-kai
 tags: [askgina-polymarket, openclaw, community]
 source: https://clawskills.sh/skills/askgina-polymarket
 ---
+
 
 # Askgina Polymarket
 

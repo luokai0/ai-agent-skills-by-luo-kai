@@ -1,8 +1,7 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "deliver-prd"
+description: "Creates a comprehensive Product Requirements Document that aligns stakeholders on what to build, why, and how success will be measured. Use when specifying features, epics, or product initiatives for engineering handoff."
 author: luo-kai
-name: deliver-prd
-description: Creates a comprehensive Product Requirements Document that aligns stakeholders on what to build, why, and how success will be measured. Use when specifying features, epics, or product initiatives for engineering handoff.
 phase: deliver
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Product Requirements Document (PRD)
 
 A Product Requirements Document is the primary specification artifact that communicates what to build and why. It bridges the gap between problem understanding and engineering implementation by providing clear requirements, success criteria, and scope boundaries. A good PRD enables engineering to build the right thing while maintaining flexibility on implementation details.

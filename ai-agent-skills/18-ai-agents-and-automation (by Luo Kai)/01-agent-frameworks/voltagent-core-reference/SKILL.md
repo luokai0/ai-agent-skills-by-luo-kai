@@ -1,14 +1,15 @@
 ---
+name: "voltagent-core-reference"
+description: "Reference for the VoltAgent class: constructor options, lifecycle methods, and runtime behavior."
 author: luo-kai
-name: voltagent-core-reference
 # prettier-ignore
-description: Reference for the VoltAgent class: constructor options, lifecycle methods, and runtime behavior.
 license: MIT
 metadata:
   author: VoltAgent
   version: "1.0.0"
   repository: https://github.com/VoltAgent/skills
 ---
+
 
 # VoltAgent Core Reference
 

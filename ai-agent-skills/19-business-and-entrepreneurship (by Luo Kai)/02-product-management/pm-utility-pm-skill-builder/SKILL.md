@@ -1,7 +1,6 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: pm-utility-pm-skill-builder
-description: Guides contributors from a PM skill idea to a complete Skill Implementation Packet aligned with pm-skills conventions. Runs gap analysis, validates through a Why Gate, classifies by type and phase, generates draft files, and writes to a staging area for review before promotion.
+name: "pm-utility-pm-skill-builder"
+description: "Guides contributors from a PM skill idea to a complete Skill Implementation Packet aligned with pm-skills conventions. Runs gap analysis, validates through a Why Gate, classifies by type and phase, generates draft files, and writes to a staging area for review before promotion."
 classification: utility
 version: "1.0.0"
 updated: 2026-03-22
@@ -12,6 +11,9 @@ metadata:
   author: lous-creations
 author: luo-kai
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # PM Skill Builder
 
 This skill creates new PM skills for the pm-skills library. It produces a

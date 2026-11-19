@@ -1,7 +1,9 @@
 ---
-name: api-design-principles
+name: "api-design-principles"
+description: "API Design Principles: Design intuitive, scalable REST and GraphQL APIs that developers love. Covers resource modeling, HTTP semantics, pagination, error handling, versioning, and GraphQL schema patterns."
 model: reasoning
 ---
+
 
 # API Design Principles
 

@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Test Case Generator: 根据代码自动生成单元测试用例。"
+---
+
 # Test Case Generator
 
 根据代码自动生成单元测试用例。

@@ -1,14 +1,15 @@
 ---
+name: "oc-grago"
+description: "**Delegate research and data-fetch tasks to a free local LLM."
 author: luo-kai
-name: oc-grago
 version: 1.0.0
-description: **Delegate research and data-fetch tasks to a free local LLM.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Grago
 

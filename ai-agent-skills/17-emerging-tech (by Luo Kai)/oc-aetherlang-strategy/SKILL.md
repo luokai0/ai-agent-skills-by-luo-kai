@@ -1,14 +1,15 @@
 ---
+name: "oc-aetherlang-strategy"
+description: "> Game theory, Monte Carlo simulations, behavioral economics, and competitive war gaming."
 author: luo-kai
-name: oc-aetherlang-strategy
 version: 1.0.0
-description: > Game theory, Monte Carlo simulations, behavioral economics, and competitive war gaming.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Aetherlang Strategy
 

@@ -1,9 +1,14 @@
 ---
-name: http-static-server
-description: Start an ad-hoc HTTP static file server in the current directory using one-line commands across 25+ languages and tools. Auto-detects available runtimes and recommends the best option.
+name: "http-static-server"
+description: "Start an ad-hoc HTTP static file server in the current directory using one-line commands across 25+ languages and tools. Auto-detects available runtimes and recommends the best option."
+---
+
+
+<!-- Original nonstandard metadata retained for reference:
 homepage: https://gist.github.com/willurd/5720255
 {"author":"flowerwrong","version":"2026.3.10","sdk_version":"1.4.0","updated":"2026-03-10"}
----
+-->
+
 
 # HTTP Static Server One-Liners
 

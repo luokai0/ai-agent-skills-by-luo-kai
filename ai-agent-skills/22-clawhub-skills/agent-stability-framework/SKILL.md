@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "Agent Stability Framework (ASF): **Drift Prevention · Fault Catching · Soul Alignment**"
+---
+
 # Agent Stability Framework (ASF)
 
 **Drift Prevention · Fault Catching · Soul Alignment**

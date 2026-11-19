@@ -1,10 +1,11 @@
---- 
-name: unsplash-integration
-description: Integration skill for searching and fetching high-quality, free-to-use professional photography from Unsplash.
+---
+name: "unsplash-integration"
+description: "Integration skill for searching and fetching high-quality, free-to-use professional photography from Unsplash."
 risk: safe
 source: community
 date_added: "2026-03-07"
 ---
+
 
 # Unsplash Integration Skill
 

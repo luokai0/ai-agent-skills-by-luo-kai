@@ -1,9 +1,10 @@
 ---
-name: api-monitor
-description: >
-  API 配额监控与手动切换技能。监控 OpenClaw 模型 API 使用量，配额不足时询问用户确认后再切换。
-  触发词：API配额、API监控、模型切换、检查API。
+name: "api-monitor"
+description: "API 配额监控与手动切换技能。监控 OpenClaw 模型 API 使用量，配额不足时询问用户确认后再切换。 触发词：API配额、API监控、模型切换、检查API。"
+---
 
+
+<!-- Original nonstandard metadata retained for reference:
 # ⚠️ 前置要求（使用前必读）
 
 ## 必需环境
@@ -24,8 +25,8 @@ description: >
 - 切换模型会重启 Gateway，短期内服务中断
 - 自动重启 Gateway 需要足够权限
 - 建议在非高峰期操作
+-->
 
----
 
 # API 使用量监控技能（询问确认模式）
 

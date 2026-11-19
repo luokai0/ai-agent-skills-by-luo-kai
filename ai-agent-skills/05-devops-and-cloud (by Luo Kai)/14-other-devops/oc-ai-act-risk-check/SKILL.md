@@ -1,11 +1,12 @@
 ---
-name: oc-ai-act-risk-check
+name: "oc-ai-act-risk-check"
+description: "**Description:** Quickly assesses a preliminary risk classification for an AI system based on the high-risk."
 version: 1.0.0
-description: **Description:** Quickly assesses a preliminary risk classification for an AI system based on the high-risk.
 author: luo-kai
 tags: [ai-act-risk-check, openclaw, community]
 source: https://clawskills.sh/skills/ai-act-risk-check
 ---
+
 
 # Ai Act Risk Check
 

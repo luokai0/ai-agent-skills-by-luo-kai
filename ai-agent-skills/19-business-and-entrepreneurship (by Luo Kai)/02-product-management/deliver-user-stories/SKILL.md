@@ -1,8 +1,7 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "deliver-user-stories"
+description: "Generates user stories with clear acceptance criteria from product requirements or feature descriptions. Use when breaking down features for sprint planning, writing tickets, or communicating requirements to engineering."
 author: luo-kai
-name: deliver-user-stories
-description: Generates user stories with clear acceptance criteria from product requirements or feature descriptions. Use when breaking down features for sprint planning, writing tickets, or communicating requirements to engineering.
 phase: deliver
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # User Stories
 
 User stories are concise descriptions of functionality from the user's perspective. They capture who needs something, what they need, and why — without prescribing how to build it. Good user stories enable teams to break large features into estimable, deliverable increments while maintaining focus on user value.

@@ -1,14 +1,15 @@
 ---
+name: "oc-sprite-sheet"
+description: "**Category**: Game Development | Asset Optimization."
 author: luo-kai
-name: oc-sprite-sheet
 version: 1.0.0
-description: **Category**: Game Development | Asset Optimization.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Sprite Sheet
 

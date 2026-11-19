@@ -1,14 +1,15 @@
 ---
+name: "oc-sports-betting"
+description: "Place and claim decentralized sports bets on-chain via Pinwin and Azuro: real-time odds, high liquidity, no custody."
 author: luo-kai
-name: oc-sports-betting
 version: 1.0.0
-description: Place and claim decentralized sports bets on-chain via Pinwin and Azuro: real-time odds, high liquidity, no custody.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Sports Betting
 

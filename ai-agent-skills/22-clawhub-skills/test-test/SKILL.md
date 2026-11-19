@@ -1,6 +1,6 @@
 ---
 name: test-test
-description: just for test
------
+description: Simple test skill used to verify skill discovery and installation.
+---
 
 TEST

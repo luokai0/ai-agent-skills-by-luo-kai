@@ -1,7 +1,6 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: pm-iterate-pivot-decision
-description: Documents a strategic pivot or persevere decision with the evidence, analysis, and rationale. Use when evaluating whether to change direction on a product, feature, or strategy based on market feedback.
+name: "pm-iterate-pivot-decision"
+description: "Documents a strategic pivot or persevere decision with the evidence, analysis, and rationale. Use when evaluating whether to change direction on a product, feature, or strategy based on market feedback."
 phase: iterate
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   author: lous-creations
 author: luo-kai
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Pivot Decision
 
 A pivot decision document captures the analysis and rationale behind a strategic direction change—or the decision to stay the course. Based on the Lean Startup concept of "pivot or persevere," this artifact ensures major strategic decisions are made with evidence, communicated clearly, and preserved for organizational learning.

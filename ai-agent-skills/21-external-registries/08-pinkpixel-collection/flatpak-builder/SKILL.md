@@ -1,7 +1,8 @@
 ---
-name: flatpak-builder
-description: Complete guide for packaging Linux applications as Flatpaks for distribution on Flathub. Use this skill whenever the user mentions: "flatpak", "flathub", "packaging for linux", "creating a flatpak", "flatpak manifest", "flatpak sandbox", "desktop file", "metainfo", "appstream", "flatpak-builder", "linux app distribution", "app icon linux", ".desktop file", "publish to flathub", or any time they want to make their app installable via flatpak. ALWAYS trigger on any flatpak/flathub packaging question, even if they just say "how do I make my app a flatpak" or "I want to publish my app on Linux". Covers manifests, runtimes, MetaInfo/AppStream XML, desktop files, icons at all sizes, sandbox permissions, build systems (cmake, meson, simple), Flathub submission, linting, GitHub Actions CI, and verification.
+name: "flatpak-builder"
+description: "Complete guide for packaging Linux applications as Flatpaks for distribution on Flathub. Use this skill whenever the user mentions: \"flatpak\", \"flathub\", \"packaging for linux\", \"creating a flatpak\", \"flatpak manifest\", \"flatpak sandbox\", \"desktop file\", \"metainfo\", \"appstream\", \"flatpak-builder\", \"linux app distribution\", \"app icon linux\", \".desktop file\", \"publish to flathub\", or any time they want to make their app installable via flatpak. ALWAYS trigger on any flatpak/flathub packaging questi"
 ---
+
 
 # Flatpak Builder Skill
 

@@ -1,9 +1,10 @@
 ---
-name: imagen
-description: |
+name: "imagen"
+description: "Imagen - AI Image Generation Skill: This skill generates images using Google Gemini's image generation model (`gemini-3-pro-image-preview`). It enables seamless image creation during any Claude Code session - whether you're building frontend UIs, creating documentation, or need visual representation"
 source: "https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen"
 risk: safe
 ---
+
 
 # Imagen - AI Image Generation Skill
 

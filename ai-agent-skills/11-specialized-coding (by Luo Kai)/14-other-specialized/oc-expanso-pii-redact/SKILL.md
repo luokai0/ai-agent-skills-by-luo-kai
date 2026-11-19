@@ -1,14 +1,15 @@
 ---
+name: "oc-expanso-pii-redact"
+description: "Redact PII from text, replacing sensitive data with placeholders\"."
 author: luo-kai
-name: oc-expanso-pii-redact
 version: 1.0.0
-description: "Redact PII from text, replacing sensitive data with placeholders".
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Expanso Pii Redact
 

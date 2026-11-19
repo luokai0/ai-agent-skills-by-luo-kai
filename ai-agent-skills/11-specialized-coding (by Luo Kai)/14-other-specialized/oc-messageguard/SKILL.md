@@ -1,14 +1,15 @@
 ---
+name: "oc-messageguard"
+description: "**Purpose**: MessageGuard filters outgoing text to prevent secret leaks and sensitive data exposure."
 author: luo-kai
-name: oc-messageguard
 version: 1.0.0
-description: **Purpose**: MessageGuard filters outgoing text to prevent secret leaks and sensitive data exposure.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: typescript-tools
 ---
+
 
 # Messageguard
 

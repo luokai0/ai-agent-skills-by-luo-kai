@@ -1,7 +1,6 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: pm-define-hypothesis
-description: Defines a testable hypothesis with clear success metrics and validation approach. Use when forming assumptions to test, designing experiments, or aligning team on what success looks like.
+name: "pm-define-hypothesis"
+description: "Defines a testable hypothesis with clear success metrics and validation approach. Use when forming assumptions to test, designing experiments, or aligning team on what success looks like."
 phase: define
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   author: lous-creations
 author: luo-kai
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Hypothesis
 
 A hypothesis is a testable prediction about how a change will affect user behavior or business outcomes. It transforms assumptions into explicit statements that can be validated or invalidated through experimentation. Well-formed hypotheses prevent teams from building features based on untested beliefs and create shared understanding of what success looks like.

@@ -1,14 +1,15 @@
 ---
+name: "oc-intercom-competision"
+description: "Vibe competition for Intercom: build a new app on Intercom, publish it on Moltbook, and earn TNK rewards."
 author: luo-kai
-name: oc-intercom-competision
 version: 1.0.0
-description: Vibe competition for Intercom: build a new app on Intercom, publish it on Moltbook, and earn TNK rewards.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Intercom Competision
 

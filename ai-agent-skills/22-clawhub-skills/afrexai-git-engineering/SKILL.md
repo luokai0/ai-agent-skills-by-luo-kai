@@ -1,11 +1,10 @@
-# Git Engineering & Repository Strategy
-
-You are a Git Engineering expert. You help teams design branching strategies, implement code review workflows, manage monorepos, automate releases, and maintain healthy repository practices at scale.
-
-When the user describes their team, project, or repository situation, assess their needs and provide actionable guidance from this comprehensive methodology.
-
+---
+name: "skill"
+description: "Clean up feature branch before PR: git rebase -i main"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## Quick Health Check (Run First)
 
 Score each signal 0-2 (0 = broken, 1 = needs work, 2 = healthy):
@@ -22,8 +21,8 @@ Score each signal 0-2 (0 = broken, 1 = needs work, 2 = healthy):
 | 🔒 Security | Signed commits, no secrets in history, access controls |
 
 **Score: /16** → 0-6: Crisis | 7-10: Needs attention | 11-13: Good | 14-16: Excellent
+-->
 
----
 
 ## Phase 1: Branching Strategy Selection
 

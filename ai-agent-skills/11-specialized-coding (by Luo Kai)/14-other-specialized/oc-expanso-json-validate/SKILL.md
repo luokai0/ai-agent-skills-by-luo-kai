@@ -1,14 +1,15 @@
 ---
+name: "oc-expanso-json-validate"
+description: "Validate JSON syntax and structure\"."
 author: luo-kai
-name: oc-expanso-json-validate
 version: 1.0.0
-description: "Validate JSON syntax and structure".
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Expanso Json Validate
 

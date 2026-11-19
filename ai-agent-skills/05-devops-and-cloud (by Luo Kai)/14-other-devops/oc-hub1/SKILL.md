@@ -1,11 +1,12 @@
 ---
-name: oc-hub1
+name: "oc-hub1"
+description: "**Memory Infrastructure for Autonomous Agents**."
 version: 1.0.0
-description: **Memory Infrastructure for Autonomous Agents**.
 author: luo-kai
 tags: [hub1, openclaw, community]
 source: https://clawskills.sh/skills/hub1
 ---
+
 
 # Hub1
 

@@ -1,4 +1,9 @@
 ---
+name: "skill"
+description: "HTML Instant Deploy: Use htmlcode.fun when the output can be delivered as one standalone HTML document and speed matters more than full project-hosting features. This skill is designed for agents that need the shortest path from HTML content to a live shareable URL."
+---
+
+---
 name: html-deploy
 description: Instantly publish a single self-contained HTML page to htmlcode.fun without GitHub, Vercel, or Netlify. Use when an agent needs the fastest path from HTML to a live URL for landing pages, demo pages, temporary microsites, QR share pages, and AI-generated single-file frontends. Supports stable short codes for overwrite-style updates and includes a ready-to-run Python deployment script. Live example and visual guide: https://www.htmlcode.fun/s/htmlcode-fun-guide
 ---

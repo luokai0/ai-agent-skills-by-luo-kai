@@ -1,33 +1,10 @@
-# API Security Best Practices
-
-Implement secure API design patterns including authentication, authorization, input validation, rate limiting, and protection against common API vulnerabilities.
-
-## Description
-
-USE WHEN:
-- Designing new API endpoints
-- Securing existing APIs
-- Implementing authentication and authorization (JWT, OAuth 2.0, API keys)
-- Setting up rate limiting and throttling
-- Protecting against injection attacks (SQL, XSS, command)
-- Conducting API security reviews or preparing for audits
-- Handling sensitive data in APIs
-- Building REST, GraphQL, or WebSocket APIs
-
-DON'T USE WHEN:
-- Need vulnerability scanning (use `vulnerability-scanner` skill)
-- Building frontend-only apps with no API
-- Need network-level security (firewalls, WAF config)
-
-OUTPUTS:
-- Secure authentication implementations (JWT, refresh tokens)
-- Input validation schemas (Zod, Joi)
-- Rate limiting configurations
-- Security middleware examples
-- OWASP API Top 10 compliance guidance
-
+---
+name: "skill"
+description: "// auth.js"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## How It Works
 
 ### Step 1: Authentication & Authorization
@@ -61,8 +38,8 @@ OUTPUTS:
 - Implement proper error handling (no data leaks)
 - Sanitize error messages
 - Use secure headers
+-->
 
----
 
 ## JWT Authentication Implementation
 

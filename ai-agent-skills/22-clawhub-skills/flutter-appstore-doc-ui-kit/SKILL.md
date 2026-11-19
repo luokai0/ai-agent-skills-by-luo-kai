@@ -1,7 +1,8 @@
 ---
-name: flutter-appstore-doc-ui-kit
-description: Generate a launch-ready app package for App Store submission: a complete Markdown feature document plus AI-generated Apple-style UI design images for each page and a square-corner app icon. Use when the user wants a Flutter app concept/spec constrained to FVM Flutter 3.35.1, offline-first (no backend), camera + photo library permissions, anti-saturation positioning, and no TODO/temp placeholders.
+name: "flutter-appstore-doc-ui-kit"
+description: "Generate a launch-ready app package for App Store submission: a complete Markdown feature document plus AI-generated Apple-style UI design images for each page and a square-corner app icon. Use when the user wants a Flutter app concept/spec constrained to FVM Flutter 3.35.1, offline-first (no backend), camera + photo library permissions, anti-saturation positioning, and no TODO/temp placeholders."
 ---
+
 
 # Flutter AppStore Doc + UI Kit
 

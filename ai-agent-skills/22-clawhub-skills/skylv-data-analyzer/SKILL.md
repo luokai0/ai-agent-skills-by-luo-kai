@@ -1,8 +1,9 @@
 ---
-name: data-analyzer
-description: Data analysis assistant. Analyzes CSV/JSON data, generates statistical reports and visualizations. Triggers: data analysis, csv analysis, json parser, data insights.
+name: "data-analyzer"
+description: "Data analysis assistant. Analyzes CSV/JSON data, generates statistical reports and visualizations. Triggers: data analysis, csv analysis, json parser, data insights."
 metadata: {"openclaw": {"emoji": "📊"}}
 ---
+
 
 # Data Analyzer — 数据分析助手
 

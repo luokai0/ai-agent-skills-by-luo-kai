@@ -1,14 +1,15 @@
 ---
+name: "oc-ambient-stamina"
+description: "*An ecological skill for sustaining care, presence, and imagination across long horizons*."
 author: luo-kai
-name: oc-ambient-stamina
 version: 1.0.0
-description: *An ecological skill for sustaining care, presence, and imagination across long horizons*.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Ambient Stamina
 

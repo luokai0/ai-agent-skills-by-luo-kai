@@ -1,11 +1,12 @@
 ---
-name: oc-token-guard
+name: "oc-token-guard"
+description: "<!-- 🌌 Aoineco-Verified | S-DNA: AOI-2026-0213-SDNA-TG01 -->."
 version: 1.0.0
-description: <!-- 🌌 Aoineco-Verified | S-DNA: AOI-2026-0213-SDNA-TG01 -->.
 author: luo-kai
 tags: [token-guard, openclaw, community]
 source: https://clawskills.sh/skills/token-guard
 ---
+
 
 # Token Guard
 

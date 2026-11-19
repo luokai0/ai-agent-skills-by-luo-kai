@@ -1,8 +1,7 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "develop-design-rationale"
+description: "Documents the reasoning behind design decisions including alternatives considered, trade-offs evaluated, and principles applied. Use when making significant UX decisions, aligning with stakeholders on design direction, or preserving design context for future reference."
 author: luo-kai
-name: develop-design-rationale
-description: Documents the reasoning behind design decisions including alternatives considered, trade-offs evaluated, and principles applied. Use when making significant UX decisions, aligning with stakeholders on design direction, or preserving design context for future reference.
 phase: develop
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Design Rationale
 
 A design rationale document captures the "why" behind design decisions—the context, constraints, alternatives considered, and reasoning that led to a particular solution. While designs themselves show what was built, rationale documents preserve institutional knowledge about why it was built that way.

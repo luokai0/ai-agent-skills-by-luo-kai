@@ -1,14 +1,15 @@
 ---
+name: "oc-raiffeisen-elba"
+description: "Automate Raiffeisen ELBA online banking: login/logout, list accounts, and fetch transactions via Playwright."
 author: luo-kai
-name: oc-raiffeisen-elba
 version: 1.0.0
-description: Automate Raiffeisen ELBA online banking: login/logout, list accounts, and fetch transactions via Playwright.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Raiffeisen Elba
 

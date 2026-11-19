@@ -1,0 +1,7 @@
+[submodule "ai-agent-skills/02-frontend-development (by Luo Kai)/07-data-visualization/d3-skill"]
+	path = ai-agent-skills/02-frontend-development (by Luo Kai)/07-data-visualization/d3-skill
+	url = https://github.com/chrisvoncsefalvay/claude-d3js-skill.git
+
+[submodule "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/03-context-engineering/ctx-context-eng-skills"]
+	path = ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/03-context-engineering/ctx-context-eng-skills
+	url = https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering.git

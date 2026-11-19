@@ -1,3 +1,8 @@
+---
+name: differential-gene-analysis-rna-seq
+description: "Performs differential gene expression analysis on RNA-seq count matrices using DESeq2 and generates volcano, PCA, heatmap, and significant-gene outputs."
+---
+
 # Differential Gene Expression Analysis (RNA-seq)
 OpenCLAW Skill for bioinformatics data analysis.
 

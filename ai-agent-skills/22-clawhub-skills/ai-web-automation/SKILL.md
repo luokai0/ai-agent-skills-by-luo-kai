@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "SKILL.md: 自动化 Web 任务执行服务。"
+---
+
 # SKILL.md
 
 # Web Automation Service

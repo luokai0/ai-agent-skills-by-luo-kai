@@ -328,7 +328,8 @@ Tutorials, guides, and resources:
 
 ---
 
-## Total Aggregated: 8,966+ Skills from 25+ Sources
+## Source inventory and licensing
 
-All skills are consolidated under the MIT license where applicable.
-Individual skills may have their own license files within their directories.
+This register currently documents 25 upstream projects. Skill counts change as upstream repositories are updated and should not be treated as fixed totals. The main repository's cross-platform workflow validates the current set of discovered `SKILL.md` files.
+
+Licenses vary by source. Each imported project and its individual files remain subject to the applicable upstream license, copyright, and attribution requirements. Inclusion in this collection does not relicense third-party material or place every item under a single license. Check the upstream repository and any license or notice files before reuse or redistribution.

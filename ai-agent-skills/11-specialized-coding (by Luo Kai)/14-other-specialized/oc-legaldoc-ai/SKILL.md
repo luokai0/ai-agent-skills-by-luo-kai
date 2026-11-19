@@ -1,14 +1,15 @@
 ---
+name: "oc-legaldoc-ai"
+description: "**Category:** Legal / Professional Services."
 author: luo-kai
-name: oc-legaldoc-ai
 version: 1.0.0
-description: **Category:** Legal / Professional Services.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Legaldoc Ai
 

@@ -1,18 +1,18 @@
-# Skill: Deep Web Fetcher
-
-> 版本：1.0.0  
-> 描述：免费网页抓取 + 内容提取 + 结构化输出，无需付费API
-
+---
+name: "skill"
+description: "安装Python依赖: pip install playwright readability-lxml lxml beautifulsoup4"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## 核心功能
 
 - **网页抓取**：支持JS渲染，自动等待页面加载
 - **正文提取**：智能识别文章主体，过滤广告/导航
 - **元数据提取**：自动提取标题、作者、发布时间
 - **指标提取**：从正文提取关键数据（样本量、AUC、成本等）
+-->
 
----
 
 ## 触发命令
 

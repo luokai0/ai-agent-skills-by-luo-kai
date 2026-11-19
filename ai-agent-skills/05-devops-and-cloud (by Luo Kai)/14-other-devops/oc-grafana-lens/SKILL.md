@@ -1,11 +1,12 @@
 ---
-name: oc-grafana-lens
+name: "oc-grafana-lens"
+description: "Full Grafana access: query, dashboard, alert, trace — 16 agent tools."
 version: 1.0.0
-description: Full Grafana access: query, dashboard, alert, trace — 16 agent tools.
 author: luo-kai
 tags: [grafana-lens, openclaw, community]
 source: https://clawskills.sh/skills/grafana-lens
 ---
+
 
 # Grafana Lens
 

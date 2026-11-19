@@ -1,15 +1,10 @@
-# 《说人话》
-
-> 触发词：「说人话」「去AI味」「润色文案」「生成正文」「human写作」「写文章」
-> 适用场景：热点配图完成后，进入正文创作阶段
-> 平台适配：小红书 / 抖音 / 微信公众号 / 微博
-> 版本：1.2.0
-> ⚠️ 核心原则：
-> - 本技能面向通用用户，不预设称呼
-> - 用户文风偏好统一存入 `/workspace/memory/evolution/user-writing-style.md`
-
+---
+name: "skill"
+description: "**⚠️ 必须询问用户，不能自行决定。**"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## 创作全流程（5步）
 
 ```
@@ -19,8 +14,8 @@ Step3 确认平台
 Step4 确认创作视角/人称
 Step5 结合平台特征产出内容
 ```
+-->
 
----
 
 ## Step1：确认时间锚点
 

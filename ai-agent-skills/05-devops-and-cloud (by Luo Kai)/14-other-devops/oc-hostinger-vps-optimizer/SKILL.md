@@ -1,11 +1,12 @@
 ---
-name: oc-hostinger-vps-optimizer
+name: "oc-hostinger-vps-optimizer"
+description: "Apply battle-tested optimizations for KVM/Cloud VPS: kernel tuning, caching, security hardening, auto-scaling."
 version: 1.0.0
-description: Apply battle-tested optimizations for KVM/Cloud VPS: kernel tuning, caching, security hardening, auto-scaling.
 author: luo-kai
 tags: [hostinger-vps-optimizer, openclaw, community]
 source: https://clawskills.sh/skills/hostinger-vps-optimizer
 ---
+
 
 # Hostinger Vps Optimizer
 

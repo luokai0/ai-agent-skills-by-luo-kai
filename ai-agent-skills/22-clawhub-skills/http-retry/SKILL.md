@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "HTTP 重试技能: **触发词**: timeouterror, econnreset, econnrefused, 429, retry, http error, 网络超时"
+---
+
 # HTTP 重试技能
 
 **触发词**: timeouterror, econnreset, econnrefused, 429, retry, http error, 网络超时

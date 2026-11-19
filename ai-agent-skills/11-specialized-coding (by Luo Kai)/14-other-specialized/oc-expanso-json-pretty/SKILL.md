@@ -1,14 +1,15 @@
 ---
+name: "oc-expanso-json-pretty"
+description: "Pretty print JSON with indentation\"."
 author: luo-kai
-name: oc-expanso-json-pretty
 version: 1.0.0
-description: "Pretty print JSON with indentation".
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Expanso Json Pretty
 

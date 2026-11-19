@@ -1,11 +1,12 @@
 ---
-name: oc-agentguard
+name: "oc-agentguard"
+description: "**Category:** Security & Monitoring."
 version: 1.0.0
-description: **Category:** Security & Monitoring.
 author: luo-kai
 tags: [agentguard, openclaw, community]
 source: https://clawskills.sh/skills/agentguard
 ---
+
 
 # Agentguard
 

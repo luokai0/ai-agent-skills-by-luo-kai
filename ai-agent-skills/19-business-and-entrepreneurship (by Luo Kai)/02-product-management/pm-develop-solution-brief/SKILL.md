@@ -1,7 +1,6 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
-name: pm-develop-solution-brief
-description: Creates a concise one-page solution overview that communicates the proposed approach, key decisions, and trade-offs. Use when pitching solutions to stakeholders, aligning teams on approach, or documenting solution intent before detailed specification.
+name: "pm-develop-solution-brief"
+description: "Creates a concise one-page solution overview that communicates the proposed approach, key decisions, and trade-offs. Use when pitching solutions to stakeholders, aligning teams on approach, or documenting solution intent before detailed specification."
 phase: develop
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   author: lous-creations
 author: luo-kai
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Solution Brief
 
 A solution brief is a concise, one-page document that communicates the proposed solution to a problem. It serves as the bridge between problem understanding and detailed specification, providing enough context for stakeholders to align on the approach without getting lost in implementation details. The one-page constraint forces clarity and prioritization.

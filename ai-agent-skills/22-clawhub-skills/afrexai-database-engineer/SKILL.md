@@ -1,163 +1,10 @@
-# Database Engineering Mastery
-
-> Complete database design, optimization, migration, and operations system. From schema design to production monitoring — covers PostgreSQL, MySQL, SQLite, and general SQL patterns.
-
-## Phase 1 — Schema Design
-
-### Design Brief
-
-Before writing any DDL, fill this out:
-
-```yaml
-project: ""
-domain: ""
-primary_use_case: "OLTP | OLAP | mixed"
-expected_scale:
-  rows_year_1: ""
-  rows_year_3: ""
-  concurrent_users: ""
-  read_write_ratio: "80:20 | 50:50 | 20:80"
-compliance: [] # GDPR, HIPAA, PCI-DSS, SOX
-multi_tenancy: "none | schema-per-tenant | row-level | database-per-tenant"
-```
-
-### Normalization Decision Framework
-
-| Form | Rule | When to Denormalize |
-|------|------|---------------------|
-| 1NF | No repeating groups, atomic values | Never skip |
-| 2NF | No partial dependencies on composite keys | Never skip |
-| 3NF | No transitive dependencies | Reporting tables, read-heavy aggregations |
-| BCNF | Every determinant is a candidate key | Rarely needed unless complex key relationships |
-
-**Denormalization triggers:**
-- Query joins > 4 tables consistently
-- Read latency > 100ms on indexed queries
-- Cache invalidation complexity exceeds denormalization maintenance
-- Reporting queries block OLTP workloads
-
-### Naming Conventions
-
-```
-Tables:      snake_case, plural (users, order_items, payment_methods)
-Columns:     snake_case, singular (first_name, created_at, is_active)
-PKs:         id (bigint/uuid) or {table_singular}_id
-FKs:         {referenced_table_singular}_id
-Indexes:     idx_{table}_{columns}
-Constraints: chk_{table}_{rule}, uq_{table}_{columns}, fk_{table}_{ref}
-Enums:       Use VARCHAR + CHECK, not DB enums (easier to migrate)
-Booleans:    is_, has_, can_ prefix (is_active, has_subscription)
-Timestamps:  _at suffix (created_at, updated_at, deleted_at)
-```
-
-### Column Type Decision Tree
-
-```
-Text < 255 chars, fixed set?     → VARCHAR(N) + CHECK
-Text < 255 chars, variable?      → VARCHAR(255)
-Text > 255 chars?                → TEXT
-Whole numbers < 2B?              → INTEGER
-Whole numbers > 2B?              → BIGINT
-Money/financial?                 → NUMERIC(precision, scale) — NEVER float
-True/false?                      → BOOLEAN
-Date only?                       → DATE
-Date + time?                     → TIMESTAMPTZ (always with timezone)
-Unique identifier?               → UUID (distributed) or BIGSERIAL (single DB)
-JSON/flexible schema?            → JSONB (Postgres) or JSON (MySQL)
-Binary/file?                     → Store in object storage, reference by URL
-IP address?                      → INET (Postgres) or VARCHAR(45)
-Geospatial?                      → PostGIS geometry/geography types
-```
-
-### Essential Table Template
-
-```sql
-CREATE TABLE {table_name} (
-    id          BIGSERIAL PRIMARY KEY,
-    -- domain columns here --
-    created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    created_by  BIGINT REFERENCES users(id),
-    version     INTEGER NOT NULL DEFAULT 1,  -- optimistic locking
-    
-    -- soft delete (optional)
-    deleted_at  TIMESTAMPTZ,
-    
-    -- multi-tenant (optional)  
-    tenant_id   BIGINT NOT NULL REFERENCES tenants(id)
-);
-
--- Updated_at trigger (PostgreSQL)
-CREATE OR REPLACE FUNCTION update_modified_column()
-RETURNS TRIGGER AS $$
-BEGIN
-    NEW.updated_at = NOW();
-    NEW.version = OLD.version + 1;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trg_{table_name}_updated
-    BEFORE UPDATE ON {table_name}
-    FOR EACH ROW
-    EXECUTE FUNCTION update_modified_column();
-```
-
-### Relationship Patterns
-
-**One-to-Many:**
-```sql
--- Parent
-CREATE TABLE departments (id BIGSERIAL PRIMARY KEY, name VARCHAR(100) NOT NULL);
--- Child  
-CREATE TABLE employees (
-    id BIGSERIAL PRIMARY KEY,
-    department_id BIGINT NOT NULL REFERENCES departments(id) ON DELETE RESTRICT,
-    -- ON DELETE options: RESTRICT (safe default), CASCADE (children die), SET NULL
-);
-CREATE INDEX idx_employees_department_id ON employees(department_id);
-```
-
-**Many-to-Many:**
-```sql
-CREATE TABLE user_roles (
-    user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    role_id BIGINT NOT NULL REFERENCES roles(id) ON DELETE CASCADE,
-    granted_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    granted_by BIGINT REFERENCES users(id),
-    PRIMARY KEY (user_id, role_id)
-);
-```
-
-**Self-Referencing (hierarchy):**
-```sql
-CREATE TABLE categories (
-    id BIGSERIAL PRIMARY KEY,
-    parent_id BIGINT REFERENCES categories(id) ON DELETE CASCADE,
-    name VARCHAR(100) NOT NULL,
-    depth INTEGER NOT NULL DEFAULT 0,
-    path TEXT NOT NULL DEFAULT ''  -- materialized path: '/1/5/12/'
-);
-CREATE INDEX idx_categories_parent ON categories(parent_id);
-CREATE INDEX idx_categories_path ON categories(path text_pattern_ops);
-```
-
-**Polymorphic (avoid if possible, use if you must):**
-```sql
--- Preferred: separate FKs
-CREATE TABLE comments (
-    id BIGSERIAL PRIMARY KEY,
-    post_id BIGINT REFERENCES posts(id),
-    ticket_id BIGINT REFERENCES tickets(id),
-    body TEXT NOT NULL,
-    CONSTRAINT chk_one_parent CHECK (
-        (post_id IS NOT NULL)::int + (ticket_id IS NOT NULL)::int = 1
-    )
-);
-```
-
+---
+name: "skill"
+description: "Logical backup (compressed): pg_dump -Fc -Z 9 -j 4 -d mydb -f backup_$(date +%Y%m%d_%H%M%S).dump"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## Phase 2 — Indexing Strategy
 
 ### Index Type Selection
@@ -202,8 +49,8 @@ WHERE seq_scan > 100 AND seq_tup_read > 10000
 ORDER BY seq_tup_read DESC;
 -- High seq_scan + high seq_tup_read = missing index candidate
 ```
+-->
 
----
 
 ## Phase 3 — Query Optimization
 

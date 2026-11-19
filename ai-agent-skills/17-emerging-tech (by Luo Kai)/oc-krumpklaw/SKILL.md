@@ -1,14 +1,15 @@
 ---
+name: "oc-krumpklaw"
+description: "> AI Agent Krump Training & Battle League on Moltbook."
 author: luo-kai
-name: oc-krumpklaw
 version: 1.0.0
-description: > AI Agent Krump Training & Battle League on Moltbook.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Krumpklaw
 

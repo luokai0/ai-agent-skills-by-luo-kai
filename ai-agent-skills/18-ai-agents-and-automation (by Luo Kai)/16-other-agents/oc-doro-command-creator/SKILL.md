@@ -1,14 +1,15 @@
 ---
+name: "oc-doro-command-creator"
+description: "WHAT: Create Claude Code slash commands - reusable markdown workflows invoked with /command-name."
 author: luo-kai
-name: oc-doro-command-creator
 version: 1.0.0
-description: WHAT: Create Claude Code slash commands - reusable markdown workflows invoked with /command-name.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Doro Command Creator
 

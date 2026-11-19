@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "test-skill-demo: 一个完整的测试技能示例，展示 ClawHub 技能的标准结构和最佳实践。"
+---
+
 # test-skill-demo
 
 一个完整的测试技能示例，展示 ClawHub 技能的标准结构和最佳实践。

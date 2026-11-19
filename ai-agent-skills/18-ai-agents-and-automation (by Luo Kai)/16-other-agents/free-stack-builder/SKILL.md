@@ -1,10 +1,11 @@
 ---
-name: free-stack-builder
+name: "free-stack-builder"
+description: "Build a complete autonomous AI agent system at absolute zero cost. Full verified stack: Oracle Cloud Always Free VPS for 24/7 uptime, Gemini Flash free tier for AI, Groq for fast reasoning, Telegram as interface, Supabase for database, Netlify for web presence. No credit card required for any component."
 version: 1.0.0
-description: Build a complete autonomous AI agent system at absolute zero cost. Full verified stack: Oracle Cloud Always Free VPS for 24/7 uptime, Gemini Flash free tier for AI, Groq for fast reasoning, Telegram as interface, Supabase for database, Netlify for web presence. No credit card required for any component.
 author: luo-kai
 tags: [free, zero-cost, oracle, gemini, groq, telegram, stack, agents]
 ---
+
 
 # Free Stack Builder
 

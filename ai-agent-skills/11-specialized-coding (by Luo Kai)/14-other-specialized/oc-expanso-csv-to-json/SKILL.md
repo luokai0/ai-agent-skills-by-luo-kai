@@ -1,14 +1,15 @@
 ---
+name: "oc-expanso-csv-to-json"
+description: "Convert CSV data to JSON array of objects\"."
 author: luo-kai
-name: oc-expanso-csv-to-json
 version: 1.0.0
-description: "Convert CSV data to JSON array of objects".
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Expanso Csv To Json
 

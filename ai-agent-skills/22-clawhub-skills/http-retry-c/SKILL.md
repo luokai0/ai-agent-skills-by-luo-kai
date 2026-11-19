@@ -1,11 +1,10 @@
-# HTTP Retry - HTTP 重试机制
-
-**Version**: 1.0.0  
-**Author**: Claw  
-**License**: MIT
-
+---
+name: "skill"
+description: "int main() {"
 ---
 
+
+<!-- Original nonstandard metadata retained for reference:
 ## Description / 功能说明
 
 Universal HTTP retry mechanism with exponential backoff. Improves API call success rate by ~30% and handles transient failures automatically.
@@ -24,8 +23,8 @@ Universal HTTP retry mechanism with exponential backoff. Improves API call succe
 - Microservices communication / 微服务通信
 - Web scraping / 网络爬虫
 - Any HTTP client needing resilience / 任何需要容错的 HTTP 客户端
+-->
 
----
 
 ## Usage / 使用示例
 

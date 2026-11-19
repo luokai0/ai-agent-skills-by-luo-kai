@@ -1,14 +1,15 @@
 ---
+name: "oc-mupibox-media-db"
+description: "Manage MuPiBox media database (data.json) through the MuPiBox backend API: list, add, remove, move, edit fields."
 author: luo-kai
-name: oc-mupibox-media-db
 version: 1.0.0
-description: Manage MuPiBox media database (data.json) through the MuPiBox backend API: list, add, remove, move, edit fields.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Mupibox Media Db
 

@@ -1,8 +1,7 @@
-<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
 ---
+name: "discover-interview-synthesis"
+description: "Synthesizes user research interviews into actionable insights, patterns, and recommendations. Use after conducting user interviews, customer calls, or usability sessions to extract and communicate findings."
 author: luo-kai
-name: discover-interview-synthesis
-description: Synthesizes user research interviews into actionable insights, patterns, and recommendations. Use after conducting user interviews, customer calls, or usability sessions to extract and communicate findings.
 phase: discover
 version: "2.0.0"
 updated: 2026-01-26
@@ -12,6 +11,9 @@ metadata:
   frameworks: [triple-diamond, lean-startup, design-thinking]
   author: product-on-purpose
 ---
+<!-- PM-Skills | https://github.com/product-on-purpose/pm-skills | Apache 2.0 -->
+
+
 # Interview Synthesis
 
 An interview synthesis transforms raw user research data into structured insights that drive product decisions. Rather than simply listing what participants said, a good synthesis identifies patterns across conversations, connects observations to underlying user needs, and translates findings into actionable recommendations.

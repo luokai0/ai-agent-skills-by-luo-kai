@@ -1,14 +1,15 @@
 ---
+name: "oc-cn-ecommerce-search"
+description: "Search products across 8 Chinese e-commerce platforms: Taobao, Tmall, JD, PDD, 1688, AliExpress, Douyin, XHS."
 author: luo-kai
-name: oc-cn-ecommerce-search
 version: 1.0.0
-description: Search products across 8 Chinese e-commerce platforms: Taobao, Tmall, JD, PDD, 1688, AliExpress, Douyin, XHS.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: typescript-tools
 ---
+
 
 # Cn Ecommerce Search
 

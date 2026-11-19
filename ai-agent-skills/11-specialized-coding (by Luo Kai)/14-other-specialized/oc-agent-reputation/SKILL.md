@@ -1,14 +1,15 @@
 ---
+name: "oc-agent-reputation"
+description: "summary: Cross-platform AI agent reputation checker with trust scoring and PayLock escrow recommendations."
 author: luo-kai
-name: oc-agent-reputation
 version: 1.0.0
-description: summary: Cross-platform AI agent reputation checker with trust scoring and PayLock escrow recommendations.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Agent Reputation
 
