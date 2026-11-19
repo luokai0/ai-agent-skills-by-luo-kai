@@ -1,3 +1,8 @@
+---
+name: "skill"
+description: "pytest-test-master — pytest 专项技能: - 会写测试，但 fixtures 用得乱，setup/teardown 纠缠不清"
+---
+
 # pytest-test-master — pytest 专项技能
 
 ## 痛点
