@@ -7,7 +7,7 @@ metadata:
   platform: "Windows 10 and Windows 11"
   category: "Windows Computer Operations"
   skill_id: "windows-0260"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Windows Storage, partitions, and volumes: Check Compatibility And Version Support
@@ -62,6 +62,32 @@ Run only commands appropriate to the current shell and Windows version. Check co
 ## Failure handling and recovery
 
 If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Stop if disk identity is ambiguous or health is failing; preserve data and recommend backup/professional recovery. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+## Agent execution contract — v1.1
+
+**Skill identity:** `windows-0260` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+
+**Exact task:** Windows Storage, partitions, and volumes: Check Compatibility And Version Support. Carry out **check compatibility and version support** for disk space, volumes, removable storage, filesystem health indicators, and storage settings.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `09-storage-volumes`. **Scope:** Disk space, volumes, removable storage, filesystem health indicators, and storage settings.; **Preferred tools:** Settings Storage, Disk Management for viewing, Get-Volume, Get-PSDrive, Get-Disk (read-only).; **Task focus:** For **check compatibility and version support**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not initialize, format, partition, clean, or repair-write disks without explicit informed approval and backup.; **Verification:** Confirm disk identity, capacity, free space, filesystem, and drive letter before any approved change. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+### Execution plan
+
+**Mode:** Evidence-based compatibility check.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Record Windows edition, build, architecture, application version, and required feature level. Compare them against authoritative vendor support information already available to the user or repository; do not infer support from an installer launching.
+4. **Gate changes.** Keep this run read-only unless the user separately asks for a change. Do not turn a diagnostic result into an unrequested repair.
+5. **Verify independently.** Classify as supported, unsupported, conditionally supported, or unknown and list the evidence. Do not bypass version checks, driver signing, Secure Boot, or organizational policy. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
 
 ## Completion checklist
 
