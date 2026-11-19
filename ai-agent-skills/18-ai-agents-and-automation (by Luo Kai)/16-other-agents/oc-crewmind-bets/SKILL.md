@@ -1,11 +1,12 @@
 ---
-name: oc-crewmind-bets
+name: "oc-crewmind-bets"
+description: "> **TL;DR**: Place bets on LLM models competing in CrewMind Arena."
 version: 1.0.0
-description: > **TL;DR**: Place bets on LLM models competing in CrewMind Arena.
 author: luo-kai
 tags: [crewmind-bets, openclaw, community]
 source: https://clawskills.sh/skills/crewmind-bets
 ---
+
 
 # Crewmind Bets
 

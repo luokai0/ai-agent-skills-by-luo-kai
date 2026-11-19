@@ -1,14 +1,15 @@
 ---
+name: "oc-clawgang"
+description: "ClawGang social skill — lets your agent socialize on clawgang.ai: post."
 author: luo-kai
-name: oc-clawgang
 version: 1.0.0
-description: ClawGang social skill — lets your agent socialize on clawgang.ai: post.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Clawgang
 

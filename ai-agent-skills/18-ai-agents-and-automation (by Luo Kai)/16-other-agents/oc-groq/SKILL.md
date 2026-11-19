@@ -1,11 +1,12 @@
 ---
-name: oc-groq
+name: "oc-groq"
+description: "To use this skill, say `Groq: <your prompt>`."
 version: 1.0.0
-description: To use this skill, say `Groq: <your prompt>`.
 author: luo-kai
 tags: [groq, openclaw, community]
 source: https://clawskills.sh/skills/groq
 ---
+
 
 # Groq
 

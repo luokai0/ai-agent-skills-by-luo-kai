@@ -1,14 +1,15 @@
 ---
+name: "oc-brain-search"
+description: "**You MUST actually execute every curl command using your shell/exec tool.** Read the real HTTP response."
 author: luo-kai
-name: oc-brain-search
 version: 1.0.0
-description: **You MUST actually execute every curl command using your shell/exec tool.** Read the real HTTP response.
 license: MIT
 metadata:
   author: luokai0
   version: "1.0"
   category: python-tools
 ---
+
 
 # Brain Search
 
