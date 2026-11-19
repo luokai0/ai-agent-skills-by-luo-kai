@@ -75,7 +75,7 @@ def main() -> None:
             dirs[:] = sorted(d for d in dirs if d not in excluded_dirs)
             for name in sorted(names):
                 file_path = Path(root) / name
-                if file_path.is_symlink() or file_path.suffix in {".pyc", ".pyo"}:
+                if file_path.is_symlink() or not file_path.is_file() or file_path.suffix in {".pyc", ".pyo"}:
                     continue
                 archive.write(file_path, file_path.as_posix())
     print(f"Bundled {len(skills)} skills into {bundle_path} ({bundle_path.stat().st_size / 1024 / 1024:.1f} MiB)")
