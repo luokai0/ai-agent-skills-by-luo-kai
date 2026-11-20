@@ -1,0 +1,48 @@
+name: Validate Verified Original Skills
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/16-other-agents/agent-evaluation-design/SKILL.md"
+      - "ai-agent-skills/06-security-and-auth (by Luo Kai)/05-devsecops/skill-supply-chain-audit/SKILL.md"
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/02-mcp-tools/mcp-server-hardening/SKILL.md"
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/16-other-agents/agent-observability/SKILL.md"
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/03-context-engineering/prompt-injection-defense/SKILL.md"
+      - "ai-agent-skills/07-testing-and-quality (by Luo Kai)/10-ai-assisted-quality/ai-generated-change-verification/SKILL.md"
+      - "scripts/maintenance/validate_verified_original_skills.py"
+      - ".github/workflows/validate-verified-original-skills.yml"
+  pull_request:
+    paths:
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/16-other-agents/agent-evaluation-design/SKILL.md"
+      - "ai-agent-skills/06-security-and-auth (by Luo Kai)/05-devsecops/skill-supply-chain-audit/SKILL.md"
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/02-mcp-tools/mcp-server-hardening/SKILL.md"
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/16-other-agents/agent-observability/SKILL.md"
+      - "ai-agent-skills/18-ai-agents-and-automation (by Luo Kai)/03-context-engineering/prompt-injection-defense/SKILL.md"
+      - "ai-agent-skills/07-testing-and-quality (by Luo Kai)/10-ai-assisted-quality/ai-generated-change-verification/SKILL.md"
+      - "scripts/maintenance/validate_verified_original_skills.py"
+      - ".github/workflows/validate-verified-original-skills.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate original skill metadata and structure
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install YAML parser
+        run: python -m pip install --disable-pip-version-check "PyYAML==6.0.2"
+
+      - name: Validate verified original skills
+        run: python scripts/maintenance/validate_verified_original_skills.py
