@@ -64,6 +64,11 @@ jobs:
       - name: Install a real skill from the checked-out repository
         run: npx --yes skills add . --skill agents-md --agent codex --copy --yes
 
-      - name: Install a consolidated Linux skill
+      - name: Install the Linux collection skill
         if: runner.os == 'Linux'
-        run: npx --yes skills add . --skill "Linux Identify Release across Debian-Family Desktop Systems" --agent codex --copy --yes
+        run: |
+          if [ -f "ai-agent-skills/24-linux-system-operations (by Luo Kai)/00-consolidated-linux-operations/01-debian-family-desktops/identify-release/SKILL.md" ]; then
+            npx --yes skills add . --skill "Linux Identify Release across Debian-Family Desktop Systems" --agent codex --copy --yes
+          else
+            npx --yes skills add . --skill linux-ubuntu-identify-release --agent codex --copy --yes
+          fi
