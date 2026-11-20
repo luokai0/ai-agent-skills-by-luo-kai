@@ -88,3 +88,18 @@ The replacement retains five distinct profiles, shell-specific command examples,
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/19-devices-drivers/01-discover-current-state/SKILL.md`
 
 The replacement preserves distinct profiles for policy, apps, packages, servicing, and hardware. It retains publisher/source checks, managed-policy boundaries, update/restart safety, signed-driver checks, and recovery routes.
+
+
+### Windows input, output, and peripheral discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/06-discover-input-output-peripherals/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0006`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Displays, audio, cameras, microphones, keyboard and pointing devices; clipboard, keyboard layouts, IME and text entry; printers, scanners, USB/Bluetooth devices, docks, and queues.
+- **Retired IDs:** `windows-0571`, `windows-1081`, `windows-1111`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/20-display-audio-input/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/37-clipboard-input/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/38-printers-peripherals/01-discover-current-state/SKILL.md`
+
+The replacement preserves sensor-consent safeguards, clipboard privacy, accessibility preferences, print-queue preservation, and distinct verification/recovery routes for displays, text entry, and peripherals.
