@@ -37,9 +37,8 @@ Use when the user needs the monitor ongoing state workflow in any of these domai
 
 ### Profile 1: Windows Displays, audio, cameras, and input devices
 
-Former domain: 20-display-audio-input
+**Domain profile:** 20-display-audio-input
 
-Former skill ID: windows-0596
 
 #### Windows Displays, audio, cameras, and input devices: Monitor Ongoing State
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0596` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Displays, audio, cameras, and input devices: Monitor Ongoing State. Carry out **monitor ongoing state** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Clipboard, text entry, and input reliability
 
-Former domain: 37-clipboard-input
+**Domain profile:** 37-clipboard-input
 
-Former skill ID: windows-1106
 
 #### Windows Clipboard, text entry, and input reliability: Monitor Ongoing State
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1106` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Clipboard, text entry, and input reliability: Monitor Ongoing State. Carry out **monitor ongoing state** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Printers, scanners, docks, and peripherals
 
-Former domain: 38-printers-peripherals
+**Domain profile:** 38-printers-peripherals
 
-Former skill ID: windows-1136
 
 #### Windows Printers, scanners, docks, and peripherals: Monitor Ongoing State
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1136` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Printers, scanners, docks, and peripherals: Monitor Ongoing State. Carry out **monitor ongoing state** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

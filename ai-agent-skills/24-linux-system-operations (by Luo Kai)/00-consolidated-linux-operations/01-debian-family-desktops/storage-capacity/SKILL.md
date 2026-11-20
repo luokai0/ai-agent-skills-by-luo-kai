@@ -114,7 +114,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0012` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Ubuntu. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0037` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Debian. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0062` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Linux Mint. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0237` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Pop!_OS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0362` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on elementary OS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

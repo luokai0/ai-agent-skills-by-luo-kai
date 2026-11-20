@@ -114,7 +114,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0706` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Fedora. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0781` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Red Hat Enterprise Linux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0881` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Rocky Linux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0906` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on AlmaLinux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0186` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on openSUSE. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0436` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on NixOS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0561` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Qubes OS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0586` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on SteamOS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

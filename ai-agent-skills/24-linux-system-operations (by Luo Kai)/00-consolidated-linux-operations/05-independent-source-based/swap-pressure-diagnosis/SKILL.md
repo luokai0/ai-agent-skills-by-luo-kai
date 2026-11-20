@@ -114,7 +114,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0930` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Gentoo. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0955` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Alpine Linux. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1080` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Slackware. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1105` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Void Linux. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

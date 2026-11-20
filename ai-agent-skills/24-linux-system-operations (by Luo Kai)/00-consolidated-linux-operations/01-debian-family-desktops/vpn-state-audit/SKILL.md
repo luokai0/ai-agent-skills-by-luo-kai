@@ -114,7 +114,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0642` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Ubuntu. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0667` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Debian. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0692` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Linux Mint. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0867` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Pop!_OS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0992` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on elementary OS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

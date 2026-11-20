@@ -37,9 +37,8 @@ Use when the user needs the restore a prior item workflow in any of these domain
 
 ### Profile 1: Windows desktop shell
 
-Former domain: 01-desktop-shell
+**Domain profile:** 01-desktop-shell
 
-Former skill ID: windows-0015
 
 #### Windows desktop shell: Restore A Prior Item
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0015` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows desktop shell: Restore A Prior Item. Carry out **restore a prior item** for desktop, explorer shell, desktop icons, notification area, and shell processes. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows navigation and settings
 
-Former domain: 02-windows-navigation
+**Domain profile:** 02-windows-navigation
 
-Former skill ID: windows-0045
 
 #### Windows navigation and settings: Restore A Prior Item
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0045` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows navigation and settings: Restore A Prior Item. Carry out **restore a prior item** for settings app, control panel, system pages, navigation paths, and search surfaces. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Window management and multitasking
 
-Former domain: 03-window-multitasking
+**Domain profile:** 03-window-multitasking
 
-Former skill ID: windows-0075
 
 #### Windows Window management and multitasking: Restore A Prior Item
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0075` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Window management and multitasking: Restore A Prior Item. Carry out **restore a prior item** for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

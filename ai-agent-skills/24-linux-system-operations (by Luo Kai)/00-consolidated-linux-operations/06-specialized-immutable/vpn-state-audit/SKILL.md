@@ -114,7 +114,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0817` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on openSUSE. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1067` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on NixOS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1192` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Qubes OS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1217` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on SteamOS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0196` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on openSUSE. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0446` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on NixOS. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0571` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Qubes OS. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0596` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on SteamOS. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

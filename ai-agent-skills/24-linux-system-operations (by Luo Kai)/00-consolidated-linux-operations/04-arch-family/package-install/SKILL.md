@@ -114,7 +114,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0105` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Arch Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -244,7 +244,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0205` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Manjaro. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -374,7 +374,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0605` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Garuda Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -450,4 +450,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

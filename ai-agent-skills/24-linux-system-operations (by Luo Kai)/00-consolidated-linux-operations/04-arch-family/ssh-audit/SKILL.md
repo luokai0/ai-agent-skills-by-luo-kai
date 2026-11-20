@@ -114,7 +114,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0117` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Arch Linux. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0217` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Manjaro. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0617` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Garuda Linux. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

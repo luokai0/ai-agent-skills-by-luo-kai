@@ -114,7 +114,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0182` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on openSUSE. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0432` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on NixOS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0557` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Qubes OS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0582` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on SteamOS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

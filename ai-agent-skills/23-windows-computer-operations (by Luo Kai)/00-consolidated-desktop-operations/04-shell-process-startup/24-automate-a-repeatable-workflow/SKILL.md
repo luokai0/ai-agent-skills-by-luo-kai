@@ -37,9 +37,8 @@ Use when the user needs the automate a repeatable workflow workflow in any of th
 
 ### Profile 1: Windows PowerShell fundamentals
 
-Former domain: 10-powershell-fundamentals
+**Domain profile:** 10-powershell-fundamentals
 
-Former skill ID: windows-0294
 
 #### Windows PowerShell fundamentals: Automate A Repeatable Workflow
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0294` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows PowerShell fundamentals: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for powershell discovery, safe command execution, objects, pipelines, profiles, and help. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Advanced PowerShell administration
 
-Former domain: 11-powershell-advanced
+**Domain profile:** 11-powershell-advanced
 
-Former skill ID: windows-0324
 
 #### Windows Advanced PowerShell administration: Automate A Repeatable Workflow
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0324` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Advanced PowerShell administration: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Command Prompt and Windows Terminal
 
-Former domain: 12-terminal-cmd
+**Domain profile:** 12-terminal-cmd
 
-Former skill ID: windows-0354
 
 #### Windows Command Prompt and Windows Terminal: Automate A Repeatable Workflow
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0354` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Command Prompt and Windows Terminal: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for terminal profiles, shells, command discovery, environment variables, and command sessions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -328,9 +325,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 4: Windows Processes, services, and applications
 
-Former domain: 13-process-services
+**Domain profile:** 13-process-services
 
-Former skill ID: windows-0384
 
 #### Windows Processes, services, and applications: Automate A Repeatable Workflow
 
@@ -387,7 +383,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0384` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Processes, services, and applications: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -425,9 +421,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 5: Windows Startup, scheduled tasks, and background execution
 
-Former domain: 14-startup-scheduling
+**Domain profile:** 14-startup-scheduling
 
-Former skill ID: windows-0414
 
 #### Windows Startup, scheduled tasks, and background execution: Automate A Repeatable Workflow
 
@@ -484,7 +479,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0414` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Startup, scheduled tasks, and background execution: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for startup apps, task scheduler, login tasks, and background execution diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

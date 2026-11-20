@@ -114,7 +114,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0082` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Fedora. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0157` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Red Hat Enterprise Linux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0257` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Rocky Linux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0282` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on AlmaLinux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

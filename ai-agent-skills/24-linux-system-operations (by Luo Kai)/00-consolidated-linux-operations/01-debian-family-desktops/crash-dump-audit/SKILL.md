@@ -114,7 +114,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0648` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Ubuntu. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0673` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Debian. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0698` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Linux Mint. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0873` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Pop!_OS. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0998` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on elementary OS. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0948` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Gentoo. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0973` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Alpine Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1098` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Slackware. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1123` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Void Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

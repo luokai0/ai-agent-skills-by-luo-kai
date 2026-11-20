@@ -114,7 +114,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0180` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on openSUSE. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -244,7 +244,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0430` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on NixOS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -374,7 +374,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0555` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Qubes OS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -504,7 +504,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0580` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on SteamOS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -580,4 +580,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

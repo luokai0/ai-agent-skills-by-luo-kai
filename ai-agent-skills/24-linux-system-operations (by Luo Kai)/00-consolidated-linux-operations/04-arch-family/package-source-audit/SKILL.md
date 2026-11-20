@@ -114,7 +114,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0103` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Arch Linux. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0203` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Manjaro. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0603` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Garuda Linux. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

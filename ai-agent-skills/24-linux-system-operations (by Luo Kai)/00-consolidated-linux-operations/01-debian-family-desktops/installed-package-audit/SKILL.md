@@ -114,7 +114,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0007` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Ubuntu. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0032` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Debian. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0057` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Linux Mint. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0232` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Pop!_OS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0357` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on elementary OS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

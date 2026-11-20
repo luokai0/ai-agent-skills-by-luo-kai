@@ -37,9 +37,8 @@ Use when the user needs the monitor ongoing state workflow in any of these domai
 
 ### Profile 1: Windows Performance and resource monitoring
 
-Former domain: 28-performance-monitoring
+**Domain profile:** 28-performance-monitoring
 
-Former skill ID: windows-0836
 
 #### Windows Performance and resource monitoring: Monitor Ongoing State
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0836` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Performance and resource monitoring: Monitor Ongoing State. Carry out **monitor ongoing state** for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Laptop battery, thermals, and power management
 
-Former domain: 29-battery-thermal-power
+**Domain profile:** 29-battery-thermal-power
 
-Former skill ID: windows-0866
 
 #### Windows Laptop battery, thermals, and power management: Monitor Ongoing State
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0866` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Laptop battery, thermals, and power management: Monitor Ongoing State. Carry out **monitor ongoing state** for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Event logs and Windows troubleshooting
 
-Former domain: 30-logs-diagnostics
+**Domain profile:** 30-logs-diagnostics
 
-Former skill ID: windows-0896
 
 #### Windows Event logs and Windows troubleshooting: Monitor Ongoing State
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0896` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Event logs and Windows troubleshooting: Monitor Ongoing State. Carry out **monitor ongoing state** for event viewer, reliability history, crash records, error codes, and diagnostic evidence. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -328,9 +325,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 4: Windows security and Microsoft Defender
 
-Former domain: 31-security-defender
+**Domain profile:** 31-security-defender
 
-Former skill ID: windows-0926
 
 #### Windows security and Microsoft Defender: Monitor Ongoing State
 
@@ -387,7 +383,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0926` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows security and Microsoft Defender: Monitor Ongoing State. Carry out **monitor ongoing state** for defender status, firewall posture, smartscreen, protection history, and safe threat response. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -425,9 +421,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 5: Windows Privacy, permissions, and account access
 
-Former domain: 32-privacy-permissions
+**Domain profile:** 32-privacy-permissions
 
-Former skill ID: windows-0956
 
 #### Windows Privacy, permissions, and account access: Monitor Ongoing State
 
@@ -484,7 +479,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0956` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Privacy, permissions, and account access: Monitor Ongoing State. Carry out **monitor ongoing state** for app permissions, local accounts, sign-in options, sharing, and privacy controls. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

@@ -114,7 +114,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0198` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on openSUSE. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0448` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on NixOS. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0573` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Qubes OS. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0598` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on SteamOS. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

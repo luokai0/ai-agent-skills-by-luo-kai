@@ -114,7 +114,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0010` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Ubuntu. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0035` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Debian. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0060` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Linux Mint. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0235` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Pop!_OS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0360` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on elementary OS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

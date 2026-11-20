@@ -114,7 +114,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0945` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Gentoo. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0970` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Alpine Linux. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1095` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Slackware. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1120` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Void Linux. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

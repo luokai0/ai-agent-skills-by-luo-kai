@@ -114,7 +114,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0766` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Kali Linux. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1016` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Zorin OS. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1041` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Parrot OS. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1141` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on MX Linux. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1166` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Tails. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

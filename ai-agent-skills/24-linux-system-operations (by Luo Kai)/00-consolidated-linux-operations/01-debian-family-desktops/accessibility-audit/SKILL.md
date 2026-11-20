@@ -114,7 +114,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0649` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Ubuntu. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0674` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Debian. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0699` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Linux Mint. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0874` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Pop!_OS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0999` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on elementary OS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

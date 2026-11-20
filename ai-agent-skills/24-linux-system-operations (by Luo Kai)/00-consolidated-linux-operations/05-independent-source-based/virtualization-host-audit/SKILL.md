@@ -114,7 +114,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0941` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Gentoo. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0966` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Alpine Linux. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1091` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Slackware. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1116` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Void Linux. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

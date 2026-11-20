@@ -114,7 +114,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0944` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Gentoo. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0969` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Alpine Linux. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1094` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Slackware. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1119` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Void Linux. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

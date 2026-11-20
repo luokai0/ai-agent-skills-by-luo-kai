@@ -114,7 +114,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0127` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Kali Linux. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0377` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Zorin OS. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0402` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Parrot OS. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0502` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on MX Linux. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0527` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Tails. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

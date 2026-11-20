@@ -114,7 +114,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0141` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Kali Linux. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0391` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Zorin OS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0416` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Parrot OS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0516` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on MX Linux. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0541` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Tails. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

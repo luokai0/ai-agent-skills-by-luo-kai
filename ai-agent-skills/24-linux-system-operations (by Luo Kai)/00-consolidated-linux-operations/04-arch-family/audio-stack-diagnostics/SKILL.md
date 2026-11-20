@@ -114,7 +114,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0737` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Arch Linux. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0837` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Manjaro. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1237` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Garuda Linux. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

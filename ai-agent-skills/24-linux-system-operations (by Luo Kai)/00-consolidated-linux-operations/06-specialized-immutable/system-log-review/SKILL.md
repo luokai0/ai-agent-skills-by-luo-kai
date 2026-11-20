@@ -114,7 +114,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0194` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on openSUSE. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0444` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on NixOS. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0569` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Qubes OS. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0594` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on SteamOS. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the change a user preference workflow in any of these do
 
 ### Profile 1: Windows Developer workstation setup
 
-Former domain: 25-developer-workstations
+**Domain profile:** 25-developer-workstations
 
-Former skill ID: windows-0737
 
 #### Windows Developer workstation setup: Change A User Preference
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0737` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Developer workstation setup: Change A User Preference. Carry out **change a user preference** for editors, sdks, compilers, runtimes, environment variables, and local development setup. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Git and source-control operations
 
-Former domain: 26-git-source-control
+**Domain profile:** 26-git-source-control
 
-Former skill ID: windows-0767
 
 #### Windows Git and source-control operations: Change A User Preference
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0767` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Git and source-control operations: Change A User Preference. Carry out **change a user preference** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows WSL, virtual machines, and containers
 
-Former domain: 27-wsl-virtualization
+**Domain profile:** 27-wsl-virtualization
 
-Former skill ID: windows-0797
 
 #### Windows WSL, virtual machines, and containers: Change A User Preference
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0797` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows WSL, virtual machines, and containers: Change A User Preference. Carry out **change a user preference** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

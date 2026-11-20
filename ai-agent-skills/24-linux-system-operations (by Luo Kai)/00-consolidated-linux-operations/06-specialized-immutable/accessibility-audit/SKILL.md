@@ -114,7 +114,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0824` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on openSUSE. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1074` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on NixOS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1199` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Qubes OS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1224` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on SteamOS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

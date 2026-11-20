@@ -114,7 +114,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0135` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Kali Linux. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0385` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Zorin OS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0410` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Parrot OS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0510` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on MX Linux. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0535` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Tails. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

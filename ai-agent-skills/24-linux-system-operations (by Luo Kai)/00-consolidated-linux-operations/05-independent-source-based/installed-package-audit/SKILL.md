@@ -114,7 +114,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0307` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Gentoo. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0332` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Alpine Linux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0457` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Slackware. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0482` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Void Linux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

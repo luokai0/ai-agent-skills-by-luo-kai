@@ -114,7 +114,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0080` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Fedora. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -244,7 +244,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0155` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Red Hat Enterprise Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -374,7 +374,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0255` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Rocky Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -504,7 +504,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0280` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on AlmaLinux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -580,4 +580,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

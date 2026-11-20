@@ -114,7 +114,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0932` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Gentoo. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0957` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Alpine Linux. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1082` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Slackware. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1107` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Void Linux. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

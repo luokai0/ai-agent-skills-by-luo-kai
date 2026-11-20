@@ -114,7 +114,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0647` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Ubuntu. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0672` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Debian. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0697` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Linux Mint. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0872` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Pop!_OS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0997` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on elementary OS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0731` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Arch Linux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0831` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Manjaro. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1231` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Garuda Linux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

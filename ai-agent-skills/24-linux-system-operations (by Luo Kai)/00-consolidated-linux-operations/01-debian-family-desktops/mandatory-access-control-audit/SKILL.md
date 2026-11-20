@@ -114,7 +114,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0633` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Ubuntu. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0658` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Debian. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0683` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Linux Mint. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0858` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Pop!_OS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0983` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on elementary OS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

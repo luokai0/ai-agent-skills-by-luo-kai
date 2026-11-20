@@ -114,7 +114,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0773` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Kali Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1023` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Zorin OS. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1048` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Parrot OS. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1148` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on MX Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1173` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Tails. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

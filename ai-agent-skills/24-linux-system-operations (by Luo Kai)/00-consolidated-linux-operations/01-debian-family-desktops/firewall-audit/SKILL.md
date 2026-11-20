@@ -114,7 +114,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0016` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Ubuntu. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0041` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Debian. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0066` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Linux Mint. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0241` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Pop!_OS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0366` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on elementary OS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

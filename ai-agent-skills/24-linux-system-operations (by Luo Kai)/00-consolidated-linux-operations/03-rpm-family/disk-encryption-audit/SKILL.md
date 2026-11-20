@@ -114,7 +114,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0709` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Fedora. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0784` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Red Hat Enterprise Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0884` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Rocky Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0909` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on AlmaLinux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

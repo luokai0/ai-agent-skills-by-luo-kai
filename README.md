@@ -78,7 +78,7 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 
 ### 🐧 Featured collection: Linux System Operations
 
-**1,250 original, distribution-specific skills for AI agents operating 25 well-known Linux systems.** Each distribution has its own folder and 50 independently addressable workflows.
+**300 consolidated Linux skills for AI agents operating 25 distributions, organized into six distribution-family groups with 50 workflows per group.**
 
 Explore the [Linux System Operations collection](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) and its [Linux AI Agent Operating Playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md).
 

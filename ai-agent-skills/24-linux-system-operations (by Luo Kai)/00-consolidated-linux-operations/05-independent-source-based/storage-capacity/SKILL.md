@@ -114,7 +114,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0312` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Gentoo. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0337` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Alpine Linux. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0462` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Slackware. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0487` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Void Linux. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

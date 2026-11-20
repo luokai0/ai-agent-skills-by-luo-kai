@@ -37,9 +37,8 @@ Use when the user needs the configure a default option workflow in any of these 
 
 ### Profile 1: Windows Wi-Fi, Ethernet, and network adapters
 
-Former domain: 21-wifi-ethernet
+**Domain profile:** 21-wifi-ethernet
 
-Former skill ID: windows-0616
 
 #### Windows Wi-Fi, Ethernet, and network adapters: Configure A Default Option
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0616` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Configure A Default Option. Carry out **configure a default option** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows DNS, firewall, VPN, and secure connectivity
 
-Former domain: 22-dns-firewall-vpn
+**Domain profile:** 22-dns-firewall-vpn
 
-Former skill ID: windows-0646
 
 #### Windows DNS, firewall, VPN, and secure connectivity: Configure A Default Option
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0646` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Configure A Default Option. Carry out **configure a default option** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

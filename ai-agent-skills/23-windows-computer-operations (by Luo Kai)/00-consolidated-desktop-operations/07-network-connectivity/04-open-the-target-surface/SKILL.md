@@ -37,9 +37,8 @@ Use when the user needs the open the target surface workflow in any of these dom
 
 ### Profile 1: Windows Wi-Fi, Ethernet, and network adapters
 
-Former domain: 21-wifi-ethernet
+**Domain profile:** 21-wifi-ethernet
 
-Former skill ID: windows-0604
 
 #### Windows Wi-Fi, Ethernet, and network adapters: Open The Target Surface
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0604` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Open The Target Surface. Carry out **open the target surface** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows DNS, firewall, VPN, and secure connectivity
 
-Former domain: 22-dns-firewall-vpn
+**Domain profile:** 22-dns-firewall-vpn
 
-Former skill ID: windows-0634
 
 #### Windows DNS, firewall, VPN, and secure connectivity: Open The Target Surface
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0634` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Open The Target Surface. Carry out **open the target surface** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

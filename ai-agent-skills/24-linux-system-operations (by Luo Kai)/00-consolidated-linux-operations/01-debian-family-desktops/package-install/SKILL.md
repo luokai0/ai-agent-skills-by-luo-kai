@@ -114,7 +114,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0005` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Ubuntu. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -244,7 +244,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0030` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Debian. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -374,7 +374,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0055` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Linux Mint. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -504,7 +504,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0230` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Pop!_OS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -634,7 +634,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0355` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on elementary OS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -710,4 +710,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

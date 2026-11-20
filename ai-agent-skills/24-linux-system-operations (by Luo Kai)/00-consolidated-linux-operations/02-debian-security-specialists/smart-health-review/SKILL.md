@@ -114,7 +114,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0753` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Kali Linux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1003` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Zorin OS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1028` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Parrot OS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1128` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on MX Linux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1153` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Tails. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

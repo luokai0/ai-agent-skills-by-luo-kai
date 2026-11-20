@@ -114,7 +114,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0802` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on openSUSE. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1052` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on NixOS. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1177` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Qubes OS. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1202` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on SteamOS. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

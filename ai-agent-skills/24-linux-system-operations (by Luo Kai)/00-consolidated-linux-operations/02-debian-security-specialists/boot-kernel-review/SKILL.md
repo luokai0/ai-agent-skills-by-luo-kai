@@ -114,7 +114,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0143` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Kali Linux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0393` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Zorin OS. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0418` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Parrot OS. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0518` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on MX Linux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0543` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Tails. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

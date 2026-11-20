@@ -114,7 +114,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0137` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Kali Linux. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0387` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Zorin OS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0412` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Parrot OS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0512` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on MX Linux. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0537` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Tails. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0099` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Fedora. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0174` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Red Hat Enterprise Linux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0274` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Rocky Linux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0299` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on AlmaLinux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

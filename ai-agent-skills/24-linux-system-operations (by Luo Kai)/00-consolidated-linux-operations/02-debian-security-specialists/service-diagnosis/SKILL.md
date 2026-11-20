@@ -114,7 +114,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0134` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Kali Linux. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0384` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Zorin OS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0409` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Parrot OS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0509` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on MX Linux. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0534` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Tails. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

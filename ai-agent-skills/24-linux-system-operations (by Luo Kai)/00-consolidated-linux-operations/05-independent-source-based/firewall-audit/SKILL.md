@@ -114,7 +114,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0316` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Gentoo. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0341` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Alpine Linux. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0466` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Slackware. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0491` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Void Linux. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0104` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Arch Linux. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0204` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Manjaro. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0604` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Garuda Linux. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

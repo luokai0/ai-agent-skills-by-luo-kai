@@ -114,7 +114,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0934` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Gentoo. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0959` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Alpine Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1084` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Slackware. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1109` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Void Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

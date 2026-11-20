@@ -114,7 +114,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0121` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Arch Linux. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0221` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Manjaro. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0621` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Garuda Linux. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the filter and narrow results workflow in any of these d
 
 ### Profile 1: Windows Backup, restore, and recovery
 
-Former domain: 39-backup-recovery
+**Domain profile:** 39-backup-recovery
 
-Former skill ID: windows-1148
 
 #### Windows Backup, restore, and recovery: Filter And Narrow Results
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1148` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Backup, restore, and recovery: Filter And Narrow Results. Carry out **filter and narrow results** for file history, onedrive sync, restore points, recovery environment, and restore planning. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows provisioning and account lifecycle
 
-Former domain: 40-provisioning-accounts
+**Domain profile:** 40-provisioning-accounts
 
-Former skill ID: windows-1178
 
 #### Windows provisioning and account lifecycle: Filter And Narrow Results
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1178` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows provisioning and account lifecycle: Filter And Narrow Results. Carry out **filter and narrow results** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

@@ -114,7 +114,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0102` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Arch Linux. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0202` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Manjaro. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0602` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Garuda Linux. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

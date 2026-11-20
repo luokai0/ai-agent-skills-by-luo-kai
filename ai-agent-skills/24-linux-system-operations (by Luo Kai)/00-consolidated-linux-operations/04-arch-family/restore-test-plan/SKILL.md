@@ -114,7 +114,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0745` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Arch Linux. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0845` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Manjaro. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1245` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Garuda Linux. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

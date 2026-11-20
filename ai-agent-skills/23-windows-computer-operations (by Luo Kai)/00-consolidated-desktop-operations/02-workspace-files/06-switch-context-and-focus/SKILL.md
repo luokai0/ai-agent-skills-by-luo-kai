@@ -37,9 +37,8 @@ Use when the user needs the switch context and focus workflow in any of these do
 
 ### Profile 1: Windows Start menu, taskbar, and notifications
 
-Former domain: 04-start-taskbar
+**Domain profile:** 04-start-taskbar
 
-Former skill ID: windows-0096
 
 #### Windows Start menu, taskbar, and notifications: Switch Context And Focus
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0096` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Start menu, taskbar, and notifications: Switch Context And Focus. Carry out **switch context and focus** for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows File Explorer navigation
 
-Former domain: 05-file-explorer
+**Domain profile:** 05-file-explorer
 
-Former skill ID: windows-0126
 
 #### Windows File Explorer navigation: Switch Context And Focus
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0126` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows File Explorer navigation: Switch Context And Focus. Carry out **switch context and focus** for explorer windows, locations, navigation pane, address bar, libraries, and views. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows File and folder operations
 
-Former domain: 06-file-operations
+**Domain profile:** 06-file-operations
 
-Former skill ID: windows-0156
 
 #### Windows File and folder operations: Switch Context And Focus
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0156` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows File and folder operations: Switch Context And Focus. Carry out **switch context and focus** for create, copy, move, rename, organize, and safely remove files and folders. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

@@ -37,9 +37,8 @@ Use when the user needs the create a new item workflow in any of these domains: 
 
 ### Profile 1: Windows Developer workstation setup
 
-Former domain: 25-developer-workstations
+**Domain profile:** 25-developer-workstations
 
-Former skill ID: windows-0730
 
 #### Windows Developer workstation setup: Create A New Item
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0730` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Developer workstation setup: Create A New Item. Carry out **create a new item** for editors, sdks, compilers, runtimes, environment variables, and local development setup. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Git and source-control operations
 
-Former domain: 26-git-source-control
+**Domain profile:** 26-git-source-control
 
-Former skill ID: windows-0760
 
 #### Windows Git and source-control operations: Create A New Item
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0760` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Git and source-control operations: Create A New Item. Carry out **create a new item** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows WSL, virtual machines, and containers
 
-Former domain: 27-wsl-virtualization
+**Domain profile:** 27-wsl-virtualization
 
-Former skill ID: windows-0790
 
 #### Windows WSL, virtual machines, and containers: Create A New Item
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0790` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows WSL, virtual machines, and containers: Create A New Item. Carry out **create a new item** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

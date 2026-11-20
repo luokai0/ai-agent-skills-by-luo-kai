@@ -114,7 +114,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0184` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on openSUSE. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0434` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on NixOS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0559` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Qubes OS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0584` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on SteamOS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

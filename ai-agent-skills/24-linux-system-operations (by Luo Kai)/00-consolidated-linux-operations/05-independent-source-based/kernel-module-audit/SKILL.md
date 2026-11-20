@@ -114,7 +114,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0926` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Gentoo. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0951` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Alpine Linux. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1076` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Slackware. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1101` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Void Linux. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

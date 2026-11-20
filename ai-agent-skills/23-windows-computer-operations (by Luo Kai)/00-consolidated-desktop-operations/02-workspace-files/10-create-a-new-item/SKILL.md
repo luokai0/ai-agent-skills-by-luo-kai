@@ -37,9 +37,8 @@ Use when the user needs the create a new item workflow in any of these domains: 
 
 ### Profile 1: Windows Start menu, taskbar, and notifications
 
-Former domain: 04-start-taskbar
+**Domain profile:** 04-start-taskbar
 
-Former skill ID: windows-0100
 
 #### Windows Start menu, taskbar, and notifications: Create A New Item
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0100` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Start menu, taskbar, and notifications: Create A New Item. Carry out **create a new item** for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows File Explorer navigation
 
-Former domain: 05-file-explorer
+**Domain profile:** 05-file-explorer
 
-Former skill ID: windows-0130
 
 #### Windows File Explorer navigation: Create A New Item
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0130` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows File Explorer navigation: Create A New Item. Carry out **create a new item** for explorer windows, locations, navigation pane, address bar, libraries, and views. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows File and folder operations
 
-Former domain: 06-file-operations
+**Domain profile:** 06-file-operations
 
-Former skill ID: windows-0160
 
 #### Windows File and folder operations: Create A New Item
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0160` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows File and folder operations: Create A New Item. Carry out **create a new item** for create, copy, move, rename, organize, and safely remove files and folders. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

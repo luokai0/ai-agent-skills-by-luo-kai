@@ -114,7 +114,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0814` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on openSUSE. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1064` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on NixOS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1189` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Qubes OS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1214` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on SteamOS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

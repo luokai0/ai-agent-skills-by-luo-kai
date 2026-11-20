@@ -114,7 +114,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0123` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Arch Linux. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0223` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Manjaro. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0623` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Garuda Linux. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

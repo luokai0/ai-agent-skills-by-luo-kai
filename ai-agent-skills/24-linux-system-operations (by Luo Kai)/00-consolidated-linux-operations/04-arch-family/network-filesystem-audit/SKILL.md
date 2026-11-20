@@ -114,7 +114,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0744` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Arch Linux. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0844` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Manjaro. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1244` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Garuda Linux. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

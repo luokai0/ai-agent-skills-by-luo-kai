@@ -114,7 +114,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0003` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Ubuntu. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0028` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Debian. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0053` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Linux Mint. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0228` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Pop!_OS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0353` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on elementary OS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

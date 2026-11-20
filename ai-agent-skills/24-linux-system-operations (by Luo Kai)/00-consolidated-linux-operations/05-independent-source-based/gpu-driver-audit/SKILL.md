@@ -114,7 +114,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0938` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Gentoo. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0963` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Alpine Linux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1088` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Slackware. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1113` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Void Linux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

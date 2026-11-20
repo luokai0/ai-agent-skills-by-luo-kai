@@ -114,7 +114,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0176` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on openSUSE. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0426` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on NixOS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0551` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Qubes OS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0576` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on SteamOS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

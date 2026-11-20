@@ -37,9 +37,8 @@ Use when the user needs the perform routine maintenance workflow in any of these
 
 ### Profile 1: Windows Registry and Group Policy inspection
 
-Former domain: 15-registry-policy
+**Domain profile:** 15-registry-policy
 
-Former skill ID: windows-0449
 
 #### Windows Registry and Group Policy inspection: Perform Routine Maintenance
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0449` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Registry and Group Policy inspection: Perform Routine Maintenance. Carry out **perform routine maintenance** for registry structure, policy state, policy refresh diagnostics, and configuration provenance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Application installation and removal
 
-Former domain: 16-app-installation
+**Domain profile:** 16-app-installation
 
-Former skill ID: windows-0479
 
 #### Windows Application installation and removal: Perform Routine Maintenance
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0479` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Application installation and removal: Perform Routine Maintenance. Carry out **perform routine maintenance** for app discovery, installers, repair, updates, uninstall workflows, and app compatibility. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows package managers and dependencies
 
-Former domain: 17-package-management
+**Domain profile:** 17-package-management
 
-Former skill ID: windows-0509
 
 #### Windows package managers and dependencies: Perform Routine Maintenance
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0509` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows package managers and dependencies: Perform Routine Maintenance. Carry out **perform routine maintenance** for winget, microsoft store, package sources, app dependencies, and package inventory. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -328,9 +325,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 4: Windows Update and update servicing
 
-Former domain: 18-windows-updates
+**Domain profile:** 18-windows-updates
 
-Former skill ID: windows-0539
 
 #### Windows Update and update servicing: Perform Routine Maintenance
 
@@ -387,7 +383,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0539` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Update and update servicing: Perform Routine Maintenance. Carry out **perform routine maintenance** for update status, history, optional updates, restart planning, and update failure diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -425,9 +421,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 5: Windows Device Manager and hardware drivers
 
-Former domain: 19-devices-drivers
+**Domain profile:** 19-devices-drivers
 
-Former skill ID: windows-0569
 
 #### Windows Device Manager and hardware drivers: Perform Routine Maintenance
 
@@ -484,7 +479,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0569` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Device Manager and hardware drivers: Perform Routine Maintenance. Carry out **perform routine maintenance** for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

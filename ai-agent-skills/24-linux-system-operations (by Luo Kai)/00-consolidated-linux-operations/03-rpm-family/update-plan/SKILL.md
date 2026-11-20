@@ -114,7 +114,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0081` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Fedora. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0156` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Red Hat Enterprise Linux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0256` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Rocky Linux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0281` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on AlmaLinux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

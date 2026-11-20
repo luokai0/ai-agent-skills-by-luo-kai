@@ -114,7 +114,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0927` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Gentoo. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0952` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Alpine Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1077` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Slackware. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1102` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Void Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

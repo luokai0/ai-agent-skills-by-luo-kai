@@ -114,7 +114,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0113` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Arch Linux. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0213` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Manjaro. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0613` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Garuda Linux. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the remove an item with recovery protection workflow in 
 
 ### Profile 1: Windows desktop shell
 
-Former domain: 01-desktop-shell
+**Domain profile:** 01-desktop-shell
 
-Former skill ID: windows-0014
 
 #### Windows desktop shell: Remove An Item With Recovery Protection
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0014` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows desktop shell: Remove An Item With Recovery Protection. Carry out **remove an item with recovery protection** for desktop, explorer shell, desktop icons, notification area, and shell processes. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows navigation and settings
 
-Former domain: 02-windows-navigation
+**Domain profile:** 02-windows-navigation
 
-Former skill ID: windows-0044
 
 #### Windows navigation and settings: Remove An Item With Recovery Protection
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0044` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows navigation and settings: Remove An Item With Recovery Protection. Carry out **remove an item with recovery protection** for settings app, control panel, system pages, navigation paths, and search surfaces. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Window management and multitasking
 
-Former domain: 03-window-multitasking
+**Domain profile:** 03-window-multitasking
 
-Former skill ID: windows-0074
 
 #### Windows Window management and multitasking: Remove An Item With Recovery Protection
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0074` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Window management and multitasking: Remove An Item With Recovery Protection. Carry out **remove an item with recovery protection** for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

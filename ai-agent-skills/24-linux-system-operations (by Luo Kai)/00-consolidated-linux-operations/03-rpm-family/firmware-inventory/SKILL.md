@@ -114,7 +114,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0702` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Fedora. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0777` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Red Hat Enterprise Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0877` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Rocky Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0902` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on AlmaLinux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0094` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Fedora. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0169` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Red Hat Enterprise Linux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0269` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Rocky Linux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0294` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on AlmaLinux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

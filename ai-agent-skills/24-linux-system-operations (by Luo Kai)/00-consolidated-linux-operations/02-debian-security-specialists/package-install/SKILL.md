@@ -114,7 +114,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0130` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Kali Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -244,7 +244,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0380` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Zorin OS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -374,7 +374,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0405` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Parrot OS. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -504,7 +504,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0505` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on MX Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -634,7 +634,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0530` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Tails. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -710,4 +710,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

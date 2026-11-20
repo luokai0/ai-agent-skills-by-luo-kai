@@ -114,7 +114,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0626` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Ubuntu. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0651` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Debian. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0676` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Linux Mint. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0851` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Pop!_OS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0976` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on elementary OS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

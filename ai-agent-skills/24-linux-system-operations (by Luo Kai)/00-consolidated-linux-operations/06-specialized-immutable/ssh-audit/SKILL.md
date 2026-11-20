@@ -114,7 +114,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0192` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on openSUSE. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0442` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on NixOS. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0567` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Qubes OS. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0592` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on SteamOS. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

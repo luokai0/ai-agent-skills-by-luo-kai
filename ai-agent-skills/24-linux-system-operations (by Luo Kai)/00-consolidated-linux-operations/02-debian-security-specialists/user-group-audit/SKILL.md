@@ -114,7 +114,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0136` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Kali Linux. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0386` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Zorin OS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0411` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Parrot OS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0511` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on MX Linux. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0536` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Tails. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

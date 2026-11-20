@@ -114,7 +114,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0713` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Fedora. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0788` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Red Hat Enterprise Linux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0888` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Rocky Linux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0913` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on AlmaLinux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

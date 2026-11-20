@@ -114,7 +114,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0928` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Gentoo. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0953` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Alpine Linux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1078` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Slackware. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1103` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Void Linux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the create a new item workflow in any of these domains: 
 
 ### Profile 1: Windows Backup, restore, and recovery
 
-Former domain: 39-backup-recovery
+**Domain profile:** 39-backup-recovery
 
-Former skill ID: windows-1150
 
 #### Windows Backup, restore, and recovery: Create A New Item
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1150` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Backup, restore, and recovery: Create A New Item. Carry out **create a new item** for file history, onedrive sync, restore points, recovery environment, and restore planning. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows provisioning and account lifecycle
 
-Former domain: 40-provisioning-accounts
+**Domain profile:** 40-provisioning-accounts
 
-Former skill ID: windows-1180
 
 #### Windows provisioning and account lifecycle: Create A New Item
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1180` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows provisioning and account lifecycle: Create A New Item. Carry out **create a new item** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

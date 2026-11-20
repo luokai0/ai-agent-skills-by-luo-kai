@@ -22,7 +22,7 @@ Collection size: 360 consolidated SKILL.md files, organized into 12 groups with 
 
 ## Consolidation standard
 
-Every replacement contains explicit domain profiles. The full original workflow bodies are retained inside their corresponding profiles, including objectives, operating discipline, procedures, preferred tools, command examples, safety boundaries, execution contracts, verification, recovery, and completion checklists. Shared discovery guidance is added at the consolidated-skill level.
+Every consolidated skill contains explicit domain profiles. Each profile retains its complete procedures, preferred tools, command examples, safety boundaries, execution contracts, verification, recovery, and completion criteria. Shared discovery guidance makes the combined workflow easier to select and execute.
 
 The migration map records every retired skill ID and path. No original workflow is removed unless its replacement and mapping are created in the same change.
 

@@ -114,7 +114,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0149` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Kali Linux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0399` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Zorin OS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0424` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Parrot OS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0524` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on MX Linux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0549` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Tails. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

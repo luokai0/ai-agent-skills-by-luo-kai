@@ -5,7 +5,7 @@ This standard defines the quality bar for 300 consolidated Linux system-operatio
 
 ## Required skill behavior
 
-Every consolidated skill contains three to five distribution profiles. Each profile preserves its original objective, stable `linux-####` ID, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable `linux-consolidated-gNN-task-slug` ID. Each profile retains its **Agent execution contract — v1.1**, bound to its exact task and distribution. It identifies the execution context, verifies release/kernel/init/package manager, establishes a read-only baseline, sets task-specific control points and approval gates, defines independent verification, and provides stop/recovery and privacy-safe handoff requirements.
+Every consolidated skill contains three to five distribution profiles. Each profile preserves its task objective, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable `linux-consolidated-gNN-task-slug` ID. Each profile retains its **Agent execution contract — v1.1**, bound to its exact task and distribution. It identifies the execution context, verifies release/kernel/init/package manager, establishes a read-only baseline, sets task-specific control points and approval gates, defines independent verification, and provides stop/recovery and privacy-safe handoff requirements.
 
 ## Execution rules
 
@@ -26,7 +26,7 @@ Every consolidated skill contains three to five distribution profiles. Each prof
 
 ## Acceptance checklist
 
-1. YAML frontmatter parses; the consolidated ID is stable and every profile retains its original `linux-####` ID.
+1. YAML frontmatter parses; the consolidated ID is stable and unique, and every profile retains its distribution-specific procedures and safeguards.
 2. Each consolidated skill contains exactly the expected three to five distribution profiles, with correct distribution and task identity.
 3. Native commands match the verified distribution and init system.
 4. Inspection and mutation are clearly separated.

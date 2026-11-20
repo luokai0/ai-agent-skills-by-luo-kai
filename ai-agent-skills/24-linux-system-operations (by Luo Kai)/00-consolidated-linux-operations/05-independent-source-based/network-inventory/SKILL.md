@@ -114,7 +114,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0314` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Gentoo. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0339` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Alpine Linux. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0464` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Slackware. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0489` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Void Linux. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

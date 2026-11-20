@@ -114,7 +114,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0125` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Arch Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0225` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Manjaro. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0625` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Garuda Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

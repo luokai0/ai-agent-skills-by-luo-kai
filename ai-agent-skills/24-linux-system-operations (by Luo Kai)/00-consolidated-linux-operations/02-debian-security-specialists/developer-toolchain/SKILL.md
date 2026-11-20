@@ -114,7 +114,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0146` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Kali Linux. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0396` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Zorin OS. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0421` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Parrot OS. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0521` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on MX Linux. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0546` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Tails. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

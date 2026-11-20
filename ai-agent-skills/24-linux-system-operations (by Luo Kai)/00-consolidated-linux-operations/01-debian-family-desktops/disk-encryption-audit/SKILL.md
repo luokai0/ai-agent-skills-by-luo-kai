@@ -114,7 +114,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0634` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Ubuntu. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0659` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Debian. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0684` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Linux Mint. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0859` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Pop!_OS. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0984` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on elementary OS. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

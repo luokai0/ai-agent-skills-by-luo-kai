@@ -114,7 +114,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0303` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Gentoo. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0328` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Alpine Linux. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0453` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Slackware. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0478` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Void Linux. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

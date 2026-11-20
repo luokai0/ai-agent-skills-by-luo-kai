@@ -114,7 +114,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0764` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Kali Linux. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1014` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Zorin OS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1039` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Parrot OS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1139` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on MX Linux. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1164` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Tails. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

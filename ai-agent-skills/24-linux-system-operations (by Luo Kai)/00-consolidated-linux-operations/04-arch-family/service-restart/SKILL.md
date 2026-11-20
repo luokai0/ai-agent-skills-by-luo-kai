@@ -114,7 +114,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0110` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Arch Linux. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0210` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Manjaro. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0610` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Garuda Linux. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

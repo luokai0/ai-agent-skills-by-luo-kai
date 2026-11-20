@@ -114,7 +114,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0743` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Arch Linux. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0843` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Manjaro. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1243` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Garuda Linux. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

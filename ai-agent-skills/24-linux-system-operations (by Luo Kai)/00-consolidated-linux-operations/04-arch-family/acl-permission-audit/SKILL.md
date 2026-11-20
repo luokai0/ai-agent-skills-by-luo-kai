@@ -114,7 +114,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0732` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Arch Linux. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0832` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Manjaro. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1232` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Garuda Linux. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

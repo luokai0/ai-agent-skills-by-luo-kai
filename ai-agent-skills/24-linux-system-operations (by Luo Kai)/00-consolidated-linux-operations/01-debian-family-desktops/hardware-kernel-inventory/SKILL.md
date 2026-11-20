@@ -114,7 +114,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0002` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Ubuntu. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0027` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Debian. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0052` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Linux Mint. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0227` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Pop!_OS. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0352` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on elementary OS. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0712` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Fedora. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0787` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Red Hat Enterprise Linux. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0887` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Rocky Linux. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0912` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on AlmaLinux. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

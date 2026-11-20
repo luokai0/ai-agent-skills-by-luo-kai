@@ -114,7 +114,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0190` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on openSUSE. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0440` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on NixOS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0565` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Qubes OS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0590` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on SteamOS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

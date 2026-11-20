@@ -114,7 +114,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0805` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on openSUSE. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1055` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on NixOS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1180` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Qubes OS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1205` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on SteamOS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

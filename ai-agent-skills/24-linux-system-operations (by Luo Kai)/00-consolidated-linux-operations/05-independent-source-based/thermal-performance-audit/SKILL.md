@@ -114,7 +114,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0940` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Gentoo. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0965` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Alpine Linux. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1090` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Slackware. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1115` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Void Linux. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

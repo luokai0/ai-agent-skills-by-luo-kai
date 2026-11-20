@@ -114,7 +114,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0734` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Arch Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0834` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Manjaro. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1234` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Garuda Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

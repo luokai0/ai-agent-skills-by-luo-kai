@@ -114,7 +114,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0124` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Arch Linux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0224` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Manjaro. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0624` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Garuda Linux. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

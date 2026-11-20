@@ -114,7 +114,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0116` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Arch Linux. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0216` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Manjaro. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0616` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Garuda Linux. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

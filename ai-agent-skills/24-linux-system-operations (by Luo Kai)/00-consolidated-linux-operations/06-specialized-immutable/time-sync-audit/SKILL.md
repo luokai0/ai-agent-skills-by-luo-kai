@@ -114,7 +114,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0818` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on openSUSE. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1068` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on NixOS. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1193` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Qubes OS. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1218` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on SteamOS. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0816` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on openSUSE. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1066` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on NixOS. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1191` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on Qubes OS. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report host capability and runtime state; distinguish host from guest context.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1216` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect KVM, libvirt, and virtualization readiness on SteamOS. Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

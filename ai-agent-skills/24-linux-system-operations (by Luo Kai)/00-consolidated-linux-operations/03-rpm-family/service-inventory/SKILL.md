@@ -114,7 +114,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0083` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Fedora. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0158` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Red Hat Enterprise Linux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0258` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Rocky Linux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0283` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on AlmaLinux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

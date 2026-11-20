@@ -114,7 +114,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0637` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Ubuntu. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0662` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Debian. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0687` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Linux Mint. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0862` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Pop!_OS. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0987` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on elementary OS. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

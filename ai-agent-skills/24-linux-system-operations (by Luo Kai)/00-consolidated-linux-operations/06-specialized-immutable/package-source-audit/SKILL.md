@@ -114,7 +114,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0178` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on openSUSE. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0428` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on NixOS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0553` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Qubes OS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0578` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on SteamOS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

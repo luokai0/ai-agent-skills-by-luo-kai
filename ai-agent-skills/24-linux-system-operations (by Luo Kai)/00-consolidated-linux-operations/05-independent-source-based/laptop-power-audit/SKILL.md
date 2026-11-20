@@ -114,7 +114,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0939` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Gentoo. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0964` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Alpine Linux. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1089` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Slackware. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1114` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Void Linux. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

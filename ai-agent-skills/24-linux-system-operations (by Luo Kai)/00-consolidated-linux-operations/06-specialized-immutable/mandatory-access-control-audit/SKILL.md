@@ -114,7 +114,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0808` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on openSUSE. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1058` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on NixOS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1183` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Qubes OS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1208` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on SteamOS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

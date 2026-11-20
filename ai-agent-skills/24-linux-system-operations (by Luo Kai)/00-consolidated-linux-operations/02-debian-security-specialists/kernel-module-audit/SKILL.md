@@ -114,7 +114,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0751` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Kali Linux. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1001` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Zorin OS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1026` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Parrot OS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1126` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on MX Linux. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1151` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Tails. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

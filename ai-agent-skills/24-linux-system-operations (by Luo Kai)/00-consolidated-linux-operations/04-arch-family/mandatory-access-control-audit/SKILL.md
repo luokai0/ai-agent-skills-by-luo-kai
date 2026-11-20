@@ -114,7 +114,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0733` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Arch Linux. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0833` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Manjaro. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1233` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Garuda Linux. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

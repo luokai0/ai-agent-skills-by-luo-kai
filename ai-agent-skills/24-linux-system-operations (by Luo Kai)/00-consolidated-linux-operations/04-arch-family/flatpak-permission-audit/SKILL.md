@@ -114,7 +114,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0746` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Arch Linux. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0846` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Manjaro. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1246` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Garuda Linux. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

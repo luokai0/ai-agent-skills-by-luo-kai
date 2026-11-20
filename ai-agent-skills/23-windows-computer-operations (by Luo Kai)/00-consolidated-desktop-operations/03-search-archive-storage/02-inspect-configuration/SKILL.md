@@ -37,9 +37,8 @@ Use when the user needs the inspect configuration workflow in any of these domai
 
 ### Profile 1: Windows search and file metadata
 
-Former domain: 07-search-metadata
+**Domain profile:** 07-search-metadata
 
-Former skill ID: windows-0182
 
 #### Windows search and file metadata: Inspect Configuration
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0182` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows search and file metadata: Inspect Configuration. Carry out **inspect configuration** for search indexing, filters, metadata, file properties, and content discovery. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Archives, downloads, and file transfer
 
-Former domain: 08-archives-transfer
+**Domain profile:** 08-archives-transfer
 
-Former skill ID: windows-0212
 
 #### Windows Archives, downloads, and file transfer: Inspect Configuration
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0212` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Archives, downloads, and file transfer: Inspect Configuration. Carry out **inspect configuration** for zip archives, downloads, removable media, and safe local file transfers. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Storage, partitions, and volumes
 
-Former domain: 09-storage-volumes
+**Domain profile:** 09-storage-volumes
 
-Former skill ID: windows-0242
 
 #### Windows Storage, partitions, and volumes: Inspect Configuration
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0242` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Storage, partitions, and volumes: Inspect Configuration. Carry out **inspect configuration** for disk space, volumes, removable storage, filesystem health indicators, and storage settings. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

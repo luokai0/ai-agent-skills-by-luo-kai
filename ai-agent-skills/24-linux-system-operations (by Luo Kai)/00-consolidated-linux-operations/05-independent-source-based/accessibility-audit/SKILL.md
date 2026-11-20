@@ -114,7 +114,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0949` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Gentoo. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0974` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Alpine Linux. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1099` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Slackware. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1124` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Void Linux. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0804` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on openSUSE. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1054` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on NixOS. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1179` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Qubes OS. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1204` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on SteamOS. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

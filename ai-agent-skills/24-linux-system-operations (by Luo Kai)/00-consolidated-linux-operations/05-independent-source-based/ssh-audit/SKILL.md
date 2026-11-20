@@ -114,7 +114,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0317` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Gentoo. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0342` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Alpine Linux. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0467` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Slackware. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0492` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Void Linux. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

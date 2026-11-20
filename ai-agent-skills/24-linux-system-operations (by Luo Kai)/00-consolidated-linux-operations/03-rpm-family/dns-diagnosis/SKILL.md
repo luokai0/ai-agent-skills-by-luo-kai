@@ -114,7 +114,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0090` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Fedora. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0165` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Red Hat Enterprise Linux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0265` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Rocky Linux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0290` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on AlmaLinux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

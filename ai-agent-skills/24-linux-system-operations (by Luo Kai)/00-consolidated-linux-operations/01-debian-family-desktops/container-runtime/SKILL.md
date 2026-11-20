@@ -114,7 +114,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0022` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Ubuntu. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0047` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Debian. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0072` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Linux Mint. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0247` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Pop!_OS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0372` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on elementary OS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

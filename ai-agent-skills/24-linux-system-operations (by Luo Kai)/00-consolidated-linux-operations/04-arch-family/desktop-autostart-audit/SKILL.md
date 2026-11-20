@@ -114,7 +114,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0747` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Arch Linux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0847` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Manjaro. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1247` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Garuda Linux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

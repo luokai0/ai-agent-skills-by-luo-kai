@@ -114,7 +114,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0761` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Kali Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1011` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Zorin OS. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1036` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Parrot OS. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1136` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on MX Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1161` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Tails. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the copy an item safely workflow in any of these domains
 
 ### Profile 1: Windows Accessibility and assistive technology
 
-Former domain: 33-accessibility
+**Domain profile:** 33-accessibility
 
-Former skill ID: windows-0973
 
 #### Windows Accessibility and assistive technology: Copy An Item Safely
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0973` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Accessibility and assistive technology: Copy An Item Safely. Carry out **copy an item safely** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Remote access and support sessions
 
-Former domain: 34-remote-desktop
+**Domain profile:** 34-remote-desktop
 
-Former skill ID: windows-1003
 
 #### Windows Remote access and support sessions: Copy An Item Safely
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1003` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Remote access and support sessions: Copy An Item Safely. Carry out **copy an item safely** for remote desktop, quick assist, remote support, session handoff, and connectivity. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Reliable Windows UI automation
 
-Former domain: 35-ui-automation
+**Domain profile:** 35-ui-automation
 
-Former skill ID: windows-1033
 
 #### Windows Reliable Windows UI automation: Copy An Item Safely
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1033` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Reliable Windows UI automation: Copy An Item Safely. Carry out **copy an item safely** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -328,9 +325,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 4: Windows Screenshots, screen reading, and OCR
 
-Former domain: 36-screenshots-ocr
+**Domain profile:** 36-screenshots-ocr
 
-Former skill ID: windows-1063
 
 #### Windows Screenshots, screen reading, and OCR: Copy An Item Safely
 
@@ -387,7 +383,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1063` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Screenshots, screen reading, and OCR: Copy An Item Safely. Carry out **copy an item safely** for screen capture, ocr, visual grounding, region selection, and evidence handling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

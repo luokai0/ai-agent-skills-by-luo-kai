@@ -114,7 +114,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0199` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on openSUSE. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0449` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on NixOS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0574` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Qubes OS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0599` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on SteamOS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

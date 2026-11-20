@@ -114,7 +114,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0315` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Gentoo. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0340` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Alpine Linux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0465` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Slackware. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0490` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Void Linux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

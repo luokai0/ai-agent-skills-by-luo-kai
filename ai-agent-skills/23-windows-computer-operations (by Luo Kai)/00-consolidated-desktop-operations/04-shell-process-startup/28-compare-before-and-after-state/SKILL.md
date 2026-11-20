@@ -37,9 +37,8 @@ Use when the user needs the compare before and after state workflow in any of th
 
 ### Profile 1: Windows PowerShell fundamentals
 
-Former domain: 10-powershell-fundamentals
+**Domain profile:** 10-powershell-fundamentals
 
-Former skill ID: windows-0298
 
 #### Windows PowerShell fundamentals: Compare Before And After State
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0298` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows PowerShell fundamentals: Compare Before And After State. Carry out **compare before and after state** for powershell discovery, safe command execution, objects, pipelines, profiles, and help. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Advanced PowerShell administration
 
-Former domain: 11-powershell-advanced
+**Domain profile:** 11-powershell-advanced
 
-Former skill ID: windows-0328
 
 #### Windows Advanced PowerShell administration: Compare Before And After State
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0328` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Advanced PowerShell administration: Compare Before And After State. Carry out **compare before and after state** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Command Prompt and Windows Terminal
 
-Former domain: 12-terminal-cmd
+**Domain profile:** 12-terminal-cmd
 
-Former skill ID: windows-0358
 
 #### Windows Command Prompt and Windows Terminal: Compare Before And After State
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0358` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Command Prompt and Windows Terminal: Compare Before And After State. Carry out **compare before and after state** for terminal profiles, shells, command discovery, environment variables, and command sessions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -328,9 +325,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 4: Windows Processes, services, and applications
 
-Former domain: 13-process-services
+**Domain profile:** 13-process-services
 
-Former skill ID: windows-0388
 
 #### Windows Processes, services, and applications: Compare Before And After State
 
@@ -387,7 +383,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0388` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Processes, services, and applications: Compare Before And After State. Carry out **compare before and after state** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -425,9 +421,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 5: Windows Startup, scheduled tasks, and background execution
 
-Former domain: 14-startup-scheduling
+**Domain profile:** 14-startup-scheduling
 
-Former skill ID: windows-0418
 
 #### Windows Startup, scheduled tasks, and background execution: Compare Before And After State
 
@@ -484,7 +479,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0418` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Startup, scheduled tasks, and background execution: Compare Before And After State. Carry out **compare before and after state** for startup apps, task scheduler, login tasks, and background execution diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

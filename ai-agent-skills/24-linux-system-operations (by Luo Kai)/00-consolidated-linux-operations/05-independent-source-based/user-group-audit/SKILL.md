@@ -114,7 +114,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0311` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Gentoo. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0336` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Alpine Linux. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0461` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Slackware. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0486` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Void Linux. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

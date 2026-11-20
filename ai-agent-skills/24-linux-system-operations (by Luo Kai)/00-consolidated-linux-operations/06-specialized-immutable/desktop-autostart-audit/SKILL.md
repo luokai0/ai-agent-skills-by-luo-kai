@@ -114,7 +114,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0822` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on openSUSE. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1072` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on NixOS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1197` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Qubes OS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1222` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on SteamOS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

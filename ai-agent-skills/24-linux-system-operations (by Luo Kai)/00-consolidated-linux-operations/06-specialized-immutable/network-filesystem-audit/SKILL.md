@@ -114,7 +114,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0819` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on openSUSE. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1069` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on NixOS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1194` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Qubes OS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1219` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on SteamOS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

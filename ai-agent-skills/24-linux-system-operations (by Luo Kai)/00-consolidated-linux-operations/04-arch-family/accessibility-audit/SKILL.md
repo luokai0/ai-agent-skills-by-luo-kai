@@ -114,7 +114,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0749` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Arch Linux. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0849` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Manjaro. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1249` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Garuda Linux. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

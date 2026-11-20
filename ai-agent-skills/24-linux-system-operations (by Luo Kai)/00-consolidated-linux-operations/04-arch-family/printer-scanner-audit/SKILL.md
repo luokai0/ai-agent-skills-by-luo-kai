@@ -114,7 +114,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0736` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Arch Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0836` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Manjaro. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1236` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Garuda Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

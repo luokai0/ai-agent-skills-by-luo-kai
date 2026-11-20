@@ -114,7 +114,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0305` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Gentoo. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -244,7 +244,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0330` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Alpine Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -374,7 +374,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0455` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Slackware. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -504,7 +504,7 @@ After approval, install one named package; verify installed version, package own
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0480` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Install a package with transaction review on Void Linux. Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -580,4 +580,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

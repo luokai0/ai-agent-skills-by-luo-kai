@@ -114,7 +114,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0009` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Ubuntu. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0034` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Debian. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0059` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Linux Mint. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0234` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Pop!_OS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0359` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on elementary OS. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

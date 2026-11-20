@@ -114,7 +114,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0109` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Arch Linux. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0209` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Manjaro. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0609` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Garuda Linux. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

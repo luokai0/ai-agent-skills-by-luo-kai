@@ -114,7 +114,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0024` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Ubuntu. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0049` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Debian. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0074` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Linux Mint. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0249` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on Pop!_OS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report session type, detected outputs/devices, and narrow next steps without dis
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0374` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose desktop session, display, and audio state on elementary OS. Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

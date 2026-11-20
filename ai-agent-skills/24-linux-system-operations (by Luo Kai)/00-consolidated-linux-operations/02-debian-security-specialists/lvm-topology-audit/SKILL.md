@@ -114,7 +114,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0754` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Kali Linux. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1004` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Zorin OS. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1029` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Parrot OS. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1129` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on MX Linux. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1154` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Tails. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

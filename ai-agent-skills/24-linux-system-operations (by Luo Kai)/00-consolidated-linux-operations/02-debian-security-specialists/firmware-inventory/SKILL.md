@@ -114,7 +114,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0752` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Kali Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1002` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Zorin OS. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1027` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Parrot OS. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1127` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on MX Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1152` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Tails. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

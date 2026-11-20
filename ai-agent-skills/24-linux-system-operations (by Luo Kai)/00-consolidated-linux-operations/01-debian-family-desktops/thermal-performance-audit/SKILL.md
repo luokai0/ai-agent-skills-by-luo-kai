@@ -114,7 +114,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0640` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Ubuntu. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0665` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Debian. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0690` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Linux Mint. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0865` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Pop!_OS. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0990` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on elementary OS. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

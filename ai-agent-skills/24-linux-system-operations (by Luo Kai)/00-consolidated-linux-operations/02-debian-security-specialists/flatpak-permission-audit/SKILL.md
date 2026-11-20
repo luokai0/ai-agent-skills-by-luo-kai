@@ -114,7 +114,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0771` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Kali Linux. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1021` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Zorin OS. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1046` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Parrot OS. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1146` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on MX Linux. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report app origin, runtime, and noteworthy permissions; verify override scope is
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1171` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit Flatpak application permissions on Tails. Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

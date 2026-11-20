@@ -114,7 +114,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0639` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Ubuntu. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0664` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Debian. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0689` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Linux Mint. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0864` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Pop!_OS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0989` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on elementary OS. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

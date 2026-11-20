@@ -114,7 +114,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0128` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Kali Linux. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0378` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Zorin OS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0403` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Parrot OS. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0503` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on MX Linux. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report suspicious, unsigned, mixed-release, or stale sources; do not silently ad
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0528` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit configured package sources on Tails. Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

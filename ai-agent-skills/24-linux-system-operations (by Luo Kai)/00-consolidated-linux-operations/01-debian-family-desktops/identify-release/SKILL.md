@@ -114,7 +114,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0001` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Ubuntu. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0026` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Debian. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0051` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Linux Mint. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0226` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Pop!_OS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0351` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on elementary OS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

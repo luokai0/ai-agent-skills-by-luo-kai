@@ -3,7 +3,7 @@
 
 **300 consolidated skills · 6 distribution groups · 25 Linux distributions**
 
-A profile-based operating library for AI agents. The 1,250 distribution-specific workflows are consolidated into 300 task skills. Each skill contains three to five exact distribution profiles, preserving the original procedures, native commands, safety controls, verification, and recovery guidance.
+A profile-based operating library for AI agents. The 1,250 distribution-specific workflows are consolidated into 300 task skills. Each skill contains three to five exact distribution profiles, preserving the complete procedures, native commands, safety controls, verification, and recovery guidance.
 
 ## Six distribution groups
 

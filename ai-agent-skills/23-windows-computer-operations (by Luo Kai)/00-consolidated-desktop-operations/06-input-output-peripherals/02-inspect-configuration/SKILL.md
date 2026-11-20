@@ -37,9 +37,8 @@ Use when the user needs the inspect configuration workflow in any of these domai
 
 ### Profile 1: Windows Displays, audio, cameras, and input devices
 
-Former domain: 20-display-audio-input
+**Domain profile:** 20-display-audio-input
 
-Former skill ID: windows-0572
 
 #### Windows Displays, audio, cameras, and input devices: Inspect Configuration
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0572` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Displays, audio, cameras, and input devices: Inspect Configuration. Carry out **inspect configuration** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Clipboard, text entry, and input reliability
 
-Former domain: 37-clipboard-input
+**Domain profile:** 37-clipboard-input
 
-Former skill ID: windows-1082
 
 #### Windows Clipboard, text entry, and input reliability: Inspect Configuration
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1082` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Clipboard, text entry, and input reliability: Inspect Configuration. Carry out **inspect configuration** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Printers, scanners, docks, and peripherals
 
-Former domain: 38-printers-peripherals
+**Domain profile:** 38-printers-peripherals
 
-Former skill ID: windows-1112
 
 #### Windows Printers, scanners, docks, and peripherals: Inspect Configuration
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1112` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Printers, scanners, docks, and peripherals: Inspect Configuration. Carry out **inspect configuration** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

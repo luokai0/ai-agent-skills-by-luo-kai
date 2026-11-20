@@ -114,7 +114,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0717` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Fedora. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0792` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Red Hat Enterprise Linux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0892` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Rocky Linux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0917` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on AlmaLinux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

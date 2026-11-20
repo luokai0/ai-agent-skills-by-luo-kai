@@ -114,7 +114,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0803` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on openSUSE. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1053` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on NixOS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1178` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Qubes OS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1203` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on SteamOS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

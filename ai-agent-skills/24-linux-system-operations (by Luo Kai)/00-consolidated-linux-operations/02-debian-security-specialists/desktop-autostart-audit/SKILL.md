@@ -114,7 +114,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0772` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Kali Linux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1022` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Zorin OS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1047` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Parrot OS. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1147` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on MX Linux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1172` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Tails. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

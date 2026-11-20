@@ -114,7 +114,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0632` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Ubuntu. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0657` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Debian. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0682` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Linux Mint. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0857` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Pop!_OS. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0982` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on elementary OS. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

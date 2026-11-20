@@ -114,7 +114,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0767` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Kali Linux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1017` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Zorin OS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1042` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Parrot OS. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1142` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on MX Linux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1167` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Tails. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

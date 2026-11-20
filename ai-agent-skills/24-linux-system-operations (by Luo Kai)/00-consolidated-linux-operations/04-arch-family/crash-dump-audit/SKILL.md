@@ -114,7 +114,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0748` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Arch Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0848` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Manjaro. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1248` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Garuda Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

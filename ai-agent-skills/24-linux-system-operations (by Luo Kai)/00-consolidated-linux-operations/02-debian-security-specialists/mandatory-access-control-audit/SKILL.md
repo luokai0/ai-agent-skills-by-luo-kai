@@ -114,7 +114,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0758` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Kali Linux. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1008` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Zorin OS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1033` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Parrot OS. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1133` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on MX Linux. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1158` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Tails. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0635` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Ubuntu. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0660` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Debian. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0685` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Linux Mint. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0860` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Pop!_OS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0985` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on elementary OS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

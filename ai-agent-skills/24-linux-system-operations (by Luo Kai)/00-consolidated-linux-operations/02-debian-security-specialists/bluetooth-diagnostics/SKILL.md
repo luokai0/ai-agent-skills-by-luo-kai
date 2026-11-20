@@ -114,7 +114,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0760` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Kali Linux. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1010` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Zorin OS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1035` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Parrot OS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1135` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on MX Linux. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1160` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Tails. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

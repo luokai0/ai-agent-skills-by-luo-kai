@@ -114,7 +114,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0197` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on openSUSE. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0447` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on NixOS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0572` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Qubes OS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0597` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on SteamOS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

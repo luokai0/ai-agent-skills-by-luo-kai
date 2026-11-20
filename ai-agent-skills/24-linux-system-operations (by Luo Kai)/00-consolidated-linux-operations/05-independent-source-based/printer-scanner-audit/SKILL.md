@@ -114,7 +114,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0936` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Gentoo. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0961` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Alpine Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1086` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Slackware. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1111` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Void Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

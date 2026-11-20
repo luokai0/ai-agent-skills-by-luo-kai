@@ -114,7 +114,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0011` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Ubuntu. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0036` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Debian. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0061` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Linux Mint. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0236` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on Pop!_OS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report unexpected privilege memberships and propose a least-privilege change sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0361` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit local users, groups, and privilege boundaries on elementary OS. Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

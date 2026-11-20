@@ -114,7 +114,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0150` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Kali Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0400` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Zorin OS. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0425` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Parrot OS. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0525` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on MX Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0550` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Tails. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

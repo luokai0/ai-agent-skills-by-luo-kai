@@ -114,7 +114,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0735` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Arch Linux. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0835` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Manjaro. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1235` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Garuda Linux. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

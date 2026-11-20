@@ -114,7 +114,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0093` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Fedora. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0168` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Red Hat Enterprise Linux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0268` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Rocky Linux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0293` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on AlmaLinux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

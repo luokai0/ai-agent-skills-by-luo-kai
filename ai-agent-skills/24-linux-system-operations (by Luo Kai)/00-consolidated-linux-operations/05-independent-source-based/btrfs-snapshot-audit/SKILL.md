@@ -114,7 +114,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0931` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Gentoo. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0956` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Alpine Linux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1081` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Slackware. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1106` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Void Linux. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

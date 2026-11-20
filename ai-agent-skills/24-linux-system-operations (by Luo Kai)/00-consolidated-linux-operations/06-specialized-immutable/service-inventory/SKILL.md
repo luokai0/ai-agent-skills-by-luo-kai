@@ -114,7 +114,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0183` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on openSUSE. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0433` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on NixOS. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0558` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Qubes OS. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0583` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on SteamOS. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the recover from a reversible failure workflow in any of
 
 ### Profile 1: Windows Displays, audio, cameras, and input devices
 
-Former domain: 20-display-audio-input
+**Domain profile:** 20-display-audio-input
 
-Former skill ID: windows-0593
 
 #### Windows Displays, audio, cameras, and input devices: Recover From A Reversible Failure
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0593` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Displays, audio, cameras, and input devices: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Clipboard, text entry, and input reliability
 
-Former domain: 37-clipboard-input
+**Domain profile:** 37-clipboard-input
 
-Former skill ID: windows-1103
 
 #### Windows Clipboard, text entry, and input reliability: Recover From A Reversible Failure
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1103` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Clipboard, text entry, and input reliability: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Printers, scanners, docks, and peripherals
 
-Former domain: 38-printers-peripherals
+**Domain profile:** 38-printers-peripherals
 
-Former skill ID: windows-1133
 
 #### Windows Printers, scanners, docks, and peripherals: Recover From A Reversible Failure
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1133` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Printers, scanners, docks, and peripherals: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

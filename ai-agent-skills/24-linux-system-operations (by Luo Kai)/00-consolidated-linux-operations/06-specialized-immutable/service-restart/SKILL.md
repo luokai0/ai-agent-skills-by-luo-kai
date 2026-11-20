@@ -114,7 +114,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0185` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on openSUSE. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0435` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on NixOS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0560` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Qubes OS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0585` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on SteamOS. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

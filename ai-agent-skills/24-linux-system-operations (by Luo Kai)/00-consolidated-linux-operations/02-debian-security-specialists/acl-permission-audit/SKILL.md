@@ -114,7 +114,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0757` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Kali Linux. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1007` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Zorin OS. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1032` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Parrot OS. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1132` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on MX Linux. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Explain effective access for the named user and propose the smallest permission 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1157` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit file ownership, mode bits, and ACLs on Tails. Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

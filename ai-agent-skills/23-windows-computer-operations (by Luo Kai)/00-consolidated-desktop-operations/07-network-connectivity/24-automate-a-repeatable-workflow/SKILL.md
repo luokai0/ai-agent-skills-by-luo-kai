@@ -37,9 +37,8 @@ Use when the user needs the automate a repeatable workflow workflow in any of th
 
 ### Profile 1: Windows Wi-Fi, Ethernet, and network adapters
 
-Former domain: 21-wifi-ethernet
+**Domain profile:** 21-wifi-ethernet
 
-Former skill ID: windows-0624
 
 #### Windows Wi-Fi, Ethernet, and network adapters: Automate A Repeatable Workflow
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0624` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows DNS, firewall, VPN, and secure connectivity
 
-Former domain: 22-dns-firewall-vpn
+**Domain profile:** 22-dns-firewall-vpn
 
-Former skill ID: windows-0654
 
 #### Windows DNS, firewall, VPN, and secure connectivity: Automate A Repeatable Workflow
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0654` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

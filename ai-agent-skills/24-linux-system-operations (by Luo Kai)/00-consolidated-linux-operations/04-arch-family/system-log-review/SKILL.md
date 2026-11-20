@@ -114,7 +114,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0119` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Arch Linux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0219` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Manjaro. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0619` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Garuda Linux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

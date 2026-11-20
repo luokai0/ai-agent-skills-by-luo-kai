@@ -114,7 +114,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0765` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Kali Linux. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1015` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Zorin OS. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1040` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Parrot OS. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1140` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on MX Linux. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1165` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Tails. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

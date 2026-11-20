@@ -114,7 +114,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0929` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Gentoo. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0954` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Alpine Linux. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1079` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Slackware. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a topology map and free-space assessment; do not modify volume metadata.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1104` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Map LVM physical, volume, and logical volumes on Void Linux. Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

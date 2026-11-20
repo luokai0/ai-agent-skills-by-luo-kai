@@ -114,7 +114,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0727` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Arch Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0827` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Manjaro. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact device and update availability; firmware application requires separ
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1227` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory device firmware and update readiness on Garuda Linux. Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

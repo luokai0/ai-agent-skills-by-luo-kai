@@ -114,7 +114,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0126` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Kali Linux. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0376` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Zorin OS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0401` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Parrot OS. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0501` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on MX Linux. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0526` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Tails. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

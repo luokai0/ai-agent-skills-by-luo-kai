@@ -114,7 +114,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0309` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Gentoo. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0334` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Alpine Linux. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0459` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Slackware. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify likely failure cause and a reversible next step; do not restart or edit
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0484` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose a service using logs and dependencies on Void Linux. Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

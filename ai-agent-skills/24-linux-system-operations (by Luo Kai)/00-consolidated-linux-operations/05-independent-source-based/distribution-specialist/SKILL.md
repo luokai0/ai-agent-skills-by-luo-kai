@@ -114,7 +114,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0325` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Gentoo. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0350` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Alpine Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0475` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Slackware. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0500` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Void Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

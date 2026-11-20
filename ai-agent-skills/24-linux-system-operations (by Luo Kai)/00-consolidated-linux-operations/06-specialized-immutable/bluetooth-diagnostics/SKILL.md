@@ -114,7 +114,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0810` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on openSUSE. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1060` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on NixOS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1185` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Qubes OS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1210` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on SteamOS. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0722` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Fedora. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0797` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Red Hat Enterprise Linux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0897` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on Rocky Linux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map startup entry, scope, executable path, ownership, and enabled state; no disa
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0922` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit desktop autostart and login hooks on AlmaLinux. Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

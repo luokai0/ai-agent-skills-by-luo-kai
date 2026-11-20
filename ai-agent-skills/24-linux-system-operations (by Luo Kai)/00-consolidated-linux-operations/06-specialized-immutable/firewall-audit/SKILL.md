@@ -114,7 +114,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0191` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on openSUSE. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0441` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on NixOS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0566` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on Qubes OS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Map listening ports to processes and firewall policy; propose minimal changes, n
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0591` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit firewall policy and exposed listeners on SteamOS. Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

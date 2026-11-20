@@ -37,9 +37,8 @@ Use when the user needs the check health and readiness workflow in any of these 
 
 ### Profile 1: Windows Wi-Fi, Ethernet, and network adapters
 
-Former domain: 21-wifi-ethernet
+**Domain profile:** 21-wifi-ethernet
 
-Former skill ID: windows-0603
 
 #### Windows Wi-Fi, Ethernet, and network adapters: Check Health And Readiness
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0603` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Check Health And Readiness. Carry out **check health and readiness** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows DNS, firewall, VPN, and secure connectivity
 
-Former domain: 22-dns-firewall-vpn
+**Domain profile:** 22-dns-firewall-vpn
 
-Former skill ID: windows-0633
 
 #### Windows DNS, firewall, VPN, and secure connectivity: Check Health And Readiness
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0633` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Check Health And Readiness. Carry out **check health and readiness** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

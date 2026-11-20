@@ -114,7 +114,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0142` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Kali Linux. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0392` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Zorin OS. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0417` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Parrot OS. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0517` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on MX Linux. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report effective settings and risk findings; configuration edits require approva
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0542` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit SSH server configuration securely on Tails. Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

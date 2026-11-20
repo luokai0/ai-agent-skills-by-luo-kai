@@ -114,7 +114,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0763` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Kali Linux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1013` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Zorin OS. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1038` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Parrot OS. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1138` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on MX Linux. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1163` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Tails. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0321` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Gentoo. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0346` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Alpine Linux. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0471` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Slackware. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report versions and missing dependencies; install only after approval and record
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0496` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect and prepare a development toolchain on Void Linux. Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0630` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Ubuntu. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0655` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Debian. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0680` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Linux Mint. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0855` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Pop!_OS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0980` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on elementary OS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

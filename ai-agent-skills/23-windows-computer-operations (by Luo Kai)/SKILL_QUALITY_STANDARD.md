@@ -1,11 +1,11 @@
 <!-- Copyright (c) 2026 Luo Kai. All rights reserved for original work. -->
 # Windows Skill Quality Standard — v1.1
 
-This standard defines the quality bar for the 1,200 Windows computer-operation skills. “150 times more useful” is treated as a demand for a major practical improvement, not a word-count multiplier. More text without better decisions is not quality.
+This standard defines the quality bar for 360 consolidated Windows computer-operation skills across 40 domains. “150 times more useful” means stronger decisions, safer execution, clearer verification, and more reliable recovery, not artificial length.
 
 ## Required skill behavior
 
-Every skill preserves its original objective, stable ID, native tools, and domain-specific instructions, and includes an **Agent execution contract — v1.1**. That contract binds the agent to the exact domain and task; identifies the target device, user session, application, and object; establishes a read-only baseline; classifies risk; gives task-specific control points; states when explicit approval is required; defines independent success evidence; and describes stop/recovery and handoff behavior.
+Every consolidated skill preserves its task objective, native tools, complete domain-specific procedures, and operating safeguards, and includes the relevant **Agent execution contract — v1.1**. That contract binds the agent to the exact domain and task; identifies the target device, user session, application, and object; establishes a read-only baseline; classifies risk; gives task-specific control points; states when explicit approval is required; defines independent success evidence; and describes stop/recovery and handoff behavior.
 
 ## Execution rules
 
@@ -18,7 +18,7 @@ Every skill preserves its original objective, stable ID, native tools, and domai
 
 ## Acceptance checklist
 
-1. YAML frontmatter parses and the original `windows-####` ID is unchanged.
+1. YAML frontmatter parses; the consolidated skill ID is stable, unique, and uses the required group/workflow format.
 2. The task objective and domain scope remain intact.
 3. The v1.1 execution contract names the exact task and domain.
 4. Read-only diagnostics are distinguished from state-changing actions.

@@ -114,7 +114,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0187` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on openSUSE. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0437` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on NixOS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0562` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on Qubes OS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify the affected mount and evidence-based candidates; preserve user data an
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0587` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess disk capacity and filesystem pressure on SteamOS. Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

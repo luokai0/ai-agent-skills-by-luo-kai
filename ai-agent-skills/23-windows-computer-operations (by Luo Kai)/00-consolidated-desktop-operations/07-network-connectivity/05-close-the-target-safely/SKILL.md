@@ -37,9 +37,8 @@ Use when the user needs the close the target safely workflow in any of these dom
 
 ### Profile 1: Windows Wi-Fi, Ethernet, and network adapters
 
-Former domain: 21-wifi-ethernet
+**Domain profile:** 21-wifi-ethernet
 
-Former skill ID: windows-0605
 
 #### Windows Wi-Fi, Ethernet, and network adapters: Close The Target Safely
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0605` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Close The Target Safely. Carry out **close the target safely** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows DNS, firewall, VPN, and secure connectivity
 
-Former domain: 22-dns-firewall-vpn
+**Domain profile:** 22-dns-firewall-vpn
 
-Former skill ID: windows-0635
 
 #### Windows DNS, firewall, VPN, and secure connectivity: Close The Target Safely
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0635` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Close The Target Safely. Carry out **close the target safely** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

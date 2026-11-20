@@ -114,7 +114,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0806` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on openSUSE. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1056` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on NixOS. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1181` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Qubes OS. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1206` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on SteamOS. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0131` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Kali Linux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0381` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Zorin OS. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0406` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Parrot OS. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0506` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on MX Linux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0531` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Tails. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

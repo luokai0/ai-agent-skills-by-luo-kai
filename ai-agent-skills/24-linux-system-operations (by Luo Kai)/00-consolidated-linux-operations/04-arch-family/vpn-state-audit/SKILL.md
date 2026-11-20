@@ -114,7 +114,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0742` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Arch Linux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0842` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Manjaro. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report active tunnel/interface and route/DNS coverage with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1242` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect VPN and tunnel state on Garuda Linux. Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

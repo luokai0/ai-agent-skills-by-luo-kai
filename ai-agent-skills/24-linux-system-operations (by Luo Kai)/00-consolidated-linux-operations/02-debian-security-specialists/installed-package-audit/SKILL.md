@@ -114,7 +114,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0132` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Kali Linux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0382` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Zorin OS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0407` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Parrot OS. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0507` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on MX Linux. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Produce a review list with evidence and avoid removal; verify package database i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0532` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit installed packages and provenance on Tails. Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

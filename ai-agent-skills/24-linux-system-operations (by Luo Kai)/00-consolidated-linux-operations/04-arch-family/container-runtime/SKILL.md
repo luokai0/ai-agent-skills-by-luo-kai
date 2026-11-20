@@ -114,7 +114,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0122` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Arch Linux. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0222` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Manjaro. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0622` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Garuda Linux. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

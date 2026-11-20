@@ -114,7 +114,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0933` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Gentoo. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0958` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Alpine Linux. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1083` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Slackware. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify enforcing state and narrow denial evidence; recommend policy-specific d
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1108` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect SELinux or AppArmor enforcement on Void Linux. Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

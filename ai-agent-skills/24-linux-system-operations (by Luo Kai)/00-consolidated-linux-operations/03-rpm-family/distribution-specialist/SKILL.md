@@ -114,7 +114,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0100` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Fedora. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0175` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Red Hat Enterprise Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0275` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Rocky Linux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0300` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on AlmaLinux. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

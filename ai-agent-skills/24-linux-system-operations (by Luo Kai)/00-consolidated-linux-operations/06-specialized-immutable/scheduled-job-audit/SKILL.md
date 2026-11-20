@@ -114,7 +114,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0195` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on openSUSE. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0445` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on NixOS. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0570` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on Qubes OS. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0595` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on SteamOS. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

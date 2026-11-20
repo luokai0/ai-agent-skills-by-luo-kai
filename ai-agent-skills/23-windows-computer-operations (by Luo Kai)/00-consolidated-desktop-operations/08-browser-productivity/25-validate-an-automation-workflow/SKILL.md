@@ -37,9 +37,8 @@ Use when the user needs the validate an automation workflow workflow in any of t
 
 ### Profile 1: Windows Browsers, web apps, and downloads
 
-Former domain: 23-browser-webapps
+**Domain profile:** 23-browser-webapps
 
-Former skill ID: windows-0685
 
 #### Windows Browsers, web apps, and downloads: Validate An Automation Workflow
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0685` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Browsers, web apps, and downloads: Validate An Automation Workflow. Carry out **validate an automation workflow** for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Office and productivity applications
 
-Former domain: 24-office-productivity
+**Domain profile:** 24-office-productivity
 
-Former skill ID: windows-0715
 
 #### Windows Office and productivity applications: Validate An Automation Workflow
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0715` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Office and productivity applications: Validate An Automation Workflow. Carry out **validate an automation workflow** for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

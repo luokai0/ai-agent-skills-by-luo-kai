@@ -114,7 +114,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0129` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Kali Linux. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0379` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Zorin OS. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0404` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Parrot OS. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0504` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on MX Linux. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0529` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Tails. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

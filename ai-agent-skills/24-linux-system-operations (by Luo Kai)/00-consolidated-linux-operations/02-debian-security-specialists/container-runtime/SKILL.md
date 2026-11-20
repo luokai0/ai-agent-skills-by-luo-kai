@@ -114,7 +114,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0147` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Kali Linux. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0397` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Zorin OS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0422` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Parrot OS. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0522` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on MX Linux. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report runtime, rootless capability, socket exposure, and installed image trust 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0547` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect container and isolation tooling on Tails. Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

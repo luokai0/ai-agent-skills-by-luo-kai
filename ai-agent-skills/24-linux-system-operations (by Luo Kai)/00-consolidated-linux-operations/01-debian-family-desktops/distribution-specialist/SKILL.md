@@ -114,7 +114,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0025` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Ubuntu. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0050` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Debian. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0075` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Linux Mint. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0250` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on Pop!_OS. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Verify the specialist tool's state and preserve its rollback/recovery mechanism;
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0375` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Use distribution-specific maintenance tools safely on elementary OS. Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

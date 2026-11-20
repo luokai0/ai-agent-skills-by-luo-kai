@@ -114,7 +114,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0770` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Kali Linux. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1020` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Zorin OS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1045` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Parrot OS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1145` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on MX Linux. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1170` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Tails. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -37,9 +37,8 @@ Use when the user needs the restore a prior item workflow in any of these domain
 
 ### Profile 1: Windows search and file metadata
 
-Former domain: 07-search-metadata
+**Domain profile:** 07-search-metadata
 
-Former skill ID: windows-0195
 
 #### Windows search and file metadata: Restore A Prior Item
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0195` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows search and file metadata: Restore A Prior Item. Carry out **restore a prior item** for search indexing, filters, metadata, file properties, and content discovery. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Archives, downloads, and file transfer
 
-Former domain: 08-archives-transfer
+**Domain profile:** 08-archives-transfer
 
-Former skill ID: windows-0225
 
 #### Windows Archives, downloads, and file transfer: Restore A Prior Item
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0225` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Archives, downloads, and file transfer: Restore A Prior Item. Carry out **restore a prior item** for zip archives, downloads, removable media, and safe local file transfers. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Storage, partitions, and volumes
 
-Former domain: 09-storage-volumes
+**Domain profile:** 09-storage-volumes
 
-Former skill ID: windows-0255
 
 #### Windows Storage, partitions, and volumes: Restore A Prior Item
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0255` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
+**Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
 **Exact task:** Windows Storage, partitions, and volumes: Restore A Prior Item. Carry out **restore a prior item** for disk space, volumes, removable storage, filesystem health indicators, and storage settings. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

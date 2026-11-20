@@ -114,7 +114,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0813` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on openSUSE. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1063` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on NixOS. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1188` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on Qubes OS. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-driver binding and acceleration evidence; note missing optional
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1213` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit GPU driver binding and acceleration on SteamOS. Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

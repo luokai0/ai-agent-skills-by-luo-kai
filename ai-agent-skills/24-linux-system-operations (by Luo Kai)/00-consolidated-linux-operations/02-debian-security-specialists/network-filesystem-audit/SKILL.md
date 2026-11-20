@@ -114,7 +114,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0769` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Kali Linux. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1019` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Zorin OS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1044` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Parrot OS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1144` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on MX Linux. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1169` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Tails. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

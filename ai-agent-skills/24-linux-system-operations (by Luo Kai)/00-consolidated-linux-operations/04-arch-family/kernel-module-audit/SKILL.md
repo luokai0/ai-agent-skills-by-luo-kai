@@ -114,7 +114,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0726` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Arch Linux. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0826` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Manjaro. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1226` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Garuda Linux. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

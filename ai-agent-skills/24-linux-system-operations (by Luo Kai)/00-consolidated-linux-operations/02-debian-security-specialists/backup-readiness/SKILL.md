@@ -114,7 +114,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0148` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Kali Linux. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0398` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Zorin OS. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0423` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Parrot OS. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0523` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on MX Linux. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0548` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Tails. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

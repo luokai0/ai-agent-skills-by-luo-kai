@@ -114,7 +114,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0774` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Kali Linux. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1024` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Zorin OS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1049` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Parrot OS. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1149` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on MX Linux. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report available settings and current state; apply changes only to the user's re
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1174` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect desktop accessibility settings on Tails. Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

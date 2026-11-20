@@ -114,7 +114,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0631` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Ubuntu. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0656` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Debian. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0681` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Linux Mint. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0856` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on Pop!_OS. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report snapshot coverage and metadata/data space; distinguish snapshots from ind
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0981` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect Btrfs subvolumes and snapshots on elementary OS. Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

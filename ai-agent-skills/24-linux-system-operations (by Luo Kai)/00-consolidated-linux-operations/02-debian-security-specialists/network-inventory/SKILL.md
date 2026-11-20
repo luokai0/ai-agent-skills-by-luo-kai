@@ -114,7 +114,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0139` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Kali Linux. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0389` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Zorin OS. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0414` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Parrot OS. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0514` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on MX Linux. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0539` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Tails. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

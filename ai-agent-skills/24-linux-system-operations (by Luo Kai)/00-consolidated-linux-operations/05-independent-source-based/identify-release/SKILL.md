@@ -114,7 +114,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0301` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Gentoo. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0326` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Alpine Linux. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0451` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Slackware. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record exact release and whether it is supported; if identity is ambiguous, stop
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0476` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Identify distribution and release on Void Linux. Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

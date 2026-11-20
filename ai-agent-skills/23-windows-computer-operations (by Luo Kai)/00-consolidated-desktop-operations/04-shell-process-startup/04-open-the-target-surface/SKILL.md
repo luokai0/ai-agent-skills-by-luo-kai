@@ -37,9 +37,8 @@ Use when the user needs the open the target surface workflow in any of these dom
 
 ### Profile 1: Windows PowerShell fundamentals
 
-Former domain: 10-powershell-fundamentals
+**Domain profile:** 10-powershell-fundamentals
 
-Former skill ID: windows-0274
 
 #### Windows PowerShell fundamentals: Open The Target Surface
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0274` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows PowerShell fundamentals: Open The Target Surface. Carry out **open the target surface** for powershell discovery, safe command execution, objects, pipelines, profiles, and help. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Advanced PowerShell administration
 
-Former domain: 11-powershell-advanced
+**Domain profile:** 11-powershell-advanced
 
-Former skill ID: windows-0304
 
 #### Windows Advanced PowerShell administration: Open The Target Surface
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0304` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Advanced PowerShell administration: Open The Target Surface. Carry out **open the target surface** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows Command Prompt and Windows Terminal
 
-Former domain: 12-terminal-cmd
+**Domain profile:** 12-terminal-cmd
 
-Former skill ID: windows-0334
 
 #### Windows Command Prompt and Windows Terminal: Open The Target Surface
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0334` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Command Prompt and Windows Terminal: Open The Target Surface. Carry out **open the target surface** for terminal profiles, shells, command discovery, environment variables, and command sessions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -328,9 +325,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 4: Windows Processes, services, and applications
 
-Former domain: 13-process-services
+**Domain profile:** 13-process-services
 
-Former skill ID: windows-0364
 
 #### Windows Processes, services, and applications: Open The Target Surface
 
@@ -387,7 +383,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0364` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Processes, services, and applications: Open The Target Surface. Carry out **open the target surface** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -425,9 +421,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 5: Windows Startup, scheduled tasks, and background execution
 
-Former domain: 14-startup-scheduling
+**Domain profile:** 14-startup-scheduling
 
-Former skill ID: windows-0394
 
 #### Windows Startup, scheduled tasks, and background execution: Open The Target Surface
 
@@ -484,7 +479,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0394` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Startup, scheduled tasks, and background execution: Open The Target Surface. Carry out **open the target surface** for startup apps, task scheduler, login tasks, and background execution diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

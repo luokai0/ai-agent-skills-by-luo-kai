@@ -114,7 +114,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0950` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Gentoo. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0975` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Alpine Linux. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1100` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Slackware. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1125` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Void Linux. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0801` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on openSUSE. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1051` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on NixOS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1176` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on Qubes OS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Confirm the module belongs to the active kernel and explain any unsigned or out-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1201` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit kernel modules and load state on SteamOS. Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0723` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Fedora. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0798` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Red Hat Enterprise Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0898` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on Rocky Linux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report crash time, executable, signal, and storage policy while omitting dump co
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0923` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review crash dumps and core-dump policy on AlmaLinux. Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

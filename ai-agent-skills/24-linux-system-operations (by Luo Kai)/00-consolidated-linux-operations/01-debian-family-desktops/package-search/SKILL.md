@@ -114,7 +114,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0004` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Ubuntu. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0029` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Debian. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0054` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Linux Mint. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0229` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on Pop!_OS. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Return exact package name, version, origin, and whether it is maintained in the 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0354` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Search for a package safely on elementary OS. Find the exact package, candidate version, repository origin, architecture, and package description. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

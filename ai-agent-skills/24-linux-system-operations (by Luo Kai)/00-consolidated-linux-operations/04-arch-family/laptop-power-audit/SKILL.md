@@ -114,7 +114,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0739` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Arch Linux. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0839` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Manjaro. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize power source, wear estimate, and profile; distinguish missing telemetr
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1239` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect battery health and power profiles on Garuda Linux. Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

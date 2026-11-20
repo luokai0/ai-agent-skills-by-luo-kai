@@ -37,9 +37,8 @@ Use when the user needs the document a configuration or action workflow in any o
 
 ### Profile 1: Windows Developer workstation setup
 
-Former domain: 25-developer-workstations
+**Domain profile:** 25-developer-workstations
 
-Former skill ID: windows-0747
 
 #### Windows Developer workstation setup: Document A Configuration Or Action
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0747` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Developer workstation setup: Document A Configuration Or Action. Carry out **document a configuration or action** for editors, sdks, compilers, runtimes, environment variables, and local development setup. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Git and source-control operations
 
-Former domain: 26-git-source-control
+**Domain profile:** 26-git-source-control
 
-Former skill ID: windows-0777
 
 #### Windows Git and source-control operations: Document A Configuration Or Action
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0777` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Git and source-control operations: Document A Configuration Or Action. Carry out **document a configuration or action** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -231,9 +229,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 3: Windows WSL, virtual machines, and containers
 
-Former domain: 27-wsl-virtualization
+**Domain profile:** 27-wsl-virtualization
 
-Former skill ID: windows-0807
 
 #### Windows WSL, virtual machines, and containers: Document A Configuration Or Action
 
@@ -290,7 +287,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0807` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows WSL, virtual machines, and containers: Document A Configuration Or Action. Carry out **document a configuration or action** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

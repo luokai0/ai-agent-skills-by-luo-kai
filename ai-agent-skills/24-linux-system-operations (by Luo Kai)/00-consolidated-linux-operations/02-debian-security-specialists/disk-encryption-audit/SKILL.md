@@ -114,7 +114,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0759` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Kali Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1009` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Zorin OS. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1034` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Parrot OS. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1134` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on MX Linux. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report encrypted device mapping and boot dependency risks with secrets redacted.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1159` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect disk encryption and unlock dependencies on Tails. Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0310` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Gentoo. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0335` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Alpine Linux. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0460` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Slackware. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ After approval, restart only the target and verify active state, health endpoint
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0485` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** HIGH — approved mutation only
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** HIGH — approved mutation only
 
 **Exact task:** Restart a named service safely on Void Linux. Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

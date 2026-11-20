@@ -37,9 +37,8 @@ Use when the user needs the check health and readiness workflow in any of these 
 
 ### Profile 1: Windows Browsers, web apps, and downloads
 
-Former domain: 23-browser-webapps
+**Domain profile:** 23-browser-webapps
 
-Former skill ID: windows-0663
 
 #### Windows Browsers, web apps, and downloads: Check Health And Readiness
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0663` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Browsers, web apps, and downloads: Check Health And Readiness. Carry out **check health and readiness** for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows Office and productivity applications
 
-Former domain: 24-office-productivity
+**Domain profile:** 24-office-productivity
 
-Former skill ID: windows-0693
 
 #### Windows Office and productivity applications: Check Health And Readiness
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-0693` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
 **Exact task:** Windows Office and productivity applications: Check Health And Readiness. Carry out **check health and readiness** for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

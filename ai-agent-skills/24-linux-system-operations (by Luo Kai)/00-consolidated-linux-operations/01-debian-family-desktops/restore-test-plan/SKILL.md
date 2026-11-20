@@ -114,7 +114,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0645` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Ubuntu. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0670` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Debian. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0695` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Linux Mint. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0870` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Pop!_OS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0995` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on elementary OS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

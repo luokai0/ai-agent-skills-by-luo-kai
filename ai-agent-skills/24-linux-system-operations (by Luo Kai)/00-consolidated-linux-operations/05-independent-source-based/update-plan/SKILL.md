@@ -114,7 +114,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0306` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Gentoo. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0331` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Alpine Linux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0456` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Slackware. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0481` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Void Linux. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

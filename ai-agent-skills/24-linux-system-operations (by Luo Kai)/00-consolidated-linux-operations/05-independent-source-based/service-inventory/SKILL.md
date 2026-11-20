@@ -114,7 +114,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0308` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Gentoo. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0333` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Alpine Linux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0458` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Slackware. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0483` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Void Linux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

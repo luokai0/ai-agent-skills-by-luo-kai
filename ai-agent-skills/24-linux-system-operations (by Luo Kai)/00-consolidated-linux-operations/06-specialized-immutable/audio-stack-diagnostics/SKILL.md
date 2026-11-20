@@ -114,7 +114,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0812` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on openSUSE. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1062` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on NixOS. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1187` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on Qubes OS. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify active audio stack and missing device/route; confirm a test tone only i
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1212` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose PipeWire, PulseAudio, and ALSA audio paths on SteamOS. Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

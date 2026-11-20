@@ -114,7 +114,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0019` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Ubuntu. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0044` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Debian. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0069` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Linux Mint. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0244` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Pop!_OS. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0369` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on elementary OS. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

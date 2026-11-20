@@ -114,7 +114,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0755` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Kali Linux. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1005` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Zorin OS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1030` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Parrot OS. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1130` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on MX Linux. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Distinguish normal cache use from pressure and OOM activity; recommend workload-
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1155` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose swap usage and memory pressure on Tails. Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

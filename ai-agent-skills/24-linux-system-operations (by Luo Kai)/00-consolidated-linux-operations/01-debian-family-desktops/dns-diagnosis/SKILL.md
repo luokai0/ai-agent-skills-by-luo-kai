@@ -114,7 +114,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0015` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Ubuntu. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0040` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Debian. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0065` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Linux Mint. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0240` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Pop!_OS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0365` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on elementary OS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

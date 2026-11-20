@@ -114,7 +114,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0323` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Gentoo. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0348` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Alpine Linux. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0473` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Slackware. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify last known backup/snapshot and gaps; request a restore test before rely
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0498` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess backup and recovery readiness on Void Linux. Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

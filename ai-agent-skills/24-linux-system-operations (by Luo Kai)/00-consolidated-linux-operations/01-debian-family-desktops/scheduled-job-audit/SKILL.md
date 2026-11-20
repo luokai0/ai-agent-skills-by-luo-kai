@@ -114,7 +114,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0020` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on Ubuntu. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0045` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on Debian. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0070` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on Linux Mint. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0245` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on Pop!_OS. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Summarize schedule, owner, command path, and next run where available; no edits 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0370` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Audit scheduled jobs and startup automation on elementary OS. Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

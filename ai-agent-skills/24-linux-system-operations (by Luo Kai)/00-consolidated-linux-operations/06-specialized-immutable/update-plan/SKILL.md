@@ -114,7 +114,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0181` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on openSUSE. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0431` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on NixOS. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0556` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on Qubes OS. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a transaction summary and reboot impact; do not apply updates unless sep
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0581` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Plan system updates without applying them on SteamOS. Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

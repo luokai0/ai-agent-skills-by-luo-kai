@@ -114,7 +114,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0313` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Gentoo. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0338` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Alpine Linux. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0463` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Slackware. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0488` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Void Linux. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

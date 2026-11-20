@@ -114,7 +114,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0008` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Ubuntu. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0033` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Debian. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0058` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Linux Mint. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0233` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Pop!_OS. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0358` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on elementary OS. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

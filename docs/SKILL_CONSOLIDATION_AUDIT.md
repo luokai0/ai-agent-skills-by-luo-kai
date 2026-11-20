@@ -3,7 +3,7 @@
 **Repository:** `luokai0/ai-agent-skills-by-luo-kai`  
 **Branch:** `main`  
 **Audit date:** 2026-11-20  
-**Status:** Structural and representative-content audit completed; twelve Windows consolidation pilots committed to `main`; the first workflow has now been consolidated across all 40 Windows domains. Remaining workflow batches are still pending.
+**Status:** Windows and Linux consolidation completed on `main`; 660 consolidated operating skills are validated across both collections. The remaining work is ongoing quality, security, and documentation maintenance.
 
 ## Findings
 
@@ -287,13 +287,13 @@ The replacement preserves backup validation, current-disk protection, restore sa
 
 ## Windows workflow consolidation completed — 2026-11-20
 
-The remaining 29 workflows across all 40 Windows domains have been consolidated into 348 profile-based skills across the same 12 domain groups. The 1,160 original standalone files were replaced by 348 consolidated files; every source body is retained inside its domain profile, with only duplicate frontmatter replaced by stable consolidated metadata.
+The remaining 29 workflows across all 40 Windows domains are represented by 348 consolidated skills across the same 12 domain groups. Every domain profile retains its complete procedures, examples, execution controls, verification, and recovery guidance. Redundant profile-identity metadata is not part of the user-facing instructions.
 
 - Previously completed discovery skills: 12
 - New consolidated workflows: 348
 - Windows skills after consolidation: 360
-- Linux skills unchanged: 1,250
-- Combined Windows + Linux workflows: 1,610
+- Linux consolidated skills: 300
+- Combined Windows + Linux workflows: 660
 - Net reduction from the Windows collection: 812 skill files
 - Migration map: docs/SKILL_MERGE_MAP.md
 
@@ -317,3 +317,13 @@ The remaining 29 workflows across all 40 Windows domains have been consolidated 
 - Preserved every original profile body, command, decision point, safety boundary, verification step, and recovery instruction.
 - Retained the 25 distribution README files as supporting documentation and removed only standalone SKILL.md files after mapping.
 - Third-party and per-skill rights-status records remain outside the Luo Kai original-work copyright scope.
+
+
+## Current consolidated state — 2026-11-20
+
+- Windows: 360 consolidated skills across 12 groups and 40 operating domains.
+- Linux: 300 consolidated skills across six groups and 25 distributions.
+- Combined operating collection: 660 consolidated skills.
+- No standalone Windows or Linux task SKILL.md files remain outside the consolidated roots.
+- All consolidated skill frontmatter is authored by Luo Kai, version 1.2.0, and contains no license field.
+- User-facing profile instructions no longer expose retired skill identifiers.

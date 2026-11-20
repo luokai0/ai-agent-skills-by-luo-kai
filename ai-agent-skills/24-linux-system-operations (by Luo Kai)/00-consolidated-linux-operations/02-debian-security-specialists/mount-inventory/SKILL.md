@@ -114,7 +114,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0138` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Kali Linux. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0388` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Zorin OS. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0413` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Parrot OS. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0513` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on MX Linux. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0538` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Tails. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

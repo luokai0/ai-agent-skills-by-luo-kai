@@ -114,7 +114,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0644` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Ubuntu. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0669` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Debian. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0694` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Linux Mint. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0869` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on Pop!_OS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify mount target, protocol, latency symptoms, and relevant kernel messages.
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0994` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect NFS, SMB, and network mount health on elementary OS. Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

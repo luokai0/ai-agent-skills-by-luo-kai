@@ -114,7 +114,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0740` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Arch Linux. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0840` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Manjaro. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report observed temperature/frequency/load with timestamp and recommend cooling/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1240` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose thermal throttling and system performance on Garuda Linux. Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

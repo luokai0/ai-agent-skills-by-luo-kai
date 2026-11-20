@@ -114,7 +114,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0935` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Gentoo. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0960` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Alpine Linux. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1085` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Slackware. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify adapter/daemon state and likely radio or pairing issue; no pairing chan
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1110` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose Bluetooth adapter and pairing state on Void Linux. Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

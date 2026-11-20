@@ -114,7 +114,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0188` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on openSUSE. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0438` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on NixOS. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0563` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on Qubes OS. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report device-to-mount mapping, read-only state, encryption visibility, and any 
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0588` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory mounts, encryption, and removable media on SteamOS. Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

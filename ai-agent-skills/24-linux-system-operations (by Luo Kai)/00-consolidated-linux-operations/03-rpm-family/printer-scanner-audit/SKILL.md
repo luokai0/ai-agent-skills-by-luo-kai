@@ -114,7 +114,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0711` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Fedora. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0786` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Red Hat Enterprise Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0886` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Rocky Linux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0911` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on AlmaLinux. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

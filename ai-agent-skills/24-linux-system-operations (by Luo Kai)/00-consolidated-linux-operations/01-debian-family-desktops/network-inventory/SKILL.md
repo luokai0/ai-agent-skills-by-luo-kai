@@ -114,7 +114,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0014` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Ubuntu. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0039` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Debian. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0064` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Linux Mint. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0239` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on Pop!_OS. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Identify interface, route, link, and likely fault layer; preserve current connec
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0364` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose network interfaces and routes on elementary OS. Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0636` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Ubuntu. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0661` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Debian. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0686` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Linux Mint. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0861` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on Pop!_OS. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report queue, backend, driver, and scanner visibility; preserve all pending jobs
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0986` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect printer and scanner discovery on elementary OS. Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

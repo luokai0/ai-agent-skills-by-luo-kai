@@ -114,7 +114,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0140` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Kali Linux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0390` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Zorin OS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0415` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Parrot OS. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0515` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on MX Linux. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Compare direct IP reachability with name resolution; do not overwrite resolver s
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0540` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Diagnose DNS and resolver configuration on Tails. Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

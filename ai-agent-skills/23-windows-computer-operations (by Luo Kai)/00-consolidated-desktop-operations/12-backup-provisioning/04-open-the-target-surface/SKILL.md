@@ -37,9 +37,8 @@ Use when the user needs the open the target surface workflow in any of these dom
 
 ### Profile 1: Windows Backup, restore, and recovery
 
-Former domain: 39-backup-recovery
+**Domain profile:** 39-backup-recovery
 
-Former skill ID: windows-1144
 
 #### Windows Backup, restore, and recovery: Open The Target Surface
 
@@ -96,7 +95,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1144` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows Backup, restore, and recovery: Open The Target Surface. Carry out **open the target surface** for file history, onedrive sync, restore points, recovery environment, and restore planning. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
@@ -134,9 +133,8 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 ### Profile 2: Windows provisioning and account lifecycle
 
-Former domain: 40-provisioning-accounts
+**Domain profile:** 40-provisioning-accounts
 
-Former skill ID: windows-1174
 
 #### Windows provisioning and account lifecycle: Open The Target Surface
 
@@ -193,7 +191,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 ##### Agent execution contract — v1.1
 
-**Former skill identity (retired):** `windows-1174` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
+**Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
 **Exact task:** Windows provisioning and account lifecycle: Open The Target Surface. Carry out **open the target surface** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 

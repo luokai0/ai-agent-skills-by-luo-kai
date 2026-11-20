@@ -114,7 +114,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0108` · **Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Arch Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Arch Linux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Arch Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0208` · **Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Manjaro` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Manjaro. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Manjaro; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report exact service manager, unit names, state, and boot enablement; no enable/
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0608` · **Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Garuda Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory service manager and services on Garuda Linux. Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Garuda Linux; verifies release and prerequisites before any system change.
 
@@ -444,4 +444,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

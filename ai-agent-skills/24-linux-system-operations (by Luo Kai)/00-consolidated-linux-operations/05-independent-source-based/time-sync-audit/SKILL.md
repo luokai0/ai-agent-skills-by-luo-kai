@@ -114,7 +114,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0943` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Gentoo. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0968` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Alpine Linux. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1093` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Slackware. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report timezone, sync service, offset, and source; separate unsynchronized state
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1118` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inspect clock synchronization and timezone on Void Linux. Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

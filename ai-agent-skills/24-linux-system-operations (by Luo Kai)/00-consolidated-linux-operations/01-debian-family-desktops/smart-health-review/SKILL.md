@@ -114,7 +114,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0628` · **Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Ubuntu` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Ubuntu. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Ubuntu; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0653` · **Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Debian` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Debian. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Debian; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0678` · **Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Linux Mint` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Linux Mint. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Linux Mint; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0853` · **Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Pop!_OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Pop!_OS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Pop!_OS; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0978` · **Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `elementary OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on elementary OS. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to elementary OS; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0319` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Gentoo. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0344` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Alpine Linux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0469` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Slackware. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a timeline with exact timestamps, source units, and confidence; preserve
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0494` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review system logs for a reported incident on Void Linux. Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

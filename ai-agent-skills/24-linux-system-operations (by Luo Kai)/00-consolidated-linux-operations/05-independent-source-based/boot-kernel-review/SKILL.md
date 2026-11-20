@@ -114,7 +114,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0318` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Gentoo. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0343` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Alpine Linux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0468` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Slackware. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Record current boot mode and kernel args; flag unsupported or unexpected paramet
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0493` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review bootloader and kernel parameters on Void Linux. Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

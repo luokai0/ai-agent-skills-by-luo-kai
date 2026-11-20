@@ -114,7 +114,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0825` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on openSUSE. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1075` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on NixOS. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1200` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Qubes OS. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1225` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on SteamOS. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

@@ -114,7 +114,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0820` · **Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `openSUSE` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on openSUSE. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to openSUSE; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1070` · **Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `NixOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on NixOS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to NixOS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1195` · **Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Qubes OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on Qubes OS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Qubes OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Provide a restore test plan that writes only to a new isolated path after approv
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1220` · **Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `SteamOS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Prepare a safe backup restore test on SteamOS. Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to SteamOS; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

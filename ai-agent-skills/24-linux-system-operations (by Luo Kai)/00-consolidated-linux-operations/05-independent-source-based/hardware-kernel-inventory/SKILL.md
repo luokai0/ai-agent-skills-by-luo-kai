@@ -114,7 +114,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0302` · **Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Gentoo` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Gentoo. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Gentoo; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0327` · **Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Alpine Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Alpine Linux. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Alpine Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0452` · **Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Slackware` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Slackware. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Slackware; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Cross-check hardware model against kernel and driver state; redact serial number
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0477` · **Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Void Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Inventory hardware and kernel on Void Linux. Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Void Linux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

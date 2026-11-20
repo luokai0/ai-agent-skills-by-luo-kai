@@ -114,7 +114,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0703` · **Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Fedora` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Fedora. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Fedora; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0778` · **Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Red Hat Enterprise Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Red Hat Enterprise Linux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0878` · **Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Rocky Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on Rocky Linux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Rocky Linux; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Summarize reallocated/pending sectors, media errors, temperature, wear, and tren
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0903` · **Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `AlmaLinux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Review disk SMART health and error trends on AlmaLinux. Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to AlmaLinux; verifies release and prerequisites before any system change.
 
@@ -572,4 +572,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-

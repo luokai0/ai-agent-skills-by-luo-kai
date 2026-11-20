@@ -114,7 +114,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-0775` · **Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Kali Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Kali Linux. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Kali Linux; verifies release and prerequisites before any system change.
 
@@ -242,7 +242,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1025` · **Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Zorin OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Zorin OS. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Zorin OS; verifies release and prerequisites before any system change.
 
@@ -370,7 +370,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1050` · **Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Parrot OS` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Parrot OS. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Parrot OS; verifies release and prerequisites before any system change.
 
@@ -498,7 +498,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1150` · **Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `MX Linux` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on MX Linux. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to MX Linux; verifies release and prerequisites before any system change.
 
@@ -626,7 +626,7 @@ Report whether a supported recovery path exists and what user-controlled media o
 
 ##### Agent execution contract — v1.1
 
-**Skill identity:** `linux-1175` · **Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
+**Version:** `1.1.0` · **Distribution:** `Tails` · **Risk:** LOW — read-only inspection/planning
 
 **Exact task:** Assess boot and recovery options on Tails. Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Tails; verifies release and prerequisites before any system change.
 
@@ -700,4 +700,3 @@ Collect only necessary evidence. Redact secrets, tokens, private keys, password 
 - Remaining risks and recovery state reported.
 
 Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill. See COPYRIGHT.md.
-
