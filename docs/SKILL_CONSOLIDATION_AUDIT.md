@@ -173,3 +173,21 @@ The replacement retains separate profiles for policy, apps, packages, servicing,
 - **Windows skill count after five pilots:** 1,186.
 - **Combined Windows + Linux count after five pilots:** 2,436.
 - **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
+
+
+### Sixth pilot: Windows input, output, and peripheral discovery
+
+Three independently authored workflows were consolidated into `windows-consolidated-0006`:
+
+- Displays, audio, cameras, and input devices — `windows-0571`.
+- Clipboard, keyboard layouts, and text entry — `windows-1081`.
+- Printers, scanners, docks, and peripherals — `windows-1111`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/06-discover-input-output-peripherals/SKILL.md`.
+
+The replacement preserves separate profiles for displays/audio/cameras, clipboard/text entry, and peripheral queues. It retains sensor-consent safeguards, clipboard privacy, accessibility preferences, and print-queue preservation.
+
+- **Commit:** [9af0505](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/9af05054d516dcd237f4eacff43d79e2753e2d9d)
+- **Windows skill count after six pilots:** 1,184.
+- **Combined Windows + Linux count after six pilots:** 2,434.
+- **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
