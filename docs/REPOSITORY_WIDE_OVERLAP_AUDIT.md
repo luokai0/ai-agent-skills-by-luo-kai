@@ -1427,5 +1427,21 @@ Additional candidate groups not expanded here: 2,460. Narrow by collection or ca
 5. Validate frontmatter, references, examples, and safety boundaries before retiring redundant entries.
 6. Keep third-party notices and license terms where required. Original Luo Kai work must not receive a license field unless explicitly requested.
 
+## Verified-original maintenance update (2026-11-20)
+
+The six skills explicitly marked as original by Luo Kai were reviewed for overlap and retained as separate capabilities. Each has since been expanded to version 1.1.0 without removing its prior procedures:
+
+- Agent Evaluation Design: dataset governance, leakage prevention, statistical interpretation, judge validation, and production feedback.
+- Skill Supply Chain Audit: artifact integrity, build provenance, dependency inventories, installation-path review, and risk-tiered assessment.
+- MCP Server Hardening: HTTP authorization protections, session lifecycle, capability inventory, downstream controls, and regression coverage.
+- Agent Observability: SLI/SLO definitions, telemetry cardinality, asynchronous tracing, telemetry-failure safety, and incident operations.
+- Prompt Injection Defense: deterministic enforcement, trust-label propagation, multimodal inputs, retrieval isolation, and false-positive handling.
+- AI-Generated Change Verification: binary artifacts, data migrations, concurrency, negative security tests, CI gates, and independent review.
+
+All six files were re-read from the main branch and passed structural checks for expected name, author, original provenance, version 1.1.0, absence of a per-skill license field, unique numbered sections, and retained substantive content. The detailed review is recorded in [VERIFIED_ORIGINAL_SKILLS_REVIEW.md](VERIFIED_ORIGINAL_SKILLS_REVIEW.md).
+
+This maintenance pass does not change the repository-wide ownership counts or authorize consolidation of unverified or third-party candidates.
+
+---
 ---
 Copyright (c) 2026 Luo Kai. All rights reserved for original audit tooling and report text.
