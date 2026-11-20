@@ -117,3 +117,17 @@ The replacement preserves sensor-consent safeguards, clipboard privacy, accessib
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/22-dns-firewall-vpn/01-discover-current-state/SKILL.md`
 
 The replacement preserves layered connectivity diagnosis and the distinct safeguards for unknown networks, corporate settings, private routes, firewall, VPN, and TLS.
+
+
+### Windows browser and productivity application discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/08-discover-browser-and-productivity-apps/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0008`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Browser profiles, tabs, downloads, site permissions, web app sessions; documents, spreadsheets, presentations, mail, calendars, collaboration tools, autosave, version history, and sharing scope.
+- **Retired IDs:** `windows-0661`, `windows-0691`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/23-browser-webapps/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/24-office-productivity/01-discover-current-state/SKILL.md`
+
+The replacement preserves browser-session confidentiality and productivity safeguards for unsent messages, unsaved documents, recipient identity, sharing scope, and version recovery.
