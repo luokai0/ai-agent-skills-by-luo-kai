@@ -1,2 +1,0 @@
-# Git Federation Searcher
-# No external dependencies - uses Python standard library
