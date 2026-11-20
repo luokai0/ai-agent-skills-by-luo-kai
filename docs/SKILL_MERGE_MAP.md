@@ -24,3 +24,18 @@ The replacement combines repeated operating discipline while retaining each prof
 4. Assign a stable replacement ID and version; record every retired ID and path.
 5. Update catalogs, installation references, collection counts, README content, and validation workflows in the same migration batch.
 6. Do not remove third-party notices or represent third-party material as original.
+
+
+### Windows workspace and file discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/02-discover-workspace-and-files/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0002`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Start menu, pinned apps, taskbar controls, quick settings, system tray and notifications; File Explorer windows, address bar, navigation, libraries and views; file/folder identity, metadata, hash checks, and safe operation planning.
+- **Retired IDs:** `windows-0091`, `windows-0121`, `windows-0151`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/04-start-taskbar/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/05-file-explorer/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/06-file-operations/01-discover-current-state/SKILL.md`
+
+The replacement retains separate profiles for shell/taskbar, Explorer navigation, and file integrity/operation planning. File discovery remains read-only; destructive or externally visible actions require a separate request and approval.
