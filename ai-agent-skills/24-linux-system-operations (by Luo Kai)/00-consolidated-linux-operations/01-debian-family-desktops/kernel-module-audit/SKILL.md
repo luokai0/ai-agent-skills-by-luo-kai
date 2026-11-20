@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Ubuntu
 
 - Distribution profile: `Ubuntu`
-- Preserved skill ID: `linux-0626`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Ubuntu
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Debian
 
 - Distribution profile: `Debian`
-- Preserved skill ID: `linux-0651`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Debian
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Linux Mint
 
 - Distribution profile: `Linux Mint`
-- Preserved skill ID: `linux-0676`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Linux Mint
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: Pop!_OS
 
 - Distribution profile: `Pop!_OS`
-- Preserved skill ID: `linux-0851`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Pop!_OS
@@ -545,7 +541,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 5: elementary OS
 
 - Distribution profile: `elementary OS`
-- Preserved skill ID: `linux-0976`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on elementary OS

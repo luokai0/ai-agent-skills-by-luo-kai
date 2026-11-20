@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Arch Linux
 
 - Distribution profile: `Arch Linux`
-- Preserved skill ID: `linux-0733`
 - Workflow: `mandatory-access-control-audit`
 
 #### Inspect SELinux or AppArmor enforcement on Arch Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Manjaro
 
 - Distribution profile: `Manjaro`
-- Preserved skill ID: `linux-0833`
 - Workflow: `mandatory-access-control-audit`
 
 #### Inspect SELinux or AppArmor enforcement on Manjaro
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Garuda Linux
 
 - Distribution profile: `Garuda Linux`
-- Preserved skill ID: `linux-1233`
 - Workflow: `mandatory-access-control-audit`
 
 #### Inspect SELinux or AppArmor enforcement on Garuda Linux

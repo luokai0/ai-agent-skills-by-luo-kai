@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Kali Linux
 
 - Distribution profile: `Kali Linux`
-- Preserved skill ID: `linux-0129`
 - Workflow: `package-search`
 
 #### Search for a package safely on Kali Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Zorin OS
 
 - Distribution profile: `Zorin OS`
-- Preserved skill ID: `linux-0379`
 - Workflow: `package-search`
 
 #### Search for a package safely on Zorin OS
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Parrot OS
 
 - Distribution profile: `Parrot OS`
-- Preserved skill ID: `linux-0404`
 - Workflow: `package-search`
 
 #### Search for a package safely on Parrot OS
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: MX Linux
 
 - Distribution profile: `MX Linux`
-- Preserved skill ID: `linux-0504`
 - Workflow: `package-search`
 
 #### Search for a package safely on MX Linux
@@ -545,7 +541,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 5: Tails
 
 - Distribution profile: `Tails`
-- Preserved skill ID: `linux-0529`
 - Workflow: `package-search`
 
 #### Search for a package safely on Tails

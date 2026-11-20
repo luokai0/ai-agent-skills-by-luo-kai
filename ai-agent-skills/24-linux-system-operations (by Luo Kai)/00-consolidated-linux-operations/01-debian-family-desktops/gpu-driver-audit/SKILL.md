@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Ubuntu
 
 - Distribution profile: `Ubuntu`
-- Preserved skill ID: `linux-0638`
 - Workflow: `gpu-driver-audit`
 
 #### Audit GPU driver binding and acceleration on Ubuntu
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Debian
 
 - Distribution profile: `Debian`
-- Preserved skill ID: `linux-0663`
 - Workflow: `gpu-driver-audit`
 
 #### Audit GPU driver binding and acceleration on Debian
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Linux Mint
 
 - Distribution profile: `Linux Mint`
-- Preserved skill ID: `linux-0688`
 - Workflow: `gpu-driver-audit`
 
 #### Audit GPU driver binding and acceleration on Linux Mint
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: Pop!_OS
 
 - Distribution profile: `Pop!_OS`
-- Preserved skill ID: `linux-0863`
 - Workflow: `gpu-driver-audit`
 
 #### Audit GPU driver binding and acceleration on Pop!_OS
@@ -545,7 +541,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 5: elementary OS
 
 - Distribution profile: `elementary OS`
-- Preserved skill ID: `linux-0988`
 - Workflow: `gpu-driver-audit`
 
 #### Audit GPU driver binding and acceleration on elementary OS

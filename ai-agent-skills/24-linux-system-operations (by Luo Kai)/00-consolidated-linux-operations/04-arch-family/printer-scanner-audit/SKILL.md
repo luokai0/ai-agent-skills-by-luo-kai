@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Arch Linux
 
 - Distribution profile: `Arch Linux`
-- Preserved skill ID: `linux-0736`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Arch Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Manjaro
 
 - Distribution profile: `Manjaro`
-- Preserved skill ID: `linux-0836`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Manjaro
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Garuda Linux
 
 - Distribution profile: `Garuda Linux`
-- Preserved skill ID: `linux-1236`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Garuda Linux

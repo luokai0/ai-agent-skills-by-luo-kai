@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Gentoo
 
 - Distribution profile: `Gentoo`
-- Preserved skill ID: `linux-0936`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Gentoo
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Alpine Linux
 
 - Distribution profile: `Alpine Linux`
-- Preserved skill ID: `linux-0961`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Alpine Linux
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Slackware
 
 - Distribution profile: `Slackware`
-- Preserved skill ID: `linux-1086`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Slackware
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: Void Linux
 
 - Distribution profile: `Void Linux`
-- Preserved skill ID: `linux-1111`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Void Linux

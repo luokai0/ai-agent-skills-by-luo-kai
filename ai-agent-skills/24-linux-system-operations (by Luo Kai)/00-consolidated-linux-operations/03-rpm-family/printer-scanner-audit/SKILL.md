@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Fedora
 
 - Distribution profile: `Fedora`
-- Preserved skill ID: `linux-0711`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Fedora
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Red Hat Enterprise Linux
 
 - Distribution profile: `Red Hat Enterprise Linux`
-- Preserved skill ID: `linux-0786`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Red Hat Enterprise Linux
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Rocky Linux
 
 - Distribution profile: `Rocky Linux`
-- Preserved skill ID: `linux-0886`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on Rocky Linux
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: AlmaLinux
 
 - Distribution profile: `AlmaLinux`
-- Preserved skill ID: `linux-0911`
 - Workflow: `printer-scanner-audit`
 
 #### Inspect printer and scanner discovery on AlmaLinux

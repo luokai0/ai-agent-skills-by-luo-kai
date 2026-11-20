@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: openSUSE
 
 - Distribution profile: `openSUSE`
-- Preserved skill ID: `linux-0191`
 - Workflow: `firewall-audit`
 
 #### Audit firewall policy and exposed listeners on openSUSE
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: NixOS
 
 - Distribution profile: `NixOS`
-- Preserved skill ID: `linux-0441`
 - Workflow: `firewall-audit`
 
 #### Audit firewall policy and exposed listeners on NixOS
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Qubes OS
 
 - Distribution profile: `Qubes OS`
-- Preserved skill ID: `linux-0566`
 - Workflow: `firewall-audit`
 
 #### Audit firewall policy and exposed listeners on Qubes OS
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: SteamOS
 
 - Distribution profile: `SteamOS`
-- Preserved skill ID: `linux-0591`
 - Workflow: `firewall-audit`
 
 #### Audit firewall policy and exposed listeners on SteamOS

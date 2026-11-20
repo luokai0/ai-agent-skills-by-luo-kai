@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Gentoo
 
 - Distribution profile: `Gentoo`
-- Preserved skill ID: `linux-0932`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Gentoo
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Alpine Linux
 
 - Distribution profile: `Alpine Linux`
-- Preserved skill ID: `linux-0957`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Alpine Linux
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Slackware
 
 - Distribution profile: `Slackware`
-- Preserved skill ID: `linux-1082`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Slackware
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: Void Linux
 
 - Distribution profile: `Void Linux`
-- Preserved skill ID: `linux-1107`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Void Linux

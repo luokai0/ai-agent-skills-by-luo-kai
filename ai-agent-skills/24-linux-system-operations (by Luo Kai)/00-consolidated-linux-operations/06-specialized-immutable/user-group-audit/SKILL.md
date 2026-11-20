@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: openSUSE
 
 - Distribution profile: `openSUSE`
-- Preserved skill ID: `linux-0186`
 - Workflow: `user-group-audit`
 
 #### Audit local users, groups, and privilege boundaries on openSUSE
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: NixOS
 
 - Distribution profile: `NixOS`
-- Preserved skill ID: `linux-0436`
 - Workflow: `user-group-audit`
 
 #### Audit local users, groups, and privilege boundaries on NixOS
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Qubes OS
 
 - Distribution profile: `Qubes OS`
-- Preserved skill ID: `linux-0561`
 - Workflow: `user-group-audit`
 
 #### Audit local users, groups, and privilege boundaries on Qubes OS
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: SteamOS
 
 - Distribution profile: `SteamOS`
-- Preserved skill ID: `linux-0586`
 - Workflow: `user-group-audit`
 
 #### Audit local users, groups, and privilege boundaries on SteamOS

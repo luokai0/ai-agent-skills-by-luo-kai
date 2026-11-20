@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Fedora
 
 - Distribution profile: `Fedora`
-- Preserved skill ID: `linux-0080`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on Fedora
@@ -163,7 +162,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Red Hat Enterprise Linux
 
 - Distribution profile: `Red Hat Enterprise Linux`
-- Preserved skill ID: `linux-0155`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on Red Hat Enterprise Linux
@@ -293,7 +291,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Rocky Linux
 
 - Distribution profile: `Rocky Linux`
-- Preserved skill ID: `linux-0255`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on Rocky Linux
@@ -423,7 +420,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: AlmaLinux
 
 - Distribution profile: `AlmaLinux`
-- Preserved skill ID: `linux-0280`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on AlmaLinux

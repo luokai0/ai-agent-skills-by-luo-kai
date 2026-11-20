@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Arch Linux
 
 - Distribution profile: `Arch Linux`
-- Preserved skill ID: `linux-0726`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Arch Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Manjaro
 
 - Distribution profile: `Manjaro`
-- Preserved skill ID: `linux-0826`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Manjaro
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Garuda Linux
 
 - Distribution profile: `Garuda Linux`
-- Preserved skill ID: `linux-1226`
 - Workflow: `kernel-module-audit`
 
 #### Audit kernel modules and load state on Garuda Linux

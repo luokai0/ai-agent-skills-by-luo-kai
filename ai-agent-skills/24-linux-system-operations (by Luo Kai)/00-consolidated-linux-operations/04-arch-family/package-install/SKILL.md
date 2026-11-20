@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Arch Linux
 
 - Distribution profile: `Arch Linux`
-- Preserved skill ID: `linux-0105`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on Arch Linux
@@ -163,7 +162,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Manjaro
 
 - Distribution profile: `Manjaro`
-- Preserved skill ID: `linux-0205`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on Manjaro
@@ -293,7 +291,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Garuda Linux
 
 - Distribution profile: `Garuda Linux`
-- Preserved skill ID: `linux-0605`
 - Workflow: `package-install`
 
 #### Install a package with transaction review on Garuda Linux

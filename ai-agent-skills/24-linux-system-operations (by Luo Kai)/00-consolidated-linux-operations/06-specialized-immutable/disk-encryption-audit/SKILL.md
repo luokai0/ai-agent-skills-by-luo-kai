@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: openSUSE
 
 - Distribution profile: `openSUSE`
-- Preserved skill ID: `linux-0809`
 - Workflow: `disk-encryption-audit`
 
 #### Inspect disk encryption and unlock dependencies on openSUSE
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: NixOS
 
 - Distribution profile: `NixOS`
-- Preserved skill ID: `linux-1059`
 - Workflow: `disk-encryption-audit`
 
 #### Inspect disk encryption and unlock dependencies on NixOS
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Qubes OS
 
 - Distribution profile: `Qubes OS`
-- Preserved skill ID: `linux-1184`
 - Workflow: `disk-encryption-audit`
 
 #### Inspect disk encryption and unlock dependencies on Qubes OS
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: SteamOS
 
 - Distribution profile: `SteamOS`
-- Preserved skill ID: `linux-1209`
 - Workflow: `disk-encryption-audit`
 
 #### Inspect disk encryption and unlock dependencies on SteamOS

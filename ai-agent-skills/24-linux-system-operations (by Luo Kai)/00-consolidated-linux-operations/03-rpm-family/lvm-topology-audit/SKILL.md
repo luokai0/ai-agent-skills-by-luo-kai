@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Fedora
 
 - Distribution profile: `Fedora`
-- Preserved skill ID: `linux-0704`
 - Workflow: `lvm-topology-audit`
 
 #### Map LVM physical, volume, and logical volumes on Fedora
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Red Hat Enterprise Linux
 
 - Distribution profile: `Red Hat Enterprise Linux`
-- Preserved skill ID: `linux-0779`
 - Workflow: `lvm-topology-audit`
 
 #### Map LVM physical, volume, and logical volumes on Red Hat Enterprise Linux
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Rocky Linux
 
 - Distribution profile: `Rocky Linux`
-- Preserved skill ID: `linux-0879`
 - Workflow: `lvm-topology-audit`
 
 #### Map LVM physical, volume, and logical volumes on Rocky Linux
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: AlmaLinux
 
 - Distribution profile: `AlmaLinux`
-- Preserved skill ID: `linux-0904`
 - Workflow: `lvm-topology-audit`
 
 #### Map LVM physical, volume, and logical volumes on AlmaLinux

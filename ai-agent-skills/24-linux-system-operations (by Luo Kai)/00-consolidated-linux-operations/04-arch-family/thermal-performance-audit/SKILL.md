@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Arch Linux
 
 - Distribution profile: `Arch Linux`
-- Preserved skill ID: `linux-0740`
 - Workflow: `thermal-performance-audit`
 
 #### Diagnose thermal throttling and system performance on Arch Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Manjaro
 
 - Distribution profile: `Manjaro`
-- Preserved skill ID: `linux-0840`
 - Workflow: `thermal-performance-audit`
 
 #### Diagnose thermal throttling and system performance on Manjaro
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Garuda Linux
 
 - Distribution profile: `Garuda Linux`
-- Preserved skill ID: `linux-1240`
 - Workflow: `thermal-performance-audit`
 
 #### Diagnose thermal throttling and system performance on Garuda Linux

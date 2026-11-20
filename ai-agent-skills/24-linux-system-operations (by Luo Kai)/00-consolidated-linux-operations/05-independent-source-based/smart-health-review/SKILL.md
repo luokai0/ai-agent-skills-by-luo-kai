@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Gentoo
 
 - Distribution profile: `Gentoo`
-- Preserved skill ID: `linux-0928`
 - Workflow: `smart-health-review`
 
 #### Review disk SMART health and error trends on Gentoo
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Alpine Linux
 
 - Distribution profile: `Alpine Linux`
-- Preserved skill ID: `linux-0953`
 - Workflow: `smart-health-review`
 
 #### Review disk SMART health and error trends on Alpine Linux
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Slackware
 
 - Distribution profile: `Slackware`
-- Preserved skill ID: `linux-1078`
 - Workflow: `smart-health-review`
 
 #### Review disk SMART health and error trends on Slackware
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: Void Linux
 
 - Distribution profile: `Void Linux`
-- Preserved skill ID: `linux-1103`
 - Workflow: `smart-health-review`
 
 #### Review disk SMART health and error trends on Void Linux

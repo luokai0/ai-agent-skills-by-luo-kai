@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Fedora
 
 - Distribution profile: `Fedora`
-- Preserved skill ID: `linux-0100`
 - Workflow: `distribution-specialist`
 
 #### Use distribution-specific maintenance tools safely on Fedora
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Red Hat Enterprise Linux
 
 - Distribution profile: `Red Hat Enterprise Linux`
-- Preserved skill ID: `linux-0175`
 - Workflow: `distribution-specialist`
 
 #### Use distribution-specific maintenance tools safely on Red Hat Enterprise Linux
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Rocky Linux
 
 - Distribution profile: `Rocky Linux`
-- Preserved skill ID: `linux-0275`
 - Workflow: `distribution-specialist`
 
 #### Use distribution-specific maintenance tools safely on Rocky Linux
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: AlmaLinux
 
 - Distribution profile: `AlmaLinux`
-- Preserved skill ID: `linux-0300`
 - Workflow: `distribution-specialist`
 
 #### Use distribution-specific maintenance tools safely on AlmaLinux

@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Kali Linux
 
 - Distribution profile: `Kali Linux`
-- Preserved skill ID: `linux-0757`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Kali Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Zorin OS
 
 - Distribution profile: `Zorin OS`
-- Preserved skill ID: `linux-1007`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Zorin OS
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Parrot OS
 
 - Distribution profile: `Parrot OS`
-- Preserved skill ID: `linux-1032`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Parrot OS
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: MX Linux
 
 - Distribution profile: `MX Linux`
-- Preserved skill ID: `linux-1132`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on MX Linux
@@ -545,7 +541,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 5: Tails
 
 - Distribution profile: `Tails`
-- Preserved skill ID: `linux-1157`
 - Workflow: `acl-permission-audit`
 
 #### Audit file ownership, mode bits, and ACLs on Tails

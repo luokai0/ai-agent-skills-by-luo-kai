@@ -33,7 +33,6 @@ Use when the user needs this workflow on a distribution in this family. Confirm 
 ### Profile 1: Kali Linux
 
 - Distribution profile: `Kali Linux`
-- Preserved skill ID: `linux-0771`
 - Workflow: `flatpak-permission-audit`
 
 #### Audit Flatpak application permissions on Kali Linux
@@ -161,7 +160,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 2: Zorin OS
 
 - Distribution profile: `Zorin OS`
-- Preserved skill ID: `linux-1021`
 - Workflow: `flatpak-permission-audit`
 
 #### Audit Flatpak application permissions on Zorin OS
@@ -289,7 +287,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 3: Parrot OS
 
 - Distribution profile: `Parrot OS`
-- Preserved skill ID: `linux-1046`
 - Workflow: `flatpak-permission-audit`
 
 #### Audit Flatpak application permissions on Parrot OS
@@ -417,7 +414,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 4: MX Linux
 
 - Distribution profile: `MX Linux`
-- Preserved skill ID: `linux-1146`
 - Workflow: `flatpak-permission-audit`
 
 #### Audit Flatpak application permissions on MX Linux
@@ -545,7 +541,6 @@ Original operational instructions authored for this collection by Luo Kai. Distr
 ### Profile 5: Tails
 
 - Distribution profile: `Tails`
-- Preserved skill ID: `linux-1171`
 - Workflow: `flatpak-permission-audit`
 
 #### Audit Flatpak application permissions on Tails
