@@ -4,7 +4,7 @@ description: Plans observability for AI agents and tool workflows using traces, 
 metadata:
   author: Luo Kai
   provenance: original
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 # Agent Observability
 
@@ -88,3 +88,57 @@ Do not infer success from a natural-language claim. Verify the external state or
 ## 9. Operational checklist
 
 Before launch, confirm trace propagation, event schemas, redaction, access control, retention, dashboards, alert ownership, cost accounting, incident runbooks, and evaluation coverage. Test telemetry failure modes so an unavailable observability backend does not silently disable core authorization or safety controls.
+
+## 10. Define reliable service-level indicators
+
+For each critical workflow, define the event that starts the measurement, the event that counts as completion, the eligible population, and the exclusions. Use explicit denominators and consistent time windows.
+
+- Separate availability from task correctness. A service can respond successfully while the agent completes the wrong task.
+- Measure end-to-end task success alongside stage-level latency and failure rates.
+- Use percentiles and distributions for latency; averages alone hide long-tail failures.
+- Track verified completion separately from claimed completion.
+- Define objectives over rolling windows and specify how missing telemetry affects the measurement.
+- Avoid changing the metric definition during an incident or comparison without recording a new revision.
+
+## 11. Control telemetry volume and metric cardinality
+
+- Use metrics for bounded dimensions such as service, workflow type, model family, tool name, region, and outcome category.
+- Keep request IDs, user IDs, tenant IDs, raw URLs, prompt text, and arbitrary error messages out of metric labels.
+- Use traces or access-controlled event stores for high-cardinality diagnostic context.
+- Apply head or tail sampling deliberately. Preserve error, timeout, safety, and high-impact action traces where policy permits.
+- Record sampling rates and sampling decisions so dashboards do not imply complete capture when only a fraction of events were retained.
+- Bound event sizes and drop or truncate oversized content safely, while retaining a clear indicator that truncation occurred.
+
+## 12. Instrument retries, loops, and asynchronous work
+
+Record retry reason, attempt number, backoff, idempotency key reference, cancellation state, and terminal outcome. Track agent-loop iterations, handoff depth, subagent count, and elapsed time against explicit limits.
+
+For queued or background operations, propagate trace context through message metadata and record enqueue, dequeue, processing, retry, dead-letter, and completion events. Do not reuse one trace ID for unrelated user requests. If context propagation is unavailable, create a linked trace and preserve a safe correlation reference.
+
+## 13. Make telemetry failure safe
+
+Observability must not become a hidden dependency that changes security behavior.
+
+- Define which telemetry failures may be buffered, sampled, dropped, or cause a workflow to stop.
+- Never bypass authorization, approval, audit requirements, or safety checks because the telemetry backend is unavailable.
+- Use bounded local buffers and backpressure to prevent telemetry outages from exhausting memory or blocking critical request paths indefinitely.
+- Protect queued telemetry as sensitive data, including access control, encryption, retention, and deletion.
+- Emit a safe health signal when telemetry is degraded, and alert when critical event streams disappear.
+
+## 14. Connect runtime signals to evaluation and change history
+
+Attach deployment, prompt, model, tool-schema, policy, and dependency revisions to traces where possible. Link production incidents and recurring user corrections to evaluation cases without copying unnecessary private content.
+
+Compare quality and cost by comparable task cohorts. Annotate rollouts, experiments, traffic shifts, and model changes so operational changes are not mistaken for model improvements. Use controlled experiments for causal claims and keep benchmark results separate from noisy production indicators.
+
+## 15. Maintain dashboards and incident runbooks
+
+Create separate views for service health, agent task outcomes, tool behavior, safety events, cost, and capacity. Each panel should have a defined metric, denominator, time window, owner, and useful drill-down path.
+
+For every actionable alert, document severity, triage steps, evidence to preserve, containment actions, escalation owner, recovery criteria, and post-incident evaluation updates. Test runbooks periodically using synthetic events.
+
+## 16. Review observability changes as data-access changes
+
+Before adding a field, destination, exporter, dashboard, or vendor integration, document its purpose, sensitivity, access scope, retention, residency requirements, and deletion behavior. Review changes to sampling and redaction with the same care as changes to application data handling.
+
+Do not export raw prompts, tool payloads, or customer records merely because a telemetry platform can accept them. Collect the minimum evidence needed to operate and improve the system.
