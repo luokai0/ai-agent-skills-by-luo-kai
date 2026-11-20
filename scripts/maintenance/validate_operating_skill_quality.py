@@ -309,7 +309,7 @@ def validate_linux_consolidated_skill(skill: Path, group_number: int, group_size
             if re.search(pattern, contract, re.I):
                 fail(f"Unsafe retained execution-contract pattern {pattern!r} in {skill}")
 
-    if "Copyright (c) 2026 Luo Kai. All rights reserved." not in raw:
+    if "Copyright (c) 2026 Luo Kai. All rights reserved" not in raw:
         fail(f"Missing original-work copyright notice in {skill}")
 
 
