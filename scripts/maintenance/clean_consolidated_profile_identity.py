@@ -76,6 +76,7 @@ def update_text(path: Path, replacements: list[tuple[str, str]]) -> str:
 
 
 def documentation_updates() -> dict[Path, str]:
+    tick = chr(96)
     windows_standard = update_text(WINDOWS_STANDARD, [
         (
             "This standard defines the quality bar for the 1,200 Windows computer-operation skills. “150 times more useful” is treated as a demand for a major practical improvement, not a word-count multiplier. More text without better decisions is not quality.",
@@ -86,17 +87,17 @@ def documentation_updates() -> dict[Path, str]:
             "Every consolidated skill preserves its task objective, native tools, complete domain-specific procedures, and operating safeguards, and includes the relevant **Agent execution contract — v1.1**.",
         ),
         (
-            "1. YAML frontmatter parses and the original windows-#### ID is unchanged.",
+            f"1. YAML frontmatter parses and the original {tick}windows-####{tick} ID is unchanged.",
             "1. YAML frontmatter parses; the consolidated skill ID is stable, unique, and uses the required group/workflow format.",
         ),
     ])
     linux_standard = update_text(LINUX_STANDARD, [
         (
-            "Every consolidated skill contains three to five distribution profiles. Each profile preserves its original objective, stable linux-#### ID, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable linux-consolidated-gNN-task-slug ID.",
-            "Every consolidated skill contains three to five distribution profiles. Each profile preserves its task objective, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable linux-consolidated-gNN-task-slug ID.",
+            f"Every consolidated skill contains three to five distribution profiles. Each profile preserves its original objective, stable {tick}linux-####{tick} ID, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable {tick}linux-consolidated-gNN-task-slug{tick} ID.",
+            f"Every consolidated skill contains three to five distribution profiles. Each profile preserves its task objective, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable {tick}linux-consolidated-gNN-task-slug{tick} ID.",
         ),
         (
-            "1. YAML frontmatter parses; the consolidated ID is stable and every profile retains its original linux-#### ID.",
+            f"1. YAML frontmatter parses; the consolidated ID is stable and every profile retains its original {tick}linux-####{tick} ID.",
             "1. YAML frontmatter parses; the consolidated ID is stable and unique, and every profile retains its distribution-specific procedures and safeguards.",
         ),
     ])
@@ -119,8 +120,8 @@ def documentation_updates() -> dict[Path, str]:
         ),
     ])
     audit = AUDIT.read_text(encoding="utf-8")
-    status_old = "**Status:** Structural and representative-content audit completed; twelve Windows consolidation pilots committed to main; the first workflow has now been consolidated across all 40 Windows domains. Remaining workflow batches are still pending."
-    status_new = "**Status:** Windows and Linux consolidation completed on main; 660 consolidated operating skills are validated across both collections. The remaining work is ongoing quality, security, and documentation maintenance."
+    status_old = f"**Status:** Structural and representative-content audit completed; twelve Windows consolidation pilots committed to {tick}main{tick}; the first workflow has now been consolidated across all 40 Windows domains. Remaining workflow batches are still pending."
+    status_new = f"**Status:** Windows and Linux consolidation completed on {tick}main{tick}; 660 consolidated operating skills are validated across both collections. The remaining work is ongoing quality, security, and documentation maintenance."
     if status_old not in audit:
         fail("Audit status anchor not found")
     audit = audit.replace(status_old, status_new, 1)
