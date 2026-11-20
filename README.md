@@ -11,13 +11,13 @@
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/network/members"><img src="https://img.shields.io/github/forks/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&color=0891B2" alt="GitHub forks" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/actions/workflows/cross-platform.yml"><img src="https://img.shields.io/github/actions/workflow/status/luokai0/ai-agent-skills-by-luo-kai/cross-platform.yml?branch=main&style=for-the-badge&logo=githubactions&label=LINUX%20%2B%20WINDOWS" alt="Cross-platform CI" /></a>
 <img src="https://img.shields.io/badge/SKILL%20FILES-12%2C268-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="12,268 validated skill files" />
-<img src="https://img.shields.io/badge/WINDOWS%20%2B%20LINUX%20SKILLS-2%2C450-8B5CF6?style=for-the-badge&logo=markdown" alt="2,450 Windows and Linux skills" />
+<img src="https://img.shields.io/badge/WINDOWS%20%2B%20LINUX%20SKILLS-2%2C448-8B5CF6?style=for-the-badge&logo=markdown" alt="2,448 Windows and Linux skills" />
 
 **A large, organized library of AI-agent skills, workflows, references, scripts, and resources.**
 
 Built for discovery, practical reuse, and a growing ecosystem of AI assistants.
 
-**[Explore the library](#-explore-the-library) · [Consolidation audit](docs/SKILL_CONSOLIDATION_AUDIT.md) · [Get started](#-get-started) · [Windows agent playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md) · [Linux agent playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Quality checks](#-quality-and-cross-platform-checks)**
+**[Explore the library](#-explore-the-library) · [Skill merge map](docs/SKILL_MERGE_MAP.md) · [Consolidation audit](docs/SKILL_CONSOLIDATION_AUDIT.md) · [Get started](#-get-started) · [Windows agent playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md) · [Linux agent playbook](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/LINUX_AGENT_OPERATING_PLAYBOOK.md) · [Repository guide](docs/REPOSITORY_GUIDE.md) · [Quality checks](#-quality-and-cross-platform-checks)**
 
 </div>
 
@@ -69,7 +69,7 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 | 20 | [Health and wellness](ai-agent-skills/20-health-and-wellness%20%28by%20Luo%20Kai%29/) | Health, fitness, nutrition, and wellness-related resources |
 | 21 | [External registries](ai-agent-skills/21-external-registries/) | Additional indexed skill registries |
 | 22 | [ClawHub skills](ai-agent-skills/22-clawhub-skills/) | Skills collected from the ClawHub ecosystem |
-| 23 | [Windows computer operations](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) | 1,200 detailed Windows desktop and laptop agent workflows across 40 domains |
+| 23 | [Windows computer operations](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) | 1,198 Windows desktop and laptop agent workflows, including consolidated cross-domain workflows across 40 domains |
 | 24 | [Linux system operations](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) | 1,250 Linux agent workflows across 25 distributions, with 50 skills per distribution |
 
 > Collection names and contents may evolve. The folders in the repository are the source of truth.
@@ -90,9 +90,9 @@ Original instructional text and workflow design are authored by Luo Kai. Distrib
 
 ### 🖥️ Featured collection: Windows Computer Operations
 
-**1,200 original, task-focused skills for AI agents operating Windows 10 and Windows 11 desktops and laptops.**
+**1,198 task-focused skills for AI agents operating Windows 10 and Windows 11 desktops and laptops, with overlapping desktop workflows consolidated into stronger multi-domain skills.**
 
-Organized into **40 practical domains with 30 workflows each**, this collection helps agents operate real Windows computers reliably, rather than merely describing which button a person should click.
+Organized around **40 practical domains**, this collection helps agents operate real Windows computers reliably, rather than merely describing which button a person should click. Repeated workflows are being merged into shared skills with explicit domain profiles, preserving the distinct tools, safety boundaries, and verification steps each domain requires.
 
 Explore the [Windows Computer Operations collection](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) and its [Windows AI Agent Operating Playbook](docs/WINDOWS_AGENT_OPERATING_PLAYBOOK.md).
 
@@ -107,7 +107,7 @@ Coverage includes:
 - **Laptop care:** Battery and power management, sleep and hibernation, displays, docks, thermals and peripheral troubleshooting.
 - **Security and reliability:** Defender status, privacy, event logs, performance analysis, safe recovery and evidence-based verification.
 
-Each workflow is a separate `SKILL.md` with stable metadata, prerequisites, Windows-aware procedures, verification, failure recovery, a completion checklist, and a v1.1 agent execution contract tailored to its domain and task. The contract adds target binding, risk classification, task-specific decision points, approval gates, independent verification, stop/recovery conditions, and a privacy-safe handoff. See the [Windows skill quality standard](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/SKILL_QUALITY_STANDARD.md). The shared playbook establishes common rules: observe before acting, use least privilege, protect user data and secrets, obtain approval for consequential changes, and verify outcomes instead of assuming a click worked.
+Each workflow is a `SKILL.md` with stable metadata, prerequisites, Windows-aware procedures, verification, failure recovery, a completion checklist, and a v1.1 agent execution contract tailored to its domain and task. The contract adds target binding, risk classification, task-specific decision points, approval gates, independent verification, stop/recovery conditions, and a privacy-safe handoff. See the [Windows skill quality standard](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/SKILL_QUALITY_STANDARD.md). The shared playbook establishes common rules: observe before acting, use least privilege, protect user data and secrets, obtain approval for consequential changes, and verify outcomes instead of assuming a click worked.
 
 **Rights and attribution:** This is original instructional material authored for Luo Kai. Microsoft and third-party product names are used descriptively; their software, trademarks and documentation remain the property of their respective owners.
 
