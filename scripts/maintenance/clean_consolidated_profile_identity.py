@@ -196,7 +196,7 @@ def main() -> None:
         print("DRY RUN ONLY. No repository files were changed.")
         return
 
-    for path, content in changed:
+    for path, _, content in changed:
         path.write_text(content, encoding="utf-8")
     for path, content in docs.items():
         path.write_text(content, encoding="utf-8")
