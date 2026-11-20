@@ -103,3 +103,17 @@ The replacement preserves distinct profiles for policy, apps, packages, servicin
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/38-printers-peripherals/01-discover-current-state/SKILL.md`
 
 The replacement preserves sensor-consent safeguards, clipboard privacy, accessibility preferences, print-queue preservation, and distinct verification/recovery routes for displays, text entry, and peripherals.
+
+
+### Windows network and secure connectivity discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/07-discover-network-and-secure-connectivity/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0007`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Wi-Fi and Ethernet adapter state, connection profiles, signal and IP configuration; DNS resolution, firewall profiles, VPN state, routes, and application reachability.
+- **Retired IDs:** `windows-0601`, `windows-0631`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/21-wifi-ethernet/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/22-dns-firewall-vpn/01-discover-current-state/SKILL.md`
+
+The replacement preserves layered connectivity diagnosis and the distinct safeguards for unknown networks, corporate settings, private routes, firewall, VPN, and TLS.
