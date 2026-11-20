@@ -7,4 +7,4 @@ This folder contains 50 independently addressable AI-agent skills for operating 
 - Typical desktop: GNOME or user-selected
 - Operating constraint: Stable releases prioritize conservative updates; check sources and release notes before a major upgrade.
 
-Each skill checks `/etc/os-release`, active init, and execution context before acting. Changes require explicit approval and must be verified. See the collection-level `LINUX_AGENT_OPERATING_PLAYBOOK.md` and `LICENSE_SCOPE.md`.
+Each skill checks `/etc/os-release`, active init, and execution context before acting. Changes require explicit approval and must be verified. See the collection-level `LINUX_AGENT_OPERATING_PLAYBOOK.md` and `COPYRIGHT.md`.

@@ -7,4 +7,4 @@ This folder contains 50 independently addressable AI-agent skills for operating 
 - Typical desktop: KDE Plasma or GNOME
 - Operating constraint: Distinguish Leap from Tumbleweed; Tumbleweed uses rolling snapshots and should be updated as a coherent transaction.
 
-Each skill checks `/etc/os-release`, active init, and execution context before acting. Changes require explicit approval and must be verified. See the collection-level `LINUX_AGENT_OPERATING_PLAYBOOK.md` and `LICENSE_SCOPE.md`.
+Each skill checks `/etc/os-release`, active init, and execution context before acting. Changes require explicit approval and must be verified. See the collection-level `LINUX_AGENT_OPERATING_PLAYBOOK.md` and `COPYRIGHT.md`.

@@ -7,4 +7,4 @@ This folder contains 50 independently addressable AI-agent skills for operating 
 - Typical desktop: GNOME or server
 - Operating constraint: Enterprise-compatible lifecycle; use official AlmaLinux migration and ELevate guidance only when applicable.
 
-Each skill checks `/etc/os-release`, active init, and execution context before acting. Changes require explicit approval and must be verified. See the collection-level `LINUX_AGENT_OPERATING_PLAYBOOK.md` and `LICENSE_SCOPE.md`.
+Each skill checks `/etc/os-release`, active init, and execution context before acting. Changes require explicit approval and must be verified. See the collection-level `LINUX_AGENT_OPERATING_PLAYBOOK.md` and `COPYRIGHT.md`.

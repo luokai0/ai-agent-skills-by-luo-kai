@@ -128,4 +128,4 @@ Medium; application sandbox permissions.
 
 ## Attribution
 
-Original operational instructions authored for this collection by Luo Kai. Distribution names and tool names are used descriptively; their respective owners retain all rights in their software, trademarks, and documentation. See `LICENSE_SCOPE.md` for the collection's rights boundary.
+Original operational instructions authored for this collection by Luo Kai. Distribution names and tool names are used descriptively; their respective owners retain all rights in their software, trademarks, and documentation. See `COPYRIGHT.md` for the collection's rights boundary.
