@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "Luo Kai"
           git config user.email "luokai0@users.noreply.github.com"
-          git add -A -- "ai-agent-skills/23-windows-computer-operations (by Luo Kai)" docs/SKILL_MERGE_MAP.md docs/SKILL_CONSOLIDATION_AUDIT.md
+          git add -A -- "ai-agent-skills/23-windows-computer-operations (by Luo Kai)" docs/SKILL_MERGE_MAP.md docs/SKILL_CONSOLIDATION_AUDIT.md README.md
           if git diff --cached --quiet; then
             echo "No consolidation changes to commit"
             exit 1
