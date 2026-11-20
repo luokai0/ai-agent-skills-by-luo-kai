@@ -30,16 +30,23 @@ Draw a data-flow diagram before implementation. Mark where untrusted text become
 
 For local processes, document the operating-system identity and local trust assumptions. For remote services, require TLS and verify the peer.
 
-For HTTP-based MCP authorization, follow the current MCP authorization specification and the applicable OAuth security guidance for the deployment. In particular:
+MCP authorization is optional at the protocol level. For HTTP-based MCP deployments that implement authorization, follow the current MCP authorization specification. The specification says stdio implementations should not use the HTTP authorization flow; they should obtain credentials from the environment and protect them according to the local runtime's trust model. Alternative transports must use the security model appropriate to that transport.
 
-- Use authorization-server and protected-resource metadata where required by the selected flow; validate metadata origins and issuer identity.
-- Use authorization code flow with PKCE for public clients where specified. Do not embed client secrets in distributed clients.
-- Bind access tokens to the intended resource/audience and validate them at the MCP server. Never forward a token issued for the MCP server to an unrelated downstream API.
-- Do not accept arbitrary bearer tokens or perform token passthrough. Use a separately authorized downstream credential or a valid token-exchange/delegation design.
-- Validate redirect URIs exactly against registered values. Reject open redirects and untrusted callback destinations.
-- Keep authorization state, PKCE verifiers, and tokens protected against cross-session mix-ups and leakage.
+For HTTP-based authorization, implement and verify these requirements against the current specification:
 
-Do not invent an authentication flow when the transport or client does not support it. Document the actual trust model and enforce it server-side.
+- The MCP server MUST expose OAuth 2.0 Protected Resource Metadata (RFC 9728), and the client MUST use it for authorization-server discovery. The server MUST advertise the metadata location through a `WWW-Authenticate` `resource_metadata` parameter on an authorization challenge or through the applicable well-known URI.
+- The authorization server MUST provide OAuth 2.0 Authorization Server Metadata (RFC 8414) or OpenID Connect Discovery. Clients must support both discovery mechanisms and validate issuer identity and metadata origins.
+- The client MUST include the canonical MCP server URI as the OAuth `resource` parameter in both authorization and token requests, following RFC 8707. The server MUST validate that presented tokens were issued for that MCP resource/audience.
+- Clients MUST use authorization code flow with PKCE, use `S256` when capable, and verify PKCE support through authorization-server metadata before proceeding. Do not embed client secrets in distributed public clients.
+- Authorization-server endpoints MUST use HTTPS. Redirect URIs must be localhost or HTTPS and must be validated exactly; reject open redirects and untrusted callback destinations.
+- Send access tokens in the `Authorization: Bearer` header on every HTTP request. Never put access tokens in query strings. Store tokens securely; public-client refresh tokens must use the rotation behavior required by the applicable specification.
+- The MCP server MUST accept only tokens issued by the authorization server for that MCP resource. It MUST NOT accept or transit arbitrary tokens, including tokens intended for downstream services.
+- If the MCP server calls an upstream API, obtain a separate credential issued for that API or use a supported token-exchange/delegation design. Never forward the MCP access token as a downstream bearer token.
+- Keep authorization state, PKCE verifiers, and tokens protected against cross-session mix-ups, replay, logging, and leakage.
+
+Do not invent an authentication flow when the transport or client does not support it. Document the actual trust model and enforce it server-side. Re-check the normative requirements when the MCP specification changes.
+
+Normative references: [MCP Authorization](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization) and [MCP Authorization Security Considerations](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations).
 
 ## 3. Authorize each capability
 
