@@ -22,6 +22,9 @@ WINDOWS_CONSOLIDATED_FINAL = 360
 LINUX_DOMAINS = 25
 LINUX_PER_DOMAIN = 50
 LINUX_TOTAL = 1250
+LINUX_CONSOLIDATED_TOTAL = 300
+LINUX_CONSOLIDATED_ROOT = LINUX_ROOT / "00-consolidated-linux-operations"
+LINUX_GROUP_SIZES = [5, 5, 4, 3, 4, 4]
 
 WINDOWS_MARKER = "Agent execution contract — v1.1"
 LINUX_MARKER = "## Agent execution contract — v1.1"
@@ -223,49 +226,136 @@ def validate_windows() -> int:
     )
 
 
-def validate_linux() -> int:
-    if not LINUX_ROOT.is_dir():
-        fail(f"missing Linux collection: {LINUX_ROOT}")
-    domains = sorted(p for p in LINUX_ROOT.iterdir() if p.is_dir())
+def validate_linux_legacy() -> int:
+    domains = sorted(path for path in LINUX_ROOT.iterdir() if path.is_dir() and re.match(r"^\d{2}-", path.name))
     if len(domains) != LINUX_DOMAINS:
-        fail(f"Linux: expected {LINUX_DOMAINS} domains, found {len(domains)}")
-    ids: list[str] = []
+        fail(f"Expected {LINUX_DOMAINS} Linux distribution folders, found {len(domains)}")
     total = 0
+    seen_ids = set()
     for domain in domains:
-        skill_dirs = sorted(p for p in domain.iterdir() if p.is_dir())
-        if len(skill_dirs) != LINUX_PER_DOMAIN:
-            fail(f"Linux/{domain.name}: expected {LINUX_PER_DOMAIN} skill folders, found {len(skill_dirs)}")
-        for skill_dir in skill_dirs:
-            skill = skill_dir / "SKILL.md"
-            if not skill.is_file():
-                fail(f"missing SKILL.md: {skill}")
+        skills = sorted(domain.rglob("SKILL.md"))
+        if len(skills) != LINUX_PER_DOMAIN:
+            fail(f"{domain.name}: expected {LINUX_PER_DOMAIN} skills, found {len(skills)}")
+        for skill in skills:
             meta, raw = frontmatter(skill)
-            skill_id = meta.get("skill_id")
-            version = str(meta.get("version", ""))
-            if not skill_id or not str(skill_id).startswith("linux-"):
-                fail(f"missing/invalid Linux skill ID in {skill}")
-            ids.append(str(skill_id))
-            if version != "1.1.0":
-                fail(f"{skill_id}: expected version 1.1.0, found {version!r}")
+            skill_id = str(meta.get("skill_id", ""))
+            if not skill_id.startswith("linux-") or skill_id in seen_ids:
+                fail(f"Invalid or duplicate Linux skill ID in {skill}: {skill_id}")
+            seen_ids.add(skill_id)
+            if str(meta.get("version", "")) != "1.1.0":
+                fail(f"Unexpected legacy Linux skill version in {skill}")
             if raw.count(LINUX_MARKER) != 1:
-                fail(f"{skill_id}: expected exactly one v1.1 contract")
+                fail(f"Expected exactly one v1.1 execution contract in {skill}")
             contract = raw.split(LINUX_MARKER, 1)[1]
-            for heading in (
-                "### Execution environment contract", "### Task-specific operating procedure",
-                "### Stop conditions and recovery", "### Evidence and handoff",
-            ):
-                if heading not in contract:
-                    fail(f"{skill_id}: missing {heading}")
+            for heading in LINUX_REQUIRED_HEADINGS:
+                if not re.search(rf"(?m)^### {re.escape(heading)}\s*$", contract):
+                    fail(f"Missing Linux contract section {heading} in {skill}")
             for pattern in RISK_PATTERNS:
                 if re.search(pattern, contract, re.I):
-                    fail(f"{skill_id}: prohibited command pattern in execution contract: {pattern}")
+                    fail(f"Unsafe Linux execution-contract pattern {pattern!r} in {skill}")
             total += 1
-    expected_ids = {f"linux-{i:04d}" for i in range(1, LINUX_TOTAL + 1)}
-    if len(ids) != LINUX_TOTAL or len(set(ids)) != LINUX_TOTAL or set(ids) != expected_ids:
-        fail("Linux ID sequence is incomplete, duplicated, or out of range")
-    print(f"PASS Linux: {total} skills, {LINUX_DOMAINS} folders x {LINUX_PER_DOMAIN}, unique IDs, v1.1 contracts")
+    if total != LINUX_TOTAL:
+        fail(f"Expected {LINUX_TOTAL} legacy Linux skills, found {total}")
+    print(f"PASS: validated {total} legacy Linux skills across {len(domains)} distributions.")
     return total
 
+
+def validate_linux_consolidated_skill(skill: Path, group_number: int, group_size: int, task_slug: str) -> None:
+    meta, raw = frontmatter(skill)
+    details = meta.get("metadata") or {}
+    if not isinstance(details, dict):
+        fail(f"Missing nested metadata in {skill}")
+    expected_id = f"linux-consolidated-g{group_number:02d}-{task_slug}"
+    if details.get("skill_id") != expected_id:
+        fail(f"Expected consolidated ID {expected_id} in {skill}")
+    if details.get("author") != "Luo Kai" or str(details.get("version", "")) != "1.2.0":
+        fail(f"Unexpected author or version in {skill}")
+    if details.get("platform") != "Linux distributions" or details.get("category") != "Linux System Operations":
+        fail(f"Incorrect platform/category metadata in {skill}")
+    if "license" in meta or "license" in details:
+        fail(f"Original consolidated skill must not include license metadata: {skill}")
+    if not isinstance(meta.get("name"), str) or not meta["name"].strip():
+        fail(f"Missing skill name in {skill}")
+    if not isinstance(meta.get("description"), str) or not meta["description"].strip():
+        fail(f"Missing skill description in {skill}")
+
+    if len(re.findall(r"(?m)^### Profile \d+:", raw)) != group_size:
+        fail(f"Expected {group_size} distribution profiles in {skill}")
+    contract_pattern = r"(?m)^#{4,6} Agent execution contract — v1\.1\s*$"
+    matches = list(re.finditer(contract_pattern, raw))
+    if len(matches) != group_size:
+        fail(f"Expected {group_size} retained execution contracts in {skill}")
+
+    for heading in (
+        "Objective", "Distribution profiles", "Unified workflow",
+        "Stop conditions and recovery", "Privacy-safe evidence and handoff",
+        "Completion checklist",
+    ):
+        if not re.search(rf"(?m)^## {re.escape(heading)}\s*$", raw):
+            fail(f"Missing top-level section {heading} in {skill}")
+
+    for heading in LINUX_REQUIRED_HEADINGS:
+        nested_heading = rf"(?m)^#{4,6} {re.escape(heading)}\s*$"
+        if len(re.findall(nested_heading, raw)) != group_size:
+            fail(f"Expected {group_size} retained {heading} sections in {skill}")
+
+    for match in matches:
+        tail = raw[match.end():]
+        end_match = re.search(r"(?m)^#{4,6} Completion checklist\s*$", tail)
+        contract_end = match.end() + end_match.start() if end_match else len(raw)
+        contract = raw[match.start():contract_end]
+        for pattern in RISK_PATTERNS:
+            if re.search(pattern, contract, re.I):
+                fail(f"Unsafe retained execution-contract pattern {pattern!r} in {skill}")
+
+    if "Copyright (c) 2026 Luo Kai. All rights reserved." not in raw:
+        fail(f"Missing original-work copyright notice in {skill}")
+
+
+def validate_linux_consolidated() -> int:
+    groups = sorted(path for path in LINUX_CONSOLIDATED_ROOT.iterdir() if path.is_dir())
+    if len(groups) != len(LINUX_GROUP_SIZES):
+        fail(f"Expected six consolidated Linux groups, found {len(groups)}")
+    task_baseline = None
+    seen_ids = set()
+    for group_number, (group, group_size) in enumerate(zip(groups, LINUX_GROUP_SIZES), 1):
+        if not group.name.startswith(f"{group_number:02d}-"):
+            fail(f"Unexpected Linux group ordering/name: {group.name}")
+        task_dirs = sorted(path for path in group.iterdir() if path.is_dir())
+        if len(task_dirs) != 50:
+            fail(f"{group.name}: expected 50 task folders, found {len(task_dirs)}")
+        task_names = {path.name for path in task_dirs}
+        if task_baseline is None:
+            task_baseline = task_names
+        elif task_names != task_baseline:
+            fail(f"Task set differs in consolidated group {group.name}")
+        for task_dir in task_dirs:
+            skill = task_dir / "SKILL.md"
+            if not skill.is_file():
+                fail(f"Missing consolidated Linux skill: {skill}")
+            validate_linux_consolidated_skill(skill, group_number, group_size, task_dir.name)
+            skill_id = f"linux-consolidated-g{group_number:02d}-{task_dir.name}"
+            if skill_id in seen_ids:
+                fail(f"Duplicate consolidated Linux ID: {skill_id}")
+            seen_ids.add(skill_id)
+
+    legacy_domains = [
+        path for path in LINUX_ROOT.iterdir()
+        if path.is_dir() and re.match(r"^\d{2}-", path.name) and path != LINUX_CONSOLIDATED_ROOT
+    ]
+    remaining = [skill for domain in legacy_domains for skill in domain.rglob("SKILL.md")]
+    if remaining:
+        fail(f"Found {len(remaining)} standalone Linux skills outside the consolidated root")
+    if len(seen_ids) != LINUX_CONSOLIDATED_TOTAL:
+        fail(f"Expected {LINUX_CONSOLIDATED_TOTAL} consolidated Linux skills, found {len(seen_ids)}")
+    print(f"PASS: validated {len(seen_ids)} consolidated Linux skills across six groups.")
+    return len(seen_ids)
+
+
+def validate_linux() -> int:
+    if LINUX_CONSOLIDATED_ROOT.is_dir():
+        return validate_linux_consolidated()
+    return validate_linux_legacy()
 
 def validate_readmes() -> None:
     root_readme = (ROOT / "README.md").read_text(encoding="utf-8")

@@ -46,7 +46,7 @@ def main() -> None:
             creates.append((copyright, TEMPLATE.format(collection=title)))
         else:
             current = copyright.read_text(encoding="utf-8-sig")
-            exclusion = "A skill with a per-skill LICENSE_STATUS.md"
+            exclusion = "per-skill LICENSE_STATUS.md"
             if exclusion not in current:
                 current = current.rstrip() + "\n\nThis notice excludes any skill with a per-skill LICENSE_STATUS.md, recorded source metadata, or an independent rights notice.\n"
                 updates.append((copyright, current))

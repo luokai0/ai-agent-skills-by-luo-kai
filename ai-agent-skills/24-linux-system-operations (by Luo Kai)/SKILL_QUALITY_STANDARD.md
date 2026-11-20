@@ -1,11 +1,11 @@
 <!-- Copyright (c) 2026 Luo Kai. All rights reserved for original work. -->
-# Linux Skill Quality Standard — v1.1
+# Linux Skill Quality Standard — v1.2
 
-This standard defines the quality bar for the 1,250 Linux system-operation skills. “150 times more useful” means a major increase in practical reliability and decision quality, not artificial length or duplicate variants.
+This standard defines the quality bar for 300 consolidated Linux system-operation skills across 25 distribution profiles. “150 times more useful” means a major increase in practical reliability and decision quality, not artificial length or duplicate variants.
 
 ## Required skill behavior
 
-Every skill preserves its original objective, stable `linux-####` ID, distribution-specific commands, safety rules, and rights boundaries. Each includes an **Agent execution contract — v1.1** bound to its task and distribution. It identifies the execution context, verifies release/kernel/init/package manager, establishes a read-only baseline, sets task-specific control points and approval gates, defines independent verification, and provides stop/recovery and privacy-safe handoff requirements.
+Every consolidated skill contains three to five distribution profiles. Each profile preserves its original objective, stable `linux-####` ID, distribution-specific commands, safety rules, and rights boundaries. The consolidated skill uses a stable `linux-consolidated-gNN-task-slug` ID. Each profile retains its **Agent execution contract — v1.1**, bound to its exact task and distribution. It identifies the execution context, verifies release/kernel/init/package manager, establishes a read-only baseline, sets task-specific control points and approval gates, defines independent verification, and provides stop/recovery and privacy-safe handoff requirements.
 
 ## Execution rules
 
@@ -26,11 +26,11 @@ Every skill preserves its original objective, stable `linux-####` ID, distributi
 
 ## Acceptance checklist
 
-1. YAML frontmatter parses and the original `linux-####` ID is unchanged.
-2. Distribution and task identity are correct.
+1. YAML frontmatter parses; the consolidated ID is stable and every profile retains its original `linux-####` ID.
+2. Each consolidated skill contains exactly the expected three to five distribution profiles, with correct distribution and task identity.
 3. Native commands match the verified distribution and init system.
 4. Inspection and mutation are clearly separated.
 5. Approval gates, verification, stop conditions, rollback, and privacy controls are explicit.
 6. No malware, credential exposure, hidden network calls, unsafe install instructions, or security-control bypass is introduced.
 
-Original instructional material is authored for Luo Kai. Distribution names and third-party tools are descriptive references; their respective owners retain rights in their software, trademarks, and documentation.
+Original instructional material is authored for Luo Kai. Skills with recorded source metadata, per-skill LICENSE_STATUS.md files, or independent rights notices are outside this copyright scope. Distribution names and third-party tools are descriptive references; their respective owners retain rights in their software, trademarks, and documentation.

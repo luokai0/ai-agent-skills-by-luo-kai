@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This playbook governs agents using the 625 distribution-specific skills in collection 24. Linux is not one uniform operating environment: package managers, init systems, filesystem layouts, security controls, release models, and immutable-system designs differ. Detect the exact target before selecting a procedure.
+This playbook governs agents using the 300 consolidated, profile-based skills in collection 24. The 25 distributions are organized into six families, with 50 task workflows per family and three to five distribution-specific profiles in each consolidated skill. Linux is not one uniform operating environment: package managers, init systems, filesystem layouts, security controls, release models, and immutable-system designs differ. Detect the exact target before selecting a procedure.
 
 ## Mandatory preflight
 

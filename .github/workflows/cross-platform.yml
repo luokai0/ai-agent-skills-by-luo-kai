@@ -64,6 +64,6 @@ jobs:
       - name: Install a real skill from the checked-out repository
         run: npx --yes skills add . --skill agents-md --agent codex --copy --yes
 
-      - name: Install a Linux distribution skill
+      - name: Install a consolidated Linux skill
         if: runner.os == 'Linux'
-        run: npx --yes skills add . --skill linux-ubuntu-identify-release --agent codex --copy --yes
+        run: npx --yes skills add . --skill "Linux Identify Release across Debian-Family Desktop Systems" --agent codex --copy --yes

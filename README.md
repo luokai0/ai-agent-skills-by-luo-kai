@@ -10,8 +10,8 @@
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/stargazers"><img src="https://img.shields.io/github/stars/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&label=STARS&color=8B5CF6" alt="GitHub stars" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/network/members"><img src="https://img.shields.io/github/forks/luokai0/ai-agent-skills-by-luo-kai?style=for-the-badge&logo=github&color=0891B2" alt="GitHub forks" /></a>
 <a href="https://github.com/luokai0/ai-agent-skills-by-luo-kai/actions/workflows/cross-platform.yml"><img src="https://img.shields.io/github/actions/workflow/status/luokai0/ai-agent-skills-by-luo-kai/cross-platform.yml?branch=main&style=for-the-badge&logo=githubactions&label=LINUX%20%2B%20WINDOWS" alt="Cross-platform CI" /></a>
-<img src="https://img.shields.io/badge/SKILL%20FILES-12%2C268-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="12,268 validated skill files" />
-<img src="https://img.shields.io/badge/WINDOWS%20%2B%20LINUX%20SKILLS-1%2C610-8B5CF6?style=for-the-badge&logo=markdown" alt="1,610 Windows and Linux skills" />
+<img src="https://img.shields.io/badge/SKILL%20FILES-10%2C478-06B6D4?style=for-the-badge&logo=markdown&logoColor=white" alt="10,478 validated skill files" />
+<img src="https://img.shields.io/badge/WINDOWS%20%2B%20LINUX%20SKILLS-660-8B5CF6?style=for-the-badge&logo=markdown" alt="660 Windows and Linux skills" />
 
 **A large, organized library of AI-agent skills, workflows, references, scripts, and resources.**
 
@@ -33,7 +33,7 @@ The library includes both executable and instructional material. Each entry shou
 
 <div align="center">
 
-| **11,428** | **24** | **1,610** | **2** |
+| **10,478** | **24** | **660** | **2** |
 |:---:|:---:|:---:|:---:|
 | validated `SKILL.md` files | top-level collections | Windows + Linux workflows | CI operating systems |
 
@@ -70,7 +70,7 @@ All collections live under [`ai-agent-skills/`](ai-agent-skills/).
 | 21 | [External registries](ai-agent-skills/21-external-registries/) | Additional indexed skill registries |
 | 22 | [ClawHub skills](ai-agent-skills/22-clawhub-skills/) | Skills collected from the ClawHub ecosystem |
 | 23 | [Windows computer operations](ai-agent-skills/23-windows-computer-operations%20%28by%20Luo%20Kai%29/) | 360 consolidated Windows workflows across 12 cross-domain groups and 40 operating domains |
-| 24 | [Linux system operations](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) | 1,250 Linux agent workflows across 25 distributions, with 50 skills per distribution |
+| 24 | [Linux system operations](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/) | 300 consolidated Linux workflows across 25 distributions in six family groups, with 50 workflows per group |
 
 > Collection names and contents may evolve. The folders in the repository are the source of truth.
 
@@ -84,7 +84,7 @@ Explore the [Linux System Operations collection](ai-agent-skills/24-linux-system
 
 Coverage includes Ubuntu, Debian, Linux Mint, Fedora, Arch, Kali, RHEL, openSUSE, Manjaro, Pop!_OS, Rocky, AlmaLinux, Gentoo, Alpine, elementary OS, Zorin, Parrot, NixOS, Slackware, Void, MX Linux, Tails, Qubes OS, SteamOS, and Garuda.
 
-Every skill now includes a v1.1 agent execution contract: exact task binding, environment preflight, risk classification, task-specific decision points, approval gates, independent verification, stop/recovery conditions, and a privacy-safe handoff. Special safeguards protect Tails privacy, Qubes isolation, NixOS declarative configuration, and SteamOS immutable-system behavior. See the collection’s [skill quality standard](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/SKILL_QUALITY_STANDARD.md).
+Every distribution profile retains its v1.1 agent execution contract: exact task binding, environment preflight, risk classification, task-specific decision points, approval gates, independent verification, stop/recovery conditions, and a privacy-safe handoff. Special safeguards protect Tails privacy, Qubes isolation, NixOS declarative configuration, and SteamOS immutable-system behavior. See the collection’s [skill quality standard](ai-agent-skills/24-linux-system-operations%20%28by%20Luo%20Kai%29/SKILL_QUALITY_STANDARD.md).
 
 Original instructional text and workflow design are authored by Luo Kai. Distribution names and third-party tool names are descriptive references; their respective owners retain their rights.
 

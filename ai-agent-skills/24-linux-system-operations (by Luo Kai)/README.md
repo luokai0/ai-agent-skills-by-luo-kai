@@ -1,52 +1,50 @@
 <!-- Copyright (c) 2026 Luo Kai. All rights reserved for original work. -->
-# Linux System Operations — Collection 24
+# Linux System Operations
 
-An original library of **1,250 Linux operations skills** for AI agents, organized into **25 distribution-specific folders**, with **50 task-focused skills per distribution**. All 1,250 skills are upgraded to **v1.1** with a task-bound agent execution contract. The collection is capped by usefulness, not by a quota: 88,000 is an upper ceiling, not a target. No filler or artificial variants are added merely to inflate the count.
+**300 consolidated skills · 6 distribution groups · 25 Linux distributions**
 
-## 25 supported distributions
+A profile-based operating library for AI agents. The 1,250 distribution-specific workflows are consolidated into 300 task skills. Each skill contains three to five exact distribution profiles, preserving the original procedures, native commands, safety controls, verification, and recovery guidance.
 
-- [Ubuntu](01-ubuntu/) — 50 focused skills; `apt`; systemd
-- [Debian](02-debian/) — 50 focused skills; `apt`; systemd
-- [Linux Mint](03-linux-mint/) — 50 focused skills; `apt`; systemd
-- [Fedora](04-fedora/) — 50 focused skills; `dnf`; systemd
-- [Arch Linux](05-arch-linux/) — 50 focused skills; `pacman`; systemd
-- [Kali Linux](06-kali-linux/) — 50 focused skills; `apt`; systemd
-- [Red Hat Enterprise Linux](07-red-hat-enterprise-linux/) — 50 focused skills; `dnf`; systemd
-- [openSUSE](08-opensuse/) — 50 focused skills; `zypper`; systemd
-- [Manjaro](09-manjaro/) — 50 focused skills; `pacman`; systemd
-- [Pop!_OS](10-pop-os/) — 50 focused skills; `apt`; systemd
-- [Rocky Linux](11-rocky-linux/) — 50 focused skills; `dnf`; systemd
-- [AlmaLinux](12-almalinux/) — 50 focused skills; `dnf`; systemd
-- [Gentoo](13-gentoo/) — 50 focused skills; `emerge`; OpenRC or systemd
-- [Alpine Linux](14-alpine-linux/) — 50 focused skills; `apk`; OpenRC
-- [elementary OS](15-elementary-os/) — 50 focused skills; `apt`; systemd
-- [Zorin OS](16-zorin-os/) — 50 focused skills; `apt`; systemd
-- [Parrot OS](17-parrot-os/) — 50 focused skills; `apt`; systemd
-- [NixOS](18-nixos/) — 50 focused skills; `nix`; systemd
-- [Slackware](19-slackware/) — 50 focused skills; `slackpkg/pkgtools`; SysV-style BSD scripts
-- [Void Linux](20-void-linux/) — 50 focused skills; `xbps`; runit
-- [MX Linux](21-mx-linux/) — 50 focused skills; `apt`; systemd or SysVinit
-- [Tails](22-tails/) — 50 focused skills; `apt (restricted)`; systemd (managed)
-- [Qubes OS](23-qubes-os/) — 50 focused skills; `qubes-dom0-update (dom0 only)`; systemd in dom0; VM-specific
-- [SteamOS](24-steamos/) — 50 focused skills; `read-only base / Flatpak`; systemd (managed)
-- [Garuda Linux](25-garuda-linux/) — 50 focused skills; `pacman`; systemd
+## Six distribution groups
 
-## v1.1 agent-grade upgrade
+| Group | Distribution profiles | Workflows |
+|---|---|---:|
+| Debian-family desktops | Ubuntu, Debian, Linux Mint, Pop!_OS, elementary OS | 50 |
+| Debian security and specialist derivatives | Kali Linux, Zorin OS, Parrot OS, MX Linux, Tails | 50 |
+| RPM-based enterprise and community systems | Fedora, Red Hat Enterprise Linux, Rocky Linux, AlmaLinux | 50 |
+| Arch-family rolling systems | Arch Linux, Manjaro, Garuda Linux | 50 |
+| Independent and source-based systems | Gentoo, Alpine Linux, Slackware, Void Linux | 50 |
+| Specialized and immutable systems | openSUSE, NixOS, Qubes OS, SteamOS | 50 |
+| **Total** | **25 distributions** | **300 skills** |
 
-Every skill now includes a distribution-aware execution contract with environment detection, native tool selection, task-specific control points, risk classification, explicit authorization gates, independent verification, stop conditions, safe recovery, and privacy-safe evidence reporting. Special rules are enforced for Tails, Qubes OS, NixOS, SteamOS, Alpine, Void, Slackware, Gentoo, and MX Linux. Original procedures, IDs, distribution-specific commands, and rights boundaries are preserved. See [`SKILL_QUALITY_STANDARD.md`](SKILL_QUALITY_STANDARD.md).
+## Profile selection
 
-## What each skill contains
+1. Confirm the actual distribution and release from local system evidence, including /etc/os-release.
+2. Identify architecture, kernel, PID 1, package manager, filesystem model, and host, VM, container, qube, live, or remote context.
+3. Open the consolidated task skill and select only the matching distribution profile.
+4. Follow that profile's complete execution contract. Never transfer package, service, boot, security, or recovery assumptions from another distribution.
+5. Start read-only, use least privilege, obtain approval for consequential changes, and independently verify the outcome.
 
-Every skill is a separate `SKILL.md` with valid YAML frontmatter, stable ID (`linux-0001` through `linux-1250`), a precise objective, distribution/release detection, prerequisites, read-only diagnostics, approval gates, native commands, independent verification, failure recovery, and a completion checklist.
+## Safety and reliability
 
-## Operating model
+- Preserve Tails amnesia and Tor protections, Qubes isolation, NixOS declarative configuration, and SteamOS immutable-system behavior.
+- Do not assume apt, systemd, sudo, mutable root filesystems, or a common release model.
+- Do not disable security controls or execute opaque remote installers to bypass a problem.
+- Protect remote access, user data, encryption, backups, credentials, and recovery material.
+- Stop when the exact target or matching profile cannot be confirmed.
 
-Read `LINUX_AGENT_OPERATING_PLAYBOOK.md` before running any skill. Agents must detect the actual distribution and execution context, use least privilege, preserve user data, and ask for explicit approval before consequential changes. The workflows do not assume that every Linux system uses systemd, apt, sudo, or a mutable root filesystem.
+## Repository structure
 
-## Coverage
+The consolidated skills live under 00-consolidated-linux-operations, arranged by distribution family and task. The original distribution folders and their README references remain as supporting documentation; standalone task skills are consolidated into the 300 profile-based entries.
 
-Package and repository management; release and hardware inventory; service managers; user and privilege review; storage and mounts; networking, DNS, firewall and SSH; boot and kernel inspection; logs and scheduled jobs; developer toolchains; containers; backups and snapshots; desktop sessions; and distribution-specific specialist tools.
+## Quality and operating references
 
-## Rights and attribution
+- [Linux Skill Quality Standard](SKILL_QUALITY_STANDARD.md)
+- [Linux AI Agent Operating Playbook](LINUX_AGENT_OPERATING_PLAYBOOK.md)
+- [Collection copyright notice](COPYRIGHT.md)
+- [Repository-wide skill merge map](../../docs/SKILL_MERGE_MAP.md)
+- [Consolidation audit](../../docs/SKILL_CONSOLIDATION_AUDIT.md)
 
-Original instructions and collection organization are authored by Luo Kai. Third-party distribution names and tool names are used descriptively; their owners retain all rights in their software, trademarks, and documentation. See `COPYRIGHT.md`.
+## Copyright
+
+Copyright (c) 2026 Luo Kai. All rights reserved for original instructional material and workflow design in this collection. No license is granted for original material. Third-party tools, distributions, software, trademarks, and independently owned material retain their respective rights and notices.
