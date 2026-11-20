@@ -117,6 +117,28 @@ def validate_consolidated_skill(path: Path, seen_ids: set[str]) -> str:
             fail(f"{skill_id}: missing {heading}")
     if not re.search(r"(?m)^### (?:[A-E]\. |Profile )", raw):
         fail(f"{skill_id}: missing domain profiles")
+    if skill_id.startswith("windows-consolidated-g"):
+        match = re.fullmatch(r"windows-consolidated-g(\d{2})-w(\d{2})", skill_id)
+        if not match:
+            fail(f"{skill_id}: invalid generated group/workflow ID")
+        group_number = int(match.group(1))
+        expected_profiles = WINDOWS_GROUP_SIZES.get(group_number)
+        if expected_profiles is None:
+            fail(f"{skill_id}: unknown consolidated group")
+        contracts = list(re.finditer(r"(?m)^#{4,6} Agent execution contract — v1\.1\s*$", raw))
+        if len(contracts) != expected_profiles:
+            fail(f"{skill_id}: expected {expected_profiles} retained domain contracts, found {len(contracts)}")
+        for contract_match in contracts:
+            tail = raw[contract_match.start():]
+            end_match = re.search(r"(?m)^#{4,6} Completion checklist\s*$", tail)
+            contract = tail[:end_match.start()] if end_match else tail
+            for heading in ("Execution plan", "Stop conditions and recovery", "Evidence and handoff"):
+                if not re.search(r"(?m)^#{5,6} " + re.escape(heading) + r"\s*$", contract):
+                    fail(f"{skill_id}: retained source contract is missing {heading}")
+            for pattern in RISK_PATTERNS:
+                if re.search(pattern, contract, re.I):
+                    fail(f"{skill_id}: prohibited command pattern in retained contract: {pattern}")
+
     return skill_id
 
 
