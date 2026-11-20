@@ -4,7 +4,7 @@ description: Designs and reviews secure Model Context Protocol servers, tools, r
 metadata:
   author: Luo Kai
   provenance: original
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 # MCP Server Hardening
 
@@ -29,6 +29,17 @@ Draw a data-flow diagram before implementation. Mark where untrusted text become
 - Fail closed when identity validation is unavailable.
 
 For local processes, document the operating-system identity and local trust assumptions. For remote services, require TLS and verify the peer.
+
+For HTTP-based MCP authorization, follow the current MCP authorization specification and the applicable OAuth security guidance for the deployment. In particular:
+
+- Use authorization-server and protected-resource metadata where required by the selected flow; validate metadata origins and issuer identity.
+- Use authorization code flow with PKCE for public clients where specified. Do not embed client secrets in distributed clients.
+- Bind access tokens to the intended resource/audience and validate them at the MCP server. Never forward a token issued for the MCP server to an unrelated downstream API.
+- Do not accept arbitrary bearer tokens or perform token passthrough. Use a separately authorized downstream credential or a valid token-exchange/delegation design.
+- Validate redirect URIs exactly against registered values. Reject open redirects and untrusted callback destinations.
+- Keep authorization state, PKCE verifiers, and tokens protected against cross-session mix-ups and leakage.
+
+Do not invent an authentication flow when the transport or client does not support it. Document the actual trust model and enforce it server-side.
 
 ## 3. Authorize each capability
 
@@ -55,6 +66,8 @@ A hidden or renamed tool is not protected. Tool descriptions must match actual s
 - Restrict file operations to explicit workspace roots; resolve symlinks and verify the final target remains inside the allowed root.
 - For URL-fetching tools, block loopback, link-local, private, and cloud-metadata destinations unless specifically required and safely constrained. Re-check after DNS resolution and redirects to reduce SSRF risk.
 
+Validate at the boundary and again immediately before sensitive execution. A validated request can become unsafe if its target, identity, or authorization context changes later.
+
 ## 5. Treat outputs as untrusted
 
 Tool output may contain prompt injection, forged instructions, hostile markup, or data belonging to another tenant.
@@ -77,6 +90,8 @@ Tool output may contain prompt injection, forged instructions, hostile markup, o
 - Isolate tools that need shell, browser, or filesystem access.
 - Do not expose debugging endpoints or development credentials in production.
 
+For local HTTP services, validate the Host and Origin headers against an explicit policy, reject unexpected origins, and defend against DNS rebinding. Do not assume that binding to localhost alone is a complete browser-origin security boundary.
+
 ## 7. Audit and monitor
 
 Log the authenticated principal, tenant, tool name, authorization decision, request ID, timestamp, outcome, latency, and safe error category.
@@ -96,3 +111,48 @@ Use synthetic identities and data. Never test with production credentials in a p
 Before deployment, verify that the capability inventory, permission matrix, threat model, tests, dependency review, logging policy, and rollback procedure are complete. Record accepted risks and the exact release revision.
 
 If identity or authorization cannot be established, fail closed. Do not silently fall back to anonymous or administrator access.
+
+## 10. Secure protocol lifecycle and session state
+
+Treat protocol initialization, capability negotiation, session creation, resumption, and termination as security-relevant transitions.
+
+- Validate protocol versions and negotiated capabilities. Do not assume a client supports a feature merely because the server implements it.
+- Keep session identifiers unpredictable, scoped, and protected from disclosure. Bind session state to the authenticated principal and tenant.
+- Re-authenticate or re-authorize when identity, tenant, credential, or privilege context changes.
+- Expire abandoned sessions and bound the number and lifetime of active sessions.
+- Reject replayed, stale, malformed, or out-of-order messages where the transport or protocol requires ordering and freshness.
+- Handle cancellation and disconnects without leaving background jobs or privileged operations running unintentionally.
+- Do not treat a session ID as a bearer credential unless the protocol explicitly defines it as one and it is protected accordingly.
+
+## 11. Review every exposed MCP capability
+
+Maintain an inventory of tools, resources, resource templates, prompts, and any server-initiated or client-mediated capability exposed by the implementation.
+
+For each capability, record its purpose, input and output schema, required identity, authorization rule, data classification, downstream systems, side effects, rate limits, and failure behavior.
+
+- Keep descriptions accurate and avoid broad claims such as “full access” when the server enforces narrower operations.
+- Apply access checks to resource templates after URI expansion and before data retrieval.
+- Ensure pagination cannot cross tenant or authorization boundaries.
+- Treat prompt templates and server-provided content as untrusted data when they incorporate external records.
+- If the server supports sampling, elicitation, roots, or other client-mediated capabilities, define which party initiates the request, what data is exposed, and what consent or policy checks apply.
+- Disable capabilities that are not required by the deployment.
+
+## 12. Harden downstream integrations and side effects
+
+The MCP server is a policy enforcement point, not a trusted tunnel to every downstream system.
+
+- Use separate credentials and scopes for each downstream service. Never reuse the caller's MCP access token as a downstream bearer token.
+- Enforce destination allowlists for outbound requests and prevent user-controlled arguments from selecting arbitrary hosts or protocols.
+- Set explicit timeouts, response-size limits, retry ceilings, and idempotency behavior.
+- For writes, record the intended target and operation before execution, then verify the resulting state using an authorized read-back where practical.
+- Make destructive and externally visible actions explicit. Require an approval signal that is bound to the exact action and target, not a generic “approved” flag.
+- Ensure retries cannot duplicate payments, messages, deployments, or other non-idempotent effects.
+- Return partial-failure states honestly. Do not report success when the downstream result is unknown.
+
+## 13. Maintain security regression coverage
+
+Keep repeatable tests for authentication and authorization boundaries, tenant isolation, schema validation, output redaction, SSRF defenses, origin checks, session handling, cancellation, and high-impact side effects.
+
+Add a regression test for each confirmed security defect. Run negative tests with synthetic identities and controlled destinations. Review coverage whenever a new tool, resource, transport, or downstream integration is added.
+
+A passing test suite is evidence for the tested cases and revision, not proof that the server is universally secure.
