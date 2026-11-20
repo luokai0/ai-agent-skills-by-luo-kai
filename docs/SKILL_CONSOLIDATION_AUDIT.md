@@ -119,3 +119,21 @@ The replacement retains separate profiles for each surface. It adds explicit loc
 - **Windows skill count after two pilots:** 1,196.
 - **Combined Windows + Linux count after two pilots:** 2,446.
 - **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
+
+
+### Third pilot: Windows search, archives, and storage discovery
+
+Three more overlapping, independently authored workflows were consolidated:
+
+- Windows Search and file metadata — retired ID `windows-0181`.
+- Archives, downloads, and file transfer — retired ID `windows-0211`.
+- Storage, partitions, and volumes — retired ID `windows-0241`.
+
+The replacement is `windows-consolidated-0003`, version `1.2.0`, at `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/03-discover-search-archives-storage/SKILL.md`.
+
+The replacement keeps separate profiles for search/indexing, archive/transfer inspection, and storage/volume health. It preserves stale-index handling, untrusted-archive safeguards, hash verification, disk identity checks, and the prohibition on destructive storage changes during discovery. The three originals were removed in the same commit as the replacement and map update.
+
+- **Commit:** [9e277b6](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/9e277b6a3f63aa261ec9ad9312290fcbf30fa84c)
+- **Windows skill count after three pilots:** 1,194.
+- **Combined Windows + Linux count after three pilots:** 2,444.
+- **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
