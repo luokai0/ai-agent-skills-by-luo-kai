@@ -3,7 +3,7 @@
 **Repository:** `luokai0/ai-agent-skills-by-luo-kai`  
 **Branch:** `main`  
 **Audit date:** 2026-11-20  
-**Status:** Structural and representative-content audit completed; five Windows consolidation pilots committed to `main`; broad migration remains in progress.
+**Status:** Structural and representative-content audit completed; twelve Windows consolidation pilots committed to `main`; the first workflow has now been consolidated across all 40 Windows domains. Remaining workflow batches are still pending.
 
 ## Findings
 
@@ -220,4 +220,66 @@ The replacement preserves browser-session confidentiality, download and permissi
 - **Commit:** [e1360c3](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/e1360c3eca9bc6b61301b9cc69f5cc6ab41ec7c8)
 - **Windows skill count after eight pilots:** 1,182.
 - **Combined Windows + Linux count after eight pilots:** 2,432.
+- **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
+
+
+### Ninth pilot: Windows development, source control, and virtualization discovery
+
+Three independently authored workflows were consolidated into `windows-consolidated-0009`:
+
+- Developer workstation and toolchain — `windows-0721`.
+- Git and source control — `windows-0751`.
+- WSL, virtual machines, and containers — `windows-0781`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/09-discover-development-and-virtualization/SKILL.md`.
+
+The replacement preserves toolchain/project-local diagnostics, Git worktree safety, token/remote confidentiality, host/guest boundaries, and VM/container backup requirements.
+
+- **Commit:** [db726a5](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/db726a57f51870edd8680885810dee31b34dc840)
+
+### Tenth pilot: Windows health, security, and privacy discovery
+
+Five independently authored workflows were consolidated into `windows-consolidated-0010`:
+
+- Performance and resource monitoring — `windows-0811`.
+- Battery, thermals, and power — `windows-0841`.
+- Event logs and diagnostics — `windows-0871`.
+- Windows Security and Defender — `windows-0901`.
+- Privacy, permissions, and account access — `windows-0931`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/10-discover-health-security-and-privacy/SKILL.md`.
+
+The replacement retains repeated-sample performance checks, physical battery/thermal safety, narrow event collection, active security protection, and credential/privacy safeguards.
+
+- **Commit:** [e683770](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/e68377088d1ed519dfdae9c14256b16305531e89)
+
+### Eleventh pilot: Windows accessibility, remote support, UI automation, and visual evidence
+
+Four independently authored workflows were consolidated into `windows-consolidated-0011`:
+
+- Accessibility and assistive technology — `windows-0961`.
+- Remote Desktop and support sessions — `windows-0991`.
+- UI Automation and resilient interaction — `windows-1021`.
+- Screenshots, screen reading, and OCR — `windows-1051`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/11-discover-accessibility-remote-ui-and-visual/SKILL.md`.
+
+The replacement preserves assistive preferences, remote-session consent, no-hidden-click boundaries, stable UIA verification, screenshot minimization, redaction, and OCR uncertainty handling.
+
+- **Commit:** [5576e31](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/5576e313d403c5f97ed20ad265b57bdef23d00d8)
+
+### Twelfth pilot: Windows backup, recovery, and device provisioning discovery
+
+Two independently authored workflows were consolidated into `windows-consolidated-0012`:
+
+- Backup, restore, and recovery — `windows-1141`.
+- Windows provisioning and account lifecycle — `windows-1171`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/12-discover-backup-and-device-provisioning/SKILL.md`.
+
+The replacement preserves backup validation, current-disk protection, restore safeguards, device ownership/enrollment checks, and authorized IT handoff requirements.
+
+- **Commit:** [124c604](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/124c6045bd8b2010dd6f43fa56826344d05521a5)
+- **Windows skill count after twelve pilots:** 1,172.
+- **Combined Windows + Linux count after twelve pilots:** 2,422.
 - **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
