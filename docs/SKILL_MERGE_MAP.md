@@ -39,3 +39,18 @@ The replacement combines repeated operating discipline while retaining each prof
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/06-file-operations/01-discover-current-state/SKILL.md`
 
 The replacement retains separate profiles for shell/taskbar, Explorer navigation, and file integrity/operation planning. File discovery remains read-only; destructive or externally visible actions require a separate request and approval.
+
+
+### Windows search, archives, and storage discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/03-discover-search-archives-storage/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0003`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Windows Search, indexing and filters; file metadata and integrity; archive/download inspection and safe transfer verification; disk, volume, removable storage, capacity and health inspection.
+- **Retired IDs:** `windows-0181`, `windows-0211`, `windows-0241`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/07-search-metadata/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/08-archives-transfer/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/09-storage-volumes/01-discover-current-state/SKILL.md`
+
+The replacement retains distinct search, archive/transfer, and storage profiles. It preserves stale-index handling, untrusted-archive precautions, hash verification, disk identity checks, and explicit prohibition on destructive storage changes during discovery.
