@@ -94,6 +94,7 @@ def main() -> None:
         raise SystemExit(f"Missing skill root: {SKILLS_ROOT}")
 
     original_count = status_override_count = all_fields_removed = placeholder_fields_removed = 0
+    status_override_paths = []
     changed = []
     for root, dirs, files in os.walk(SKILLS_ROOT):
         dirs[:] = sorted(d for d in dirs if d not in {".git", "__pycache__", "node_modules"})
@@ -109,6 +110,7 @@ def main() -> None:
             original_count += 1
             if status_override:
                 status_override_count += 1
+                status_override_paths.append(path.relative_to(ROOT).as_posix())
 
         values = license_values(metadata)
         remove_all = original and not status_override
@@ -126,6 +128,8 @@ def main() -> None:
     placeholder_fields_removed = sum(item[2] for item in changed if item[3])
     print(f"Original Luo Kai skills inspected: {original_count}")
     print(f"Original skills with LICENSE_STATUS overrides: {status_override_count}")
+    for status_path in status_override_paths:
+        print(f"STATUS_OVERRIDE: {status_path}")
     print(f"Files with license metadata to remove: {len(changed)}")
     print(f"Original-only license fields to remove: {all_fields_removed}")
     print(f"Obsolete repository-license placeholders to remove: {placeholder_fields_removed}")
