@@ -7,4 +7,4 @@ This notice covers original skill text, procedures, workflows, taxonomies, metad
 
 No license is granted for original material. No permission to reproduce, modify, redistribute, publish, or commercially exploit original work is implied by access to this repository, except as allowed by applicable law or with prior written permission from Luo Kai.
 
-Third-party materials retain their own authorship, licenses, attribution, and notices. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [SOURCES.md](SOURCES.md).
+Skills with recorded source metadata, per-skill LICENSE_STATUS.md files, or independent rights notices are excluded from this copyright scope. Third-party materials retain their own authorship, licenses, attribution, and notices. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [SOURCES.md](SOURCES.md).

@@ -97,7 +97,19 @@ def resolve_license(skill_file: Path, metadata: dict) -> str | None:
 
     current = skill_file.parent
     while current != BASE:
-        for notice_name in ("UPSTREAM_LICENSE_NOTICE.md", "NOTICE.md", "LICENSE_SCOPE.md"):
+        if (current / "LICENSE_STATUS.md").is_file():
+            return "Unverified"
+        current = current.parent
+
+    author = str(meta.get("author") or metadata.get("author") or "").casefold().replace("-", " ").strip()
+    source = metadata.get("source") or meta.get("source")
+    provenance = str(meta.get("provenance") or metadata.get("provenance") or "").casefold().strip()
+    if author == "luo kai" and not source and provenance in {"", "original"}:
+        return None
+
+    current = skill_file.parent
+    while current != BASE:
+        for notice_name in ("UPSTREAM_LICENSE_NOTICE.md", "NOTICE.md"):
             notice = current / notice_name
             if notice.is_file():
                 notice_text = notice.read_text(encoding="utf-8-sig", errors="replace")
@@ -108,8 +120,6 @@ def resolve_license(skill_file: Path, metadata: dict) -> str | None:
             license_file = current / license_name
             if license_file.is_file():
                 return infer_license_file(license_file)
-        if (current / "LICENSE_STATUS.md").is_file():
-            return "Unverified"
         current = current.parent
     return "Unverified"
 

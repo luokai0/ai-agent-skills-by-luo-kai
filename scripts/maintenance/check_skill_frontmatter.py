@@ -61,9 +61,13 @@ def main() -> int:
             author = str(details.get("author") or data.get("author") or "").casefold().replace("-", " ").strip()
             source = data.get("source") or details.get("source")
             provenance = str(details.get("provenance") or data.get("provenance") or "").casefold().strip()
-            if author == "luo kai" and not source and provenance in {"", "original"}:
+            if author == "luo kai" and not source and provenance in {"", "original"} and not has_status_override(path):
                 if "license" in data or "license" in details:
                     raise ValueError("original Luo Kai skills must not include a license field")
+            if is_original_collection_path(path):
+                values = [str(v).casefold().strip() for v in (data.get("license"), details.get("license")) if v is not None]
+                if any(v in {"proprietary. see repository license", "proprietary. see license_scope.md", "proprietary. see license scope"} for v in values):
+                    raise ValueError("obsolete repository-license placeholder must be removed")
         except Exception as exc:
             failures.append((relative, str(exc)))
     if failures:

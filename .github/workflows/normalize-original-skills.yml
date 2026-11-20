@@ -32,11 +32,14 @@ jobs:
         run: python scripts/maintenance/normalize_consolidated_windows_skills.py
       - name: Preview original-work license metadata removal
         run: python scripts/maintenance/strip_original_license_metadata.py
+      - name: Preview collection copyright notice migration
+        run: python scripts/maintenance/rename_original_rights_notices.py
       - name: Apply validated repairs
         if: inputs.apply
         run: |
           python scripts/maintenance/normalize_consolidated_windows_skills.py --apply
           python scripts/maintenance/strip_original_license_metadata.py --apply
+          python scripts/maintenance/rename_original_rights_notices.py --apply
           python scripts/maintenance/validate_operating_skill_quality.py
           python scripts/maintenance/check_skill_frontmatter.py
       - name: Commit and push

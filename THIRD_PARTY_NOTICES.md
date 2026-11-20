@@ -62,6 +62,6 @@ Unverified material must not be sold, adapted, or described as exclusively owned
 
 ## Luo Kai original-work scope
 
-The repository's COPYRIGHT.md notice applies to original Luo Kai material at the 18 Luo Kai-labeled collection roots. It does not apply to source-linked, adapted, unattributed, or independently licensed material. Original skills carry no license field; per-skill `LICENSE_STATUS.md` files and upstream notices preserve third-party rights.
+The repository's COPYRIGHT.md notice applies to original Luo Kai material at the 20 Luo Kai-labeled collection roots. It does not apply to source-linked, adapted, unattributed, or independently licensed material. Original skills carry no license field; per-skill `LICENSE_STATUS.md` files and upstream notices preserve third-party rights.
 
 ClawSkills/ClawHub community imports have no blanket collection-level license. Their licenses must be verified per skill; unverified entries must not be adapted, sold, or redistributed as Luo Kai-owned work.
