@@ -191,3 +191,33 @@ The replacement preserves separate profiles for displays/audio/cameras, clipboar
 - **Windows skill count after six pilots:** 1,184.
 - **Combined Windows + Linux count after six pilots:** 2,434.
 - **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
+
+
+### Seventh pilot: Windows network and secure connectivity discovery
+
+Two independently authored workflows were consolidated into `windows-consolidated-0007`:
+
+- Wi-Fi and Ethernet — `windows-0601`.
+- DNS, firewall, and VPN — `windows-0631`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/07-discover-network-and-secure-connectivity/SKILL.md`.
+
+The replacement preserves layered connectivity diagnosis and the safeguards for unknown networks, private routes, firewall, VPN, TLS, and managed settings.
+
+- **Commit:** [e90f177](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/e90f177977a09c5e05d6f17e13ba7c11e1a0c7d1)
+
+### Eighth pilot: Windows browser and productivity discovery
+
+Two independently authored workflows were consolidated into `windows-consolidated-0008`:
+
+- Browsers and web applications — `windows-0661`.
+- Office and productivity applications — `windows-0691`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/08-discover-browser-and-productivity-apps/SKILL.md`.
+
+The replacement preserves browser-session confidentiality, download and permission checks, unsent-message protection, unsaved-document handling, recipient identity, sharing scope, and version recovery.
+
+- **Commit:** [e1360c3](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/e1360c3eca9bc6b61301b9cc69f5cc6ab41ec7c8)
+- **Windows skill count after eight pilots:** 1,182.
+- **Combined Windows + Linux count after eight pilots:** 2,432.
+- **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
