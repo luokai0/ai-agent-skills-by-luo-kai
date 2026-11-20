@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate legacy and consolidated Windows skills plus the Linux v1.1 collection."""
+"""Validate consolidated Windows skills and legacy or consolidated Linux skills."""
 from __future__ import annotations
 
 import re
@@ -25,6 +25,7 @@ LINUX_TOTAL = 1250
 LINUX_CONSOLIDATED_TOTAL = 300
 LINUX_CONSOLIDATED_ROOT = LINUX_ROOT / "00-consolidated-linux-operations"
 LINUX_GROUP_SIZES = [5, 5, 4, 3, 4, 4]
+LINUX_REQUIRED_HEADINGS = ("Execution environment contract", "Task-specific operating procedure", "Stop conditions and recovery", "Evidence and handoff")
 
 WINDOWS_MARKER = "Agent execution contract — v1.1"
 LINUX_MARKER = "## Agent execution contract — v1.1"
@@ -359,10 +360,21 @@ def validate_linux() -> int:
 
 def validate_readmes() -> None:
     root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    if "[Linux system operations]" not in root_readme or "50 independently addressable workflows" not in root_readme:
-        fail("root README is missing the Linux collection or corrected 50-workflow count")
+    linux_readme = (LINUX_ROOT / "README.md").read_text(encoding="utf-8")
+    if "[Linux system operations]" not in root_readme:
+        fail("root README is missing the Linux collection")
     if "[Windows computer operations]" not in root_readme:
         fail("root README is missing the Windows collection")
+
+    consolidated_docs = "300 consolidated skills" in linux_readme
+    if consolidated_docs:
+        if "300 consolidated Linux workflows" not in root_readme or "50 workflows per group" not in root_readme:
+            fail("root README is missing the consolidated Linux counts")
+        if "six distribution groups" not in linux_readme:
+            fail("Linux README is missing the six distribution groups")
+    elif "50 independently addressable workflows" not in root_readme:
+        fail("legacy root README is missing the 50-workflow Linux count")
+
     for label, folder in (("Windows", WINDOWS_ROOT), ("Linux", LINUX_ROOT)):
         readme = (folder / "README.md").read_text(encoding="utf-8")
         if "SKILL_QUALITY_STANDARD.md" not in readme:
