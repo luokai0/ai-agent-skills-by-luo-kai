@@ -146,3 +146,20 @@ The replacement preserves browser-session confidentiality and productivity safeg
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/27-wsl-virtualization/01-discover-current-state/SKILL.md`
 
 The replacement preserves toolchain and project-local diagnostics, Git worktree safety, token/remote confidentiality, host/guest boundaries, and VM/container backup requirements.
+
+
+### Windows health, security, and privacy discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/10-discover-health-security-and-privacy/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0010`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Performance/resource monitoring; battery, thermal and power inspection; event/reliability diagnostics; Defender, firewall, SmartScreen and threat status; app permissions, local accounts and privacy controls.
+- **Retired IDs:** `windows-0811`, `windows-0841`, `windows-0871`, `windows-0901`, `windows-0931`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/28-performance-monitoring/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/29-battery-thermal-power/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/30-logs-diagnostics/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/31-security-defender/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/32-privacy-permissions/01-discover-current-state/SKILL.md`
+
+The replacement retains separate profiles for performance, physical power/thermal safety, narrow event collection, active security protection, and account/privacy controls. It preserves redaction and escalation requirements.
