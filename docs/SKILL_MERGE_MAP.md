@@ -54,3 +54,20 @@ The replacement retains separate profiles for shell/taskbar, Explorer navigation
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/09-storage-volumes/01-discover-current-state/SKILL.md`
 
 The replacement retains distinct search, archive/transfer, and storage profiles. It preserves stale-index handling, untrusted-archive precautions, hash verification, disk identity checks, and explicit prohibition on destructive storage changes during discovery.
+
+
+### Windows shell, process, and startup discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/04-discover-shells-processes-and-startup/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0004`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** PowerShell fundamentals and advanced/CIM inspection; Command Prompt and Windows Terminal; process, service, and application diagnostics; startup applications, scheduled tasks, and background execution.
+- **Retired IDs:** `windows-0271`, `windows-0301`, `windows-0331`, `windows-0361`, `windows-0391`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/10-powershell-fundamentals/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/11-powershell-advanced/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/12-terminal-cmd/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/13-process-services/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/14-startup-scheduling/01-discover-current-state/SKILL.md`
+
+The replacement retains five distinct profiles, shell-specific command examples, safe inspection tools, process/service identity checks, startup-task ownership checks, and each domain's unique stop and recovery rules. Shared execution discipline is unified; all five source workflows were independently authored Luo Kai material.
