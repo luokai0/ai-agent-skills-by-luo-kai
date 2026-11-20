@@ -32,7 +32,6 @@ This repository is a curated library. Inclusion does not mean Luo Kai authored o
 
 New original skills use this metadata pattern:
 
-    license: Proprietary. See repository LICENSE
     metadata:
       author: Luo Kai
       provenance: original
@@ -49,7 +48,7 @@ The exact upstream commit from which this repository's imported snapshot was cop
 
 ## 2026 source license audit summary
 
-The repository-level LICENSE applies only to original Luo Kai material. It does not relicense third-party skills.
+The repository-level COPYRIGHT.md notice identifies Luo Kai's ownership of original material. It does not relicense third-party skills or grant a license to original work.
 
 - Verified collection-level license files have been copied into their corresponding source directories. Nested per-skill licenses override collection-level terms.
 - Anthropic, Replicate, and Strativd have per-skill licensing only; no blanket license has been applied.
@@ -63,6 +62,6 @@ Unverified material must not be sold, adapted, or described as exclusively owned
 
 ## Luo Kai original-work scope
 
-The repository's proprietary LICENSE is applied at the 18 Luo Kai-labeled collection roots only to skills whose metadata declares `author: luo-kai` and has no recorded `source` field. Skills with recorded sources, missing author metadata, or a more specific per-skill license are excluded. Per-skill `LICENSE_STATUS.md` files block inherited proprietary licensing where rights are not verified.
+The repository's COPYRIGHT.md notice applies to original Luo Kai material at the 18 Luo Kai-labeled collection roots. It does not apply to source-linked, adapted, unattributed, or independently licensed material. Original skills carry no license field; per-skill `LICENSE_STATUS.md` files and upstream notices preserve third-party rights.
 
 ClawSkills/ClawHub community imports have no blanket collection-level license. Their licenses must be verified per skill; unverified entries must not be adapted, sold, or redistributed as Luo Kai-owned work.
