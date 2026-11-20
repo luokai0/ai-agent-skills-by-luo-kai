@@ -17,11 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
-      - name: Check out main
+      - name: Check out main and pinned submodules
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 1
+          submodules: recursive
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -30,7 +31,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check PyYAML
       - name: Run repository-wide audit
         run: |
-          if [ "\${{ inputs.write_report }}" = "true" ]; then
+          if [ "${{ inputs.write_report }}" = "true" ]; then
             python scripts/maintenance/audit_repository_wide_skill_overlaps.py --write
           else
             python scripts/maintenance/audit_repository_wide_skill_overlaps.py
