@@ -101,3 +101,21 @@ Continue grouping related Windows domains in batches of two to five skills per r
 ### Rights and authorship boundary
 
 This pilot uses only skills already marked as original Luo Kai work. Imported or third-party material is not silently relabeled, stripped of required notices, or claimed as original. Independently rewritten skills may carry Luo Kai authorship only when they are genuinely original and do not reproduce protected expression. The repository's existing third-party notices and applicable rights records remain in force during the audit.
+
+
+### Second pilot: Windows workspace and file discovery
+
+Three more overlapping, independently authored workflows were consolidated into one replacement:
+
+- Start menu, taskbar, quick settings, and notifications — retired ID `windows-0091`.
+- File Explorer navigation and locations — retired ID `windows-0121`.
+- File and folder operations — retired ID `windows-0151`.
+
+The replacement is `windows-consolidated-0002`, version `1.2.0`, at `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/02-discover-workspace-and-files/SKILL.md`.
+
+The replacement retains separate profiles for each surface. It adds explicit local/removable/network/cloud/virtual location detection, file identity and integrity checks, collision planning, and read-only discovery boundaries. The original files were removed in the same commit as the replacement and map update.
+
+- **Commit:** [1140b78](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/1140b78494e869a991e84b5ed02d9d1512f28f35)
+- **Windows skill count after two pilots:** 1,196.
+- **Combined Windows + Linux count after two pilots:** 2,446.
+- **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
