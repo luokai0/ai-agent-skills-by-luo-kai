@@ -4,7 +4,7 @@ description: Designs repeatable evaluations for AI agents, tool-using assistants
 metadata:
   author: Luo Kai
   provenance: original
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 # Agent Evaluation Design
 
@@ -84,3 +84,56 @@ If a test is flaky, quarantine it with an owner and reason; do not silently dele
 Include version identifiers, dataset revision, environment, run count, pass/fail counts, metrics, regressions, representative traces, judge calibration, known limitations, and release decision.
 
 A benchmark result describes performance on a defined test set. It does not prove general intelligence, universal safety, or production readiness.
+
+## 10. Protect evaluation data and prevent leakage
+
+- Keep training, prompt-development, validation, and final test sets distinct. Restrict access to held-out cases and record who or what can read them.
+- Remove secrets, direct identifiers, and unnecessary personal or customer data before creating fixtures. Use synthetic or consented data for sensitive workflows.
+- Track dataset origin, collection date, permitted use, transformation steps, retention, and deletion requirements.
+- Detect duplicate and near-duplicate cases across splits. Prevent benchmark answers, expected outputs, and judge rubrics from leaking into agent context.
+- Version datasets immutably. A changed case, expected result, or scoring rule creates a new dataset revision.
+- If a case becomes public or is used repeatedly for prompt tuning, move it out of the held-out set and replace it with a fresh case.
+
+## 11. Plan runs and interpret uncertainty
+
+Choose the number of cases and repeated trials before comparing candidates. Base the plan on expected effect size, task variability, evaluation cost, and the impact of a wrong release decision.
+
+For each metric:
+
+1. State the unit of analysis: task, conversation, tool call, user, or session.
+2. Report numerator, denominator, exclusions, and missing observations.
+3. Use paired comparisons when both versions can run against the same cases and fixtures.
+4. Report confidence intervals or another suitable uncertainty estimate for important differences.
+5. Avoid treating repeated runs of the same case as independent users or independent tasks.
+6. Separate statistical uncertainty from practical significance. A tiny measurable gain may not justify added cost or risk.
+
+For rare but severe failures, ordinary average scores are insufficient. Add targeted adversarial cases, boundary tests, and explicit zero-tolerance release gates.
+
+## 12. Validate evaluators and model-based judges
+
+Treat the evaluator as software that can be wrong.
+
+- Test scoring code with known pass, fail, boundary, malformed, and missing-evidence examples.
+- Check that judges follow the rubric on a calibration set reviewed by humans.
+- Measure judge agreement with human reviewers and inspect disagreements by category.
+- Test for position, verbosity, style, and model-identity bias. Randomize candidate order where practical.
+- Require a judge to abstain when evidence is insufficient.
+- Keep judge prompts and versions fixed during a comparison, or record the change as an evaluation-method change.
+- Never use a model judge as the sole check for authorization, secret exposure, destructive side effects, or other objectively testable safety requirements.
+
+## 13. Add production feedback without corrupting the benchmark
+
+Use production signals to discover new failure modes, not to silently rewrite the benchmark.
+
+- Sample real workflows under an approved privacy and retention policy; minimize or redact user content.
+- Track task completion, user corrections, retries, escalation, tool failures, and confirmed safety incidents.
+- Distinguish user dissatisfaction from verified task failure, and investigate both.
+- Convert confirmed incidents and recurring failure patterns into sanitized regression cases.
+- Keep online experiments behind controlled rollout, monitoring, and rollback gates.
+- Do not infer causal improvement from before-and-after metrics when traffic, users, model versions, or task mix changed materially.
+
+## 14. Preserve the evaluation record
+
+Store the evaluation plan, case and dataset revisions, model and prompt identifiers, tool schemas, dependency versions, environment, random seeds where supported, raw scores, traces, judge version, analysis code, and release decision.
+
+Restrict access to raw traces and sensitive fixtures. Retain only what is necessary for reproducibility and approved audit requirements. A report without enough artifacts to reproduce its key claims is an assertion, not reliable evidence.
