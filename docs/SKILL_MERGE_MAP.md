@@ -131,3 +131,18 @@ The replacement preserves layered connectivity diagnosis and the distinct safegu
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/24-office-productivity/01-discover-current-state/SKILL.md`
 
 The replacement preserves browser-session confidentiality and productivity safeguards for unsent messages, unsaved documents, recipient identity, sharing scope, and version recovery.
+
+
+### Windows development, source control, and virtualization discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/09-discover-development-and-virtualization/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0009`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Developer editors, SDKs, compilers, runtimes and project-local setup; Git repository, branch, diff, remote and commit inspection; WSL, Hyper-V/virtualization, VM and container discovery.
+- **Retired IDs:** `windows-0721`, `windows-0751`, `windows-0781`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/25-developer-workstations/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/26-git-source-control/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/27-wsl-virtualization/01-discover-current-state/SKILL.md`
+
+The replacement preserves toolchain and project-local diagnostics, Git worktree safety, token/remote confidentiality, host/guest boundaries, and VM/container backup requirements.
