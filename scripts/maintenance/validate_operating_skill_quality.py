@@ -109,7 +109,7 @@ def validate_consolidated_skill(path: Path, seen_ids: set[str]) -> str:
         fail(f"{skill_id}: consolidated frontmatter must not contain a license field")
     for heading in (
         "## Objective", "## When to use", "## Required operating discipline",
-        "## Domain profiles", "## Unified discovery workflow",
+        "## Domain profiles",
         "## Stop conditions and recovery", "## Privacy-safe evidence and handoff",
         "## Completion checklist",
     ):
@@ -117,6 +117,8 @@ def validate_consolidated_skill(path: Path, seen_ids: set[str]) -> str:
             fail(f"{skill_id}: missing {heading}")
     if not re.search(r"(?m)^### (?:[A-E]\. |Profile )", raw):
         fail(f"{skill_id}: missing domain profiles")
+    if not re.search(r"(?mi)^## Unified .*workflow\s*$", raw):
+        fail(f"{skill_id}: missing unified workflow")
     if skill_id.startswith("windows-consolidated-g"):
         match = re.fullmatch(r"windows-consolidated-g(\d{2})-w(\d{2})", skill_id)
         if not match:
