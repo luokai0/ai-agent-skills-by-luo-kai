@@ -4,7 +4,7 @@ description: Audits AI agent skills, plugins, tool bundles, and workflow package
 metadata:
   author: Luo Kai
   provenance: original
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 # Skill Supply Chain Audit
 
@@ -107,3 +107,61 @@ Do not label a skill malware-free. Use bounded conclusions such as: “No high-c
 Record the skill, upstream source and revision, review date, claimed author, license evidence, files inspected and omitted, purpose, permissions, network destinations, credential and filesystem access, checks performed, findings, decision, limitations, and reviewer.
 
 A review applies only to the exact revision inspected. Re-review after changes to scripts, dependencies, remote endpoints, or permissions.
+
+## 9. Verify artifact integrity and build provenance
+
+When the package is distributed as an archive, release asset, container, or generated bundle:
+
+- Compare the downloaded artifact with a checksum published through an independently trusted channel. A checksum hosted beside an untrusted download does not establish authenticity.
+- Verify release signatures or signed attestations when the publisher provides them. Check the signer identity, trust root, signature validity, and exact artifact digest.
+- Confirm that the signed or attested digest matches the artifact actually inspected and installed.
+- Prefer immutable commit IDs and release digests over mutable branch names, tags that can be moved, or unpinned download URLs.
+- Record the build source, workflow identity, builder, inputs, and dependency revisions when provenance attestations are available.
+- Treat missing signatures or attestations as an evidence gap, not automatic proof of compromise. Increase restrictions according to risk.
+
+Never fabricate, repair, or substitute a signature to make an artifact appear trusted.
+
+## 10. Build a dependency inventory
+
+Create a lightweight software bill of materials (SBOM) or equivalent dependency inventory for executable packages. Include direct and transitive dependencies, package names, versions, package sources, hashes where available, and license identifiers.
+
+- Compare lockfiles with manifests and actual installed artifacts. Investigate unexplained additions, version drift, and dependencies fetched outside declared registries.
+- Check for known vulnerabilities, malicious-package advisories, typosquatting, abandoned packages, maintainer changes, and suspicious release history.
+- Review install-time and build-time scripts separately from runtime dependencies.
+- Identify native binaries, bundled models, browser extensions, and opaque assets that ordinary package manifests may omit.
+- Record vulnerability database and advisory lookup dates. A clean scan is time-bounded and does not prove a dependency is safe.
+- Do not automatically upgrade or remove dependencies during an audit. Propose a bounded remediation and test compatibility before changing the package.
+
+## 11. Review the installation and update path
+
+Trace how the skill reaches the agent runtime, including marketplace installation, package managers, clone scripts, CI pipelines, update mechanisms, and runtime downloads.
+
+- Check whether installation runs with administrator privileges or access to unrelated user data.
+- Prefer pinned, reviewed artifacts and least-privilege installation identities.
+- Inspect lifecycle hooks and automatic update behavior. Updates must not silently expand permissions or replace reviewed content.
+- Verify that installation paths are constrained and that symlinks or archive entries cannot write outside the intended destination.
+- Determine whether uninstall removes installed files, scheduled tasks, services, credentials, and other changes created by the package.
+- Test installation and removal in a disposable environment before granting access to real accounts or workspaces.
+
+If a package requires broad permissions, document why each permission is needed and whether a narrower alternative exists.
+
+## 12. Apply risk-based review depth
+
+Set review depth according to capability and exposure, not popularity or download count.
+
+| Risk tier | Typical capability | Minimum review |
+|---|---|---|
+| Low | Static reference material with no tools or executable files | Full instruction review, provenance, license, and referenced-file check |
+| Moderate | Read-only retrieval or narrowly scoped API access | Low-tier checks plus permission, network, dependency, and data-flow review |
+| High | File writes, shell, browser sessions, account changes, or external messages | Moderate-tier checks plus isolated testing, negative tests, side-effect review, and explicit approval boundaries |
+| Critical | Production administration, financial actions, credential access, or broad tenant access | High-tier checks plus independent review, strong identity and integrity evidence, least-privilege deployment, rollback plan, and monitored rollout |
+
+Raise the tier when the skill chains multiple tools, delegates to other agents, processes untrusted content, or can cause effects beyond its apparent task. Popularity, stars, and marketplace verification do not lower the required review depth.
+
+## 13. Record residual risk and reassessment triggers
+
+For every accepted or conditionally accepted package, record residual risks, compensating controls, accountable owner, approval scope, and review expiry or reassessment date.
+
+Reassess immediately when the source revision changes, a dependency or executable asset changes, permissions expand, a new network destination appears, a vulnerability advisory is published, ownership or signing identity changes, or the skill causes unexpected behavior.
+
+A previous approval applies only to the exact artifact and permission scope reviewed. Do not carry it forward to a new version by assumption.
