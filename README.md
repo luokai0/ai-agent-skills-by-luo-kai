@@ -33,7 +33,7 @@ The library includes both executable and instructional material. Each entry shou
 
 <div align="center">
 
-| **11,456** | **24** | **1,610** | **2** |
+| **11,428** | **24** | **1,610** | **2** |
 |:---:|:---:|:---:|:---:|
 | validated `SKILL.md` files | top-level collections | Windows + Linux workflows | CI operating systems |
 
@@ -167,7 +167,7 @@ Cross-platform reliability is part of the project, not an afterthought.
 The repository's GitHub Actions workflow checks both **Ubuntu** and **Windows**. It currently:
 - Runs a static safety and rights audit over the skill collection without executing scripts.
 - Scans skill files and bundled assets with ClamAV signatures before publishing a release.
-- Keeps original and third-party licensing boundaries documented in LICENSE, THIRD_PARTY_NOTICES.md, and .github/SECURITY.md.
+- Keeps original-work copyright and third-party rights boundaries documented in COPYRIGHT.md, THIRD_PARTY_NOTICES.md, SOURCES.md, and .github/SECURITY.md.
 
 - Checks out the repository and its submodules recursively.
 - Enables Git long-path support on Windows.

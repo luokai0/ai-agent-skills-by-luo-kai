@@ -48,4 +48,6 @@ The instructions target Windows 10 and Windows 11, but feature availability vari
 
 ## Security and rights
 
+Copyright notice: [COPYRIGHT.md](COPYRIGHT.md).
+
 Copyright in original instructional material, workflow design, and organization is reserved to Luo Kai. No license is granted for original material. Microsoft, Windows, and third-party product names are used descriptively; their owners retain their respective rights. Third-party material, where separately included in the repository, remains subject to its own rights and notices.

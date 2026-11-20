@@ -296,3 +296,14 @@ The remaining 29 workflows across all 40 Windows domains have been consolidated 
 - Combined Windows + Linux workflows: 1,610
 - Net reduction from the Windows collection: 812 skill files
 - Migration map: docs/SKILL_MERGE_MAP.md
+
+
+## Windows catalog and security pipeline — 2026-11-20
+
+- Full cross-platform validation passed on Ubuntu and Windows.
+- Static security and provenance screening passed on both platforms.
+- ClamAV malware scan passed.
+- Catalog generated: 11,428 skills.
+- Distributable bundle generated: 167.7 MiB.
+- Versioned release created: skills-180.
+- Original Luo Kai skills will carry no license metadata; third-party licenses and notices remain preserved.

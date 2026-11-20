@@ -49,4 +49,4 @@ Package and repository management; release and hardware inventory; service manag
 
 ## Rights and attribution
 
-Original instructions and collection organization are authored by Luo Kai. Third-party distribution names and tool names are used descriptively; their owners retain all rights in their software, trademarks, and documentation. See `LICENSE_SCOPE.md`.
+Original instructions and collection organization are authored by Luo Kai. Third-party distribution names and tool names are used descriptively; their owners retain all rights in their software, trademarks, and documentation. See `COPYRIGHT.md`.

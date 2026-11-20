@@ -6,7 +6,7 @@ This repository is a curated library. Inclusion does not mean Luo Kai authored o
 
 | Class | Meaning | Rights treatment |
 |---|---|---|
-| Original | Independently written for this repository by Luo Kai | Covered by the repository LICENSE unless a file says otherwise |
+| Original | Independently written for this repository by Luo Kai | Covered by the repository COPYRIGHT.md notice unless a file says otherwise |
 | Adapted | Based on upstream material under a license permitting the specific adaptation and redistribution | Keep upstream attribution, license text, notices, and source reference; identify the adaptation |
 | Third-party | Imported or mirrored without substantive original authorship | Keep the original author's copyright and license unchanged |
 | Unverified | Provenance or redistribution rights are unclear | Do not claim ownership, remove notices, or redistribute further until reviewed |

@@ -90,7 +90,7 @@ jobs:
 
             Generated from the validated main branch.
 
-            The bundle contains the current skill collection. Third-party materials retain their original licenses and attribution. See LICENSE, THIRD_PARTY_NOTICES.md, and SOURCES.md.
+            The bundle contains the current skill collection. Third-party materials retain their original licenses and attribution. See COPYRIGHT.md, THIRD_PARTY_NOTICES.md, and SOURCES.md.
           files: skills-bundle.zip
           make_latest: true
         env:

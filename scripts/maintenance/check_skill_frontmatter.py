@@ -55,6 +55,15 @@ def main() -> int:
                 value = data.get(field)
                 if not isinstance(value, str) or not value.strip():
                     raise ValueError(f"missing or empty required field: {field}")
+            details = data.get("metadata") or {}
+            if not isinstance(details, dict):
+                details = {}
+            author = str(details.get("author") or data.get("author") or "").casefold().replace("-", " ").strip()
+            source = data.get("source") or details.get("source")
+            provenance = str(details.get("provenance") or data.get("provenance") or "").casefold().strip()
+            if author == "luo kai" and not source and provenance in {"", "original"}:
+                if "license" in data or "license" in details:
+                    raise ValueError("original Luo Kai skills must not include a license field")
         except Exception as exc:
             failures.append((relative, str(exc)))
     if failures:

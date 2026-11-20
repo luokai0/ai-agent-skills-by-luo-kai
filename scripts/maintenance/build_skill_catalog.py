@@ -82,10 +82,15 @@ def infer_license_file(path: Path) -> str:
         return "MIT"
     return "License file (unclassified)"
 
-def resolve_license(skill_file: Path, metadata: dict) -> str:
+def resolve_license(skill_file: Path, metadata: dict) -> str | None:
     meta = metadata.get("metadata") or {}
     if not isinstance(meta, dict):
         meta = {}
+    author = str(meta.get("author") or metadata.get("author") or "").casefold().replace("-", " ").strip()
+    source = metadata.get("source") or meta.get("source")
+    provenance = str(meta.get("provenance") or metadata.get("provenance") or "").casefold().strip()
+    if author == "luo kai" and not source and provenance in {"", "original"}:
+        return None
     explicit = metadata.get("license") or meta.get("license")
     if explicit:
         return normalize_license(explicit)
@@ -133,10 +138,13 @@ def main() -> None:
             description = str(description)
         license_label = resolve_license(path, metadata)
         encoded_path = "/".join(quote(segment, safe="") for segment in Path(relative).parts)
-        skills.append({"n": metadata.get("name") or skill_name, "p": encoded_path, "c": category, "d": description[:1024], "l": license_label})
+        entry = {"n": metadata.get("name") or skill_name, "p": encoded_path, "c": category, "d": description[:1024]}
+        if license_label:
+            entry["l"] = license_label
+        skills.append(entry)
 
     skills.sort(key=lambda item: (item["c"], item["n"].casefold(), item["p"]))
-    license_counts = Counter(item["l"] for item in skills)
+    license_counts = Counter(item["l"] for item in skills if item.get("l"))
     output = {"total": len(skills), "cats": CATEGORIES, "icons": ICONS, "license_counts": dict(license_counts), "skills": skills}
     INDEX_PATH.write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"Generated skills-index.json: {len(skills)} skills")
