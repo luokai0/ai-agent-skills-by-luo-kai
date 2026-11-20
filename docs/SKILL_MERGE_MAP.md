@@ -71,3 +71,20 @@ The replacement retains distinct search, archive/transfer, and storage profiles.
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/14-startup-scheduling/01-discover-current-state/SKILL.md`
 
 The replacement retains five distinct profiles, shell-specific command examples, safe inspection tools, process/service identity checks, startup-task ownership checks, and each domain's unique stop and recovery rules. Shared execution discipline is unified; all five source workflows were independently authored Luo Kai material.
+
+
+### Windows configuration, software, updates, and driver discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/05-discover-configuration-software-and-devices/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0005`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Registry and Group Policy inspection; application and installer inventory; winget and Store package sources; Windows Update history and restart state; Plug-and-Play device and signed-driver inspection.
+- **Retired IDs:** `windows-0421`, `windows-0451`, `windows-0481`, `windows-0511`, `windows-0541`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/15-registry-policy/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/16-app-installation/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/17-package-management/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/18-windows-updates/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/19-devices-drivers/01-discover-current-state/SKILL.md`
+
+The replacement preserves distinct profiles for policy, apps, packages, servicing, and hardware. It retains publisher/source checks, managed-policy boundaries, update/restart safety, signed-driver checks, and recovery routes.
