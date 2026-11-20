@@ -3,7 +3,7 @@
 **Repository:** `luokai0/ai-agent-skills-by-luo-kai`  
 **Branch:** `main`  
 **Audit date:** 2026-11-20  
-**Status:** Structural and representative-content audit completed; first Windows consolidation pilot committed to `main`; broader migration in progress.
+**Status:** Structural and representative-content audit completed; five Windows consolidation pilots committed to `main`; broad migration remains in progress.
 
 ## Findings
 
@@ -136,4 +136,40 @@ The replacement keeps separate profiles for search/indexing, archive/transfer in
 - **Commit:** [9e277b6](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/9e277b6a3f63aa261ec9ad9312290fcbf30fa84c)
 - **Windows skill count after three pilots:** 1,194.
 - **Combined Windows + Linux count after three pilots:** 2,444.
+- **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
+
+
+### Fourth pilot: Windows shell, process, and startup discovery
+
+Five independently authored workflows were consolidated into `windows-consolidated-0004`:
+
+- PowerShell fundamentals — `windows-0271`.
+- Advanced PowerShell administration — `windows-0301`.
+- Command Prompt and Windows Terminal — `windows-0331`.
+- Processes, services, and applications — `windows-0361`.
+- Startup, scheduled tasks, and background execution — `windows-0391`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/04-discover-shells-processes-and-startup/SKILL.md`.
+
+The replacement keeps five distinct profiles, shell-specific command examples, process/service identity checks, startup-task ownership checks, and each domain's stop/recovery rules.
+
+- **Commit:** [4c38cda](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/4c38cda9970dcb9c845de9a8ffc55938e9b872a7)
+
+### Fifth pilot: Windows configuration, software, updates, and drivers
+
+Five independently authored workflows were consolidated into `windows-consolidated-0005`:
+
+- Registry and Group Policy inspection — `windows-0421`.
+- Application installation and compatibility — `windows-0451`.
+- Package managers and dependencies — `windows-0481`.
+- Windows Update and servicing — `windows-0511`.
+- Devices and signed drivers — `windows-0541`.
+
+Replacement: `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/05-discover-configuration-software-and-devices/SKILL.md`.
+
+The replacement retains separate profiles for policy, apps, packages, servicing, and hardware, including publisher/source checks, managed-policy boundaries, update/restart safety, and signed-driver checks.
+
+- **Commit:** [6cac159](https://github.com/luokai0/ai-agent-skills-by-luo-kai/commit/6cac1590a87ddd5fbae46fbaa37f02f66bfac9a6)
+- **Windows skill count after five pilots:** 1,186.
+- **Combined Windows + Linux count after five pilots:** 2,436.
 - **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
