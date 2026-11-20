@@ -307,3 +307,13 @@ The remaining 29 workflows across all 40 Windows domains have been consolidated 
 - Distributable bundle generated: 167.7 MiB.
 - Versioned release created: skills-180.
 - Original Luo Kai skills will carry no license metadata; third-party licenses and notices remain preserved.
+
+
+## Linux distribution consolidation — 2026-11-20
+
+- Verified 25 distribution folders, each containing the same 50 task workflows.
+- Validated 1,250 unique original skill IDs and v1.1 execution contracts.
+- Consolidated into 300 skills across six groups with 5, 5, 4, 3, 4, and 4 distribution profiles per task.
+- Preserved every original profile body, command, decision point, safety boundary, verification step, and recovery instruction.
+- Retained the 25 distribution README files as supporting documentation and removed only standalone SKILL.md files after mapping.
+- Third-party and per-skill rights-status records remain outside the Luo Kai original-work copyright scope.
