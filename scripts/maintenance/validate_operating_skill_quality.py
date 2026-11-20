@@ -370,7 +370,7 @@ def validate_readmes() -> None:
     if consolidated_docs:
         if "300 consolidated Linux workflows" not in root_readme or "50 workflows per group" not in root_readme:
             fail("root README is missing the consolidated Linux counts")
-        if "six distribution groups" not in linux_readme:
+        if "six distribution groups" not in linux_readme.casefold():
             fail("Linux README is missing the six distribution groups")
     elif "50 independently addressable workflows" not in root_readme:
         fail("legacy root README is missing the 50-workflow Linux count")
