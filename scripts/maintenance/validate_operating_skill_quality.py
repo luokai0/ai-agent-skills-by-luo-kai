@@ -296,7 +296,7 @@ def validate_linux_consolidated_skill(skill: Path, group_number: int, group_size
             fail(f"Missing top-level section {heading} in {skill}")
 
     for heading in LINUX_REQUIRED_HEADINGS:
-        nested_heading = rf"(?m)^#{4,6} {re.escape(heading)}\s*$"
+        nested_heading = rf"(?m)^#{{4,6}} {re.escape(heading)}\s*$"
         if len(re.findall(nested_heading, raw)) != group_size:
             fail(f"Expected {group_size} retained {heading} sections in {skill}")
 
