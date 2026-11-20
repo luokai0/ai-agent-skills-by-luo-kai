@@ -179,3 +179,17 @@ The replacement retains separate profiles for performance, physical power/therma
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/36-screenshots-ocr/01-discover-current-state/SKILL.md`
 
 The replacement preserves assistive preferences, remote-session consent, no-hidden-click boundaries, stable UIA verification, screenshot minimization, redaction, and OCR uncertainty handling.
+
+
+### Windows backup, recovery, and device provisioning discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/12-discover-backup-and-device-provisioning/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0012`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** File History, OneDrive sync, restore points, recovery environment, restore planning; initial setup, local profiles, device naming, enrollment indicators, and handoff readiness.
+- **Retired IDs:** `windows-1141`, `windows-1171`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/39-backup-recovery/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/40-provisioning-accounts/01-discover-current-state/SKILL.md`
+
+The replacement preserves backup validation, recovery safeguards, current-disk preservation, device ownership/enrollment checks, and authorized IT handoff requirements.
