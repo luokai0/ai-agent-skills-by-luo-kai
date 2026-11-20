@@ -32,6 +32,23 @@ UniqueKeyLoader.add_constructor(
     yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, construct_unique_mapping
 )
 
+
+def has_status_override(path: Path) -> bool:
+    current = path.parent
+    while current != SKILLS_ROOT:
+        if (current / "LICENSE_STATUS.md").is_file():
+            return True
+        current = current.parent
+    return False
+
+
+def is_original_collection_path(path: Path) -> bool:
+    try:
+        first = path.relative_to(SKILLS_ROOT).parts[0]
+    except (ValueError, IndexError):
+        return False
+    return "(by Luo Kai)" in first
+
 def main() -> int:
     files = sorted(p for p in SKILLS_ROOT.rglob("*") if p.is_file() and p.name.casefold() == "skill.md")
     failures = []

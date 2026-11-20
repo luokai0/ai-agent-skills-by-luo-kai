@@ -388,4 +388,4 @@ CC BY 4.0 material requires attribution and indication of changes. CC0 material 
 **Notes:** Every imported skill must retain its original author and license. Entries without a verified per-skill license are marked unverified and excluded from the Luo Kai proprietary license.
 
 
-The copyright notices in 20 Luo Kai-labeled collections apply only to original skills whose author metadata identifies Luo Kai and that have no recorded source metadata. Source-linked, adapted, unattributed, and any skills covered by per-skill LICENSE_STATUS overrides are excluded from the Luo Kai copyright scope; third-party license files and upstream notices always take precedence.
+The copyright notices in 22 Luo Kai-labeled collections apply only to original skills whose author metadata identifies Luo Kai and that have no recorded source metadata. Source-linked, adapted, unattributed, and any skills covered by per-skill LICENSE_STATUS overrides are excluded from the Luo Kai copyright scope; third-party license files and upstream notices always take precedence.

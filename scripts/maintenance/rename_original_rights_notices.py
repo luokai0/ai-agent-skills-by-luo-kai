@@ -30,8 +30,8 @@ def main() -> None:
     parser.add_argument("--apply", action="store_true", help="write changes; default is dry-run")
     args = parser.parse_args()
     roots = sorted(p for p in SKILLS_ROOT.iterdir() if p.is_dir() and "(by Luo Kai)" in p.name)
-    if len(roots) != 20:
-        raise SystemExit(f"Expected 20 Luo Kai collection roots, found {len(roots)}")
+    if len(roots) != 22:
+        raise SystemExit(f"Expected 22 Luo Kai collection roots, found {len(roots)}")
 
     renames = []
     updates = []
