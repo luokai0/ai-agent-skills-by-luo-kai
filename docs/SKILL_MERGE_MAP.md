@@ -163,3 +163,19 @@ The replacement preserves toolchain and project-local diagnostics, Git worktree 
   - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/32-privacy-permissions/01-discover-current-state/SKILL.md`
 
 The replacement retains separate profiles for performance, physical power/thermal safety, narrow event collection, active security protection, and account/privacy controls. It preserves redaction and escalation requirements.
+
+
+### Windows accessibility, remote support, UI automation, and visual evidence discovery
+
+- **Replacement:** `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/00-consolidated-desktop-operations/11-discover-accessibility-remote-ui-and-visual/SKILL.md`
+- **Replacement ID:** `windows-consolidated-0011`
+- **Version:** `1.2.0`
+- **Consolidated capabilities:** Assistive technology and accessibility modalities; Remote Desktop/Quick Assist and consent; UI Automation trees, selectors, focus and resilient interaction; screenshots, OCR, visual grounding and evidence handling.
+- **Retired IDs:** `windows-0961`, `windows-0991`, `windows-1021`, `windows-1051`
+- **Retired paths:**
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/33-accessibility/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/34-remote-desktop/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/35-ui-automation/01-discover-current-state/SKILL.md`
+  - `ai-agent-skills/23-windows-computer-operations (by Luo Kai)/36-screenshots-ocr/01-discover-current-state/SKILL.md`
+
+The replacement preserves assistive preferences, remote-session consent, no-hidden-click boundaries, stable UIA verification, screenshot minimization, redaction, and OCR uncertainty handling.
