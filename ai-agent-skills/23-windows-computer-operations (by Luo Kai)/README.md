@@ -1,9 +1,30 @@
 <!-- Copyright (c) 2026 Luo Kai. All rights reserved for original work. -->
-# Windows Computer Operations (1,200 skills)
+# Windows Computer Operations (360 consolidated skills)
 
-An original, task-oriented library for AI agents that operate Windows 10 and Windows 11 desktops and laptops. It is designed for real interactive machines, including older laptops, standard user accounts, multi-monitor setups, and managed workstations.
+An original, task-oriented library for AI agents operating Windows 10 and Windows 11 desktops and laptops. The collection consolidates 40 operating domains into 12 cross-domain groups while retaining each domain's procedures, tools, safeguards, examples, verification, and recovery guidance as separate profiles.
 
-**Collection size:** 1,200 individual `SKILL.md` files, organized into 40 domains with 30 operational workflows per domain. All skills are upgraded to **v1.1** with a task-bound agent execution contract.
+Collection size: 360 consolidated SKILL.md files, organized into 12 groups with 30 workflows per group. Each skill combines 2–5 related domain playbooks. Consolidated skills use version 1.2.0 and contain no license field in their frontmatter.
+
+## The 12 consolidated groups
+
+01. Desktop and window management — desktop shell, Windows navigation and settings, window multitasking
+02. Workspace and file operations — Start/taskbar, File Explorer, file and folder operations
+03. Search, archives, and storage — Windows Search, archive/transfer inspection, storage and volumes
+04. Shells, processes, and startup — PowerShell, Command Prompt, processes, services, scheduled tasks
+05. Configuration, software, and devices — registry/policy, apps, package managers, updates, drivers
+06. Input, output, and peripherals — displays, audio, cameras, clipboard, text entry, printers and scanners
+07. Network and secure connectivity — Wi-Fi, Ethernet, DNS, firewall, VPN and secure routes
+08. Browser and productivity applications — browser profiles, web apps, documents, mail, calendars
+09. Development and virtualization — developer toolchains, Git, WSL, virtual machines, containers
+10. Health, security, and privacy — performance, battery/thermal state, event logs, Defender, permissions
+11. Accessibility, remote support, and visual automation — assistive technology, remote sessions, UIA, screenshots, OCR
+12. Backup, recovery, and provisioning — File History, restore planning, setup, profiles, enrollment
+
+## Consolidation standard
+
+Every replacement contains explicit domain profiles. The full original workflow bodies are retained inside their corresponding profiles, including objectives, operating discipline, procedures, preferred tools, command examples, safety boundaries, execution contracts, verification, recovery, and completion checklists. Shared discovery guidance is added at the consolidated-skill level.
+
+The migration map records every retired skill ID and path. No original workflow is removed unless its replacement and mapping are created in the same change.
 
 ## Operating principles
 
@@ -15,61 +36,16 @@ An original, task-oriented library for AI agents that operate Windows 10 and Win
 6. Verify the result independently. A click, command completion, or toast notification is not proof of success.
 7. Report what changed, what was verified, and what remains uncertain.
 
-## Domain map
+## Layout and quality
 
-01. **Windows desktop shell** — 30 focused workflows
-02. **Windows navigation and settings** — 30 focused workflows
-03. **Window management and multitasking** — 30 focused workflows
-04. **Start menu, taskbar, and notifications** — 30 focused workflows
-05. **File Explorer navigation** — 30 focused workflows
-06. **File and folder operations** — 30 focused workflows
-07. **Windows search and file metadata** — 30 focused workflows
-08. **Archives, downloads, and file transfer** — 30 focused workflows
-09. **Storage, partitions, and volumes** — 30 focused workflows
-10. **PowerShell fundamentals** — 30 focused workflows
-11. **Advanced PowerShell administration** — 30 focused workflows
-12. **Command Prompt and Windows Terminal** — 30 focused workflows
-13. **Processes, services, and applications** — 30 focused workflows
-14. **Startup, scheduled tasks, and background execution** — 30 focused workflows
-15. **Registry and Group Policy inspection** — 30 focused workflows
-16. **Application installation and removal** — 30 focused workflows
-17. **Windows package managers and dependencies** — 30 focused workflows
-18. **Windows Update and update servicing** — 30 focused workflows
-19. **Device Manager and hardware drivers** — 30 focused workflows
-20. **Displays, audio, cameras, and input devices** — 30 focused workflows
-21. **Wi-Fi, Ethernet, and network adapters** — 30 focused workflows
-22. **DNS, firewall, VPN, and secure connectivity** — 30 focused workflows
-23. **Browsers, web apps, and downloads** — 30 focused workflows
-24. **Office and productivity applications** — 30 focused workflows
-25. **Developer workstation setup** — 30 focused workflows
-26. **Git and source-control operations** — 30 focused workflows
-27. **WSL, virtual machines, and containers** — 30 focused workflows
-28. **Performance and resource monitoring** — 30 focused workflows
-29. **Laptop battery, thermals, and power management** — 30 focused workflows
-30. **Event logs and Windows troubleshooting** — 30 focused workflows
-31. **Windows security and Microsoft Defender** — 30 focused workflows
-32. **Privacy, permissions, and account access** — 30 focused workflows
-33. **Accessibility and assistive technology** — 30 focused workflows
-34. **Remote access and support sessions** — 30 focused workflows
-35. **Reliable Windows UI automation** — 30 focused workflows
-36. **Screenshots, screen reading, and OCR** — 30 focused workflows
-37. **Clipboard, text entry, and input reliability** — 30 focused workflows
-38. **Printers, scanners, docks, and peripherals** — 30 focused workflows
-39. **Backup, restore, and recovery** — 30 focused workflows
-40. **Windows provisioning and account lifecycle** — 30 focused workflows
+Each consolidated workflow is stored as a separate SKILL.md under 00-consolidated-desktop-operations. Metadata includes author, platform, stable consolidated ID, and version. Domain profiles preserve former domain/task bindings for traceability; the full mapping is in [docs/SKILL_MERGE_MAP.md](../../docs/SKILL_MERGE_MAP.md).
 
-## v1.1 agent-grade upgrade
-
-Every skill now carries its own execution contract bound to its domain and task. It adds explicit target identification, baseline capture, risk classification, concrete task controls, approval rules, independent success checks, stop conditions, bounded recovery, and a privacy-safe handoff. The original procedures, IDs, command examples, safety rules, and licensing boundaries are preserved. See [`SKILL_QUALITY_STANDARD.md`](SKILL_QUALITY_STANDARD.md) for the maintenance and acceptance criteria.
-
-## Layout
-
-Each workflow is a separate folder containing `SKILL.md`. The skill metadata includes a stable ID (`windows-0001` through `windows-1200`), author, platform, version, and license scope. The maintenance generator is `scripts/maintenance/generate_windows_skill_pack.py`.
+Quality standard: [SKILL_QUALITY_STANDARD.md](SKILL_QUALITY_STANDARD.md).
 
 ## Compatibility
 
-The instructions target Windows 10 and Windows 11, but feature availability varies by edition, build, hardware, policy, and installed applications. Skills instruct agents to check availability rather than assume it. Some PowerShell probes require built-in modules or optional components; use `Get-Command` and fall back to the UI when a command is unavailable.
+The instructions target Windows 10 and Windows 11, but feature availability varies by edition, build, hardware, policy, and installed applications. Skills instruct agents to check availability rather than assume it.
 
 ## Security and rights
 
-These 1,200 skills are original instructional material authored for Luo Kai. Copyright in original text is reserved to Luo Kai. Microsoft, Windows, and third-party product names are used only to identify the relevant platform or tool; their owners retain their respective rights. This collection does not claim ownership of Microsoft software, APIs, trademarks, or third-party tools.
+Copyright in original instructional material, workflow design, and organization is reserved to Luo Kai. No license is granted for original material. Microsoft, Windows, and third-party product names are used descriptively; their owners retain their respective rights. Third-party material, where separately included in the repository, remains subject to its own rights and notices.

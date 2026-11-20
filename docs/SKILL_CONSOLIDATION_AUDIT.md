@@ -283,3 +283,16 @@ The replacement preserves backup validation, current-disk protection, restore sa
 - **Windows skill count after twelve pilots:** 1,172.
 - **Combined Windows + Linux count after twelve pilots:** 2,422.
 - **Complete migration map:** [docs/SKILL_MERGE_MAP.md](SKILL_MERGE_MAP.md)
+
+
+## Windows workflow consolidation completed — 2026-11-20
+
+The remaining 29 workflows across all 40 Windows domains have been consolidated into 348 profile-based skills across the same 12 domain groups. The 1,160 original standalone files were replaced by 348 consolidated files; every source body is retained inside its domain profile, with only duplicate frontmatter replaced by stable consolidated metadata.
+
+- Previously completed discovery skills: 12
+- New consolidated workflows: 348
+- Windows skills after consolidation: 360
+- Linux skills unchanged: 1,250
+- Combined Windows + Linux workflows: 1,610
+- Net reduction from the Windows collection: 812 skill files
+- Migration map: docs/SKILL_MERGE_MAP.md
