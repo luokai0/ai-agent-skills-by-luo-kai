@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-audio-stack-diagnostics
 description: Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0787
 ---
-
 # Diagnose PipeWire, PulseAudio, and ALSA audio paths on Red Hat Enterprise Linux
 
 ## Objective

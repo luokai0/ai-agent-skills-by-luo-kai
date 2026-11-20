@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-desktop-session
 description: Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0174
 ---
-
 # Diagnose desktop session, display, and audio state on Red Hat Enterprise Linux
 
 ## Objective

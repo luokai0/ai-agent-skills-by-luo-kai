@@ -1,14 +1,12 @@
 ---
 name: linux-fedora-container-runtime
 description: Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Fedora; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Fedora
 collection: 24
 skill_id: linux-0097
 ---
-
 # Inspect container and isolation tooling on Fedora
 
 ## Objective

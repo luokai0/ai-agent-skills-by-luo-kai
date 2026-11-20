@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-vpn-state-audit
 description: Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0992
 ---
-
 # Inspect VPN and tunnel state on elementary OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-accessibility-audit
 description: Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0699
 ---
-
 # Inspect desktop accessibility settings on Linux Mint
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-0583
 ---
-
 # Inventory service manager and services on SteamOS
 
 ## Objective

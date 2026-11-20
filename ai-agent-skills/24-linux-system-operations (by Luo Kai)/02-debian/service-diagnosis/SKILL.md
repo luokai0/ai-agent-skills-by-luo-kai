@@ -1,14 +1,12 @@
 ---
 name: linux-debian-service-diagnosis
 description: Investigate a named service failure using status, recent logs, dependencies, and listening sockets. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0034
 ---
-
 # Diagnose a service using logs and dependencies on Debian
 
 ## Objective

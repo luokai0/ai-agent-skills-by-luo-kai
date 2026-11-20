@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-system-log-review
 description: Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0169
 ---
-
 # Review system logs for a reported incident on Red Hat Enterprise Linux
 
 ## Objective

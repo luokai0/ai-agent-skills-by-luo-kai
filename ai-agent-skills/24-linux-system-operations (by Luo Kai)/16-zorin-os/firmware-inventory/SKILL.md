@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-firmware-inventory
 description: Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1002
 ---
-
 # Inventory device firmware and update readiness on Zorin OS
 
 ## Objective

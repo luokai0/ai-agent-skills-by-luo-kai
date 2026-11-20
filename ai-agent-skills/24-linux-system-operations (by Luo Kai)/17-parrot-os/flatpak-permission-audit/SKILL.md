@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1046
 ---
-
 # Audit Flatpak application permissions on Parrot OS
 
 ## Objective

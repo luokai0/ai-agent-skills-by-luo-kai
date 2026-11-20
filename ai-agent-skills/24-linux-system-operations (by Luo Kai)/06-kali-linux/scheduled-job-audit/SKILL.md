@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-scheduled-job-audit
 description: Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0145
 ---
-
 # Audit scheduled jobs and startup automation on Kali Linux
 
 ## Objective

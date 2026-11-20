@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-printer-scanner-audit
 description: Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0911
 ---
-
 # Inspect printer and scanner discovery on AlmaLinux
 
 ## Objective

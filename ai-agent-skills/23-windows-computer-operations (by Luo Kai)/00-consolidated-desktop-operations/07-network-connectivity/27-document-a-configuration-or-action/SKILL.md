@@ -1,6 +1,6 @@
 ---
-name: "Windows Document A Configuration Or Action across Network and secure connectivity"
-description: "Consolidated document a configuration or action workflow across 2 Windows domains: Network and secure connectivity. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Document A Configuration Or Action across Network and Secure Connectivity"
+description: "Consolidated document a configuration or action workflow across 2 Windows domains: Network and Secure Connectivity. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Document A Configuration Or Action across Network and secure connectivity
+# Windows Document A Configuration Or Action across Network and Secure Connectivity
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the document a configuration or action workflows from 2 related Windows 
 
 ## When to use
 
-Use when the user requests document a configuration or action in any of these domains: Windows Wi-Fi, Ethernet, and network adapters; Windows DNS, firewall, VPN, and secure connectivity.
+Use when the user needs the document a configuration or action workflow in any of these domains: Windows Wi-Fi, Ethernet, and network adapters; Windows DNS, firewall, VPN, and secure connectivity.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0627
 
 ##### Objective
 
-Carry out **document a configuration or action** for adapter state, connection profiles, signal, ip configuration, and connectivity checks.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **document a configuration or action** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to document a configuration or action
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for adapter state, connection profiles, signal, ip configuration, and connectivity checks.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, document a configuration or action means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify adapter, SSID or link state, IP, gateway, DNS, and reachability separately. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0627` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Document A Configuration Or Action. Carry out **document a configuration or action** for adapter state, connection profiles, signal, ip configuration, and connectivity checks.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Wi-Fi, Ethernet, and network adapters: Document A Configuration Or Action. Carry out **document a configuration or action** for adapter state, connection profiles, signal, ip configuration, and connectivity checks. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `21-wifi-ethernet`. **Scope:** Adapter state, connection profiles, signal, IP configuration, and connectivity checks.; **Preferred tools:** Settings Network, Get-NetAdapter, Get-NetIPConfiguration, ipconfig /all, ping approved endpoint.; **Task focus:** For **document a configuration or action**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not connect to unknown networks, reveal Wi-Fi passwords, or change corporate network settings.; **Verification:** Verify adapter, SSID or link state, IP, gateway, DNS, and reachability separately. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0657
 
 ##### Objective
 
-Carry out **document a configuration or action** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **document a configuration or action** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to document a configuration or action
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for name resolution, firewall profile inspection, vpn state, and secure route diagnosis.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, document a configuration or action means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Check DNS answer, active profile, VPN connection, route, and application-specific reachability. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0657` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Document A Configuration Or Action. Carry out **document a configuration or action** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows DNS, firewall, VPN, and secure connectivity: Document A Configuration Or Action. Carry out **document a configuration or action** for name resolution, firewall profile inspection, vpn state, and secure route diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `22-dns-firewall-vpn`. **Scope:** Name resolution, firewall profile inspection, VPN state, and secure route diagnosis.; **Preferred tools:** Resolve-DnsName, Get-NetFirewallProfile, Get-NetIPConfiguration, VPN Settings UI.; **Task focus:** For **document a configuration or action**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never disable firewall, bypass VPN, expose internal routes, or weaken TLS to make a connection work.; **Verification:** Check DNS answer, active profile, VPN connection, route, and application-specific reachability. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-developer-toolchain
 description: Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0171
 ---
-
 # Inspect and prepare a development toolchain on Red Hat Enterprise Linux
 
 ## Objective

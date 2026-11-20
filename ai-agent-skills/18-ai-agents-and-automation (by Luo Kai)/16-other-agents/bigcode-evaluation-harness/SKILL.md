@@ -3,11 +3,9 @@ name: evaluating-code-models
 description: Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@k metrics. Use when benchmarking code models, comparing coding abilities, testing multi-language support, or measuring code generation quality. Industry standard from BigCode Project used by HuggingFace leaderboards.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Evaluation, Code Generation, HumanEval, MBPP, MultiPL-E, Pass@k, BigCode, Benchmarking, Code Models]
 dependencies: [bigcode-evaluation-harness, transformers>=4.25.1, accelerate>=0.13.2, datasets>=2.6.1]
 ---
-
 # BigCode Evaluation Harness - Code Model Benchmarking
 
 ## Quick Start

@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-identify-release
 description: Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-0576
 ---
-
 # Identify distribution and release on SteamOS
 
 ## Objective

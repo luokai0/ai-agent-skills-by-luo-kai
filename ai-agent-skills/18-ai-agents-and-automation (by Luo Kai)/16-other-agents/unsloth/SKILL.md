@@ -3,11 +3,9 @@ name: unsloth
 description: Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Fine-Tuning, Unsloth, Fast Training, LoRA, QLoRA, Memory-Efficient, Optimization, Llama, Mistral, Gemma, Qwen]
 dependencies: [unsloth, torch, transformers, trl, datasets, peft]
 ---
-
 # Unsloth Skill
 
 Comprehensive assistance with unsloth development, generated from official documentation.

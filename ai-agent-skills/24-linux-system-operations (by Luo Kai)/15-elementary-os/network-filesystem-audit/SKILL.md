@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-network-filesystem-audit
 description: Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0994
 ---
-
 # Inspect NFS, SMB, and network mount health on elementary OS
 
 ## Objective

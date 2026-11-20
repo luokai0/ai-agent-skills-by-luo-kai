@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-bluetooth-diagnostics
 description: Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0835
 ---
-
 # Diagnose Bluetooth adapter and pairing state on Manjaro
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-disk-encryption-audit
 description: Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0759
 ---
-
 # Inspect disk encryption and unlock dependencies on Kali Linux
 
 ## Objective

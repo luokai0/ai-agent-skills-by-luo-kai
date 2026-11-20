@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-smart-health-review
 description: Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1028
 ---
-
 # Review disk SMART health and error trends on Parrot OS
 
 ## Objective

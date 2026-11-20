@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-acl-permission-audit
 description: Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1007
 ---
-
 # Audit file ownership, mode bits, and ACLs on Zorin OS
 
 ## Objective

@@ -2,9 +2,7 @@
 author: luo-kai
 name: twitter-algorithm-optimizer
 description: Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit user tweets to improve engagement and visibility based on how the recommendation system ranks content.
-license: AGPL-3.0 (referencing Twitter's algorithm source)
 ---
-
 # Twitter Algorithm Optimizer
 
 ## When to Use This Skill

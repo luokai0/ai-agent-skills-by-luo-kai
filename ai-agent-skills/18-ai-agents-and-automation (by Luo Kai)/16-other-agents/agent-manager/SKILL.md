@@ -2,10 +2,8 @@
 author: luo-kai
 name: agent-manager
 description: Employee agent lifecycle management system. Use when working with agents/ directory employee agents - starting, stopping, monitoring, or assigning tasks to Dev/QA agents running in tmux sessions. Completely independent of CAO, uses only tmux + Python.
-license: MIT
 allowed-tools: [Read, Write, Edit, Bash, Task]
 ---
-
 # Agent Manager
 
 Employee agent orchestration system for managing AI agents in tmux sessions. A simple, dependency-light alternative to CAO.

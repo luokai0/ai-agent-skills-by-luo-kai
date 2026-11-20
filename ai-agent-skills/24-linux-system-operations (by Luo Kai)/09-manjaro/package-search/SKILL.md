@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-package-search
 description: Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0204
 ---
-
 # Search for a package safely on Manjaro
 
 ## Objective

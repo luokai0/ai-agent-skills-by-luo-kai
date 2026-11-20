@@ -3,11 +3,9 @@ name: fine-tuning-openvla-oft
 description: Fine-tunes and evaluates OpenVLA-OFT and OpenVLA-OFT+ policies for robot action generation with continuous action heads, LoRA adaptation, and FiLM conditioning on LIBERO simulation and ALOHA real-world setups. Use when reproducing OpenVLA-OFT paper results, training custom VLA action heads (L1 or diffusion), deploying server-client inference for ALOHA, or debugging normalization, LoRA merge, and cross-GPU issues.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [OpenVLA, OpenVLA-OFT, VLA, Robotics, Fine-Tuning, LIBERO, ALOHA, LoRA, FiLM, Action Chunking, Deployment, Continuous Actions]
 dependencies: [torch==2.2.0, transformers>=4.40.0, peft==0.11.1, draccus==0.8.0, accelerate>=0.25.0, wandb>=0.16.0, fastapi>=0.100.0, uvicorn>=0.24.0, tensorflow==2.15.0, robosuite==1.4.0]  # Exact pins: OpenVLA-OFT paper results were validated on torch==2.2.0, peft==0.11.1, tensorflow==2.15.0; upgrading torch may require re-tuning the LoRA adapter merge step and re-validating action head outputs
 ---
-
 # OpenVLA-OFT
 
 Fine-tuning and evaluation workflows for OpenVLA-OFT and OpenVLA-OFT+ from the official `openvla-oft` codebase. Covers blank-machine setup plus LoRA-based adaptation of OpenVLA for robot action generation with continuous action prediction heads.

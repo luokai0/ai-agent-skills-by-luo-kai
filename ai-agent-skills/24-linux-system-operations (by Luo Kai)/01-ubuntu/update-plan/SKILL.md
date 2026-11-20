@@ -1,14 +1,12 @@
 ---
 name: linux-ubuntu-update-plan
 description: Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Ubuntu; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Ubuntu
 collection: 24
 skill_id: linux-0006
 ---
-
 # Plan system updates without applying them on Ubuntu
 
 ## Objective

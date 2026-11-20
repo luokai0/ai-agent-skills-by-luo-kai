@@ -1,14 +1,12 @@
 ---
 name: linux-ubuntu-acl-permission-audit
 description: Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Ubuntu; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Ubuntu
 collection: 24
 skill_id: linux-0632
 ---
-
 # Audit file ownership, mode bits, and ACLs on Ubuntu
 
 ## Objective

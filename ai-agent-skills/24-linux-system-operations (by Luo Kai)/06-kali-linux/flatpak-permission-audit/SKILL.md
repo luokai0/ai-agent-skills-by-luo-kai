@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0771
 ---
-
 # Audit Flatpak application permissions on Kali Linux
 
 ## Objective

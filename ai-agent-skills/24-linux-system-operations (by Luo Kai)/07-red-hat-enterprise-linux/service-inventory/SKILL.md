@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0158
 ---
-
 # Inventory service manager and services on Red Hat Enterprise Linux
 
 ## Objective

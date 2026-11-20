@@ -1,14 +1,12 @@
 ---
 name: linux-nixos-desktop-session
 description: Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to NixOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: NixOS
 collection: 24
 skill_id: linux-0449
 ---
-
 # Diagnose desktop session, display, and audio state on NixOS
 
 ## Objective

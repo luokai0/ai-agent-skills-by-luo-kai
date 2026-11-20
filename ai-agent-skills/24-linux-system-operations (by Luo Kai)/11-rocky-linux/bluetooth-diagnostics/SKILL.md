@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-bluetooth-diagnostics
 description: Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0885
 ---
-
 # Diagnose Bluetooth adapter and pairing state on Rocky Linux
 
 ## Objective

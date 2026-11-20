@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-container-runtime
 description: Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-0497
 ---
-
 # Inspect container and isolation tooling on Void Linux
 
 ## Objective

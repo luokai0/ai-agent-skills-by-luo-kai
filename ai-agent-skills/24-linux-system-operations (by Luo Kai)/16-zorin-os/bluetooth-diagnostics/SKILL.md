@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-bluetooth-diagnostics
 description: Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1010
 ---
-
 # Diagnose Bluetooth adapter and pairing state on Zorin OS
 
 ## Objective

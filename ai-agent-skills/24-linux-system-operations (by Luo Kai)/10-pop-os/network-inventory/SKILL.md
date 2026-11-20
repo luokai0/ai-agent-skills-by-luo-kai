@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0239
 ---
-
 # Diagnose network interfaces and routes on Pop!_OS
 
 ## Objective

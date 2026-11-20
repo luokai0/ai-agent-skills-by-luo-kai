@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-accessibility-audit
 description: Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-1224
 ---
-
 # Inspect desktop accessibility settings on SteamOS
 
 ## Objective

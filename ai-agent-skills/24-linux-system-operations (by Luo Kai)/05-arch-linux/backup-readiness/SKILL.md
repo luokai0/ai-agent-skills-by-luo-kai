@@ -1,14 +1,12 @@
 ---
 name: linux-arch-linux-backup-readiness
 description: Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Arch Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Arch Linux
 collection: 24
 skill_id: linux-0123
 ---
-
 # Assess backup and recovery readiness on Arch Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-slackware-desktop-session
 description: Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Slackware; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-0474
 ---
-
 # Diagnose desktop session, display, and audio state on Slackware
 
 ## Objective

@@ -1,6 +1,6 @@
 ---
-name: "Windows Switch Context And Focus across Shells, processes, and startup"
-description: "Consolidated switch context and focus workflow across 5 Windows domains: Shells, processes, and startup. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Switch Context And Focus across Shells, Processes, and Startup"
+description: "Consolidated switch context and focus workflow across 5 Windows domains: Shells, Processes, and Startup. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Switch Context And Focus across Shells, processes, and startup
+# Windows Switch Context And Focus across Shells, Processes, and Startup
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the switch context and focus workflows from 5 related Windows domains. S
 
 ## When to use
 
-Use when the user requests switch context and focus in any of these domains: Windows PowerShell fundamentals; Windows Advanced PowerShell administration; Windows Command Prompt and Windows Terminal; Windows Processes, services, and applications; Windows Startup, scheduled tasks, and background execution.
+Use when the user needs the switch context and focus workflow in any of these domains: Windows PowerShell fundamentals; Windows Advanced PowerShell administration; Windows Command Prompt and Windows Terminal; Windows Processes, services, and applications; Windows Startup, scheduled tasks, and background execution.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0276
 
 ##### Objective
 
-Carry out **switch context and focus** for powershell discovery, safe command execution, objects, pipelines, profiles, and help.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **switch context and focus** for powershell discovery, safe command execution, objects, pipelines, profiles, and help. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to switch context and focus involving
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for powershell discovery, safe command execution, objects, pipelines, profiles, and help.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for powershell discovery, safe command execution, objects, pipelines, profiles, and help. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, switch context and focus means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Read command output, exit status, and affected object; rerun read-only checks to confirm. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0276` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
-**Exact task:** Windows PowerShell fundamentals: Switch Context And Focus. Carry out **switch context and focus** for powershell discovery, safe command execution, objects, pipelines, profiles, and help.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows PowerShell fundamentals: Switch Context And Focus. Carry out **switch context and focus** for powershell discovery, safe command execution, objects, pipelines, profiles, and help. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `10-powershell-fundamentals`. **Scope:** PowerShell discovery, safe command execution, objects, pipelines, profiles, and help.; **Preferred tools:** Get-Help, Get-Command, Get-ComputerInfo, Get-Location, Get-ChildItem, Get-Process.; **Task focus:** For **switch context and focus**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never execute opaque pasted commands; avoid encoded commands, hidden windows, execution-policy bypass, and untrusted profiles.; **Verification:** Read command output, exit status, and affected object; rerun read-only checks to confirm. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0306
 
 ##### Objective
 
-Carry out **switch context and focus** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **switch context and focus** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to switch context and focus involving
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, switch context and focus means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Use -WhatIf when supported, inspect object counts, capture errors, and verify state independently. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0306` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
-**Exact task:** Windows Advanced PowerShell administration: Switch Context And Focus. Carry out **switch context and focus** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Advanced PowerShell administration: Switch Context And Focus. Carry out **switch context and focus** for structured output, cim, remoting concepts, modules, error handling, and safe automation patterns. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `11-powershell-advanced`. **Scope:** Structured output, CIM, remoting concepts, modules, error handling, and safe automation patterns.; **Preferred tools:** Get-CimInstance, Get-WinEvent, Get-Service, Get-NetAdapter, Export-Csv only to approved paths.; **Task focus:** For **switch context and focus**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not invoke remote scripts, change execution policy, elevate, or alter machine state without approval.; **Verification:** Use -WhatIf when supported, inspect object counts, capture errors, and verify state independently. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-0336
 
 ##### Objective
 
-Carry out **switch context and focus** for terminal profiles, shells, command discovery, environment variables, and command sessions.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **switch context and focus** for terminal profiles, shells, command discovery, environment variables, and command sessions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to switch context and focus involving
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for terminal profiles, shells, command discovery, environment variables, and command sessions.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for terminal profiles, shells, command discovery, environment variables, and command sessions. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, switch context and focus means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Confirm active shell, working directory, target path, and command exit code. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0336` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
-**Exact task:** Windows Command Prompt and Windows Terminal: Switch Context And Focus. Carry out **switch context and focus** for terminal profiles, shells, command discovery, environment variables, and command sessions.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Command Prompt and Windows Terminal: Switch Context And Focus. Carry out **switch context and focus** for terminal profiles, shells, command discovery, environment variables, and command sessions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `12-terminal-cmd`. **Scope:** Terminal profiles, shells, command discovery, environment variables, and command sessions.; **Preferred tools:** Windows Terminal UI, cmd /? help, where.exe, set, ver, whoami.; **Task focus:** For **switch context and focus**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not paste commands from untrusted pages; distinguish PowerShell syntax from cmd.exe syntax.; **Verification:** Confirm active shell, working directory, target path, and command exit code. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -336,7 +336,7 @@ Former skill ID: windows-0366
 
 ##### Objective
 
-Carry out **switch context and focus** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **switch context and focus** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -353,7 +353,7 @@ Use this skill when the user asks an agent to switch context and focus involving
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, switch context and focus means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify PID, executable path, signer where available, status, and resource trend. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -389,7 +389,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0366` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
-**Exact task:** Windows Processes, services, and applications: Switch Context And Focus. Carry out **switch context and focus** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Processes, services, and applications: Switch Context And Focus. Carry out **switch context and focus** for process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `13-process-services`. **Scope:** Process inspection, app lifecycle, service status, resource usage, and hung-app diagnosis.; **Preferred tools:** Task Manager, Resource Monitor, Get-Process, Get-Service, Get-CimInstance Win32_Service.; **Task focus:** For **switch context and focus**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not terminate system/security processes or stop services based only on name; protect unsaved app work.; **Verification:** Verify PID, executable path, signer where available, status, and resource trend. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -433,7 +433,7 @@ Former skill ID: windows-0396
 
 ##### Objective
 
-Carry out **switch context and focus** for startup apps, task scheduler, login tasks, and background execution diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **switch context and focus** for startup apps, task scheduler, login tasks, and background execution diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -450,7 +450,7 @@ Use this skill when the user asks an agent to switch context and focus involving
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for startup apps, task scheduler, login tasks, and background execution diagnosis.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for startup apps, task scheduler, login tasks, and background execution diagnosis. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, switch context and focus means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify task name, trigger, principal, action, last-run result, and visible ownership. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -486,7 +486,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0396` · **Version:** `1.1.0` · **Risk:** MODERATE — interactive navigation; preserve user work and session
 
-**Exact task:** Windows Startup, scheduled tasks, and background execution: Switch Context And Focus. Carry out **switch context and focus** for startup apps, task scheduler, login tasks, and background execution diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Startup, scheduled tasks, and background execution: Switch Context And Focus. Carry out **switch context and focus** for startup apps, task scheduler, login tasks, and background execution diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `14-startup-scheduling`. **Scope:** Startup apps, Task Scheduler, login tasks, and background execution diagnosis.; **Preferred tools:** Settings Startup, Task Manager Startup, Get-ScheduledTask, Get-CimInstance Win32_StartupCommand.; **Task focus:** For **switch context and focus**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not create persistence, hidden tasks, stealth triggers, or tasks that run without user awareness.; **Verification:** Verify task name, trigger, principal, action, last-run result, and visible ownership. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

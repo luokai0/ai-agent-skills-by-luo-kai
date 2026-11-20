@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-1196
 ---
-
 # Audit Flatpak application permissions on Qubes OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-mx-linux-storage-capacity
 description: Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to MX Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: MX Linux
 collection: 24
 skill_id: linux-0512
 ---
-
 # Assess disk capacity and filesystem pressure on MX Linux
 
 ## Objective

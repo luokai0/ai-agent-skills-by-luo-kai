@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-laptop-power-audit
 description: Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0689
 ---
-
 # Inspect battery health and power profiles on Linux Mint
 
 ## Objective

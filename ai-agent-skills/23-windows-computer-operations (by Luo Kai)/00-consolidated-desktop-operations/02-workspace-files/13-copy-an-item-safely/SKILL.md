@@ -1,6 +1,6 @@
 ---
-name: "Windows Copy An Item Safely across Workspace and file operations"
-description: "Consolidated copy an item safely workflow across 3 Windows domains: Workspace and file operations. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Copy An Item Safely across Workspace and File Operations"
+description: "Consolidated copy an item safely workflow across 3 Windows domains: Workspace and File Operations. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Copy An Item Safely across Workspace and file operations
+# Windows Copy An Item Safely across Workspace and File Operations
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the copy an item safely workflows from 3 related Windows domains. Select
 
 ## When to use
 
-Use when the user requests copy an item safely in any of these domains: Windows Start menu, taskbar, and notifications; Windows File Explorer navigation; Windows File and folder operations.
+Use when the user needs the copy an item safely workflow in any of these domains: Windows Start menu, taskbar, and notifications; Windows File Explorer navigation; Windows File and folder operations.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0103
 
 ##### Objective
 
-Carry out **copy an item safely** for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **copy an item safely** for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to copy an item safely involving star
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, copy an item safely means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify the intended app or panel opened and the taskbar remains usable. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0103` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Start menu, taskbar, and notifications: Copy An Item Safely. Carry out **copy an item safely** for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Start menu, taskbar, and notifications: Copy An Item Safely. Carry out **copy an item safely** for start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `04-start-taskbar`. **Scope:** Start menu, pinned apps, taskbar controls, quick settings, system tray, and notifications.; **Preferred tools:** Start search, taskbar UI Automation, Settings, read-only Get-Process.; **Task focus:** For **copy an item safely**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not unpin, uninstall, or disable startup items unless asked; do not dismiss security alerts without reading them.; **Verification:** Verify the intended app or panel opened and the taskbar remains usable. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0133
 
 ##### Objective
 
-Carry out **copy an item safely** for explorer windows, locations, navigation pane, address bar, libraries, and views.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **copy an item safely** for explorer windows, locations, navigation pane, address bar, libraries, and views. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to copy an item safely involving file
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for explorer windows, locations, navigation pane, address bar, libraries, and views.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for explorer windows, locations, navigation pane, address bar, libraries, and views. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, copy an item safely means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Check the address bar path and inspect a representative item before acting. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0133` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows File Explorer navigation: Copy An Item Safely. Carry out **copy an item safely** for explorer windows, locations, navigation pane, address bar, libraries, and views.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows File Explorer navigation: Copy An Item Safely. Carry out **copy an item safely** for explorer windows, locations, navigation pane, address bar, libraries, and views. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `05-file-explorer`. **Scope:** Explorer windows, locations, navigation pane, address bar, libraries, and views.; **Preferred tools:** File Explorer UI, address bar, shell namespace; read-only Get-ChildItem and Get-Item.; **Task focus:** For **copy an item safely**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Confirm full paths; distinguish local, removable, network, cloud-synced, and virtual locations.; **Verification:** Check the address bar path and inspect a representative item before acting. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-0163
 
 ##### Objective
 
-Carry out **copy an item safely** for create, copy, move, rename, organize, and safely remove files and folders.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **copy an item safely** for create, copy, move, rename, organize, and safely remove files and folders. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to copy an item safely involving file
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for create, copy, move, rename, organize, and safely remove files and folders.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for create, copy, move, rename, organize, and safely remove files and folders. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, copy an item safely means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Compare source/destination paths, item counts, sizes, timestamps, and hashes when appropriate. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0163` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows File and folder operations: Copy An Item Safely. Carry out **copy an item safely** for create, copy, move, rename, organize, and safely remove files and folders.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows File and folder operations: Copy An Item Safely. Carry out **copy an item safely** for create, copy, move, rename, organize, and safely remove files and folders. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `06-file-operations`. **Scope:** Create, copy, move, rename, organize, and safely remove files and folders.; **Preferred tools:** Explorer UI first; read-only Test-Path, Get-Item, Get-FileHash, Get-ChildItem.; **Task focus:** For **copy an item safely**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never overwrite, permanently delete, or move large trees without explicit approval and a collision check.; **Verification:** Compare source/destination paths, item counts, sizes, timestamps, and hashes when appropriate. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

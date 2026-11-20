@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-desktop-autostart-audit
 description: Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0772
 ---
-
 # Audit desktop autostart and login hooks on Kali Linux
 
 ## Objective

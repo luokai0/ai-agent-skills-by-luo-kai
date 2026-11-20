@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-mount-inventory
 description: Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-0563
 ---
-
 # Inventory mounts, encryption, and removable media on Qubes OS
 
 ## Objective

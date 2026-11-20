@@ -1,14 +1,12 @@
 ---
 name: linux-tails-ssh-audit
 description: Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Tails; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Tails
 collection: 24
 skill_id: linux-0542
 ---
-
 # Audit SSH server configuration securely on Tails
 
 ## Objective

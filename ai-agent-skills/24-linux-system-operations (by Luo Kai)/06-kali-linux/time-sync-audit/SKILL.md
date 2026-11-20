@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-time-sync-audit
 description: Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0768
 ---
-
 # Inspect clock synchronization and timezone on Kali Linux
 
 ## Objective

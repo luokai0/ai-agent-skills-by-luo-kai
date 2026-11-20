@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-desktop-session
 description: Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0399
 ---
-
 # Diagnose desktop session, display, and audio state on Zorin OS
 
 ## Objective

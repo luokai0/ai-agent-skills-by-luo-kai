@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-lvm-topology-audit
 description: Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1004
 ---
-
 # Map LVM physical, volume, and logical volumes on Zorin OS
 
 ## Objective

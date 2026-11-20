@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-printer-scanner-audit
 description: Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-1186
 ---
-
 # Inspect printer and scanner discovery on Qubes OS
 
 ## Objective

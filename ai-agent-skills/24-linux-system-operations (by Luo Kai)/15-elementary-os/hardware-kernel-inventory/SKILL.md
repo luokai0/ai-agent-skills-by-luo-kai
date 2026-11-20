@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-hardware-kernel-inventory
 description: Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0352
 ---
-
 # Inventory hardware and kernel on elementary OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-identify-release
 description: Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0226
 ---
-
 # Identify distribution and release on Pop!_OS
 
 ## Objective

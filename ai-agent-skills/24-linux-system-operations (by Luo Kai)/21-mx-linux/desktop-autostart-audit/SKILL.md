@@ -1,14 +1,12 @@
 ---
 name: linux-mx-linux-desktop-autostart-audit
 description: Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to MX Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: MX Linux
 collection: 24
 skill_id: linux-1147
 ---
-
 # Audit desktop autostart and login hooks on MX Linux
 
 ## Objective

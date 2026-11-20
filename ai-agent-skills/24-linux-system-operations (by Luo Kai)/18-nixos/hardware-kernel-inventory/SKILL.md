@@ -1,14 +1,12 @@
 ---
 name: linux-nixos-hardware-kernel-inventory
 description: Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to NixOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: NixOS
 collection: 24
 skill_id: linux-0427
 ---
-
 # Inventory hardware and kernel on NixOS
 
 ## Objective

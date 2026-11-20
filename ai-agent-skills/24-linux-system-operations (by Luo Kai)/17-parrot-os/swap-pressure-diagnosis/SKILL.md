@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1030
 ---
-
 # Diagnose swap usage and memory pressure on Parrot OS
 
 ## Objective

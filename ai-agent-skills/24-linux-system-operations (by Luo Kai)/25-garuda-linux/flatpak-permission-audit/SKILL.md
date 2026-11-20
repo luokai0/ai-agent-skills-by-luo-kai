@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-1246
 ---
-
 # Audit Flatpak application permissions on Garuda Linux
 
 ## Objective

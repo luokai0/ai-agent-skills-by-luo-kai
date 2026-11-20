@@ -2,11 +2,9 @@
 author: luo-kai
 name: umap-learn
 description: UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.
-license: BSD-3-Clause license
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # UMAP-Learn
 
 ## Overview

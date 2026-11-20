@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-dns-diagnosis
 description: Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0215
 ---
-
 # Diagnose DNS and resolver configuration on Manjaro
 
 ## Objective

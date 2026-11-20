@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-boot-kernel-review
 description: Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0343
 ---
-
 # Review bootloader and kernel parameters on Alpine Linux
 
 ## Objective

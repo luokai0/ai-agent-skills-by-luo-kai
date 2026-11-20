@@ -3,11 +3,9 @@ name: autogpt-agents
 description: Autonomous AI agent platform for building and deploying continuous agents. Use when creating visual workflow agents, deploying persistent autonomous agents, or building complex multi-step AI automation systems.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Agents, AutoGPT, Autonomous Agents, Workflow Automation, Visual Builder, AI Platform]
 dependencies: [autogpt-platform>=0.4.0]
 ---
-
 # AutoGPT - Autonomous AI Agent Platform
 
 Comprehensive platform for building, deploying, and managing continuous AI agents through a visual interface or development toolkit.

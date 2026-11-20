@@ -1,14 +1,12 @@
 ---
 name: linux-gentoo-ssh-audit
 description: Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Gentoo; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Gentoo
 collection: 24
 skill_id: linux-0317
 ---
-
 # Audit SSH server configuration securely on Gentoo
 
 ## Objective

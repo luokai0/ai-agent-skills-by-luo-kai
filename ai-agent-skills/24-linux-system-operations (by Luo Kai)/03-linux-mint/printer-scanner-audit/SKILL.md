@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-printer-scanner-audit
 description: Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0686
 ---
-
 # Inspect printer and scanner discovery on Linux Mint
 
 ## Objective

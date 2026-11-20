@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1005
 ---
-
 # Diagnose swap usage and memory pressure on Zorin OS
 
 ## Objective

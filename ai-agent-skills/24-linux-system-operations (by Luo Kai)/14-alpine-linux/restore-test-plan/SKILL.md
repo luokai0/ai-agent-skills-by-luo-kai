@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-restore-test-plan
 description: Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0970
 ---
-
 # Prepare a safe backup restore test on Alpine Linux
 
 ## Objective

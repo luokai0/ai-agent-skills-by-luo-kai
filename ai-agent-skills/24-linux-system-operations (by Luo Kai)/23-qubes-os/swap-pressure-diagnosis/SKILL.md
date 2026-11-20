@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-1180
 ---
-
 # Diagnose swap usage and memory pressure on Qubes OS
 
 ## Objective

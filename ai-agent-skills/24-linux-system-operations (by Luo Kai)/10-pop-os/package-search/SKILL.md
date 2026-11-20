@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-package-search
 description: Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0229
 ---
-
 # Search for a package safely on Pop!_OS
 
 ## Objective

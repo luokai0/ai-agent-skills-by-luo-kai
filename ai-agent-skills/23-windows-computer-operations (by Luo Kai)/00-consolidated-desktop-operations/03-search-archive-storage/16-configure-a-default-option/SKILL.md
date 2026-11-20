@@ -1,6 +1,6 @@
 ---
-name: "Windows Configure A Default Option across Search, archives, and storage"
-description: "Consolidated configure a default option workflow across 3 Windows domains: Search, archives, and storage. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Configure A Default Option across Search, Archives, and Storage"
+description: "Consolidated configure a default option workflow across 3 Windows domains: Search, Archives, and Storage. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Configure A Default Option across Search, archives, and storage
+# Windows Configure A Default Option across Search, Archives, and Storage
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the configure a default option workflows from 3 related Windows domains.
 
 ## When to use
 
-Use when the user requests configure a default option in any of these domains: Windows Windows search and file metadata; Windows Archives, downloads, and file transfer; Windows Storage, partitions, and volumes.
+Use when the user needs the configure a default option workflow in any of these domains: Windows search and file metadata; Windows Archives, downloads, and file transfer; Windows Storage, partitions, and volumes.
 
 ## Required operating discipline
 
@@ -35,17 +35,17 @@ Use when the user requests configure a default option in any of these domains: W
 
 ## Domain profiles
 
-### Profile 1: Windows Windows search and file metadata
+### Profile 1: Windows search and file metadata
 
 Former domain: 07-search-metadata
 
 Former skill ID: windows-0196
 
-#### Windows Windows search and file metadata: Configure A Default Option
+#### Windows search and file metadata: Configure A Default Option
 
 ##### Objective
 
-Carry out **configure a default option** for search indexing, filters, metadata, file properties, and content discovery.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **configure a default option** for search indexing, filters, metadata, file properties, and content discovery. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to configure a default option involvi
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for search indexing, filters, metadata, file properties, and content discovery.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for search indexing, filters, metadata, file properties, and content discovery. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, configure a default option means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Open the result and validate its actual path, date, and file identity. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0196` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Windows search and file metadata: Configure A Default Option. Carry out **configure a default option** for search indexing, filters, metadata, file properties, and content discovery.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows search and file metadata: Configure A Default Option. Carry out **configure a default option** for search indexing, filters, metadata, file properties, and content discovery. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `07-search-metadata`. **Scope:** Search indexing, filters, metadata, file properties, and content discovery.; **Preferred tools:** Explorer search, Windows Search UI, Get-Item, Get-ChildItem, Get-FileHash.; **Task focus:** For **configure a default option**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Search results may be stale or incomplete; do not expose private filenames or content in reports unnecessarily.; **Verification:** Open the result and validate its actual path, date, and file identity. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0226
 
 ##### Objective
 
-Carry out **configure a default option** for zip archives, downloads, removable media, and safe local file transfers.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **configure a default option** for zip archives, downloads, removable media, and safe local file transfers. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to configure a default option involvi
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for zip archives, downloads, removable media, and safe local file transfers.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for zip archives, downloads, removable media, and safe local file transfers. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, configure a default option means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Inspect archive listing, destination, extracted file types, and hashes for critical transfers. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0226` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Archives, downloads, and file transfer: Configure A Default Option. Carry out **configure a default option** for zip archives, downloads, removable media, and safe local file transfers.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Archives, downloads, and file transfer: Configure A Default Option. Carry out **configure a default option** for zip archives, downloads, removable media, and safe local file transfers. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `08-archives-transfer`. **Scope:** ZIP archives, downloads, removable media, and safe local file transfers.; **Preferred tools:** Explorer archive UI, Get-FileHash, Get-Item, Get-Volume.; **Task focus:** For **configure a default option**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Treat downloaded archives as untrusted; do not run included executables, macros, shortcuts, or scripts.; **Verification:** Inspect archive listing, destination, extracted file types, and hashes for critical transfers. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-0256
 
 ##### Objective
 
-Carry out **configure a default option** for disk space, volumes, removable storage, filesystem health indicators, and storage settings.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **configure a default option** for disk space, volumes, removable storage, filesystem health indicators, and storage settings. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to configure a default option involvi
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for disk space, volumes, removable storage, filesystem health indicators, and storage settings.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for disk space, volumes, removable storage, filesystem health indicators, and storage settings. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, configure a default option means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Confirm disk identity, capacity, free space, filesystem, and drive letter before any approved change. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0256` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Storage, partitions, and volumes: Configure A Default Option. Carry out **configure a default option** for disk space, volumes, removable storage, filesystem health indicators, and storage settings.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Storage, partitions, and volumes: Configure A Default Option. Carry out **configure a default option** for disk space, volumes, removable storage, filesystem health indicators, and storage settings. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `09-storage-volumes`. **Scope:** Disk space, volumes, removable storage, filesystem health indicators, and storage settings.; **Preferred tools:** Settings Storage, Disk Management for viewing, Get-Volume, Get-PSDrive, Get-Disk (read-only).; **Task focus:** For **configure a default option**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not initialize, format, partition, clean, or repair-write disks without explicit informed approval and backup.; **Verification:** Confirm disk identity, capacity, free space, filesystem, and drive letter before any approved change. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

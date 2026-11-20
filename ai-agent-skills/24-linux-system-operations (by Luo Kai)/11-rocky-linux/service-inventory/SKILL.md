@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0258
 ---
-
 # Inventory service manager and services on Rocky Linux
 
 ## Objective

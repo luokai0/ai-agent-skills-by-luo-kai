@@ -2,11 +2,9 @@
 author: luo-kai
 name: bindingdb-database
 description: Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Search by target (UniProt ID), compound (SMILES/name), or pathogen. Essential for drug discovery, lead optimization, polypharmacology analysis, and structure-activity relationship (SAR) studies.
-license: CC-BY-3.0
 metadata:
     skill-author: Kuan-lin Huang
 ---
-
 # BindingDB Database
 
 ## Overview

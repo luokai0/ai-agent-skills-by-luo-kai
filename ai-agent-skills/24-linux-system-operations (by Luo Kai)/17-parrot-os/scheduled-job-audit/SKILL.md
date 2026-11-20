@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-scheduled-job-audit
 description: Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-0420
 ---
-
 # Audit scheduled jobs and startup automation on Parrot OS
 
 ## Objective

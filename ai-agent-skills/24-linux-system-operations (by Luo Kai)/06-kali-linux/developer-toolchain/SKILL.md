@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-developer-toolchain
 description: Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0146
 ---
-
 # Inspect and prepare a development toolchain on Kali Linux
 
 ## Objective

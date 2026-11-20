@@ -1,14 +1,12 @@
 ---
 name: linux-slackware-dns-diagnosis
 description: Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to Slackware; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-0465
 ---
-
 # Diagnose DNS and resolver configuration on Slackware
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0680
 ---
-
 # Diagnose swap usage and memory pressure on Linux Mint
 
 ## Objective

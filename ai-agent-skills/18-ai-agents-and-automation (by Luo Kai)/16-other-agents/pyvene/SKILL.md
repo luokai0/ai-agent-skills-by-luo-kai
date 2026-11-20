@@ -3,11 +3,9 @@ name: pyvene-interventions
 description: Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when conducting causal tracing, activation patching, interchange intervention training, or testing causal hypotheses about model behavior.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Causal Intervention, pyvene, Activation Patching, Causal Tracing, Interpretability]
 dependencies: [pyvene>=0.1.8, torch>=2.0.0, transformers>=4.30.0]
 ---
-
 # pyvene: Causal Interventions for Neural Networks
 
 pyvene is Stanford NLP's library for performing causal interventions on PyTorch models. It provides a declarative, dict-based framework for activation patching, causal tracing, and interchange intervention training - making intervention experiments reproducible and shareable.

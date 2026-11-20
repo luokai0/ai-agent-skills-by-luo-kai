@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-developer-toolchain
 description: Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-0421
 ---
-
 # Inspect and prepare a development toolchain on Parrot OS
 
 ## Objective

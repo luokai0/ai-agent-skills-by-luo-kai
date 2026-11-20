@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-boot-kernel-review
 description: Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0293
 ---
-
 # Review bootloader and kernel parameters on AlmaLinux
 
 ## Objective

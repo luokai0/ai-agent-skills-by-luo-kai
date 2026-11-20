@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-bluetooth-diagnostics
 description: Inspect Bluetooth controller, daemon, rfkill, and connected-device state without pairing or trusting devices. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0760
 ---
-
 # Diagnose Bluetooth adapter and pairing state on Kali Linux
 
 ## Objective

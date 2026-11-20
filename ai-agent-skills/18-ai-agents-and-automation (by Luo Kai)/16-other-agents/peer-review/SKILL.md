@@ -3,11 +3,9 @@ author: luo-kai
 name: peer-review
 description: Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.
 allowed-tools: Read Write Edit Bash
-license: MIT license
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # Scientific Critical Evaluation and Peer Review
 
 ## Overview

@@ -1,14 +1,12 @@
 ---
 name: linux-opensuse-installed-package-audit
 description: Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to openSUSE; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: openSUSE
 collection: 24
 skill_id: linux-0182
 ---
-
 # Audit installed packages and provenance on openSUSE
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-restore-test-plan
 description: Design a non-destructive restore validation using a user-approved sample and isolated destination. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0795
 ---
-
 # Prepare a safe backup restore test on Red Hat Enterprise Linux
 
 ## Objective

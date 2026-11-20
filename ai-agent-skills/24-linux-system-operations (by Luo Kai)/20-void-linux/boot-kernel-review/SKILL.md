@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-boot-kernel-review
 description: Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-0493
 ---
-
 # Review bootloader and kernel parameters on Void Linux
 
 ## Objective

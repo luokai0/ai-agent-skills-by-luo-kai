@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-container-runtime
 description: Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0172
 ---
-
 # Inspect container and isolation tooling on Red Hat Enterprise Linux
 
 ## Objective

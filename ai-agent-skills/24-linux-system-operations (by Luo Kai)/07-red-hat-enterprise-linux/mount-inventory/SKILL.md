@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-mount-inventory
 description: Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0163
 ---
-
 # Inventory mounts, encryption, and removable media on Red Hat Enterprise Linux
 
 ## Objective

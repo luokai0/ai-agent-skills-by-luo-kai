@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-network-filesystem-audit
 description: Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0794
 ---
-
 # Inspect NFS, SMB, and network mount health on Red Hat Enterprise Linux
 
 ## Objective

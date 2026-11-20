@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-firmware-inventory
 description: Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-1102
 ---
-
 # Inventory device firmware and update readiness on Void Linux
 
 ## Objective

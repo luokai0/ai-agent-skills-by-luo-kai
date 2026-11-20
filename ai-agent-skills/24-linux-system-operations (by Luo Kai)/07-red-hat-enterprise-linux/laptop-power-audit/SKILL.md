@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-laptop-power-audit
 description: Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0789
 ---
-
 # Inspect battery health and power profiles on Red Hat Enterprise Linux
 
 ## Objective

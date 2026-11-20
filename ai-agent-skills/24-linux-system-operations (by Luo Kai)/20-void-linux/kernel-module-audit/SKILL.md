@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-kernel-module-audit
 description: Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-1101
 ---
-
 # Audit kernel modules and load state on Void Linux
 
 ## Objective

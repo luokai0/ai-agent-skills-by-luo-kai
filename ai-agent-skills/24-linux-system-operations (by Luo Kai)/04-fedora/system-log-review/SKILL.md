@@ -1,14 +1,12 @@
 ---
 name: linux-fedora-system-log-review
 description: Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Fedora; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Fedora
 collection: 24
 skill_id: linux-0094
 ---
-
 # Review system logs for a reported incident on Fedora
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-mandatory-access-control-audit
 description: Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0908
 ---
-
 # Inspect SELinux or AppArmor enforcement on AlmaLinux
 
 ## Objective

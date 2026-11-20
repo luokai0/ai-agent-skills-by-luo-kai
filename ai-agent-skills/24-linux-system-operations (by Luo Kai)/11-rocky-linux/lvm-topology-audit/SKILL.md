@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-lvm-topology-audit
 description: Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0879
 ---
-
 # Map LVM physical, volume, and logical volumes on Rocky Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-smart-health-review
 description: Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0953
 ---
-
 # Review disk SMART health and error trends on Alpine Linux
 
 ## Objective

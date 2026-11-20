@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0996
 ---
-
 # Audit Flatpak application permissions on elementary OS
 
 ## Objective

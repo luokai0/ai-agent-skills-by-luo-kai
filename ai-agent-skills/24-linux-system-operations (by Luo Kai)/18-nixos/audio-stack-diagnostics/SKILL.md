@@ -1,14 +1,12 @@
 ---
 name: linux-nixos-audio-stack-diagnostics
 description: Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to NixOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: NixOS
 collection: 24
 skill_id: linux-1062
 ---
-
 # Diagnose PipeWire, PulseAudio, and ALSA audio paths on NixOS
 
 ## Objective

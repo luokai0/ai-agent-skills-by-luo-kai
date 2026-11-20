@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-firmware-inventory
 description: Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0952
 ---
-
 # Inventory device firmware and update readiness on Alpine Linux
 
 ## Objective

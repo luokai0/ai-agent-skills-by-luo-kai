@@ -1,14 +1,12 @@
 ---
 name: linux-arch-linux-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Arch Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Arch Linux
 collection: 24
 skill_id: linux-0108
 ---
-
 # Inventory service manager and services on Arch Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0264
 ---
-
 # Diagnose network interfaces and routes on Rocky Linux
 
 ## Objective

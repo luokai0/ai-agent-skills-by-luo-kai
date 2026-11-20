@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0214
 ---
-
 # Diagnose network interfaces and routes on Manjaro
 
 ## Objective

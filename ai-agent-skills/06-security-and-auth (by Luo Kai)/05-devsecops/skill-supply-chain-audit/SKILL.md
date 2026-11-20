@@ -1,13 +1,11 @@
 ---
 name: skill-supply-chain-audit
 description: Audits AI agent skills, plugins, tool bundles, and workflow packages for provenance gaps, malicious instructions, unsafe scripts, dependency risks, and license problems. Use before installing, importing, adapting, publishing, or granting an agent access to an unfamiliar skill.
-license: Proprietary. See repository LICENSE
 metadata:
   author: Luo Kai
   provenance: original
   version: "1.0.0"
 ---
-
 # Skill Supply Chain Audit
 
 ## Mission

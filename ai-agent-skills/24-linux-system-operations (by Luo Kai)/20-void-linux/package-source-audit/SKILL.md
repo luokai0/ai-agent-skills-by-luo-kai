@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-package-source-audit
 description: Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-0478
 ---
-
 # Audit configured package sources on Void Linux
 
 ## Objective

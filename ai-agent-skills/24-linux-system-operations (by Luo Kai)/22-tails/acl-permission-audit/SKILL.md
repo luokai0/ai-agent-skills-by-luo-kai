@@ -1,14 +1,12 @@
 ---
 name: linux-tails-acl-permission-audit
 description: Inspect access to a specific user-selected path, including ACLs and parent-directory traversal rights. Applies to Tails; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Tails
 collection: 24
 skill_id: linux-1157
 ---
-
 # Audit file ownership, mode bits, and ACLs on Tails
 
 ## Objective

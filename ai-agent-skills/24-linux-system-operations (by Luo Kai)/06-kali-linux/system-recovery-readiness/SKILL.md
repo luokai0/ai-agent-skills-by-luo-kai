@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-system-recovery-readiness
 description: Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0775
 ---
-
 # Assess boot and recovery options on Kali Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0289
 ---
-
 # Diagnose network interfaces and routes on AlmaLinux
 
 ## Objective

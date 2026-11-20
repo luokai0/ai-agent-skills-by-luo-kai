@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-mount-inventory
 description: Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-0588
 ---
-
 # Inventory mounts, encryption, and removable media on SteamOS
 
 ## Objective

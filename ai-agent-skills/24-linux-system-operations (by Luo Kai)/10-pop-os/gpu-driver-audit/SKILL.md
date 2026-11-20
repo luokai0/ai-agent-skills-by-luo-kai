@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-gpu-driver-audit
 description: Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0863
 ---
-
 # Audit GPU driver binding and acceleration on Pop!_OS
 
 ## Objective

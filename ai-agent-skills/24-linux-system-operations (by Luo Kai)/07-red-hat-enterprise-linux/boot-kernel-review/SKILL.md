@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-boot-kernel-review
 description: Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0168
 ---
-
 # Review bootloader and kernel parameters on Red Hat Enterprise Linux
 
 ## Objective

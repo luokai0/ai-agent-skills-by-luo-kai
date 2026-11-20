@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-scheduled-job-audit
 description: Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-0570
 ---
-
 # Audit scheduled jobs and startup automation on Qubes OS
 
 ## Objective

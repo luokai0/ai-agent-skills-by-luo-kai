@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-vpn-state-audit
 description: Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0842
 ---
-
 # Inspect VPN and tunnel state on Manjaro
 
 ## Objective

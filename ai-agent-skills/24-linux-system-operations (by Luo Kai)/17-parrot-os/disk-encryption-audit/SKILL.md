@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-disk-encryption-audit
 description: Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1034
 ---
-
 # Inspect disk encryption and unlock dependencies on Parrot OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-package-source-audit
 description: Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0228
 ---
-
 # Audit configured package sources on Pop!_OS
 
 ## Objective

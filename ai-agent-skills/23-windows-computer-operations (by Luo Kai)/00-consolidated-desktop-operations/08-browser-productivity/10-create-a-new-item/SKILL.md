@@ -1,6 +1,6 @@
 ---
-name: "Windows Create A New Item across Browser and productivity applications"
-description: "Consolidated create a new item workflow across 2 Windows domains: Browser and productivity applications. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Create A New Item across Browser and Productivity Applications"
+description: "Consolidated create a new item workflow across 2 Windows domains: Browser and Productivity Applications. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Create A New Item across Browser and productivity applications
+# Windows Create A New Item across Browser and Productivity Applications
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the create a new item workflows from 2 related Windows domains. Select o
 
 ## When to use
 
-Use when the user requests create a new item in any of these domains: Windows Browsers, web apps, and downloads; Windows Office and productivity applications.
+Use when the user needs the create a new item workflow in any of these domains: Windows Browsers, web apps, and downloads; Windows Office and productivity applications.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0670
 
 ##### Objective
 
-Carry out **create a new item** for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **create a new item** for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to create a new item involving browse
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, create a new item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify domain, profile, tab, permission, download origin, and final page state. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0670` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Browsers, web apps, and downloads: Create A New Item. Carry out **create a new item** for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Browsers, web apps, and downloads: Create A New Item. Carry out **create a new item** for browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `23-browser-webapps`. **Scope:** Browser tabs, profiles, downloads, permissions, web app sessions, and browser troubleshooting.; **Preferred tools:** Browser UI, built-in task manager, download history, site permission panels.; **Task focus:** For **create a new item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never reveal passwords, session cookies, recovery codes, or private tabs; do not install unknown extensions.; **Verification:** Verify domain, profile, tab, permission, download origin, and final page state. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0700
 
 ##### Objective
 
-Carry out **create a new item** for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **create a new item** for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to create a new item involving office
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, create a new item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify file identity, recipient, sharing scope, save status, and version history. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0700` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Office and productivity applications: Create A New Item. Carry out **create a new item** for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Office and productivity applications: Create A New Item. Carry out **create a new item** for documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `24-office-productivity`. **Scope:** Documents, spreadsheets, presentations, mail clients, calendars, and collaboration tools.; **Preferred tools:** Native application UI, accessibility tree, file properties, autosave/version history.; **Task focus:** For **create a new item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not send, share, delete, or overwrite documents or messages without explicit confirmation.; **Verification:** Verify file identity, recipient, sharing scope, save status, and version history. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

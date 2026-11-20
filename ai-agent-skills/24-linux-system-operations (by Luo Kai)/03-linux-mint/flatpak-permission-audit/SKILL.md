@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0696
 ---
-
 # Audit Flatpak application permissions on Linux Mint
 
 ## Objective

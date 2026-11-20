@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-package-source-audit
 description: Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0253
 ---
-
 # Audit configured package sources on Rocky Linux
 
 ## Objective

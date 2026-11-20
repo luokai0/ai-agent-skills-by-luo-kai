@@ -1,14 +1,12 @@
 ---
 name: linux-arch-linux-update-plan
 description: Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Arch Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Arch Linux
 collection: 24
 skill_id: linux-0106
 ---
-
 # Plan system updates without applying them on Arch Linux
 
 ## Objective

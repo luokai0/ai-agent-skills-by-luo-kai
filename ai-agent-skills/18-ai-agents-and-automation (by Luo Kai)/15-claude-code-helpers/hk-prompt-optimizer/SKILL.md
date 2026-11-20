@@ -2,9 +2,7 @@
 author: luo-kai
 name: prompt-optimizer
 description: This skill should be used when users request help optimizing, improving, or refining their prompts or instructions for AI models. Use this skill when users provide vague, unclear, or poorly structured prompts and need assistance transforming them into clear, effective, and well-structured instructions that AI models can better understand and execute. This skill applies comprehensive prompt engineering best practices to enhance prompt quality, clarity, and effectiveness.
-license: Complete terms in LICENSE.txt
 ---
-
 # Prompt Optimizer
 
 ## Overview

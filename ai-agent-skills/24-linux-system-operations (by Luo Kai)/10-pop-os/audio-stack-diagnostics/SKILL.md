@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-audio-stack-diagnostics
 description: Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0862
 ---
-
 # Diagnose PipeWire, PulseAudio, and ALSA audio paths on Pop!_OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-lvm-topology-audit
 description: Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0679
 ---
-
 # Map LVM physical, volume, and logical volumes on Linux Mint
 
 ## Objective

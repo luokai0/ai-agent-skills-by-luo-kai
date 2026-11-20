@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-btrfs-snapshot-audit
 description: Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0856
 ---
-
 # Inspect Btrfs subvolumes and snapshots on Pop!_OS
 
 ## Objective

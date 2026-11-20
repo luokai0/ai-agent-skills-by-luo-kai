@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-system-recovery-readiness
 description: Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0700
 ---
-
 # Assess boot and recovery options on Linux Mint
 
 ## Objective

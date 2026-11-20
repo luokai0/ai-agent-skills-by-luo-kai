@@ -1,6 +1,6 @@
 ---
-name: "Windows Perform Routine Maintenance across Accessibility, remote support, and visual automation"
-description: "Consolidated perform routine maintenance workflow across 4 Windows domains: Accessibility, remote support, and visual automation. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Perform Routine Maintenance across Accessibility, Remote Support, and Visual Automation"
+description: "Consolidated perform routine maintenance workflow across 4 Windows domains: Accessibility, Remote Support, and Visual Automation. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Perform Routine Maintenance across Accessibility, remote support, and visual automation
+# Windows Perform Routine Maintenance across Accessibility, Remote Support, and Visual Automation
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the perform routine maintenance workflows from 4 related Windows domains
 
 ## When to use
 
-Use when the user requests perform routine maintenance in any of these domains: Windows Accessibility and assistive technology; Windows Remote access and support sessions; Windows Reliable Windows UI automation; Windows Screenshots, screen reading, and OCR.
+Use when the user needs the perform routine maintenance workflow in any of these domains: Windows Accessibility and assistive technology; Windows Remote access and support sessions; Windows Reliable Windows UI automation; Windows Screenshots, screen reading, and OCR.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0989
 
 ##### Objective
 
-Carry out **perform routine maintenance** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **perform routine maintenance** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to perform routine maintenance involv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, perform routine maintenance means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Ask/observe the requested modality, test focus order, speech/caption output, and reversibility. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0989` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Accessibility and assistive technology: Perform Routine Maintenance. Carry out **perform routine maintenance** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Accessibility and assistive technology: Perform Routine Maintenance. Carry out **perform routine maintenance** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `33-accessibility`. **Scope:** Narrator, Magnifier, captions, contrast, keyboard access, voice access, and input assistance.; **Preferred tools:** Settings Accessibility, Narrator, Magnifier, UI Automation, on-screen keyboard.; **Task focus:** For **perform routine maintenance**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not change assistive settings without consent; never assume a user’s disability or preferred modality.; **Verification:** Ask/observe the requested modality, test focus order, speech/caption output, and reversibility. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-1019
 
 ##### Objective
 
-Carry out **perform routine maintenance** for remote desktop, quick assist, remote support, session handoff, and connectivity.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **perform routine maintenance** for remote desktop, quick assist, remote support, session handoff, and connectivity. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to perform routine maintenance involv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for remote desktop, quick assist, remote support, session handoff, and connectivity.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for remote desktop, quick assist, remote support, session handoff, and connectivity. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, perform routine maintenance means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify endpoint identity, session owner, encryption/organization policy, visible consent, and disconnect path. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1019` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Remote access and support sessions: Perform Routine Maintenance. Carry out **perform routine maintenance** for remote desktop, quick assist, remote support, session handoff, and connectivity.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Remote access and support sessions: Perform Routine Maintenance. Carry out **perform routine maintenance** for remote desktop, quick assist, remote support, session handoff, and connectivity. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `34-remote-desktop`. **Scope:** Remote Desktop, Quick Assist, remote support, session handoff, and connectivity.; **Preferred tools:** Windows Remote Desktop UI, Quick Assist, Get-NetTCPConnection (read-only).; **Task focus:** For **perform routine maintenance**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** No covert remote access, unattended persistence, credential sharing, or enabling remote access without explicit consent.; **Verification:** Verify endpoint identity, session owner, encryption/organization policy, visible consent, and disconnect path. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-1049
 
 ##### Objective
 
-Carry out **perform routine maintenance** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **perform routine maintenance** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to perform routine maintenance involv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, perform routine maintenance means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Assert control identity, enabled state, focus, expected text/value, and post-action screen state. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1049` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Reliable Windows UI automation: Perform Routine Maintenance. Carry out **perform routine maintenance** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Reliable Windows UI automation: Perform Routine Maintenance. Carry out **perform routine maintenance** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `35-ui-automation`. **Scope:** UI Automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows.; **Preferred tools:** Supported UIA framework, accessibility tree, screenshots, keyboard shortcuts, app-native APIs.; **Task focus:** For **perform routine maintenance**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** No hidden clicks, security prompt bypass, CAPTCHA circumvention, or actions that conceal activity.; **Verification:** Assert control identity, enabled state, focus, expected text/value, and post-action screen state. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -336,7 +336,7 @@ Former skill ID: windows-1079
 
 ##### Objective
 
-Carry out **perform routine maintenance** for screen capture, ocr, visual grounding, region selection, and evidence handling.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **perform routine maintenance** for screen capture, ocr, visual grounding, region selection, and evidence handling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -353,7 +353,7 @@ Use this skill when the user asks an agent to perform routine maintenance involv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for screen capture, ocr, visual grounding, region selection, and evidence handling.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for screen capture, ocr, visual grounding, region selection, and evidence handling. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, perform routine maintenance means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Compare OCR with visible source and use UIA for ambiguous labels or values. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -389,7 +389,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1079` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Screenshots, screen reading, and OCR: Perform Routine Maintenance. Carry out **perform routine maintenance** for screen capture, ocr, visual grounding, region selection, and evidence handling.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Screenshots, screen reading, and OCR: Perform Routine Maintenance. Carry out **perform routine maintenance** for screen capture, ocr, visual grounding, region selection, and evidence handling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `36-screenshots-ocr`. **Scope:** Screen capture, OCR, visual grounding, region selection, and evidence handling.; **Preferred tools:** Approved screenshot API, Snipping Tool, Windows OCR, UI Automation names.; **Task focus:** For **perform routine maintenance**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Capture only relevant windows; redact secrets and personal content; do not record without permission.; **Verification:** Compare OCR with visible source and use UIA for ambiguous labels or values. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

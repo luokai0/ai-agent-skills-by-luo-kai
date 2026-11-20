@@ -1,14 +1,12 @@
 ---
 name: linux-nixos-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to NixOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: NixOS
 collection: 24
 skill_id: linux-1055
 ---
-
 # Diagnose swap usage and memory pressure on NixOS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-slackware-package-install
 description: Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Slackware; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-0455
 ---
-
 # Install a package with transaction review on Slackware
 
 ## Objective

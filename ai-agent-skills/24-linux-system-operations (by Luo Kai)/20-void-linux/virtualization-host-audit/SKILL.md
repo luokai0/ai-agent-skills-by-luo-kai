@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-virtualization-host-audit
 description: Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-1116
 ---
-
 # Inspect KVM, libvirt, and virtualization readiness on Void Linux
 
 ## Objective

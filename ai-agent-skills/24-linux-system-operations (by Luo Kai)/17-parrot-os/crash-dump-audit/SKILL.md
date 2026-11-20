@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-crash-dump-audit
 description: Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1048
 ---
-
 # Review crash dumps and core-dump policy on Parrot OS
 
 ## Objective

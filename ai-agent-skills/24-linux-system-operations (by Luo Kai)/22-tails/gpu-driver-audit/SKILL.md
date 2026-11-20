@@ -1,14 +1,12 @@
 ---
 name: linux-tails-gpu-driver-audit
 description: Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Tails; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Tails
 collection: 24
 skill_id: linux-1163
 ---
-
 # Audit GPU driver binding and acceleration on Tails
 
 ## Objective

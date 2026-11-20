@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-printer-scanner-audit
 description: Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1011
 ---
-
 # Inspect printer and scanner discovery on Zorin OS
 
 ## Objective

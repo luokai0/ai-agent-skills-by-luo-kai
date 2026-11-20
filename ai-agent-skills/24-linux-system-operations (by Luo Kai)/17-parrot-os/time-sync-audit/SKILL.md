@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-time-sync-audit
 description: Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1043
 ---
-
 # Inspect clock synchronization and timezone on Parrot OS
 
 ## Objective

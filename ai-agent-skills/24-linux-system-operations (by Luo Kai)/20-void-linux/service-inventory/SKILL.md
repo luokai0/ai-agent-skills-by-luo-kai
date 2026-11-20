@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-0483
 ---
-
 # Inventory service manager and services on Void Linux
 
 ## Objective

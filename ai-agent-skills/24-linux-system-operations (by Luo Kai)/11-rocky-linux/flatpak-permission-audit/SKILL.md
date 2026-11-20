@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0896
 ---
-
 # Audit Flatpak application permissions on Rocky Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-mandatory-access-control-audit
 description: Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-1208
 ---
-
 # Inspect SELinux or AppArmor enforcement on SteamOS
 
 ## Objective

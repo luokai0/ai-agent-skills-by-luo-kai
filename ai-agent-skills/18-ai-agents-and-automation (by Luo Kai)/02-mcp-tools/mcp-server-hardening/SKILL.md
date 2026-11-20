@@ -1,13 +1,11 @@
 ---
 name: mcp-server-hardening
 description: Designs and reviews secure Model Context Protocol servers, tools, resources, and transports. Use when building, integrating, deploying, or auditing MCP servers, tool authorization, authentication, input validation, output handling, and audit logging.
-license: Proprietary. See repository LICENSE
 metadata:
   author: Luo Kai
   provenance: original
   version: "1.0.0"
 ---
-
 # MCP Server Hardening
 
 ## Objective

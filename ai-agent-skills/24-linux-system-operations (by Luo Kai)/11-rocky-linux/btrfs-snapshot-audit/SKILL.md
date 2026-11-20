@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-btrfs-snapshot-audit
 description: Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0881
 ---
-
 # Inspect Btrfs subvolumes and snapshots on Rocky Linux
 
 ## Objective

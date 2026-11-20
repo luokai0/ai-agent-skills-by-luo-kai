@@ -1,14 +1,12 @@
 ---
 name: linux-debian-crash-dump-audit
 description: Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0673
 ---
-
 # Review crash dumps and core-dump policy on Debian
 
 ## Objective

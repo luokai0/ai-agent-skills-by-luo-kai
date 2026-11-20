@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-package-install
 description: Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-0605
 ---
-
 # Install a package with transaction review on Garuda Linux
 
 ## Objective

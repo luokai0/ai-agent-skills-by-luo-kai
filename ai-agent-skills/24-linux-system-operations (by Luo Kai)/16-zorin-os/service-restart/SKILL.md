@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-service-restart
 description: Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0385
 ---
-
 # Restart a named service safely on Zorin OS
 
 ## Objective

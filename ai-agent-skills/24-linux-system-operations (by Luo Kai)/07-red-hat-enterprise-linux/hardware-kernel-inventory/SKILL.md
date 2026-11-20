@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-hardware-kernel-inventory
 description: Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0152
 ---
-
 # Inventory hardware and kernel on Red Hat Enterprise Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-backup-readiness
 description: Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-0623
 ---
-
 # Assess backup and recovery readiness on Garuda Linux
 
 ## Objective

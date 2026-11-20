@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-smart-health-review
 description: Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0978
 ---
-
 # Review disk SMART health and error trends on elementary OS
 
 ## Objective

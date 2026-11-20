@@ -1,14 +1,12 @@
 ---
 name: linux-ubuntu-firmware-inventory
 description: Identify firmware packages, fwupd support, device metadata, and pending firmware updates without flashing hardware. Applies to Ubuntu; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Ubuntu
 collection: 24
 skill_id: linux-0627
 ---
-
 # Inventory device firmware and update readiness on Ubuntu
 
 ## Objective

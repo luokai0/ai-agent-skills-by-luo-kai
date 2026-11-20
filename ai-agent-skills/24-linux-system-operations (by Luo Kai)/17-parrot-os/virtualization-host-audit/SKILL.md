@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-virtualization-host-audit
 description: Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1041
 ---
-
 # Inspect KVM, libvirt, and virtualization readiness on Parrot OS
 
 ## Objective

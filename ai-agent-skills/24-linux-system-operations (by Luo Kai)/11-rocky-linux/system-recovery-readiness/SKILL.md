@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-system-recovery-readiness
 description: Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0900
 ---
-
 # Assess boot and recovery options on Rocky Linux
 
 ## Objective

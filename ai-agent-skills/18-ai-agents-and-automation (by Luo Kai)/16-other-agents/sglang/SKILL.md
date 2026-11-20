@@ -3,11 +3,9 @@ name: sglang
 description: Fast structured generation and serving for LLMs with RadixAttention prefix caching. Use for JSON/regex outputs, constrained decoding, agentic workflows with tool calls, or when you need 5× faster inference than vLLM with prefix sharing. Powers 300,000+ GPUs at xAI, AMD, NVIDIA, and LinkedIn.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Inference Serving, SGLang, Structured Generation, RadixAttention, Prefix Caching, Constrained Decoding, Agents, JSON Output, Fast Inference, Production Scale]
 dependencies: [sglang, torch, transformers]
 ---
-
 # SGLang
 
 High-performance serving framework for LLMs and VLMs with RadixAttention for automatic prefix caching.

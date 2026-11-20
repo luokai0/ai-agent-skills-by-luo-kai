@@ -1,13 +1,11 @@
 ---
 name: prompt-injection-defense
 description: Defends AI agent workflows against direct and indirect prompt injection in user input, web pages, documents, repositories, tool results, memory, and retrieved content. Use when an agent reads untrusted material or can take actions based on external information.
-license: Proprietary. See repository LICENSE
 metadata:
   author: Luo Kai
   provenance: original
   version: "1.0.0"
 ---
-
 # Prompt Injection Defense
 
 ## Core rule

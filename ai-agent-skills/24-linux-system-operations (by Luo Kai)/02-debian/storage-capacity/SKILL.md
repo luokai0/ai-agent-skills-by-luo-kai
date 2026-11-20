@@ -1,14 +1,12 @@
 ---
 name: linux-debian-storage-capacity
 description: Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0037
 ---
-
 # Assess disk capacity and filesystem pressure on Debian
 
 ## Objective

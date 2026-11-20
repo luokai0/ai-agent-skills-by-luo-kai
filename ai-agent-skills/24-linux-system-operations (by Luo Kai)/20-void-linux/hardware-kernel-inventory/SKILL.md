@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-hardware-kernel-inventory
 description: Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-0477
 ---
-
 # Inventory hardware and kernel on Void Linux
 
 ## Objective

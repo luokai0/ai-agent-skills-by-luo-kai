@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-system-log-review
 description: Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-0419
 ---
-
 # Review system logs for a reported incident on Parrot OS
 
 ## Objective

@@ -1,6 +1,6 @@
 ---
-name: "Windows Automate A Repeatable Workflow across Desktop and window management"
-description: "Consolidated automate a repeatable workflow workflow across 3 Windows domains: Desktop and window management. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Automate A Repeatable Workflow across Desktop and Window Management"
+description: "Consolidated automate a repeatable workflow workflow across 3 Windows domains: Desktop and Window Management. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Automate A Repeatable Workflow across Desktop and window management
+# Windows Automate A Repeatable Workflow across Desktop and Window Management
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the automate a repeatable workflow workflows from 3 related Windows doma
 
 ## When to use
 
-Use when the user requests automate a repeatable workflow in any of these domains: Windows Windows desktop shell; Windows Windows navigation and settings; Windows Window management and multitasking.
+Use when the user needs the automate a repeatable workflow workflow in any of these domains: Windows desktop shell; Windows navigation and settings; Windows Window management and multitasking.
 
 ## Required operating discipline
 
@@ -35,17 +35,17 @@ Use when the user requests automate a repeatable workflow in any of these domain
 
 ## Domain profiles
 
-### Profile 1: Windows Windows desktop shell
+### Profile 1: Windows desktop shell
 
 Former domain: 01-desktop-shell
 
 Former skill ID: windows-0024
 
-#### Windows Windows desktop shell: Automate A Repeatable Workflow
+#### Windows desktop shell: Automate A Repeatable Workflow
 
 ##### Objective
 
-Carry out **automate a repeatable workflow** for desktop, explorer shell, desktop icons, notification area, and shell processes.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **automate a repeatable workflow** for desktop, explorer shell, desktop icons, notification area, and shell processes. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to automate a repeatable workflow inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for desktop, explorer shell, desktop icons, notification area, and shell processes.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for desktop, explorer shell, desktop icons, notification area, and shell processes. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, automate a repeatable workflow means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Confirm the desktop remains responsive, focus is visible, and no user window was lost. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0024` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Windows desktop shell: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for desktop, explorer shell, desktop icons, notification area, and shell processes.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows desktop shell: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for desktop, explorer shell, desktop icons, notification area, and shell processes. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `01-desktop-shell`. **Scope:** Desktop, Explorer shell, desktop icons, notification area, and shell processes.; **Preferred tools:** UI Automation, keyboard navigation, Task Manager; read-only Get-Process and Get-ComputerInfo.; **Task focus:** For **automate a repeatable workflow**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not kill explorer.exe or reset the shell as a first response; unsaved shell dialogs and file operations may be active.; **Verification:** Confirm the desktop remains responsive, focus is visible, and no user window was lost. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -132,17 +132,17 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 *Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
 
-### Profile 2: Windows Windows navigation and settings
+### Profile 2: Windows navigation and settings
 
 Former domain: 02-windows-navigation
 
 Former skill ID: windows-0054
 
-#### Windows Windows navigation and settings: Automate A Repeatable Workflow
+#### Windows navigation and settings: Automate A Repeatable Workflow
 
 ##### Objective
 
-Carry out **automate a repeatable workflow** for settings app, control panel, system pages, navigation paths, and search surfaces.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **automate a repeatable workflow** for settings app, control panel, system pages, navigation paths, and search surfaces. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to automate a repeatable workflow inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for settings app, control panel, system pages, navigation paths, and search surfaces.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for settings app, control panel, system pages, navigation paths, and search surfaces. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, automate a repeatable workflow means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Reopen the target page and confirm the displayed value or page identity. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0054` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Windows navigation and settings: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for settings app, control panel, system pages, navigation paths, and search surfaces.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows navigation and settings: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for settings app, control panel, system pages, navigation paths, and search surfaces. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `02-windows-navigation`. **Scope:** Settings app, Control Panel, system pages, navigation paths, and search surfaces.; **Preferred tools:** Start search, Settings URI navigation where supported, Control Panel applets, Get-ComputerInfo.; **Task focus:** For **automate a repeatable workflow**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not change system-wide settings without a clear request; distinguish viewing a setting from changing it.; **Verification:** Reopen the target page and confirm the displayed value or page identity. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-0084
 
 ##### Objective
 
-Carry out **automate a repeatable workflow** for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **automate a repeatable workflow** for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to automate a repeatable workflow inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, automate a repeatable workflow means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify active window, bounds, monitor, and user-visible layout after each action. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0084` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Window management and multitasking: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Window management and multitasking: Automate A Repeatable Workflow. Carry out **automate a repeatable workflow** for window focus, snapping, virtual desktops, task switching, and multi-monitor window placement. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `03-window-multitasking`. **Scope:** Window focus, snapping, virtual desktops, task switching, and multi-monitor window placement.; **Preferred tools:** Win+Arrow shortcuts, Alt+Tab, Task View, UI Automation window patterns.; **Task focus:** For **automate a repeatable workflow**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Avoid closing windows to solve focus problems; preserve unsaved work and do not move windows off-screen.; **Verification:** Verify active window, bounds, monitor, and user-visible layout after each action. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

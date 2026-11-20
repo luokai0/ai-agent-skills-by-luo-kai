@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-desktop-autostart-audit
 description: Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1047
 ---
-
 # Audit desktop autostart and login hooks on Parrot OS
 
 ## Objective

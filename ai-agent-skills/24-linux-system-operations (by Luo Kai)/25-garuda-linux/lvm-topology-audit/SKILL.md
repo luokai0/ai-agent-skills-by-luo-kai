@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-lvm-topology-audit
 description: Inspect LVM topology, free extents, thin pools, and mount relationships before any resize or recovery work. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-1229
 ---
-
 # Map LVM physical, volume, and logical volumes on Garuda Linux
 
 ## Objective

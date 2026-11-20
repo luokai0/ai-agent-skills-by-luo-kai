@@ -1,14 +1,12 @@
 ---
 name: linux-opensuse-btrfs-snapshot-audit
 description: Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to openSUSE; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: openSUSE
 collection: 24
 skill_id: linux-0806
 ---
-
 # Inspect Btrfs subvolumes and snapshots on openSUSE
 
 ## Objective

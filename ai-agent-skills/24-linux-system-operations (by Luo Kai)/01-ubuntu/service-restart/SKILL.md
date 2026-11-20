@@ -1,14 +1,12 @@
 ---
 name: linux-ubuntu-service-restart
 description: Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to Ubuntu; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Ubuntu
 collection: 24
 skill_id: linux-0010
 ---
-
 # Restart a named service safely on Ubuntu
 
 ## Objective

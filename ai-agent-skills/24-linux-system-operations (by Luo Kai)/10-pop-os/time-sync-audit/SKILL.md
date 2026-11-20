@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-time-sync-audit
 description: Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0868
 ---
-
 # Inspect clock synchronization and timezone on Pop!_OS
 
 ## Objective

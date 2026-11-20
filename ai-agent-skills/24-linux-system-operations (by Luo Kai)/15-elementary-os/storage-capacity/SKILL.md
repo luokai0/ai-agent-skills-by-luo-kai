@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-storage-capacity
 description: Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0362
 ---
-
 # Assess disk capacity and filesystem pressure on elementary OS
 
 ## Objective

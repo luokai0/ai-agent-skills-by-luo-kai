@@ -1,13 +1,11 @@
 ---
 name: ai-generated-change-verification
 description: Independently verifies code and configuration changes produced by AI agents before merge or release. Use for reviewing diffs, checking requirements, running tests, detecting regressions, and preventing unsupported claims of completion.
-license: Proprietary. See repository LICENSE
 metadata:
   author: Luo Kai
   provenance: original
   version: "1.0.0"
 ---
-
 # AI-Generated Change Verification
 
 ## Principle

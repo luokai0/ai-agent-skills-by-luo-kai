@@ -2,11 +2,9 @@
 author: luo-kai
 name: clinicaltrials-database
 description: Query ClinicalTrials.gov via API v2. Search trials by condition, drug, location, status, or phase. Retrieve trial details by NCT ID, export data, for clinical research and patient matching.
-license: Unknown
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # ClinicalTrials.gov Database
 
 ## Overview

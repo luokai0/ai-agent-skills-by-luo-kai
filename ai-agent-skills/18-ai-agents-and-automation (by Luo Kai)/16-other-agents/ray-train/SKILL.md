@@ -3,11 +3,9 @@ name: ray-train
 description: Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperparameter tuning with Ray Tune, fault tolerance, elastic scaling. Use when training massive models across multiple machines or running distributed hyperparameter sweeps.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Ray Train, Distributed Training, Orchestration, Ray, Hyperparameter Tuning, Fault Tolerance, Elastic Scaling, Multi-Node, PyTorch, TensorFlow]
 dependencies: ["ray[train]", torch, transformers]
 ---
-
 # Ray Train - Distributed Training Orchestration
 
 ## Quick start

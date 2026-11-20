@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-audio-stack-diagnostics
 description: Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0962
 ---
-
 # Diagnose PipeWire, PulseAudio, and ALSA audio paths on Alpine Linux
 
 ## Objective

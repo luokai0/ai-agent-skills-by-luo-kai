@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-user-group-audit
 description: Inspect account state, group membership, sudo/doas rules, and login shells for a requested account. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0336
 ---
-
 # Audit local users, groups, and privilege boundaries on Alpine Linux
 
 ## Objective

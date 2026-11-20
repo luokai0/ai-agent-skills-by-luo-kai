@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-service-restart
 description: Restart one explicitly named service only after checking dependencies, user impact, and approval. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0285
 ---
-
 # Restart a named service safely on AlmaLinux
 
 ## Objective

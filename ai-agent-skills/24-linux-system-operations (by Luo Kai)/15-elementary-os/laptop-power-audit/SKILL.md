@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-laptop-power-audit
 description: Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0989
 ---
-
 # Inspect battery health and power profiles on elementary OS
 
 ## Objective

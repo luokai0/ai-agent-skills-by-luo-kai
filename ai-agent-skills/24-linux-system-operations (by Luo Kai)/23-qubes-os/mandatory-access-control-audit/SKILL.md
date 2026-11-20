@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-mandatory-access-control-audit
 description: Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-1183
 ---
-
 # Inspect SELinux or AppArmor enforcement on Qubes OS
 
 ## Objective

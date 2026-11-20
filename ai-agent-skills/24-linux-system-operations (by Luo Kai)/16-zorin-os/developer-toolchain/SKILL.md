@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-developer-toolchain
 description: Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0396
 ---
-
 # Inspect and prepare a development toolchain on Zorin OS
 
 ## Objective

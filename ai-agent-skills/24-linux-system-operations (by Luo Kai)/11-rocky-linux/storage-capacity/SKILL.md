@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-storage-capacity
 description: Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0262
 ---
-
 # Assess disk capacity and filesystem pressure on Rocky Linux
 
 ## Objective

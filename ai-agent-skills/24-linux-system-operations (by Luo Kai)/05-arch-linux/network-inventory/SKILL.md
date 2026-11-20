@@ -1,14 +1,12 @@
 ---
 name: linux-arch-linux-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Arch Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Arch Linux
 collection: 24
 skill_id: linux-0114
 ---
-
 # Diagnose network interfaces and routes on Arch Linux
 
 ## Objective

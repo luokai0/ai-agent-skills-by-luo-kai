@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-container-runtime
 description: Determine whether Podman, Docker, containerd, Flatpak, or distro-specific sandbox tools are installed and running. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0372
 ---
-
 # Inspect container and isolation tooling on elementary OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-package-search
 description: Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0054
 ---
-
 # Search for a package safely on Linux Mint
 
 ## Objective

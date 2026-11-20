@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-system-log-review
 description: Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0069
 ---
-
 # Review system logs for a reported incident on Linux Mint
 
 ## Objective

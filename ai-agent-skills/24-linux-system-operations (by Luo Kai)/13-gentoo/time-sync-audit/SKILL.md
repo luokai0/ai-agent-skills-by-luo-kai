@@ -1,14 +1,12 @@
 ---
 name: linux-gentoo-time-sync-audit
 description: Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Gentoo; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Gentoo
 collection: 24
 skill_id: linux-0943
 ---
-
 # Inspect clock synchronization and timezone on Gentoo
 
 ## Objective

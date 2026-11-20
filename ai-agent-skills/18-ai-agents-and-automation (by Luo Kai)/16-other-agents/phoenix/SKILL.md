@@ -3,11 +3,9 @@ name: phoenix-observability
 description: Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed traces, running evaluations on datasets, or monitoring production AI systems with real-time insights.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Observability, Phoenix, Arize, Tracing, Evaluation, Monitoring, LLM Ops, OpenTelemetry]
 dependencies: [arize-phoenix>=12.0.0]
 ---
-
 # Phoenix - AI Observability Platform
 
 Open-source AI observability and evaluation platform for LLM applications with tracing, evaluation, datasets, experiments, and real-time monitoring.

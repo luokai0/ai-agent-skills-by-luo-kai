@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-vpn-state-audit
 description: Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0967
 ---
-
 # Inspect VPN and tunnel state on Alpine Linux
 
 ## Objective

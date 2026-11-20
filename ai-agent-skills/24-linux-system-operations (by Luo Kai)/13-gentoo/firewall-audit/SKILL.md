@@ -1,14 +1,12 @@
 ---
 name: linux-gentoo-firewall-audit
 description: Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Gentoo; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Gentoo
 collection: 24
 skill_id: linux-0316
 ---
-
 # Audit firewall policy and exposed listeners on Gentoo
 
 ## Objective

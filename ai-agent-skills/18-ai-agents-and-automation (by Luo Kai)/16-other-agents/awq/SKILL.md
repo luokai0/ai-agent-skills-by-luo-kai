@@ -3,11 +3,9 @@ name: awq-quantization
 description: Activation-aware weight quantization for 4-bit LLM compression with 3x speedup and minimal accuracy loss. Use when deploying large models (7B-70B) on limited GPU memory, when you need faster inference than GPTQ with better accuracy preservation, or for instruction-tuned and multimodal models. MLSys 2024 Best Paper Award winner.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Optimization, AWQ, Quantization, 4-Bit, Activation-Aware, Memory Optimization, Fast Inference, vLLM Integration, Marlin Kernels]
 dependencies: [autoawq, transformers>=4.45.0, torch>=2.0.0]
 ---
-
 # AWQ (Activation-aware Weight Quantization)
 
 4-bit quantization that preserves salient weights based on activation patterns, achieving 3x speedup with minimal accuracy loss.

@@ -1,14 +1,12 @@
 ---
 name: linux-ubuntu-distribution-specialist
 description: Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Ubuntu; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Ubuntu
 collection: 24
 skill_id: linux-0025
 ---
-
 # Use distribution-specific maintenance tools safely on Ubuntu
 
 ## Objective

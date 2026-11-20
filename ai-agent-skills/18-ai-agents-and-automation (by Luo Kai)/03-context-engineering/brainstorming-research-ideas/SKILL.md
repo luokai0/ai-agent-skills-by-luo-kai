@@ -3,11 +3,9 @@ name: brainstorming-research-ideas
 description: Guides researchers through structured ideation frameworks to discover high-impact research directions. Use when exploring new problem spaces, pivoting between projects, or seeking novel angles on existing work.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Research Ideation, Brainstorming, Problem Discovery, Creative Thinking, Research Strategy]
 dependencies: []
 ---
-
 # Research Idea Brainstorming
 
 Structured frameworks for discovering the next research idea. This skill provides ten complementary ideation lenses that help researchers move from vague curiosity to concrete, defensible research proposals. Each framework targets a different cognitive mode—use them individually or combine them for comprehensive exploration.

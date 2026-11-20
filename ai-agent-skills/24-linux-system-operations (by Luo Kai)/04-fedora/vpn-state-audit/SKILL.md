@@ -1,14 +1,12 @@
 ---
 name: linux-fedora-vpn-state-audit
 description: Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to Fedora; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Fedora
 collection: 24
 skill_id: linux-0717
 ---
-
 # Inspect VPN and tunnel state on Fedora
 
 ## Objective

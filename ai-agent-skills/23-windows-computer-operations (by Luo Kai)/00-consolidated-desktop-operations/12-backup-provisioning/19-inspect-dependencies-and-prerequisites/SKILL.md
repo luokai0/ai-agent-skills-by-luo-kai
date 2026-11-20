@@ -1,6 +1,6 @@
 ---
-name: "Windows Inspect Dependencies And Prerequisites across Backup, recovery, and provisioning"
-description: "Consolidated inspect dependencies and prerequisites workflow across 2 Windows domains: Backup, recovery, and provisioning. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Inspect Dependencies And Prerequisites across Backup, Recovery, and Provisioning"
+description: "Consolidated inspect dependencies and prerequisites workflow across 2 Windows domains: Backup, Recovery, and Provisioning. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Inspect Dependencies And Prerequisites across Backup, recovery, and provisioning
+# Windows Inspect Dependencies And Prerequisites across Backup, Recovery, and Provisioning
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the inspect dependencies and prerequisites workflows from 2 related Wind
 
 ## When to use
 
-Use when the user requests inspect dependencies and prerequisites in any of these domains: Windows Backup, restore, and recovery; Windows Windows provisioning and account lifecycle.
+Use when the user needs the inspect dependencies and prerequisites workflow in any of these domains: Windows Backup, restore, and recovery; Windows provisioning and account lifecycle.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-1159
 
 ##### Objective
 
-Carry out **inspect dependencies and prerequisites** for file history, onedrive sync, restore points, recovery environment, and restore planning.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect dependencies and prerequisites** for file history, onedrive sync, restore points, recovery environment, and restore planning. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to inspect dependencies and prerequis
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for file history, onedrive sync, restore points, recovery environment, and restore planning.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for file history, onedrive sync, restore points, recovery environment, and restore planning. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect dependencies and prerequisites means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify backup timestamp, scope, destination, integrity, and restore point before relying on it. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1159` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Backup, restore, and recovery: Inspect Dependencies And Prerequisites. Carry out **inspect dependencies and prerequisites** for file history, onedrive sync, restore points, recovery environment, and restore planning.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Backup, restore, and recovery: Inspect Dependencies And Prerequisites. Carry out **inspect dependencies and prerequisites** for file history, onedrive sync, restore points, recovery environment, and restore planning. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `39-backup-recovery`. **Scope:** File History, OneDrive sync, restore points, recovery environment, and restore planning.; **Preferred tools:** Settings Backup, File History UI, wbadmin get versions (read-only), recovery options.; **Task focus:** For **inspect dependencies and prerequisites**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never initiate reset, reinstall, restore, disk repair, or overwrite recovery media without explicit informed approval.; **Verification:** Verify backup timestamp, scope, destination, integrity, and restore point before relying on it. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -132,17 +132,17 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 *Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
 
-### Profile 2: Windows Windows provisioning and account lifecycle
+### Profile 2: Windows provisioning and account lifecycle
 
 Former domain: 40-provisioning-accounts
 
 Former skill ID: windows-1189
 
-#### Windows Windows provisioning and account lifecycle: Inspect Dependencies And Prerequisites
+#### Windows provisioning and account lifecycle: Inspect Dependencies And Prerequisites
 
 ##### Objective
 
-Carry out **inspect dependencies and prerequisites** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect dependencies and prerequisites** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to inspect dependencies and prerequis
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect dependencies and prerequisites means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify device identity, account owner, enrollment state, update status, and setup completion. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1189` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Windows provisioning and account lifecycle: Inspect Dependencies And Prerequisites. Carry out **inspect dependencies and prerequisites** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows provisioning and account lifecycle: Inspect Dependencies And Prerequisites. Carry out **inspect dependencies and prerequisites** for initial setup, local profiles, device naming, enrollment indicators, and handoff readiness. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `40-provisioning-accounts`. **Scope:** Initial setup, local profiles, device naming, enrollment indicators, and handoff readiness.; **Preferred tools:** Settings System/About, Settings Accounts, dsregcmd /status (read-only), whoami.; **Task focus:** For **inspect dependencies and prerequisites**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not bypass enrollment, remove management, create hidden accounts, or alter ownership/activation state.; **Verification:** Verify device identity, account owner, enrollment state, update status, and setup completion. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

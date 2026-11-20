@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-desktop-session
 description: Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0274
 ---
-
 # Diagnose desktop session, display, and audio state on Rocky Linux
 
 ## Objective

@@ -2,11 +2,9 @@
 author: luo-kai
 name: deepchem
 description: Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.
-license: MIT license
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # DeepChem
 
 ## Overview

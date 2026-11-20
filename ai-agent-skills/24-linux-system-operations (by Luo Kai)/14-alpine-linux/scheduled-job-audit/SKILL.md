@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-scheduled-job-audit
 description: Inventory cron, timers, user autostart, and runit/OpenRC startup hooks relevant to a reported task. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0345
 ---
-
 # Audit scheduled jobs and startup automation on Alpine Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-printer-scanner-audit
 description: Inventory CUPS, print queues, scanner backends, network discovery, and pending jobs without releasing or deleting jobs. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0961
 ---
-
 # Inspect printer and scanner discovery on Alpine Linux
 
 ## Objective

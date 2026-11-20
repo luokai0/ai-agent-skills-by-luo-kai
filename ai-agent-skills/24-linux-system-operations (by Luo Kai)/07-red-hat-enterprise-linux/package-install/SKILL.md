@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-package-install
 description: Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0155
 ---
-
 # Install a package with transaction review on Red Hat Enterprise Linux
 
 ## Objective

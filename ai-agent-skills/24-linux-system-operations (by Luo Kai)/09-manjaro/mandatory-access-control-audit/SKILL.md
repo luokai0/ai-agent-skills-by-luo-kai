@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-mandatory-access-control-audit
 description: Determine which mandatory access-control framework is active, its enforcement state, and recent denials. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0833
 ---
-
 # Inspect SELinux or AppArmor enforcement on Manjaro
 
 ## Objective

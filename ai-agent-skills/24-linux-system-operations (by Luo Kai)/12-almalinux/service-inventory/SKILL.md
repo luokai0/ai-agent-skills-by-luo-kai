@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0283
 ---
-
 # Inventory service manager and services on AlmaLinux
 
 ## Objective

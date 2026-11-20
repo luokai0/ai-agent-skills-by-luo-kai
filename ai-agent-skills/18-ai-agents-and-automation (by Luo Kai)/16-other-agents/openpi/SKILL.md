@@ -3,11 +3,9 @@ name: fine-tuning-serving-openpi
 description: Fine-tune and serve Physical Intelligence OpenPI models (pi0, pi0-fast, pi0.5) using JAX or PyTorch backends for robot policy inference across ALOHA, DROID, and LIBERO environments. Use when adapting pi0 models to custom datasets, converting JAX checkpoints to PyTorch, running policy inference servers, or debugging norm stats and GPU memory issues.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [OpenPI, Physical Intelligence, VLA, Robotics, JAX, PyTorch, Fine-Tuning, Policy Serving, ALOHA, DROID, LIBERO, pi0]
 dependencies: [uv>=0.4.0, jax>=0.4.30, torch>=2.1.0, transformers>=4.53.2]
 ---
-
 # OpenPI Fine-Tuning and Serving
 
 End-to-end workflows for fine-tuning and serving Physical Intelligence's OpenPI models (pi0, pi0-fast, pi0.5) on robot manipulation tasks from the public `openpi` repository. Covers blank-machine setup, JAX training, PyTorch training, checkpoint conversion, and policy inference serving.

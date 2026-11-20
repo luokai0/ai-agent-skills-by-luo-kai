@@ -3,11 +3,9 @@ name: tensorboard
 description: Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [MLOps, TensorBoard, Visualization, Training Metrics, Model Debugging, PyTorch, TensorFlow, Experiment Tracking, Performance Profiling]
 dependencies: [tensorboard, torch, tensorflow]
 ---
-
 # TensorBoard: Visualization Toolkit for ML
 
 ## When to Use This Skill

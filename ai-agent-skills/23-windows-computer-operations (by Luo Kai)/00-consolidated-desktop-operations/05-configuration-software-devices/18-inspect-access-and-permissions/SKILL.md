@@ -1,6 +1,6 @@
 ---
-name: "Windows Inspect Access And Permissions across Configuration, software, and devices"
-description: "Consolidated inspect access and permissions workflow across 5 Windows domains: Configuration, software, and devices. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Inspect Access And Permissions across Configuration, Software, and Devices"
+description: "Consolidated inspect access and permissions workflow across 5 Windows domains: Configuration, Software, and Devices. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Inspect Access And Permissions across Configuration, software, and devices
+# Windows Inspect Access And Permissions across Configuration, Software, and Devices
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the inspect access and permissions workflows from 5 related Windows doma
 
 ## When to use
 
-Use when the user requests inspect access and permissions in any of these domains: Windows Registry and Group Policy inspection; Windows Application installation and removal; Windows Windows package managers and dependencies; Windows Windows Update and update servicing; Windows Device Manager and hardware drivers.
+Use when the user needs the inspect access and permissions workflow in any of these domains: Windows Registry and Group Policy inspection; Windows Application installation and removal; Windows package managers and dependencies; Windows Update and update servicing; Windows Device Manager and hardware drivers.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0438
 
 ##### Objective
 
-Carry out **inspect access and permissions** for registry structure, policy state, policy refresh diagnostics, and configuration provenance.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect access and permissions** for registry structure, policy state, policy refresh diagnostics, and configuration provenance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to inspect access and permissions inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for registry structure, policy state, policy refresh diagnostics, and configuration provenance.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for registry structure, policy state, policy refresh diagnostics, and configuration provenance. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Record exact hive/key/value and policy source; compare before/after only for approved changes. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0438` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Registry and Group Policy inspection: Inspect Access And Permissions. Carry out **inspect access and permissions** for registry structure, policy state, policy refresh diagnostics, and configuration provenance.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Registry and Group Policy inspection: Inspect Access And Permissions. Carry out **inspect access and permissions** for registry structure, policy state, policy refresh diagnostics, and configuration provenance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `15-registry-policy`. **Scope:** Registry structure, policy state, policy refresh diagnostics, and configuration provenance.; **Preferred tools:** Registry Editor read-only, reg query, gpresult /r, gpresult /h to approved path.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never modify registry or policy as a shortcut; no security-control weakening, credential edits, or policy bypass.; **Verification:** Record exact hive/key/value and policy source; compare before/after only for approved changes. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0468
 
 ##### Objective
 
-Carry out **inspect access and permissions** for app discovery, installers, repair, updates, uninstall workflows, and app compatibility.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect access and permissions** for app discovery, installers, repair, updates, uninstall workflows, and app compatibility. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to inspect access and permissions inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for app discovery, installers, repair, updates, uninstall workflows, and app compatibility.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for app discovery, installers, repair, updates, uninstall workflows, and app compatibility. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify publisher, version, install source, signatures when available, and app launch. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0468` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Application installation and removal: Inspect Access And Permissions. Carry out **inspect access and permissions** for app discovery, installers, repair, updates, uninstall workflows, and app compatibility.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Application installation and removal: Inspect Access And Permissions. Carry out **inspect access and permissions** for app discovery, installers, repair, updates, uninstall workflows, and app compatibility. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `16-app-installation`. **Scope:** App discovery, installers, repair, updates, uninstall workflows, and app compatibility.; **Preferred tools:** Settings Installed apps, winget list/search/show, Get-AppxPackage (read-only).; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Install only user-approved software from trusted publishers; never use cracks, bundled offers, or silent unknown installers.; **Verification:** Verify publisher, version, install source, signatures when available, and app launch. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -229,17 +229,17 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 *Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
 
-### Profile 3: Windows Windows package managers and dependencies
+### Profile 3: Windows package managers and dependencies
 
 Former domain: 17-package-management
 
 Former skill ID: windows-0498
 
-#### Windows Windows package managers and dependencies: Inspect Access And Permissions
+#### Windows package managers and dependencies: Inspect Access And Permissions
 
 ##### Objective
 
-Carry out **inspect access and permissions** for winget, microsoft store, package sources, app dependencies, and package inventory.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect access and permissions** for winget, microsoft store, package sources, app dependencies, and package inventory. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to inspect access and permissions inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for winget, microsoft store, package sources, app dependencies, and package inventory.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for winget, microsoft store, package sources, app dependencies, and package inventory. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Check package ID, publisher, version, source, and post-install inventory. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0498` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Windows package managers and dependencies: Inspect Access And Permissions. Carry out **inspect access and permissions** for winget, microsoft store, package sources, app dependencies, and package inventory.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows package managers and dependencies: Inspect Access And Permissions. Carry out **inspect access and permissions** for winget, microsoft store, package sources, app dependencies, and package inventory. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `17-package-management`. **Scope:** winget, Microsoft Store, package sources, app dependencies, and package inventory.; **Preferred tools:** winget --info, winget list, winget search, winget show; Store UI.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not add arbitrary package sources or accept package agreements on behalf of the user without authorization.; **Verification:** Check package ID, publisher, version, source, and post-install inventory. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -326,17 +326,17 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 *Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
 
-### Profile 4: Windows Windows Update and update servicing
+### Profile 4: Windows Update and update servicing
 
 Former domain: 18-windows-updates
 
 Former skill ID: windows-0528
 
-#### Windows Windows Update and update servicing: Inspect Access And Permissions
+#### Windows Update and update servicing: Inspect Access And Permissions
 
 ##### Objective
 
-Carry out **inspect access and permissions** for update status, history, optional updates, restart planning, and update failure diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect access and permissions** for update status, history, optional updates, restart planning, and update failure diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -353,7 +353,7 @@ Use this skill when the user asks an agent to inspect access and permissions inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for update status, history, optional updates, restart planning, and update failure diagnosis.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for update status, history, optional updates, restart planning, and update failure diagnosis. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Confirm KB/version, update history, pending restart, and successful post-reboot health. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -389,7 +389,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0528` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Windows Update and update servicing: Inspect Access And Permissions. Carry out **inspect access and permissions** for update status, history, optional updates, restart planning, and update failure diagnosis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Update and update servicing: Inspect Access And Permissions. Carry out **inspect access and permissions** for update status, history, optional updates, restart planning, and update failure diagnosis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `18-windows-updates`. **Scope:** Update status, history, optional updates, restart planning, and update failure diagnosis.; **Preferred tools:** Settings Windows Update, Get-HotFix, Get-ComputerInfo, Event Viewer.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never force reboot during active work; do not disable update services or install untrusted update packages.; **Verification:** Confirm KB/version, update history, pending restart, and successful post-reboot health. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -433,7 +433,7 @@ Former skill ID: windows-0558
 
 ##### Objective
 
-Carry out **inspect access and permissions** for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **inspect access and permissions** for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -450,7 +450,7 @@ Use this skill when the user asks an agent to inspect access and permissions inv
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify hardware ID, provider, version, signer, device status, and restart effect. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -486,7 +486,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0558` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Device Manager and hardware drivers: Inspect Access And Permissions. Carry out **inspect access and permissions** for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Device Manager and hardware drivers: Inspect Access And Permissions. Carry out **inspect access and permissions** for pnp devices, driver versions, hardware ids, device status, and safe driver troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `19-devices-drivers`. **Scope:** PnP devices, driver versions, hardware IDs, device status, and safe driver troubleshooting.; **Preferred tools:** Device Manager, Get-PnpDevice, Get-CimInstance Win32_PnPSignedDriver.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not install unsigned drivers, disable security devices, or remove a device package without rollback plan.; **Verification:** Verify hardware ID, provider, version, signer, device status, and restart effect. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

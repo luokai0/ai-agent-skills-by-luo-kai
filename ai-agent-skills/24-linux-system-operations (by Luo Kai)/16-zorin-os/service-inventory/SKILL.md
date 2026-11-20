@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0383
 ---
-
 # Inventory service manager and services on Zorin OS
 
 ## Objective

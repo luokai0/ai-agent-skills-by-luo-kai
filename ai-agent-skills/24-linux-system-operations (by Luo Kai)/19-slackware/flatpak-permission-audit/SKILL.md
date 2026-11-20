@@ -1,14 +1,12 @@
 ---
 name: linux-slackware-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Slackware; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-1096
 ---
-
 # Audit Flatpak application permissions on Slackware
 
 ## Objective

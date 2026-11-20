@@ -1,14 +1,12 @@
 ---
 name: linux-debian-kernel-module-audit
 description: Inspect loaded modules, module metadata, blacklists, and kernel compatibility without loading or unloading modules. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0651
 ---
-
 # Audit kernel modules and load state on Debian
 
 ## Objective

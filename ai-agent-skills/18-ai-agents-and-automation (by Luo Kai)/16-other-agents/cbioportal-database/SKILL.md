@@ -2,11 +2,9 @@
 author: luo-kai
 name: cbioportal-database
 description: Query cBioPortal for cancer genomics data including somatic mutations, copy number alterations, gene expression, and survival data across hundreds of cancer studies. Essential for cancer target validation, oncogene/tumor suppressor analysis, and patient-level genomic profiling.
-license: LGPL-3.0
 metadata:
     skill-author: Kuan-lin Huang
 ---
-
 # cBioPortal Database
 
 ## Overview

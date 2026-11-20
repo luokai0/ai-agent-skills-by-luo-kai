@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-ssh-audit
 description: Review whether SSH server is installed, listening, and configured with safe authentication and access controls. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0242
 ---
-
 # Audit SSH server configuration securely on Pop!_OS
 
 ## Objective

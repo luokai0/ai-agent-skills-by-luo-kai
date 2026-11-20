@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-package-search
 description: Find the exact package, candidate version, repository origin, architecture, and package description. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-0579
 ---
-
 # Search for a package safely on SteamOS
 
 ## Objective

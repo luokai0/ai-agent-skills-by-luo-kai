@@ -1,14 +1,12 @@
 ---
 name: linux-fedora-service-inventory
 description: Determine the active init system and enumerate enabled, active, failed, and user-level services. Applies to Fedora; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Fedora
 collection: 24
 skill_id: linux-0083
 ---
-
 # Inventory service manager and services on Fedora
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-ubuntu-system-recovery-readiness
 description: Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Ubuntu; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Ubuntu
 collection: 24
 skill_id: linux-0650
 ---
-
 # Assess boot and recovery options on Ubuntu
 
 ## Objective

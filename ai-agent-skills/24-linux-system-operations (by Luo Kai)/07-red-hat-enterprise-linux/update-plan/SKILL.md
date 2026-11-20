@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-update-plan
 description: Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0156
 ---
-
 # Plan system updates without applying them on Red Hat Enterprise Linux
 
 ## Objective

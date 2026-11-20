@@ -1,6 +1,6 @@
 ---
-name: "Windows Recover From A Reversible Failure across Input, output, and peripherals"
-description: "Consolidated recover from a reversible failure workflow across 3 Windows domains: Input, output, and peripherals. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Recover From A Reversible Failure across Input, Output, and Peripherals"
+description: "Consolidated recover from a reversible failure workflow across 3 Windows domains: Input, Output, and Peripherals. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Recover From A Reversible Failure across Input, output, and peripherals
+# Windows Recover From A Reversible Failure across Input, Output, and Peripherals
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the recover from a reversible failure workflows from 3 related Windows d
 
 ## When to use
 
-Use when the user requests recover from a reversible failure in any of these domains: Windows Displays, audio, cameras, and input devices; Windows Clipboard, text entry, and input reliability; Windows Printers, scanners, docks, and peripherals.
+Use when the user needs the recover from a reversible failure workflow in any of these domains: Windows Displays, audio, cameras, and input devices; Windows Clipboard, text entry, and input reliability; Windows Printers, scanners, docks, and peripherals.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0593
 
 ##### Objective
 
-Carry out **recover from a reversible failure** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **recover from a reversible failure** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to recover from a reversible failure 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, recover from a reversible failure means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Run a visible test, verify selected device, levels, resolution, refresh rate, and monitor order. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0593` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Displays, audio, cameras, and input devices: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Displays, audio, cameras, and input devices: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `20-display-audio-input`. **Scope:** Display arrangement, scaling, sound, microphones, webcams, keyboard, and pointing devices.; **Preferred tools:** Settings Display/Sound, Get-CimInstance, Device Manager, built-in test panels.; **Task focus:** For **recover from a reversible failure**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Respect camera/microphone privacy indicators; do not activate sensors or record people without consent.; **Verification:** Run a visible test, verify selected device, levels, resolution, refresh rate, and monitor order. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-1103
 
 ##### Objective
 
-Carry out **recover from a reversible failure** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **recover from a reversible failure** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to recover from a reversible failure 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, recover from a reversible failure means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify a harmless sample, target field, character encoding, and final text before submission. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1103` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Clipboard, text entry, and input reliability: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Clipboard, text entry, and input reliability: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for clipboard inspection, paste, keyboard layouts, ime, text entry, and form interactions. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `37-clipboard-input`. **Scope:** Clipboard inspection, paste, keyboard layouts, IME, text entry, and form interactions.; **Preferred tools:** Clipboard UI, keyboard layout settings, UI Automation ValuePattern, Notepad test.; **Task focus:** For **recover from a reversible failure**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Clipboard may contain passwords or private data; never dump it wholesale or overwrite it silently.; **Verification:** Verify a harmless sample, target field, character encoding, and final text before submission. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-1133
 
 ##### Objective
 
-Carry out **recover from a reversible failure** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **recover from a reversible failure** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to recover from a reversible failure 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, recover from a reversible failure means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify device identity, driver, queue, selected destination, and a non-sensitive test result. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-1133` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Printers, scanners, docks, and peripherals: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Printers, scanners, docks, and peripherals: Recover From A Reversible Failure. Carry out **recover from a reversible failure** for printer queues, scanner discovery, usb devices, bluetooth, docks, and peripheral troubleshooting. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `38-printers-peripherals`. **Scope:** Printer queues, scanner discovery, USB devices, Bluetooth, docks, and peripheral troubleshooting.; **Preferred tools:** Settings Bluetooth & devices, Get-Printer, Get-PrinterQueue, Device Manager.; **Task focus:** For **recover from a reversible failure**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not print confidential material, clear queues, pair unknown devices, or install vendor utilities without approval.; **Verification:** Verify device identity, driver, queue, selected destination, and a non-sensitive test result. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

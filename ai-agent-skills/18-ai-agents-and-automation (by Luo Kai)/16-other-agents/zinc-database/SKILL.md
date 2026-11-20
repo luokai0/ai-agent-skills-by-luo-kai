@@ -2,11 +2,9 @@
 author: luo-kai
 name: zinc-database
 description: Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.
-license: Unknown
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # ZINC Database
 
 ## Overview

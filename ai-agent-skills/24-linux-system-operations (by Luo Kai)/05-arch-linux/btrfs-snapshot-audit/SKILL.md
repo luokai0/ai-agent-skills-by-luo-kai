@@ -1,14 +1,12 @@
 ---
 name: linux-arch-linux-btrfs-snapshot-audit
 description: Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Arch Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Arch Linux
 collection: 24
 skill_id: linux-0731
 ---
-
 # Inspect Btrfs subvolumes and snapshots on Arch Linux
 
 ## Objective

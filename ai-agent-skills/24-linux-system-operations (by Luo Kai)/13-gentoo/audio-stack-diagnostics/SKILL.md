@@ -1,14 +1,12 @@
 ---
 name: linux-gentoo-audio-stack-diagnostics
 description: Identify the active audio server, devices, default sink/source, and user-session errors without restarting audio services. Applies to Gentoo; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Gentoo
 collection: 24
 skill_id: linux-0937
 ---
-
 # Diagnose PipeWire, PulseAudio, and ALSA audio paths on Gentoo
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-elementary-os-installed-package-audit
 description: Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to elementary OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: elementary OS
 collection: 24
 skill_id: linux-0357
 ---
-
 # Audit installed packages and provenance on elementary OS
 
 ## Objective

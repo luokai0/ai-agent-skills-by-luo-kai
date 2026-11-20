@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-network-filesystem-audit
 description: Review network mounts, protocol versions, mount options, and current reachability for user-specified shares. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0694
 ---
-
 # Inspect NFS, SMB, and network mount health on Linux Mint
 
 ## Objective

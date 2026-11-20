@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-identify-release
 description: Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0151
 ---
-
 # Identify distribution and release on Red Hat Enterprise Linux
 
 ## Objective

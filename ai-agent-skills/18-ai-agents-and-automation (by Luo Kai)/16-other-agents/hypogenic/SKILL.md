@@ -2,11 +2,9 @@
 author: luo-kai
 name: hypogenic
 description: Automated LLM-driven hypothesis generation and testing on tabular datasets. Use when you want to systematically explore hypotheses about patterns in empirical data (e.g., deception detection, content analysis). Combines literature insights with data-driven hypothesis testing. For manual hypothesis formulation use hypothesis-generation; for creative ideation use scientific-brainstorming.
-license: MIT license
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # Hypogenic
 
 ## Overview

@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-boot-kernel-review
 description: Inspect boot mode, kernel command line, boot entries, and available kernels without changing boot configuration. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0068
 ---
-
 # Review bootloader and kernel parameters on Linux Mint
 
 ## Objective

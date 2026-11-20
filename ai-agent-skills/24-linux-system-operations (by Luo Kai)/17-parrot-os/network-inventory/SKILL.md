@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-0414
 ---
-
 # Diagnose network interfaces and routes on Parrot OS
 
 ## Objective

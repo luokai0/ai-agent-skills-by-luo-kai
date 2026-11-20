@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-accessibility-audit
 description: Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1049
 ---
-
 # Inspect desktop accessibility settings on Parrot OS
 
 ## Objective

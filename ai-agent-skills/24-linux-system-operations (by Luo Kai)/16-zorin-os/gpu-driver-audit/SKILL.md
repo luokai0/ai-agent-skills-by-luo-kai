@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-gpu-driver-audit
 description: Identify GPUs, bound kernel drivers, renderer, firmware, and compute stack without switching drivers or modes. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-1013
 ---
-
 # Audit GPU driver binding and acceleration on Zorin OS
 
 ## Objective

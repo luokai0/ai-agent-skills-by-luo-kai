@@ -3,11 +3,9 @@ name: huggingface-tokenizers
 description: Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, and Unigram algorithms. Train custom vocabularies, track alignments, handle padding/truncation. Integrates seamlessly with transformers. Use when you need high-performance tokenization or custom tokenizer training.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Tokenization, HuggingFace, BPE, WordPiece, Unigram, Fast Tokenization, Rust, Custom Tokenizer, Alignment Tracking, Production]
 dependencies: [tokenizers, transformers, datasets]
 ---
-
 # HuggingFace Tokenizers - Fast Tokenization for NLP
 
 Fast, production-ready tokenizers with Rust performance and Python ease-of-use.

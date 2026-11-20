@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-time-sync-audit
 description: Check system timezone, clock source, NTP synchronization, and drift evidence without changing time settings. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0793
 ---
-
 # Inspect clock synchronization and timezone on Red Hat Enterprise Linux
 
 ## Objective

@@ -3,11 +3,9 @@ name: transformer-lens-interpretability
 description: Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via HookPoints and activation caching. Use when reverse-engineering model algorithms, studying attention patterns, or performing activation patching experiments.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [Mechanistic Interpretability, TransformerLens, Activation Patching, Circuit Analysis]
 dependencies: [transformer-lens>=2.0.0, torch>=2.0.0]
 ---
-
 # TransformerLens: Mechanistic Interpretability for Transformers
 
 TransformerLens is the de facto standard library for mechanistic interpretability research on GPT-style language models. Created by Neel Nanda and maintained by Bryce Meyer, it provides clean interfaces to inspect and manipulate model internals via HookPoints on every activation.

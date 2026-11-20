@@ -1,14 +1,12 @@
 ---
 name: linux-mx-linux-dns-diagnosis
 description: Trace resolver configuration, search domains, DNS reachability, and name-resolution differences. Applies to MX Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: MX Linux
 collection: 24
 skill_id: linux-0515
 ---
-
 # Diagnose DNS and resolver configuration on MX Linux
 
 ## Objective

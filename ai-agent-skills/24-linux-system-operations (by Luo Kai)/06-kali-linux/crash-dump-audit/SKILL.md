@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-crash-dump-audit
 description: Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0773
 ---
-
 # Review crash dumps and core-dump policy on Kali Linux
 
 ## Objective

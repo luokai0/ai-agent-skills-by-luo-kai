@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-1230
 ---
-
 # Diagnose swap usage and memory pressure on Garuda Linux
 
 ## Objective

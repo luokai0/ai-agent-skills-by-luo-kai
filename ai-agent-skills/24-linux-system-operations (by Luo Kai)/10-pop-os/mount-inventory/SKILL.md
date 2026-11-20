@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-mount-inventory
 description: Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0238
 ---
-
 # Inventory mounts, encryption, and removable media on Pop!_OS
 
 ## Objective

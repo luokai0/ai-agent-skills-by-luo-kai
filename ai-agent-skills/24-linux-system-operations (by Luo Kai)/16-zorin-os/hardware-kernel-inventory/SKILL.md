@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-hardware-kernel-inventory
 description: Collect CPU, memory, storage-controller, GPU, and kernel evidence to diagnose compatibility without changing drivers. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0377
 ---
-
 # Inventory hardware and kernel on Zorin OS
 
 ## Objective

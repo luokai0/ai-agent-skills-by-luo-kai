@@ -3,9 +3,7 @@ author: luo-kai
 name: security-review
 description: Security code review for vulnerabilities. Use when asked to "security review", "find vulnerabilities", "check for security issues", "audit security", "OWASP review", or review code for injection, XSS, authentication, authorization, cryptography issues. Provides systematic review with confidence-based reporting.
 allowed-tools: Read, Grep, Glob, Bash, Task
-license: LICENSE
 ---
-
 <!--
 Reference material based on OWASP Cheat Sheet Series (CC BY-SA 4.0)
 https://cheatsheetseries.owasp.org/

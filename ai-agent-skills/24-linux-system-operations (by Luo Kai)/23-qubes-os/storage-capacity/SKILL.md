@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-storage-capacity
 description: Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-0562
 ---
-
 # Assess disk capacity and filesystem pressure on Qubes OS
 
 ## Objective

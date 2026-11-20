@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-thermal-performance-audit
 description: Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-1240
 ---
-
 # Diagnose thermal throttling and system performance on Garuda Linux
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-package-source-audit
 description: Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0328
 ---
-
 # Audit configured package sources on Alpine Linux
 
 ## Objective

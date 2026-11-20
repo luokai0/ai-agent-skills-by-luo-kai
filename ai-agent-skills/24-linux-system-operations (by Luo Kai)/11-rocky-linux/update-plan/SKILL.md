@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-update-plan
 description: Assess pending updates, held packages, security advisories, reboot needs, and release-specific update policy. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0256
 ---
-
 # Plan system updates without applying them on Rocky Linux
 
 ## Objective

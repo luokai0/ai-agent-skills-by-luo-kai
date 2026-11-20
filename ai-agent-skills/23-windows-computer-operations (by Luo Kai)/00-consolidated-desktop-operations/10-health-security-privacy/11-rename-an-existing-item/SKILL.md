@@ -1,6 +1,6 @@
 ---
-name: "Windows Rename An Existing Item across Health, security, and privacy"
-description: "Consolidated rename an existing item workflow across 5 Windows domains: Health, security, and privacy. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Rename An Existing Item across Health, Security, and Privacy"
+description: "Consolidated rename an existing item workflow across 5 Windows domains: Health, Security, and Privacy. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Rename An Existing Item across Health, security, and privacy
+# Windows Rename An Existing Item across Health, Security, and Privacy
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the rename an existing item workflows from 5 related Windows domains. Se
 
 ## When to use
 
-Use when the user requests rename an existing item in any of these domains: Windows Performance and resource monitoring; Windows Laptop battery, thermals, and power management; Windows Event logs and Windows troubleshooting; Windows Windows security and Microsoft Defender; Windows Privacy, permissions, and account access.
+Use when the user needs the rename an existing item workflow in any of these domains: Windows Performance and resource monitoring; Windows Laptop battery, thermals, and power management; Windows Event logs and Windows troubleshooting; Windows security and Microsoft Defender; Windows Privacy, permissions, and account access.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0821
 
 ##### Objective
 
-Carry out **rename an existing item** for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **rename an existing item** for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to rename an existing item involving 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, rename an existing item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Collect baseline and repeated samples; correlate symptoms with timestamps and workload. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0821` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Performance and resource monitoring: Rename An Existing Item. Carry out **rename an existing item** for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Performance and resource monitoring: Rename An Existing Item. Carry out **rename an existing item** for cpu, memory, disk, gpu, network, startup impact, and responsiveness analysis. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `28-performance-monitoring`. **Scope:** CPU, memory, disk, GPU, network, startup impact, and responsiveness analysis.; **Preferred tools:** Task Manager, Resource Monitor, Performance Monitor, Get-Counter, Get-Process.; **Task focus:** For **rename an existing item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not install benchmark/monitoring agents or run stress tests without approval; avoid exposing process command lines containing secrets.; **Verification:** Collect baseline and repeated samples; correlate symptoms with timestamps and workload. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0851
 
 ##### Objective
 
-Carry out **rename an existing item** for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **rename an existing item** for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to rename an existing item involving 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, rename an existing item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify AC/battery state, charge rate, battery report, temperatures from trusted OEM tools, and sleep behavior. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0851` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Laptop battery, thermals, and power management: Rename An Existing Item. Carry out **rename an existing item** for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Laptop battery, thermals, and power management: Rename An Existing Item. Carry out **rename an existing item** for battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `29-battery-thermal-power`. **Scope:** Battery health, charging, power plans, sleep, thermal symptoms, docks, and mobility.; **Preferred tools:** Settings Power & Battery, powercfg /batteryreport, powercfg /energy, Get-CimInstance battery.; **Task focus:** For **rename an existing item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never obstruct vents, force firmware changes, or disable thermal protection; do not change sleep behavior without consent.; **Verification:** Verify AC/battery state, charge rate, battery report, temperatures from trusted OEM tools, and sleep behavior. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-0881
 
 ##### Objective
 
-Carry out **rename an existing item** for event viewer, reliability history, crash records, error codes, and diagnostic evidence.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **rename an existing item** for event viewer, reliability history, crash records, error codes, and diagnostic evidence. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to rename an existing item involving 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for event viewer, reliability history, crash records, error codes, and diagnostic evidence.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for event viewer, reliability history, crash records, error codes, and diagnostic evidence. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, rename an existing item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Match event time, provider, ID, level, and reproduction window; distinguish correlation from cause. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0881` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Event logs and Windows troubleshooting: Rename An Existing Item. Carry out **rename an existing item** for event viewer, reliability history, crash records, error codes, and diagnostic evidence.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Event logs and Windows troubleshooting: Rename An Existing Item. Carry out **rename an existing item** for event viewer, reliability history, crash records, error codes, and diagnostic evidence. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `30-logs-diagnostics`. **Scope:** Event Viewer, reliability history, crash records, error codes, and diagnostic evidence.; **Preferred tools:** Get-WinEvent with narrow filters, Event Viewer, Reliability Monitor, Problem Reports.; **Task focus:** For **rename an existing item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Logs can contain usernames, paths, IPs, and document names; redact before sharing.; **Verification:** Match event time, provider, ID, level, and reproduction window; distinguish correlation from cause. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -326,17 +326,17 @@ Report: **target** (redacted identifier), **baseline**, **actions actually taken
 
 *Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
 
-### Profile 4: Windows Windows security and Microsoft Defender
+### Profile 4: Windows security and Microsoft Defender
 
 Former domain: 31-security-defender
 
 Former skill ID: windows-0911
 
-#### Windows Windows security and Microsoft Defender: Rename An Existing Item
+#### Windows security and Microsoft Defender: Rename An Existing Item
 
 ##### Objective
 
-Carry out **rename an existing item** for defender status, firewall posture, smartscreen, protection history, and safe threat response.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **rename an existing item** for defender status, firewall posture, smartscreen, protection history, and safe threat response. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -353,7 +353,7 @@ Use this skill when the user asks an agent to rename an existing item involving 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for defender status, firewall posture, smartscreen, protection history, and safe threat response.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for defender status, firewall posture, smartscreen, protection history, and safe threat response. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, rename an existing item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify protection state, detection name, source, timestamp, action, and current remediation status. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -389,7 +389,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0911` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Windows security and Microsoft Defender: Rename An Existing Item. Carry out **rename an existing item** for defender status, firewall posture, smartscreen, protection history, and safe threat response.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows security and Microsoft Defender: Rename An Existing Item. Carry out **rename an existing item** for defender status, firewall posture, smartscreen, protection history, and safe threat response. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `31-security-defender`. **Scope:** Defender status, firewall posture, SmartScreen, protection history, and safe threat response.; **Preferred tools:** Windows Security UI, Get-MpComputerStatus, Get-MpThreatDetection, Get-NetFirewallProfile.; **Task focus:** For **rename an existing item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never disable Defender, tamper protection, firewall, SmartScreen, or quarantine; do not restore detections casually.; **Verification:** Verify protection state, detection name, source, timestamp, action, and current remediation status. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -433,7 +433,7 @@ Former skill ID: windows-0941
 
 ##### Objective
 
-Carry out **rename an existing item** for app permissions, local accounts, sign-in options, sharing, and privacy controls.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **rename an existing item** for app permissions, local accounts, sign-in options, sharing, and privacy controls. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -450,7 +450,7 @@ Use this skill when the user asks an agent to rename an existing item involving 
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for app permissions, local accounts, sign-in options, sharing, and privacy controls.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for app permissions, local accounts, sign-in options, sharing, and privacy controls. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, rename an existing item means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify exact account and app, scope of permission, effective access, and user intent. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -486,7 +486,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0941` · **Version:** `1.1.0` · **Risk:** HIGH — state-changing; explicit approval required
 
-**Exact task:** Windows Privacy, permissions, and account access: Rename An Existing Item. Carry out **rename an existing item** for app permissions, local accounts, sign-in options, sharing, and privacy controls.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Privacy, permissions, and account access: Rename An Existing Item. Carry out **rename an existing item** for app permissions, local accounts, sign-in options, sharing, and privacy controls. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `32-privacy-permissions`. **Scope:** App permissions, local accounts, sign-in options, sharing, and privacy controls.; **Preferred tools:** Settings Privacy & Security, Settings Accounts, whoami, Get-LocalUser (read-only).; **Task focus:** For **rename an existing item**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never collect or reveal passwords, PINs, tokens, biometric data, or recovery codes; no account lockout or bypass.; **Verification:** Verify exact account and app, scope of permission, effective access, and user intent. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

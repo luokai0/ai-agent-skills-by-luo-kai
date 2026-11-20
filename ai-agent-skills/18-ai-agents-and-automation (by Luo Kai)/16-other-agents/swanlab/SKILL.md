@@ -3,11 +3,9 @@ name: experiment-tracking-swanlab
 description: Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and lightweight media logging for ML workflows.
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [MLOps, SwanLab, Experiment Tracking, Open Source, Visualization, PyTorch, Transformers, PyTorch Lightning, Fastai, Self-Hosted]
 dependencies: [swanlab>=0.7.11, pillow>=9.0.0, soundfile>=0.12.0]
 ---
-
 # SwanLab: Open-Source Experiment Tracking
 
 ## When to Use This Skill

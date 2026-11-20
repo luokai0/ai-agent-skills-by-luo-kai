@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-thermal-performance-audit
 description: Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0865
 ---
-
 # Diagnose thermal throttling and system performance on Pop!_OS
 
 ## Objective

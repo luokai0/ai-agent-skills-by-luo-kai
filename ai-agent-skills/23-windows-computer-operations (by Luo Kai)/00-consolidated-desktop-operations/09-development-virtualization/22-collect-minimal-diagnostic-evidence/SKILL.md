@@ -1,6 +1,6 @@
 ---
-name: "Windows Collect Minimal Diagnostic Evidence across Development and virtualization"
-description: "Consolidated collect minimal diagnostic evidence workflow across 3 Windows domains: Development and virtualization. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+name: "Windows Collect Minimal Diagnostic Evidence across Development and Virtualization"
+description: "Consolidated collect minimal diagnostic evidence workflow across 3 Windows domains: Development and Virtualization. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
 metadata:
   author: "Luo Kai"
   platform: "Windows 10 and Windows 11"
@@ -9,7 +9,7 @@ metadata:
   version: "1.2.0"
 ---
 
-# Windows Collect Minimal Diagnostic Evidence across Development and virtualization
+# Windows Collect Minimal Diagnostic Evidence across Development and Virtualization
 
 ## Objective
 
@@ -17,7 +17,7 @@ Combine the collect minimal diagnostic evidence workflows from 3 related Windows
 
 ## When to use
 
-Use when the user requests collect minimal diagnostic evidence in any of these domains: Windows Developer workstation setup; Windows Git and source-control operations; Windows WSL, virtual machines, and containers.
+Use when the user needs the collect minimal diagnostic evidence workflow in any of these domains: Windows Developer workstation setup; Windows Git and source-control operations; Windows WSL, virtual machines, and containers.
 
 ## Required operating discipline
 
@@ -45,7 +45,7 @@ Former skill ID: windows-0742
 
 ##### Objective
 
-Carry out **collect minimal diagnostic evidence** for editors, sdks, compilers, runtimes, environment variables, and local development setup.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **collect minimal diagnostic evidence** for editors, sdks, compilers, runtimes, environment variables, and local development setup. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -62,7 +62,7 @@ Use this skill when the user asks an agent to collect minimal diagnostic evidenc
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for editors, sdks, compilers, runtimes, environment variables, and local development setup.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for editors, sdks, compilers, runtimes, environment variables, and local development setup. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, collect minimal diagnostic evidence means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Check executable path, version, architecture, project-local config, and reproducible build result. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -98,7 +98,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0742` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Developer workstation setup: Collect Minimal Diagnostic Evidence. Carry out **collect minimal diagnostic evidence** for editors, sdks, compilers, runtimes, environment variables, and local development setup.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Developer workstation setup: Collect Minimal Diagnostic Evidence. Carry out **collect minimal diagnostic evidence** for editors, sdks, compilers, runtimes, environment variables, and local development setup. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `25-developer-workstations`. **Scope:** Editors, SDKs, compilers, runtimes, environment variables, and local development setup.; **Preferred tools:** Get-Command, where.exe, dotnet --info, python --version, node --version, code --version.; **Task focus:** For **collect minimal diagnostic evidence**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Avoid PATH-wide edits, untrusted extensions, arbitrary install scripts, and exposing environment secrets.; **Verification:** Check executable path, version, architecture, project-local config, and reproducible build result. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -142,7 +142,7 @@ Former skill ID: windows-0772
 
 ##### Objective
 
-Carry out **collect minimal diagnostic evidence** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **collect minimal diagnostic evidence** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -159,7 +159,7 @@ Use this skill when the user asks an agent to collect minimal diagnostic evidenc
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, collect minimal diagnostic evidence means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify branch, clean/expected diff, commit hash, remote, and pushed state. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -195,7 +195,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0772` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows Git and source-control operations: Collect Minimal Diagnostic Evidence. Carry out **collect minimal diagnostic evidence** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows Git and source-control operations: Collect Minimal Diagnostic Evidence. Carry out **collect minimal diagnostic evidence** for repository discovery, status, branches, diffs, commits, remotes, and conflict resolution. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `26-git-source-control`. **Scope:** Repository discovery, status, branches, diffs, commits, remotes, and conflict resolution.; **Preferred tools:** git status, git remote -v, git diff --check, git log --oneline, Git GUI.; **Task focus:** For **collect minimal diagnostic evidence**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Never force-push, rewrite shared history, discard work, or expose tokens; inspect status before every mutation.; **Verification:** Verify branch, clean/expected diff, commit hash, remote, and pushed state. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 
@@ -239,7 +239,7 @@ Former skill ID: windows-0802
 
 ##### Objective
 
-Carry out **collect minimal diagnostic evidence** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+Carry out **collect minimal diagnostic evidence** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 ##### When to use
 
@@ -256,7 +256,7 @@ Use this skill when the user asks an agent to collect minimal diagnostic evidenc
 ##### Workflow
 
 1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
-2. **Locate the exact target.** Use the relevant Windows surface for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling.. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+2. **Locate the exact target.** Use the relevant Windows surface for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
 3. **Plan the smallest safe action.** For this request, collect minimal diagnostic evidence means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
 4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
 5. **Verify independently.** Verify distro/VM identity, resource allocation, network mode, and guest health. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
@@ -292,7 +292,7 @@ If the action fails, stop and preserve the current state. Capture the exact erro
 
 **Former skill identity (retired):** `windows-0802` · **Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
 
-**Exact task:** Windows WSL, virtual machines, and containers: Collect Minimal Diagnostic Evidence. Carry out **collect minimal diagnostic evidence** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling.. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+**Exact task:** Windows WSL, virtual machines, and containers: Collect Minimal Diagnostic Evidence. Carry out **collect minimal diagnostic evidence** for wsl distributions, hyper-v/virtualization status, vm lifecycle, and container tooling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
 
 **Domain binding:** `27-wsl-virtualization`. **Scope:** WSL distributions, Hyper-V/virtualization status, VM lifecycle, and container tooling.; **Preferred tools:** wsl --status, wsl --list --verbose, systeminfo, virtualization settings, Docker/Podman UI.; **Task focus:** For **collect minimal diagnostic evidence**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not delete distributions, VM disks, containers, or volumes without explicit confirmation and backup.; **Verification:** Verify distro/VM identity, resource allocation, network mode, and guest health. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
 

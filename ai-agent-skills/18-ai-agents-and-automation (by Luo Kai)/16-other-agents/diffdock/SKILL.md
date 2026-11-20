@@ -2,11 +2,9 @@
 author: luo-kai
 name: diffdock
 description: Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. Not for affinity prediction.
-license: MIT license
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # DiffDock: Molecular Docking with Diffusion Models
 
 ## Overview

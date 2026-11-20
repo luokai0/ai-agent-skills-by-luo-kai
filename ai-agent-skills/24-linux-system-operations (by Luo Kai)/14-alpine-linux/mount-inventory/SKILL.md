@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-mount-inventory
 description: Map block devices, filesystems, mount options, encryption layers, and removable media safely. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0338
 ---
-
 # Inventory mounts, encryption, and removable media on Alpine Linux
 
 ## Objective

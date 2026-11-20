@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-network-inventory
 description: Inspect interface state, addresses, routes, link speed, and NetworkManager/networkd ownership. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-0564
 ---
-
 # Diagnose network interfaces and routes on Qubes OS
 
 ## Objective

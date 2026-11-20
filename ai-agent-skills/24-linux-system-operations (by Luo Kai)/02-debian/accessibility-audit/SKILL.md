@@ -1,14 +1,12 @@
 ---
 name: linux-debian-accessibility-audit
 description: Review active screen reader, magnification, keyboard navigation, contrast, and input-assistance settings. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0674
 ---
-
 # Inspect desktop accessibility settings on Debian
 
 ## Objective

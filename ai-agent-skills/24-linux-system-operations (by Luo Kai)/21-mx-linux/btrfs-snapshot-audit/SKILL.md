@@ -1,14 +1,12 @@
 ---
 name: linux-mx-linux-btrfs-snapshot-audit
 description: Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to MX Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: MX Linux
 collection: 24
 skill_id: linux-1131
 ---
-
 # Inspect Btrfs subvolumes and snapshots on MX Linux
 
 ## Objective

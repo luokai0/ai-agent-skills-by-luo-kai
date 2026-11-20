@@ -1,14 +1,12 @@
 ---
 name: linux-slackware-package-search
 description: Find the exact package, candidate version, repository origin, architecture, and package description. Applies to Slackware; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-0454
 ---
-
 # Search for a package safely on Slackware
 
 ## Objective

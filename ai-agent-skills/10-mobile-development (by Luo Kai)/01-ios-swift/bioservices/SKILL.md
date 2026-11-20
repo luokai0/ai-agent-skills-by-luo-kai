@@ -2,11 +2,9 @@
 author: luo-kai
 name: bioservices
 description: Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.
-license: GPLv3 license
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # BioServices
 
 ## Overview

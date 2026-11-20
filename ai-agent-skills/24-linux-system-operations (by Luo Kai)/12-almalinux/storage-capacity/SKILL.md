@@ -1,14 +1,12 @@
 ---
 name: linux-almalinux-storage-capacity
 description: Find full filesystems, inode exhaustion, large mount usage, and likely safe cleanup candidates. Applies to AlmaLinux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: AlmaLinux
 collection: 24
 skill_id: linux-0287
 ---
-
 # Assess disk capacity and filesystem pressure on AlmaLinux
 
 ## Objective

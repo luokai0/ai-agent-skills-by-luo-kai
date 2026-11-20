@@ -1,14 +1,12 @@
 ---
 name: linux-void-linux-disk-encryption-audit
 description: Map encrypted block devices and unlock dependencies without reading key material or attempting unlocks. Applies to Void Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Void Linux
 collection: 24
 skill_id: linux-1109
 ---
-
 # Inspect disk encryption and unlock dependencies on Void Linux
 
 ## Objective

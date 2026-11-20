@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-firewall-audit
 description: Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-0591
 ---
-
 # Audit firewall policy and exposed listeners on SteamOS
 
 ## Objective

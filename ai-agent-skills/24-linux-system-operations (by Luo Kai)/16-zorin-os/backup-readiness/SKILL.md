@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-backup-readiness
 description: Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0398
 ---
-
 # Assess backup and recovery readiness on Zorin OS
 
 ## Objective

@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-thermal-performance-audit
 description: Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0765
 ---
-
 # Diagnose thermal throttling and system performance on Kali Linux
 
 ## Objective

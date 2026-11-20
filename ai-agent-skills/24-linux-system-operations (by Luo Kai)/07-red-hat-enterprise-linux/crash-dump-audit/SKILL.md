@@ -1,14 +1,12 @@
 ---
 name: linux-red-hat-enterprise-linux-crash-dump-audit
 description: Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Red Hat Enterprise Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Red Hat Enterprise Linux
 collection: 24
 skill_id: linux-0798
 ---
-
 # Review crash dumps and core-dump policy on Red Hat Enterprise Linux
 
 ## Objective

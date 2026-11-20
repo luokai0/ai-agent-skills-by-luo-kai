@@ -1,13 +1,11 @@
 ---
 name: agent-observability
 description: Plans observability for AI agents and tool workflows using traces, structured events, quality signals, latency, token and cost measurements, and privacy-aware logging. Use when operating, debugging, or optimizing agents in development or production.
-license: Proprietary. See repository LICENSE
 metadata:
   author: Luo Kai
   provenance: original
   version: "1.0.0"
 ---
-
 # Agent Observability
 
 ## Goal

@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-developer-toolchain
 description: Check compilers, runtimes, SDKs, headers, PATH precedence, and project-specific dependencies. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0246
 ---
-
 # Inspect and prepare a development toolchain on Pop!_OS
 
 ## Objective

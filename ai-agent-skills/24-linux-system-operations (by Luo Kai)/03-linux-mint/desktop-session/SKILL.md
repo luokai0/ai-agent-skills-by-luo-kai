@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-desktop-session
 description: Identify desktop environment, display server, monitors, audio stack, and user-session errors. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0074
 ---
-
 # Diagnose desktop session, display, and audio state on Linux Mint
 
 ## Objective

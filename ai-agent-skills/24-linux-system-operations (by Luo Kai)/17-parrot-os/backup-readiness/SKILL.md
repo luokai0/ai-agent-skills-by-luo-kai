@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-backup-readiness
 description: Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-0423
 ---
-
 # Assess backup and recovery readiness on Parrot OS
 
 ## Objective

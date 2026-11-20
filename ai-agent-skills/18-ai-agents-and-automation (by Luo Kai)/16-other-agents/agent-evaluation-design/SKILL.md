@@ -1,13 +1,11 @@
 ---
 name: agent-evaluation-design
 description: Designs repeatable evaluations for AI agents, tool-using assistants, and multi-agent workflows. Use when measuring task success, reliability, safety, regression, instruction following, or comparing agent versions and prompts.
-license: Proprietary. See repository LICENSE
 metadata:
   author: Luo Kai
   provenance: original
   version: "1.0.0"
 ---
-
 # Agent Evaluation Design
 
 ## Purpose

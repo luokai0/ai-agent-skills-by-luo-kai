@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-installed-package-audit
 description: Inventory installed packages, manually installed items, orphan candidates, and package integrity. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0257
 ---
-
 # Audit installed packages and provenance on Rocky Linux
 
 ## Objective

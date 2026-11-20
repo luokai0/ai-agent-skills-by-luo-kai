@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-package-install
 description: Install a user-requested package only after confirming origin, dependencies, disk impact, and approval. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0055
 ---
-
 # Install a package with transaction review on Linux Mint
 
 ## Objective

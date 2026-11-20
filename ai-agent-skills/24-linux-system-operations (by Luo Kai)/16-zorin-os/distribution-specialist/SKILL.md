@@ -1,14 +1,12 @@
 ---
 name: linux-zorin-os-distribution-specialist
 description: Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Zorin OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Zorin OS
 collection: 24
 skill_id: linux-0400
 ---
-
 # Use distribution-specific maintenance tools safely on Zorin OS
 
 ## Objective

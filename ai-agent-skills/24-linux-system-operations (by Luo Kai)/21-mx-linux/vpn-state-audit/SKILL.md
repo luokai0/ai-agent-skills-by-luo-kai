@@ -1,14 +1,12 @@
 ---
 name: linux-mx-linux-vpn-state-audit
 description: Identify active VPN interfaces, routes, DNS policy, and client state without disconnecting or changing tunnels. Applies to MX Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: MX Linux
 collection: 24
 skill_id: linux-1142
 ---
-
 # Inspect VPN and tunnel state on MX Linux
 
 ## Objective

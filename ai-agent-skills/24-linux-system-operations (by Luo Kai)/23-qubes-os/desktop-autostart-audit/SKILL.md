@@ -1,14 +1,12 @@
 ---
 name: linux-qubes-os-desktop-autostart-audit
 description: Inspect XDG autostart entries, user systemd services, shell profiles, and desktop-specific startup mechanisms. Applies to Qubes OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Qubes OS
 collection: 24
 skill_id: linux-1197
 ---
-
 # Audit desktop autostart and login hooks on Qubes OS
 
 ## Objective

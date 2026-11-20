@@ -2,11 +2,9 @@
 author: luo-kai
 name: hedgefundmonitor
 description: Query the OFR (Office of Financial Research) Hedge Fund Monitor API for hedge fund data including SEC Form PF aggregated statistics, CFTC Traders in Financial Futures, FICC Sponsored Repo volumes, and FRB SCOOS dealer financing terms. Access time series data on hedge fund size, leverage, counterparties, liquidity, complexity, and risk management. No API key or registration required. Use when working with hedge fund data, systemic risk monitoring, financial stability research, hedge fund leverage or leverage ratios, counterparty concentration, Form PF statistics, repo market data, or OFR financial research data.
-license: MIT
 metadata:
     skill-author: K-Dense Inc.
 ---
-
 # OFR Hedge Fund Monitor API
 
 Free, open REST API from the U.S. Office of Financial Research (OFR) providing aggregated hedge fund time series data. No API key or registration required.

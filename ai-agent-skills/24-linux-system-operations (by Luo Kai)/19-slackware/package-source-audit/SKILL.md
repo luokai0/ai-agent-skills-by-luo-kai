@@ -1,14 +1,12 @@
 ---
 name: linux-slackware-package-source-audit
 description: Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Slackware; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Slackware
 collection: 24
 skill_id: linux-0453
 ---
-
 # Audit configured package sources on Slackware
 
 ## Objective

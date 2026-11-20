@@ -1,14 +1,12 @@
 ---
 name: linux-linux-mint-identify-release
 description: Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Linux Mint; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Linux Mint
 collection: 24
 skill_id: linux-0051
 ---
-
 # Identify distribution and release on Linux Mint
 
 ## Objective

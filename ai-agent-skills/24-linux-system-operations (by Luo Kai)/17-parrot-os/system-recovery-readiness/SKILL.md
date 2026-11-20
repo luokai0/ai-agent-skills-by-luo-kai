@@ -1,14 +1,12 @@
 ---
 name: linux-parrot-os-system-recovery-readiness
 description: Verify availability of recovery media, rescue targets, snapshots, previous kernels, and documented rollback paths. Applies to Parrot OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Parrot OS
 collection: 24
 skill_id: linux-1050
 ---
-
 # Assess boot and recovery options on Parrot OS
 
 ## Objective

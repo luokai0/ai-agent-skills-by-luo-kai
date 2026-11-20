@@ -1,14 +1,12 @@
 ---
 name: linux-kali-linux-virtualization-host-audit
 description: Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Kali Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Kali Linux
 collection: 24
 skill_id: linux-0766
 ---
-
 # Inspect KVM, libvirt, and virtualization readiness on Kali Linux
 
 ## Objective

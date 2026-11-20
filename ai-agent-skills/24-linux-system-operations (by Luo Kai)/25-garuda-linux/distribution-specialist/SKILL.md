@@ -1,14 +1,12 @@
 ---
 name: linux-garuda-linux-distribution-specialist
 description: Apply the distro-specific specialist workflow described in this skill only after verifying the release and tool availability. Applies to Garuda Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Garuda Linux
 collection: 24
 skill_id: linux-0625
 ---
-
 # Use distribution-specific maintenance tools safely on Garuda Linux
 
 ## Objective

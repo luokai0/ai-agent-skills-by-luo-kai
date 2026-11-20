@@ -1,14 +1,12 @@
 ---
 name: linux-debian-flatpak-permission-audit
 description: Inspect installed Flatpak applications, remotes, overrides, and filesystem/device permissions. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0671
 ---
-
 # Audit Flatpak application permissions on Debian
 
 ## Objective

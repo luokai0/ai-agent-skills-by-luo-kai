@@ -1,14 +1,12 @@
 ---
 name: linux-debian-btrfs-snapshot-audit
 description: Map Btrfs devices, subvolumes, snapshot age, and available space without deleting or rolling back snapshots. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0656
 ---
-
 # Inspect Btrfs subvolumes and snapshots on Debian
 
 ## Objective

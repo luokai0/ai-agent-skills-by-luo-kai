@@ -1,14 +1,12 @@
 ---
 name: linux-debian-identify-release
 description: Establish exact distribution, release, architecture, base family, and support status before choosing any command. Applies to Debian; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Debian
 collection: 24
 skill_id: linux-0026
 ---
-
 # Identify distribution and release on Debian
 
 ## Objective

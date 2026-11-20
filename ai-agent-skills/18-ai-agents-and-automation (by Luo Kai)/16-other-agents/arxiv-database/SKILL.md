@@ -2,11 +2,9 @@
 author: luo-kai
 name: arxiv-database
 description: Search and retrieve preprints from arXiv via the Atom API. Use this skill when searching for papers in physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering, or economics by keywords, authors, arXiv IDs, date ranges, or categories.
-license: MIT
 metadata:
     skill-author: Orchestra Research
 ---
-
 # arXiv Database
 
 ## Overview

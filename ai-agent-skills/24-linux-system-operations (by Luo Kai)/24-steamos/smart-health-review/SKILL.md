@@ -1,14 +1,12 @@
 ---
 name: linux-steamos-smart-health-review
 description: Inspect drive health, temperature, wear indicators, and recent errors without running destructive tests. Applies to SteamOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: SteamOS
 collection: 24
 skill_id: linux-1203
 ---
-
 # Review disk SMART health and error trends on SteamOS
 
 ## Objective

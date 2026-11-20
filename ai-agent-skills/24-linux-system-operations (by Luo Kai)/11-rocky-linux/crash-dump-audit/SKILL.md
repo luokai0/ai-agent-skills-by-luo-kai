@@ -1,14 +1,12 @@
 ---
 name: linux-rocky-linux-crash-dump-audit
 description: Inspect core-dump configuration, recent crash records, and storage use without opening sensitive memory dumps. Applies to Rocky Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Rocky Linux
 collection: 24
 skill_id: linux-0898
 ---
-
 # Review crash dumps and core-dump policy on Rocky Linux
 
 ## Objective

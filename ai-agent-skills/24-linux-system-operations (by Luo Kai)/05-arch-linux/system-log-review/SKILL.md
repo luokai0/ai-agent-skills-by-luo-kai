@@ -1,14 +1,12 @@
 ---
 name: linux-arch-linux-system-log-review
 description: Collect a narrow, time-bounded log window and correlate service, kernel, and authentication events. Applies to Arch Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Arch Linux
 collection: 24
 skill_id: linux-0119
 ---
-
 # Review system logs for a reported incident on Arch Linux
 
 ## Objective

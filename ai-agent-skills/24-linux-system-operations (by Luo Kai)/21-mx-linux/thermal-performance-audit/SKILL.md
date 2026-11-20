@@ -1,14 +1,12 @@
 ---
 name: linux-mx-linux-thermal-performance-audit
 description: Correlate temperatures, frequency, fan telemetry, load, and throttling evidence without stress testing. Applies to MX Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: MX Linux
 collection: 24
 skill_id: linux-1140
 ---
-
 # Diagnose thermal throttling and system performance on MX Linux
 
 ## Objective

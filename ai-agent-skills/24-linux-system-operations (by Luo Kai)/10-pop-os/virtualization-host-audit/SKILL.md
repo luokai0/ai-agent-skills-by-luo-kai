@@ -1,14 +1,12 @@
 ---
 name: linux-pop-os-virtualization-host-audit
 description: Determine CPU virtualization flags, hypervisor modules, libvirt services, and VM inventory without starting or modifying VMs. Applies to Pop!_OS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Pop!_OS
 collection: 24
 skill_id: linux-0866
 ---
-
 # Inspect KVM, libvirt, and virtualization readiness on Pop!_OS
 
 ## Objective

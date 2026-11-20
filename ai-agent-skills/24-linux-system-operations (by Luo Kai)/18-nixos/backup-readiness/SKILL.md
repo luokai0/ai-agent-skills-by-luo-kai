@@ -1,14 +1,12 @@
 ---
 name: linux-nixos-backup-readiness
 description: Check available backup tools, snapshot status, destination reachability, and restore evidence before risky maintenance. Applies to NixOS; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: NixOS
 collection: 24
 skill_id: linux-0448
 ---
-
 # Assess backup and recovery readiness on NixOS
 
 ## Objective

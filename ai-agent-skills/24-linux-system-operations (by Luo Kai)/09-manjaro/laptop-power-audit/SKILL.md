@@ -1,14 +1,12 @@
 ---
 name: linux-manjaro-laptop-power-audit
 description: Assess battery capacity, charge cycles, AC state, and active power profile without changing charge thresholds. Applies to Manjaro; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Manjaro
 collection: 24
 skill_id: linux-0839
 ---
-
 # Inspect battery health and power profiles on Manjaro
 
 ## Objective

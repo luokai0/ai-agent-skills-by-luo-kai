@@ -3,11 +3,9 @@ name: deepspeed
 description: Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, sparse attention
 version: 1.0.0
 author: luo-kai
-license: MIT
 tags: [DeepSpeed, Distributed Training, ZeRO, Pipeline Parallelism, Mixed Precision, Optimization, Microsoft, Large-Scale Training, FP16, FP8]
 dependencies: [deepspeed, torch, transformers, accelerate]
 ---
-
 # Deepspeed Skill
 
 Comprehensive assistance with deepspeed development, generated from official documentation.

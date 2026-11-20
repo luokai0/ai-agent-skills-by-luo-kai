@@ -1,14 +1,12 @@
 ---
 name: linux-alpine-linux-firewall-audit
 description: Inspect the active firewall framework, default policies, enabled zones, and listening sockets. Applies to Alpine Linux; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Alpine Linux
 collection: 24
 skill_id: linux-0341
 ---
-
 # Audit firewall policy and exposed listeners on Alpine Linux
 
 ## Objective

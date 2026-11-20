@@ -1,14 +1,12 @@
 ---
 name: linux-tails-package-source-audit
 description: Review enabled repositories, origins, priorities, and signing configuration before trusting package metadata. Applies to Tails; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: Tails
 collection: 24
 skill_id: linux-0528
 ---
-
 # Audit configured package sources on Tails
 
 ## Objective

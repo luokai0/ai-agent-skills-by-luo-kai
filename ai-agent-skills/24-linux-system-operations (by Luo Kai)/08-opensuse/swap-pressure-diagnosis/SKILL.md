@@ -1,14 +1,12 @@
 ---
 name: linux-opensuse-swap-pressure-diagnosis
 description: Correlate RAM, swap, PSI, OOM events, and workload state to explain sluggishness or memory exhaustion. Applies to openSUSE; verifies release and prerequisites before any system change.
-license: Proprietary. See LICENSE_SCOPE.md.
 author: Luo Kai
 version: 1.1.0
 platform: openSUSE
 collection: 24
 skill_id: linux-0805
 ---
-
 # Diagnose swap usage and memory pressure on openSUSE
 
 ## Objective
