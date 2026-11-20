@@ -1,0 +1,50 @@
+name: Consolidate Linux Distribution Skills
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Apply the validated Linux consolidation"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install YAML parser
+        run: python -m pip install --disable-pip-version-check PyYAML
+      - name: Preview Linux consolidation
+        run: python scripts/maintenance/consolidate_linux_skill_workflows.py
+      - name: Apply validated Linux consolidation
+        if: inputs.apply
+        run: |
+          python scripts/maintenance/consolidate_linux_skill_workflows.py --apply
+          python scripts/maintenance/validate_operating_skill_quality.py
+          python scripts/maintenance/check_skill_frontmatter.py
+      - name: Commit and push
+        if: inputs.apply
+        run: |
+          git config user.name "Luo Kai"
+          git config user.email "luokai0@users.noreply.github.com"
+          git add -A -- ai-agent-skills docs scripts/maintenance .github/workflows
+          if git diff --cached --quiet; then
+            echo "No Linux consolidation changes to commit"
+            exit 1
+          fi
+          git commit -m "feat: consolidate Linux workflows into distro-family profiles [skip ci]"
+          git push origin HEAD:main
