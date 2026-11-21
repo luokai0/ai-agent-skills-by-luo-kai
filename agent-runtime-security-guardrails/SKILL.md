@@ -3,7 +3,7 @@ name: agent-runtime-security-guardrails
 description: Use when designing, reviewing, or operating an AI agent or automation that calls tools, touches files, credentials, or external systems, or takes actions on a user's behalf, and you need runtime controls that limit damage, gate risky actions, and produce auditable evidence.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Runtime Security Guardrails
@@ -96,3 +96,46 @@ Adversarial tests must include direct and indirect injection in documents, pages
 
 Define disable controls for a tool, agent identity, route, tenant, or runtime. During incidents preserve minimal redacted evidence, revoke affected credentials, stop queued writes, identify completed effects, and reconcile with the system of record. Do not erase evidence as cleanup. Define recovery authority and re-enable criteria before restoring service.
 
+## Task-bound identity and delegated authorization (v1.2)
+
+A workload identity answers which runtime is calling. It does not, by itself, answer which user initiated the task, what this task is allowed to do, or what a delegated worker may do. Enforce those dimensions separately.
+
+### Identity layers
+Maintain distinct, auditable identities for:
+- **Workload principal:** the service, container, or runtime hosting the agent.
+- **Agent principal:** the registered agent or agent version making the request.
+- **Initiating subject:** the authenticated user or upstream service that requested the work.
+- **Task principal:** the specific run, job, or delegated subtask whose authority is being evaluated.
+
+Bind the task to immutable identifiers for the run, tenant, initiating subject, purpose, expiry, and policy version. Do not treat a user ID copied from model-generated text or a tool result as authenticated identity.
+
+### Authorization flow
+1. Authenticate the workload using platform-issued workload identity, short-lived certificates, or an equivalent managed mechanism.
+2. Authenticate the initiating subject at the trusted ingress. Preserve the subject identity and consent context as signed or server-side verified claims.
+3. Create a task authorization envelope that identifies the permitted resources, operations, tenant, expiry, and approval requirements.
+4. Intersect task permissions with workload policy, user-delegated scopes, resource ACLs, and organization policy. The narrowest effective permission wins.
+5. Before each tool call, have a policy enforcement point validate the envelope and the actual arguments. Never let the model mint or broaden its own authority.
+6. When delegating, issue a child authorization envelope that is a strict subset of the parent's permissions, with a shorter or equal expiry. A child cannot add tools, resources, tenants, or operations.
+7. At the egress boundary, exchange the task-scoped authorization for a destination-specific credential. Do not forward a broad bearer token across services.
+
+### Confused-deputy protections
+- Bind every authorization decision to the exact task, tenant, resource, operation, and destination.
+- Do not let a shared agent service use its ambient service-account permissions to bypass the initiating user's access.
+- Check authorization after resolving aliases and resource IDs, not only against the raw string supplied by the model.
+- Prevent cross-tenant resource substitution by deriving tenant scope from authenticated server-side context.
+- Re-check authorization immediately before side effects; a prior planning-time check is not sufficient.
+- Record both the agent principal and initiating subject in audit events, without logging credentials.
+
+### Approval integrity
+An approval must bind to a canonical action record containing the actor, task ID, tool, destination, normalized arguments, data classification, and expiry. Any material argument change invalidates the approval. A generic approval such as "allow the agent" must not authorize later unrelated actions.
+
+### Verification tests
+Test that:
+- A child agent cannot call a tool or access a resource omitted from its delegated envelope.
+- A task for tenant A cannot substitute an object belonging to tenant B.
+- An expired, revoked, replayed, or wrong-audience authorization is rejected.
+- A model-generated user ID cannot replace the authenticated initiating subject.
+- Changing a destination or sensitive argument after approval causes the approval check to fail.
+- A tool call made through a shared workload identity is still constrained by the task and user scopes.
+
+Record the policy version, task ID, principal chain, authorization decision, and denial reason. Never claim delegated access is isolated until negative cross-task and cross-tenant tests pass.

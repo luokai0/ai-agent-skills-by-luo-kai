@@ -3,7 +3,7 @@ name: secrets-and-cryptography
 description: Use when designing, reviewing, or troubleshooting how an application or infrastructure stores, distributes, rotates, or uses secrets, keys, certificates, or cryptographic primitives, including key management, TLS configuration, hashing, encryption at rest, and secret leakage remediation.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Secrets And Cryptography
@@ -91,3 +91,51 @@ Return a document containing, in order:
 6. Open questions and items requiring version confirmation.
 
 Do not include actual secret values in the output. Redact to the first four characters at most, or describe the value by type and fingerprint.
+
+## Agent credential broker and token exchange (v1.1)
+
+An agent should request an authorized operation, not receive the credentials that make every operation possible. Put vendor credentials, OAuth refresh tokens, signing keys, and service secrets behind a credential broker or narrowly scoped egress gateway.
+
+### Broker responsibilities
+The broker is a trusted security component outside the model context and outside untrusted tool output. It should:
+1. Authenticate the calling workload and verify the task authorization envelope.
+2. Confirm that the requested destination, operation, tenant, and resource are allowed by policy.
+3. Obtain or exchange a credential for that destination using a managed identity or approved OAuth flow.
+4. Restrict the credential to the minimum audience, scopes, resource set, and lifetime supported by the provider.
+5. Attach the credential to the outbound request without returning it to the agent.
+6. Record a redacted audit event linking the agent, task, initiating subject, credential class, destination, and decision.
+7. Revoke or invalidate broker-side grants when the task, user consent, or upstream authorization is withdrawn.
+
+### Delegated OAuth and workload credentials
+Keep service authority and user-delegated authority distinct. A service-to-service credential represents the workload; a delegated OAuth credential represents a user-approved grant. Do not silently substitute one for the other.
+
+For delegated access:
+- Use the provider's supported authorization-code and consent flow, with PKCE where applicable.
+- Store refresh tokens only in the approved secret store or broker vault.
+- Exchange or refresh tokens inside the broker, not in model-visible code or prompts.
+- Validate issuer, signature, expiry, authorized party, audience, scopes, tenant, and token binding where supported.
+- Do not accept a token merely because it is syntactically valid or was returned by a tool.
+- Never pass a token issued for one API audience to a different resource server.
+- Do not forward inbound user tokens to downstream services as a shortcut. Perform an explicit, policy-checked exchange.
+
+### Credential isolation
+- Give each integration a separate credential identity and policy.
+- Avoid a single global API key shared by unrelated agents, tenants, or tasks.
+- Keep credentials out of command arguments, URLs, browser-visible storage, source code, traces, crash dumps, and generated artifacts.
+- Prefer short-lived credentials and managed identity over long-lived static secrets.
+- Use per-task or per-tenant credential caches only when the cache key includes every authorization dimension; never reuse a broader cached token for a narrower request.
+- Make secret retrieval an explicit broker action with a policy decision, not a general-purpose file read exposed to the agent.
+
+### Rotation and incident response
+Track owner, provider, scopes, audience, consumers, expiry, last use, and revocation method for every brokered credential. Support overlapping rotation windows only as long as needed, then revoke the old credential. On suspected exposure, revoke at the provider, invalidate broker caches, inspect use logs, identify affected tasks and tenants, and rotate dependent credentials. Do not assume deleting a secret from the current repository removes copies from history, logs, caches, or build artifacts.
+
+### Broker acceptance tests
+Verify that:
+- The model and agent process cannot read the broker's stored refresh token or static secret.
+- A credential for service A is rejected by service B.
+- A read-only task cannot obtain a write-scoped credential.
+- Revoked consent prevents future refresh and new outbound calls.
+- A cached token cannot cross tenant, subject, audience, or task boundaries.
+- Broker logs contain enough evidence to investigate use but no reusable secret material.
+
+If the upstream provider cannot express the required scope or resource restriction, enforce it in the broker and egress policy, and document the remaining blast radius.

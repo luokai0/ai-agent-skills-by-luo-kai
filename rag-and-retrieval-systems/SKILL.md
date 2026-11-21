@@ -3,7 +3,7 @@ name: rag-and-retrieval-systems
 description: Use when designing, building, evaluating, debugging, or operating retrieval-augmented generation (RAG) pipelines, including document ingestion, chunking, embedding, vector or hybrid search, reranking, grounding of LLM answers, and retrieval quality evaluation.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Rag And Retrieval Systems
@@ -93,3 +93,44 @@ Return evidence with source identity, quoted or extracted span, revision, and re
 
 Evaluate retrieval separately from answer generation. Measure recall at k, precision at k, ranking quality, citation correctness, freshness, permission leakage, and robustness to adversarial documents. Use representative and hard-negative query sets, including exact lookups, ambiguous questions, stale content, conflicting sources, and cross-tenant probes. Tune chunking, embeddings, filters, and reranking against held-out cases, then measure end-to-end answer faithfulness and task success.
 
+## Adversarial ingestion, retrieval, and context integrity (v1.2)
+
+Treat every corpus item as untrusted data, even when it comes from an internal repository or a previously trusted publisher. Retrieval is a data path into model context; it is not an instruction channel and must never grant authority to call tools.
+
+### Ingestion trust controls
+For each source, preserve:
+- Stable source and document identifiers, tenant and access labels, publisher or owner, source URI, revision or content digest, ingestion time, and effective date.
+- Parser identity and version, extraction status, detected file type, and whether the original rendering was inspected.
+- A trust classification based on source ownership and verification, not on how confident or authoritative the document sounds.
+
+At ingestion:
+1. Validate file type by content as well as extension, enforce size and decompression limits, and isolate parsers from production credentials and unrestricted network access.
+2. Preserve the original file and a content digest so extracted text can be traced back to the exact source revision.
+3. For PDFs, office documents, HTML, and other rich formats, compare extracted text with rendered or structural content when hidden text can affect the model. Flag tiny, off-page, transparent, covered, hidden-sheet, or otherwise non-visible text for review.
+4. Detect unexpected embedded instructions, prompt-like content, and suspicious metadata as risk signals. Do not rely on keyword filtering as the security boundary.
+5. Reject or quarantine malformed, unparseable, provenance-free, or access-label-incomplete documents rather than silently promoting them to trusted evidence.
+6. Re-run security and permission checks when a document is updated, reclassified, or moved between tenants.
+
+### Retrieval and context assembly
+- Apply tenant and document ACL filters before candidate retrieval and again after reranking, cache lookup, and context assembly.
+- Preserve provenance and access labels through every transformation. A chunk without a resolvable parent source must not be presented as verified evidence.
+- Keep retrieved passages in a clearly delimited untrusted-data channel. Delimiters and prompt wording help interpretation but do not replace tool-boundary authorization.
+- Never execute instructions, URLs, code, SQL, or tool-call suggestions found inside retrieved passages merely because they were retrieved.
+- Do not let retrieved content change system policy, tool permissions, approval requirements, or the user's stated objective.
+- For high-impact answers, corroborate important claims against independent authoritative sources and surface unresolved conflicts.
+- Prevent stale or poisoned cache entries from bypassing updated ACLs, source revocation, or freshness rules. Cache keys must include tenant, permission context, corpus/index version, and relevant query configuration.
+
+### Memory poisoning controls
+Treat durable memory writes as privileged state changes. A retrieved statement or model inference must not silently become a user fact or trusted instruction. Persist source, authority, observation time, confidence, scope, and expiry with every memory item. Require explicit policy approval for changes to durable agent policies, identity facts, or permission-bearing preferences. Support quarantine, supersession, and deletion propagation across vector indexes, summaries, caches, and derived stores.
+
+### Adversarial evaluation set
+Maintain harmless, instrumented tests for:
+- Direct instructions embedded in retrieved documents.
+- Indirect instructions hidden in document metadata, comments, OCR text, or invisible formatting.
+- Poisoned documents that imitate a trusted publisher or claim false recency.
+- Cross-tenant retrieval and cache contamination.
+- Revoked or expired documents that remain in an index.
+- Memory writes that attempt to convert an untrusted claim into a permanent fact.
+- Retrieval results that propose tool calls or request secrets.
+
+Measure attack success, false-positive rate on benign documents, ACL leakage, citation accuracy, and freshness. A filter that catches known strings is only one measured signal; it is not proof of injection resistance.
