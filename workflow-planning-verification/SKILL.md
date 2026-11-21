@@ -3,7 +3,7 @@ name: workflow-planning-verification
 description: Use when planning or reviewing an automated multi-step agent workflow before execution, to check step ordering, tool permissions, failure paths, approval gates, and success criteria so the workflow can be run safely and its results verified.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Workflow Planning Verification
@@ -95,3 +95,13 @@ Return a verification report with these sections, in order:
 6. **Residual risk**: what the check did not cover.
 
 Do not state that the workflow is secure, compliant, or guaranteed to succeed. Report what was checked and what remains unverified.
+## Executable workflow contract and recovery design (v1.1)
+
+Represent the approved workflow as a machine-checkable contract rather than a prose-only checklist. Each step has a stable ID, owner, dependency IDs, typed inputs and outputs, effect classification, target resource, authority scope, timeout, retry policy, idempotency strategy, approval requirement, pass condition, and evidence reference. Reject cycles, unresolved dependencies, ambiguous targets, and steps without observable completion conditions before execution.
+
+Define the workflow's consistency model. Identify which steps are safe to run concurrently, which require serial execution, and which share mutable state. For each external side effect, record the idempotency key and the system-of-record field used for reconciliation. For multi-system work, define the saga order and compensating action for every completed step that may need reversal; explicitly mark effects that cannot be compensated.
+
+Use a durable state machine with transitions such as READY, RUNNING, WAITING, RETRYABLE_FAILURE, BLOCKED, COMPENSATING, SUCCEEDED, PARTIAL, and CANCELLED. Persist the transition before dispatching the next external action. On resume, inspect both workflow state and downstream systems; a timeout is an unknown outcome until reconciled.
+
+The final acceptance gate checks the user's postconditions independently of the step ledger. A sequence of successful API responses does not prove the intended outcome. Preserve partial completion and unresolved compensation in the final report.
+

@@ -3,7 +3,7 @@ name: autonomous-ai-research
 description: Use when an agent must plan, run, and report multi-step AI or data research (literature and codebase surveys, experiment design, model or data comparisons, reproducibility checks) with minimal supervision but auditable evidence and explicit approval gates.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Autonomous AI Research
@@ -87,3 +87,15 @@ The final report must contain, in order:
 8. **Artifact index**: paths to logs, configs, and scripts.
 
 Quality bar: every claim links to a run ID; no metric appears without its baseline and variance; the report states a clear "supported", "not supported", or "inconclusive" verdict for the original question.
+## Evidence-led research execution (v1.1)
+
+Run research as a repeatable pipeline: frame the decision, decompose it into independent questions, define inclusion criteria, search multiple source classes, inspect primary evidence, extract claims, compare conflicts, identify gaps, and synthesize with explicit confidence. Search results are candidate leads, not validated facts.
+
+Prioritize primary sources for specifications, APIs, security advisories, papers, source repositories, and release notes. Use practitioner reports to understand operational behavior and failure modes. Record source URL, publisher, publication or update date, access date, exact claim supported, source type, and confidence. Separate what the source states from the agent's inference.
+
+Deduplicate by canonical URL and underlying claim, but do not collapse independent corroboration. Resolve disagreement by checking dates, version scope, experimental method, and source incentives. If a source is inaccessible, stale, or only a snippet, label the claim accordingly. Never fabricate a citation or infer a current API from old examples.
+
+For technical recommendations, extract prerequisites, supported versions, operational steps, failure modes, security boundaries, and verification commands. Turn reusable findings into capability requirements and tests rather than copying a source's wording or structure. Preserve a research-to-implementation map: each proposed skill improvement links to the requirement it addresses and the validation case that will test it.
+
+Close with known gaps, unanswered questions, confidence limits, and a revalidation trigger such as a major release, security advisory, or material version change.
+

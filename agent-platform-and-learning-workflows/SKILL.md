@@ -3,7 +3,7 @@ name: agent-platform-and-learning-workflows
 description: Use when designing, reviewing, or operating an AI agent platform or a learning workflow (agent orchestration, tool-use integration, evaluation loops, feedback-driven improvement, fine-tuning or retrieval updates) and a decision must be made about scope, data handling, promotion of changes, or evidence of quality.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Platform And Learning Workflows
@@ -83,3 +83,15 @@ Do not:
 - Treat aggregate accuracy as sufficient evidence.
 - Claim compliance, safety certification, or benchmark performance that has not been measured in this environment.
 - Invent platform features, flags, or library versions.
+## Agent platform capability lifecycle (v1.1)
+
+Design the platform as separable control-plane and execution-plane responsibilities. The control plane owns identity, task contracts, policy, skill discovery, version pinning, routing, budgets, approval state, and audit metadata. The execution plane runs isolated agent sessions, tool adapters, retrieval, memory access, and task workers under the authority issued by the control plane. A worker must not be able to rewrite its own policy or grant itself new tools.
+
+Define capability registration as a governed lifecycle: proposed, inspected, tested, approved, published, deprecated, revoked. Each capability record includes owner, version, digest, declared purpose, activation conditions, input/output contract, dependencies, permissions, data classes, runtime compatibility, evaluation results, and rollback or retirement path.
+
+Resolve capabilities by matching the task contract to declared capability metadata, then enforce permissions independently at execution time. Skill selection is not authorization. Pin versions for a run so an update cannot change behavior mid-task. For critical workflows, require compatibility checks before upgrading dependencies or skills.
+
+Separate agent identity from user identity and from the downstream service identity. Bind delegated authority to a task, tenant, allowed operations, and expiry. Track budget and concurrency across the entire run, not only per worker. Provide global stop controls and narrower kill switches for individual tools, agents, tenants, and routes.
+
+Treat the platform as incomplete until it can resume interrupted work, reconcile uncertain side effects, explain why a capability was selected, prove which version ran, and produce evidence for every consequential action.
+

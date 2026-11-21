@@ -3,7 +3,7 @@ name: ai-change-verification
 description: Use when an AI-generated or AI-assisted code, configuration, prompt, or documentation change must be checked before merge or release, to confirm it does what was intended, breaks nothing, and leaves an auditable evidence trail.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # AI Change Verification
@@ -84,3 +84,13 @@ Produce a single report with these sections, in this order:
 8. **Appendix:** pre-existing findings, clearly separated from new ones.
 
 Do not omit the limitations section. A review with no stated limitations is not credible.
+## AI change provenance and release evidence (v1.1)
+
+Treat every AI-assisted change as a traceable transformation. Bind the change request, accepted intent, base revision, candidate revision, tool/model configuration, generated artifacts, test run, reviewer decision, and release decision into one change record. Keep generated output distinguishable from human-authored edits where practical; authorship labels must not be used as a substitute for review.
+
+For every changed behavior, write a claim and a discriminating test that fails on the base revision and passes on the candidate. Add negative assertions for forbidden behavior, permission expansion, unintended network access, secret exposure, and unexpected file or data mutation. A test that passes on both revisions does not prove the change.
+
+Review generated dependencies, migrations, configuration defaults, and scripts as carefully as application code. Check that examples and documentation do not introduce unsafe commands or claim unsupported capabilities. For prompt or skill changes, compare trajectories under a frozen evaluation suite and inspect regressions case by case.
+
+Before release, produce a reproducibility bundle: exact revisions, commands, environment, test outputs, static-analysis findings, approvals, and known limitations. If any result cannot be reproduced, downgrade its status. Keep rollback instructions and identify the exact artifact or configuration to restore.
+
