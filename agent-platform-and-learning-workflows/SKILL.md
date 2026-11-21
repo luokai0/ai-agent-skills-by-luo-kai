@@ -3,7 +3,7 @@ name: agent-platform-and-learning-workflows
 description: Use when designing, reviewing, or operating an AI agent platform or a learning workflow (agent orchestration, tool-use integration, evaluation loops, feedback-driven improvement, fine-tuning or retrieval updates) and a decision must be made about scope, data handling, promotion of changes, or evidence of quality.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Platform And Learning Workflows
@@ -95,3 +95,45 @@ Separate agent identity from user identity and from the downstream service ident
 
 Treat the platform as incomplete until it can resume interrupted work, reconcile uncertain side effects, explain why a capability was selected, prove which version ran, and produce evidence for every consequential action.
 
+## Skill registry contracts and reproducible activation (v1.2)
+
+A skill catalog is a governed software supply chain, not a folder of names. Discovery may suggest a capability, but activation must validate its exact artifact, contract, compatibility, and permissions before execution.
+
+### Canonical skill record
+For every publishable skill, maintain a normalized record containing:
+- Stable skill identifier and human-readable name.
+- Immutable version and content digest.
+- Declared purpose, activation conditions, inputs, outputs, and failure modes.
+- Required tools, permissions, data classes, and external destinations.
+- Runtime and protocol compatibility ranges.
+- Dependencies with explicit version constraints.
+- Security review, evaluation, and approval evidence.
+- Owner, publication time, deprecation state, and revocation reason where applicable.
+
+Keep descriptive metadata separate from executable authority. A skill description may help route a task, but it must never grant the permissions it describes.
+
+### Resolution and lock discipline
+1. Resolve the complete dependency graph before execution.
+2. Detect cycles, incompatible version ranges, missing dependencies, and conflicting permissions.
+3. Produce a deterministic lock record containing every selected skill and dependency version plus content digest.
+4. Reject mutable references such as latest for production or reproducible runs.
+5. Verify the retrieved artifact digest and publisher signature against an independently trusted key policy before loading it.
+6. Validate the skill manifest against a versioned schema; reject unknown security-critical fields, ambiguous permission declarations, and malformed values.
+7. Pin the resolved set for the lifetime of a task. An update must not silently change a running task's behavior.
+
+### Compatibility and rollout
+Treat runtime, model interface, tool schema, protocol, and dependency compatibility as separate dimensions. A skill can be syntactically loadable and still be behaviorally incompatible. Require a compatibility test against the target runtime and the declared tool contracts.
+
+Promote a new skill version through isolated evaluation, internal or shadow use, limited canary exposure, and staged expansion. Keep the previous known-good digest available for rollback. Revocation must block new activation immediately and define how active sessions are stopped or allowed to finish safely.
+
+### Registry acceptance tests
+Verify that:
+- Reordering registry responses does not change dependency resolution.
+- A digest mismatch or invalid signature prevents activation.
+- A revoked version cannot be loaded from a cache.
+- Dependency cycles and incompatible versions fail with actionable diagnostics.
+- A skill cannot request undeclared tools or broaden its permissions at runtime.
+- A running task remains pinned while a new version is published.
+- Rollback restores the exact prior digest and dependency closure.
+
+Record the resolved lock, validation result, signature identity, compatibility report, and activation decision with each run. Do not report a skill as trusted solely because it is present in the registry.

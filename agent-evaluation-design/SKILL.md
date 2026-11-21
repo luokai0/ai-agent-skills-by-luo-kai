@@ -3,7 +3,7 @@ name: agent-evaluation-design
 description: Use when designing, reviewing, or extending evaluations (evals) for LLM-based agents or automation workflows, including task suites, graders, trajectory checks, regression baselines, and release gates.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Evaluation Design
@@ -101,3 +101,46 @@ Run frozen suites against candidate and baseline in equivalent environments. Rep
 
 Keep grader prompts and holdout labels separate from the agent. Calibrate model graders against human labels and publish disagreements. Version case changes with reasons; do not remove a hard case merely because it fails. A green suite means only that tested behaviors passed under recorded conditions.
 
+## Evaluation integrity and deployment-stage gates (v1.2)
+
+An agent benchmark can overstate capability when the test set, harness, tools, or retrieval environment leak the expected answers. Treat evaluation integrity as part of the system under test.
+
+### Prevent contamination and harness leakage
+- Keep final holdout tasks and labels inaccessible to the agent, prompt author, and routine optimization loop.
+- Separate development, validation, and holdout datasets. Record who can access each and when.
+- Inspect prompts, tool descriptions, scaffold code, retrieval indexes, examples, and cached responses for benchmark-specific answer leakage.
+- Test whether web search, APIs, or connected tools can retrieve the benchmark answer during evaluation when the benchmark intends to test unaided capability.
+- Rotate or refresh exposed holdouts. Report known overlap and prior use rather than treating a public benchmark as secret.
+- Inspect full trajectories for answer memorization, hard-coded task branches, unauthorized evaluator access, and other harness-level shortcuts.
+- Use clean evaluation environments with pinned agent, model, skill, tool, and dataset versions.
+
+### Measure generalization, not only aggregate score
+Stratify results by task family, difficulty, ambiguity, language, tenant, data quality, tool availability, and risk class. Report sample counts and confidence or uncertainty intervals where meaningful. Preserve per-case outcomes and representative failures; an aggregate score must not conceal a critical failure in a small but high-risk slice.
+
+For stochastic tasks, repeat enough trials to estimate variance and record seeds or replay conditions where available. Separate model variance from environment, tool, and evaluator variance. Do not compare versions using materially different budgets or access to tools without explicitly labeling the comparison.
+
+### Evaluator quality
+For model-based graders:
+- Define a rubric with observable criteria and examples of borderline outcomes.
+- Calibrate against independent human labels on a stratified sample.
+- Track agreement, disagreement categories, and grader drift by version.
+- Use pairwise or structured judgments where absolute scoring is unstable.
+- Keep grader prompts and hidden reference answers inaccessible to the evaluated agent.
+- Escalate ambiguous or high-impact outcomes to qualified human review.
+
+An LLM judge is a measurement instrument with its own error rate, not ground truth.
+
+### Release gates
+Use separate gates for safety, task success, reliability, and operations. Do not let high task success compensate for an unauthorized action or failed safety invariant.
+
+A cautious deployment sequence is:
+1. Offline evaluation against frozen development and holdout suites.
+2. Shadow execution with no user-visible side effects.
+3. Limited canary with strict traffic, cost, and action limits.
+4. Staged expansion only after slice-level metrics and safety probes remain within policy.
+5. Continuous monitoring with a tested kill switch and rollback path.
+
+Define minimum sample counts, guardrail thresholds, and observation windows before rollout. If evidence is insufficient, hold the release rather than interpreting missing data as a pass.
+
+### Evaluation report contract
+Record the candidate and baseline digests, test-set versions, holdout access policy, environment, model and tool versions, budgets, per-slice outcomes, evaluator calibration, safety failures, and deployment decision. Include known contamination risks and tests that were not run. Never describe benchmark performance as proof of general intelligence or universal reliability.

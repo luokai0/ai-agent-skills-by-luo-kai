@@ -3,7 +3,7 @@ name: agent-tracing-observability
 description: Use when instrumenting, debugging, or auditing LLM agent runs (tool calls, model calls, retrievals, sub-agent handoffs) and you need traces, spans, token and cost accounting, or evidence of what an agent actually did.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Tracing Observability
@@ -91,3 +91,45 @@ Alert on repeated denials, unusual tool sequences, unexpected privilege use, exc
 
 For consequential workflows, maintain an append-only event ledger with hash-linked records or another suitable tamper-evident mechanism. Record hashes and references rather than raw sensitive payloads. Protect ledger access separately from the runtime. Define retention, access, export, and deletion rules before launch; immutability must not be used to evade retention or deletion requirements.
 
+## Telemetry privacy, audit integrity, and evidence boundaries (v1.2)
+
+Metrics, traces, logs, and audit records answer different questions. Do not treat them as interchangeable evidence.
+
+### Signal responsibilities
+- **Metrics** describe aggregate behavior such as latency, error classes, token use, tool-call rates, cost, and policy-denial rates. Use bounded dimensions and avoid request content or high-cardinality identifiers as metric labels.
+- **Traces** connect stages of a request and help locate latency or failure across model calls, retrieval, policy checks, and tools. Sampling, missing instrumentation, and best-effort exporters mean a trace is not a complete audit ledger.
+- **Operational logs** capture bounded diagnostic events and service errors. Prefer normalized error categories over raw provider messages that may contain user content or credentials.
+- **Audit evidence** records attributable decisions and consequential actions for investigation. It requires explicit delivery, access, integrity, and retention guarantees beyond ordinary telemetry.
+
+### Privacy-by-design capture
+Before enabling content-bearing telemetry, define the purpose, data owner, approved fields, access roles, retention period, residency constraints, and redaction method. Default to metadata and digests rather than raw prompts, completions, tool arguments, documents, or retrieved passages.
+
+Never emit passwords, API keys, bearer tokens, refresh tokens, private keys, session cookies, or authentication headers. Treat user identifiers, tenant identifiers, file paths, and correlation metadata as potentially sensitive even when message content is absent. Restrict access and retention accordingly.
+
+Use allowlisted structured fields rather than serializing arbitrary request objects. Apply redaction before data leaves the process, not only in a downstream dashboard. Test redaction against nested errors, retries, exception traces, and malformed tool responses.
+
+### Correlation and attribution
+Use server-generated run and span identifiers. Treat caller-supplied correlation IDs as untrusted metadata, not identity or authorization. Preserve distinct fields for requested model, served model, agent version, skill digest, tool version, policy version, initiating subject, and task identity when available and permitted.
+
+Record both admission and completion evidence for consequential operations:
+- Admission: caller and task identity, policy version, action classification, normalized destination, decision, and approval reference.
+- Completion: downstream operation identifier, outcome, postcondition verification, retries or reconciliation, and artifact digest where relevant.
+
+A successful admission does not prove the action completed. A tool response does not prove the intended external state changed. Verify the postcondition through an authoritative read path.
+
+### Durable audit delivery
+For actions requiring durable evidence, use an append-only or tamper-evident store with explicit acknowledgement, access separation, retention, and export controls. Track dropped, delayed, duplicated, and rejected audit events. Define whether an action must fail closed when audit persistence is unavailable; do not imply that guarantee exists unless the execution path enforces it.
+
+Keep audit integrity controls separate from the agent runtime so an agent cannot rewrite or erase its own evidence. Hash chaining can help detect alteration, but it does not by itself prove event completeness, truthful event generation, or correct retention.
+
+### Verification tests
+Test that:
+- Secrets and personal content are absent from metrics, traces, logs, and error paths.
+- Metric dimensions remain bounded under high-cardinality traffic.
+- A sampled-out trace does not remove required audit evidence.
+- Missing audit acknowledgement triggers the documented policy behavior.
+- Correlation IDs cannot be used to impersonate another task or subject.
+- Admission and completion records can be joined without exposing raw sensitive payloads.
+- An agent runtime cannot modify or delete the durable audit record.
+
+Report telemetry coverage, known blind spots, retention, redaction tests, and delivery guarantees separately. Do not claim compliance or complete forensic reconstruction from instrumentation alone.
