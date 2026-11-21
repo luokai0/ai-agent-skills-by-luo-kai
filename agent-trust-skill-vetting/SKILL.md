@@ -3,7 +3,7 @@ name: agent-trust-skill-vetting
 description: Use when evaluating a third-party or community agent skill, plugin, prompt pack, or tool bundle before an AI agent is allowed to load, install, or execute it, to decide whether it is safe to adopt, restrict, or reject.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Trust Skill Vetting
@@ -92,3 +92,14 @@ Use explicit decisions: reject, hold for evidence, adopt with restrictions, or a
 
 Evaluate representative tasks with and without the skill under equivalent agent configurations. Compare correctness, completeness, tool discipline, security behavior, discoverability, token cost, and recovery. Include adversarial tasks and cases where the skill should not activate. Record test set, runtime, model, and revision. A skill that improves task success but increases unsafe tool use is not an overall improvement.
 
+## Ultron routing contract
+
+**Choose this skill when:** assessing whether a new or updated skill is trustworthy enough to enter Ultron's capability catalog: provenance, manifest quality, scripts, links, permissions, dependency behavior, malicious instructions, and evaluation evidence.
+
+**Choose `agent-platform-and-learning-workflows` when:** the vetted capability is ready to be registered, version-pinned, activated, deprecated, or revoked through the platform lifecycle.
+
+**Choose `agent-runtime-security-guardrails` when:** the issue is not the skill artifact itself but the runtime authority, sandbox, identity, or policy under which it executes.
+
+**Handoff contract:** return the exact artifact digest, review findings, declared capabilities and permissions, dependency inventory, test results, residual risks, and a clear accept/reject/quarantine recommendation. The platform must preserve the reviewed digest and re-run vetting when content or dependencies change.
+
+**Why the boundary exists:** a capability's content must be vetted before the platform grants it a lifecycle or execution path. Registration is not a substitute for trust review.

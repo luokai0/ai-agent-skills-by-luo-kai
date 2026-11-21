@@ -3,7 +3,7 @@ name: secrets-and-cryptography
 description: Use when designing, reviewing, or troubleshooting how an application or infrastructure stores, distributes, rotates, or uses secrets, keys, certificates, or cryptographic primitives, including key management, TLS configuration, hashing, encryption at rest, and secret leakage remediation.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Secrets And Cryptography
@@ -139,3 +139,15 @@ Verify that:
 - Broker logs contain enough evidence to investigate use but no reusable secret material.
 
 If the upstream provider cannot express the required scope or resource restriction, enforce it in the broker and egress policy, and document the remaining blast radius.
+
+## Ultron routing contract
+
+**Choose this skill when:** designing or reviewing secret storage, cryptographic key handling, credential rotation, OAuth/token lifecycle, signing and verification, encryption, hashing, and credential-broker behavior.
+
+**Choose `agent-runtime-security-guardrails` when:** the main question is which agent, user, task, or workload may access a resource and how delegated authority is enforced.
+
+**Choose `mcp-server-hardening` when:** reviewing how an MCP server authenticates callers, stores or uses its credentials, and protects its transport and tool boundary.
+
+**Handoff contract:** the runtime security skill supplies the principal, audience, resource, operation, and expiry requirements. This skill returns a credential or key-management design that enforces those limits without exposing reusable secret material to the model. The MCP hardening skill verifies that the server's actual transport and secret handling preserve the design.
+
+**Why the boundary exists:** cryptography protects credentials and data; authorization determines who may use them. Strong cryptography does not compensate for overbroad permissions.

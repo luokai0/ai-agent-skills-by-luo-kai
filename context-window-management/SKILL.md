@@ -3,7 +3,7 @@ name: context-window-management
 description: Use when an AI agent's working context is growing large, degrading output quality, risking truncation, or when designing how an agent should select, compress, persist, and hand off information across long multi-step tasks.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Context Window Management
@@ -103,3 +103,14 @@ After compaction, validate that the objective, constraints, authorization, compl
 
 Measure context efficiency by successful task completion, factual retention, tool-call correctness, and recovery quality, not token reduction alone. Test long-running tasks, conflicting updates, repeated compaction, stale references, and resume after process restart.
 
+## Ultron routing contract
+
+**Choose this skill when:** an active agent run is approaching context limits and needs budgeting, relevance selection, compaction, summarization, or lossless preservation of task-critical state.
+
+**Choose `agent-memory-persistence` when:** deciding what information should survive across tasks or sessions as durable, source-attributed memory.
+
+**Choose `session-continuity-recall` when:** reconstructing a particular previous or interrupted run, verifying what happened, and deciding what can safely resume.
+
+**Handoff contract:** compaction must preserve current objective, constraints, authorization/approval state, pending side effects, task identifiers, source provenance, unresolved decisions, and verification evidence. Durable memory receives only information approved for long-term retention; session recall uses task records to rebuild an active execution state.
+
+**Why the boundary exists:** context management compresses the current working set; memory persists selected knowledge; session continuity reconstructs a specific execution history.

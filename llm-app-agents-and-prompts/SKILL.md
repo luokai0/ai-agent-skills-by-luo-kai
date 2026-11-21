@@ -3,7 +3,7 @@ name: llm-app-agents-and-prompts
 description: Use when designing, reviewing, or debugging LLM-powered applications that involve prompt templates, tool-calling agents, retrieval context, or multi-step model workflows, and need structured guidance on prompt contracts, agent loops, evaluation, and safe deployment.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # LLM App Agents and Prompts
@@ -89,3 +89,16 @@ Choose the simplest orchestration that meets the task: a deterministic workflow 
 
 Separate model selection from runtime guarantees. Record model identifier, prompt revision, tool versions, policy revision, and evaluation suite for each release. Test prompt injection, ambiguous intent, invalid structured output, tool misuse, refusal behavior, context overflow, handoff loops, and unexpected model changes. Evaluate full trajectories and external postconditions, not only final response quality.
 
+## Ultron routing contract
+
+**Choose this skill when:** implementing the application layer that connects an LLM to prompts, tools, structured outputs, context, memory, retrieval, and a runtime loop. It owns prompt/runtime separation and the application-level behavior of model-powered features.
+
+**Choose `agent-design-patterns` when:** deciding the agent's fundamental coordination pattern, control owner, or single-agent versus multi-agent architecture.
+
+**Choose `agent-tool-architecture` when:** designing the general capability and authorization boundary exposed to the model.
+
+**Choose `rag-and-retrieval-systems` when:** the central problem is evidence ingestion, retrieval/reranking, context grounding, citations, or retrieval-specific evaluation.
+
+**Handoff contract:** provide the chosen agent pattern, model/runtime interface, structured input/output contract, tool inventory, context policy, and acceptance criteria. Specialist skills return versioned implementations and evidence; this skill verifies that the application composes them without allowing prompts or retrieved data to grant permissions.
+
+**Why the boundary exists:** an LLM application composes model-facing behavior, but architecture, tool governance, and retrieval security each require their own explicit contracts.

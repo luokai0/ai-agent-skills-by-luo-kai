@@ -3,7 +3,7 @@ name: agent-messaging-channels
 description: Use when designing, routing, or debugging messages between AI agents, tools, humans, and external channels (queues, chat surfaces, webhooks, email, shared task boards), including deciding who may send what, to whom, and how delivery is confirmed.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Messaging Channels
@@ -98,3 +98,16 @@ Validate every incoming task against the published contract. Enforce message-siz
 
 Test cross-framework interoperability, task cancellation, duplicate callbacks, malformed artifacts, expired credentials, wrong-audience tokens, tenant mismatch, server restart, and partial completion. Preserve a receipt for every delegated task and verify the returned artifact before accepting it.
 
+## Ultron routing contract
+
+**Choose this skill when:** designing or operating communication between agents across process or platform boundaries: discovery messages, task requests, status updates, typed artifacts, identity propagation, delivery semantics, and secure message handling.
+
+**Choose `multi-agent-orchestration-and-discovery` when:** deciding which agents should participate and how tasks should be divided and routed.
+
+**Choose `multi-agent-team-orchestration` when:** selected agents need role assignment, task contracts, coordination, independent review, and result integration.
+
+**Choose `supervisor-swarm-coordination` when:** the communication system participates in a supervisor-controlled swarm with explicit worker ownership, shared state, and global stop/recovery controls.
+
+**Handoff contract:** pass authenticated sender/recipient identities, task ID, correlation/context IDs, capability declaration, message schema, expiry, and replay policy. Return delivery/acknowledgement state and artifact provenance. A message is not authority to perform a side effect; authorization remains a separate check.
+
+**Why the boundary exists:** messaging transports intent and evidence; orchestration decides what work should happen and who is accountable for it.

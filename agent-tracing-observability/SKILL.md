@@ -3,7 +3,7 @@ name: agent-tracing-observability
 description: Use when instrumenting, debugging, or auditing LLM agent runs (tool calls, model calls, retrievals, sub-agent handoffs) and you need traces, spans, token and cost accounting, or evidence of what an agent actually did.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Agent Tracing Observability
@@ -133,3 +133,15 @@ Test that:
 - An agent runtime cannot modify or delete the durable audit record.
 
 Report telemetry coverage, known blind spots, retention, redaction tests, and delivery guarantees separately. Do not claim compliance or complete forensic reconstruction from instrumentation alone.
+
+## Ultron routing contract
+
+**Choose this skill when:** instrumenting agent-specific execution: model turns, tool calls, handoffs, approvals, memory access, queue events, checkpoints, artifacts, and verified task outcomes.
+
+**Choose `sre-observability-and-incidents` when:** the work concerns general service/platform telemetry, infrastructure health, SLOs, on-call alerting, or incident response across services rather than agent-run semantics.
+
+**Choose `threat-hunting-incident-response` or the relevant security response skill when:** telemetry indicates a security incident that needs investigation and containment, not merely an observability dashboard.
+
+**Handoff contract:** agent tracing emits bounded, privacy-reviewed run and action evidence with stable identifiers and policy/version context. The platform SRE skill consumes service-level signals and owns operational response. Security incident response consumes attributable events and owns investigation. Keep metrics, sampled traces, logs, and durable audit records distinct.
+
+**Why the boundary exists:** agent behavior needs semantic traces, but platform reliability and security incident management require different owners, retention, and response guarantees.

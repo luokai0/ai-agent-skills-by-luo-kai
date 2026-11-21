@@ -3,7 +3,7 @@ name: autonomous-ai-research
 description: Use when an agent must plan, run, and report multi-step AI or data research (literature and codebase surveys, experiment design, model or data comparisons, reproducibility checks) with minimal supervision but auditable evidence and explicit approval gates.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Autonomous AI Research
@@ -99,3 +99,14 @@ For technical recommendations, extract prerequisites, supported versions, operat
 
 Close with known gaps, unanswered questions, confidence limits, and a revalidation trigger such as a major release, security advisory, or material version change.
 
+## Ultron routing contract
+
+**Choose this skill when:** an agent must conduct a multi-stage research task autonomously: formulate questions, plan evidence collection, discover and compare sources, extract claims, track uncertainty, and produce a defensible synthesis.
+
+**Choose `research-retrieval` when:** the work is a bounded source discovery and synthesis task with a defined question and deliverable, without a need for an autonomous multi-stage research plan.
+
+**Choose `web-search-retrieval-and-live-data` when:** the answer depends on current public-web facts, recent updates, live values, or freshness verification at response time.
+
+**Handoff contract:** this skill supplies research objectives, subquestions, source-quality policy, claim schema, and evidence coverage. Retrieval specialists return dated source records and atomic claims; this skill integrates them while preserving provenance, disagreement, and unanswered questions.
+
+**Why the boundary exists:** autonomous research governs the full investigation; retrieval skills provide specialized evidence-acquisition paths within that investigation.

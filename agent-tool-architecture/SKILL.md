@@ -3,7 +3,7 @@ name: agent-tool-architecture
 description: Use when designing, reviewing, or refactoring the tool layer of an LLM agent, including tool schemas, permission boundaries, error contracts, tool selection policies, and multi-step tool orchestration.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Tool Architecture
@@ -114,3 +114,14 @@ Idempotency keys must be persisted at the system boundary. Replays return the or
 
 Test each tool with valid, missing, extra, wrong-type, and boundary inputs; unauthorized principal; cross-tenant target; timeout before and after execution; duplicate key; stale version; rate limit; malformed downstream response; and partial failure. Verify stable error variants and minimal outputs without secrets.
 
+## Ultron routing contract
+
+**Choose this skill when:** designing the general tool boundary between an agent and external capabilities: capability granularity, schemas, authorization, idempotency, side-effect classes, error contracts, concurrency, and tool lifecycle.
+
+**Choose `mcp-and-agent-tooling` when:** the task specifically implements MCP clients/servers, protocol negotiation, resources, prompts, or MCP tool interoperability.
+
+**Choose `mcp-server-hardening` when:** an existing MCP server needs a security assessment or hardening pass. Use `agent-runtime-security-guardrails` for platform-wide identity, policy enforcement, and runtime isolation.
+
+**Handoff contract:** provide the capability inventory, schemas, side effects, resource scope, caller identity, error behavior, and test obligations. The implementation or hardening skill returns protocol-specific evidence and negative tests; this skill checks that the resulting tool surface still follows the approved capability model.
+
+**Why the boundary exists:** tool architecture defines the safe abstraction; protocol integration and security review are specialized implementations of that abstraction.

@@ -3,7 +3,7 @@ name: agent-runtime-security-guardrails
 description: Use when designing, reviewing, or operating an AI agent or automation that calls tools, touches files, credentials, or external systems, or takes actions on a user's behalf, and you need runtime controls that limit damage, gate risky actions, and produce auditable evidence.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Agent Runtime Security Guardrails
@@ -139,3 +139,13 @@ Test that:
 - A tool call made through a shared workload identity is still constrained by the task and user scopes.
 
 Record the policy version, task ID, principal chain, authorization decision, and denial reason. Never claim delegated access is isolated until negative cross-task and cross-tenant tests pass.
+
+## Ultron routing contract
+
+**Choose this skill when:** defining or reviewing the agent platform's overall trust boundaries, task authorization, identity chain, policy enforcement, approvals, sandbox expectations, and response to runtime abuse.
+
+**Delegate focused controls to specialist skills:** use `secrets-and-cryptography` for credential storage, token exchange, key lifecycle, and cryptographic handling; `mcp-server-hardening` for MCP server-specific attack surfaces; `rag-and-retrieval-systems` for retrieval/context poisoning; and `containers-and-kubernetes` for concrete workload isolation.
+
+**Handoff contract:** the platform security decision states the threat model, principals, trust boundaries, allowed operations, tenant constraints, and mandatory controls. Each specialist returns implementation evidence and negative tests. Reconcile those results here before declaring the overall runtime safe.
+
+**Why the boundary exists:** a local control can be correct while the end-to-end agent remains unsafe. This skill owns the system-level security argument; specialists own their technical control domains.

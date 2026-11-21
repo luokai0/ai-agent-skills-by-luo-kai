@@ -3,7 +3,7 @@ name: ai-change-verification
 description: Use when an AI-generated or AI-assisted code, configuration, prompt, or documentation change must be checked before merge or release, to confirm it does what was intended, breaks nothing, and leaves an auditable evidence trail.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # AI Change Verification
@@ -94,3 +94,16 @@ Review generated dependencies, migrations, configuration defaults, and scripts a
 
 Before release, produce a reproducibility bundle: exact revisions, commands, environment, test outputs, static-analysis findings, approvals, and known limitations. If any result cannot be reproduced, downgrade its status. Keep rollback instructions and identify the exact artifact or configuration to restore.
 
+## Ultron routing contract
+
+**Choose this skill when:** approving a concrete AI-generated or AI-assisted change to code, configuration, documentation, infrastructure, or data transformation. It owns provenance, baseline-versus-candidate comparison, discriminating tests, negative assertions, reproducibility, and rollback evidence.
+
+**Choose `code-review-and-test-generation` when:** the change needs a structured diff review and new regression tests.
+
+**Choose `code-review-execution` when:** an independent reviewer must assess the patch and issue a merge recommendation without authoring the change.
+
+**Choose `agent-evaluation-design` when:** the question is whether an agent/model behavior or release should pass a reusable evaluation policy, rather than whether one specific artifact is correct.
+
+**Handoff contract:** receive the exact candidate diff and base identity, test evidence, affected surfaces, and expected external postconditions. Return a traceable change decision with tests, failures, residual risks, and rollback artifact. Do not treat a model's explanation of its own change as verification.
+
+**Why the boundary exists:** artifact correctness, independent code review, and agent capability evaluation are related but distinct assurance claims.

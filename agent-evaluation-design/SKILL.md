@@ -3,7 +3,7 @@ name: agent-evaluation-design
 description: Use when designing, reviewing, or extending evaluations (evals) for LLM-based agents or automation workflows, including task suites, graders, trajectory checks, regression baselines, and release gates.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Agent Evaluation Design
@@ -144,3 +144,17 @@ Define minimum sample counts, guardrail thresholds, and observation windows befo
 
 ### Evaluation report contract
 Record the candidate and baseline digests, test-set versions, holdout access policy, environment, model and tool versions, budgets, per-slice outcomes, evaluator calibration, safety failures, and deployment decision. Include known contamination risks and tests that were not run. Never describe benchmark performance as proof of general intelligence or universal reliability.
+
+## Ultron routing contract
+
+**Choose this skill when:** defining what an agent must prove before release and how its behavior should be evaluated over time: evaluation layers, safety gates, trajectory correctness, outcome verification, holdouts, regression policy, and release thresholds.
+
+**Choose `llm-benchmark-harness` when:** implementing the actual test runner, frozen case set, controlled environment, graders, and scoring pipeline.
+
+**Choose `experiment-tracking` when:** organizing multiple controlled runs and comparing model, prompt, tool, or routing variants under a stable measurement setup.
+
+**Choose `ai-change-verification` when:** the evaluation result is being used to approve a concrete AI-generated code/configuration change and must be tied to a reproducible change artifact and rollback evidence.
+
+**Handoff contract:** this skill defines the acceptance policy and risk thresholds; specialist tools return versioned cases, raw outcomes, per-slice scores, grader calibration, and change provenance. Never let a high aggregate score override a failed safety invariant.
+
+**Why the boundary exists:** deciding what counts as acceptable behavior is separate from running a benchmark or approving one particular change.

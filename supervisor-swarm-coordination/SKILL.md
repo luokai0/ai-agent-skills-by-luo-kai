@@ -3,7 +3,7 @@ name: supervisor-swarm-coordination
 description: Use when designing, running, or auditing a supervisor agent that delegates work to multiple worker agents in parallel or sequence, including task decomposition, routing, result aggregation, and conflict resolution in AI agent automation.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Supervisor Swarm Coordination
@@ -113,3 +113,16 @@ Use leases or bounded deadlines for worker ownership. If a worker disappears, de
 
 Test timeout before and after writes, duplicate dispatch, conflicting outputs, malformed artifacts, unauthorized tool requests, injected worker input, worker attempts to spawn workers, supervisor restart, cancellation propagation, shared-file collisions, and budget exhaustion. Verify exactly one owner controls each mutable resource and unaccepted outputs cannot be committed or reported complete.
 
+## Ultron routing contract
+
+**Choose this skill when:** designing or governing supervisor-led agent swarms: task ownership, delegation boundaries, dependency graphs, worker lifecycle, shared-state rules, arbitration, and global stop/recovery behavior.
+
+**Choose `multi-agent-orchestration-and-discovery` when:** the system has not yet selected agents or skills and must discover candidates, assess whether delegation adds value, and form the initial plan.
+
+**Choose `multi-agent-team-orchestration` when:** the topology is known and a lead agent must assign specialist roles, issue detailed contracts, checkpoint progress, independently check results, and integrate outputs.
+
+**Choose `delegated-execution-queues` when:** delegated work must survive process restarts, leases, retries, delayed delivery, cancellation, or dead-letter handling.
+
+**Handoff contract:** pass the task graph, ownership model, authority limits, shared-state policy, worker contracts, and recovery requirements. Receive verified worker outcomes and reconcile them against the supervisor's acceptance criteria.
+
+**Why the boundary exists:** swarm governance defines who controls the whole system; discovery, team execution, and durable queues solve distinct stages of that lifecycle.

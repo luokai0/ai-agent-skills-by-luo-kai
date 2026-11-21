@@ -3,7 +3,7 @@ name: workflow-planning-verification
 description: Use when planning or reviewing an automated multi-step agent workflow before execution, to check step ordering, tool permissions, failure paths, approval gates, and success criteria so the workflow can be run safely and its results verified.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Workflow Planning Verification
@@ -105,3 +105,16 @@ Use a durable state machine with transitions such as READY, RUNNING, WAITING, RE
 
 The final acceptance gate checks the user's postconditions independently of the step ledger. A sequence of successful API responses does not prove the intended outcome. Preserve partial completion and unresolved compensation in the final report.
 
+## Ultron routing contract
+
+**Choose this skill when:** turning a user goal into a bounded, executable plan with dependencies, preconditions, expected postconditions, decision gates, side-effect handling, and evidence-based completion checks.
+
+**Choose `delegated-execution-queues` when:** plan steps must run asynchronously or durably across process restarts, with leases, retries, backpressure, cancellation, and dead-letter recovery.
+
+**Choose `session-continuity-recall` when:** an interrupted plan must be resumed and reconciled with current external state before any step is repeated.
+
+**Choose `agent-evaluation-design` when:** defining reusable tests to establish whether this planning/execution behavior is safe and reliable across many cases.
+
+**Handoff contract:** produce a task contract with dependencies, permitted actions, stop conditions, idempotency expectations, verification source, and completion evidence. Queue or resume skills must preserve those semantics rather than treating each step as an unstructured job.
+
+**Why the boundary exists:** planning defines what should happen and what counts as done; durable execution and session recovery preserve that plan across time.

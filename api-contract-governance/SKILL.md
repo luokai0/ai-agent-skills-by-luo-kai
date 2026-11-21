@@ -3,7 +3,7 @@ name: api-contract-governance
 description: Use when defining, reviewing, versioning, or enforcing API contracts (OpenAPI, AsyncAPI, GraphQL schemas, protobuf/gRPC IDL, event schemas) across teams or services, especially when a change may break consumers or needs a compatibility decision.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Api Contract Governance
@@ -125,3 +125,14 @@ Version schemas additively where possible. For breaking changes, publish a new v
 
 For every operation, test schema validation, auth scopes, cross-tenant identifiers, duplicate requests, stale preconditions, partial failure, cancellation, oversized payloads, and backward compatibility. A valid OpenAPI or JSON schema document is not evidence that runtime behavior conforms; run contract tests against the deployed adapter.
 
+## Ultron routing contract
+
+**Choose this skill when:** defining or evolving stable APIs for agent-facing operations, including asynchronous tasks, idempotency, versioning, preconditions, error categories, lifecycle states, and compatibility guarantees.
+
+**Choose `mcp-and-agent-tooling` when:** exposing capabilities through MCP tool/resource/prompt contracts and implementing protocol-level interoperability.
+
+**Choose `agent-messaging-channels` when:** the contract is an agent-to-agent message or task exchange rather than a conventional service API.
+
+**Handoff contract:** return the canonical request/response schema, state machine, authorization assumptions, idempotency behavior, error taxonomy, compatibility policy, and contract tests. MCP or messaging adapters must preserve those semantics instead of inventing different retry, identity, or completion rules.
+
+**Why the boundary exists:** service API contracts, tool invocation protocols, and agent messages may carry similar data but have different lifecycle and delivery guarantees.

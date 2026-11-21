@@ -3,7 +3,7 @@ name: delegated-execution-queues
 description: Use when an agent must hand off, queue, schedule, or supervise tasks executed by other workers, tools, or agents, and needs ordered dispatch, ownership tracking, retries, and verifiable completion records.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Delegated Execution Queues
@@ -112,3 +112,16 @@ Control throughput with per-tenant quotas, global concurrency caps, priority fai
 
 Track queue age, lease expiry, retry count, dead-letter volume, duplicate suppression, task latency, resource use, and verified completion. Test duplicate delivery, worker crash, queue restart, lease races, poison tasks, dependency failure, rate-limit storms, cancellation races, and partial side effects.
 
+## Ultron routing contract
+
+**Choose this skill when:** work must be dispatched and executed asynchronously with durable task state, leases, retry policy, idempotency, concurrency control, backpressure, cancellation, or dead-letter handling.
+
+**Choose `workflow-planning-verification` when:** defining the task graph, prerequisites, action boundaries, and postconditions before queueing work.
+
+**Choose `session-continuity-recall` when:** resuming a user-facing task or reconciling an uncertain external side effect after interruption.
+
+**Choose `supervisor-swarm-coordination` when:** the queue is part of a multi-agent system with supervisor/worker ownership and shared-state coordination requirements.
+
+**Handoff contract:** receive an explicit task contract, stable task ID, permitted operations, idempotency key, expiry, and completion predicate. Return durable state transitions, attempt history, terminal outcome, and authoritative postcondition evidence. Queue delivery is not proof that the task completed.
+
+**Why the boundary exists:** queues guarantee controlled delivery and recovery; planning defines the meaning of the work, and supervisors own the broader coordination policy.

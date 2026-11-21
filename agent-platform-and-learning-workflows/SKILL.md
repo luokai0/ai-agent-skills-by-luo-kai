@@ -3,7 +3,7 @@ name: agent-platform-and-learning-workflows
 description: Use when designing, reviewing, or operating an AI agent platform or a learning workflow (agent orchestration, tool-use integration, evaluation loops, feedback-driven improvement, fine-tuning or retrieval updates) and a decision must be made about scope, data handling, promotion of changes, or evidence of quality.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Agent Platform And Learning Workflows
@@ -137,3 +137,17 @@ Verify that:
 - Rollback restores the exact prior digest and dependency closure.
 
 Record the resolved lock, validation result, signature identity, compatibility report, and activation decision with each run. Do not report a skill as trusted solely because it is present in the registry.
+
+## Ultron routing contract
+
+**Choose this skill when:** designing Ultron's platform-level capability lifecycle and control plane: skill registration, discovery metadata, version pinning, policy ownership, activation, deprecation, revocation, budgets, and learning/release feedback loops.
+
+**Choose `agent-trust-skill-vetting` before registration when:** a skill artifact or update has not yet passed provenance, content, permission, and security review.
+
+**Choose `agent-design-patterns` when:** the question is the architecture of an individual agent or workflow rather than the platform that hosts and governs many capabilities.
+
+**Choose `agent-runtime-security-guardrails` when:** designing enforcement of identities, delegated permissions, approvals, and runtime isolation.
+
+**Handoff contract:** accept only vetted skill digests with declared inputs, outputs, permissions, compatibility, and evaluation evidence. Return a pinned activation record, runtime constraints, lifecycle state, and revocation/rollback path. A registry entry must never itself grant runtime authority.
+
+**Why the boundary exists:** the platform manages capabilities as governed assets; agent architecture and runtime security define how those assets are composed and safely executed.

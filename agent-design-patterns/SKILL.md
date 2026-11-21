@@ -3,7 +3,7 @@ name: agent-design-patterns
 description: Use when designing, reviewing, or refactoring an LLM-based agent or multi-step automation, including choosing between single-call, workflow, and autonomous loop architectures, defining tool contracts, planning memory and state, or adding guardrails and evaluation.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Design Patterns
@@ -122,3 +122,14 @@ Choose deterministic workflows for known sequences, routers for bounded task fam
 
 Acceptance tests must cover duplicate delivery, response loss after successful writes, stale inputs, expired approvals, revoked identity, malformed tool output, conflicting system-of-record values, worker disagreement, budget exhaustion, cancellation, and restart from every checkpoint. Record results against the contract revision.
 
+## Ultron routing contract
+
+**Choose this skill when:** designing the overall shape of an AI agent: whether it should be a single agent, tool-using loop, planner/executor, router, supervisor, specialist group, or event-driven workflow. It owns pattern selection, control ownership, state transitions, and the tradeoffs between autonomy and coordination.
+
+**Route prompt and application-boundary work to `llm-app-agents-and-prompts` when:** the topology is already chosen and the task concerns prompt/runtime separation, structured outputs, model integration, or application-level orchestration.
+
+**Route tool-interface design to `agent-tool-architecture` when:** the unresolved problem is how capabilities are exposed, authorized, versioned, or invoked.
+
+**Handoff contract:** state the task class, chosen pattern, alternatives rejected, control owner, state machine, tool/delegation boundaries, failure recovery, and acceptance tests. A specialist implementation skill must not silently change the system's orchestration pattern.
+
+**Why the boundary exists:** architecture selects the coordination model; implementation skills make that model reliable in their respective layers.
