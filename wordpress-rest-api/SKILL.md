@@ -3,7 +3,7 @@ name: wordpress-rest-api
 description: Use when designing, building, debugging, or securing custom endpoints, consuming, or auditing the WordPress REST API (wp-json routes, controllers, schemas, authentication, and permission callbacks) in a theme or plugin.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # WordPress REST API
@@ -79,3 +79,45 @@ Provide:
 5. Known limitations and any operations awaiting approval.
 
 Do not: expose `show_in_rest` on credentials or personal data without review; use `__return_true` as a permission callback on write routes; disable SSL verification in client code; hardcode secrets in source; or claim compliance with any regulation based on this work.
+
+## Contract evolution and consumer safety (v1.1)
+
+### Treat the route schema as a public interface
+
+Maintain a route inventory containing namespace/version, method, path, argument schema, permission rule, response schema, pagination behavior, and side effects. Compare the proposed contract with the deployed contract before release. Classify changes as additive, behavior-changing, or breaking. Adding an optional response field is usually additive only if consumers tolerate unknown fields; changing nullability, enum values, ordering guarantees, defaults, or error semantics may still break clients.
+
+Do not assume a namespace version alone makes an incompatible change safe. Keep old consumers working during a migration window when practical, publish a deprecation date, measure old-version usage, and remove the old route only after owner approval and evidence that supported clients have migrated.
+
+### Test authorization as a matrix
+
+For each route, test anonymous access, authenticated users with no relevant capability, users with the capability on a different object, users with the capability on the target object, and administrators where applicable. Include multisite roles and object ownership rules if the site uses them. A successful test by an administrator does not prove that the permission callback is correctly scoped.
+
+For write routes, test cross-user object IDs, unexpected fields, empty and oversized values, duplicate submissions, stale updates, and repeated DELETE/POST requests. Verify denied requests leave persistent state unchanged. Use disposable fixtures and a test database; never probe production data to establish authorization behavior.
+
+### Make list endpoints predictable
+
+Define stable ordering with a deterministic tie-breaker, document maximum page size, and reject or normalize invalid pagination values consistently. If clients need cursor pagination, define the cursor from stable sort keys and bind it to the filter set; do not use an offset cursor while rows can change in ways that cause silent skips. Add query-count and response-size checks for representative data volumes.
+
+### Idempotency and concurrency
+
+For operations that may be retried by mobile clients, queues, or gateways, define whether repeated requests are safe. Where a repeated request could create duplicate records or trigger repeated external side effects, use a client idempotency key with bounded retention and bind it to the authenticated principal and normalized request body. For updates, use version checks or conditional requests where lost updates matter. A request that times out after a side effect must be reconciled before it is retried.
+
+### API release checklist
+
+- Diff the intended schema against the last released contract.
+- Verify every method has an explicit permission callback and least-privilege object check.
+- Confirm response fields do not disclose private meta, internal identifiers, or secrets.
+- Run compatibility tests against at least one existing consumer fixture.
+- Verify pagination order, bounds, and totals on realistic fixtures.
+- Confirm retry behavior for every write operation and external side effect.
+- Record route version, deprecation plan, and rollback/reconciliation steps.
+
+## Ultron routing contract
+
+**Choose this skill when:** designing or changing WordPress REST route behavior, endpoint schemas, authentication, permission callbacks, response compatibility, pagination, or REST consumer integration.
+
+**Choose wordpress-quality-tooling when:** configuring or operating linters, static analysis, PHPUnit/integration/E2E tests, or CI quality gates for a WordPress codebase. That skill owns test-toolchain setup; this skill owns what the REST API must do and the route-specific contract cases that should be tested.
+
+**Handoff contract:** give the quality-tooling skill the route inventory, expected authorization matrix, representative fixtures, schema compatibility cases, and commands or environments needed to run tests. Receive reproducible test results and CI evidence; do not treat a green generic lint job as proof that endpoint authorization or contract behavior is correct.
+
+**Why the boundary exists:** API design defines behavioral and security expectations; quality tooling provides repeatable mechanisms to test them. Separating the contract from the test runner prevents tool configuration from becoming a substitute for API correctness.
