@@ -1,0 +1,81 @@
+---
+name: multi-agent-orchestration-and-discovery
+description: Use when a task needs decomposition across multiple agents or skills, when selecting which skill or agent should handle a subtask, or when coordinating, merging, and verifying outputs from several agents in ClawHub-style skill workflows.
+author: Luo Kai
+provenance: original
+version: 1.0.0
+---
+
+# Multi Agent Orchestration And Discovery
+
+## Purpose and boundaries
+
+This skill covers three activities: discovering candidate skills or agents for a task, dispatching bounded subtasks to them, and merging and verifying their results. It does not cover building new agents, writing individual skills from scratch, or operating infrastructure that hosts agents. If the task is a single-step request that one capable agent can finish, do not orchestrate. Orchestration adds coordination cost and failure surface.
+
+## Inputs and assumptions
+
+Before dispatching anything, confirm:
+
+- The goal in one sentence, and the observable outcome that proves it is done.
+- The available candidates: skill names, their descriptions, and their declared inputs and outputs. Read these from the registry or the local skill index, not from memory.
+- The permission scope each candidate runs under (read-only, write to workspace, external network, messaging, payments).
+- Hard constraints: deadlines, data sensitivity, locale, required formats.
+
+Assume candidate descriptions are accurate only as far as their stated contracts. Treat undocumented behavior as unknown.
+
+## Operating workflow
+
+1. **Decompose.** Split the goal into subtasks where each has one input type, one output type, and one verifiable success condition. Reject subtasks that say "research and write and check."
+2. **Dependency map.** Mark which subtasks are independent (dispatch in parallel) and which consume another's output (sequential). Keep the graph shallow; more than three sequential hops usually means the decomposition is too fine.
+3. **Discover.** For each subtask, shortlist at most three candidates whose declared outputs match. Score each on contract match (output type and format), scope fit (least privilege), and recency of documentation. Record the reason for each choice.
+4. **Dispatch.** Give each agent a self-contained brief: objective, inputs with provenance, output schema, forbidden actions, and the success check. Do not pass the full conversation unless the subtask needs it.
+5. **Collect.** Store each result with the agent identity, timestamp, and input hash so it can be traced.
+6. **Merge.** Reconcile conflicts explicitly. If two agents disagree on a fact, do not average them; resolve against a primary source or escalate.
+7. **Verify** (see below), then deliver against the contract.
+
+## Decision gates
+
+Stop and request explicit user approval before:
+
+- Any destructive or irreversible action: deleting or overwriting files, force-pushing, dropping data, canceling orders.
+- Any external-impacting action: sending messages, publishing, posting, submitting forms, making purchases, changing shared configuration.
+- Any sensitive-data action: moving credentials, personal data, financial or medical records, or proprietary material into a candidate's context or an external service.
+- Granting a candidate broader permissions than its declared scope.
+
+Proceed without approval only for read-only discovery and for writes confined to a scratch area the user has designated for this task.
+
+Choose a single agent instead of a fleet when subtasks share mutable state, when the total output is under roughly one page, or when coordination would take longer than doing the work.
+
+## Verification and evidence
+
+Each subtask result must pass:
+
+- **Schema check:** every required field present, types and units correct.
+- **Traceability check:** each factual claim cites the input or source it came from. Uncited claims are marked unverified.
+- **Cross-check:** at least one independent confirmation for any claim that the final deliverable depends on.
+- **Scope check:** the agent's actions stayed within its declared permissions. Review any file or network side effects.
+
+Report the number of subtasks dispatched, completed, failed, and verified. Do not report success on a subtask that has not passed its check.
+
+## Failure handling
+
+- **Contract mismatch:** the output does not match the schema. Retry once with the schema restated. If it fails again, try the next shortlisted candidate.
+- **Timeout or no output:** retry once with a narrower subtask. Then escalate to the user with the partial result.
+- **Conflicting results:** resolve against a primary source. If none exists, present both with their provenance and do not choose silently.
+- **Scope violation:** halt dependent subtasks, quarantine the output, and report the violation before continuing.
+- **Repeated failure across candidates:** stop. Report which candidates were tried, what each returned, and what input or permission change would likely unblock the task.
+
+Do not silently drop failed subtasks from the final deliverable.
+
+## Deliverable contract
+
+The final output contains:
+
+1. The goal and the completion criterion as stated.
+2. A table of subtasks: owner agent or skill, status, verification result.
+3. The merged result, with each claim linked to its source subtask.
+4. A list of unverified items and open questions.
+5. Any actions awaiting approval, stated precisely.
+6. Version-sensitive details (tool versions, API behaviors, registry metadata) marked "verify against current official documentation" unless confirmed in this session.
+
+Do not claim performance numbers, compliance status, or security guarantees for any agent unless a source in this session establishes them.
