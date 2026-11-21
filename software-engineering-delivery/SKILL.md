@@ -3,7 +3,7 @@ name: software-engineering-delivery
 description: Use when preparing, publishing, deprecating, or consuming software artifacts through external registries such as package indexes, container registries, or artifact repositories, including release versioning, credential handling, and post-publish verification.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Software Engineering Delivery
@@ -90,4 +90,12 @@ Do not:
 - Publish from an uncommitted working tree or an unreviewed branch.
 - Use long-lived personal tokens where scoped automation identities exist.
 - Assert version-specific registry behavior, flags, or limits from memory. Verify against current official registry documentation and mark the verified date in the release record.
-- Modify a published artifact in place.
+- Modify a published artifact in place.\n\n## Ultron routing contract
+
+**Choose this skill when:** the objective is to produce and release a package, image, chart, or binary as a complete, verifiable lifecycle. It owns release readiness, version reconciliation, clean artifact construction, package-content inspection, provenance and checksum evidence, approval, publication sequencing, post-publish installation checks, and rollback-by-supersession.
+
+**Delegate registry-specific mechanics to `software-delivery-apis` when:** the work requires provider-specific API or CLI behavior, registry authentication semantics, metadata queries, promotion endpoints, or precise interpretation of a registry response.
+
+**Handoff contract:** send the registry skill the approved registry, namespace, immutable artifact identity, exact operation, environment, credential scope, and approval reference. Require it to return request/response evidence and the authoritative resulting registry state. This skill remains accountable for the overall release decision and must independently verify the published artifact.
+
+**Why the boundary exists:** a successful API call is not a successful release. Release readiness, artifact integrity, and post-publication verification remain separate obligations.

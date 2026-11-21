@@ -3,7 +3,7 @@ name: mcp-server-hardening
 description: Use when reviewing, securing, or deploying a Model Context Protocol (MCP) server that exposes tools, resources, or prompts to AI agents, and you need to reduce its attack surface, constrain tool permissions, and verify its behavior before or after exposure.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # MCP Server Hardening
@@ -103,5 +103,12 @@ For HTTP authorization, validate issuer, audience, expiry, scopes, and resource 
 
 Treat tool descriptions, resource content, and prompts from remote servers as untrusted. A server may be approved for a specific tool set without being trusted to provide policy instructions. Record the server revision and tool-schema digest so changes can trigger re-review.
 
-Add health checks, bounded concurrency, per-client quotas, request deadlines, cancellation, structured audit events, and a kill switch. Test unauthorized tool discovery, privilege escalation, injection in resource content, schema confusion, oversized responses, token replay, cross-tenant access, path traversal, SSRF, dependency compromise, and denial-of-service behavior.
+Add health checks, bounded concurrency, per-client quotas, request deadlines, cancellation, structured audit events, and a kill switch. Test unauthorized tool discovery, privilege escalation, injection in resource content, schema confusion, oversized responses, token replay, cross-tenant access, path traversal, SSRF, dependency compromise, and denial-of-service behavior.\n\n## Ultron routing contract
 
+**Choose this skill when:** reviewing or hardening an existing MCP server or deployment before it is exposed to an agent host or trusted workload. It owns the threat model, authorization and transport checks, input/output security, secret boundaries, resource exhaustion defenses, and adversarial acceptance tests.
+
+**Choose `mcp-and-agent-tooling` when:** the main deliverable is creating a new MCP client/server integration, designing tool schemas, exposing new capabilities, or solving protocol interoperability problems.
+
+**Handoff contract:** receive the server implementation, declared capability inventory, trust boundaries, identities, transport configuration, and expected side effects. Return prioritized findings, concrete remediations, security regression tests, and residual risks. Do not silently redesign business-tool behavior during a hardening review; route contract changes back to the integration skill.
+
+**Why the boundary exists:** build-time protocol correctness and security assurance are complementary stages. A server that passes interoperability tests is not automatically safe to expose.

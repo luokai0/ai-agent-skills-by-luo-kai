@@ -3,7 +3,7 @@ name: web-search-retrieval-and-live-data
 description: Use when a task requires current, time-sensitive, or externally verifiable facts from the web, such as prices, availability, news, regulations, software release status, or public records, and the answer must cite sources and state how fresh the data is.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Web Search Retrieval And Live Data
@@ -74,4 +74,12 @@ The answer contains, in order:
 3. Caveats: conflicts, gaps, and version-sensitive items.
 4. Next actions requiring approval, if any, listed separately.
 
-Do not include uncited statistics, invented URLs, or unverified recommendations. Do not present search snippets as full-page findings.
+Do not include uncited statistics, invented URLs, or unverified recommendations. Do not present search snippets as full-page findings.\n\n## Ultron routing contract
+
+**Choose this skill when:** a claim depends on current public information, recent developments, live or frequently changing values, official product documentation, current availability, or a public source's publication/update date.
+
+**Choose `research-retrieval` when:** the objective is a broader evidence review that combines multiple source types, internal authorized material, technical documents, literature, or a synthesized decision brief rather than simply establishing current public facts.
+
+**Handoff contract:** return atomic claims with source URL, publisher, publication/update date, observation timestamp, exact value and unit where relevant, confidence, and conflicts. The research skill must preserve those freshness markers when combining them with older or private sources. If the required fact cannot be confirmed from a sufficiently current source, report the gap instead of substituting memory.
+
+**Why the boundary exists:** a current search result is not automatically a complete research synthesis, and a broad research process cannot replace live verification for time-sensitive claims.

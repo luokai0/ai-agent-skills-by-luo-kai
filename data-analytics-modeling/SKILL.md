@@ -3,7 +3,7 @@ name: data-analytics-modeling
 description: Use when building, reviewing, or validating analytical or statistical models over external registry data (government, public-sector, licensing, corporate, clinical, or standards registries), including entity resolution, dimensional modeling, forecasting, and metric definition from registry extracts.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Data Analytics Modeling
@@ -85,4 +85,12 @@ A completed engagement delivers:
 5. Results with uncertainty intervals and sensitivity ranges; no point estimates without spread.
 6. Open-issues list with severity and owner.
 
-Do not: overwrite raw snapshots; merge entities on name alone; report results without the denominator; present registry status as verified fact without a source date; or perform any deletion, bulk export, external transmission, or publication of record-level data without explicit written approval from the data owner.
+Do not: overwrite raw snapshots; merge entities on name alone; report results without the denominator; present registry status as verified fact without a source date; or perform any deletion, bulk export, external transmission, or publication of record-level data without explicit written approval from the data owner.\n\n## Ultron routing contract
+
+**Choose this skill when:** the data is already available in a usable snapshot or curated dataset and the main question is analytical: entity modeling, metric definition, cohort or survival framing, rate/count modeling, anomaly analysis, statistical validation, or interpretation of registry-derived records.
+
+**Choose `data-pipelines-analytics` when:** the main work is obtaining and moving registry data reliably: API/export extraction, raw landing, normalization, incremental loading, reconciliation, data-quality gates, and pipeline operations.
+
+**Handoff contract:** the pipeline skill supplies immutable source snapshot identifiers, extraction timestamps, schema and grain, raw-to-normalized mappings, entity keys, quality results, missingness, and change/deletion semantics. This skill returns required analytical fields, metric definitions, modeling assumptions, validation requirements, and any data defects that must be fixed upstream. Do not rebuild ingestion logic inside an analysis notebook when a governed pipeline is the actual need.
+
+**Why the boundary exists:** a correct model depends on trustworthy data, but data movement and statistical inference have different failure modes and acceptance tests.

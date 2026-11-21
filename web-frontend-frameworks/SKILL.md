@@ -3,7 +3,7 @@ name: web-frontend-frameworks
 description: Use when choosing, structuring, debugging, migrating, or reviewing a browser-based UI built with a component framework or meta-framework (React, Vue, Svelte, Angular, Solid, Next.js, Nuxt, SvelteKit, Remix, Astro), including rendering-mode, state, routing, and build-tooling decisions.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Web Frontend Frameworks
@@ -86,4 +86,12 @@ Every deliverable contains:
 - Do not add a state library, animation library, or UI kit without a stated need.
 - Do not disable lint rules, type checks, or accessibility warnings to get a build passing.
 - Do not store tokens or secrets in client-accessible state, local storage, or rendered HTML.
-- Do not run destructive or external-impacting actions without explicit approval: deleting branches or build caches, force-pushing, publishing packages, changing production DNS, deploying to production, or altering shared CI configuration. Describe the command and its effect, then wait for confirmation.
+- Do not run destructive or external-impacting actions without explicit approval: deleting branches or build caches, force-pushing, publishing packages, changing production DNS, deploying to production, or altering shared CI configuration. Describe the command and its effect, then wait for confirmation.\n\n## Ultron routing contract
+
+**Choose this skill when:** a frontend framework is already selected and the task concerns components, state ownership, rendering, hydration, routing implementation, framework-specific debugging, accessibility of rendered UI, bundle behavior, or a targeted migration within that framework.
+
+**Do not use it as the primary decision guide when:** the unresolved question is which framework or meta-framework the application should adopt, which rendering architecture should govern the whole product, or whether to migrate the application. Route those decisions to `app-frameworks`.
+
+**Handoff to the architecture skill:** when an implementation limitation reveals a genuine architectural mismatch, return the verified framework/version, affected routes, measured behavior, constraints that cannot be met, and the smallest viable alternatives. Do not turn a local defect into a framework replacement proposal without evidence.
+
+**Why the boundary exists:** this skill owns correct implementation within a chosen frontend stack; the architecture skill owns selection and application-wide tradeoffs.

@@ -3,7 +3,7 @@ name: research-retrieval
 description: Use when an agent must find, gather, and synthesize evidence from documents, web sources, internal knowledge bases, or datasets to answer a research question, and the answer must be traceable to specific sources.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Research Retrieval
@@ -79,4 +79,12 @@ Produce a single document with these parts, in order:
 5. **Source log**: ID, title, publisher, date, URL or identifier, retrieval date, authority and recency rating, and status (used, excluded with reason).
 6. **Search record**: queries run, counts of candidates and kept sources, and stopping reason.
 
-Do not include: unsourced claims, speculative recommendations presented as findings, or content copied beyond what is needed to support a claim.
+Do not include: unsourced claims, speculative recommendations presented as findings, or content copied beyond what is needed to support a claim.\n\n## Ultron routing contract
+
+**Choose this skill when:** the question requires broad evidence synthesis across multiple source types, such as internal knowledge bases the user authorized, documents, technical references, literature, competitive research, or mixed public/private evidence. It owns research framing, claim extraction, source comparison, uncertainty, and synthesis.
+
+**Choose `web-search-retrieval-and-live-data` when:** the answer depends on current or recent public-web facts, changing product or policy details, live values, recent events, or source freshness that must be checked at response time.
+
+**Handoff contract:** the live-web skill returns dated claims, exact values and units, source URLs, publisher tiers, observation timestamps, and unresolved conflicts. This skill integrates those findings with other authorized evidence while preserving provenance and freshness labels. Never present an internal or older document as proof of a current public fact without checking it.
+
+**Why the boundary exists:** research synthesis is the broader reasoning process; live web retrieval is a specialized acquisition path for facts whose correctness depends on current public evidence.

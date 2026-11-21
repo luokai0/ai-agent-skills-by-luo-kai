@@ -3,7 +3,7 @@ name: multi-agent-orchestration-and-discovery
 description: Use when a task needs decomposition across multiple agents or skills, when selecting which skill or agent should handle a subtask, or when coordinating, merging, and verifying outputs from several agents in ClawHub-style skill workflows.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Multi Agent Orchestration And Discovery
@@ -87,5 +87,12 @@ Define the control owner at every stage: who may plan, dispatch, approve, call t
 
 Use a router only when routing decisions are bounded and testable. Use a manager when central consistency matters. Use peer collaboration only when workers have distinct evidence or expertise and a clear merge protocol. Avoid circular delegation, uncontrolled agent spawning, and multi-agent consensus without independent evidence.
 
-For each pattern, test the same task family against a simpler baseline. Compare verified outcome quality, unauthorized intermediate actions, latency, cost, context growth, failure recovery, and reviewer workload. Keep the simpler architecture when added agents do not provide measurable value.
+For each pattern, test the same task family against a simpler baseline. Compare verified outcome quality, unauthorized intermediate actions, latency, cost, context growth, failure recovery, and reviewer workload. Keep the simpler architecture when added agents do not provide measurable value.\n\n## Ultron routing contract
 
+**Choose this skill when:** Ultron must discover candidate agents or skills, match capabilities to a task, decide whether delegation is worthwhile, decompose the objective, select specialists, or construct the initial dependency and handoff plan.
+
+**Choose `multi-agent-team-orchestration` when:** a team has already been selected and needs operational coordination: role assignment, detailed task contracts, parallel execution boundaries, independent checking, conflict reconciliation, and final integration.
+
+**Handoff contract:** provide the lead/team orchestrator with the goal, selected capabilities and pinned versions, candidate-selection rationale, dependency graph, shared-state risks, least-privilege scopes, and measurable acceptance conditions. Discovery should stop when one agent can complete the task more simply or safely.
+
+**Why the boundary exists:** finding the right capability and operating a multi-agent team are separate decisions. Do not start a team before proving that delegation adds value.

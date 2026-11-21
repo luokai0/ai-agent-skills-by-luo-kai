@@ -3,7 +3,7 @@ name: finance-market-analysis
 description: Use when analyzing market data, company financials, or external registry records (securities filings, company registries, exchange listings, market statistics) to produce sourced, reproducible financial findings for an investment, credit, research, or due-diligence question.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Finance Market Analysis
@@ -82,4 +82,12 @@ The output must contain, in order:
 5. **Data-quality log:** exclusions, reconciliations, unresolved conflicts, verification items.
 6. **Limitations:** what the evidence cannot support.
 
-Quality check before release: every figure traceable, every ratio reproducible from listed inputs, all gates passed or explicitly flagged, no recommendation phrased as certainty.
+Quality check before release: every figure traceable, every ratio reproducible from listed inputs, all gates passed or explicitly flagged, no recommendation phrased as certainty.\n\n## Ultron routing contract
+
+**Choose this skill when:** the financial question depends on issuer and instrument identity, corporate or regulatory filings, financial statement line items, ownership or earnings events, peer fundamentals, valuation context, or reconciling market data to authoritative financial records.
+
+**Choose `market-analysis` when:** the primary objective is to analyze a market or instrument over a defined horizon using price, volume, volatility, spreads, positioning, term structure, or a conditional trading thesis and its invalidation conditions.
+
+**Handoff contract:** this skill supplies verified identifiers, filing dates, normalized financial periods, accounting basis, recomputed ratios, and sourced fundamental events. The market-analysis skill returns horizon-specific market structure, scenario conditions, risk factors, and invalidation signals. Keep fundamental facts distinct from market observations and forecasts.
+
+**Why the boundary exists:** financial records establish what an issuer reported; market analysis studies how an instrument or market behaves. Combining them is useful, but one must not be mistaken for the other.

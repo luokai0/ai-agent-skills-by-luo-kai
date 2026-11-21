@@ -3,7 +3,7 @@ name: azure-app-and-data-services
 description: Use when designing, deploying, configuring, troubleshooting, or reviewing Azure application hosting (App Service, Functions, Container Apps) and managed data services (Azure SQL, Cosmos DB, Storage, Redis-compatible caches) in a production or pre-production environment.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Azure App And Data Services
@@ -99,4 +99,12 @@ Every output must include:
 6. **Assumptions and open items:** including unverified version-sensitive details and missing RPO/RTO values.
 7. **Rollback plan:** specific steps to return to the prior state.
 
-Do not state that a deployment is production-ready, compliant, or secure unless the specific evidence for that claim is attached. Do not include secret values, connection strings, or keys in any output.
+Do not state that a deployment is production-ready, compliant, or secure unless the specific evidence for that claim is attached. Do not include secret values, connection strings, or keys in any output.\n\n## Ultron routing contract
+
+**Choose this skill when:** the work concerns Azure application workload resources and managed data services: App Service, Functions, Container Apps, Azure SQL, Cosmos DB, Storage, managed cache, deployment slots, backups, scaling, private connectivity, and workload-level operations.
+
+**Choose `azure-landing-zone-identity` when:** the decision concerns tenant and subscription identity foundations: Entra roles, Azure RBAC scope, privileged access, managed/workload identity governance, service principals, emergency access, or identity-wide policy.
+
+**Handoff contract:** the workload skill states the exact resource, environment, required capability, and least-privilege identity need. The identity skill returns the approved principal type, role or custom action set, scope, assignment path, and audit requirement. The workload skill then verifies that the application uses the identity without exposing secrets. Do not create broad tenant permissions to make an application deployment convenient.
+
+**Why the boundary exists:** workload configuration consumes identity capabilities; it should not independently redefine the tenant's identity governance.

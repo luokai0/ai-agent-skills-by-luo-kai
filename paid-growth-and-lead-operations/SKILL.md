@@ -3,7 +3,7 @@ name: paid-growth-and-lead-operations
 description: Use when designing, auditing, or troubleshooting paid acquisition data flows, conversion tracking, lead scoring pipelines, CRM lead routing, or attribution reporting for paid media campaigns.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Paid Growth And Lead Operations
@@ -79,4 +79,12 @@ Return a document with these sections in order:
 7. Open questions and the data needed to close them.
 8. Version-sensitive items to verify against official documentation.
 
-Do not include unverified benchmark figures, industry averages presented as targets, or claims of regulatory compliance. Do not recommend moving personal data between systems without naming the lawful basis as confirmed by the data owner.
+Do not include unverified benchmark figures, industry averages presented as targets, or claims of regulatory compliance. Do not recommend moving personal data between systems without naming the lawful basis as confirmed by the data owner.\n\n## Ultron routing contract
+
+**Choose this skill when:** the question is about paid acquisition measurement and the path from ad spend to qualified leads or revenue: campaign taxonomy, attribution, conversion events, offline conversion matching, lead-source reconciliation, and paid-channel performance diagnostics.
+
+**Choose `saas-crm-marketing-automation` when:** the work changes or designs contact lifecycle behavior inside the CRM: deduplication, segmentation, scoring, nurture enrollment, suppression, lifecycle stages, ownership, and sales handoff.
+
+**Handoff contract:** this skill defines the paid-source and conversion data contract, including campaign IDs, event names, attribution windows, value semantics, consent constraints, and reconciliation gaps. The CRM skill maps that contract to contact/account fields and automation rules. Any live spend, tracking, personal-data upload, or CRM mutation remains subject to its explicit approval gate.
+
+**Why the boundary exists:** acquisition measurement determines where leads and revenue came from; CRM automation determines what happens to a contact after capture. A shared contact record does not make those responsibilities interchangeable.

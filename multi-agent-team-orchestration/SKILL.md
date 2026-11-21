@@ -3,7 +3,7 @@ name: multi-agent-team-orchestration
 description: Use when decomposing a complex task across multiple cooperating AI agents or sub-agents, assigning roles, routing handoffs, merging outputs, and deciding when to escalate to a human operator.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Multi Agent Team Orchestration
@@ -94,4 +94,12 @@ Do not state that the work is complete if any acceptance criterion lacks evidenc
 - Do not pass sensitive data to agents lacking the required permission.
 - Do not average conflicting outputs into a bland synthesis.
 - Do not invent tool names, API parameters, version numbers, or performance figures. Where a tool or library detail is version-sensitive, mark it "verify against current official documentation" before relying on it.
-- Do not present regulatory or compliance conclusions as guaranteed; state them as the best reading of the supplied sources, pending qualified review.
+- Do not present regulatory or compliance conclusions as guaranteed; state them as the best reading of the supplied sources, pending qualified review.\n\n## Ultron routing contract
+
+**Choose this skill when:** the agent/team topology is known and a lead agent must coordinate specialists through task contracts, role boundaries, dependencies, checkpoints, independent review, conflict resolution, and final result integration.
+
+**Choose `multi-agent-orchestration-and-discovery` when:** the system has not yet decided whether to delegate, which agents or skills are appropriate, or how to discover and rank candidate capabilities.
+
+**Handoff contract:** receive a bounded plan with selected capabilities, pinned versions, dependency graph, and rationale. Return per-agent contracts, execution ownership, progress and recovery state, independent verification, conflict disposition, and final evidence. If no suitable specialist exists or coordination cost exceeds the value, stop and return to a single-agent plan.
+
+**Why the boundary exists:** capability discovery determines who should participate; team orchestration governs how selected participants execute without duplicating work or losing accountability.

@@ -3,7 +3,7 @@ name: git-workflow-automation
 description: Use when designing, auditing, or scripting Git branching, commit, rebase, tagging, hook, or CI-triggered repository workflows that must stay safe for shared history and team review.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Git Workflow Automation
@@ -85,4 +85,12 @@ The deliverable is a single bundle containing:
 4. A short operator note listing approval gates encountered and which were granted, by whom, and when.
 5. A list of unverified version-sensitive items that the operator must confirm against current Git documentation before production use.
 
-Do not deliver scripts that cannot be dry-run, that print secrets, or that silently skip failed checks.
+Do not deliver scripts that cannot be dry-run, that print secrets, or that silently skip failed checks.\n\n## Ultron routing contract
+
+**Choose this skill when:** the requested deliverable is repeatable automation around Git itself: scripts, hooks, reusable command sequences, commit validation, branch automation, changelog extraction, or Git operations embedded in a pipeline.
+
+**Choose `version-control-delivery` instead when:** the task is a one-off or interactive repository workflow such as inspecting a working tree, creating and preparing a feature branch, staging a specific change, resolving conflicts, preparing a review, recovering local work, or deciding how to integrate a change.
+
+**Handoff contract:** the delivery workflow defines the repository policy and approved state transitions. This skill encodes only those approved transitions into automation, with explicit inputs, dry-run behavior, refusal conditions, idempotency, logs, and tests. Automation must not silently broaden the human-approved operation.
+
+**Why the boundary exists:** automating a workflow is not the same as deciding which repository action is appropriate. The policy and recovery rules must exist before they are encoded in a script or hook.

@@ -3,7 +3,7 @@ name: software-delivery-apis
 description: Use when integrating with external software registries and delivery endpoints (package indexes, container registries, artifact repositories, release and publishing APIs) to discover, validate, publish, promote, or retrieve software artifacts.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Software Delivery APIs
@@ -94,4 +94,12 @@ State what was not verified. Do not report success on partial evidence.
 - Do not hardcode or echo tokens, passwords, or signing keys into logs, reports, or committed files.
 - Do not invent endpoints, flags, or package versions; verify them.
 - Do not treat a successful HTTP status alone as proof of correct publication.
-- Do not publish to a registry the user did not name.
+- Do not publish to a registry the user did not name.\n\n## Ultron routing contract
+
+**Choose this skill when:** the task is specifically about interacting with a software artifact registry or release endpoint through its API, CLI, or protocol: querying metadata, resolving versions and digests, authenticating, publishing a registry operation, promoting, deprecating, or verifying a registry-side state change.
+
+**Do not use it as the sole release playbook when:** the task begins with source code and requires the complete release lifecycle: clean build, artifact assembly, provenance, signing checks, package-content review, approval, publication, installation test, and release record. Route that lifecycle to `software-engineering-delivery`.
+
+**Handoff contract:** the release skill supplies the approved artifact identity, digest/version, target namespace, environment, allowed operation, and approval record. This skill returns the exact registry request or command, response, resolved artifact identity, resulting state, and any API-specific failure. Never infer permission to publish from the ability to call an endpoint.
+
+**Why the boundary exists:** registry protocol execution is a reusable integration capability; release engineering is the end-to-end decision and assurance process that may call it.

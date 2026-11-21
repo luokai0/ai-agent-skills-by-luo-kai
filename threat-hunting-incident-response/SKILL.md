@@ -3,7 +3,7 @@ name: threat-hunting-incident-response
 description: Use when hunting for or responding to suspicious activity involving external package registries (npm, PyPI, RubyGems, Maven Central, container registries, Helm, crates.io), including malicious package detection, dependency confusion, typosquatting, compromised maintainer accounts, and poisoned build artifacts.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Threat Hunting Incident Response
@@ -69,4 +69,12 @@ Example: a `postinstall`-style hook in a newly published minor version of a util
 
 ## Deliverable contract
 
-The final case report must contain: incident summary and severity; hypothesis and scope; consumption inventory table (repository, artifact, version, digest, first-seen, last-seen); execution findings with evidence references; credential exposure and rotation status; containment and remediation actions with approval references; open items with owners; detection rules added. Do not claim the environment is clean without the verification checks above being satisfied. Version-sensitive package-manager and registry behaviors must be confirmed against current official documentation before being cited in the report.
+The final case report must contain: incident summary and severity; hypothesis and scope; consumption inventory table (repository, artifact, version, digest, first-seen, last-seen); execution findings with evidence references; credential exposure and rotation status; containment and remediation actions with approval references; open items with owners; detection rules added. Do not claim the environment is clean without the verification checks above being satisfied. Version-sensitive package-manager and registry behaviors must be confirmed against current official documentation before being cited in the report.\n\n## Ultron routing contract
+
+**Choose this skill when:** there is a credible indication that a registry artifact or credential has already affected an organization. Triggers include a package or image found in builds or deployed systems, suspicious install-time/runtime execution, dependency-confusion evidence in resolution logs, abnormal registry publishing, or possible token theft.
+
+**Use `security-threat-defense` for preventive review when:** the artifact has not been consumed and the question is whether it should be trusted, whether its provenance is valid, or whether a registry/publisher is suspicious.
+
+**Handoff contract:** receive the suspected artifact identity and initial indicators, then establish where it was resolved, downloaded, installed, executed, or published. Return a time-bounded evidence timeline, affected assets and tenants, credential exposure assessment, containment decisions, recovery verification, and unresolved attribution. Preserve uncertainty; a malicious artifact finding does not prove every consumer executed it.
+
+**Why the boundary exists:** incident response is driven by possible impact and evidence of exposure, not merely by an artifact being unusual. Keep preventive screening and retrospective hunting connected but operationally distinct.

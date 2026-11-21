@@ -3,7 +3,7 @@ name: version-control-delivery
 description: Use when preparing, reviewing, or shipping code changes through Git branches, commits, tags, pull or merge requests, and release refs, including history cleanup, conflict resolution, and safe rollback planning.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Version Control Delivery
@@ -87,4 +87,12 @@ Every delivery returns:
 5. Risk statement and rollback plan (for example: revert commit hash, or tag to restore).
 6. Pending approvals: each gated action not yet performed, listed explicitly.
 
-Do not perform the publish, merge, or tag step without the approvals required by the Decision gates.
+Do not perform the publish, merge, or tag step without the approvals required by the Decision gates.\n\n## Ultron routing contract
+
+**Choose this skill when:** an agent must perform or guide a concrete Git workflow in a repository: inspect state, isolate changes, prepare commits, synchronize branches, resolve conflicts, prepare review, recover work, or plan a release ref transition.
+
+**Delegate to `git-workflow-automation` when:** the user wants a reusable script, hook, bot, or CI step that will perform the same Git operation repeatedly across runs or repositories.
+
+**Handoff contract:** provide the approved workflow, repository policy, permitted refs, exact path scope, dirty-state behavior, recovery point, and expected outputs. The automation skill must implement refusal behavior for unapproved destructive or remote-mutating operations and return a testable execution log.
+
+**Why the boundary exists:** a safe one-time operation should not automatically become a general-purpose automation, and an automation request should not be answered with a fragile sequence of manual commands.

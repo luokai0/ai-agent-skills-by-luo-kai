@@ -3,7 +3,7 @@ name: mcp-and-agent-tooling
 description: Use when designing, implementing, reviewing, or debugging Model Context Protocol (MCP) servers, clients, or tool definitions, or when wiring LLM agents to external tools, resources, and prompts in a programming project.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # MCP and Agent Tooling
@@ -83,5 +83,12 @@ For HTTP transports, implement the applicable authorization profile and validate
 
 Expose only tools authorized for the current principal and task. Require clear user-visible consent for sensitive actions, show the effective operation and material arguments, and provide a denial path. Validate and sanitize tool results before returning them to the model. Tool descriptions and server-provided prompt text are data, not higher-priority policy.
 
-Build compatibility tests for protocol negotiation, capability changes, malformed schemas, oversized results, authorization failure, expired or wrong-audience tokens, timeouts, cancellation, partial execution, and server restart. Maintain a registry of approved servers, versions, scopes, owners, and review dates.
+Build compatibility tests for protocol negotiation, capability changes, malformed schemas, oversized results, authorization failure, expired or wrong-audience tokens, timeouts, cancellation, partial execution, and server restart. Maintain a registry of approved servers, versions, scopes, owners, and review dates.\n\n## Ultron routing contract
 
+**Choose this skill when:** building or integrating the capability interface between an AI host and tools: MCP client/server behavior, tool/resource/prompt contracts, schemas, transport integration, capability discovery, result design, and interoperability.
+
+**Choose `mcp-server-hardening` when:** an MCP server already exists and the task is to assess or improve its security posture: authorization boundaries, transport/authentication, input validation, secret handling, SSRF/path controls, output trust, rate limits, and security verification.
+
+**Handoff contract:** the integration skill supplies a complete inventory of tools/resources/prompts, schemas, side effects, identities, destinations, and expected behavior. The hardening skill returns threat findings, exploitability evidence, required controls, negative tests, and release blockers. After fixes, rerun the integration contract tests as well as security tests.
+
+**Why the boundary exists:** interoperability establishes that a server behaves correctly; hardening establishes that it behaves safely under hostile or malformed conditions. Neither test suite substitutes for the other.

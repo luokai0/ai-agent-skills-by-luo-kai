@@ -3,7 +3,7 @@ name: app-frameworks
 description: Use when choosing, scaffolding, structuring, or migrating a frontend application framework (React, Vue, Svelte, Angular, Next.js, Nuxt, SvelteKit, Remix, Astro, and similar), or when diagnosing framework-level architecture problems in a web or hybrid app.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # App Frameworks
@@ -83,4 +83,12 @@ Produce a single document containing, in order:
 7. Verification plan with the metrics listed above and empty result fields to be filled.
 8. Open items list, each with an owner and a verification source.
 
-Do not claim performance gains, compatibility, or security properties that have not been measured or confirmed against official documentation. Do not present a recommendation as final without user approval for any gated action.
+Do not claim performance gains, compatibility, or security properties that have not been measured or confirmed against official documentation. Do not present a recommendation as final without user approval for any gated action.\n\n## Ultron routing contract
+
+**Choose this skill when:** the task is deciding which frontend framework or meta-framework to use, defining application-level rendering and routing architecture, choosing the data-loading model, or planning a framework adoption or migration.
+
+**Do not use it as the primary implementation guide when:** the framework is already selected and the work is a component-level rendering, reactivity, hydration, accessibility, or framework-idiomatic code change. Route that work to `web-frontend-frameworks`.
+
+**Handoff to the implementation skill:** provide the selected framework and verified version, product constraints, rendering mode by route group, routing and data-loading boundaries, hosting assumptions, and any migration constraints. If implementation evidence shows the chosen architecture cannot satisfy a requirement, return the evidence here for an architectural decision rather than accumulating framework-specific workarounds.
+
+**Why the boundary exists:** framework selection and application implementation are related but different decisions. Keeping them separate prevents a component bug from triggering an unnecessary framework redesign and prevents architectural choices from being made by whichever implementation detail was encountered first.

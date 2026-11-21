@@ -3,7 +3,7 @@ name: ui-visual-design
 description: Use when implementing or revising the visual layer of a user interface in code, including typography scales, spacing, color tokens, contrast, elevation, layout grids, responsive breakpoints, component states, and dark mode.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # UI Visual Design
@@ -77,4 +77,12 @@ Provide:
 4. Assumptions and open questions.
 5. Any actions awaiting approval, listed explicitly, with none executed.
 
-Do not: invent design values, present derived tokens as approved, remove focus styles for appearance, use color alone to convey state, or report unrun checks as passed.
+Do not: invent design values, present derived tokens as approved, remove focus styles for appearance, use color alone to convey state, or report unrun checks as passed.\n\n## Ultron routing contract
+
+**Choose this skill when:** the task requires creating, translating, or auditing a consistent visual language: design tokens, typography and spacing scales, color roles, surfaces, responsive composition, component states, contrast, or reduced-motion behavior.
+
+**Choose `css-styling` when:** the visual specification is known and the problem is a concrete stylesheet implementation or browser-specific CSS defect, including cascade, specificity, layout, or responsive rule behavior.
+
+**Handoff contract:** provide semantic tokens, component state definitions, approved breakpoints, reference dimensions, contrast requirements, and acceptance screenshots or measurements. The CSS skill returns implementation evidence and identifies any mismatch that needs a design decision rather than silently changing the visual system.
+
+**Why the boundary exists:** the visual system defines what the interface should communicate; CSS implements that intent in a particular codebase. Mixing the two makes local fixes drift into inconsistent design decisions.

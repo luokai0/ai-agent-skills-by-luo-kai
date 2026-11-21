@@ -3,7 +3,7 @@ name: browser-control-and-downloads
 description: Use when an agent must drive a web browser to navigate sites, fill forms, read pages, or retrieve files and downloads for a professional task, and needs disciplined control over sessions, approvals, file handling, and verification.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Browser Control And Downloads
@@ -90,4 +90,12 @@ Return:
 4. Open items: anything requiring user approval, credentials, or a decision.
 5. Confidence statement: which claims are directly verified from files or pages and which are inferred.
 
-Do not claim completion unless every requested artifact is either delivered and validated or explicitly listed as unobtained with a reason.
+Do not claim completion unless every requested artifact is either delivered and validated or explicitly listed as unobtained with a reason.\n\n## Ultron routing contract
+
+**Choose this skill when:** the objective is browser-based information retrieval or file acquisition: navigate approved sites, read pages, locate documents, download bounded files, validate file types and contents, and hand over organized artifacts.
+
+**Choose `browser-desktop-control` when:** the objective requires stateful interaction with a graphical application, especially multi-step forms, record updates, uploads, exports, reconciliation, or desktop windows where each action must be observed and verified.
+
+**Handoff contract:** send the desktop-control skill the approved account/domain, task objective, input data, expected record or artifact count, and side-effect boundaries. Return file paths or verified artifact references, hashes, source URLs, and retrieval timestamps. Prefer a stable documented API over UI driving when it is available and authorized.
+
+**Why the boundary exists:** browser retrieval is optimized for reading and acquiring evidence; desktop control is optimized for controlled state transitions in a user interface.

@@ -3,7 +3,7 @@ name: css-styling
 description: Use when writing, refactoring, or reviewing CSS for web interfaces, including layout, theming, responsive behavior, specificity conflicts, and visual regressions in frontend codebases.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # CSS Styling
@@ -71,4 +71,12 @@ Return:
 4. Assumptions and open questions.
 5. Version-sensitive properties or features flagged for verification against current official documentation.
 
-Do not add unrelated restyling, introduce new frameworks, hard-code colors where tokens exist, set fixed pixel heights on text containers, or claim cross-browser support without testing.
+Do not add unrelated restyling, introduce new frameworks, hard-code colors where tokens exist, set fixed pixel heights on text containers, or claim cross-browser support without testing.\n\n## Ultron routing contract
+
+**Choose this skill when:** the visual target and design decisions are already established and the work is implementing or debugging CSS: cascade, specificity, layout, responsive rules, typography application, theme-variable wiring, browser rendering, or stylesheet architecture.
+
+**Choose `ui-visual-design` when:** the task is to establish or audit the visual system itself: tokens, semantic color roles, type and spacing scales, component-state specifications, visual consistency, contrast, or translating an approved design reference into a coherent system.
+
+**Handoff contract:** the design-system skill supplies approved tokens, states, breakpoints, and visual acceptance criteria. This skill implements them in the existing styling stack and returns the affected selectors/components, browser and viewport checks, and any mismatch that requires a design decision. Do not invent brand choices to solve a CSS defect.
+
+**Why the boundary exists:** visual intent should be decided once and implemented consistently. CSS is the implementation medium, not the authority for brand or system-level design decisions.

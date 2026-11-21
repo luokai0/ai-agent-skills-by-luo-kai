@@ -3,7 +3,7 @@ name: data-pipelines-analytics
 description: Use when designing, building, validating, or auditing analytics pipelines that ingest, normalize, join, or report on data pulled from external registries (public records, company or product registries, package or model registries, open government datasets).
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Data Pipelines Analytics
@@ -86,4 +86,12 @@ Each completed run delivers:
 5. Approval log for any gated action taken.
 6. Analytical output with the grain and filters stated in the first paragraph.
 
-Do not present figures without the manifest. Do not describe output as authoritative for the registry; describe it as derived from a named snapshot.
+Do not present figures without the manifest. Do not describe output as authoritative for the registry; describe it as derived from a named snapshot.\n\n## Ultron routing contract
+
+**Choose this skill when:** the deliverable is a repeatable, auditable flow that retrieves data from an external registry and transforms it into a reliable analytical dataset. It owns extraction, raw preservation, staging, normalization, incremental changes, reconciliation, quality checks, and pipeline delivery.
+
+**Choose `data-analytics-modeling` when:** the dataset is ready and the unresolved work is analytical design or interpretation: choosing a metric, modeling entities and time, estimating rates or trends, validating a statistical model, or explaining results.
+
+**Handoff contract:** publish a dataset contract with source and snapshot digests, row grain, schema version, key strategy, time semantics, quality metrics, known gaps, and refresh cadence. Receive from the modeling skill the required fields, metric definitions, and analytical quality thresholds. Preserve raw data and do not silently change metric meaning in the pipeline.
+
+**Why the boundary exists:** the pipeline is accountable for the lineage and quality of inputs; the modeling skill is accountable for the validity of conclusions drawn from those inputs.
