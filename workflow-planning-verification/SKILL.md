@@ -3,7 +3,7 @@ name: workflow-planning-verification
 description: Use when planning or reviewing an automated multi-step agent workflow before execution, to check step ordering, tool permissions, failure paths, approval gates, and success criteria so the workflow can be run safely and its results verified.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Workflow Planning Verification
@@ -118,3 +118,27 @@ The final acceptance gate checks the user's postconditions independently of the 
 **Handoff contract:** produce a task contract with dependencies, permitted actions, stop conditions, idempotency expectations, verification source, and completion evidence. Queue or resume skills must preserve those semantics rather than treating each step as an unstructured job.
 
 **Why the boundary exists:** planning defines what should happen and what counts as done; durable execution and session recovery preserve that plan across time.
+
+## Workflow invariants, provenance, and safe joins (v1.3)
+
+### Declare invariants that must remain true
+
+In addition to step-level pass conditions, define workflow-wide invariants: totals reconcile, each source record is handled exactly once or explicitly classified, no resource is mutated outside its owner scope, no external action occurs before approval, and no terminal state is reported while required work remains unresolved. State the invariant, authoritative evidence source, check frequency, and failure transition. If an invariant cannot be observed, mark it as an unresolved risk rather than asserting it.
+
+### Preserve provenance across step boundaries
+
+Every material output should carry a provenance envelope: originating step ID, source record or artifact IDs, source timestamp/version, transformation identifier, and validation status. A downstream step should consume the declared artifact version, not an ambiguous mutable path such as “latest”. When data is transformed, preserve mapping back to source records and record dropped, rejected, or redacted items with reason codes. This makes reconciliation and selective replay possible.
+
+### Make parallel joins deterministic
+
+For each fan-out, define the expected child set, completion condition, timeout behavior, and join policy before execution. Specify whether the join requires all children, a quorum, a threshold, or an explicit partial result. Reject duplicate child IDs and unexpected results. Do not let the first completed worker win unless the contract explicitly defines that policy and establishes that late results cannot change the committed outcome.
+
+If workers can write shared state, assign a single writer or use versioned compare-and-set semantics. Parallel reads may be merged only with a documented conflict policy. When child results disagree, preserve each result and its provenance; do not average categorical or incompatible outputs.
+
+### Make compensation honest
+
+For each compensation, define its preconditions, idempotency behavior, expected postcondition, and evidence. Distinguish a true reversal from a corrective follow-up: a sent email cannot be unsent, a payment reversal is a new transaction, and a published artifact may already have been copied. If the original effect is irreversible, the recovery plan must state residual impact, containment action, notification owner, and reconciliation evidence. Never report “rolled back” when only a compensating action was attempted.
+
+### Validate workflow-level invariants
+
+Test empty input, partial input, duplicate source records, delayed and out-of-order child results, worker disagreement, a child that never completes, stale artifact versions, a failed compensation, and a process restart during a join. Verify the workflow either reaches a valid terminal state or remains explicitly blocked/partial with enough provenance to resume safely.

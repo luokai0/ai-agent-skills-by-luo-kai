@@ -3,7 +3,7 @@ name: agent-design-patterns
 description: Use when designing, reviewing, or refactoring an LLM-based agent or multi-step automation, including choosing between single-call, workflow, and autonomous loop architectures, defining tool contracts, planning memory and state, or adding guardrails and evaluation.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Agent Design Patterns
@@ -133,3 +133,25 @@ Acceptance tests must cover duplicate delivery, response loss after successful w
 **Handoff contract:** state the task class, chosen pattern, alternatives rejected, control owner, state machine, tool/delegation boundaries, failure recovery, and acceptance tests. A specialist implementation skill must not silently change the system's orchestration pattern.
 
 **Why the boundary exists:** architecture selects the coordination model; implementation skills make that model reliable in their respective layers.
+
+## Autonomy boundaries and approval binding (v1.3)
+
+### Define an autonomy envelope per run
+
+Describe permitted autonomy as a tuple: task scope, allowed operation classes, resource scope, environment, spend/time limits, data classes, and maximum side-effect count. Distinguish actions the agent may complete independently, actions it may prepare but not commit, and actions it must never perform. A broad role such as administrator is not an autonomy policy. The runtime must enforce the envelope at every tool boundary, including after handoff or resume.
+
+Treat scope expansion as a new authorization event. If a discovered subtask requires a new system, resource, data class, operation class, or higher limit, pause and request a revised run contract. Do not infer permission from the fact that the subtask would help achieve the original goal.
+
+### Bind approval to the exact action
+
+An approval record should bind to a canonical action digest covering run ID, contract revision, requesting principal, tool and operation, normalized arguments, target resource, environment, expected effect, and expiry. Any change to a bound field invalidates approval. Store approver identity, decision, timestamp, policy version, and one-time or bounded-use semantics in an auditable record. Never treat a conversational acknowledgement as reusable blanket authorization.
+
+Before execution, the policy gateway verifies that the approver is authorized, approval is unexpired and unused within its permitted scope, the current caller still has authority, and target and arguments match the approved digest. A resumed run must revalidate approval; expiry, revocation, contract revision, or target drift sends it back to WAITING_FOR_APPROVAL.
+
+### Separate delegation from authority
+
+A worker receives only the subset of the parent contract needed for its task: objective, input artifacts, allowed tools and resources, output schema, deadline, and evidence obligations. Delegation does not transfer the parent's full credentials or approval. A worker cannot approve its own action, broaden its scope, or authorize another worker to exceed its assigned envelope. The orchestrator remains accountable for merging results and parent-level side effects.
+
+### Test autonomy boundaries explicitly
+
+Test a request within scope, a request crossing each envelope dimension, approval arguments altered after approval, an expired approval after resume, a revoked caller, and a delegated worker attempting privilege escalation. Verify blocked actions produce no side effect and leave a trace identifying the failed policy check.

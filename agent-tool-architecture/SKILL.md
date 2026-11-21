@@ -3,7 +3,7 @@ name: agent-tool-architecture
 description: Use when designing, reviewing, or refactoring the tool layer of an LLM agent, including tool schemas, permission boundaries, error contracts, tool selection policies, and multi-step tool orchestration.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Agent Tool Architecture
@@ -125,3 +125,25 @@ Test each tool with valid, missing, extra, wrong-type, and boundary inputs; unau
 **Handoff contract:** provide the capability inventory, schemas, side effects, resource scope, caller identity, error behavior, and test obligations. The implementation or hardening skill returns protocol-specific evidence and negative tests; this skill checks that the resulting tool surface still follows the approved capability model.
 
 **Why the boundary exists:** tool architecture defines the safe abstraction; protocol integration and security review are specialized implementations of that abstraction.
+
+## Delegated identity and tenant isolation (v1.3)
+
+### Bind every invocation to a principal and tenant
+
+A tool call must carry a server-verified run identity, initiating principal, effective delegated principal (if any), tenant or workspace, environment, and policy decision reference. Never trust a tenant ID, user ID, role, or resource owner supplied only in model-generated arguments. Resolve identity from authenticated runtime context and bind the target resource to that identity before authorization.
+
+For delegated user access, use the narrowest supported delegated scope and preserve the distinction between the service identity and the user on whose behalf it acts. Do not silently fall back to a service administrator when delegated authorization fails. A permission denial is a terminal policy result, not a cue to try a more powerful credential.
+
+### Enforce tenant boundaries below the model
+
+Apply tenant filtering in the authoritative data or service layer, not only in tool descriptions or prompt instructions. Every lookup, search, mutation, cache key, object-store path, and asynchronous operation must carry a verified tenant boundary. For indirect identifiers, confirm the resolved object belongs to the authorized tenant before returning whether it exists or exposing metadata. Avoid cross-tenant existence leaks through error messages or timing where practical.
+
+Partition caches and idempotency records by tenant and principal where required. Ensure queued jobs retain the original authorized scope and revalidate it at execution time; permissions may have been revoked while a job waited. A worker must not inherit a broader scope merely because it runs under a shared service account.
+
+### Test isolation as a negative property
+
+Create two synthetic tenants with deliberately overlapping identifiers and similar records. Test reads, search, pagination, exports, writes, deletes, cache hits, retries, and resumed jobs from both identities. Verify a tenant-A caller cannot discover, infer, mutate, or receive tenant-B data, including through error details and audit records. Test stale delegation, revoked membership, changed ownership, and cross-tenant idempotency-key reuse.
+
+### Audit without leaking data
+
+Record authenticated principal, delegated principal, tenant, tool version, resource reference, policy decision, correlation ID, and outcome. Redact secrets and minimize personal data; use stable opaque references instead of copying full payloads into logs. Ensure the audit sink itself enforces tenant visibility and retention policy.
