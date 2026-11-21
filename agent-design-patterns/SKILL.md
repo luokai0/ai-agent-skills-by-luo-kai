@@ -3,7 +3,7 @@ name: agent-design-patterns
 description: Use when designing, reviewing, or refactoring an LLM-based agent or multi-step automation, including choosing between single-call, workflow, and autonomous loop architectures, defining tool contracts, planning memory and state, or adding guardrails and evaluation.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Design Patterns
@@ -108,3 +108,17 @@ The design deliverable must contain, in this order:
 9. Open assumptions and items marked for verification against current official documentation of any framework, API, or model feature referenced.
 
 Do not deliver a design that lacks any of these sections, uses unresolved sample values, or leaves a write-capable tool without an approval classification.
+## Agent lifecycle engineering (v1.1)
+
+Treat an agent as a controlled execution system, not a prompt with tools attached. Model its lifecycle as explicit states: INTAKE, CONTEXT, PLAN, AUTHORIZE, EXECUTE, VERIFY, COMMIT, REPORT, with WAITING_FOR_APPROVAL, BLOCKED, RECOVERY, and CANCELLED as alternate states. Define legal transitions and the evidence required for each. A model response cannot mark a run complete; the runtime decides completion from verified postconditions.
+
+Create an immutable run contract containing the objective, principal, tenant, environment, allowed tools and operations, excluded actions, input provenance and freshness, dependency graph, expected artifacts, numeric limits, commit policy, and completion proof. If scope or authority changes, create a new contract revision and re-evaluate approvals.
+
+Separate proposal from execution. The model proposes; deterministic policy validates identity, scope, arguments, target, risk, budget, and approval. A tool adapter executes and returns a structured receipt with operation ID, target, result, side-effect status, and read-back evidence. Reject unknown tools, undeclared fields, ambiguous targets, and arguments derived from untrusted instructions.
+
+Checkpoint after plan acceptance, approval, side-effect attempt, side-effect confirmation, and artifact commit. On restart, reconcile checkpoints with external state before continuing. Never infer an interrupted write failed merely because its response was lost.
+
+Choose deterministic workflows for known sequences, routers for bounded task families, and autonomous loops only when discovery cannot be represented as a finite workflow. Add workers only for separable, independently verifiable tasks. A critic or verifier must have independent evidence and a distinct responsibility.
+
+Acceptance tests must cover duplicate delivery, response loss after successful writes, stale inputs, expired approvals, revoked identity, malformed tool output, conflicting system-of-record values, worker disagreement, budget exhaustion, cancellation, and restart from every checkpoint. Record results against the contract revision.
+

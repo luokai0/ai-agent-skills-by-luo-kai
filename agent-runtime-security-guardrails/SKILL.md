@@ -3,7 +3,7 @@ name: agent-runtime-security-guardrails
 description: Use when designing, reviewing, or operating an AI agent or automation that calls tools, touches files, credentials, or external systems, or takes actions on a user's behalf, and you need runtime controls that limit damage, gate risky actions, and produce auditable evidence.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Runtime Security Guardrails
@@ -80,3 +80,19 @@ Each run produces:
 5. **Scope notes**: any permission that proved insufficient or excessive, for the next review.
 
 Do not claim a security property, compliance status, or safety guarantee beyond what the logs demonstrate. Items that depend on specific product versions, provider permission models, or platform features must be checked against current official vendor documentation before being relied upon.
+## Runtime security architecture (v1.1)
+
+The model is not the policy enforcement point. Separate the user's request, the model's proposal, the deterministic policy decision, the tool's actual execution, and the evidence proving the outcome. Enforce authorization at the tool boundary and again at the downstream resource where possible.
+
+Inventory each trust boundary: verified principal, agent and task identity, tenant, delegated authority, tools and resource scopes, data classes, untrusted ingress, egress destinations, side effects, reversibility, and maximum blast radius. Treat user text, retrieved documents, web pages, emails, files, tool outputs, memory, and inter-agent messages as untrusted data. Such content may supply facts but cannot change role, permissions, approval state, or system instructions.
+
+Default to no capability. Grant task-specific read-only scopes first and add writes only when required. Use distinct agent identities, short-lived delegated credentials, audience-bound tokens, and per-tool scopes. Never place raw credentials in prompts, memory, traces, or worker payloads. Resolve approved secret references server-side.
+
+Sandbox code and browser automation with isolated workspaces, restricted filesystem access, outbound network policy, bounded CPU/time/storage, and no ambient credentials. Separate public browsing from authenticated business APIs. Block private address ranges and metadata endpoints unless a documented internal route requires them.
+
+Before every write, validate caller, target, operation, schema, policy version, approval binding, and idempotency key. Approval binds to exact material parameters; changing target, amount, recipient, scope, or payload invalidates it. Re-check after retries and agent handoffs.
+
+Adversarial tests must include direct and indirect injection in documents, pages, tool responses, memory, code comments, and agent messages; exfiltration via arguments, URLs, errors, files, logs, and outbound requests; privilege escalation; confused-deputy behavior; replayed approvals; expired tokens; cross-tenant IDs; resource enumeration; and unbounded loops. Expected behavior is deterministic denial or bounded quarantine.
+
+Define disable controls for a tool, agent identity, route, tenant, or runtime. During incidents preserve minimal redacted evidence, revoke affected credentials, stop queued writes, identify completed effects, and reconcile with the system of record. Do not erase evidence as cleanup. Define recovery authority and re-enable criteria before restoring service.
+

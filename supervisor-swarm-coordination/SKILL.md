@@ -3,7 +3,7 @@ name: supervisor-swarm-coordination
 description: Use when designing, running, or auditing a supervisor agent that delegates work to multiple worker agents in parallel or sequence, including task decomposition, routing, result aggregation, and conflict resolution in AI agent automation.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Supervisor Swarm Coordination
@@ -99,3 +99,17 @@ Do not report performance benchmarks, reliability percentages, or speedups unles
 - Do not merge outputs that failed verification to meet a deadline.
 - Do not treat worker self-assessments of confidence as evidence.
 - Do not guess API names, flags, or framework behavior. Check current official documentation and mark any version-dependent detail as requiring verification.
+## Multi-agent execution protocol (v1.1)
+
+Treat a multi-agent system as a graph of accountable workers, not a group chat. The supervisor owns the objective, authority, dependency graph, budget, and final acceptance. Workers receive bounded contracts and cannot expand scope or dispatch more workers unless explicitly authorized.
+
+Each dispatch includes task and parent-run IDs, one measurable objective, one expected artifact, input references with provenance and sensitivity labels, allowed tools and resource scopes, prohibited actions, output schema, evidence requirements, deadline, retry ceiling, resource budget, dependencies, return condition, and permission to create subtasks or write shared state.
+
+Model work as a directed acyclic graph. Detect cycles, missing dependencies, duplicate ownership, and shared-write conflicts before dispatch. Use explicit statuses: queued, running, waiting, returned, failed, cancelled, accepted. A worker's completion claim is not acceptance; the supervisor validates schema, source evidence, scope, and postconditions. Send only minimum necessary context. Use separate workspaces for workers editing files and assign one writer per mutable resource.
+
+For independent proposals, collect outputs before revealing peer conclusions when blind review is useful. A reviewer challenges assumptions; a verifier inspects observable evidence. Majority vote is not a substitute for checking sources. Preserve dissent and unresolved uncertainty.
+
+Use leases or bounded deadlines for worker ownership. If a worker disappears, determine whether it caused side effects, reconcile target state, and inspect checkpoints before reassignment. Never re-dispatch non-idempotent work solely because a worker timed out. Use task idempotency keys and explicit ownership transfer for resumable work.
+
+Test timeout before and after writes, duplicate dispatch, conflicting outputs, malformed artifacts, unauthorized tool requests, injected worker input, worker attempts to spawn workers, supervisor restart, cancellation propagation, shared-file collisions, and budget exhaustion. Verify exactly one owner controls each mutable resource and unaccepted outputs cannot be committed or reported complete.
+

@@ -3,7 +3,7 @@ name: agent-tool-architecture
 description: Use when designing, reviewing, or refactoring the tool layer of an LLM agent, including tool schemas, permission boundaries, error contracts, tool selection policies, and multi-step tool orchestration.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Tool Architecture
@@ -102,3 +102,15 @@ Do not deliver a catalog without the evaluation report. Do not present unmeasure
 - Do not return entire raw records when a few fields answer the question.
 - Do not add tools speculatively for future use.
 - Do not treat model-supplied arguments as trusted.
+## Tool capability engineering (v1.1)
+
+Design tools as narrow capabilities, not wrappers around unrestricted systems. Each contract must specify stable name and purpose, caller identity, authorization rule, typed input and output schemas, error variants, side-effect class, resource scope, data classification, idempotency, concurrency, timeout, retry, rate limit, pagination, approval, audit receipt, owner, version, and deprecation policy.
+
+Prefer bounded business operations such as get_invoice, draft_refund, and approve_refund over generic SQL, shell, or arbitrary HTTP tools. Split reads from writes and draft creation from final submission.
+
+A robust gateway call follows this order: authenticate and bind the run/tenant; validate tool and schema; resolve canonical resource identifiers; verify ownership and scope; classify effects; evaluate policy; verify an exact, unexpired approval binding; enforce budgets, rate and concurrency limits; apply idempotency; execute with a scoped credential outside model context; capture the downstream receipt; read back the resulting state; return a minimal structured result and correlation ID.
+
+Idempotency keys must be persisted at the system boundary. Replays return the original result or a safe conflict. Where the API lacks idempotency, reconcile state before retry and document race conditions. Use bounded pagination with stable ordering and explicit completeness markers. Long-running operations should return an operation handle and a separate status method. Use optimistic concurrency to reject stale writes. Multi-system workflows need explicit compensating actions; do not call compensation a true rollback when external effects cannot be undone.
+
+Test each tool with valid, missing, extra, wrong-type, and boundary inputs; unauthorized principal; cross-tenant target; timeout before and after execution; duplicate key; stale version; rate limit; malformed downstream response; and partial failure. Verify stable error variants and minimal outputs without secrets.
+
