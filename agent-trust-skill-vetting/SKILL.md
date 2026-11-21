@@ -3,7 +3,7 @@ name: agent-trust-skill-vetting
 description: Use when evaluating a third-party or community agent skill, plugin, prompt pack, or tool bundle before an AI agent is allowed to load, install, or execute it, to decide whether it is safe to adopt, restrict, or reject.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Trust Skill Vetting
@@ -80,3 +80,15 @@ Return a review record with these fields, in this order:
 7. Open items and the verification steps still outstanding.
 
 Keep the record under two pages. State plainly what was not reviewed.
+## Skill supply-chain lifecycle (v1.1)
+
+A skill is executable influence over an agent, even when it contains only prose. Review the complete package and the behavior it encourages. A clean-looking SKILL.md does not establish that referenced scripts, remote resources, templates, or linked instructions are safe.
+
+Record repository, exact commit, file inventory, content digests, publisher claims, declared purpose, supported runtimes, dependencies, and update channel. Resolve every relative reference and inspect scripts, binaries, generated artifacts, install commands, and network destinations. Do not execute untrusted scripts during initial review. If dynamic analysis is necessary, use a disposable isolated environment with no secrets and restricted egress.
+
+Look for hidden or obfuscated instructions, prompt injection, trigger overreach, attempts to override higher-priority policy, prompt or secret disclosure, unexplained network calls, broad filesystem access, credential harvesting, destructive commands, persistence mechanisms, and capability claims that exceed observed behavior. Check whether examples normalize unsafe permissions or production writes.
+
+Use explicit decisions: reject, hold for evidence, adopt with restrictions, or adopt. Restrictions must be enforceable in the host runtime, not merely written in the skill. Pin the reviewed revision and define update notifications, re-review triggers, owner, and retirement conditions. A changed content digest invalidates the prior review for that file. Review upgrades before enabling new tools or permissions.
+
+Evaluate representative tasks with and without the skill under equivalent agent configurations. Compare correctness, completeness, tool discipline, security behavior, discoverability, token cost, and recovery. Include adversarial tasks and cases where the skill should not activate. Record test set, runtime, model, and revision. A skill that improves task success but increases unsafe tool use is not an overall improvement.
+

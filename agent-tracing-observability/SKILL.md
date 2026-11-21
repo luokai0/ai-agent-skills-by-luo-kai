@@ -3,7 +3,7 @@ name: agent-tracing-observability
 description: Use when instrumenting, debugging, or auditing LLM agent runs (tool calls, model calls, retrievals, sub-agent handoffs) and you need traces, spans, token and cost accounting, or evidence of what an agent actually did.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Tracing Observability
@@ -77,3 +77,17 @@ Deliver:
 5. A list of open items, each marked as requiring verification against current official documentation where a version-specific detail applies.
 
 Do not deliver a trace design that has not been replayed, claims tracing makes an agent correct or compliant, or contains unredacted sensitive fields in examples.
+## End-to-end agent run evidence (v1.1)
+
+Instrument the entire run, not just model calls. Connect the user request, run contract, plan revision, policy decisions, model turns, tool invocations, approvals, worker tasks, checkpoints, artifacts, and final verification. Use stable correlation identifiers for run, task, step, tool call, approval, and external operation.
+
+Capture structured events for run creation and contract revisions; plan generation, validation, and rejection; policy decisions with policy version and reason; approval request, grant, denial, expiry, or invalidation; tool request, authorization, execution, retry, reconciliation, and verification; worker dispatch and acceptance; checkpoint save and restore; artifact digest; and terminal status.
+
+Record timestamps plus a monotonic sequence number. Distinguish model intention from gateway authorization and downstream execution. Store large payloads by protected reference and digest; traces must not become a second database of sensitive content.
+
+Measure verified task completion, tool error rate by class, approval wait time, duplicate suppression, retries per operation, recovery success, policy denials, injection detections, checkpoint restore success, and cost/latency per completed task. Segment by agent version, tool version, task family, and risk class. Faster execution achieved by skipping verification is a regression.
+
+Alert on repeated denials, unusual tool sequences, unexpected privilege use, excessive retries, runaway spend, cross-tenant attempts, missing approval receipts, and abnormal side-effect volume. Define an owner, severity, response window, and disable action for each alert. Preserve security-critical events even when ordinary spans are sampled out.
+
+For consequential workflows, maintain an append-only event ledger with hash-linked records or another suitable tamper-evident mechanism. Record hashes and references rather than raw sensitive payloads. Protect ledger access separately from the runtime. Define retention, access, export, and deletion rules before launch; immutability must not be used to evade retention or deletion requirements.
+

@@ -3,7 +3,7 @@ name: agent-evaluation-design
 description: Use when designing, reviewing, or extending evaluations (evals) for LLM-based agents or automation workflows, including task suites, graders, trajectory checks, regression baselines, and release gates.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Evaluation Design
@@ -87,3 +87,17 @@ The final evaluation package must contain:
 - Do not run evals against live systems or real customers without explicit approval.
 - Do not report a single run as a benchmark result.
 - Do not state that an eval score demonstrates safety, legal compliance, or fitness for regulated use.
+## Continuous agent evaluation and release engineering (v1.1)
+
+An evaluation suite is a versioned product artifact. Track separate versions for instructions, model, tool schemas, policy bundle, memory schema, runtime, and test suite. Every result must identify the complete configuration.
+
+Layer evaluations: unit checks for schemas and deterministic adapters; component checks for retrieval, memory, routing, and tools; trajectory checks for ordering, arguments, approvals, retries, and stopping; outcome checks against external postconditions; adversarial checks for injection, permission denial, isolation, malformed tool output, and budget abuse; operational checks for latency, cost, timeout recovery, concurrency, and checkpoint resumption; and human review for high-impact judgments.
+
+Build cases from anonymized failures, support escalations, near misses, tool errors, and user corrections. Each case declares preconditions, allowed tools, prohibited actions, expected state transitions, observable postconditions, grader, budget, and severity. Keep an unseen holdout set to reduce overfitting.
+
+A correct final answer does not excuse an unauthorized intermediate action. Score goal completion, grounding, tool selection, argument validity, policy adherence, side-effect correctness, efficiency, and recovery separately. Record the first trajectory divergence and whether it caused an external effect. Include negative assertions such as "no message sent" or "no cross-tenant record returned."
+
+Run frozen suites against candidate and baseline in equivalent environments. Repeat stochastic cases to estimate variance; report per-case outcomes and category counts. Gate safety-critical failures independently of aggregate scores. Require human review for unexplained shifts, new permissions, model or policy changes, and memory migrations. Preserve a rollback artifact and known-good configuration.
+
+Keep grader prompts and holdout labels separate from the agent. Calibrate model graders against human labels and publish disagreements. Version case changes with reasons; do not remove a hard case merely because it fails. A green suite means only that tested behaviors passed under recorded conditions.
+
