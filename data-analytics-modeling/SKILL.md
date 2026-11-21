@@ -3,7 +3,7 @@ name: data-analytics-modeling
 description: Use when building, reviewing, or validating analytical or statistical models over external registry data (government, public-sector, licensing, corporate, clinical, or standards registries), including entity resolution, dimensional modeling, forecasting, and metric definition from registry extracts.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Data Analytics Modeling
@@ -85,7 +85,9 @@ A completed engagement delivers:
 5. Results with uncertainty intervals and sensitivity ranges; no point estimates without spread.
 6. Open-issues list with severity and owner.
 
-Do not: overwrite raw snapshots; merge entities on name alone; report results without the denominator; present registry status as verified fact without a source date; or perform any deletion, bulk export, external transmission, or publication of record-level data without explicit written approval from the data owner.\n\n## Ultron routing contract
+Do not: overwrite raw snapshots; merge entities on name alone; report results without the denominator; present registry status as verified fact without a source date; or perform any deletion, bulk export, external transmission, or publication of record-level data without explicit written approval from the data owner.
+
+## Ultron routing contract
 
 **Choose this skill when:** the data is already available in a usable snapshot or curated dataset and the main question is analytical: entity modeling, metric definition, cohort or survival framing, rate/count modeling, anomaly analysis, statistical validation, or interpretation of registry-derived records.
 

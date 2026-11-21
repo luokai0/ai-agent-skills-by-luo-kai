@@ -3,7 +3,7 @@ name: browser-control-and-downloads
 description: Use when an agent must drive a web browser to navigate sites, fill forms, read pages, or retrieve files and downloads for a professional task, and needs disciplined control over sessions, approvals, file handling, and verification.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Browser Control And Downloads
@@ -90,7 +90,9 @@ Return:
 4. Open items: anything requiring user approval, credentials, or a decision.
 5. Confidence statement: which claims are directly verified from files or pages and which are inferred.
 
-Do not claim completion unless every requested artifact is either delivered and validated or explicitly listed as unobtained with a reason.\n\n## Ultron routing contract
+Do not claim completion unless every requested artifact is either delivered and validated or explicitly listed as unobtained with a reason.
+
+## Ultron routing contract
 
 **Choose this skill when:** the objective is browser-based information retrieval or file acquisition: navigate approved sites, read pages, locate documents, download bounded files, validate file types and contents, and hand over organized artifacts.
 

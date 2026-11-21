@@ -3,7 +3,7 @@ name: version-control-delivery
 description: Use when preparing, reviewing, or shipping code changes through Git branches, commits, tags, pull or merge requests, and release refs, including history cleanup, conflict resolution, and safe rollback planning.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Version Control Delivery
@@ -87,7 +87,9 @@ Every delivery returns:
 5. Risk statement and rollback plan (for example: revert commit hash, or tag to restore).
 6. Pending approvals: each gated action not yet performed, listed explicitly.
 
-Do not perform the publish, merge, or tag step without the approvals required by the Decision gates.\n\n## Ultron routing contract
+Do not perform the publish, merge, or tag step without the approvals required by the Decision gates.
+
+## Ultron routing contract
 
 **Choose this skill when:** an agent must perform or guide a concrete Git workflow in a repository: inspect state, isolate changes, prepare commits, synchronize branches, resolve conflicts, prepare review, recover work, or plan a release ref transition.
 

@@ -3,7 +3,7 @@ name: multi-agent-orchestration-and-discovery
 description: Use when a task needs decomposition across multiple agents or skills, when selecting which skill or agent should handle a subtask, or when coordinating, merging, and verifying outputs from several agents in ClawHub-style skill workflows.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.2.1
 ---
 
 # Multi Agent Orchestration And Discovery
@@ -87,7 +87,9 @@ Define the control owner at every stage: who may plan, dispatch, approve, call t
 
 Use a router only when routing decisions are bounded and testable. Use a manager when central consistency matters. Use peer collaboration only when workers have distinct evidence or expertise and a clear merge protocol. Avoid circular delegation, uncontrolled agent spawning, and multi-agent consensus without independent evidence.
 
-For each pattern, test the same task family against a simpler baseline. Compare verified outcome quality, unauthorized intermediate actions, latency, cost, context growth, failure recovery, and reviewer workload. Keep the simpler architecture when added agents do not provide measurable value.\n\n## Ultron routing contract
+For each pattern, test the same task family against a simpler baseline. Compare verified outcome quality, unauthorized intermediate actions, latency, cost, context growth, failure recovery, and reviewer workload. Keep the simpler architecture when added agents do not provide measurable value.
+
+## Ultron routing contract
 
 **Choose this skill when:** Ultron must discover candidate agents or skills, match capabilities to a task, decide whether delegation is worthwhile, decompose the objective, select specialists, or construct the initial dependency and handoff plan.
 

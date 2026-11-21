@@ -3,7 +3,7 @@ name: saas-crm-marketing-automation
 description: Use when designing, auditing, or building marketing automation on a SaaS CRM, including lead capture, lifecycle stages, segmentation, lead scoring, nurture sequences, and sync rules, especially when an AI agent will read or write CRM or marketing records.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # SaaS CRM Marketing Automation
@@ -78,7 +78,9 @@ Produce:
 5. Verification report with evidence per check.
 6. Rollback procedure.
 
-Do not: include personal data in reports beyond record IDs; claim compliance or deliverability outcomes; invent integration names or limits; present unverified platform behavior as fact.\n\n## Ultron routing contract
+Do not: include personal data in reports beyond record IDs; claim compliance or deliverability outcomes; invent integration names or limits; present unverified platform behavior as fact.
+
+## Ultron routing contract
 
 **Choose this skill when:** the task is designing or changing CRM lifecycle logic: contact/account capture, deduplication, field ownership, segmentation, lead scoring, nurture sequences, suppression, stage transitions, or sales handoff.
 

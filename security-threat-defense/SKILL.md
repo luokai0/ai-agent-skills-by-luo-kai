@@ -3,7 +3,7 @@ name: security-threat-defense
 description: Use when assessing, triaging, or hardening threats against external package registries and artifact sources (public or private package indexes, container registries, model hubs) that an organization consumes from or publishes to, including typosquatting, dependency confusion, malicious releases, compromised maintainer accounts, and tampered artifacts.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Security Threat Defense
@@ -90,7 +90,9 @@ Produce a single report containing:
 - Do not delete, unpublish, or overwrite artifacts during triage.
 - Do not contact maintainers or registries without Gate B approval.
 - Do not invent registry features, flags, or attestation formats. Verify them.
-- Do not paste secrets or tokens into reports.\n\n## Ultron routing contract
+- Do not paste secrets or tokens into reports.
+
+## Ultron routing contract
 
 **Choose this skill when:** assessing the trustworthiness of an external package, container image, model artifact, publisher, or registry resolution path before adoption or during routine supply-chain review. It owns preventive artifact triage, provenance and signature interpretation, dependency-confusion analysis, suspicious package inspection, and evidence-based trust decisions.
 

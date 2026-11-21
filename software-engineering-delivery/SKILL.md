@@ -3,7 +3,7 @@ name: software-engineering-delivery
 description: Use when preparing, publishing, deprecating, or consuming software artifacts through external registries such as package indexes, container registries, or artifact repositories, including release versioning, credential handling, and post-publish verification.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Software Engineering Delivery
@@ -90,7 +90,9 @@ Do not:
 - Publish from an uncommitted working tree or an unreviewed branch.
 - Use long-lived personal tokens where scoped automation identities exist.
 - Assert version-specific registry behavior, flags, or limits from memory. Verify against current official registry documentation and mark the verified date in the release record.
-- Modify a published artifact in place.\n\n## Ultron routing contract
+- Modify a published artifact in place.
+
+## Ultron routing contract
 
 **Choose this skill when:** the objective is to produce and release a package, image, chart, or binary as a complete, verifiable lifecycle. It owns release readiness, version reconciliation, clean artifact construction, package-content inspection, provenance and checksum evidence, approval, publication sequencing, post-publish installation checks, and rollback-by-supersession.
 

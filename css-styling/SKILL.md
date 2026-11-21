@@ -3,7 +3,7 @@ name: css-styling
 description: Use when writing, refactoring, or reviewing CSS for web interfaces, including layout, theming, responsive behavior, specificity conflicts, and visual regressions in frontend codebases.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # CSS Styling
@@ -71,7 +71,9 @@ Return:
 4. Assumptions and open questions.
 5. Version-sensitive properties or features flagged for verification against current official documentation.
 
-Do not add unrelated restyling, introduce new frameworks, hard-code colors where tokens exist, set fixed pixel heights on text containers, or claim cross-browser support without testing.\n\n## Ultron routing contract
+Do not add unrelated restyling, introduce new frameworks, hard-code colors where tokens exist, set fixed pixel heights on text containers, or claim cross-browser support without testing.
+
+## Ultron routing contract
 
 **Choose this skill when:** the visual target and design decisions are already established and the work is implementing or debugging CSS: cascade, specificity, layout, responsive rules, typography application, theme-variable wiring, browser rendering, or stylesheet architecture.
 

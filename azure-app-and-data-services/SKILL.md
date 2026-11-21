@@ -3,7 +3,7 @@ name: azure-app-and-data-services
 description: Use when designing, deploying, configuring, troubleshooting, or reviewing Azure application hosting (App Service, Functions, Container Apps) and managed data services (Azure SQL, Cosmos DB, Storage, Redis-compatible caches) in a production or pre-production environment.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Azure App And Data Services
@@ -99,7 +99,9 @@ Every output must include:
 6. **Assumptions and open items:** including unverified version-sensitive details and missing RPO/RTO values.
 7. **Rollback plan:** specific steps to return to the prior state.
 
-Do not state that a deployment is production-ready, compliant, or secure unless the specific evidence for that claim is attached. Do not include secret values, connection strings, or keys in any output.\n\n## Ultron routing contract
+Do not state that a deployment is production-ready, compliant, or secure unless the specific evidence for that claim is attached. Do not include secret values, connection strings, or keys in any output.
+
+## Ultron routing contract
 
 **Choose this skill when:** the work concerns Azure application workload resources and managed data services: App Service, Functions, Container Apps, Azure SQL, Cosmos DB, Storage, managed cache, deployment slots, backups, scaling, private connectivity, and workload-level operations.
 

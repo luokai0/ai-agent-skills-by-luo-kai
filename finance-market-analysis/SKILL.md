@@ -3,7 +3,7 @@ name: finance-market-analysis
 description: Use when analyzing market data, company financials, or external registry records (securities filings, company registries, exchange listings, market statistics) to produce sourced, reproducible financial findings for an investment, credit, research, or due-diligence question.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Finance Market Analysis
@@ -82,7 +82,9 @@ The output must contain, in order:
 5. **Data-quality log:** exclusions, reconciliations, unresolved conflicts, verification items.
 6. **Limitations:** what the evidence cannot support.
 
-Quality check before release: every figure traceable, every ratio reproducible from listed inputs, all gates passed or explicitly flagged, no recommendation phrased as certainty.\n\n## Ultron routing contract
+Quality check before release: every figure traceable, every ratio reproducible from listed inputs, all gates passed or explicitly flagged, no recommendation phrased as certainty.
+
+## Ultron routing contract
 
 **Choose this skill when:** the financial question depends on issuer and instrument identity, corporate or regulatory filings, financial statement line items, ownership or earnings events, peer fundamentals, valuation context, or reconciling market data to authoritative financial records.
 

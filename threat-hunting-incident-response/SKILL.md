@@ -3,7 +3,7 @@ name: threat-hunting-incident-response
 description: Use when hunting for or responding to suspicious activity involving external package registries (npm, PyPI, RubyGems, Maven Central, container registries, Helm, crates.io), including malicious package detection, dependency confusion, typosquatting, compromised maintainer accounts, and poisoned build artifacts.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Threat Hunting Incident Response
@@ -69,7 +69,9 @@ Example: a `postinstall`-style hook in a newly published minor version of a util
 
 ## Deliverable contract
 
-The final case report must contain: incident summary and severity; hypothesis and scope; consumption inventory table (repository, artifact, version, digest, first-seen, last-seen); execution findings with evidence references; credential exposure and rotation status; containment and remediation actions with approval references; open items with owners; detection rules added. Do not claim the environment is clean without the verification checks above being satisfied. Version-sensitive package-manager and registry behaviors must be confirmed against current official documentation before being cited in the report.\n\n## Ultron routing contract
+The final case report must contain: incident summary and severity; hypothesis and scope; consumption inventory table (repository, artifact, version, digest, first-seen, last-seen); execution findings with evidence references; credential exposure and rotation status; containment and remediation actions with approval references; open items with owners; detection rules added. Do not claim the environment is clean without the verification checks above being satisfied. Version-sensitive package-manager and registry behaviors must be confirmed against current official documentation before being cited in the report.
+
+## Ultron routing contract
 
 **Choose this skill when:** there is a credible indication that a registry artifact or credential has already affected an organization. Triggers include a package or image found in builds or deployed systems, suspicious install-time/runtime execution, dependency-confusion evidence in resolution logs, abnormal registry publishing, or possible token theft.
 

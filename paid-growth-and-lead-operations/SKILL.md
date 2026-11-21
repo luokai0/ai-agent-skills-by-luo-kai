@@ -3,7 +3,7 @@ name: paid-growth-and-lead-operations
 description: Use when designing, auditing, or troubleshooting paid acquisition data flows, conversion tracking, lead scoring pipelines, CRM lead routing, or attribution reporting for paid media campaigns.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Paid Growth And Lead Operations
@@ -79,7 +79,9 @@ Return a document with these sections in order:
 7. Open questions and the data needed to close them.
 8. Version-sensitive items to verify against official documentation.
 
-Do not include unverified benchmark figures, industry averages presented as targets, or claims of regulatory compliance. Do not recommend moving personal data between systems without naming the lawful basis as confirmed by the data owner.\n\n## Ultron routing contract
+Do not include unverified benchmark figures, industry averages presented as targets, or claims of regulatory compliance. Do not recommend moving personal data between systems without naming the lawful basis as confirmed by the data owner.
+
+## Ultron routing contract
 
 **Choose this skill when:** the question is about paid acquisition measurement and the path from ad spend to qualified leads or revenue: campaign taxonomy, attribution, conversion events, offline conversion matching, lead-source reconciliation, and paid-channel performance diagnostics.
 

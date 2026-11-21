@@ -3,7 +3,7 @@ name: web-search-retrieval-and-live-data
 description: Use when a task requires current, time-sensitive, or externally verifiable facts from the web, such as prices, availability, news, regulations, software release status, or public records, and the answer must cite sources and state how fresh the data is.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Web Search Retrieval And Live Data
@@ -74,7 +74,9 @@ The answer contains, in order:
 3. Caveats: conflicts, gaps, and version-sensitive items.
 4. Next actions requiring approval, if any, listed separately.
 
-Do not include uncited statistics, invented URLs, or unverified recommendations. Do not present search snippets as full-page findings.\n\n## Ultron routing contract
+Do not include uncited statistics, invented URLs, or unverified recommendations. Do not present search snippets as full-page findings.
+
+## Ultron routing contract
 
 **Choose this skill when:** a claim depends on current public information, recent developments, live or frequently changing values, official product documentation, current availability, or a public source's publication/update date.
 

@@ -3,7 +3,7 @@ name: multi-agent-team-orchestration
 description: Use when decomposing a complex task across multiple cooperating AI agents or sub-agents, assigning roles, routing handoffs, merging outputs, and deciding when to escalate to a human operator.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Multi Agent Team Orchestration
@@ -94,7 +94,9 @@ Do not state that the work is complete if any acceptance criterion lacks evidenc
 - Do not pass sensitive data to agents lacking the required permission.
 - Do not average conflicting outputs into a bland synthesis.
 - Do not invent tool names, API parameters, version numbers, or performance figures. Where a tool or library detail is version-sensitive, mark it "verify against current official documentation" before relying on it.
-- Do not present regulatory or compliance conclusions as guaranteed; state them as the best reading of the supplied sources, pending qualified review.\n\n## Ultron routing contract
+- Do not present regulatory or compliance conclusions as guaranteed; state them as the best reading of the supplied sources, pending qualified review.
+
+## Ultron routing contract
 
 **Choose this skill when:** the agent/team topology is known and a lead agent must coordinate specialists through task contracts, role boundaries, dependencies, checkpoints, independent review, conflict resolution, and final result integration.
 

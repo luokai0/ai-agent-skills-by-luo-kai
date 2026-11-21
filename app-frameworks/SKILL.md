@@ -3,7 +3,7 @@ name: app-frameworks
 description: Use when choosing, scaffolding, structuring, or migrating a frontend application framework (React, Vue, Svelte, Angular, Next.js, Nuxt, SvelteKit, Remix, Astro, and similar), or when diagnosing framework-level architecture problems in a web or hybrid app.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # App Frameworks
@@ -83,7 +83,9 @@ Produce a single document containing, in order:
 7. Verification plan with the metrics listed above and empty result fields to be filled.
 8. Open items list, each with an owner and a verification source.
 
-Do not claim performance gains, compatibility, or security properties that have not been measured or confirmed against official documentation. Do not present a recommendation as final without user approval for any gated action.\n\n## Ultron routing contract
+Do not claim performance gains, compatibility, or security properties that have not been measured or confirmed against official documentation. Do not present a recommendation as final without user approval for any gated action.
+
+## Ultron routing contract
 
 **Choose this skill when:** the task is deciding which frontend framework or meta-framework to use, defining application-level rendering and routing architecture, choosing the data-loading model, or planning a framework adoption or migration.
 

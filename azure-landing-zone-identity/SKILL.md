@@ -3,7 +3,7 @@ name: azure-landing-zone-identity
 description: Use when designing, reviewing, or troubleshooting identity foundations for an Azure landing zone, including Microsoft Entra ID tenant structure, RBAC role assignments, management group scope, managed identities, privileged access, and break-glass accounts.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # Azure Landing Zone Identity
@@ -95,7 +95,9 @@ Do not include secrets, credential values, tokens, or full tenant identifiers in
 - Do not create a shared account for administrators.
 - Do not store secrets in pipelines, scripts, or documents when a managed identity or federated credential is available.
 - Do not remove emergency access or change its exclusions without approval.
-- Do not state licensing, compliance, or feature availability as fact without verifying it against current Microsoft documentation.\n\n## Ultron routing contract
+- Do not state licensing, compliance, or feature availability as fact without verifying it against current Microsoft documentation.
+
+## Ultron routing contract
 
 **Choose this skill when:** the question concerns Azure identity and authorization foundations across tenants, management groups, subscriptions, and resources: Entra directory roles, Azure RBAC, managed identities, workload identities, privileged access, emergency accounts, and identity governance.
 

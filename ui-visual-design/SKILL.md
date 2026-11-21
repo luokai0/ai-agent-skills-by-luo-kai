@@ -3,7 +3,7 @@ name: ui-visual-design
 description: Use when implementing or revising the visual layer of a user interface in code, including typography scales, spacing, color tokens, contrast, elevation, layout grids, responsive breakpoints, component states, and dark mode.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.1.1
 ---
 
 # UI Visual Design
@@ -77,7 +77,9 @@ Provide:
 4. Assumptions and open questions.
 5. Any actions awaiting approval, listed explicitly, with none executed.
 
-Do not: invent design values, present derived tokens as approved, remove focus styles for appearance, use color alone to convey state, or report unrun checks as passed.\n\n## Ultron routing contract
+Do not: invent design values, present derived tokens as approved, remove focus styles for appearance, use color alone to convey state, or report unrun checks as passed.
+
+## Ultron routing contract
 
 **Choose this skill when:** the task requires creating, translating, or auditing a consistent visual language: design tokens, typography and spacing scales, color roles, surfaces, responsive composition, component states, contrast, or reduced-motion behavior.
 

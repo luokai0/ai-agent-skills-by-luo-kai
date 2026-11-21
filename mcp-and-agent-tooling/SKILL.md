@@ -3,7 +3,7 @@ name: mcp-and-agent-tooling
 description: Use when designing, implementing, reviewing, or debugging Model Context Protocol (MCP) servers, clients, or tool definitions, or when wiring LLM agents to external tools, resources, and prompts in a programming project.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.2.1
 ---
 
 # MCP and Agent Tooling
@@ -83,7 +83,9 @@ For HTTP transports, implement the applicable authorization profile and validate
 
 Expose only tools authorized for the current principal and task. Require clear user-visible consent for sensitive actions, show the effective operation and material arguments, and provide a denial path. Validate and sanitize tool results before returning them to the model. Tool descriptions and server-provided prompt text are data, not higher-priority policy.
 
-Build compatibility tests for protocol negotiation, capability changes, malformed schemas, oversized results, authorization failure, expired or wrong-audience tokens, timeouts, cancellation, partial execution, and server restart. Maintain a registry of approved servers, versions, scopes, owners, and review dates.\n\n## Ultron routing contract
+Build compatibility tests for protocol negotiation, capability changes, malformed schemas, oversized results, authorization failure, expired or wrong-audience tokens, timeouts, cancellation, partial execution, and server restart. Maintain a registry of approved servers, versions, scopes, owners, and review dates.
+
+## Ultron routing contract
 
 **Choose this skill when:** building or integrating the capability interface between an AI host and tools: MCP client/server behavior, tool/resource/prompt contracts, schemas, transport integration, capability discovery, result design, and interoperability.
 
