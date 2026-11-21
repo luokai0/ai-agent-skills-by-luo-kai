@@ -3,7 +3,7 @@ name: ai-system-architecture
 description: Use when designing, reviewing, or documenting the architecture of an AI-enabled system, including choosing between prompting, retrieval-augmented generation, fine-tuning, and agentic workflows, or defining data flows, evaluation harnesses, and deployment boundaries for LLM or ML components.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # AI System Architecture
@@ -82,3 +82,54 @@ Produce a single document containing, in order:
 8. Open assumptions, unverified details flagged for official-documentation checks, and approval gates requiring sign-off.
 
 Do not include: unmeasured accuracy claims, vendor marketing comparisons, invented benchmark figures, or statements that the system is compliant with any regulation.
+
+## Architecture selection and boundary engineering (v1.1)
+
+### Convert requirements into an architecture scorecard
+
+Before selecting a model or agent pattern, create a scorecard with task success threshold, unacceptable error classes, p50/p95 latency, throughput, cost per completed task, freshness requirement, privacy boundary, auditability, recovery objective, and human intervention rate. Mark each value as measured, contractual, estimated, or unknown. Do not allow an unmeasured estimate to masquerade as a release requirement.
+
+Evaluate candidates against the same representative task set. Reject a candidate that violates a hard safety, privacy, latency, or cost constraint even if its average score is highest. For viable candidates, compare total operating cost, including retrieval, tool execution, retries, human review, monitoring, and failure recovery.
+
+### Choose orchestration by control ownership
+
+Use a fixed pipeline when stages and transitions are known. Use a single agent with tools when the model chooses among bounded actions but one owner can retain control. Use a manager with specialists when a central component must synthesize results and retain responsibility for the final answer. Use a handoff when a specialist should own the next interaction or task branch. Use parallel fan-out only when subtasks are independent, bounded, and have an explicit merge rule.
+
+For every multi-agent design, define one owner for each mutable resource and one owner for the final user-facing result. Specify whether specialists return proposals, evidence, or authoritative state changes. Do not let multiple agents independently perform the same irreversible action. If multiple agents cannot be justified over a simpler pipeline, start with the simpler design.
+
+### Define contracts at every boundary
+
+For each component, specify input schema, output schema, allowed side effects, data classification, timeout, retry policy, idempotency key, error taxonomy, and evidence emitted. A component that returns a confident answer without source IDs, validation status, or execution evidence is not verified merely because it returned successfully.
+
+Separate the **control plane** (policy, routing, approvals, budgets, identity, and run state) from the **execution plane** (model calls, retrieval, tools, and specialist work). A model may propose a route or action; deterministic policy code decides whether it is permitted. Keep authorization out of natural-language prompt instructions alone.
+
+### Plan for change and rollback
+
+Record replaceable seams: model provider, embedding model, vector store, tool transport, orchestration runtime, and state store. Define compatibility tests before swapping any seam. Version prompts, schemas, retrieval indexes, model identifiers, tool definitions, and evaluation datasets independently so regressions can be attributed.
+
+Define rollback triggers before launch: hard safety violation, unauthorized side effect, schema incompatibility, sustained quality regression, budget breach, or recovery failure. A rollback plan must identify last known-good versions and state reconciliation; reverting code alone may not undo external side effects or data migrations.
+
+### Architecture review questions
+
+1. Can a deterministic baseline meet the required quality and latency?
+2. Does retrieval solve a freshness or grounding problem prompting alone cannot solve?
+3. Is fine-tuning supported by a measured error category and lawful, representative data?
+4. Does agentic branching improve completion or merely add failure points?
+5. Which component can cause an external side effect, and where is authorization enforced?
+6. Can important results be traced to source data, model/prompt versions, tool outcomes, and validation?
+7. Can the system stop safely, resume without duplicate actions, and recover from partial completion?
+8. What is the smallest architecture that satisfies the hard constraints?
+
+## Ultron routing contract
+
+**Choose this skill when:** selecting and documenting the overall architecture of an AI-enabled product or system, including prompting, retrieval, fine-tuning, fixed workflows, agent orchestration, and boundaries for trust, state, evaluation, and deployment.
+
+**Choose agent-design-patterns when:** the architecture direction is established and the task is to select or implement a concrete agent pattern, loop, handoff, manager, or specialist composition.
+
+**Choose rag-and-retrieval-systems when:** the main problem is retrieval quality, corpus preparation, indexing, ranking, grounding, or retrieval evaluation rather than whole-application architecture.
+
+**Choose llm-app-agents-and-prompts when:** implementing the application-level prompt, structured output, tool interaction, or agent integration contract within an already selected architecture.
+
+**Handoff contract:** pass the problem statement, scorecard, baseline evidence, candidate comparison, trust/data-flow diagram, component contracts, side-effect inventory, evaluation gates, and unresolved assumptions. The implementation skill must preserve hard constraints and return infeasible requirements as explicit design conflicts rather than silently weakening them.
+
+**Why the boundary exists:** this skill owns system-level trade-offs and component boundaries; specialist skills own detailed implementation and validation of a selected subsystem.

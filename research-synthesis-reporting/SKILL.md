@@ -3,7 +3,7 @@ name: research-synthesis-reporting
 description: Use when turning multiple research sources, experiment results, literature, or internal analyses into a decision-ready synthesis report on data or AI topics, including evidence grading, conflict resolution, and recommendation writing.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Research Synthesis Reporting
@@ -87,3 +87,45 @@ The report contains, in order:
 Length target: 4–8 pages for a standard synthesis; a one-page executive version must reproduce items 1–3 exactly.
 
 Do not: present a recommendation without its confidence grade; blend opinion into the evidence table; cite a source you have not read in the portion you rely on; omit excluded sources from the inventory; or release externally without the approval required by Gate 5.
+
+## Cross-source synthesis controls (v1.1)
+
+### Separate evidence units before combining them
+
+Do not treat every document, experiment, dashboard, interview, and publication as an equivalent observation. Classify each unit as a primary observation, attributed interpretation, secondary synthesis, or decision constraint. A decision constraint shapes the decision but is not empirical evidence that a technical claim is true.
+
+Create a claim-to-evidence graph rather than a flat source list. A claim may depend on multiple observations; one observation may support several claims; and a secondary source may point to primary evidence already inventoried. Record these relationships so repeated reporting of one result is not mistaken for independent agreement.
+
+### Normalize before comparing
+
+Before ranking methods or combining metrics, record unit of analysis, denominator, population, time window, measurement instrument, missing-data treatment, baseline, and aggregation method. Convert units only when exact and preserve original values. Do not average percentages with different denominators or pool metrics whose definitions merely share a label.
+
+For experiment roll-ups, distinguish a repeated run from an independent replication. Preserve run-level results, sample counts, variance or uncertainty intervals, and the selection rule for the reported result. If only the best run is available, label the evidence as selected rather than representative.
+
+### Separate association, prediction, and causation
+
+Classify each conclusion as descriptive, predictive, causal, or normative. A predictive association does not establish causation; a causal estimate does not by itself determine the preferred action. For causal claims, inspect assignment mechanism, confounding, selection effects, temporal ordering, and the estimand. If the design cannot support causal inference, rewrite the claim descriptively or predictively.
+
+### Make uncertainty decision-relevant
+
+For every major conclusion, state the plausible outcome range, assumptions that dominate it, consequence if the estimate is wrong, and evidence that could change the decision. Prefer sensitivity analysis over a confidence adjective. When quantitative uncertainty cannot be calculated, name its source and give a qualitative confidence label with an explicit reason.
+
+### Stop rules for synthesis quality
+
+- If sources reuse the same underlying dataset, count it once for evidential independence.
+- If outcome definitions or denominators cannot be reconciled, present parallel results rather than a pooled number.
+- If a material subgroup is missing, do not generalize the aggregate result to it.
+- If a conclusion depends on an unverified transformation, reproduce it or label the conclusion provisional.
+- If a recommendation changes under a reasonable assumption range, make it conditional and identify the threshold at which it changes.
+
+## Ultron routing contract
+
+**Choose this skill when:** synthesizing heterogeneous evidence into a decision-ready report, especially when sources include internal experiments, operational metrics, technical comparisons, literature, interviews, or mixed evidence types. Its central job is reconciliation, confidence calibration, and recommendation readiness.
+
+**Choose scientific-research-synthesis when:** discovering and screening a defined body of scientific literature or registry records using a reproducible search strategy and inclusion criteria. That skill owns search logs, study screening, extraction, and research-review flow counts.
+
+**Choose scientific-evidence-review when:** checking a specific claim, paper, or conclusion against the evidence it cites.
+
+**Handoff contract:** accept source IDs, primary/secondary classification, exact claim locations, population and method details, uncertainty, and duplicate-lineage links. Return a decision question, claim graph, comparability decisions, conflict register, confidence grades, sensitivity conditions, and evidence gaps. Do not imply a narrative synthesis is exhaustive.
+
+**Why the boundary exists:** research synthesis owns discovery and screening of a scientific corpus; evidence review tests individual claims; this skill reconciles evidence across source types for a decision. This prevents double-counting and false certainty.
