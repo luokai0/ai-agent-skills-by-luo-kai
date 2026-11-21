@@ -3,7 +3,7 @@ name: llm-app-agents-and-prompts
 description: Use when designing, reviewing, or debugging LLM-powered applications that involve prompt templates, tool-calling agents, retrieval context, or multi-step model workflows, and need structured guidance on prompt contracts, agent loops, evaluation, and safe deployment.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # LLM App Agents and Prompts
@@ -79,3 +79,13 @@ Every deliverable must include:
 7. Open risks and the gate status (A through D) for each.
 
 Do not: hardcode secrets in prompts; trust model output as authorization; expand tool permissions without approval; treat examples in the prompt as exhaustive policy; or report unmeasured quality claims.
+## Agent application architecture and prompt/runtime boundaries (v1.1)
+
+Keep prompts, agent definitions, tool schemas, runtime policy, and application state as separate versioned artifacts. Instructions describe intended behavior; deterministic application code enforces identity, permissions, budgets, approvals, and side-effect constraints. Never rely on prompt wording as the sole control for a sensitive operation.
+
+Define the agent's role, objective, scope, allowed tools, prohibited actions, expected output schema, escalation conditions, and stopping criteria. Keep specialist instructions narrow and compose them through explicit contracts. Use structured outputs for machine-consumed decisions and validate them before downstream use. Treat model-generated JSON as untrusted input until schema and policy validation pass.
+
+Choose the simplest orchestration that meets the task: a deterministic workflow for fixed sequences, a single agent with tools for bounded work, a manager with specialists when central ownership matters, or handoffs when a specialist should take over. Maintain explicit state across runs and define what context is forwarded to each specialist. Avoid putting secrets, hidden application state, or unrestricted authority in prompts.
+
+Separate model selection from runtime guarantees. Record model identifier, prompt revision, tool versions, policy revision, and evaluation suite for each release. Test prompt injection, ambiguous intent, invalid structured output, tool misuse, refusal behavior, context overflow, handoff loops, and unexpected model changes. Evaluate full trajectories and external postconditions, not only final response quality.
+

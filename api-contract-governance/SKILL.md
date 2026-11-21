@@ -3,7 +3,7 @@ name: api-contract-governance
 description: Use when defining, reviewing, versioning, or enforcing API contracts (OpenAPI, AsyncAPI, GraphQL schemas, protobuf/gRPC IDL, event schemas) across teams or services, especially when a change may break consumers or needs a compatibility decision.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Api Contract Governance
@@ -113,3 +113,15 @@ Version-sensitive details (tool flags, rule identifiers, spec-format features) m
 - Do not change production traffic routing, sunset dates, or client-facing notices on your own authority; these are external-impacting actions requiring named approval.
 - Do not infer consumer behavior from the spec alone; confirm with usage evidence or owners.
 - Do not invent rule names, tool flags, or benchmark figures.
+## API contracts for agent-facing operations (v1.1)
+
+An agent-facing API must be designed for uncertain callers, retries, partial completion, and asynchronous work. Define stable operation names, typed request and response schemas, explicit error classes, authorization requirements, side-effect descriptions, idempotency behavior, versioning rules, and compatibility guarantees. Avoid ambiguous generic endpoints that allow the model to construct arbitrary operations.
+
+Use explicit task resources for long-running work: create task, retrieve task status, cancel task, and retrieve or stream artifacts. Define legal state transitions and terminal states. Return a stable operation or task identifier immediately rather than holding a connection open for unbounded reasoning. Distinguish accepted, running, completed, failed, cancelled, and partially completed states.
+
+Use idempotency keys for creation and write operations. Define key scope, retention, collision behavior, and replay response. For updates, use version preconditions or ETags to prevent stale writes. Document pagination cursors, ordering guarantees, maximum page sizes, rate limits, and retry-after behavior. Errors must distinguish invalid input, authorization denial, conflict, rate limit, transient dependency failure, timeout with unknown outcome, and permanent failure.
+
+Version schemas additively where possible. For breaking changes, publish a new version, define a migration window, and test old and new clients against the same contract. Validate generated SDKs and examples against the actual server implementation. Keep examples safe by default and avoid embedding real credentials.
+
+For every operation, test schema validation, auth scopes, cross-tenant identifiers, duplicate requests, stale preconditions, partial failure, cancellation, oversized payloads, and backward compatibility. A valid OpenAPI or JSON schema document is not evidence that runtime behavior conforms; run contract tests against the deployed adapter.
+

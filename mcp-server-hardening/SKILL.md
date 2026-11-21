@@ -3,7 +3,7 @@ name: mcp-server-hardening
 description: Use when reviewing, securing, or deploying a Model Context Protocol (MCP) server that exposes tools, resources, or prompts to AI agents, and you need to reduce its attack surface, constrain tool permissions, and verify its behavior before or after exposure.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # MCP Server Hardening
@@ -93,3 +93,15 @@ Produce:
 5. Operator notes: required environment variables or secret references (names only, never values), and rollback steps.
 
 Do not include: secret values, claims of compliance or certification, invented flags or API names, or benchmark figures not produced by your own tests.
+## MCP server hardening and operational assurance (v1.1)
+
+Harden the server as an exposed capability boundary. Maintain an inventory of tools, resources, prompts, templates, transports, authorization modes, data classes, owners, and dependencies. Expose only the minimum capabilities needed by each client identity. Separate read-only operations from writes and high-impact actions.
+
+Validate schemas at both ingress and egress. Reject unknown fields where strict contracts are required, enforce numeric and string bounds, constrain pagination and result sizes, and sanitize errors. Tool outputs should include only fields required for the task. Prevent path traversal, unsafe file access, arbitrary command execution, server-side request forgery, and access to private or metadata networks unless explicitly required by a reviewed design.
+
+For HTTP authorization, validate issuer, audience, expiry, scopes, and resource binding at the server. Do not accept a token issued for a different service, and do not forward inbound bearer tokens to downstream APIs. Use separate service credentials with narrowly defined scopes. For local transports, isolate process identity, filesystem access, environment variables, and working directories.
+
+Treat tool descriptions, resource content, and prompts from remote servers as untrusted. A server may be approved for a specific tool set without being trusted to provide policy instructions. Record the server revision and tool-schema digest so changes can trigger re-review.
+
+Add health checks, bounded concurrency, per-client quotas, request deadlines, cancellation, structured audit events, and a kill switch. Test unauthorized tool discovery, privilege escalation, injection in resource content, schema confusion, oversized responses, token replay, cross-tenant access, path traversal, SSRF, dependency compromise, and denial-of-service behavior.
+

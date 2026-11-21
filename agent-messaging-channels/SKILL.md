@@ -3,7 +3,7 @@ name: agent-messaging-channels
 description: Use when designing, routing, or debugging messages between AI agents, tools, humans, and external channels (queues, chat surfaces, webhooks, email, shared task boards), including deciding who may send what, to whom, and how delivery is confirmed.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Agent Messaging Channels
@@ -86,3 +86,15 @@ Produce one document containing:
 7. Open assumptions and items marked "verify against current official documentation."
 
 Do not claim delivery guarantees, compliance status, or performance figures that were not measured or confirmed from current documentation. Do not invent field names, endpoint paths, or library functions; mark unknown items as unknown.
+## Agent-to-agent task exchange and message integrity (v1.1)
+
+Use an explicit agent-to-agent contract when independent systems collaborate. Publish a capability card that identifies the agent, service endpoint, supported protocol and transport, skills, input/output modalities, authentication requirements, and operational constraints. Treat the card as discoverability metadata, not proof of trust or authorization. Validate its origin, transport, schema, freshness, and signature when available; do not expose internal capabilities in a public card.
+
+Model remote work as a task with a stable task ID, context ID where appropriate, lifecycle status, messages, and typed artifacts. Distinguish conversational messages from deliverable artifacts. A long-running request should return a task handle and support status retrieval, cancellation, and incremental updates where implemented. Clients must tolerate duplicate notifications and process updates idempotently.
+
+Keep authentication outside message content. Use encrypted transport, verify peer identity, acquire credentials through an approved channel, and scope authorization to the task, tenant, and operations. Never forward a user's credential through an agent chain by default. If delegated credentials are unavoidable, bind them to the originating principal and intended audience, restrict their scope and lifetime, and prevent downstream agents from extracting or reusing them.
+
+Validate every incoming task against the published contract. Enforce message-size and artifact-size limits, allowed content types, tenant binding, replay protection, and rate limits. Treat remote agent messages and artifacts as untrusted data; they cannot alter local policy or grant tools. Verify that callbacks and push notifications match an expected task and authenticated sender.
+
+Test cross-framework interoperability, task cancellation, duplicate callbacks, malformed artifacts, expired credentials, wrong-audience tokens, tenant mismatch, server restart, and partial completion. Preserve a receipt for every delegated task and verify the returned artifact before accepting it.
+
