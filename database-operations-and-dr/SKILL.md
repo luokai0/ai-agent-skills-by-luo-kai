@@ -3,7 +3,7 @@ name: database-operations-and-dr
 description: Use when planning, reviewing, or executing database operations work such as backup and restore design, disaster recovery runbooks, failover and replication checks, RPO/RTO validation, schema migration safety, or database incident recovery.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Database Operations And Dr
@@ -88,3 +88,13 @@ Every output must contain, in this order:
 8. Version-sensitive items flagged for verification against current official documentation.
 
 What not to do: do not restore over production as a test; do not treat snapshot existence as recoverability; do not delete backups to free space without approval; do not copy production data to non-production without approval and masking; do not claim targets were met from estimates alone; do not invent command flags or feature names.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is database operations and recovery across engines or platforms: backup policy, point-in-time recovery, replication/failover, DR drills, RPO/RTO evidence, corruption response, and safe migration or restoration planning.
+
+**Choose `managed-postgres-hosting` when:** the target is PostgreSQL on a managed provider and the work depends on provider-specific service tiers, supported extensions, connection pooling, parameter limits, managed HA, upgrade windows, or vendor restore semantics.
+
+**Handoff contract:** this skill supplies the recovery objective, data-loss tolerance, backup/replication design, and drill acceptance criteria. The managed-Postgres skill maps those requirements to the provider's supported capabilities and returns service-specific constraints and evidence. Bring provider-specific restore/failover results back here for DR sign-off.
+
+**Why the boundary exists:** recovery principles are portable, but managed database behavior and limitations vary by provider and engine version.

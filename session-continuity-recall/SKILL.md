@@ -3,7 +3,7 @@ name: session-continuity-recall
 description: Use when an AI agent must resume work from a prior session, reconstruct earlier decisions and open tasks from notes, logs, or memory stores, or hand off a workflow to another agent or human without losing state.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Session Continuity Recall
@@ -102,3 +102,12 @@ Check for changed policy, revoked credentials, changed tool schemas, stale data,
 
 Test restart at every durable boundary, duplicate resume requests, expired approvals, deleted source artifacts, changed permissions, incompatible schemas, and concurrent resume attempts. Exactly one execution owner may continue a mutable task at a time.
 
+## Ultron routing contract
+
+**Choose this skill when:** resuming a named or interrupted task/session and reconstructing what was decided, what was executed, what remains pending, and whether the external state still matches the previous record.
+
+**Choose `agent-memory-persistence` when:** the question is how long-term facts, preferences, reusable knowledge, and durable task state should be stored, retrieved, updated, or deleted.
+
+**Handoff contract:** retrieve memory and prior artifacts as evidence, then reconcile them with live repository, service, queue, or system state. Return a resumption brief with verified completed work, unresolved items, side-effect status, expired approvals, and the next safe action. Only confirmed durable facts or decisions should be proposed for memory updates; transient progress belongs in session/task state.
+
+**Why the boundary exists:** memory is not a session transcript, and a previous session summary is not proof that its side effects completed.

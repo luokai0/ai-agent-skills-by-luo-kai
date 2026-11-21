@@ -3,7 +3,7 @@ name: rag-and-retrieval-systems
 description: Use when designing, building, evaluating, debugging, or operating retrieval-augmented generation (RAG) pipelines, including document ingestion, chunking, embedding, vector or hybrid search, reranking, grounding of LLM answers, and retrieval quality evaluation.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Rag And Retrieval Systems
@@ -134,3 +134,13 @@ Maintain harmless, instrumented tests for:
 - Retrieval results that propose tool calls or request secrets.
 
 Measure attack success, false-positive rate on benign documents, ACL leakage, citation accuracy, and freshness. A filter that catches known strings is only one measured signal; it is not proof of injection resistance.
+
+## Ultron routing contract
+
+**Choose this skill when:** the objective is a complete retrieval-augmented generation workflow that converts source material into grounded model answers. It owns ingestion and parsing strategy, chunking, retrieval/reranking, context assembly, provenance, citations, answer constraints, and end-to-end evaluation.
+
+**Choose `analytics-vector-retrieval` when:** the main unresolved issue is the analytical retrieval engine itself: vector index choice, embedding storage, filtered nearest-neighbor queries, hybrid ranking, recall, latency, or capacity.
+
+**Handoff contract:** request candidate source IDs, metadata filters, rank scores, recall/latency measurements, and index version from the vector-retrieval skill. Return the context and citation contract, source-access checks, grounding evaluation, and generation failure analysis. Preserve the distinction between a retrieval miss and a generation error.
+
+**Why the boundary exists:** a strong retrieval engine does not guarantee grounded generation; the RAG workflow must verify the complete chain from source to answer.

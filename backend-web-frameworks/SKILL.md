@@ -3,7 +3,7 @@ name: backend-web-frameworks
 description: Use when designing, building, reviewing, or debugging server-side web applications or HTTP APIs in a backend framework, including routing, middleware, request validation, data access wiring, authentication hooks, and deployment-readiness checks.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Backend Web Frameworks
@@ -72,3 +72,13 @@ Every result must include:
 6. Known limitations and follow-up items, each with an owner or "unassigned" stated plainly.
 
 Do not claim production readiness, compliance, or security guarantees. Do not invent library names, configuration keys, or benchmark figures.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is framework-neutral backend engineering: comparing server frameworks across languages, designing request lifecycles, middleware/interceptor boundaries, routing, validation, error mapping, configuration, or integration seams to storage, queues, caches, and identity providers.
+
+**Choose `python-web-frameworks` when:** the application is implemented in Python and the work depends on Python-specific framework selection, idioms, dependency injection, ASGI/WSGI behavior, async integration, or Python production conventions.
+
+**Handoff contract:** this skill supplies the backend architecture and required behavior; the Python specialization maps it to the verified Python runtime and framework version, then returns implementation constraints and test evidence. If the codebase is not Python, do not route it to the Python skill merely because an API framework is involved.
+
+**Why the boundary exists:** backend principles transfer across languages, but framework lifecycle, concurrency, typing, and deployment semantics do not.

@@ -3,7 +3,7 @@ name: experiment-tracking
 description: Use when an agent or automation workflow must record, compare, reproduce, or audit experiments such as prompt variants, model or agent configuration sweeps, evaluation runs, or A/B tests, and needs a reliable run ledger with parameters, metrics, artifacts, and provenance.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Experiment Tracking
@@ -86,3 +86,13 @@ Each completed experiment produces:
 5. **Reproduction instructions**: the exact steps and config references needed to rerun the experiment, without embedded secrets.
 
 Do not present results without the ledger entry, and do not describe a candidate as better than baseline unless the verification criteria above are met.
+
+## Ultron routing contract
+
+**Choose this skill when:** the experiment design and measurement objective are defined and the task is to record, organize, compare, reproduce, and report runs across models, prompts, tools, routing, retrieval, or automation configurations.
+
+**Choose `llm-benchmark-harness` when:** the task is to build or operate the evaluation machinery itself: frozen task sets, controlled execution, graders, scoring rules, baseline comparisons, holdouts, and repeatable benchmark reports.
+
+**Handoff contract:** the harness supplies case IDs, dataset and grader versions, run configuration, raw outcomes, and scoring provenance. This skill records experiment metadata, tracks the changed variable, compares runs under equivalent conditions, and produces the decision record. Do not treat an experiment tracker as proof that the benchmark is valid.
+
+**Why the boundary exists:** the harness measures behavior; experiment tracking preserves what changed and whether comparisons are reproducible.

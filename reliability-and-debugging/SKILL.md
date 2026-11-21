@@ -3,7 +3,7 @@ name: reliability-and-debugging
 description: Use when diagnosing intermittent or failing authentication, authorization, session, token, MFA, or SSO behavior in production or staging, or when fixing reliability in auth components without weakening security controls.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Reliability And Debugging
@@ -81,3 +81,13 @@ What not to do:
 - Do not paste secrets, tokens, or raw assertions into tickets, chat, or commits.
 - Do not claim a compliance outcome from a debugging fix.
 - Do not invent flag names, parameters, or version behavior. Verify them first.
+
+## Ultron routing contract
+
+**Choose this skill when:** an authentication or authorization path is failing, flaky, slow, or inconsistent and the task requires reproduction, trace analysis, root-cause isolation, a minimal repair, and regression proof.
+
+**Choose `quality-assurance` when:** the task is to define or run a systematic test plan for authentication/security behavior, establish coverage, or produce formal verification and sign-off evidence rather than diagnose one known defect.
+
+**Handoff contract:** accept a reproducible case or observed symptom. Return the causal chain, affected state transitions, smallest safe fix, regression test, and explicit evidence that signatures, issuers, audiences, expiry, MFA, lockout, and authorization checks remain enforced as applicable. Send the repaired case back to QA for broader suite validation.
+
+**Why the boundary exists:** incident diagnosis and test assurance are complementary. Do not make the debugger invent broad release coverage or ask QA to guess at root cause.

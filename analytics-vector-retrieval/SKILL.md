@@ -3,7 +3,7 @@ name: analytics-vector-retrieval
 description: Use when designing, indexing, querying, or evaluating vector retrieval over analytical datasets (embeddings stored alongside tabular or warehouse data), including choosing embedding dimensions, index types, metadata filters, hybrid search, and recall or latency tradeoffs.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Analytics Vector Retrieval
@@ -84,3 +84,13 @@ Do not:
 - Claim compliance, privacy, or security guarantees for any service.
 - Report benchmark numbers that were not measured in this engagement.
 - Specify exact parameter names or limits without verification against current official documentation.
+
+## Ultron routing contract
+
+**Choose this skill when:** the problem is the retrieval layer over analytical or structured corpora: embedding/index layout, nearest-neighbor search, hybrid lexical/vector retrieval, metadata filters, query latency, recall, capacity, and SQL-style constraints.
+
+**Choose `rag-and-retrieval-systems` when:** retrieved material is being assembled into a language-model context and the full grounded-answer pipeline must be designed or evaluated, including parsing, chunking, reranking, citation, generation constraints, and answer quality.
+
+**Handoff contract:** this skill returns index and query contracts, recall/latency measurements, filter semantics, source identifiers, and candidate ranking behavior. The RAG skill defines how those candidates become traceable evidence and how generated answers must cite and abstain. Do not use answer quality alone to diagnose an index problem; isolate retrieval metrics first.
+
+**Why the boundary exists:** vector search is a retrieval engine capability; RAG is the broader evidence-to-answer system that may use it.

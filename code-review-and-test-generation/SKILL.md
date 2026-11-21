@@ -3,7 +3,7 @@ name: code-review-and-test-generation
 description: Use when reviewing code changes for correctness, risk, and maintainability, or when generating, extending, or repairing automated tests for a defined change set in a repository.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Code Review And Test Generation
@@ -76,3 +76,13 @@ Return one report with these sections, in order:
 5. **Open items:** unresolved ambiguities, pre-existing failures, approvals needed.
 
 Keep prose short. Use a finding only when it is specific enough for an author to act on without re-deriving it. Quality check: every finding has a location and a reproducer, every test has been executed, and no assertion was weakened silently.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task asks for a constructive review of a change together with tests that cover the changed behavior. It may propose or author regression tests, identify missing cases, run the relevant suite, and produce a structured review artifact.
+
+**Choose `code-review-execution` when:** an independent reviewer must assess an existing patch or pull request, challenge its claims, identify defects, and issue a merge recommendation without taking ownership of implementing the feature or writing its repair.
+
+**Handoff contract:** this skill returns the reviewed diff, findings with file/line evidence, tests added or proposed, test outcomes, and unresolved risks. The independent review skill checks the change and the adequacy of the evidence from a separate reviewer perspective. Do not count self-review by the change author as independent approval.
+
+**Why the boundary exists:** producing review/test artifacts and independently deciding whether a change is ready to merge are different accountability roles.

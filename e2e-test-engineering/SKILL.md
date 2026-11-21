@@ -3,7 +3,7 @@ name: e2e-test-engineering
 description: Use when designing, writing, stabilizing, or reviewing end-to-end tests that exercise a deployed or near-production system through its user-facing or integration boundaries, including test environment setup, data seeding strategy, flake triage, and CI gating decisions.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # E2E Test Engineering
@@ -90,3 +90,13 @@ Every E2E engagement delivers:
 - Explicit list of approvals obtained and actions deferred pending approval.
 
 Version-sensitive details (runner flags, browser versions, vendor test-mode behavior, API names) must be confirmed against current official documentation before being written into code or reports.
+
+## Ultron routing contract
+
+**Choose this skill when:** the behavior under test crosses real application boundaries: browser or client, running service, network, database, queue, identity provider, or external dependency. Use it for user journeys, business-critical workflows, deployment smoke tests, and integration behavior that cannot be proven by isolated tests.
+
+**Choose `unit-and-component-testing` when:** the behavior can be verified inside a function, class, module, or component with external systems replaced by controlled test doubles.
+
+**Handoff contract:** the unit/component layer supplies fast checks for local logic and contracts; this skill verifies that the assembled system actually works across boundaries. When an E2E failure occurs, isolate the failing boundary and return a minimal reproducible case to the owning unit, component, or integration test layer.
+
+**Why the boundary exists:** E2E tests prove that components cooperate in a realistic environment; they are slower and less diagnostic, so they should not replace fast isolated tests.

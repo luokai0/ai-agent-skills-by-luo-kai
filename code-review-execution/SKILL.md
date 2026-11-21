@@ -3,7 +3,7 @@ name: code-review-execution
 description: Use when performing, coordinating, or structuring a code review of a change set, pull request, or patch, including triaging findings, deciding merge readiness, and writing actionable review comments.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Code Review Execution
@@ -90,3 +90,13 @@ Do not:
 - Post comments that cannot be acted on without further explanation.
 - Share credentials, internal URLs, or customer data found in a diff; flag them and request explicit approval from the owner before any further external disclosure.
 - Merge or push changes to the author's branch without explicit approval from the author or maintainer.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is an independent assessment of a proposed change and needs a traceable review, evidence-backed defect findings, risk classification, and merge recommendation. The reviewer should challenge assumptions and verify behavior without becoming the feature author.
+
+**Choose `code-review-and-test-generation` when:** the requested deliverable includes creating regression tests or improving test coverage alongside the review.
+
+**Handoff contract:** receive the diff, stated intent, test results, and relevant requirements. Return prioritized findings with exact locations and reproduction evidence, missing proof, and a clear recommendation. If new tests are needed, delegate their construction and then independently inspect whether they actually cover the reported risk.
+
+**Why the boundary exists:** review independence is weakened when the same agent both authors a change and approves it. Test generation can be delegated without surrendering independent judgment.

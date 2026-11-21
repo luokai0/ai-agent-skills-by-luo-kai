@@ -3,7 +3,7 @@ name: managed-postgres-hosting
 description: Use when selecting, provisioning, configuring, migrating to, or operating PostgreSQL on a managed cloud or vendor service, including instance sizing, high availability, backups and point-in-time recovery, connection pooling, extensions, upgrades, and cost or access-control review.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Managed Postgres Hosting
@@ -82,3 +82,13 @@ Every engagement returns:
 4. Gate list: each approval required, the requester, and the status.
 5. Evidence bundle: restore test results, failover results, performance comparison, and capacity projection.
 6. Version-sensitive items list: any vendor limit, parameter name, extension version, or pricing figure that must be re-checked against current official documentation before execution.
+
+## Ultron routing contract
+
+**Choose this skill when:** the database is managed PostgreSQL and the task depends on provider-specific choices or operations: tier/sizing, networking, extensions, pooling, parameters, HA/failover, backup/restore, upgrades, migration cutover, or cost.
+
+**Choose `database-operations-and-dr` when:** the central objective is cross-engine or organization-wide recovery strategy, RPO/RTO design, DR governance, corruption response, or recovery drill acceptance.
+
+**Handoff contract:** receive the required RPO/RTO, data integrity expectations, failover posture, retention, and recovery drill plan. Return the provider's actual backup/PITR limits, restore procedure, failover behavior, extension and version constraints, and measured recovery evidence. Never assume a managed-service backup feature is equivalent to a tested recovery plan.
+
+**Why the boundary exists:** managed PostgreSQL operations require provider-specific expertise, while DR governance must remain consistent across all database platforms.

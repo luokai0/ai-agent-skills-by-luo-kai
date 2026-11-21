@@ -3,7 +3,7 @@ name: flutter-cross-platform-development
 description: Use when building, reviewing, or debugging a Flutter application targeting iOS, Android, web, or desktop, including state management, platform channels, responsive layouts, build configuration, and release readiness across platforms.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Flutter Cross Platform Development
@@ -75,3 +75,13 @@ Each completed task delivers:
 5. Open approvals required before merge or release, if any.
 
 Do not claim a platform is supported unless it was run. Do not present benchmark numbers, store acceptance, or compliance outcomes as guaranteed. Do not invent API names, flags, or package versions; quote only what has been checked in the current official documentation.
+
+## Ultron routing contract
+
+**Choose this skill when:** the project is Flutter and uses Dart with Flutter's widget/rendering model, plugin ecosystem, platform channels, and build flavors. It owns Flutter architecture, state/navigation, rendering defects, native interop, plugin evaluation, and platform release readiness.
+
+**Choose `react-native-cross-platform-development` when:** the project is React Native and uses a shared JavaScript/TypeScript application with React Native's component and native-module model.
+
+**Handoff contract:** when evaluating cross-platform architecture, compare the actual project constraints and team skills rather than assuming either framework is universally better. If a Flutter app needs native Android or iOS code, hand the platform-specific task to the relevant native skill and retain responsibility for the Flutter channel/plugin contract.
+
+**Why the boundary exists:** Flutter and React Native solve similar product goals through different languages, rendering systems, plugin contracts, and debugging tools. Do not mix implementation guidance between them.

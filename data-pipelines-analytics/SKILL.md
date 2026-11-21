@@ -3,7 +3,7 @@ name: data-pipelines-analytics
 description: Use when designing, building, validating, or auditing analytics pipelines that ingest, normalize, join, or report on data pulled from external registries (public records, company or product registries, package or model registries, open government datasets).
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Data Pipelines Analytics
@@ -95,3 +95,9 @@ Do not present figures without the manifest. Do not describe output as authorita
 **Handoff contract:** publish a dataset contract with source and snapshot digests, row grain, schema version, key strategy, time semantics, quality metrics, known gaps, and refresh cadence. Receive from the modeling skill the required fields, metric definitions, and analytical quality thresholds. Preserve raw data and do not silently change metric meaning in the pipeline.
 
 **Why the boundary exists:** the pipeline is accountable for the lineage and quality of inputs; the modeling skill is accountable for the validity of conclusions drawn from those inputs.
+
+### Related boundary: general data-platform engineering
+
+For reusable ingestion, transformation, database schema, backfill, indexing, or query-performance work that is not specific to an external registry, route to data-pipelines-and-databases. This skill remains responsible for registry-specific source provenance, extraction permissions and limits, immutable snapshots, registry identifiers, and reconciliation to the publisher's totals.
+
+**Handoff to the general data-platform skill:** provide the source and snapshot contract, extraction timestamp, row grain, field mapping, identifier strategy, data-quality results, correction/deletion semantics, and refresh cadence. Require the general pipeline to preserve those fields and lineage. Return any storage or transformation defects that affect registry reconciliation for this skill to reassess.

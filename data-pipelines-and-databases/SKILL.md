@@ -3,7 +3,7 @@ name: data-pipelines-and-databases
 description: Use when designing, building, debugging, migrating, or reviewing data pipelines, ETL/ELT jobs, warehouse or lakehouse tables, database schemas, or query performance, and when a change could affect data correctness, freshness, lineage, or recoverability.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Data Pipelines And Databases
@@ -91,3 +91,13 @@ Every deliverable includes:
 8. Pending approvals, if any gate was reached.
 
 What not to do: do not hard-code dates or environment names without parameters; do not use `SELECT *` in production transformations feeding shared tables; do not mix schema changes and data backfills in one unreviewed step; do not hide errors with broad exception handling; do not leave unfinished-work markers or unverified thresholds in delivered artifacts.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is general data engineering across sources and storage systems: ingestion and transformation pipelines, data contracts, schema changes, database operations, indexing/query plans, backfills, quality checks, and pipeline reliability.
+
+**Choose `data-pipelines-analytics` when:** the source of truth is specifically an external registry and the deliverable is a reproducible analytics dataset with registry-aware extraction, source snapshots, entity resolution, and reconciliation against registry totals.
+
+**Handoff contract:** this skill supplies reusable pipeline and database architecture, storage contracts, migration/backfill controls, and operational reliability. The registry analytics skill supplies source-specific extraction, publisher/usage constraints, registry identifiers, and snapshot reconciliation. Return a normalized data contract before statistical analysis begins.
+
+**Why the boundary exists:** general data engineering provides the platform patterns; registry analytics adds source-specific provenance and reconciliation requirements that should not be generalized away.

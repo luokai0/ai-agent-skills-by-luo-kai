@@ -3,7 +3,7 @@ name: react-native-cross-platform-development
 description: Use when building, debugging, reviewing, or planning a React Native app for iOS and Android, including shared code architecture, native module bridging, platform-specific UI, performance tuning, and release preparation.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # React Native Cross Platform Development
@@ -83,3 +83,13 @@ Every completed task returns:
 6. Any approval still required before release (for example, permission changes or signing modifications).
 
 Do not claim cross-platform parity without evidence from both platforms. Do not state benchmark numbers, package versions, or compliance outcomes that were not directly observed or confirmed in current documentation.
+
+## Ultron routing contract
+
+**Choose this skill when:** the project uses React Native and a shared TypeScript/JavaScript codebase to target iOS and Android. It owns shared-versus-platform code boundaries, navigation/state, native module integration, device performance, and cross-platform release readiness.
+
+**Choose `android-platform-development` when:** the task is a native Android application or requires deep Android-specific implementation beyond the React Native integration seam.
+
+**Handoff contract:** describe the React Native version, native module boundary, Android/iOS behavior expected, and the shared API contract. The Android skill returns platform-specific implementation and verification; this skill validates that the native change does not break the shared application or iOS behavior.
+
+**Why the boundary exists:** shared application behavior and native platform behavior must be coordinated without pretending that one codebase removes platform-specific constraints.

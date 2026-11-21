@@ -3,7 +3,7 @@ name: unit-and-component-testing
 description: Use when writing, reviewing, or repairing unit tests or component tests for application code, including test design, isolation of dependencies, fixture strategy, coverage interpretation, and flaky-test diagnosis.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Unit And Component Testing
@@ -86,3 +86,13 @@ Return:
 2. A short summary table: behavior tested, substitution strategy, and result.
 3. The verification evidence listed above.
 4. A list of open findings: design issues, unverified API usage, and coverage gaps, each with a recommended next step.
+
+## Ultron routing contract
+
+**Choose this skill when:** testing a bounded unit or component in isolation, including functions, classes, modules, and components with their internal collaborators while external services are replaced by controlled fakes or mocks.
+
+**Choose `e2e-test-engineering` when:** the requirement depends on real process, network, storage, browser, identity, or multi-service behavior and must be proven as an end-to-end journey.
+
+**Handoff contract:** return deterministic local tests with clear assertions, fixtures, boundary coverage, and fast failure diagnostics. Escalate only the behaviors that depend on real system composition to E2E tests; do not copy every unit case into a slow browser journey.
+
+**Why the boundary exists:** isolated tests make local reasoning cheap and precise; end-to-end tests validate integration and user-visible outcomes. A healthy test strategy needs both layers.

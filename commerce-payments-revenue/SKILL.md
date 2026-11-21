@@ -3,7 +3,7 @@ name: commerce-payments-revenue
 description: Use when reconciling, validating, or reporting payment and revenue records sourced from external registries such as payment processors, marketplaces, app stores, or payout ledgers, including settlement matching, refund and chargeback handling, fee attribution, and revenue recognition inputs.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Commerce Payments Revenue
@@ -74,3 +74,13 @@ Produce one package containing:
 5. Approval requests for any Gate D actions, listed but not executed.
 
 Do not present unverified figures as final. Label provisional outputs clearly.
+
+## Ultron routing contract
+
+**Choose this skill when:** the main deliverable is a financial reconciliation or analytical view derived from payment processors, marketplaces, app stores, or payout-provider records: gross sales, fees, refunds, disputes, settlements, payouts, and net revenue.
+
+**Choose `saas-finance-commerce-automation` when:** the task changes or automates billing operations: subscriptions, plans, pricing, invoices, dunning, payment recovery, refunds/credits, deferred revenue schedules, or corrective actions across billing and ledger systems.
+
+**Handoff contract:** this skill supplies normalized transaction and settlement facts, reconciliation variances, event classifications, and source evidence. The automation skill uses those facts to prepare or execute an approved operational correction, then returns the resulting billing/ledger state for reconciliation. Never treat an unexplained reconciliation difference as permission to issue a refund or alter an invoice.
+
+**Why the boundary exists:** financial reporting establishes what happened to money; finance automation changes the systems and customer obligations that determine what happens next.

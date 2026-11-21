@@ -3,7 +3,7 @@ name: terraform-test-and-import
 description: Use when writing or running Terraform test suites (.tftest.hcl), adding assertions to modules, or bringing existing cloud resources under Terraform management through import blocks or state adoption.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Terraform Test And Import
@@ -75,3 +75,13 @@ Return:
 5. Tool versions used, with a note that version-specific syntax was checked against official docs for those versions.
 
 Do not include credentials, account identifiers beyond what is necessary, or unredacted state contents in deliverables.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is to verify Terraform behavior using native test files/assertions or to bring existing infrastructure under Terraform state management without recreating it.
+
+**Choose `terraform-iac-authoring` when:** the task is designing resources and modules, changing HCL architecture, defining variables and outputs, or refactoring configuration.
+
+**Handoff contract:** receive the expected resource addresses, configuration intent, provider/version constraints, and plan baseline. Return test outcomes, import mappings, state reconciliation evidence, and any configuration mismatch. Stop if import or test evidence indicates an unexpected create, replace, or destroy; send the configuration issue back to the authoring skill rather than applying it.
+
+**Why the boundary exists:** safely testing or adopting infrastructure is not the same as defining the infrastructure design, and neither grants permission to apply changes to shared environments.

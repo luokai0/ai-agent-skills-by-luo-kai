@@ -3,7 +3,7 @@ name: android-platform-development
 description: Use when building, debugging, reviewing, or releasing native Android apps or platform-facing Android code (Kotlin/Java, Gradle, Jetpack, manifest, permissions, lifecycle, storage, background work, release signing) and a decision on architecture, API usage, or verification is needed.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Android Platform Development
@@ -87,3 +87,13 @@ Do not:
 - Disable security features, certificate checks, or `android:allowBackup` decisions without approval and rationale.
 - Commit signing keys, credentials, or `local.properties` contents.
 - Suppress lint or test failures to achieve a green build.
+
+## Ultron routing contract
+
+**Choose this skill when:** the application is native Android and the work concerns Android project structure, lifecycle, Jetpack/platform APIs, permissions, storage, background execution, native UI, Gradle/build configuration, signing, or Android release behavior.
+
+**Choose `react-native-cross-platform-development` when:** the application is built primarily in React Native with a shared TypeScript/JavaScript codebase targeting both Android and iOS.
+
+**Handoff contract:** when React Native requires Android-specific native modules, manifests, permissions, Gradle configuration, lifecycle integration, or platform debugging, the React Native skill supplies the cross-platform requirement and this skill handles the native Android boundary. Return the native API behavior, version constraints, required platform changes, and device-level verification.
+
+**Why the boundary exists:** a React Native application may contain native Android code, but it is not the same architecture as a fully native Android application.

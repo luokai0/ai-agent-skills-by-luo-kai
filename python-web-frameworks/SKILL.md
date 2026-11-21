@@ -3,7 +3,7 @@ name: python-web-frameworks
 description: Use when choosing, structuring, building, or reviewing a Python web backend on frameworks such as Django, Flask, FastAPI, or Starlette, including routing, request handling, data access boundaries, configuration, and deployment readiness.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Python Web Frameworks
@@ -103,3 +103,13 @@ Obtain explicit approval before any of the following:
 - Do not store secrets in source, fixtures, or logs.
 - Do not put business logic in templates, serializers, or route decorators beyond thin delegation.
 - Do not claim compliance or security guarantees; report which controls were verified and which were not.
+
+## Ultron routing contract
+
+**Choose this skill when:** the target service is written in Python and the task concerns a Python web framework, application layout, request lifecycle, async behavior, persistence boundary, authentication wiring, error handling, testing, or production readiness.
+
+**Choose `backend-web-frameworks` when:** the framework decision or server architecture is language-neutral, the target language is not yet selected, or the task spans several backend stacks.
+
+**Handoff contract:** receive the required backend behavior, traffic and latency constraints, identity/data boundaries, and runtime target. Return the Python-specific framework/version choice, application structure, concurrency model, integration contracts, and runnable verification evidence. Do not present Python framework conventions as universal backend rules.
+
+**Why the boundary exists:** this skill supplies language-specific implementation expertise while preserving a common backend architecture vocabulary.

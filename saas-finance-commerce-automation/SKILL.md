@@ -3,7 +3,7 @@ name: saas-finance-commerce-automation
 description: Use when designing, auditing, or operating agent-driven workflows that touch SaaS billing, subscription lifecycle, invoicing, refunds, revenue reconciliation, or commerce order-to-cash data, where an agent reads or proposes changes to financial records.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # SaaS Finance Commerce Automation
@@ -95,3 +95,13 @@ Every run returns:
 - Do not hardcode plan prices, tax rates, or API field names from memory.
 - Do not send customer-facing messages about payment failures without approval of the wording and recipient list.
 - Do not reopen a closed accounting period.
+
+## Ultron routing contract
+
+**Choose this skill when:** the objective is to operate or improve subscription and commerce finance workflows: plans and prices, trial conversion, invoicing, dunning, payment recovery, refunds, credits, deferred revenue schedules, and billing-to-ledger reconciliation.
+
+**Choose `commerce-payments-revenue` when:** the task is to reconcile processor or marketplace exports and establish the factual transaction, fee, refund, dispute, settlement, payout, or net-revenue position before any corrective action.
+
+**Handoff contract:** receive a reconciled set of transaction IDs, settlement IDs, variance classifications, currencies, and source evidence. Propose the smallest correction, show affected customer/account counts, obtain the required approval, and verify the new billing/ledger state. Return the final transaction state to the reconciliation skill for independent confirmation.
+
+**Why the boundary exists:** an operational correction can create financial and customer impact. It must be based on reconciled facts and separately verified afterward.

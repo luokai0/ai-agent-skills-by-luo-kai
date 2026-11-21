@@ -3,7 +3,7 @@ name: quality-assurance
 description: Use when planning, executing, or reviewing quality assurance for authentication and security controls, including login, session, MFA, password reset, token handling, authorization checks, and security regression testing.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Quality Assurance
@@ -96,3 +96,13 @@ Do not include in the report: raw passwords, tokens, session identifiers, privat
 - Do not state tool flags, API names, or library versions from memory; verify them against current official documentation.
 - Do not run credential guessing against real accounts.
 - Do not mark a P1 case as passed without retest evidence.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is to design or execute planned functional and security-focused verification of authentication and authorization behavior: login, MFA, recovery, sessions, tokens, rate limits, lockout, and access-control boundaries. It owns test coverage, reproducible cases, expected outcomes, and release/sign-off evidence.
+
+**Choose `reliability-and-debugging` when:** a specific authentication or authorization defect is already observed and the main task is reproducing it, tracing the root cause, repairing the implementation, and proving the security properties remain intact.
+
+**Handoff contract:** QA supplies a failing case with setup, exact steps, expected/actual result, affected identity state, and severity. Debugging returns the root cause, minimal fix, regression test, and evidence that no security control was weakened. QA then reruns the relevant suite and records the disposition.
+
+**Why the boundary exists:** testing establishes whether behavior is correct; debugging explains and repairs why it is not. A passing test after a security downgrade is never an acceptable result.

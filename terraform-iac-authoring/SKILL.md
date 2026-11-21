@@ -3,7 +3,7 @@ name: terraform-iac-authoring
 description: Use when writing, refactoring, reviewing, or planning Terraform configurations (HCL) for cloud infrastructure, including module design, state-safe changes, plan review, and provider upgrades.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Terraform IaC Authoring
@@ -97,3 +97,13 @@ Every completed change returns:
 - Do not invent provider arguments, module sources, or version numbers. Verify them.
 - Do not merge modules that serve different ownership or change cadence.
 - Do not claim a configuration is compliant, secure, or cost-optimal. Report what was checked and what was not.
+
+## Ultron routing contract
+
+**Choose this skill when:** the deliverable is authoring or changing Terraform configuration: HCL resources, modules, variable/output contracts, providers, state references, composition, refactoring, and review of plan changes.
+
+**Choose `terraform-test-and-import` when:** the task is writing Terraform native tests and assertions, validating behavior, or importing existing infrastructure into state without recreating it.
+
+**Handoff contract:** this skill supplies the intended resource/module design and expected plan. The test/import skill returns test coverage, import mapping, state-address reconciliation, and evidence that adoption will not create or destroy unintended resources. Feed any required HCL corrections back here. Do not use import as a substitute for designing the desired configuration.
+
+**Why the boundary exists:** authoring defines the desired infrastructure; tests and import workflows prove that the configuration behaves as intended and safely adopts existing resources.

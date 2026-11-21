@@ -3,7 +3,7 @@ name: llm-benchmark-harness
 description: Use when designing, running, or auditing an evaluation harness that compares LLMs or agent configurations on a fixed task suite, including dataset curation, prompt and tool setup, scoring, reproducibility checks, and reporting results with uncertainty.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # LLM Benchmark Harness
@@ -88,3 +88,13 @@ The final report must contain, in this order:
 8. Artifact paths: config files, raw outputs, scorer, and report.
 
 Do not state that a model is "safe," "compliant," "accurate in production," or "best overall." Report only what the held-out evaluation measured under the recorded conditions.
+
+## Ultron routing contract
+
+**Choose this skill when:** Ultron needs a repeatable evaluation instrument: curated task cases, execution harness, deterministic environment controls, graders, hidden holdouts, scoring, and benchmark reports for comparing models or agent configurations.
+
+**Choose `experiment-tracking` when:** the evaluation machinery already exists and the need is to organize a series of controlled changes, preserve run metadata, compare variants, and decide which configuration performed better.
+
+**Handoff contract:** this skill returns a versioned benchmark contract, dataset and grader identities, execution conditions, per-case scores, uncertainty, failure categories, and known validity limits. The experiment tracker records each candidate configuration against that stable measurement setup. A benchmark score must not be presented as universal capability or safety certification.
+
+**Why the boundary exists:** measurement design must remain stable enough to compare experiments, while experiment management must preserve the context behind each result.

@@ -3,7 +3,7 @@ name: agent-memory-persistence
 description: Use when an AI agent or automation must store, retrieve, update, or expire information across sessions, runs, or tasks, including designing memory schemas, deciding what to persist, and auditing stored memory for accuracy, privacy, and staleness.
 author: Luo Kai
 provenance: original
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Memory Persistence
@@ -117,3 +117,12 @@ Use a two-phase write for consequential changes: prepare a diff, run privacy and
 
 Test cross-user and tenant isolation, expired facts, corrections, contradictory sources, poisoned instructions, duplicate writes, interrupted migrations, deletion propagation, and restore. A successful vector search is not proof of a correct memory result.
 
+## Ultron routing contract
+
+**Choose this skill when:** deciding what durable information an agent should retain beyond the active task or context window, how it is classified and stored, when it is retrieved, how it is corrected or superseded, and how it expires or is deleted.
+
+**Choose `session-continuity-recall` when:** the immediate objective is to resume a particular interrupted or previous session: reconstruct decisions, completed steps, pending work, in-flight operations, and current reality before continuing.
+
+**Handoff contract:** memory supplies authoritative, scoped, source-attributed facts and preferences, with freshness and deletion status. Session recall uses those as evidence alongside task logs and artifacts, but must verify current state and must not replay side effects merely because memory says they were planned. Return newly confirmed durable decisions to the memory lifecycle only through its write policy.
+
+**Why the boundary exists:** durable memory answers what should be remembered; session continuity answers what happened in this run and what is safe to do next.
