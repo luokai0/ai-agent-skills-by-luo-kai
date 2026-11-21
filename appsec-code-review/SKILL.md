@@ -3,7 +3,7 @@ name: appsec-code-review
 description: Use when reviewing application source code, pull requests, diffs, or modules for security and authentication flaws, including session handling, access control, credential storage, token validation, and input handling in web and API services.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Appsec Code Review
@@ -81,3 +81,13 @@ Produce a report with these sections in order:
 5. Approval requests: any actions that need explicit user approval before proceeding.
 
 Recommended fixes must be specific to the code shown and must not introduce new unverified APIs. Do not declare the code free of vulnerabilities.
+
+## Ultron routing contract
+
+**Choose this skill when:** reviewing application code for security defects at identity and data trust boundaries, especially authentication, authorization, session/token lifecycle, secrets, input validation, output encoding, cryptographic API use, and insecure shipped defaults.
+
+**Choose software-quality-and-security-review when:** the requested review spans broader correctness, reliability, maintainability, design quality, and security rather than being primarily an application-security assessment.
+
+**Handoff contract:** this skill returns security-specific findings, exploit preconditions, affected principals/resources, data exposure or privilege impact, and focused regression cases. The broader review skill may integrate those findings with non-security defects but must preserve their severity and evidence.
+
+**Why the boundary exists:** security review needs threat-oriented reasoning and abuse cases; broad code review also evaluates correctness and maintainability. A general review must not dilute a security-critical finding.

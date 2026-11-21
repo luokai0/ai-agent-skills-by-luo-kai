@@ -3,7 +3,7 @@ name: aws-agentcore-and-mcp
 description: Use when designing, building, deploying, or troubleshooting AI agents on AWS AgentCore or connecting agents to tools and data through the Model Context Protocol (MCP), including tool server exposure, auth boundaries, runtime configuration, and agent observability.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # AWS AgentCore and MCP
@@ -91,3 +91,13 @@ Every completed engagement delivers:
 6. Open risks and the named approver for each deployment stage.
 
 What not to do: do not grant wildcard permissions, do not expose unauthenticated tool endpoints, do not place secrets in tool descriptions or prompts, do not auto-approve writes, do not promote untested configurations, and do not state performance, cost, or compliance outcomes without measured evidence or an authoritative source.
+
+## Ultron routing contract
+
+**Choose this skill when:** the agent runtime or tool deployment specifically uses AWS AgentCore and needs AWS service architecture, IAM/credential scoping, gateway integration, deployment, operations, or AgentCore-specific failure diagnosis.
+
+**Choose mcp-and-agent-tooling when:** the unresolved problem is the portable MCP protocol and tool layer itself: schemas, resources, prompts, client/server interoperability, and tool result contracts across hosting platforms.
+
+**Handoff contract:** this skill maps the portable MCP capability contract onto AWS AgentCore's gateway/runtime/identity model and returns the AWS resource, policy, deployment, and smoke-test evidence. The MCP skill defines protocol-level behavior; this skill owns AWS-specific integration and version-sensitive service configuration.
+
+**Why the boundary exists:** MCP is a cross-platform protocol; AgentCore is a particular hosting and integration environment. Do not present AWS-specific APIs or assumptions as universal MCP behavior.

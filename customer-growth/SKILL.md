@@ -3,7 +3,7 @@ name: customer-growth
 description: Use when planning, diagnosing, or executing customer acquisition, activation, retention, expansion, or referral work for a product or service business, including funnel analysis, churn investigation, pricing-tier and onboarding changes, and growth experiment design.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Customer Growth
@@ -88,3 +88,13 @@ Quality check before delivery: every finding traces to a stated source; no hypot
 - Do not recommend discounts or dark patterns (hidden fees, forced cancellation friction) as retention levers.
 - Do not fabricate benchmark figures for "industry averages"; request the user's own history or cite a verified source.
 - Do not expand scope into unrelated brand, product roadmap, or hiring decisions without flagging the boundary.
+
+## Ultron routing contract
+
+**Choose this skill when:** turning a customer growth objective into a measurable strategy and experiment plan across acquisition, activation, retention, expansion, and referral.
+
+**Choose growth-marketing-customer-ops when:** the task is operationally reconciling and enriching customer/company records with external registry data, defining registry-derived segments or suppression lists, and maintaining provenance for those fields.
+
+**Handoff contract:** this skill defines the growth hypothesis, target cohort, success metric, experiment design, and decision threshold. The customer-ops skill returns the available verified attributes, match confidence, status changes, and segment limitations. Do not treat a registry match as proof of customer intent or as permission to contact someone.
+
+**Why the boundary exists:** growth strategy decides what should be tested; customer operations determines which records can be reliably and lawfully used to implement that test.

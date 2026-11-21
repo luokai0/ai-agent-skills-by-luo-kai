@@ -3,7 +3,7 @@ name: mcp-and-agent-tooling
 description: Use when designing, implementing, reviewing, or debugging Model Context Protocol (MCP) servers, clients, or tool definitions, or when wiring LLM agents to external tools, resources, and prompts in a programming project.
 author: Luo Kai
 provenance: original
-version: 1.2.1
+version: 1.2.2
 ---
 
 # MCP and Agent Tooling
@@ -92,5 +92,9 @@ Build compatibility tests for protocol negotiation, capability changes, malforme
 **Choose `mcp-server-hardening` when:** an MCP server already exists and the task is to assess or improve its security posture: authorization boundaries, transport/authentication, input validation, secret handling, SSRF/path controls, output trust, rate limits, and security verification.
 
 **Handoff contract:** the integration skill supplies a complete inventory of tools/resources/prompts, schemas, side effects, identities, destinations, and expected behavior. The hardening skill returns threat findings, exploitability evidence, required controls, negative tests, and release blockers. After fixes, rerun the integration contract tests as well as security tests.
+
+### Related boundary: AWS AgentCore integration
+
+When MCP capabilities are hosted or consumed through AWS AgentCore, route the AWS-specific runtime, gateway, IAM, deployment, and operational configuration to aws-agentcore-and-mcp. This skill remains responsible for the portable MCP contract, tool/resource/prompt behavior, and interoperability tests. Require the AWS integration to preserve the declared MCP schemas, authorization assumptions, and result semantics.
 
 **Why the boundary exists:** interoperability establishes that a server behaves correctly; hardening establishes that it behaves safely under hostile or malformed conditions. Neither test suite substitutes for the other.

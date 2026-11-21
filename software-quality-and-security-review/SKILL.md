@@ -3,7 +3,7 @@ name: software-quality-and-security-review
 description: Use when reviewing source code, pull requests, diffs, or modules in any programming language for correctness, maintainability, and security defects, and when producing a prioritized, evidence-backed review report.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Software Quality And Security Review
@@ -79,3 +79,13 @@ Produce one report with these sections, in order:
 6. **Verification performed:** what was run, what was only read.
 
 Do not include praise, filler, or compliance claims. Do not paste secrets. Do not state that a fix is verified unless it was tested.
+
+## Ultron routing contract
+
+**Choose this skill when:** reviewing a change or codebase across the combined dimensions of correctness, reliability, maintainability, design quality, and security, with prioritized findings and concrete fix direction.
+
+**Choose appsec-code-review when:** the central question is whether authentication, authorization, secrets, session/token handling, or data trust boundaries contain security defects requiring threat-oriented analysis.
+
+**Handoff contract:** request the security skill's findings with affected code paths, exploit preconditions, privilege/data impact, and regression cases. Integrate them into the broader review without downgrading security severity. If the review discovers a security-only issue, route the deeper analysis rather than improvising an exploitability claim.
+
+**Why the boundary exists:** broad quality review provides system-level change assessment; focused AppSec review provides deeper security reasoning at trust boundaries.

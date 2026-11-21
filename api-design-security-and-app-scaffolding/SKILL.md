@@ -3,7 +3,7 @@ name: api-design-security-and-app-scaffolding
 description: Use when designing or reviewing an HTTP API, generating a new application scaffold, or hardening an existing service's authentication, authorization, input validation, and configuration before code is written or merged.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # API Design, Security, and App Scaffolding
@@ -82,3 +82,13 @@ Deliver exactly these items:
 5. Security notes: assumptions, decision gates triggered and their approval status, open risks with severity, and items requiring verification against current official documentation.
 
 Do not present the output as production-ready until every verification check is either passed with evidence or listed as an open risk with an owner.
+
+## Ultron routing contract
+
+**Choose this skill when:** the deliverable combines an HTTP API contract with a secure application skeleton that implements it. It owns resource and endpoint shape, request/response conventions, initial application structure, and the security posture of that contract and scaffold.
+
+**Choose rest-api-design-security when:** the API already exists or the task is specifically to assess its HTTP/JSON security boundary: authentication, authorization, validation, response shaping, rate limits, transport, and logging.
+
+**Handoff contract:** provide the API schema, trust boundaries, identity assumptions, scaffold implementation, and known risks. The REST security skill returns prioritized boundary findings and controls; this skill integrates required contract/scaffold changes and reruns the end-to-end API contract checks.
+
+**Why the boundary exists:** creating a usable API skeleton and independently reviewing an API's security properties are related but different deliverables.

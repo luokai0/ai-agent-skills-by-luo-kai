@@ -3,7 +3,7 @@ name: document-authoring-publishing
 description: Use when preparing documentation, README files, changelogs, model or dataset cards, or package metadata for release to an external registry or documentation host, including checking that published text matches the artifact version and passes registry rules.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Document Authoring Publishing
@@ -85,3 +85,13 @@ Return to the requester:
 6. A pending-approval section listing each gated action, its reversibility, and its external impact.
 
 Do not state that the artifact is compliant, secure, or certified. Describe only what was checked and how.
+
+## Ultron routing contract
+
+**Choose this skill when:** producing version-aligned documentation or metadata for an artifact and preparing or performing its approved publication to a registry, documentation host, package index, container/model hub, or artifact repository.
+
+**Choose technical-documentation-ops when:** the work is the broader lifecycle of technical documentation: deciding what documentation is needed, maintaining runbooks/ADRs/API guides, validating content against a running system, and keeping documents current.
+
+**Handoff contract:** the documentation-ops skill supplies verified source content, version identity, review status, and internal publication policy. This skill packages the external-facing document set with the artifact version, checks registry/host-specific publication requirements, obtains the required approval, and verifies the published result.
+
+**Why the boundary exists:** maintaining trustworthy documentation and publishing documentation alongside an artifact have different release and external-impact controls.

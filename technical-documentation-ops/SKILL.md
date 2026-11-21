@@ -3,7 +3,7 @@ name: technical-documentation-ops
 description: Use when creating, restructuring, auditing, or maintaining technical documentation for software systems, APIs, runbooks, architecture records, or developer onboarding, and when documentation must stay accurate against code, configuration, or operational reality.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Technical Documentation Ops
@@ -85,3 +85,13 @@ Do not deliver a document with unresolved `UNVERIFIED` items in any section pres
 - Do not duplicate content across documents; link to a single authoritative page.
 - Do not change published URLs or delete pages without Gate E approval.
 - Do not add generic introductions, filler, or unverified best-practice claims.
+
+## Ultron routing contract
+
+**Choose this skill when:** managing the full lifecycle of technical documentation: scope, authoring, source verification, consistency, maintenance, runbooks, ADRs, API references, changelogs, and documentation quality across a product or engineering system.
+
+**Choose document-authoring-publishing when:** documentation must be packaged and published as part of an artifact or external registry release, with version alignment and publication approval.
+
+**Handoff contract:** provide the verified document content, version, source references, review status, and unresolved caveats. The publishing skill returns the published URL/version, artifact linkage, and publication evidence. Reconcile the published copy against the approved source and update the documentation inventory.
+
+**Why the boundary exists:** technical documentation operations own accuracy over time; the publishing skill owns the controlled external release of a particular document set.

@@ -3,7 +3,7 @@ name: market-analysis
 description: Use when a user asks for analysis of a financial market, asset, sector, or trading setup, including price and volume behavior, macro or sector context, positioning, or a written market view that must be checked against data before use.
 author: Luo Kai
 provenance: original
-version: 1.1.1
+version: 1.1.2
 ---
 
 # Market Analysis
@@ -85,5 +85,9 @@ Do not: present forecasts as certainties, omit the falsification conditions, use
 **Choose `finance-market-analysis` when:** the question requires issuer-level financial statements, regulatory filings, corporate events, identifier reconciliation, accounting normalization, peer fundamentals, or valuation calculations grounded in reported records.
 
 **Handoff contract:** receive verified issuer/instrument identifiers, filing periods, accounting basis, sourced fundamental metrics, and event dates from the finance skill when those facts matter. Return a conditional market view with horizon, observations, assumptions, risks, and explicit invalidation conditions. Never convert a market scenario into a guaranteed return or personalized order instruction.
+
+### Related boundary: commercial market intelligence
+
+For competitor landscapes, vendor feature comparisons, commercial pricing and packaging, market sizing, or product positioning in data/AI markets, route to market-and-competitive-intelligence. This skill remains responsible for financial instrument and sector behavior over a defined horizon: price, volume, volatility, spreads, positioning, and conditional market theses. Keep commercial facts separate from traded-market observations.
 
 **Why the boundary exists:** market behavior and issuer fundamentals inform each other, but they are different evidence classes with different time horizons and failure modes.

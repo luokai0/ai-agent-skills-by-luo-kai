@@ -3,7 +3,7 @@ name: creative-media-generation
 description: Use when producing, transforming, or integrating images, SVG graphics, icons, illustrations, animations, video, or audio assets into a frontend web application, including generating assets with external AI tools and optimizing them for delivery.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Creative Media Generation
@@ -81,3 +81,13 @@ Return:
 5. Open items requiring approval, listed explicitly.
 
 Do not include temporary or unreviewed assets, unmeasured claims, or integration code that has not been rendered and checked.
+
+## Ultron routing contract
+
+**Choose this skill when:** creating or integrating particular media assets for a frontend project: images, vectors, icons, illustrations, CSS/SVG/canvas animation, short loops, audio cues, optimization, accessibility, and component wiring.
+
+**Choose generative-media-production when:** the work requires a complete production workflow from brief and model selection through generation runs, rights/provenance review, packaging, and delivery beyond the frontend integration boundary.
+
+**Handoff contract:** receive approved creative direction, rights/consent limits, asset purpose, target formats, and acceptance criteria. Return the final optimized asset, source/provenance reference, dimensions, accessibility text, integration instructions, and performance impact. If new generation requires an external model or service, follow the production skill's approval and provenance controls.
+
+**Why the boundary exists:** asset implementation in a frontend is not the same as governing the whole media-generation production process.

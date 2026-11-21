@@ -3,7 +3,7 @@ name: scientific-research-synthesis
 description: Use when collecting, screening, and synthesizing scientific studies, trial records, or preprints from external registries and bibliographic databases into a sourced evidence summary, review input, or research brief.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Scientific Research Synthesis
@@ -76,3 +76,13 @@ Do not:
 - Claim completeness of a search.
 - Imply regulatory approval or clinical endorsement.
 - Fabricate effect sizes, benchmark results, or version numbers.
+
+## Ultron routing contract
+
+**Choose this skill when:** conducting a structured scientific literature or registry review: framing a research question, designing searches, screening sources, extracting findings, appraising study quality, and synthesizing results with traceable provenance.
+
+**Choose scientific-evidence-review when:** the task is to test a specific claim or artifact against the evidence it cites, rather than discover and synthesize a whole body of research.
+
+**Handoff contract:** this skill supplies the search strategy, inclusion/exclusion criteria, source log, extracted findings, and synthesis. The evidence-review skill returns claim-level support and limitations for important conclusions; integrate those verdicts without overstating certainty or implying causal conclusions unsupported by study design.
+
+**Why the boundary exists:** synthesis answers what the body of evidence suggests; evidence review tests whether an individual claim follows from its stated support.

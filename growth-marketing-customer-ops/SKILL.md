@@ -3,7 +3,7 @@ name: growth-marketing-customer-ops
 description: Use when a growth marketing or customer operations task requires matching, enriching, validating, or segmenting customer or prospect records against external registries (business registers, licensing bodies, identifier registries, partner directories), or when registry data drives campaign eligibility, suppression, or account routing.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Growth Marketing Customer Ops
@@ -76,3 +76,13 @@ Return:
 5. Open items requiring approval, listed by gate.
 
 Do not state that a segment is compliant or lawful. State only what was checked and what remains for review.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task concerns customer/company record matching to external registries, enrichment, status verification, segmentation, suppression, or reconciliation of registry-derived attributes for marketing operations.
+
+**Choose customer-growth when:** the central question is which growth lever to test, how to define a cohort and success metric, or whether an acquisition/activation/retention/expansion experiment should be prioritized.
+
+**Handoff contract:** receive the proposed cohort definition and minimum attributes from the growth strategy skill. Return source provenance, match method and confidence, current status, freshness, permitted-use constraints, and records that remain ambiguous. The growth skill must incorporate uncertainty and not assume enrichment data proves consent or intent.
+
+**Why the boundary exists:** customer data operations supplies trustworthy inputs; growth strategy decides how to use those inputs to learn and improve outcomes.

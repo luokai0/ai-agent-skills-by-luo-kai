@@ -3,7 +3,7 @@ name: sql-and-data-performance
 description: Use when diagnosing, writing, or reviewing SQL queries, schema indexes, or data-processing jobs where latency, cost, lock contention, or throughput must be measured and improved without changing query results.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # SQL and Data Performance
@@ -71,3 +71,13 @@ Return a report containing, in order:
 6. Open items: assumptions not yet validated and approvals still required.
 
 Do not include unmeasured speedup estimates, do not recommend production DDL without the approval gate above, and do not claim the change is safe for all parameter values unless those values were tested.
+
+## Ultron routing contract
+
+**Choose this skill when:** optimizing an existing SQL workload for speed, throughput, resource consumption, or cost while preserving its result semantics.
+
+**Choose data-analysis-sql-and-databases when:** the unresolved work is defining the analytical question, metric, grain, joins, aggregation, cohort, or report rather than tuning a known query.
+
+**Handoff contract:** receive the canonical query, expected result semantics, representative parameters, data snapshot or equivalent state, and performance objective. Return the optimized query/plan, index or configuration rationale, measured before/after latency and resource use, and proof that outputs remain equivalent. Never alter metric definitions to make a query faster.
+
+**Why the boundary exists:** query optimization is only valid when the original analytical meaning remains intact.

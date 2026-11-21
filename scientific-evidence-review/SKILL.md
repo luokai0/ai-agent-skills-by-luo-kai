@@ -3,7 +3,7 @@ name: scientific-evidence-review
 description: Use when assessing whether a paper, benchmark result, model card, experiment report, or dataset claim in data science or AI is supported by its evidence, before relying on it for a decision, product choice, or publication.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Scientific Evidence Review
@@ -72,3 +72,13 @@ Return a single review containing:
 6. Overall confidence (high, medium, low) with one sentence justifying it.
 
 Do not: invent metrics, cite results not in the artifact, present verdicts as compliance or safety certification, or send any part of the review outside the requester's channel without approval.
+
+## Ultron routing contract
+
+**Choose this skill when:** evaluating whether a specific scientific, technical, or AI claim is actually supported by the evidence presented in a paper, benchmark, model card, experiment report, or analytical artifact.
+
+**Choose scientific-research-synthesis when:** the task is to discover and screen a body of literature or registry sources, extract findings, appraise evidence across studies, and produce a traceable synthesis.
+
+**Handoff contract:** receive the exact claim, cited source passages, methods, data, and reported uncertainty. Return a claim-by-claim verdict, missing evidence, methodological weaknesses, alternative explanations, and confidence limits. A research synthesis can use this review to appraise individual sources before combining them.
+
+**Why the boundary exists:** assessing a known claim is not the same as discovering the literature needed to answer a broader question.

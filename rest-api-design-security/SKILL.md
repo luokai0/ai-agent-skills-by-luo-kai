@@ -3,7 +3,7 @@ name: rest-api-design-security
 description: Use when designing, reviewing, or hardening REST API endpoints for authentication, authorization, input validation, rate limiting, data exposure, or transport security before implementation or release.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # REST API Design Security
@@ -81,3 +81,13 @@ Produce a single report containing:
 6. Version-sensitive items flagged for documentation verification.
 
 Do not: approve a design on partial inventory; use live third-party systems for testing; propose security through obscurity (hidden routes, unguessable paths) as the control; state that an API is "secure" or "compliant" as a conclusion; or omit negative results.
+
+## Ultron routing contract
+
+**Choose this skill when:** the task is to secure or review an existing HTTP/JSON REST API boundary, especially resource authorization, authentication, validation, response exposure, error behavior, rate limits, transport, and API-specific logging.
+
+**Choose api-design-security-and-app-scaffolding when:** the work starts with a new API or requires a complete API contract plus an application skeleton that implements it.
+
+**Handoff contract:** return endpoint/resource findings, abuse cases, authorization and validation requirements, safe response rules, rate-limit policy, and negative security tests. The scaffold skill owns implementation of any required new application structure; this skill independently verifies the resulting API boundary.
+
+**Why the boundary exists:** a secure REST API review should not silently become a full application scaffolding project, and a scaffold generator should not be treated as independent security assurance.

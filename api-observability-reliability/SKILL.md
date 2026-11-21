@@ -3,7 +3,7 @@ name: api-observability-reliability
 description: Use when designing, auditing, or troubleshooting observability and reliability for APIs that depend on, publish to, or mirror external registries (package indexes, container registries, schema or API catalogs, plugin marketplaces).
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Api Observability Reliability
@@ -77,3 +77,13 @@ Produce:
 6. Open items list, including every version-sensitive detail still awaiting confirmation against official documentation.
 
 Do not claim compliance certification, guaranteed availability, or performance figures that were not measured. Do not change production registry configuration, credentials, or publish behaviour without explicit approval.
+
+## Ultron routing contract
+
+**Choose this skill when:** operating the reliability of an API integration with an external registry or service: request/response telemetry, rate limits, retries, timeouts, circuit breaking, graceful degradation, and evidence that the integration is healthy.
+
+**Choose sre-observability-and-incidents when:** the problem concerns service-wide SLOs, platform telemetry, alert ownership, incident command, mitigation, communications, or post-incident learning across multiple services.
+
+**Handoff contract:** this skill supplies API-specific request metrics, upstream error classes, retry and latency distributions, dependency health, and integration failure modes. The SRE skill uses those signals in service-level objectives and incident timelines, then returns operational thresholds and response ownership.
+
+**Why the boundary exists:** an API client can be healthy or unhealthy independently of the wider service; service-level reliability needs a broader view and incident process.

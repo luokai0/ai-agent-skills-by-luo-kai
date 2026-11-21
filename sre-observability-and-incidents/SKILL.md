@@ -3,7 +3,7 @@ name: sre-observability-and-incidents
 description: Use when designing or reviewing observability (metrics, logs, traces, alerts, SLOs, dashboards) or when triaging, coordinating, mitigating, or writing up production incidents for cloud-hosted services.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # SRE Observability and Incidents
@@ -82,3 +82,13 @@ Return one of the following, depending on request:
 - **Postmortem:** Summary, customer impact, detection and response analysis, contributing factors (systemic, not individual), what went well, action items with owners and priority, and a statement of confidence in the root cause.
 
 Do not include fabricated metrics, unverified tool behavior, or compliance claims. Mark every unverified item explicitly.
+
+## Ultron routing contract
+
+**Choose this skill when:** designing or operating production observability and incident response across services: SLIs/SLOs, alerting, dashboards, incident triage, mitigation, communication, and postmortems.
+
+**Choose api-observability-reliability when:** the work is limited to a specific API dependency or external registry integration and needs endpoint-level retries, rate-limit behavior, timeout policy, or upstream health measurement.
+
+**Handoff contract:** receive API-level error/latency/availability evidence and dependency behavior. Incorporate it into service SLOs and incident timelines without confusing upstream failure with local service failure. Return explicit alert thresholds, escalation owner, and incident actions to the API integration owner.
+
+**Why the boundary exists:** API dependency health is one input to service reliability; it is not a replacement for system-level SLOs and incident management.

@@ -3,7 +3,7 @@ name: generative-media-production
 description: Use when producing images, audio, or video with generative models, especially when pulling checkpoints, LoRAs, voice models, or other weights from external registries and must verify licensing, provenance, and output quality before delivery.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Generative Media Production
@@ -74,3 +74,13 @@ Each delivery contains:
 4. A short notes file stating known limitations and any unresolved risks.
 
 Do not deliver files lacking a manifest, and do not state that outputs are free of third-party rights. Mark any software or model version detail not verified against current official documentation as "to verify."
+
+## Ultron routing contract
+
+**Choose this skill when:** producing a complete generated-media deliverable from brief through model/tool selection, generation, review, provenance, packaging, and delivery for marketing, editorial, client, or internal use.
+
+**Choose creative-media-generation when:** the task is creating, editing, optimizing, or integrating specific media assets into a frontend project, including SVG/CSS/canvas animation and component-level accessibility/performance.
+
+**Handoff contract:** this skill supplies the approved brief, rights/consent constraints, output specifications, selected asset versions, provenance, and quality acceptance criteria. The creative-asset skill returns optimized formats, dimensions, accessibility metadata, integration instructions, and frontend performance checks. Keep source-generation provenance attached to the final asset.
+
+**Why the boundary exists:** end-to-end media production governs the deliverable and its provenance; frontend asset integration governs how an approved asset behaves inside a product.

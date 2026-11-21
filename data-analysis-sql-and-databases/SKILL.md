@@ -3,7 +3,7 @@ name: data-analysis-sql-and-databases
 description: Use when writing, reviewing, or debugging SQL queries, designing analytical datasets, validating database-backed metrics, or answering business questions from relational data stores.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Data Analysis: SQL and Databases
@@ -79,3 +79,13 @@ Do not:
 - Present correlation as causation.
 - Round away material uncertainty.
 - Invent table names, column names, or dialect functions. Confirm each one from the schema.
+
+## Ultron routing contract
+
+**Choose this skill when:** the objective is answering an analytical question from relational databases or warehouses through query design, joins, aggregation, metric definitions, data-quality checks, and interpretation.
+
+**Choose sql-and-data-performance when:** the primary problem is query latency, throughput, resource use, execution plans, index strategy, or cost, and semantic correctness must be preserved while tuning.
+
+**Handoff contract:** this skill supplies the intended metric, grain, population filters, expected result semantics, and representative query. The performance skill returns an equivalent optimized query and before/after measurements; this skill verifies that the optimized result is semantically identical and that no cohort or denominator changed.
+
+**Why the boundary exists:** a fast query that answers the wrong question is a failure. Analytical meaning and performance optimization require separate acceptance checks.

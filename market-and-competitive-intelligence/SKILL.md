@@ -3,7 +3,7 @@ name: market-and-competitive-intelligence
 description: Use when researching markets, competitors, pricing, vendor positioning, or AI/data product landscapes and need a sourced, dated, decision-ready brief with explicit confidence levels.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Market And Competitive Intelligence
@@ -77,3 +77,13 @@ The brief contains, in order:
 9. Verification log: which checks passed, which items are pending re-verification.
 
 State what not to do: do not treat marketing claims as capability proof, do not present estimates as measured figures, do not omit dates, and do not describe a competitor's internal intent as established fact.
+
+## Ultron routing contract
+
+**Choose this skill when:** researching a commercial market and its competitive landscape: market sizing, vendor positioning, features, pricing, packaging, integrations, customer segments, public roadmap signals, and opportunity/threat mapping in data and AI domains.
+
+**Choose market-analysis when:** the subject is a financial instrument, asset set, or sector and the question concerns price, volume, volatility, spreads, positioning, term structure, or a conditional market/trading thesis over a stated horizon.
+
+**Handoff contract:** this skill supplies sourced company/product identities, dated competitive facts, pricing observations, market structure assumptions, and uncertainty. The market-analysis skill may use relevant public sector or macro context, but must keep commercial positioning distinct from market-price evidence and must state the time horizon and invalidation conditions.
+
+**Why the boundary exists:** commercial competition and financial market behavior can influence each other, but they require different data, methods, and conclusions.

@@ -3,7 +3,7 @@ name: security-governance
 description: Use when defining, reviewing, or auditing security policies, access control models, authentication standards, secrets handling, or security exception processes for a system, team, or organization, and when translating security requirements into enforceable controls with owners, evidence, and review cadence.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Security Governance
@@ -100,3 +100,13 @@ Do not present the report as a compliance certification or assurance statement. 
 - Do not invent tool names, configuration keys, or version numbers.
 - Do not perform changes to live systems during a governance review.
 - Do not merge distinct requirements to shorten the register.
+
+## Ultron routing contract
+
+**Choose this skill when:** defining the organization's security policy and control system: control ownership, requirements, standards, exception handling, access reviews, security decision rights, and evidence expectations.
+
+**Choose cloud-security-and-compliance when:** assessing an actual cloud environment's configuration, identifying technical misconfigurations, mapping them to controls, and preparing remediation/evidence packages.
+
+**Handoff contract:** governance supplies the approved control objective, owner, risk tolerance, exception process, and required evidence. Cloud review returns observed configuration, affected resources, technical findings, remediation options, and evidence gaps. Governance decides whether an exception is acceptable; it does not replace the technical validation.
+
+**Why the boundary exists:** policy defines what must be true and who owns it; cloud assessment determines what is actually configured and where it fails.

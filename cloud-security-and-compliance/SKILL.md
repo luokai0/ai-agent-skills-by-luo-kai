@@ -3,7 +3,7 @@ name: cloud-security-and-compliance
 description: Use when assessing, hardening, or auditing cloud accounts, tenants, or workloads for security posture and compliance control mapping, including IAM review, network exposure, encryption, logging, and evidence collection for frameworks such as CIS benchmarks, SOC 2, ISO 27001, or PCI DSS.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Cloud Security And Compliance
@@ -93,3 +93,13 @@ The output is a single report containing, in order:
 Do not include raw secrets, full access keys, or unredacted personal data in the report; reference their location instead.
 
 Do not claim the environment is "secure" or "compliant." State findings and control status only.
+
+## Ultron routing contract
+
+**Choose this skill when:** reviewing a real cloud environment for security configuration defects and mapping technical findings to the organization's control framework, with remediation and evidence planning.
+
+**Choose security-governance when:** the task is to define security requirements, control ownership, access review policy, exception handling, or organization-wide security standards rather than inspect a particular environment.
+
+**Handoff contract:** receive the control objectives, approved risk thresholds, and evidence requirements from governance. Return the resource-level observations, technical proof, severity, remediation plan, and any control that cannot be evaluated. Send unresolved policy conflicts or exception requests back to governance with scope and impact.
+
+**Why the boundary exists:** a cloud configuration scan cannot decide the organization's policy, and a written policy cannot prove that a cloud resource is configured correctly.
