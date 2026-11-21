@@ -31,7 +31,7 @@ Assumptions must be written at the top of the draft under "Assumptions" with the
 1. **Classify the document** by type (reference, how-to, explanation, runbook, decision record). Each type has one job. Do not mix a tutorial with a reference table.
 2. **Build an evidence list.** Map every factual claim to a source: a file path, a command output, a test, or a stakeholder confirmation. Claims with no source are removed or marked `UNVERIFIED`.
 3. **Outline by task**, not by code structure. Runbooks follow symptom → diagnosis → remediation. Setup guides follow prerequisite → install → configure → verify.
-4. **Draft with concrete values.** Use real parameter names, real endpoints from the schema, and real example payloads that were executed or validated. Mark placeholders explicitly as `<placeholder>` and state each one's meaning once.
+4. **Draft with concrete values.** Use real parameter names, real endpoints from the schema, and real example payloads that were executed or validated. Mark sample values explicitly as `SAMPLE` and state each one's meaning once.
 5. **Run verification** (see below) before submitting.
 6. **Record metadata**: owner, last-verified date, source commit or revision, and review cadence.
 

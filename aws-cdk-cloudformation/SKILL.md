@@ -40,7 +40,7 @@ If stateful resources or production targets are involved and ownership is unclea
 
 ## Decision gates
 
-Stop and obtain explicit human approval before proceeding when any of the following holds:
+For infrastructure changes, halt for human sign-off whenever any of the following conditions apply:
 
 - The change set contains any Replacement or Delete on a stateful resource: databases, S3 buckets, DynamoDB tables, KMS keys, EFS file systems, log groups holding data needed for audit.
 - The change modifies IAM permissions, resource policies, security group ingress rules, or public access settings.

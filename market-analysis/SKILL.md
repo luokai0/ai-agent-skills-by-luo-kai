@@ -37,7 +37,7 @@ Assumptions must be written down explicitly. Do not assume data is clean, contin
 5. **Check positioning and flows** if data is available: futures open interest changes, fund flow reports, options skew. Label inferred positioning as inference.
 6. **Build the thesis**: state the base case, the bull and bear alternatives, and the observable conditions that would falsify the base case.
 7. **Quantify risk**: give a historical drawdown range for the instrument over comparable windows, and the expected move implied by options or by realized volatility, naming which one is used.
-8. **Draft the deliverable** using the contract below.
+8. **Compose the market analysis** in the required structure below.
 
 ## Decision gates
 

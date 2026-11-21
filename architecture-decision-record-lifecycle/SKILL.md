@@ -55,7 +55,7 @@ Before moving a record out of Proposed, check:
 - Status, date, and deciders fields are all populated.
 - Consequences include at least one follow-up action with an owner.
 
-Quality targets: a reviewer can restate the decision and its main trade-off in under 60 seconds; the record is under about four pages; no section is left as placeholder text.
+Quality targets: a reviewer can restate the decision and its main trade-off in under 60 seconds; the record is under about four pages; no section is left unfinished.
 
 ## Failure handling
 

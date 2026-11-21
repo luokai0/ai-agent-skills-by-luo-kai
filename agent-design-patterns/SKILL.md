@@ -107,4 +107,4 @@ The design deliverable must contain, in this order:
 8. Evaluation plan: case count, categories, expected outcomes, and the measured results with denominators.
 9. Open assumptions and items marked for verification against current official documentation of any framework, API, or model feature referenced.
 
-Do not deliver a design that lacks any of these sections, uses placeholder values, or leaves a write-capable tool without an approval classification.
+Do not deliver a design that lacks any of these sections, uses unresolved sample values, or leaves a write-capable tool without an approval classification.

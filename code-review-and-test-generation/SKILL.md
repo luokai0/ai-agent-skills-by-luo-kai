@@ -38,7 +38,7 @@ Record every assumption in the final report.
 6. **Design tests.** For each behavior statement and each blocker or major finding, define at least one test: arrange, act, assert. Include one negative or error-path case per behavior. Use the repository's fixtures and helpers.
 7. **Write tests.** Place them beside existing tests following the project's naming convention. Do not modify existing assertions to make tests pass unless the old assertion encoded the defect, and say so explicitly.
 8. **Run.** Execute the narrowest test target first, then the full suite for the affected package.
-9. **Report.** Produce the deliverable contract below.
+9. **Report.** Summarize findings using the review output structure below.
 
 ## Decision gates
 

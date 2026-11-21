@@ -58,7 +58,7 @@ Pass all of the following before requesting approval:
 - Every command or code block was executed and the result recorded.
 - All links resolve; relative links work from the published location.
 - Metadata fields are within the target's current documented limits; cite the source checked.
-- No placeholder text, unfinished sections, or "TBD" markers remain.
+- No unresolved sample text or unfinished sections, or unresolved status markers remain.
 - No secrets or credentials appear in examples (scan for token-like strings and private hostnames).
 - Changelog entry lists user-visible changes only and matches the diff.
 - Benchmarks or quantitative claims include the method, environment, and date, or are removed.

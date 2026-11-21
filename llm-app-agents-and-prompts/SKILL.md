@@ -26,7 +26,7 @@ Collect before acting:
 4. Data classes the prompt will receive (public, internal, personal, regulated).
 5. Whether the agent can take actions with side effects (writes, sends, purchases, deletions).
 
-If any of these are missing, state the assumption explicitly in the deliverable.
+For missing evaluation inputs, disclose the assumption and explain how it limits the result.
 
 ## Operating workflow
 

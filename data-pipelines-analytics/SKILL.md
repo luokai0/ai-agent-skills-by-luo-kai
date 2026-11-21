@@ -42,7 +42,7 @@ Assumptions must be written down. Treat registry counts as unverified until reco
 
 ## Decision gates
 
-Stop and request explicit approval before proceeding if any of the following apply:
+For production data movement, require owner sign-off whenever any of these conditions apply:
 
 - Bulk extraction would exceed published rate limits or terms, or the terms are unclear.
 - The dataset contains personal data, and the analysis needs fields beyond the minimum required for the question.

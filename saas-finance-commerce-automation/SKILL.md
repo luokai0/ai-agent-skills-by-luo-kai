@@ -39,7 +39,7 @@ If any input is missing, stop and request it. Do not infer thresholds or approve
 6. **Simulate.** Where the platform offers a dry-run or preview, use it. Otherwise compute the expected before/after balances in a separate calculation and show the delta.
 7. **Request approval.** Present the batch as a table with totals. Wait for explicit approval per action class.
 8. **Execute and confirm.** Apply approved actions one at a time or in small idempotent batches. Re-read each changed record and compare to the expected state.
-9. **Report.** Produce the deliverable contract below.
+9. **Report.** Return the transaction plan in the required output structure below.
 
 ## Decision gates
 

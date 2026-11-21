@@ -87,7 +87,7 @@ Return a document with these sections, in order:
 2. Summary: counts by severity and the top three risks.
 3. Findings table: ID, severity, requirement, evidence references, observed versus expected condition, confirmation status.
 4. Reconciliation results with stated variances.
-5. Corrective-action drafts: action, owner placeholder, target date placeholder, verification method.
+5. Corrective-action drafts: action, owner assignment and target date, verification method.
 6. Open items requiring human approval, listed separately.
 7. Limitations: data gaps, sampling constraints, items outside scope.
 

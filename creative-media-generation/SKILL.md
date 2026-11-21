@@ -80,4 +80,4 @@ Return:
 4. A verification table listing each check, measured value, pass or fail, and method.
 5. Open items requiring approval, listed explicitly.
 
-Do not include placeholder assets, unmeasured claims, or integration code that has not been rendered and checked.
+Do not include temporary or unreviewed assets, unmeasured claims, or integration code that has not been rendered and checked.

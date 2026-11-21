@@ -81,4 +81,4 @@ Each output must include:
 4. A "Needs approval" section listing any action from the decision gates that the user must authorize.
 5. A short "Open questions" section with no more than three items.
 
-Do not include generic sales advice, motivational language, unsourced statistics, invented names, or placeholder text such as "[insert here]" in final deliverables. Where a value must be supplied by the user, state it as a required input rather than leaving a blank.
+Do not include generic sales advice, motivational language, unsourced statistics, invented names, or unfinished bracketed template text in final deliverables. Where a value must be supplied by the user, state it as a required input rather than leaving a blank.

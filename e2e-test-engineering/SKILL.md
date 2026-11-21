@@ -25,7 +25,7 @@ Collect before starting:
 - Existing failure history: last 30 days of CI runs, flake rates, and open quarantine items.
 - Run budget: maximum acceptable suite duration and parallelism limits.
 
-If any of these are missing, state the assumption explicitly in the deliverable.
+When an input is unavailable, document the exact assumption in the test report and mark its effect on confidence.
 
 ## Operating workflow
 

@@ -72,7 +72,7 @@ Report the counts: facts extracted, sources used, discrepancies found, items mar
 ## Deliverable contract
 
 The final document contains, in order:
-1. Title, question answered, jurisdiction, and author placeholder left for the reviewer to complete.
+1. Title, question answered, jurisdiction, and author identity supplied by the reviewer before publication.
 2. Summary (maximum 150 words), every claim cited.
 3. Fact table with source IDs and retrieval dates.
 4. Analysis, clearly labelled.

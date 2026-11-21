@@ -82,6 +82,6 @@ Every deliverable includes:
 
 - Do not issue pressure-rating, certification, or code-compliance statements.
 - Do not execute or recommend valve changes, pump starts, isolation, or setpoint changes on live systems without explicit approval.
-- Do not use placeholder property values or unstated typical numbers.
+- Do not use assumed or unverified property values or unstated typical numbers.
 - Do not extrapolate pump or exchanger performance beyond published ranges.
 - Do not present a single number without its uncertainty or assumption set.

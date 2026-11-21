@@ -41,7 +41,7 @@ Label each assumption as *measured*, *vendor-stated*, or *estimated*. Any assump
 5. **Assess protection and fault contribution.** Note whether added inverter-based or rotating fault current changes protection coordination. Escalate to a protection engineer rather than resolving here.
 6. **Evaluate storage or hybrid options** only after the base export case is characterized. Model charge source, state-of-charge limits, round-trip efficiency (from vendor data, marked vendor-stated), and degradation assumptions.
 7. **Quantify curtailment and value.** Estimate curtailment hours from export limits and congestion; report energy and capacity value separately.
-8. **Draft the deliverable** using the contract below.
+8. **Prepare the grid engineering note** using the output schema below.
 
 ## Decision gates
 

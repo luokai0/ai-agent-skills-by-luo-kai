@@ -87,4 +87,4 @@ Return:
 4. Verification results: lint, N+1 counts, authorization matrix, pagination test outcomes.
 5. Open assumptions and items requiring approval, listed explicitly.
 
-Do not include unsupported claims, unverified version-specific behavior presented as fact, or placeholder fields.
+Do not include unsupported claims, unverified version-specific behavior presented as fact, or unresolved sample fields.

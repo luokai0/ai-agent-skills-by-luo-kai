@@ -34,7 +34,7 @@ If the thread contains conflicting instructions or unknown participants, list th
 3. **Check availability.** Use free/busy data when available. Convert every candidate slot to both the user's and the recipient's time zones and state both in the proposal. Exclude slots inside either party's non-working hours unless the user overrides.
 4. **Draft.** Write in the register of the existing thread. Lead with the decision or request in the first two sentences. Keep messages under 150 words unless the content requires more. Put each question or ask on its own line.
 5. **Stage, do not send.** Save as draft, or present the text for review. Include a one-line summary of what the message does and what response is expected.
-6. **Calendar changes.** Draft the invitation with title, date and time in both zones, duration, location or video link placeholder only if the user supplies the link, attendees, agenda of three bullets or fewer, and any prep requested of attendees.
+6. **Calendar changes.** Draft the invitation with title, date and time in both zones, duration, location or video link only when the user supplies it, attendees, agenda of three bullets or fewer, and any prep requested of attendees.
 7. **Log.** Produce a short record of what was drafted, staged, or scheduled and what awaits approval.
 
 ## Decision gates

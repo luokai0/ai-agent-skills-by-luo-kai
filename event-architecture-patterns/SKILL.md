@@ -25,7 +25,7 @@ Collect before recommending anything:
 - Retention and replay needs, and regulatory constraints on personal data in events.
 - Current transport and its version. Broker feature availability and client library APIs are version-sensitive; verify against current official documentation before stating any capability.
 
-If any of these are missing, state the assumption explicitly in the deliverable.
+For unresolved event contracts, record the assumed schema, ownership, and compatibility impact before proceeding.
 
 ## Operating workflow
 

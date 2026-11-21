@@ -90,4 +90,4 @@ Every deliverable includes:
 7. Operational notes: schedule, owner, rerun and rollback steps.
 8. Pending approvals, if any gate was reached.
 
-What not to do: do not hard-code dates or environment names without parameters; do not use `SELECT *` in production transformations feeding shared tables; do not mix schema changes and data backfills in one unreviewed step; do not hide errors with broad exception handling; do not leave TODO markers or placeholder thresholds in delivered artifacts.
+What not to do: do not hard-code dates or environment names without parameters; do not use `SELECT *` in production transformations feeding shared tables; do not mix schema changes and data backfills in one unreviewed step; do not hide errors with broad exception handling; do not leave unfinished-work markers or unverified thresholds in delivered artifacts.

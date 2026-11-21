@@ -38,7 +38,7 @@ If any assumption is unknown, stop and request it. Do not guess branch names, re
 
 ## Decision gates
 
-Stop and obtain explicit human approval before proceeding when any of the following holds:
+Do not advance a repository change without maintainer approval when any of these conditions is present:
 
 - The action deletes a branch, tag, or file, or runs `git clean`, `git reset --hard`, or `git gc --prune=now`.
 - The action pushes to, force-updates, or deletes any remote ref, including tags.

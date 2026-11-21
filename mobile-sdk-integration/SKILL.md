@@ -41,7 +41,7 @@ If any input is missing, stop and ask. Do not infer the SDK's data practices fro
 
 ## Decision gates
 
-Stop and request explicit approval before proceeding if any of the following apply:
+Pause the mobile integration and obtain release-owner approval when any of these conditions apply:
 
 - The change adds a new permission, entitlement, background mode, or tracking capability.
 - The SDK transmits personal data, device identifiers, precise location, or health/financial data off-device.
