@@ -3,7 +3,7 @@ name: delegated-execution-queues
 description: Use when an agent must hand off, queue, schedule, or supervise tasks executed by other workers, tools, or agents, and needs ordered dispatch, ownership tracking, retries, and verifiable completion records.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Delegated Execution Queues
@@ -100,3 +100,15 @@ Do not present the run as complete if any task is `blocked`, `timed_out`, or lac
 - Do not retry non-idempotent actions without checking for prior effects.
 - Do not bundle unrelated irreversible actions into one approval.
 - Do not state version-specific tool behavior as fact without verifying current documentation.
+## Durable queues, leases, retries, and backpressure (v1.1)
+
+A delegated execution queue is a stateful scheduler, not a list of prompts. Each task needs a stable ID, idempotency key, tenant and principal, contract revision, priority, dependency set, resource budget, deadline, lease policy, retry policy, cancellation state, and explicit success predicate. Persist the task before acknowledging enqueue.
+
+Use visibility timeouts or leases so abandoned work can be reclaimed, but treat lease expiry as uncertain execution state. Before reassignment, inspect checkpoints and reconcile external side effects. Use heartbeats for long tasks and bounded lease renewal; prevent a worker from holding a lease indefinitely without progress evidence.
+
+Apply exponential backoff with jitter only to retryable failures. Distinguish permanent validation errors, authorization denials, rate limits, transient transport failures, and unknown outcomes after a possible write. Use dead-letter handling with diagnostic context and an explicit replay approval path. Do not silently discard exhausted tasks.
+
+Control throughput with per-tenant quotas, global concurrency caps, priority fairness, rate limits, and backpressure. Prevent one noisy tenant or runaway agent from starving other work. Propagate cancellation to workers and tools, while acknowledging that cancellation cannot undo an already completed external effect.
+
+Track queue age, lease expiry, retry count, dead-letter volume, duplicate suppression, task latency, resource use, and verified completion. Test duplicate delivery, worker crash, queue restart, lease races, poison tasks, dependency failure, rate-limit storms, cancellation races, and partial side effects.
+

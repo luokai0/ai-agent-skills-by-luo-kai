@@ -3,7 +3,7 @@ name: multi-agent-orchestration-and-discovery
 description: Use when a task needs decomposition across multiple agents or skills, when selecting which skill or agent should handle a subtask, or when coordinating, merging, and verifying outputs from several agents in ClawHub-style skill workflows.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Multi Agent Orchestration And Discovery
@@ -79,3 +79,13 @@ The final output contains:
 6. Version-sensitive details (tool versions, API behaviors, registry metadata) marked "verify against current official documentation" unless confirmed in this session.
 
 Do not claim performance numbers, compliance status, or security guarantees for any agent unless a source in this session establishes them.
+## Production orchestration patterns and control ownership (v1.1)
+
+Choose orchestration based on who must own the result. In a manager pattern, the supervisor remains responsible for the user-facing answer and invokes specialists as bounded capabilities. In a handoff pattern, control transfers to a specialist that owns the next phase. In a sequential pipeline, each stage receives a typed artifact from the previous stage. In parallel fan-out, independent workers produce separately verifiable outputs that are reconciled by one integrator. Do not combine patterns merely because a framework exposes them.
+
+Define the control owner at every stage: who may plan, dispatch, approve, call tools, mutate shared state, accept artifacts, and close the run. A handoff transfers only the explicitly delegated authority, not the original principal's unrestricted permissions. Filter history and context at handoff boundaries; do not forward secrets or irrelevant tool output just because a framework makes full history convenient.
+
+Use a router only when routing decisions are bounded and testable. Use a manager when central consistency matters. Use peer collaboration only when workers have distinct evidence or expertise and a clear merge protocol. Avoid circular delegation, uncontrolled agent spawning, and multi-agent consensus without independent evidence.
+
+For each pattern, test the same task family against a simpler baseline. Compare verified outcome quality, unauthorized intermediate actions, latency, cost, context growth, failure recovery, and reviewer workload. Keep the simpler architecture when added agents do not provide measurable value.
+

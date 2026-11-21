@@ -3,7 +3,7 @@ name: session-continuity-recall
 description: Use when an AI agent must resume work from a prior session, reconstruct earlier decisions and open tasks from notes, logs, or memory stores, or hand off a workflow to another agent or human without losing state.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Session Continuity Recall
@@ -90,3 +90,15 @@ Do not:
 - Replay prior external actions to "catch up."
 - Copy sensitive values into the brief.
 - State version-specific commands, flags, or API behavior without marking them for verification against current official documentation.
+## Session resume and continuity protocol (v1.1)
+
+A resumed session must reconstruct state from durable evidence, not from an assistant's recollection of the previous conversation. Resolve the run ID, task contract revision, principal, tenant, policy version, agent and tool versions, checkpoint pointer, event history, artifacts, and outstanding approvals before continuing.
+
+Build a resume brief with: objective and acceptance criteria; authority and exclusions; verified completed steps with receipts; actions attempted but not reconciled; pending dependencies; current artifact versions; unresolved assumptions; expired or still-valid approvals; budget remaining; and the next safe operation. Link to original evidence rather than copying sensitive payloads into the brief.
+
+Reconcile every in-flight external effect against its system of record. Classify it as confirmed complete, confirmed absent, partially complete, or unknown. Unknown outcomes block automatic replay of non-idempotent actions. If the original approval expired or the target parameters changed, request a new approval.
+
+Check for changed policy, revoked credentials, changed tool schemas, stale data, and incompatible agent versions. A resumed task must not inherit authority that is no longer valid. If a migration or upgrade changed the checkpoint schema, use a versioned migration with validation and rollback rather than best-effort parsing.
+
+Test restart at every durable boundary, duplicate resume requests, expired approvals, deleted source artifacts, changed permissions, incompatible schemas, and concurrent resume attempts. Exactly one execution owner may continue a mutable task at a time.
+

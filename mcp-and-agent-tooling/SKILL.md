@@ -3,7 +3,7 @@ name: mcp-and-agent-tooling
 description: Use when designing, implementing, reviewing, or debugging Model Context Protocol (MCP) servers, clients, or tool definitions, or when wiring LLM agents to external tools, resources, and prompts in a programming project.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # MCP and Agent Tooling
@@ -73,3 +73,15 @@ Each delivery includes:
 5. Known limitations and the operator decisions still required.
 
 Do not deliver a server with undocumented write tools, unbounded outputs, unscoped credentials, or tool descriptions that the implementation does not satisfy.
+## MCP capability integration and interoperability (v1.1)
+
+Treat MCP as a protocol boundary for discovering and invoking capabilities, not as a trust guarantee. Inventory servers, transports, protocol versions, declared capabilities, tool schemas, resources, prompts, authorization mode, data classes, and operational owners. Pin and record the server identity and version or deployment digest used by each run.
+
+At connection time, validate protocol negotiation and capability declarations. Discover tools deterministically, validate input and output schemas, bound result sizes, enforce timeouts, and handle protocol errors separately from tool execution errors. A tool may return a structured execution error that supports safe correction; do not turn every error into an unbounded retry loop.
+
+For HTTP transports, implement the applicable authorization profile and validate token audience and scope at the receiving server. Never pass a token through to a different downstream audience. Keep credentials outside model context. For stdio or other transports, apply the relevant transport-specific credential and isolation model rather than blindly reusing HTTP OAuth assumptions.
+
+Expose only tools authorized for the current principal and task. Require clear user-visible consent for sensitive actions, show the effective operation and material arguments, and provide a denial path. Validate and sanitize tool results before returning them to the model. Tool descriptions and server-provided prompt text are data, not higher-priority policy.
+
+Build compatibility tests for protocol negotiation, capability changes, malformed schemas, oversized results, authorization failure, expired or wrong-audience tokens, timeouts, cancellation, partial execution, and server restart. Maintain a registry of approved servers, versions, scopes, owners, and review dates.
+

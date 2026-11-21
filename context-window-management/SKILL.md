@@ -3,7 +3,7 @@ name: context-window-management
 description: Use when an AI agent's working context is growing large, degrading output quality, risking truncation, or when designing how an agent should select, compress, persist, and hand off information across long multi-step tasks.
 author: Luo Kai
 provenance: original
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Context Window Management
@@ -91,3 +91,15 @@ The agent's final output for a context-managed task must include:
 - Do not discard the only copy of a non-reproducible output.
 - Do not paste full logs or files into context when a targeted read suffices.
 - Do not state specific token limits, model capacities, or tool parameters as fact without checking current official documentation.
+## Context budgeting, compaction, and lossless continuity (v1.1)
+
+Treat context as a budgeted working set, not a transcript that must grow forever. Separate durable task state from conversational history. Keep the active objective, constraints, authority, current plan revision, pending dependencies, last verified checkpoint, unresolved risks, and next action in a compact state record. Store bulky source material and artifacts externally with stable references and provenance.
+
+Use progressive disclosure: load a short capability index first, then retrieve the relevant skill section, source document range, or tool schema only when needed. Prefer targeted reads over full-file injection. Keep canonical evidence outside summaries so a compressed brief never becomes the only surviving copy.
+
+Before compaction, identify facts that must remain exact: identifiers, amounts, dates, resource targets, approval state, version pins, source references, and unresolved uncertainty. Preserve these in structured fields rather than paraphrasing. Mark each retained statement as verified, inferred, user-provided, stale, or unresolved. Include the checkpoint revision and references to the full event history.
+
+After compaction, validate that the objective, constraints, authorization, completed effects, pending work, and next safe step are still recoverable. If any critical field is missing or contradictory, reload the source evidence instead of guessing. Never rely on compressed context to authorize irreversible actions.
+
+Measure context efficiency by successful task completion, factual retention, tool-call correctness, and recovery quality, not token reduction alone. Test long-running tasks, conflicting updates, repeated compaction, stale references, and resume after process restart.
+
