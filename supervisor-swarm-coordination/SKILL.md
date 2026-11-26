@@ -3,7 +3,7 @@ name: supervisor-swarm-coordination
 description: Use when designing, running, or auditing a supervisor agent that delegates work to multiple worker agents in parallel or sequence, including task decomposition, routing, result aggregation, and conflict resolution in AI agent automation.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Supervisor Swarm Coordination
@@ -126,3 +126,38 @@ Test timeout before and after writes, duplicate dispatch, conflicting outputs, m
 **Handoff contract:** pass the task graph, ownership model, authority limits, shared-state policy, worker contracts, and recovery requirements. Receive verified worker outcomes and reconcile them against the supervisor's acceptance criteria.
 
 **Why the boundary exists:** swarm governance defines who controls the whole system; discovery, team execution, and durable queues solve distinct stages of that lifecycle.
+
+
+## Capability ownership and topology boundary (v1.2)
+
+Use a single control owner for each coordination layer. The supervisor owns the swarm-wide control plane: the parent objective, total authority envelope, global budget, worker registry snapshot, dependency policy, concurrency ceiling, cross-worker resource ownership, stop conditions, and final acceptance. It decides whether a worker may be introduced, whether a task may be delegated again, and whether the overall run may continue after a systemic failure.
+
+The team orchestrator owns one bounded execution plan inside that envelope. It translates an accepted work package into specialist roles, task-level contracts, review assignments, evidence collection, and an integrated artifact. It may choose among already authorized workers and skills, but it cannot widen the global budget, grant new permissions, change tenant boundaries, or override supervisor stop conditions. If no supervisor exists, the lead agent must explicitly assume both roles for the run and record that combined ownership; do not create an implicit second control plane.
+
+### Ownership matrix
+
+| Concern | Authoritative owner | Supporting capability | Boundary |
+|---|---|---|---|
+| Global objective, authority envelope, swarm-wide budget and stop | Supervisor swarm coordination | Agent runtime security guardrails | Supervisor sets operating limits; enforcement point still authorizes each action |
+| Initial capability discovery and delegation decision | Multi-agent orchestration and discovery | Agent platform and learning workflows | Discovery recommends; it does not grant permission or dispatch by itself |
+| Specialist roles, task contracts, peer review and artifact integration | Multi-agent team orchestration | Workflow planning verification | Team orchestrator executes an accepted plan; workflow skill validates dependencies and postconditions |
+| Cross-worker transport, message identity, acknowledgements and replay | Agent messaging channels | Delegated execution queues | Messaging owns message semantics; queues own durable scheduling and worker leases |
+| Durable retries, leases, cancellation and dead-letter state | Delegated execution queues | Session continuity recall | Queue owns scheduled work state; session skill reconstructs interrupted user/task execution |
+| Final acceptance of the swarm result | Supervisor | Independent verifier and domain skills | Supervisor accepts only against declared criteria and evidence; a worker cannot self-accept |
+
+### Escalation and authority transfer
+
+Escalate to the supervisor when a worker needs new scope, a shared resource has competing writers, the global budget or deadline must change, a stop condition is triggered, or the result affects another worker's contract. Escalate to the human owner when the supervisor lacks authority to resolve a conflict, approval is required, or policy sources remain incompatible. A team orchestrator may narrow or pause its own task plan, but must not silently override a swarm-wide stop.
+
+A supervisor may delegate analysis, drafting, and verification. It does not delegate accountability for the parent run. A team lead may delegate task execution, but remains responsible for task-level integration until it returns an evidence-backed result to the supervisor. Every handoff must identify the receiving owner and the precise responsibility transferred; vague labels such as coordinator or manager are insufficient.
+
+### Topology acceptance tests
+
+- A team orchestrator cannot increase the swarm budget or add a privileged tool without supervisor authorization.
+- A worker cannot create child workers unless the parent contract explicitly grants that capability and the supervisor's policy permits it.
+- A team-level failure can be isolated without disabling unrelated swarm branches, unless a global invariant or stop condition is affected.
+- Conflicting writers to one resource are rejected before dispatch or serialized under one named owner.
+- A queue acknowledgement cannot be mistaken for team acceptance; team acceptance cannot be mistaken for supervisor acceptance.
+- If one agent occupies both supervisor and team-lead roles, the run records the dual role and still applies both sets of gates.
+
+**Routing boundary:** this skill owns swarm-wide governance and accountability. Use multi-agent-team-orchestration for bounded team execution; use agent-messaging-channels for transport; use delegated-execution-queues for durable scheduling. Do not copy their implementation procedures into the supervisor layer.

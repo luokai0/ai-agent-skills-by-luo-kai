@@ -3,7 +3,7 @@ name: multi-agent-team-orchestration
 description: Use when decomposing a complex task across multiple cooperating AI agents or sub-agents, assigning roles, routing handoffs, merging outputs, and deciding when to escalate to a human operator.
 author: Luo Kai
 provenance: original
-version: 1.1.1
+version: 1.2.0
 ---
 
 # Multi Agent Team Orchestration
@@ -105,3 +105,41 @@ Do not state that the work is complete if any acceptance criterion lacks evidenc
 **Handoff contract:** receive a bounded plan with selected capabilities, pinned versions, dependency graph, and rationale. Return per-agent contracts, execution ownership, progress and recovery state, independent verification, conflict disposition, and final evidence. If no suitable specialist exists or coordination cost exceeds the value, stop and return to a single-agent plan.
 
 **Why the boundary exists:** capability discovery determines who should participate; team orchestration governs how selected participants execute without duplicating work or losing accountability.
+
+
+## Team execution ownership boundary and supervisor contract (v1.2)
+
+This skill owns the execution of one accepted team work package. It does not own the wider agent platform, global worker registry, cross-run budget, tenant-wide policy, or system-wide kill switch. Those controls belong to the supervisor or platform control plane. If no separate supervisor is present, explicitly record that the lead agent is temporarily holding both supervisor and team-lead responsibilities; apply the stricter approval and stop rules and do not imply independent oversight.
+
+### Inputs required from the supervisor or caller
+
+Before forming the team, receive and validate:
+- Parent run ID and the bounded work-package ID.
+- The objective, observable acceptance criteria, explicit exclusions, and plan revision.
+- Allowed worker identities or capability classes, tool scopes, data classifications, and target environment.
+- Maximum task-level concurrency, deadline, retry ceiling, and resource budget allocated to this work package.
+- Shared-resource ownership rules and any global stop conditions that the team must honor.
+- Required output schema, evidence provenance, reviewer independence, and return-to-supervisor condition.
+
+If a global constraint is missing, do not invent one. Request it or operate only in a read-only, non-dispatching analysis mode until the owner supplies it. The team may subdivide its bounded package, but every child task remains inside the parent's scope, budget, data boundary, and deadline.
+
+### Team lead responsibilities
+
+The lead chooses task-level roles, assigns one accountable owner per artifact, sequences dependencies, coordinates reviewers, and integrates accepted outputs. It may optimize the internal task graph within the allocated limits. It must return for supervisor approval before changing the parent objective, expanding tool permissions, adding a new trust boundary, increasing allocated resources, creating an externally visible effect not already authorized, or changing a global stop condition.
+
+Do not let a specialist redefine another specialist's acceptance criteria or write the same mutable artifact concurrently. A reviewer receives the artifact and source evidence needed to challenge it, not privileged access to the producer's private reasoning. The lead records dissent and evidence; it does not settle factual disputes by vote or confidence score.
+
+### Return contract
+
+Return to the supervisor a concise package containing the parent and work-package IDs, plan revision, task ledger, selected roles, artifact references and digests, acceptance results, evidence provenance, unresolved conflicts, partial failures, approvals consumed, external side effects reconciled, and any requested scope or budget change. Clearly distinguish delivered, verified, blocked, and merely attempted work. The supervisor retains parent-run acceptance authority.
+
+### Boundary tests
+
+- A team plan that exceeds the parent budget or scope is rejected or sent back for approval before dispatch.
+- A worker's request for additional privileges is escalated, not granted by the team lead.
+- A supervisor stop signal prevents new task dispatch and triggers the declared safe pause/cancellation behavior.
+- The team cannot report parent-run completion solely because its own subtasks succeeded.
+- A task-level retry does not bypass queue idempotency or repeat an uncertain external effect.
+- A team may continue independent safe tasks when one branch is blocked, provided no global invariant or stop condition is compromised.
+
+**Routing boundary:** use supervisor-swarm-coordination for global swarm governance and multi-run authority; use workflow-planning-verification for dependency and postcondition correctness; use agent-messaging-channels for message transport; use delegated-execution-queues for durable worker scheduling. This skill is the task-level team execution and integration layer.
