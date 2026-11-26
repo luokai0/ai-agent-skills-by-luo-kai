@@ -363,6 +363,23 @@ Do not state that a model is "safe," "compliant," "accurate in production," or "
 **Why the boundary exists:** measurement design must remain stable enough to compare experiments, while experiment management must preserve the context behind each result.
 
 
+
+### Capability ownership boundary (v1.2)
+
+This skill owns the measurement instrument and the faithful execution of a benchmark contract. It does not own the product's release policy, agent safety requirements, or the decision that a measured system is acceptable for deployment.
+
+| Work unit | Authoritative owner | Handoff |
+|---|---|---|
+| Evaluation objectives, required behaviors, safety invariants, risk slices, release thresholds, and release/hold decisions | `agent-evaluation-design` | Supply explicit acceptance criteria and required evidence before the benchmark is configured |
+| Dataset versioning, case execution, environment pinning, grader implementation, scoring, confidence intervals, raw result capture, and reproducible benchmark reports | `llm-benchmark-harness` | Return per-case evidence, aggregate metrics, uncertainty, grader diagnostics, and validity limitations |
+| Repeated candidate experiments, variant metadata, run lineage, and comparison history | `experiment-tracking` | Record each benchmark run against the exact dataset, harness, grader, and candidate digests |
+
+**Routing test:** If the question is what the agent must prove, which failures block release, what risk slices are mandatory, or what threshold is acceptable, use `agent-evaluation-design`. If those requirements are already defined and the task is to build or run the reproducible measurement system, use this skill. If the benchmark exists and the task is to preserve a sequence of model/configuration experiments, use `experiment-tracking`.
+
+**Non-override rule:** The harness reports measurements; it does not waive failed safety invariants, redefine release thresholds after seeing results, or convert an inconclusive comparison into a winner. A benchmark run must preserve the evaluation contract version and report any deviation from it.
+
+**Required handoff fields:** evaluation-contract ID and version, acceptance thresholds, mandatory slices, forbidden outcomes, dataset and holdout identity, grader requirements, model/tool/runtime pins, budgets, and evidence-retention requirements. If these are missing or contradictory, return a contract error instead of silently choosing convenient defaults.
+
 ## llm-cost-budget-monitoring
 
 **Use when:** Use when tracking, forecasting, capping, or alerting on LLM and agent token spend, reviewing per-task or per-tenant inference costs, or designing budget guardrails for multi-step AI agent workflows.

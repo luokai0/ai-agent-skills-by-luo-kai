@@ -4,7 +4,7 @@ description: "Unifies 250 specialist playbooks into one AI-agent skill. Use when
 metadata:
   author: "Luo Kai"
   provenance: "original"
-  version: "1.2.2"
+  version: "1.2.3"
 ---
 # Ultron Ultimate Skill
 
@@ -69,6 +69,7 @@ Deliver the requested artifact or outcome, what changed, how it was verified, ev
 - Memory owns durable knowledge and retention; session continuity owns checkpoints and resumption of a specific run.
 - Retrieval gathers candidate evidence; research methods govern coverage and inclusion; synthesis connects claims to evidence and uncertainty; domain chapters own specialist interpretation.
 - Testing designs and executes checks; change verification determines whether a change meets release criteria. Observability records attempts; authoritative systems establish whether external effects occurred.
+- Evaluation design owns required behaviors, safety invariants, risk slices, and release thresholds; benchmark harnesses execute the frozen measurement contract; experiment tracking preserves candidate and run lineage. A benchmark score cannot waive a failed safety gate.
 - Architecture defines boundaries and tradeoffs; implementation chapters define concrete procedures. Finance, health, legal, and safety guidance does not replace licensed professionals, fiduciary duties, or required human judgment.
 
 ## Domain reference modules
