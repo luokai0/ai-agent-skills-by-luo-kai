@@ -507,6 +507,25 @@ Test each tool with valid, missing, extra, wrong-type, and boundary inputs; unau
 
 **Why the boundary exists:** tool architecture defines the safe abstraction; protocol integration and security review are specialized implementations of that abstraction.
 
+### Capability ownership boundary (v1.5)
+
+This skill owns the design-time contract for what a tool is, how callers invoke it, and what its adapter promises. It does not become the trusted authority that decides whether a particular runtime action is permitted.
+
+| Work unit | Authoritative owner | Required relationship |
+|---|---|---|
+| Capability inventory, tool naming, typed schemas, descriptions, result/error contracts, adapter lifecycle and versioning | `agent-tool-architecture` | Define narrow, stable, machine-verifiable interfaces |
+| Idempotency contract, retry classification, timeout, concurrency, pagination, durable operation handles, downstream receipt and reconciliation contract | `agent-tool-architecture` | Specify behavior the adapter must implement and expose |
+| Authenticated principal chain, task/tenant authority, policy decision, approval binding, just-in-time reauthorization, sandboxing, enforcement bypass protection and emergency disable | `agent-runtime-security-guardrails` | Enforce the contract in trusted runtime code immediately before effects |
+| Protocol-specific MCP negotiation, resources, prompts, transport and interoperability | `mcp-and-agent-tooling` | Implement the protocol without widening the approved capability or authority model |
+| Security review of an existing MCP server | `mcp-server-hardening` | Assess the deployed server and its attack surface |
+
+**Routing test:** If the question is what operation should exist, what its schema and errors are, how it behaves under retries, and how the adapter exposes long-running work, use this skill. If the question is whether this caller may perform this exact action on this resource now, which approval is valid, or whether the enforcement path can be bypassed, use `agent-runtime-security-guardrails`.
+
+**Enforcement invariant:** every side-effecting tool contract must name its trusted authorization enforcement point and the identity/approval evidence it requires. Tool descriptions, schema validation, model reasoning, and a design-time permission table are not authorization. If the runtime enforcement point is absent or can be bypassed, the tool is not releasable for side effects.
+
+**Non-duplication rule:** specify the policy inputs and adapter hooks here; do not reimplement policy evaluation or treat a tool's self-reported permission check as authoritative. The runtime security layer owns the decision and must revalidate it at execution time.
+
+
 ### Delegated identity and tenant isolation (v1.3)
 
 #### Bind every invocation to a principal and tenant

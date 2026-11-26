@@ -4,7 +4,7 @@ description: "Unifies 250 specialist playbooks into one AI-agent skill. Use when
 metadata:
   author: "Luo Kai"
   provenance: "original"
-  version: "1.2.1"
+  version: "1.2.2"
 ---
 # Ultron Ultimate Skill
 
@@ -62,6 +62,7 @@ Deliver the requested artifact or outcome, what changed, how it was verified, ev
 ## Global responsibility boundaries
 
 - Identity proves who is acting; authorization decides what they may do; runtime enforcement checks authority at action time.
+- Tool architecture defines capability schemas, adapter contracts, and side-effect semantics; runtime security owns the trusted authorization decision, approval validation, enforcement path, and isolation. A valid schema is never permission to execute.
 - Capability discovery selects knowledge; the runtime independently enforces tool and data permissions.
 - Messaging transports messages and acknowledgements; durable queues own leases, retries, cancellation, and dead-letter behavior.
 - Team orchestration owns a bounded work package; supervision owns the global objective, authority envelope, budget, worker registry, shared resources, stop conditions, and final acceptance.

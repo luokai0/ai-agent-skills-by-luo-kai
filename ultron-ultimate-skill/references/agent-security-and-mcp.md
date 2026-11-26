@@ -187,6 +187,17 @@ For each case, assert both the decision and the absence of unauthorized side eff
 
 **Routing boundary:** this section owns trusted runtime enforcement and authorization timing. Use `agent-tool-architecture` for tool interface design and tenant-aware adapter contracts; use `agent-trust-skill-vetting` for deciding whether an artifact and its dependencies may be admitted. Do not treat artifact approval or tool-schema validation as runtime authorization.
 
+### Tool-contract and enforcement ownership (v1.5)
+
+| Responsibility | Owner | Security requirement |
+|---|---|---|
+| Tool catalog, schema, argument/result/error contract, idempotency and adapter lifecycle | `agent-tool-architecture` | Every write-capable adapter must expose a non-bypassable enforcement hook |
+| Authenticated actor/task/tenant binding, policy evaluation, approval validity, action-time revalidation and denial | `agent-runtime-security-guardrails` | The decision is made by trusted runtime code, not the model or adapter description |
+| Enforcement-path coverage, isolation, audit proof, revocation and emergency stop | `agent-runtime-security-guardrails` | Test every direct, queued, retry, recovery, and administrative path that can cause an effect |
+
+A valid tool schema proves only that arguments match a contract. It does not prove that the caller is authorized, that approval is current, or that the target still belongs to the caller. This skill owns those runtime decisions. A tool adapter must fail closed when the policy decision is missing, stale, malformed, or unavailable.
+
+
 
 ## agent-trust-skill-vetting
 
