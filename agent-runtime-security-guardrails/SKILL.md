@@ -3,7 +3,7 @@ name: agent-runtime-security-guardrails
 description: Use when designing, reviewing, or operating an AI agent or automation that calls tools, touches files, credentials, or external systems, or takes actions on a user's behalf, and you need runtime controls that limit damage, gate risky actions, and produce auditable evidence.
 author: Luo Kai
 provenance: original
-version: 1.3.0
+version: 1.4.0
 ---
 
 # Agent Runtime Security Guardrails
@@ -149,3 +149,42 @@ Record the policy version, task ID, principal chain, authorization decision, and
 **Handoff contract:** the platform security decision states the threat model, principals, trust boundaries, allowed operations, tenant constraints, and mandatory controls. Each specialist returns implementation evidence and negative tests. Reconcile those results here before declaring the overall runtime safe.
 
 **Why the boundary exists:** a local control can be correct while the end-to-end agent remains unsafe. This skill owns the system-level security argument; specialists own their technical control domains.
+
+
+## Runtime policy enforcement and race-resistant authorization (v1.4)
+
+### Separate policy description from the enforcement point
+
+Treat skill instructions, model reasoning, tool descriptions, and planner decisions as advisory inputs. They can explain intended behavior but cannot enforce authority. The authoritative policy decision point must execute in trusted runtime code outside the model's control, and every side-effecting tool must pass through a policy enforcement point that cannot be bypassed by calling a lower-level adapter directly.
+
+Define a default-deny capability matrix over principal, delegated principal, tenant, resource, operation, environment, data classification, and effect class. Resolve policy using authenticated context and authoritative resource metadata. Model-generated claims may narrow a request but must never grant a permission, choose a stronger principal, or override a denial. Distinguish policy evaluation failure from an explicit deny; both block the operation, but preserve different diagnostics for operators.
+
+### Close time-of-check/time-of-use gaps
+
+Authorization at planning time is not sufficient. Immediately before a side effect, revalidate the principal, membership, resource ownership, policy revision, approval validity, target environment, and normalized action arguments. Where the target supports conditional writes, bind the operation to an expected version, ETag, generation, or compare-and-set precondition. If the resource or policy changed after approval, abort and request a fresh decision.
+
+For long-running and queued work, define the authorization lease explicitly: which facts may be cached, for how long, and which must be rechecked at execution. Revocation must invalidate queued work and cached grants within a stated propagation objective. Do not assume cancellation succeeded until the worker acknowledges cancellation or reconciliation proves that no effect occurred.
+
+### Make approvals single-action and replay resistant
+
+Canonicalize the complete action before approval: actor and principal chain, task and run identifiers, tool and operation, resolved target identity, normalized arguments, environment, expected effect, policy revision, and expiry. Bind approval to a digest of that canonical record and a unique nonce. Enforce one-time consumption atomically where practical; otherwise use a durable idempotency record and reject replay. Any change to target, arguments, environment, principal, or policy revision invalidates the approval.
+
+### Protect the enforcement path itself
+
+Inventory every path to sensitive adapters, including internal APIs, background workers, retries, administrative endpoints, plugins, and recovery jobs. Prove that each path invokes the same authorization boundary or a deliberately equivalent control. Prevent policy downgrade, fail-open fallback, shadow credentials, and direct adapter access. Restrict who can modify policy, deploy enforcement code, alter trusted identity claims, or inspect audit evidence; separate these duties where feasible.
+
+### Verification matrix
+
+Test at least:
+- Policy service unavailable, malformed response, timeout, or stale policy revision.
+- Membership or resource ownership revoked between planning and execution.
+- Approval replay, concurrent double consumption, altered arguments, and changed target.
+- A queue worker executing after the initiating user's access is revoked.
+- Direct adapter invocation that attempts to bypass the policy enforcement point.
+- Conditional update conflict after an external actor changes the resource.
+- Cancellation racing with a completed side effect.
+- Policy rollout that accidentally broadens access or disables a mandatory check.
+
+For each case, assert both the decision and the absence of unauthorized side effects. Record policy revision, enforcement point, principal chain, resource reference, approval digest, precondition result, and final effect state. A denial log alone does not prove that a denied operation had no effect; inspect the authoritative target or reconciliation record.
+
+**Routing boundary:** this section owns trusted runtime enforcement and authorization timing. Use `agent-tool-architecture` for tool interface design and tenant-aware adapter contracts; use `agent-trust-skill-vetting` for deciding whether an artifact and its dependencies may be admitted. Do not treat artifact approval or tool-schema validation as runtime authorization.

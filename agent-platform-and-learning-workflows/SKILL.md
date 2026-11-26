@@ -3,7 +3,7 @@ name: agent-platform-and-learning-workflows
 description: Use when designing, reviewing, or operating an AI agent platform or a learning workflow (agent orchestration, tool-use integration, evaluation loops, feedback-driven improvement, fine-tuning or retrieval updates) and a decision must be made about scope, data handling, promotion of changes, or evidence of quality.
 author: Luo Kai
 provenance: original
-version: 1.3.0
+version: 1.4.0
 ---
 
 # Agent Platform And Learning Workflows
@@ -151,3 +151,44 @@ Record the resolved lock, validation result, signature identity, compatibility r
 **Handoff contract:** accept only vetted skill digests with declared inputs, outputs, permissions, compatibility, and evaluation evidence. Return a pinned activation record, runtime constraints, lifecycle state, and revocation/rollback path. A registry entry must never itself grant runtime authority.
 
 **Why the boundary exists:** the platform manages capabilities as governed assets; agent architecture and runtime security define how those assets are composed and safely executed.
+
+
+## Deterministic capability resolution and lifecycle state integrity (v1.4)
+
+### Resolve capabilities reproducibly
+
+A registry query must resolve to a deterministic capability set for a given registry snapshot, policy revision, runtime compatibility profile, and task requirement. Define stable tie-breakers for equal matches; never let network response order, filesystem order, nondeterministic ranking, or cache timing select a different skill silently. Record both the candidate set and the reason each candidate was accepted or rejected.
+
+Separate semantic relevance from permission eligibility. A highly relevant skill is not eligible if it is untrusted, revoked, incompatible, outside the tenant's policy, or missing required dependencies. Apply hard eligibility filters before relevance ranking. If no candidate satisfies all mandatory constraints, return an explicit capability gap rather than selecting the nearest unsafe substitute.
+
+### Model lifecycle as guarded state transitions
+
+Define explicit states such as discovered, quarantined, under-review, approved, available, deprecated, revoked, and retired. Specify permitted transitions, authorized transition actors, required evidence, and effects on active sessions. Reject impossible transitions and stale updates using compare-and-set against the current registry revision. A state label must not be treated as proof that its underlying checks still pass; activation revalidates the pinned artifact, dependency closure, compatibility record, and current policy.
+
+Revocation semantics must distinguish:
+- Preventing new activations.
+- Invalidating cached resolution and queued but not started tasks.
+- Handling active tasks that may safely finish.
+- Interrupting active tasks whose authority or artifact is no longer acceptable.
+- Reconciling side effects already in progress.
+
+Define propagation objectives and observable acknowledgements for each layer. If a layer cannot confirm revocation, surface the unresolved exposure rather than reporting global revocation as complete.
+
+### Prevent registry and cache split-brain
+
+Bind cache entries to registry snapshot, artifact digest, dependency-closure digest, policy revision, compatibility profile, and tenant scope where applicable. Invalidate on revocation, policy change, trust decision expiry, or dependency update. Do not let a stale cache reintroduce a revoked artifact or an older approval. During registry partition or inconsistency, use only an explicitly configured last-known-good snapshot with bounded age and policy; otherwise fail closed for new activations.
+
+### Capability-resolution acceptance tests
+
+- Identical inputs and snapshot produce identical eligible candidate ordering.
+- Reordered registry responses do not change the chosen capability.
+- A relevant but revoked or untrusted skill is excluded before ranking.
+- Missing required capability produces a gap report, not an unsafe fallback.
+- Concurrent lifecycle transitions cannot overwrite a newer revocation with an older approval.
+- Cached resolution cannot survive a policy revision or revocation event beyond the stated propagation objective.
+- An active task's pinned artifact remains stable during an update unless an explicit migration protocol succeeds.
+- Registry partition behavior follows the declared last-known-good policy and records snapshot age.
+
+Return a resolution record containing task requirements, registry snapshot, policy revision, candidate IDs and digests, eligibility decisions, selected capability, compatibility evidence, and lifecycle state. This record must be sufficient to reproduce why the platform selected that skill at that time.
+
+**Routing boundary:** this section owns registry governance, deterministic discovery, activation, and lifecycle state. Use `agent-trust-skill-vetting` for artifact and dependency review; use `agent-runtime-security-guardrails` for enforcement of permissions during execution. Registry availability never grants a skill permission to perform an action.
