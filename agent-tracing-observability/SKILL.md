@@ -3,7 +3,7 @@ name: agent-tracing-observability
 description: Use when instrumenting, debugging, or auditing LLM agent runs (tool calls, model calls, retrievals, sub-agent handoffs) and you need traces, spans, token and cost accounting, or evidence of what an agent actually did.
 author: Luo Kai
 provenance: original
-version: 1.3.0
+version: 1.4.0
 ---
 
 # Agent Tracing Observability
@@ -145,3 +145,33 @@ Report telemetry coverage, known blind spots, retention, redaction tests, and de
 **Handoff contract:** agent tracing emits bounded, privacy-reviewed run and action evidence with stable identifiers and policy/version context. The platform SRE skill consumes service-level signals and owns operational response. Security incident response consumes attributable events and owns investigation. Keep metrics, sampled traces, logs, and durable audit records distinct.
 
 **Why the boundary exists:** agent behavior needs semantic traces, but platform reliability and security incident management require different owners, retention, and response guarantees.
+
+
+## Trace integrity, asynchronous causality, and content minimization (v1.4)
+
+A trace is an evidence record of instrumented execution, not a complete or automatically truthful transcript. Document what is instrumented, what is sampled, what is omitted, and which execution paths can bypass instrumentation. Never infer that an action did not occur merely because its span is absent unless instrumentation coverage and failure behavior make that absence meaningful.
+
+### Preserve causality across boundaries
+- Propagate trace context across process, service, agent, tool, and queue boundaries using the supported context-propagation mechanism for each transport. Do not assume an HTTP request span captures every message or operation inside a long-lived stream.
+- For asynchronous work, retain the originating run/task identifier and use parent-child relationships or span links according to the actual causal relationship. A queued task that executes later should not be represented as if it were synchronous work inside the original request.
+- Record stable, non-secret identifiers for run, task, attempt, tool call, approval, and artifact version. Distinguish logical operation IDs from retry/attempt IDs.
+- Record state transitions and external-effect receipts at the boundary where the effect is attempted and where its outcome is reconciled. A successful tool-call span alone does not prove the intended external postcondition.
+- When clocks or services are not synchronized, avoid deriving strict event order from wall-clock timestamps alone. Preserve causal links and monotonic duration measurements where available.
+
+### Make capture policy explicit
+- Default to metadata-only traces. Treat prompts, completions, tool arguments/results, retrieved documents, memory content, and exception messages as potentially sensitive.
+- If content capture is justified, require a documented purpose, data classification, approved audience, retention period, deletion path, and access audit. Prefer storing approved content in a separately governed artifact store and placing only opaque references and integrity metadata in traces.
+- Apply minimization and redaction before data leaves the originating trust boundary. Downstream collector filters are defense in depth, not permission to export raw secrets or personal data first.
+- Inspect actual exported payloads from every enabled instrumentation and exporter. A global capture flag does not guarantee that custom spans, framework instrumentation, logs, baggage, or vendor exporters follow the same policy.
+- Keep high-cardinality or sensitive values out of metric labels. Use bounded dimensions for metrics and access-controlled trace attributes for detailed diagnosis.
+- Treat baggage and propagated context as untrusted input. Allowlist keys, constrain size, prevent identity or tenant spoofing, and never propagate credentials or authorization tokens.
+
+### Sampling and evidence completeness
+- State the sampling policy and its effect on conclusions. Preserve 100% of defined high-severity failures or security-relevant events where feasible, while documenting any unavoidable loss.
+- If sampling is probabilistic, record the sampling decision and policy version. Use sampling-aware analysis when estimating population rates; do not treat a sampled trace set as a census.
+- Record dropped-span, exporter-failure, queue-overflow, and collector-loss indicators where available. Distinguish an absent event from an event that could not be observed.
+- Maintain a separate durable audit record for security-sensitive or regulated actions when trace sampling, retention, or mutability cannot meet the required evidence guarantee.
+- Validate trace completeness with synthetic canary runs that exercise tool calls, retries, handoffs, asynchronous callbacks, failures, and approval pauses.
+
+### Trace review contract
+For an incident or disputed action, reconstruct the causal sequence from trace IDs, task/attempt identifiers, policy and configuration versions, tool call IDs, and external system receipts. Mark each conclusion as directly observed, inferred from linked events, or unavailable. State instrumentation gaps and sampling limitations. Do not claim that traces prove intent, correctness, or absence of uninstrumented actions.
