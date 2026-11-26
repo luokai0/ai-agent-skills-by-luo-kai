@@ -98,13 +98,13 @@ Do not state that a deployment is safe, compliant, or guaranteed to meet any SLO
 
 ## cloud-infrastructure-audits-and-deployment
 
-**Use when:** Use when auditing an existing cloud environment (accounts, networks, identity, compute, storage, data stores, cost, logging) or planning and executing an infrastructure deployment change that must be verified, reviewed, and reversible.
+**Use when:** Use when establishing operational cloud inventory and configuration state, auditing infrastructure drift, cost, capacity, ownership, backup posture, or planning and executing a reviewed infrastructure deployment with post-change verification and rollback. Use `cloud-security-and-compliance` for a dedicated security-posture assessment, threat-oriented control analysis, or framework-to-evidence mapping.
 
 ### Purpose and boundaries
 
 This skill covers two linked activities: (1) read-only audits that establish what exists, how it is configured, and where it deviates from stated requirements; and (2) controlled deployments that change infrastructure through reviewed, reversible steps. It applies to any major provider, and to infrastructure-as-code (IaC) and console-driven environments alike.
 
-In scope: inventory, configuration review, identity and access review, network exposure, encryption and secrets handling, backup and recovery posture, logging and monitoring coverage, cost anomalies, plan-and-apply deployments, post-deployment verification, and rollback planning.
+In scope: operational resource inventory, ownership and tagging, configuration drift against IaC, network and service topology, capacity and cost anomalies, backup and recovery operations, baseline checks for identity/encryption/logging, plan-and-apply deployments, post-deployment verification, and rollback planning. Baseline security observations are triage signals; detailed security-control assessment and framework evidence mapping belong to `cloud-security-and-compliance`.
 
 Out of scope: application code review, penetration testing or active exploitation, incident response during a live breach (hand off to the incident owner), compliance certification (this skill produces evidence, not attestations), and procurement or contract decisions.
 
@@ -207,6 +207,23 @@ Deployment record:
 
 Do not state that a system is compliant, secure, or fully recovered. State only what the evidence shows.
 
+
+
+### Capability ownership boundary (v1.2)
+
+This skill owns the operational lifecycle and change safety of cloud infrastructure. It performs enough security checking to identify unsafe state, but it is not the specialist security-control assessor.
+
+| Work unit | Authoritative owner | Handoff |
+|---|---|---|
+| Resource inventory, ownership tags, topology, configuration drift, capacity, cost, backups, operational readiness | `cloud-infrastructure-audits-and-deployment` | Provide scoped resource inventory and live-state evidence to security review |
+| IaC plan review, change windows, approved apply, post-deployment checks, rollback and drift reconciliation | `cloud-infrastructure-audits-and-deployment` | Security review may define required controls; this skill owns safe execution of an approved infrastructure change |
+| Detailed IAM policy analysis, effective privilege, attack exposure, encryption/key controls, logging integrity, vulnerability triage | `cloud-security-and-compliance` | Return resource IDs, configuration snapshots, and operational constraints |
+| Mapping cloud evidence to CIS/SOC 2/ISO/PCI control identifiers and coverage status | `cloud-security-and-compliance` | Return control gaps and technical remediation requirements; no compliance attestation |
+| Combined infrastructure audit and security assessment | Both, with separate reports/sections | This skill owns operational state and change management; security skill owns security findings and control evidence |
+
+**Routing test:** If the main question is "what exists, what is drifting, what is it costing, can this deployment be applied safely, and how do we verify or roll it back?" this skill is primary. If the main question is "which security controls are ineffective, how can the exposure be demonstrated, and what evidence supports a control status?" use `cloud-security-and-compliance`.
+
+**Non-duplication rule:** Do not duplicate the full IAM, effective-permission, cryptographic-control, or framework-mapping assessment here. Record baseline observations and hand off the evidence. Do not let a security finding trigger an infrastructure change without the deployment approval gates in this skill.
 
 ## cloud-infrastructure-cost
 

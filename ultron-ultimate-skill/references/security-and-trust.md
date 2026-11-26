@@ -270,13 +270,13 @@ Do not claim the system is secure, compliant, or audited. State only what was im
 
 ## cloud-security-and-compliance
 
-**Use when:** Use when assessing, hardening, or auditing cloud accounts, tenants, or workloads for security posture and compliance control mapping, including IAM review, network exposure, encryption, logging, and evidence collection for frameworks such as CIS benchmarks, SOC 2, ISO 27001, or PCI DSS.
+**Use when:** Use when performing a dedicated cloud-security assessment: effective IAM and privilege analysis, attack-surface and exposure validation, encryption/key and logging-integrity controls, security findings, or mapping technical evidence to a defined framework. Use `cloud-infrastructure-audits-and-deployment` for operational inventory, cost/capacity/drift reviews, infrastructure change planning, apply, and rollback.
 
 ### Purpose and boundaries
 
-This skill covers reviewing cloud environments (IaaS, PaaS, managed Kubernetes, serverless, SaaS configuration tied to cloud identity) for security misconfigurations, mapping findings to compliance controls, and producing remediation plans and evidence packages.
+This skill performs a security-focused assessment of cloud environments (IaaS, PaaS, managed Kubernetes, serverless, and SaaS configuration tied to cloud identity). It determines whether security controls are effective, validates exposure and privilege paths, maps evidence to a defined control set, and produces a security findings register. It does not own general infrastructure operations or deployment execution.
 
-In scope: identity and access policy review, network exposure analysis, data encryption and key management checks, logging and audit trail coverage, backup and resilience settings, vulnerability and secret exposure triage, and control-to-evidence mapping.
+In scope: effective identity and access policy analysis, privilege and trust-path review, network reachability and attack-surface validation, encryption and key-management controls, logging integrity and detection coverage, security-relevant backup/resilience controls, vulnerability and secret exposure triage, and control-to-evidence mapping. Cost optimization, capacity planning, general resource ownership, IaC drift management, and deployment execution are outside this skill.
 
 Out of scope: legal determination of compliance, certification sign-off (only an accredited auditor can attest), incident response execution beyond initial triage, penetration testing against systems without written authorization, and designing new application cryptography.
 
@@ -362,12 +362,30 @@ Do not claim the environment is "secure" or "compliant." State findings and cont
 
 **Choose this skill when:** reviewing a real cloud environment for security configuration defects and mapping technical findings to the organization's control framework, with remediation and evidence planning.
 
+**Choose `cloud-infrastructure-audits-and-deployment` when:** the primary work is operational resource inventory, cost/capacity, IaC drift, deployment planning or apply, change-window control, post-deployment verification, or rollback. Use this skill only for the security-control assessment portion.
+
 **Choose security-governance when:** the task is to define security requirements, control ownership, access review policy, exception handling, or organization-wide security standards rather than inspect a particular environment.
 
 **Handoff contract:** receive the control objectives, approved risk thresholds, and evidence requirements from governance. Return the resource-level observations, technical proof, severity, remediation plan, and any control that cannot be evaluated. Send unresolved policy conflicts or exception requests back to governance with scope and impact.
 
 **Why the boundary exists:** a cloud configuration scan cannot decide the organization's policy, and a written policy cannot prove that a cloud resource is configured correctly.
 
+
+
+### Capability ownership boundary (v1.2)
+
+This skill owns the security meaning and control evidence of cloud configuration. It is read-only during assessment; remediation execution belongs to the infrastructure change owner.
+
+| Work unit | Authoritative owner | Handoff |
+|---|---|---|
+| Effective IAM permissions, privileged trust paths, public exposure, encryption/key policy, logging integrity, security findings | `cloud-security-and-compliance` | Supply control requirements, affected resources, evidence, severity, and verification criteria |
+| Framework control mapping, evidence sufficiency, security exceptions, and security remediation priority | `cloud-security-and-compliance` | Governance owns policy/exception approval; infrastructure owner executes approved changes |
+| General inventory, resource ownership, capacity, spend, operational drift, IaC plan/apply, deployment and rollback | `cloud-infrastructure-audits-and-deployment` | Consume security findings and translate approved remediation into a reviewed infrastructure change |
+| Combined audit and remediation | Both, with separated authority | This skill defines the security defect and acceptance test; infrastructure skill owns the change plan, approval, apply, read-back, and rollback |
+
+**Routing test:** If a control framework, security threat, privilege path, data exposure, or security evidence is central, use this skill. If operational state, cost, capacity, drift, or changing infrastructure is central, use the infrastructure skill. If a security assessment recommends a change, do not execute it here; transfer the exact resource, desired state, risk, approval requirement, and verification test to the infrastructure change owner.
+
+**Non-duplication rule:** A configuration inventory or IaC plan is not proof that a security control is effective. Conversely, a security control finding is not authorization to apply a cloud change. Keep assessment, risk acceptance, and deployment execution separate.
 
 ## hardening-appsec-pentest
 

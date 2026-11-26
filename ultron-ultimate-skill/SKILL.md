@@ -4,7 +4,7 @@ description: "Unifies 250 specialist playbooks into one AI-agent skill. Use when
 metadata:
   author: "Luo Kai"
   provenance: "original"
-  version: "1.2.0"
+  version: "1.2.1"
 ---
 # Ultron Ultimate Skill
 
