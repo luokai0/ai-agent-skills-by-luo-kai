@@ -729,13 +729,13 @@ Do not include: unsourced legal conclusions, personal data beyond stated need, c
 
 ## market-analysis
 
-**Use when:** Use when a user asks for analysis of a financial market, asset, sector, or trading setup, including price and volume behavior, macro or sector context, positioning, or a written market view that must be checked against data before use.
+**Use when:** Use when the primary task is to explain traded-market behavior over a defined horizon: price and volume structure, volatility, liquidity, spreads, positioning, flows, term structure, event reaction, or a conditional trading thesis. Use `finance-market-analysis` instead when the core work is issuer identity, filings, accounting normalization, financial-statement ratios, peer fundamentals, or valuation.
 
 ### Purpose and boundaries
 
-This skill produces structured, evidence-backed analysis of a named market, instrument set, or sector over a stated horizon. Typical outputs: a market briefing, a thesis with invalidation conditions, a comparison of instruments, or a review of a trading setup's risk profile.
+This skill produces structured, evidence-backed analysis of how a traded market or instrument behaves over a stated horizon. Typical outputs: a market-structure briefing, a conditional thesis with invalidation conditions, a comparison of traded instruments, or a review of a setup's liquidity and risk profile. The primary unit of analysis is the market series and its observable behavior, not the issuer's accounting record.
 
-In scope: descriptive analysis of price, volume, volatility, spreads, term structure, fundamentals, macro releases, and positioning data that the user supplies or that is publicly available and cited.
+In scope: descriptive analysis of price, volume, volatility, spreads, liquidity, term structure, positioning, order/flow indicators, event reaction, and macro or sector variables used as market drivers, provided by the user or publicly available and cited. Published issuer fundamentals may be used as clearly labeled context, but issuer identity resolution, financial-statement normalization, accounting ratios, peer fundamentals, and valuation belong to `finance-market-analysis`.
 
 Out of scope: placing or modifying orders, giving personalized recommendations for a specific person's portfolio, using material non-public information, and asserting future returns as fact. Analysis is conditional: state what would make the view wrong.
 
@@ -805,7 +805,7 @@ Do not: present forecasts as certainties, omit the falsification conditions, use
 
 **Choose this skill when:** the objective is to understand price and market behavior over a defined horizon: trend and structure, volume, volatility, spreads, liquidity, positioning, term structure, event reaction, scenario analysis, or a trading setup's risk and invalidation conditions.
 
-**Choose `finance-market-analysis` when:** the question requires issuer-level financial statements, regulatory filings, corporate events, identifier reconciliation, accounting normalization, peer fundamentals, or valuation calculations grounded in reported records.
+**Choose `finance-market-analysis` when:** the answer depends on issuer or instrument identity reconciliation, primary regulatory filings, corporate registry records, financial-statement line items, accounting normalization, reported ratios, peer fundamentals, or valuation calculations. Do not route there merely because a traded asset or ticker is mentioned.
 
 **Handoff contract:** receive verified issuer/instrument identifiers, filing periods, accounting basis, sourced fundamental metrics, and event dates from the finance skill when those facts matter. Return a conditional market view with horizon, observations, assumptions, risks, and explicit invalidation conditions. Never convert a market scenario into a guaranteed return or personalized order instruction.
 
@@ -815,6 +815,23 @@ For competitor landscapes, vendor feature comparisons, commercial pricing and pa
 
 **Why the boundary exists:** market behavior and issuer fundamentals inform each other, but they are different evidence classes with different time horizons and failure modes.
 
+
+
+### Capability ownership boundary (v1.2)
+
+Use the primary evidence class to choose the owner; do not select by the broad word "market" alone.
+
+| Work unit | Authoritative owner | Supporting handoff |
+|---|---|---|
+| Price/volume series, trend, range, volatility, spreads, liquidity, term structure, positioning, and flows | `market-analysis` | `finance-market-analysis` may supply verified identifiers and issuer events |
+| Market reaction to dated macro, sector, or corporate events | `market-analysis` | `finance-market-analysis` supplies verified event facts; this skill analyzes observed market response |
+| Legal entity, ticker/venue, share class, security identifier, filings, registry records, and reporting periods | `finance-market-analysis` | `market-analysis` consumes the resolved instrument identity |
+| Financial statements, accounting basis, normalized ratios, peer fundamentals, and valuation calculations | `finance-market-analysis` | `market-analysis` may use sourced outputs as contextual inputs, not silently recompute or own them |
+| Combined market-and-fundamental briefing | Both, with separate evidence sections | `finance-market-analysis` returns sourced issuer facts; `market-analysis` returns horizon-specific market behavior and conditional scenarios |
+
+**Routing test:** If the deliverable could be completed from a clean, correctly identified price/volume dataset without opening issuer filings, `market-analysis` is primary. If it requires filings, reported financial statements, accounting normalization, or valuation, `finance-market-analysis` is primary. If both are essential, invoke both with explicit ownership and keep reported facts, market observations, and interpretation separately labeled.
+
+**Non-duplication rule:** Do not reproduce a full issuer-fundamental analysis inside a market note or a technical market-regime analysis inside a financial-statement report. Pass verified inputs across the boundary and cite their provenance.
 
 ## market-and-competitive-intelligence
 

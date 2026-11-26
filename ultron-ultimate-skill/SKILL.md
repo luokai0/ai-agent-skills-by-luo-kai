@@ -4,7 +4,7 @@ description: "Unifies 250 specialist playbooks into one AI-agent skill. Use when
 metadata:
   author: "Luo Kai"
   provenance: "original"
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 # Ultron Ultimate Skill
 
@@ -12,7 +12,7 @@ metadata:
 
 One skill. One operating contract. Twenty-eight focused domain modules containing all 250 specialist playbooks. The parent instructions define **how the agent chooses, governs, executes, verifies, recovers, and reports**. The reference modules supply the specialist knowledge.
 
-Use this skill whenever a task matches its description. Do not load all domain references by default. Start with the [capability index](references/capability-index.md), identify the exact chapter, then load only the relevant module and chapter. The reference files are part of this one skill, not separate skills.
+Use this skill whenever a task matches its description. Do not load all domain references by default. Start with the [capability index](references/capability-index.md), identify the exact chapter, then load only the relevant module and chapter. If a task crosses domain boundaries, use the chapter-level ownership and handoff contracts to avoid duplicate work. The reference files are part of this one skill, not separate skills.
 
 ## Operating procedure
 

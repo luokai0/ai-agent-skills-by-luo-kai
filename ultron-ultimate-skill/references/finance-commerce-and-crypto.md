@@ -390,11 +390,11 @@ Do not include investment recommendations, price predictions, or statements that
 
 ## finance-market-analysis
 
-**Use when:** Use when analyzing market data, company financials, or external registry records (securities filings, company registries, exchange listings, market statistics) to produce sourced, reproducible financial findings for an investment, credit, research, or due-diligence question.
+**Use when:** Use when the primary task requires verified issuer or instrument identity, external registry records, regulatory filings, financial-statement analysis, accounting normalization, reported ratios, peer fundamentals, or valuation context for an investment, credit, research, or due-diligence question. Use `market-analysis` for traded price/volume behavior, volatility, liquidity, positioning, flows, and horizon-specific market scenarios.
 
 ### Purpose and boundaries
 
-This skill turns a defined financial question into a sourced, reproducible analysis built from external registries and market data: exchange listings, regulatory filings, corporate registry extracts, index constituents, and published macro or sector statistics.
+This skill turns a defined financial question into a sourced, reproducible analysis grounded in authoritative issuer and instrument records: exchange listings, regulatory filings, corporate registry extracts, index constituents, and published financial statements. Market prices and statistics may support context, but traded-market behavior is not this skill's primary analytical responsibility.
 
 In scope: ticker and identifier reconciliation, filing-based financial ratio analysis, peer comparison, trend and valuation context, event timelines (earnings, corrections, insider or ownership changes), and data-quality audits of registry records.
 
@@ -478,6 +478,22 @@ Quality check before release: every figure traceable, every ratio reproducible f
 
 **Why the boundary exists:** financial records establish what an issuer reported; market analysis studies how an instrument or market behaves. Combining them is useful, but one must not be mistaken for the other.
 
+
+
+### Capability ownership boundary (v1.2)
+
+This skill owns issuer and instrument facts that must be reconciled to authoritative records. It does not absorb the separate discipline of analyzing traded-market behavior.
+
+| Work unit | Authoritative owner | Handoff |
+|---|---|---|
+| Legal entity, security identity, exchange/venue, share class, ticker history, registry and filing provenance | `finance-market-analysis` | Supply verified identifiers and event facts to `market-analysis` |
+| Reported financial statements, accounting basis, period alignment, currency normalization, ratios, peer fundamentals, and valuation context | `finance-market-analysis` | Supply reproducible figures and source references; do not imply they predict market behavior |
+| Price/volume structure, technical regime, volatility, spreads, liquidity, positioning, flows, and event reaction | `market-analysis` | Consume verified identity and dated issuer facts from this skill where relevant |
+| Integrated fundamental-and-market report | Both, with separate ownership | This skill owns reported financial facts; `market-analysis` owns traded-market observations and conditional market scenarios |
+
+**Routing test:** If the conclusion depends on what an issuer reported, how a security is identified, how accounting periods or ratios are normalized, or how peers compare on fundamentals, this skill is primary. If the conclusion depends on how a traded instrument behaved over a horizon, `market-analysis` is primary. For a combined question, keep source-backed issuer facts, observed market data, and interpretation in distinct sections.
+
+**Non-duplication rule:** Do not reproduce price-action, volatility-regime, liquidity, or positioning analysis here merely because the instrument is a security. Do not treat a market-analysis observation as a substitute for a filing or reported financial fact.
 
 ## fundamentals-valuation
 
