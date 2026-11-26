@@ -3,7 +3,7 @@ name: autonomous-ai-research
 description: Use when an agent must plan, run, and report multi-step AI or data research (literature and codebase surveys, experiment design, model or data comparisons, reproducibility checks) with minimal supervision but auditable evidence and explicit approval gates.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Autonomous AI Research
@@ -110,3 +110,39 @@ Close with known gaps, unanswered questions, confidence limits, and a revalidati
 **Handoff contract:** this skill supplies research objectives, subquestions, source-quality policy, claim schema, and evidence coverage. Retrieval specialists return dated source records and atomic claims; this skill integrates them while preserving provenance, disagreement, and unanswered questions.
 
 **Why the boundary exists:** autonomous research governs the full investigation; retrieval skills provide specialized evidence-acquisition paths within that investigation.
+
+## Research protocol integrity and evidence coverage (v1.2)
+
+### Freeze the investigation protocol before interpreting results
+
+For decision-sensitive research, create a compact protocol before reviewing outcome evidence. Record the decision question, subquestions, inclusion and exclusion criteria, source classes to search, date and version boundaries, languages, search locations, extraction fields, quality rules, and stopping conditions. Mark any later protocol amendment with its reason, timestamp, and whether it was made before or after seeing relevant results. This makes exploratory changes visible and reduces outcome-driven scope drift.
+
+Separate discovery from eligibility: a search hit is a candidate, not an included source. Maintain a source ledger with stable ID, canonical URL or artifact digest, title, publisher or owner, publication/update date, access date, version, source class, screening decision, exclusion reason, and full-text availability. Record searches that returned no useful results as well as successful searches.
+
+### Measure coverage without pretending it is exhaustive
+
+Build a question-to-evidence matrix. For every subquestion, list the source classes and systems searched, the claims found, the evidence quality, unresolved contradictions, and unsearched areas. Distinguish “searched and found none” from “not searched”, “inaccessible”, and “not reported”. A zero-result search is evidence about the search process, not proof that no evidence exists.
+
+Define a practical stopping rule before searching: for example, all named primary sources checked, all required source classes searched, and no material new claim or source family discovered in a specified number of consecutive search iterations. If the rule is not met, report the search as incomplete. Do not describe a bounded search as exhaustive merely because the result set feels sufficient.
+
+### Preserve negative, null, and contradictory findings
+
+Extract null results, failed replications, adverse outcomes, limitations, and author-reported caveats with the same care as positive findings. Search for corrections, retractions, errata, superseding specifications, and later releases where these could change a claim. Do not infer absence of effect from a non-significant result; inspect the estimate, uncertainty interval, sample size, and power limitations where reported.
+
+When a source reports a result that conflicts with the hypothesis, keep it in the claim ledger. Do not discard it because its method is inconvenient unless a predeclared eligibility or quality rule justifies exclusion. Record whether the conflict is substantive, methodological, temporal, population-specific, or only apparent because terms or metrics differ.
+
+### Validate each material claim at its source
+
+Before using a claim, open the cited primary passage, table, figure, API reference, or dataset record. Verify that it supports the exact proposition and that the context, version, date, units, and qualifications have not been lost. For numerical claims, capture numerator, denominator, unit, population, time window, and uncertainty where available. For versioned technical behavior, record the tested version and a reproducible check rather than relying on a search snippet or copied example.
+
+Maintain explicit claim states: candidate, source-checked, independently corroborated, contradicted, stale, inaccessible, or unresolved. Only source-checked claims may be presented as directly supported. Corroboration must be genuinely independent; multiple pages repeating one upstream statement count as one lineage.
+
+### Calibrate uncertainty and communicate the boundary
+
+For each decision-critical conclusion, identify the strongest supporting evidence, strongest contrary evidence, key assumptions, plausible alternative explanations, and what observation would change the conclusion. Distinguish confidence in source accuracy from confidence that the evidence transfers to the target decision. Do not convert a qualitative judgment into a numeric probability unless a defensible calibration method exists.
+
+If evidence is too weak, stale, inaccessible, or non-transferable, narrow the conclusion or return “inconclusive”. State the exact boundary: which population, version, date range, task family, language, or operating condition was not established. Provide the smallest next research action that would reduce the uncertainty, with its expected decision value and cost.
+
+### Revalidation triggers
+
+Attach a review trigger to claims whose validity can decay: major software releases, API deprecations, security advisories, new benchmark versions, changes in pricing or service limits, corrected papers, or a material change in the target population. Record the trigger and owner in the research artifact. A future agent should re-check the claim when the trigger fires rather than treating an old finding as permanently current.
