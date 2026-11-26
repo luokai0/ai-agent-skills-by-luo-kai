@@ -3,7 +3,7 @@ name: session-continuity-recall
 description: Use when an AI agent must resume work from a prior session, reconstruct earlier decisions and open tasks from notes, logs, or memory stores, or hand off a workflow to another agent or human without losing state.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Session Continuity Recall
@@ -111,3 +111,46 @@ Test restart at every durable boundary, duplicate resume requests, expired appro
 **Handoff contract:** retrieve memory and prior artifacts as evidence, then reconcile them with live repository, service, queue, or system state. Return a resumption brief with verified completed work, unresolved items, side-effect status, expired approvals, and the next safe action. Only confirmed durable facts or decisions should be proposed for memory updates; transient progress belongs in session/task state.
 
 **Why the boundary exists:** memory is not a session transcript, and a previous session summary is not proof that its side effects completed.
+
+
+## Fenced resume ownership and checkpoint integrity (v1.3)
+
+### Acquire one execution owner with fencing
+
+Before a resumed worker can mutate task state, it must acquire an ownership lease using an atomic compare-and-set against the current task revision. The lease carries a monotonically increasing fencing token. Every checkpoint write and side-effect dispatch must include that token, and the authoritative store must reject writes from an older token even if an expired worker continues running. A timeout or lost heartbeat does not prove the old worker stopped.
+
+Define lease duration, renewal cadence, clock-skew tolerance, takeover delay, and behavior when the lease service is unavailable. Do not let two workers resume the same mutable task concurrently. Read-only inspection may be parallelized only when it cannot mutate task state or trigger external effects.
+
+### Commit checkpoints atomically with the event journal
+
+Treat the event journal as append-only evidence and the checkpoint as a derived resume optimization. A checkpoint must identify the exact journal sequence it covers, task contract revision, agent/tool versions, state schema version, and artifact digests. Persist checkpoint data and its journal cursor atomically or use a verifiable commit protocol; never publish a checkpoint that claims to include events that were not durably recorded.
+
+On recovery, verify checkpoint integrity and replay only events after its recorded cursor. Detect gaps, duplicate sequence numbers, invalid signatures or digests, and events from a different task or tenant. If integrity cannot be established, fall back to an earlier verified checkpoint or produce a recovery gap report; do not silently reconstruct state from a partial journal.
+
+### Distinguish replayable computation from external effects
+
+Classify each workflow step as pure/replayable, idempotent external operation, non-idempotent external operation, or irreversible effect. Pure steps may be recomputed from pinned inputs. Idempotent operations may be retried only with the same scoped idempotency identity. Non-idempotent and irreversible operations require reconciliation against the system of record before any retry. An event saying that an action was dispatched is not evidence that the target accepted it, and a missing completion event is not evidence that it failed.
+
+Persist a dispatch intent before invoking an external effect, then persist the downstream receipt and observed final state. If a crash occurs between these boundaries, mark the effect unresolved and reconcile by operation ID, idempotency key, or authoritative target query. Never invent a completion receipt or automatically repeat an unknown irreversible action.
+
+### Handle forks, migrations, and partial recovery explicitly
+
+A deliberate branch from an existing task must receive a new task/run identity and record its parent checkpoint; it must not masquerade as resuming the original mutable task. State migrations must be versioned, deterministic, testable against real historical checkpoints, and preserve an immutable copy of the pre-migration state. Reject lossy or ambiguous migrations unless an authorized operator accepts the documented loss.
+
+Recovery output must distinguish restored state, recomputed state, externally reconciled state, and unresolved state. Preserve partial results with their provenance, but do not promote them to completed deliverables until acceptance criteria are rechecked.
+
+### Recovery acceptance tests
+
+- Two workers attempt resume concurrently; only the current fencing token can write.
+- A paused worker resumes after its lease expires and is rejected by the state store.
+- Crash before and after journal append, checkpoint commit, effect dispatch, and receipt persistence.
+- Checkpoint cursor points beyond the durable journal or the journal contains a gap.
+- Duplicate and out-of-order events arrive during replay.
+- An external effect completed but its receipt was not persisted before crash.
+- A non-idempotent effect has an unknown outcome and must not be replayed.
+- A task is intentionally forked and must receive a distinct identity.
+- A checkpoint migration fails halfway and the prior checkpoint remains recoverable.
+
+The recovery report must include task identity, owner and fencing token, checkpoint ID and journal cursor, schema and tool versions, replayed event range, reconciled external effects, migration status, unresolved gaps, and acceptance-test evidence.
+
+**Routing boundary:** this section owns restoration of a task's mutable execution state and safe continuation after interruption. Use delegated-execution-queues for message delivery and worker lease mechanics; use agent-tool-architecture for the external asynchronous operation contract; use agent-memory-persistence for durable user and domain knowledge. Session recovery must coordinate these systems without taking over their responsibilities.
