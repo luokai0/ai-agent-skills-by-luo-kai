@@ -3,7 +3,7 @@ name: agent-evaluation-design
 description: Use when designing, reviewing, or extending evaluations (evals) for LLM-based agents or automation workflows, including task suites, graders, trajectory checks, regression baselines, and release gates.
 author: Luo Kai
 provenance: original
-version: 1.4.0
+version: 1.5.0
 ---
 
 # Agent Evaluation Design
@@ -187,3 +187,50 @@ A release decision must consider newly failing high-severity tasks, safety invar
 - [ ] Multiple comparisons and interim looks are controlled or clearly exploratory.
 - [ ] Effect size, uncertainty, regressions, and critical failures are visible.
 - [ ] Insufficient evidence is reported as inconclusive, not as a pass.
+
+
+## Cross-skill routing, conflict, and handoff evaluation (v1.5)
+
+A skill system must be evaluated as a coordinated decision system, not only as 250 isolated documents. Build a dedicated evaluation slice that measures whether the agent selects the right capability, respects ownership boundaries, preserves unresolved conflicts, and transfers work without losing constraints or evidence.
+
+### Define observable routing outcomes
+
+For each scenario, specify:
+- User goal and task scope, including explicit exclusions.
+- Candidate skills and their pinned versions, including near-neighbor skills that should not own the task.
+- The expected primary skill, optional supporting skills, and skills that must not be invoked for the stated scope.
+- Required handoff fields, evidence references, and receiving-skill acceptance conditions.
+- Policy and authority constraints that remain independently enforced regardless of routing.
+- Observable completion and negative assertions, such as no unauthorized tool call, no duplicate execution, and no approval reuse for a changed target.
+
+Do not grade a route solely by matching one exact skill name when multiple valid decompositions exist. Define an acceptable capability set and the responsibilities each selected skill must perform. Penalize missing owners, unnecessary duplication, and incompatible parallel execution.
+
+### Required scenario families
+
+Include at least these families in the routing and handoff suite:
+1. **Near-neighbor discrimination:** distinguish context compaction from durable memory and session recovery; workflow planning from queue execution; tool integration from server hardening; evaluation policy from benchmark implementation.
+2. **Authority conflict:** a general recommendation conflicts with a scoped hard constraint; a stale approval conflicts with current policy; two same-authority sources differ and no explicit supersession is present.
+3. **Untrusted instruction:** retrieved content or a tool result attempts to override the task, grant permissions, or redirect a handoff.
+4. **Incomplete handoff:** missing target, artifact digest, tenant, policy revision, approval binding, or postcondition must produce rejection or a non-executable hold.
+5. **Stale handoff:** skill digest, dependency, environment, policy, target, or task revision changes after sender preparation and before receiver acceptance.
+6. **Duplicate and concurrent delivery:** repeated message, lost acknowledgement, delayed sender, competing worker, or duplicate child result must not create two logical side effects.
+7. **Partial conflict:** one branch is blocked by a disputed constraint while independent branches can safely continue with separate ownership.
+8. **Recovery and compaction:** compressed state preserves exact blockers, provenance, completed effects, approvals, and next safe action after restart.
+
+### Score the full trajectory
+
+Record separate measures for primary-skill selection, supporting-skill precision, missed required capability, boundary violations, conflict detection, authority classification, conflict disposition, handoff schema validity, receiver acceptance, provenance retention, approval binding, duplicate-effect prevention, and postcondition verification. Record the first incorrect decision and whether it caused a side effect.
+
+Use deterministic graders for schemas, version pins, tool-call permissions, state transitions, artifact digests, duplicate execution, and forbidden actions. Use calibrated rubric graders only for semantic quality such as whether a boundary explanation is adequate. Human review is required when the correct authority or policy interpretation is itself disputed. A model grader must not adjudicate the same safety conflict whose resolution is under test.
+
+### Dataset construction and anti-shortcut controls
+
+Create cases from realistic multi-skill tasks, anonymized failures, routing disagreements, stale handoffs, and recovery incidents. Include paraphrased requests, multilingual phrasing where relevant, missing fields, misleading descriptions, and adversarial instructions in retrieved content. Keep hidden cases and expected routes unavailable to the routing model and routine prompt optimization loop. Pin the skill catalog, policy, runtime, and test harness for each evaluation run.
+
+Use paired baseline/candidate runs on the same cases and comparable tool access. Report distinct scenario count separately from repeated stochastic executions. Preserve per-case trajectories and stratify by task family, risk, ambiguity, and language. A high routing score cannot compensate for a single critical authorization bypass or duplicate irreversible action.
+
+### Release gate
+
+Hold release if the agent executes a blocked handoff, treats routing as authorization, drops a material unresolved conflict during compaction, reuses approval after a material action change, or creates duplicate external effects. For non-critical routing errors, require an owner and corrective action, then rerun the frozen regression slice. If the expected skill set is genuinely ambiguous, label the case ambiguous and define acceptable decompositions rather than forcing a false single answer.
+
+**Routing boundary:** this section defines evaluation requirements and acceptance criteria. Use llm-benchmark-harness to implement the runner and experiment-tracking to organize controlled comparisons; do not let the evaluation skill become the runtime conflict resolver.

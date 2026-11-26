@@ -3,7 +3,7 @@ name: context-window-management
 description: Use when an AI agent's working context is growing large, degrading output quality, risking truncation, or when designing how an agent should select, compress, persist, and hand off information across long multi-step tasks.
 author: Luo Kai
 provenance: original
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Context Window Management
@@ -114,3 +114,39 @@ Measure context efficiency by successful task completion, factual retention, too
 **Handoff contract:** compaction must preserve current objective, constraints, authorization/approval state, pending side effects, task identifiers, source provenance, unresolved decisions, and verification evidence. Durable memory receives only information approved for long-term retention; session recall uses task records to rebuild an active execution state.
 
 **Why the boundary exists:** context management compresses the current working set; memory persists selected knowledge; session continuity reconstructs a specific execution history.
+
+
+## Conflict-preserving compaction and handoff state (v1.3)
+
+Compression must reduce volume without manufacturing agreement between sources that disagree. If two instructions, observations, or policy records conflict, preserve them as separate claims with their original source references, authority, scope, version, timestamp, and verification state. Do not collapse them into a blended sentence or select one merely because it is newer, shorter, or repeated more often.
+
+### Preserve conflict structure
+
+For every unresolved or decision-relevant conflict, retain:
+- Each competing statement in its original wording when exact wording changes the obligation.
+- The source identity, location, immutable version or digest, and retrieval time.
+- The authority level and scope the source is entitled to establish.
+- Whether the statement is a hard constraint, approval, factual observation, recommendation, or inference.
+- The decision affected, known consequences, verification performed, and current disposition: unresolved, superseded with evidence, adjudicated, or no longer relevant.
+
+Keep the source artifacts externally available. The compact state record is an index and decision aid, not a replacement for the underlying evidence. A conflict marked unresolved must remain visible after every subsequent compaction pass.
+
+### Preserve authority without inventing it
+
+Record who or what is authorized to make each decision. Do not infer authority from a confident tone, source popularity, recency alone, or a message's position in a transcript. Distinguish permission to provide information from permission to approve an action. A summary, memory item, skill recommendation, or handoff cannot create or expand execution authority.
+
+If the authority relationship is unknown, mark it unresolved and retain both source references. Do not compress uncertainty into a definitive instruction. For a disputed irreversible action, require a fresh read of the authoritative source and the action-specific approval before execution.
+
+### Compaction acceptance checks
+
+After compaction, compare the retained conflict ledger with the source set and verify that:
+- No competing hard constraint was omitted or merged into a false consensus.
+- Source identity, version, scope, and verification state remain attached to every retained claim.
+- Supersession is supported by an explicit replacement or authoritative revision, not timestamp ordering alone.
+- Unresolved conflicts still block only the affected action or branch; unrelated safe work remains available.
+- Approval identity, target, arguments, policy revision, expiry, and execution principal remain exact where relevant.
+- The next agent or skill can retrieve the original evidence and understand why the issue remains open.
+
+Test repeated compaction, out-of-order updates, conflicting sources with different authority, stale summaries, partial retrieval failures, and handoff to a new agent. A successful compression preserves the same safe decision options and blockers as the uncompressed evidence. If it does not, restore the source material and rebuild the state record.
+
+**Routing boundary:** this section owns faithful preservation of competing claims during context reduction. Use agent-platform-and-learning-workflows to arbitrate skill-level conflicts, and workflow-planning-verification to validate the accepted decision and its approvals in a concrete workflow.
