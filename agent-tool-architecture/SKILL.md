@@ -3,7 +3,7 @@ name: agent-tool-architecture
 description: Use when designing, reviewing, or refactoring the tool layer of an LLM agent, including tool schemas, permission boundaries, error contracts, tool selection policies, and multi-step tool orchestration.
 author: Luo Kai
 provenance: original
-version: 1.3.0
+version: 1.4.0
 ---
 
 # Agent Tool Architecture
@@ -147,3 +147,45 @@ Create two synthetic tenants with deliberately overlapping identifiers and simil
 ### Audit without leaking data
 
 Record authenticated principal, delegated principal, tenant, tool version, resource reference, policy decision, correlation ID, and outcome. Redact secrets and minimize personal data; use stable opaque references instead of copying full payloads into logs. Ensure the audit sink itself enforces tenant visibility and retention policy.
+
+
+## Long-running tool operation contracts (v1.4)
+
+### Separate request acceptance from operation completion
+
+A tool that starts work which may outlive the request-response window must return a durable operation handle, not a success-shaped response that implies the work is finished. Define distinct outcomes for request rejected, operation accepted, operation running, operation succeeded, operation failed, operation cancellation requested, operation cancelled, and outcome unknown. The acceptance response confirms only that the service durably accepted responsibility for the operation.
+
+Each operation record should bind an opaque operation ID to the initiating run, authenticated principal, tenant, tool and contract version, normalized request digest, idempotency key, creation time, expiry/retention policy, and current state. Do not expose sequential IDs or allow a caller to retrieve an operation merely by guessing its identifier; authorize every status, result, and cancellation request against the original scope.
+
+### Make polling and notifications converge
+
+Provide one authoritative status representation regardless of whether the caller learns about changes by polling, webhook, queue event, or agent message. Include a monotonic state revision or event sequence so consumers can ignore stale and duplicated notifications. Notifications are hints to fetch authoritative state, not proof that the operation reached a terminal state. Status reads should expose whether results are complete, partial, unavailable, or expired.
+
+Define bounded polling intervals and backoff, Retry-After behavior, terminal-state retention, and what happens when the operation record expires before the caller retrieves the result. Do not make consumers infer completion from a missing queue message or a timed-out status request.
+
+### Specify cancellation as a distributed operation
+
+Cancellation is a request, not a guarantee that work stopped. Model cancellation-requested separately from cancelled. The worker must acknowledge that it stopped before the system reports cancellation as complete. If the operation crossed an irreversible side-effect boundary, return the actual effect state and the available compensation path rather than claiming the operation was undone.
+
+Cancellation must be idempotent and race-safe against completion. Define precedence when completion and cancellation occur concurrently, and preserve the final authoritative outcome. If the worker is unreachable, mark the outcome unresolved and schedule reconciliation; do not silently mark the task cancelled.
+
+### Reconcile retries and unknown outcomes
+
+A client timeout can occur before acceptance, after durable acceptance, or after the side effect completed but before the response arrived. Reuse the same idempotency key for retries of the same logical request. Query by that key or operation handle before creating a replacement operation. Bind idempotency records to principal, tenant, tool version, and normalized request digest; reject reuse with different arguments or scope.
+
+For external side effects, persist the downstream receipt and read back the target state where possible. Distinguish the operation's orchestration state from the external resource's effect state. If they disagree, surface a reconciliation-required state and prevent unsafe duplicate execution.
+
+### Acceptance tests
+
+- Client timeout before acceptance, after acceptance, and after downstream completion.
+- Duplicate start request with the same key and identical request digest.
+- Same key reused with changed arguments, tenant, or principal.
+- Duplicate and out-of-order status notifications.
+- Polling during state transition and after terminal-state expiry.
+- Cancellation before execution, during execution, after an irreversible effect, and racing with completion.
+- Worker crash after downstream success but before recording completion.
+- Status or cancellation request from a different tenant or unauthorized principal.
+
+The tool contract must document operation states, status consistency, idempotency scope, cancellation semantics, retention, notification behavior, reconciliation, and the exact meaning of every success response. Test that callers cannot mistake accepted, cancellation-requested, or unknown for completed or cancelled.
+
+**Routing boundary:** this section owns the external tool contract for durable asynchronous operations. Use delegated-execution-queues for queue leases, delivery, retries, dead-lettering, and worker mechanics; use session-continuity-recall for restoring an agent's conversation/run context. A durable operation handle is the cross-boundary reference, not a substitute for either queue correctness or session recovery.
