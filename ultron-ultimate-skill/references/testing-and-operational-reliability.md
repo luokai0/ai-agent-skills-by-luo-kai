@@ -977,7 +977,7 @@ Return:
 
 ## workflow-planning-verification
 
-**Use when:** Use when planning or reviewing an automated multi-step agent workflow before execution, to check step ordering, tool permissions, failure paths, approval gates, and success criteria so the workflow can be run safely and its results verified.
+**Use when:** Use when designing or reviewing the correctness of an end-to-end automated workflow before execution: its business/process steps, dependency logic, data contracts, decision points, authorization requirements, and end-to-end postconditions.
 
 ### Purpose and boundaries
 
@@ -986,6 +986,20 @@ This skill verifies a workflow plan before any agent or automation runs it. It c
 In scope: step decomposition, dependency ordering, input and output contracts, tool permission scoping, decision gates, rollback and retry logic, and evidence required to declare each step complete.
 
 Out of scope: writing the production code of the tools themselves, choosing vendors, legal or compliance certification, and performance benchmarking. Do not claim that a plan is compliant with any regulation or standard. Report only what was checked.
+
+#### Ownership boundary: workflow design versus durable queue execution
+
+This chapter owns the **workflow specification and pre-run design review**. It answers whether the process is logically complete and safe to execute: whether the intended outcome is decomposed correctly, dependencies and branches are valid, producer/consumer data contracts align, decision gates occur before consequential actions, and end-to-end postconditions can prove the requested outcome. Its unit of analysis is the business or system process, including synchronous steps, human decisions, direct tool calls, and delegated work.
+
+It does **not** own the runtime lifecycle of queued work. Do not design or operate worker leases, queue visibility timeouts, dequeue/acknowledgement protocols, durable attempt counters, delayed delivery, cancellation races, dead-letter routing, queue persistence, or crash recovery here. Those mechanisms belong to `delegated-execution-queues`. When a workflow contains queued or delegated steps, specify the required task outcome, dependency, authority envelope, idempotency requirement, deadline, and acceptance evidence; hand the executable queue contract to that chapter.
+
+**Boundary tests:**
+- “Are these steps in the right order, and does the final state satisfy the user's goal?” → this chapter.
+- “How is a ready task claimed, leased, retried after worker loss, cancelled, or moved to a dead-letter state?” → `delegated-execution-queues`.
+- “What evidence must a delegated result satisfy before the next business step may proceed?” → this chapter defines the acceptance condition; the queue chapter records and enforces the task-state transition, while the workflow owner evaluates the returned evidence.
+- A queue's `succeeded` state is not proof that the overall workflow's postcondition holds. Conversely, a valid workflow graph does not provide durable dispatch or recovery.
+
+Keep generic dependency, risk, approval, idempotency, and verification concepts here only as **workflow-level requirements**. Avoid duplicating queue data structures and worker lifecycle algorithms.
 
 ### Inputs and assumptions
 
