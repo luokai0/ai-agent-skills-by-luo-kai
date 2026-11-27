@@ -385,11 +385,25 @@ Test repeated compaction, out-of-order updates, conflicting sources with differe
 
 ## delegated-execution-queues
 
-**Use when:** Use when an agent must hand off, queue, schedule, or supervise tasks executed by other workers, tools, or agents, and needs ordered dispatch, ownership tracking, retries, and verifiable completion records.
+**Use when:** Use when delegated work must be durably scheduled and managed across worker execution, delay, retries, cancellation, or process interruption, with explicit task ownership and auditable state transitions.
 
 ### Purpose and boundaries
 
 This skill governs how a coordinating agent packages work into queued units, dispatches them to executors (human operators, scripts, tool-using sub-agents, or external services), monitors them, and accepts or rejects results. It covers queue design, task contracts, ordering, idempotency, retry policy, and completion evidence.
+
+#### Ownership boundary: queue runtime versus workflow correctness
+
+This chapter owns the **durable execution mechanism** for delegated task units: task envelope identity, enqueue/dequeue behavior, readiness checks at dispatch time, worker assignment, leases or claims, heartbeat/visibility expiry, attempt accounting, idempotent redelivery, backoff and delayed retry, cancellation, dead-letter handling, recovery after coordinator or worker restart, and the append-only execution ledger. It defines how a task moves through runtime states and how that state survives interruption.
+
+It does not own the end-to-end process design or decide whether the overall business workflow is logically correct. `workflow-planning-verification` owns the workflow graph, process-level branches, producer/consumer semantics, approval placement, and final postconditions. The workflow owner supplies each delegated task's objective, dependency meaning, authority envelope, deadline, idempotency expectations, and acceptance evidence; this chapter maps those requirements into a durable queue contract and reports task outcomes back.
+
+**Boundary tests:**
+- “Does the sequence of actions produce the intended end-to-end outcome?” → `workflow-planning-verification`.
+- “Can a worker safely claim this task, renew its lease, survive redelivery, and record cancellation or dead-letter state?” → this chapter.
+- “Is the returned artifact good enough to satisfy the process-level condition?” → the workflow owner defines and evaluates that condition; this chapter verifies the task contract and records evidence and terminal state.
+- A queue acknowledgement or terminal queue state never substitutes for workflow-level acceptance. A workflow dependency graph never substitutes for durable queue state, lease fencing, or recovery.
+
+Do not duplicate full workflow-planning checklists here. Keep only the minimum task-level dependency and success-contract fields needed to dispatch safely.
 
 It does not cover: writing the executor's internal logic, choosing models, designing general infrastructure, or making product decisions. If a task requires changing production systems, moving money, messaging customers, deleting data, or accessing personal or regulated data, stop at the approval gate below before dispatch.
 

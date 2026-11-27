@@ -14,6 +14,10 @@ This branch contains exactly one skill directory: [`ultron-ultimate-skill/`](ult
 
 The package follows the Agent Skills progressive-disclosure structure: activate one skill, select a capability from the index, and load only the reference module and chapter needed for the task. The entry point stays concise while the complete specialist knowledge remains available.
 
+## Capability ownership
+
+The reference chapters use explicit ownership boundaries instead of duplicating entire workflows. Workflow planning owns process logic, dependency meaning, and end-to-end postconditions; delegated execution queues own durable dispatch, worker claims and leases, retries, cancellation, dead-letter handling, and runtime recovery. The workflow owner defines what a delegated result must prove, while the queue owner records and enforces its execution lifecycle. A queue terminal state is not equivalent to workflow acceptance.
+
 ## Domain coverage
 
 1. **Agent Architecture and Platform Design** — 7 chapters
