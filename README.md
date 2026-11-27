@@ -16,7 +16,7 @@ The package follows the Agent Skills progressive-disclosure structure: activate 
 
 ## Capability ownership
 
-The reference chapters use explicit ownership boundaries instead of duplicating entire workflows. Workflow planning owns process logic, dependency meaning, and end-to-end postconditions; delegated execution queues own durable dispatch, worker claims and leases, retries, cancellation, dead-letter handling, and runtime recovery. The workflow owner defines what a delegated result must prove, while the queue owner records and enforces its execution lifecycle. A queue terminal state is not equivalent to workflow acceptance.
+The reference chapters use explicit ownership boundaries instead of duplicating entire workflows. Workflow planning owns process logic, dependency meaning, and end-to-end postconditions; delegated execution queues own durable dispatch, worker claims and leases, retries, cancellation, dead-letter handling, and runtime recovery. The workflow owner defines what a delegated result must prove, while the queue owner records and enforces its execution lifecycle. A queue terminal state is not equivalent to workflow acceptance. Browser retrieval is distinct from stateful GUI operations; browser automation implements browser-specific test mechanics, while E2E engineering owns cross-system journey strategy and release acceptance. A browser test must not be used as authorization for live operational changes.
 
 ## Domain coverage
 

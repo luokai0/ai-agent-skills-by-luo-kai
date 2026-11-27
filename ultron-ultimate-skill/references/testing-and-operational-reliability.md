@@ -250,13 +250,27 @@ Do not claim a fix is permanent, complete, or compliant unless the verification 
 
 ## e2e-test-engineering
 
-**Use when:** Use when designing, writing, stabilizing, or reviewing end-to-end tests that exercise a deployed or near-production system through its user-facing or integration boundaries, including test environment setup, data seeding strategy, flake triage, and CI gating decisions.
+**Use when:** Use when defining or operating the end-to-end test strategy for critical user or system journeys across real application boundaries, including coverage priorities, cross-system oracles, environment and data strategy, flake policy, and release gating.
 
 ### Purpose and boundaries
 
 This skill covers end-to-end (E2E) tests: automated tests that drive a running system across real process, network, and storage boundaries to verify a user journey or business-critical flow. It guides journey selection, test design, environment and data strategy, flake diagnosis, and CI gating.
 
 Out of scope: unit and component test design (use a unit-testing skill), load and performance testing, penetration testing, and production monitoring. Do not run E2E suites against production data or third-party live services without explicit approval (see Decision gates).
+
+#### Ownership boundary: system-level E2E strategy versus browser test mechanics
+
+This chapter owns the **end-to-end test program**: risk-based journey selection, coverage traceability, system-level pass oracles across UI/API/database/events and external dependencies, environment and test-data lifecycle, service virtualization policy, suite composition, flake classification and quarantine governance, CI/release gates, and the evidence required to accept a build. It decides what must be proven and what result is release-blocking, independent of the chosen test driver. E2E coverage may use browser, API, mobile, desktop, protocol, or mixed-system harnesses.
+
+`browser-automation` owns browser-specific test mechanics: browser contexts, selectors, page abstractions, waits, browser assertions, test-only interception, and browser trace capture. It implements browser portions of the acceptance contract defined here; it does not choose the release threshold or claim that browser-visible success proves every downstream effect.
+
+**Boundary tests:**
+- “Which journeys are critical, what cross-boundary evidence proves completion, and what blocks release?” → this chapter.
+- “How should the browser test find a button, wait for a state transition, isolate a context, or capture a trace?” → `browser-automation`.
+- “Can the critical workflow be tested through APIs or service boundaries without a browser?” → this chapter chooses and governs that coverage; browser automation is unnecessary unless browser behavior itself is under test.
+- A browser test's pass/fail result is evidence for the relevant slice, not a substitute for the full system acceptance contract. The browser harness must not silently weaken or reinterpret that contract.
+
+Do not duplicate driver-specific selector recipes and browser session mechanics here. Do not use E2E test execution as a substitute for authorized operational browser/desktop work; route real user-directed record changes to `browser-desktop-control`.
 
 ### Inputs and assumptions
 
@@ -337,7 +351,7 @@ Version-sensitive details (runner flags, browser versions, vendor test-mode beha
 
 ### Ultron routing contract
 
-**Choose this skill when:** the behavior under test crosses real application boundaries: browser or client, running service, network, database, queue, identity provider, or external dependency. Use it for user journeys, business-critical workflows, deployment smoke tests, and integration behavior that cannot be proven by isolated tests.
+**Choose this skill when:** the task is to define or verify system-level acceptance across real boundaries—browser/client, running service, network, database, queue, identity provider, or external dependency—including critical journeys, deployment smoke tests, and release gates. Select the appropriate harness; browser automation is only one possible implementation.
 
 **Choose `unit-and-component-testing` when:** the behavior can be verified inside a function, class, module, or component with external systems replaced by controlled test doubles.
 
