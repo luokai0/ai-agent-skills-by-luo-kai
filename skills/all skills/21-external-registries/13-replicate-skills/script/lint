@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# script/lint: Validate Agent Skills definitions with skills-ref.
+# skills-ref is the reference CLI for the Agent Skills spec (agentskills.io).
+# It provides the `agentskills` executable with a `validate` subcommand.
+# Uses uvx if available for a clean, isolated install of the validator.
+# Falls back to a local Python module install if uv is not present.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+[ -z "$DEBUG" ] || set -x
+
+if [ $# -gt 0 ]; then
+  SKILL_PATHS="$*"
+else
+  SKILL_PATHS=""
+  for d in skills/*/; do
+    [ -f "$d/SKILL.md" ] && SKILL_PATHS="$SKILL_PATHS $d"
+  done
+fi
+
+validate() {
+  if command -v uv >/dev/null 2>&1; then
+    uvx --from skills-ref agentskills validate "$1"
+    return
+  fi
+
+  PYTHON_BIN="${PYTHON_BIN:-python3}"
+  if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
+    if command -v python >/dev/null 2>&1; then
+      PYTHON_BIN=python
+    else
+      echo "python not found. Install Python 3 or uv to run skills-ref." >&2
+      exit 1
+    fi
+  fi
+
+  "$PYTHON_BIN" -m skills_ref validate "$1"
+}
+
+for SKILL_PATH in $SKILL_PATHS; do
+  echo "==> Validating Agent Skills in $SKILL_PATH"
+  validate "$SKILL_PATH"
+done

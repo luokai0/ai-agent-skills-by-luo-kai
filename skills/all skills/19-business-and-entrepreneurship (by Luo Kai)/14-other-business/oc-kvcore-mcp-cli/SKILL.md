@@ -1,0 +1,34 @@
+---
+name: oc-kvcore-mcp-cli
+version: 1.0.0
+description: Use this skill when users need KVcore CRM actions through MCP/CLI (contacts, tags, notes, calls, email, text.
+author: luo-kai
+tags: [kvcore-mcp-cli, openclaw, community]
+source: https://clawskills.sh/skills/kvcore-mcp-cli
+---
+
+# Kvcore Mcp Cli
+
+## Overview
+Use this skill when users need KVcore CRM actions through MCP/CLI (contacts, tags, notes, calls, email, text.
+
+## Before Starting
+1. What specific task do you need this skill for?
+2. What inputs are available?
+3. What is the expected output format?
+
+## Usage
+Install via: `npx clawhub install kvcore-mcp-cli`
+Documentation: https://clawskills.sh/skills/kvcore-mcp-cli
+
+## Core Functionality
+Use this skill when users need KVcore CRM actions through MCP/CLI (contacts, tags, notes, calls, email, text.
+
+## Best Practices
+- Test in sandbox environment first
+- Check latest version before production use
+- Review source docs for advanced configuration
+
+## Related Skills
+- agent-installer
+- clawhub-publisher

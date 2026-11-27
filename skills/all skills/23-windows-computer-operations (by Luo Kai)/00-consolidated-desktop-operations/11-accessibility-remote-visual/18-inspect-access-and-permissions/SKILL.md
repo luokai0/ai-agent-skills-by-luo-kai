@@ -1,0 +1,462 @@
+---
+name: "Windows Inspect Access And Permissions across Accessibility, Remote Support, and Visual Automation"
+description: "Consolidated inspect access and permissions workflow across 4 Windows domains: Accessibility, Remote Support, and Visual Automation. Preserves each profile's original procedures, tools, safety rules, examples, verification, and recovery guidance."
+metadata:
+  author: "Luo Kai"
+  platform: "Windows 10 and Windows 11"
+  category: "Windows Computer Operations"
+  skill_id: "windows-consolidated-g11-w18"
+  version: "1.2.0"
+---
+
+# Windows Inspect Access And Permissions across Accessibility, Remote Support, and Visual Automation
+
+## Objective
+
+Combine the inspect access and permissions workflows from 4 related Windows domains. Select only the profile that matches the user's target. Each profile retains its complete original workflow body, including task instructions, preferred tools, command examples, approval rules, verification, recovery, and completion criteria.
+
+## When to use
+
+Use when the user needs the inspect access and permissions workflow in any of these domains: Windows Accessibility and assistive technology; Windows Remote access and support sessions; Windows Reliable Windows UI automation; Windows Screenshots, screen reading, and OCR.
+
+## Required operating discipline
+
+- Confirm the exact device, account/session, target, and applicable domain before acting.
+
+- Select only the relevant domain profile; do not execute every profile by default.
+
+- Preserve each profile's native tools, platform distinctions, approval gates, and recovery rules.
+
+- Prefer least privilege, observable actions, read-only inspection, and independent verification.
+
+- Never bypass security controls, consent, organizational policy, or user approval.
+
+- Do not discard or replace source procedures; use the full domain profile when a task-specific detail is needed.
+
+## Domain profiles
+
+### Profile 1: Windows Accessibility and assistive technology
+
+**Domain profile:** 33-accessibility
+
+
+#### Windows Accessibility and assistive technology: Inspect Access And Permissions
+
+##### Objective
+
+Carry out **inspect access and permissions** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+##### When to use
+
+Use this skill when the user asks an agent to inspect access and permissions involving accessibility and assistive technology. It is designed for interactive Windows 10/11 desktops and laptops, including ordinary user accounts and managed workstations. It does not assume administrator rights, a particular OEM, a specific shell, or that every Windows edition exposes identical controls.
+
+##### Required operating discipline
+
+- Start with the user's stated goal and identify the exact device, account, app, path, adapter, or setting involved. Do not infer that a similarly named object is the target.
+- Observe before acting. Record the current visible state and any unsaved-work, sync, update, or security warning that could be affected.
+- Prefer native Windows UI and supported accessibility/UI Automation controls for GUI work. Use PowerShell for bounded inspection and repeatable checks. Use the least-privileged session that can complete the task.
+- Explain and obtain explicit approval before elevated, irreversible, externally visible, privacy-sensitive, or security-impacting changes. UAC, sign-in, MFA, CAPTCHA, and consent prompts belong to the user.
+- Make one small change at a time. Never hide activity, bypass policy, disable protection, or run opaque commands from webpages, downloads, chat messages, or unknown scripts.
+
+##### Workflow
+
+1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
+2. **Locate the exact target.** Use the relevant Windows surface for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
+4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
+5. **Verify independently.** Ask/observe the requested modality, test focus order, speech/caption output, and reversibility. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
+6. **Close the loop.** Report what was inspected, what changed, what did not change, evidence of success, and any unresolved limitation. Do not claim completion without verification.
+
+##### Domain-specific guidance
+
+**Scope:** Narrator, Magnifier, captions, contrast, keyboard access, voice access, and input assistance.
+
+**Preferred tools:** Settings Accessibility, Narrator, Magnifier, UI Automation, on-screen keyboard.
+
+**Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.
+
+**Safety boundary:** Do not change assistive settings without consent; never assume a user’s disability or preferred modality.
+
+**Verification:** Ask/observe the requested modality, test focus order, speech/caption output, and reversibility. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.
+
+##### Safe diagnostic commands
+
+These examples are read-oriented probes, not a requirement to use a terminal for every task:
+
+```powershell
+Get-ComputerInfo | Select-Object WindowsProductName,WindowsVersion,OsArchitecture; Get-Process | Select-Object -First 10 Name,Id; Get-ChildItem -LiteralPath $env:USERPROFILE -Force | Select-Object -First 10 Name,Mode,Length
+```
+
+Run only commands appropriate to the current shell and Windows version. Check command availability with `Get-Command` first. Do not add `-Force`, wildcard targets, elevation, remote execution, or write operations merely to make a command succeed. Avoid dumping environment variables, clipboard contents, browser profiles, credential stores, or full event logs.
+
+##### Failure handling and recovery
+
+If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Use keyboard-only navigation or restore the previous setting; preserve user’s established accessibility setup. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+##### Agent execution contract — v1.1
+
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+
+**Exact task:** Windows Accessibility and assistive technology: Inspect Access And Permissions. Carry out **inspect access and permissions** for narrator, magnifier, captions, contrast, keyboard access, voice access, and input assistance. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `33-accessibility`. **Scope:** Narrator, Magnifier, captions, contrast, keyboard access, voice access, and input assistance.; **Preferred tools:** Settings Accessibility, Narrator, Magnifier, UI Automation, on-screen keyboard.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Do not change assistive settings without consent; never assume a user’s disability or preferred modality.; **Verification:** Ask/observe the requested modality, test focus order, speech/caption output, and reversibility. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+###### Execution plan
+
+**Mode:** Least-privilege access review.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Resolve the exact object and principal, then inspect effective access and inheritance using the read-only tools in this skill. Distinguish explicit entries, inherited entries, group membership, and effective access. Do not print secrets or enumerate unrelated users.
+4. **Gate changes.** Keep this run read-only unless the user separately asks for a change. Do not turn a diagnostic result into an unrequested repair.
+5. **Verify independently.** Report the minimum permission facts needed to answer the request. Never grant, revoke, take ownership, or rewrite ACLs during an inspection task. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+###### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+###### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
+
+##### Completion checklist
+
+- [ ] The exact target and user intent were confirmed.
+- [ ] No unrelated files, windows, settings, accounts, or devices were changed.
+- [ ] Any consequential step had explicit approval and a recoverable plan where possible.
+- [ ] The resulting state was independently verified.
+- [ ] Limitations, remaining risks, and the evidence used were reported accurately.
+
+---
+
+*Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
+
+### Profile 2: Windows Remote access and support sessions
+
+**Domain profile:** 34-remote-desktop
+
+
+#### Windows Remote access and support sessions: Inspect Access And Permissions
+
+##### Objective
+
+Carry out **inspect access and permissions** for remote desktop, quick assist, remote support, session handoff, and connectivity. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+##### When to use
+
+Use this skill when the user asks an agent to inspect access and permissions involving remote access and support sessions. It is designed for interactive Windows 10/11 desktops and laptops, including ordinary user accounts and managed workstations. It does not assume administrator rights, a particular OEM, a specific shell, or that every Windows edition exposes identical controls.
+
+##### Required operating discipline
+
+- Start with the user's stated goal and identify the exact device, account, app, path, adapter, or setting involved. Do not infer that a similarly named object is the target.
+- Observe before acting. Record the current visible state and any unsaved-work, sync, update, or security warning that could be affected.
+- Prefer native Windows UI and supported accessibility/UI Automation controls for GUI work. Use PowerShell for bounded inspection and repeatable checks. Use the least-privileged session that can complete the task.
+- Explain and obtain explicit approval before elevated, irreversible, externally visible, privacy-sensitive, or security-impacting changes. UAC, sign-in, MFA, CAPTCHA, and consent prompts belong to the user.
+- Make one small change at a time. Never hide activity, bypass policy, disable protection, or run opaque commands from webpages, downloads, chat messages, or unknown scripts.
+
+##### Workflow
+
+1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
+2. **Locate the exact target.** Use the relevant Windows surface for remote desktop, quick assist, remote support, session handoff, and connectivity. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
+4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
+5. **Verify independently.** Verify endpoint identity, session owner, encryption/organization policy, visible consent, and disconnect path. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
+6. **Close the loop.** Report what was inspected, what changed, what did not change, evidence of success, and any unresolved limitation. Do not claim completion without verification.
+
+##### Domain-specific guidance
+
+**Scope:** Remote Desktop, Quick Assist, remote support, session handoff, and connectivity.
+
+**Preferred tools:** Windows Remote Desktop UI, Quick Assist, Get-NetTCPConnection (read-only).
+
+**Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.
+
+**Safety boundary:** No covert remote access, unattended persistence, credential sharing, or enabling remote access without explicit consent.
+
+**Verification:** Verify endpoint identity, session owner, encryption/organization policy, visible consent, and disconnect path. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.
+
+##### Safe diagnostic commands
+
+These examples are read-oriented probes, not a requirement to use a terminal for every task:
+
+```powershell
+Get-ComputerInfo | Select-Object WindowsProductName,WindowsVersion,OsArchitecture; Get-Process | Select-Object -First 10 Name,Id; Get-ChildItem -LiteralPath $env:USERPROFILE -Force | Select-Object -First 10 Name,Mode,Length
+```
+
+Run only commands appropriate to the current shell and Windows version. Check command availability with `Get-Command` first. Do not add `-Force`, wildcard targets, elevation, remote execution, or write operations merely to make a command succeed. Avoid dumping environment variables, clipboard contents, browser profiles, credential stores, or full event logs.
+
+##### Failure handling and recovery
+
+If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Stop if identity or consent is unclear; end the session visibly and preserve local access. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+##### Agent execution contract — v1.1
+
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+
+**Exact task:** Windows Remote access and support sessions: Inspect Access And Permissions. Carry out **inspect access and permissions** for remote desktop, quick assist, remote support, session handoff, and connectivity. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `34-remote-desktop`. **Scope:** Remote Desktop, Quick Assist, remote support, session handoff, and connectivity.; **Preferred tools:** Windows Remote Desktop UI, Quick Assist, Get-NetTCPConnection (read-only).; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** No covert remote access, unattended persistence, credential sharing, or enabling remote access without explicit consent.; **Verification:** Verify endpoint identity, session owner, encryption/organization policy, visible consent, and disconnect path. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+###### Execution plan
+
+**Mode:** Least-privilege access review.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Resolve the exact object and principal, then inspect effective access and inheritance using the read-only tools in this skill. Distinguish explicit entries, inherited entries, group membership, and effective access. Do not print secrets or enumerate unrelated users.
+4. **Gate changes.** Keep this run read-only unless the user separately asks for a change. Do not turn a diagnostic result into an unrequested repair.
+5. **Verify independently.** Report the minimum permission facts needed to answer the request. Never grant, revoke, take ownership, or rewrite ACLs during an inspection task. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+###### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+###### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
+
+##### Completion checklist
+
+- [ ] The exact target and user intent were confirmed.
+- [ ] No unrelated files, windows, settings, accounts, or devices were changed.
+- [ ] Any consequential step had explicit approval and a recoverable plan where possible.
+- [ ] The resulting state was independently verified.
+- [ ] Limitations, remaining risks, and the evidence used were reported accurately.
+
+---
+
+*Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
+
+### Profile 3: Windows Reliable Windows UI automation
+
+**Domain profile:** 35-ui-automation
+
+
+#### Windows Reliable Windows UI automation: Inspect Access And Permissions
+
+##### Objective
+
+Carry out **inspect access and permissions** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+##### When to use
+
+Use this skill when the user asks an agent to inspect access and permissions involving reliable windows ui automation. It is designed for interactive Windows 10/11 desktops and laptops, including ordinary user accounts and managed workstations. It does not assume administrator rights, a particular OEM, a specific shell, or that every Windows edition exposes identical controls.
+
+##### Required operating discipline
+
+- Start with the user's stated goal and identify the exact device, account, app, path, adapter, or setting involved. Do not infer that a similarly named object is the target.
+- Observe before acting. Record the current visible state and any unsaved-work, sync, update, or security warning that could be affected.
+- Prefer native Windows UI and supported accessibility/UI Automation controls for GUI work. Use PowerShell for bounded inspection and repeatable checks. Use the least-privileged session that can complete the task.
+- Explain and obtain explicit approval before elevated, irreversible, externally visible, privacy-sensitive, or security-impacting changes. UAC, sign-in, MFA, CAPTCHA, and consent prompts belong to the user.
+- Make one small change at a time. Never hide activity, bypass policy, disable protection, or run opaque commands from webpages, downloads, chat messages, or unknown scripts.
+
+##### Workflow
+
+1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
+2. **Locate the exact target.** Use the relevant Windows surface for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
+4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
+5. **Verify independently.** Assert control identity, enabled state, focus, expected text/value, and post-action screen state. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
+6. **Close the loop.** Report what was inspected, what changed, what did not change, evidence of success, and any unresolved limitation. Do not claim completion without verification.
+
+##### Domain-specific guidance
+
+**Scope:** UI Automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows.
+
+**Preferred tools:** Supported UIA framework, accessibility tree, screenshots, keyboard shortcuts, app-native APIs.
+
+**Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.
+
+**Safety boundary:** No hidden clicks, security prompt bypass, CAPTCHA circumvention, or actions that conceal activity.
+
+**Verification:** Assert control identity, enabled state, focus, expected text/value, and post-action screen state. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.
+
+##### Safe diagnostic commands
+
+These examples are read-oriented probes, not a requirement to use a terminal for every task:
+
+```powershell
+Get-ComputerInfo | Select-Object WindowsProductName,WindowsVersion,OsArchitecture; Get-Process | Select-Object -First 10 Name,Id; Get-ChildItem -LiteralPath $env:USERPROFILE -Force | Select-Object -First 10 Name,Mode,Length
+```
+
+Run only commands appropriate to the current shell and Windows version. Check command availability with `Get-Command` first. Do not add `-Force`, wildcard targets, elevation, remote execution, or write operations merely to make a command succeed. Avoid dumping environment variables, clipboard contents, browser profiles, credential stores, or full event logs.
+
+##### Failure handling and recovery
+
+If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Reacquire controls after layout changes; stop rather than clicking by stale coordinates. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+##### Agent execution contract — v1.1
+
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+
+**Exact task:** Windows Reliable Windows UI automation: Inspect Access And Permissions. Carry out **inspect access and permissions** for ui automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `35-ui-automation`. **Scope:** UI Automation trees, selectors, focus, keyboard/mouse actions, waits, and resilient workflows.; **Preferred tools:** Supported UIA framework, accessibility tree, screenshots, keyboard shortcuts, app-native APIs.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** No hidden clicks, security prompt bypass, CAPTCHA circumvention, or actions that conceal activity.; **Verification:** Assert control identity, enabled state, focus, expected text/value, and post-action screen state. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+###### Execution plan
+
+**Mode:** Least-privilege access review.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Resolve the exact object and principal, then inspect effective access and inheritance using the read-only tools in this skill. Distinguish explicit entries, inherited entries, group membership, and effective access. Do not print secrets or enumerate unrelated users.
+4. **Gate changes.** Keep this run read-only unless the user separately asks for a change. Do not turn a diagnostic result into an unrequested repair.
+5. **Verify independently.** Report the minimum permission facts needed to answer the request. Never grant, revoke, take ownership, or rewrite ACLs during an inspection task. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+###### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+###### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
+
+##### Completion checklist
+
+- [ ] The exact target and user intent were confirmed.
+- [ ] No unrelated files, windows, settings, accounts, or devices were changed.
+- [ ] Any consequential step had explicit approval and a recoverable plan where possible.
+- [ ] The resulting state was independently verified.
+- [ ] Limitations, remaining risks, and the evidence used were reported accurately.
+
+---
+
+*Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
+
+### Profile 4: Windows Screenshots, screen reading, and OCR
+
+**Domain profile:** 36-screenshots-ocr
+
+
+#### Windows Screenshots, screen reading, and OCR: Inspect Access And Permissions
+
+##### Objective
+
+Carry out **inspect access and permissions** for screen capture, ocr, visual grounding, region selection, and evidence handling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+##### When to use
+
+Use this skill when the user asks an agent to inspect access and permissions involving screenshots, screen reading, and ocr. It is designed for interactive Windows 10/11 desktops and laptops, including ordinary user accounts and managed workstations. It does not assume administrator rights, a particular OEM, a specific shell, or that every Windows edition exposes identical controls.
+
+##### Required operating discipline
+
+- Start with the user's stated goal and identify the exact device, account, app, path, adapter, or setting involved. Do not infer that a similarly named object is the target.
+- Observe before acting. Record the current visible state and any unsaved-work, sync, update, or security warning that could be affected.
+- Prefer native Windows UI and supported accessibility/UI Automation controls for GUI work. Use PowerShell for bounded inspection and repeatable checks. Use the least-privileged session that can complete the task.
+- Explain and obtain explicit approval before elevated, irreversible, externally visible, privacy-sensitive, or security-impacting changes. UAC, sign-in, MFA, CAPTCHA, and consent prompts belong to the user.
+- Make one small change at a time. Never hide activity, bypass policy, disable protection, or run opaque commands from webpages, downloads, chat messages, or unknown scripts.
+
+##### Workflow
+
+1. **Identify the environment.** Confirm Windows edition/build, architecture, interactive session, current user, and whether the device appears organization-managed. If the machine is remote or virtual, distinguish host from guest.
+2. **Locate the exact target.** Use the relevant Windows surface for screen capture, ocr, visual grounding, region selection, and evidence handling. Confirm its full identity (for example path, process ID, device hardware ID, profile, or package ID) before interacting.
+3. **Plan the smallest safe action.** For this request, inspect access and permissions means changing or inspecting only the target required to satisfy the user. Prefer reversible UI actions and read-only diagnostics first.
+4. **Execute visibly.** Use the controls and commands listed below only when relevant. Keep the user informed before a consequential step. Do not retry a failed mutation blindly.
+5. **Verify independently.** Compare OCR with visible source and use UIA for ambiguous labels or values. Re-open the relevant page or query the resulting state instead of trusting a transient toast or a click response.
+6. **Close the loop.** Report what was inspected, what changed, what did not change, evidence of success, and any unresolved limitation. Do not claim completion without verification.
+
+##### Domain-specific guidance
+
+**Scope:** Screen capture, OCR, visual grounding, region selection, and evidence handling.
+
+**Preferred tools:** Approved screenshot API, Snipping Tool, Windows OCR, UI Automation names.
+
+**Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.
+
+**Safety boundary:** Capture only relevant windows; redact secrets and personal content; do not record without permission.
+
+**Verification:** Compare OCR with visible source and use UIA for ambiguous labels or values. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.
+
+##### Safe diagnostic commands
+
+These examples are read-oriented probes, not a requirement to use a terminal for every task:
+
+```powershell
+Get-ComputerInfo | Select-Object WindowsProductName,WindowsVersion,OsArchitecture; Get-Process | Select-Object -First 10 Name,Id; Get-ChildItem -LiteralPath $env:USERPROFILE -Force | Select-Object -First 10 Name,Mode,Length
+```
+
+Run only commands appropriate to the current shell and Windows version. Check command availability with `Get-Command` first. Do not add `-Force`, wildcard targets, elevation, remote execution, or write operations merely to make a command succeed. Avoid dumping environment variables, clipboard contents, browser profiles, credential stores, or full event logs.
+
+##### Failure handling and recovery
+
+If the action fails, stop and preserve the current state. Capture the exact error text and a narrow timestamped diagnostic. Recheck the target identity and permissions, then try one lower-risk alternate path. **Recovery route:** Retake a focused crop at readable scale; report uncertainty rather than inventing text. Never improvise a registry edit, service shutdown, driver replacement, security exception, reset, or destructive command as a workaround.
+
+##### Agent execution contract — v1.1
+
+**Version:** `1.1.0` · **Risk:** LOW — read-only inspection or reporting
+
+**Exact task:** Windows Screenshots, screen reading, and OCR: Inspect Access And Permissions. Carry out **inspect access and permissions** for screen capture, ocr, visual grounding, region selection, and evidence handling. Treat the machine as a real user's working environment: preserve their session, data, privacy, and security posture. The target outcome is a verified state, not merely a successful click or a command that returned without an obvious error.
+
+**Domain binding:** `36-screenshots-ocr`. **Scope:** Screen capture, OCR, visual grounding, region selection, and evidence handling.; **Preferred tools:** Approved screenshot API, Snipping Tool, Windows OCR, UI Automation names.; **Task focus:** For **inspect access and permissions**, first establish the current state and exact target. Choose the native control that exposes the relevant property; avoid coordinate-only interaction if a stable UI Automation name, keyboard shortcut, or application-native command is available. If the target is not present, report that fact and check one reasonable alternate location rather than creating a substitute without permission.; **Safety boundary:** Capture only relevant windows; redact secrets and personal content; do not record without permission.; **Verification:** Compare OCR with visible source and use UIA for ambiguous labels or values. Capture only the minimum evidence needed, and redact account names, private paths, IP addresses, document titles, and other personal information from any external report.; Use the domain scope and preferred tools already defined in this skill; do not substitute a similarly named Windows control or operate on another account, device, path, or process.
+
+###### Execution plan
+
+**Mode:** Least-privilege access review.
+
+1. **Bind the target.** Confirm the active device, Windows edition/build, signed-in account/session, exact application or object, and full target identity. If the machine is managed, remote, virtual, or shared, record that context and preserve its policy and access path.
+2. **Capture a baseline.** Use the read-only probes and native UI already listed above. Check command availability before invoking optional cmdlets; prefer standard-user PowerShell and named accessibility controls. Record only fields relevant to this task.
+3. **Apply the task method.** Resolve the exact object and principal, then inspect effective access and inheritance using the read-only tools in this skill. Distinguish explicit entries, inherited entries, group membership, and effective access. Do not print secrets or enumerate unrelated users.
+4. **Gate changes.** Keep this run read-only unless the user separately asks for a change. Do not turn a diagnostic result into an unrequested repair.
+5. **Verify independently.** Report the minimum permission facts needed to answer the request. Never grant, revoke, take ownership, or rewrite ACLs during an inspection task. Compare the result with the baseline using the same account, scope, and measurement method. A zero exit code, click response, or transient toast is not proof.
+
+###### Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command is unavailable and no documented fallback exists, policy blocks the control, unsaved work may be lost, the device becomes unstable, or the observed state differs from the expected state. Preserve the last known-good state and exact error. Retry at most once through a lower-risk documented route; never improvise registry edits, service termination, driver changes, security exceptions, reset, or permanent deletion.
+
+###### Evidence and handoff
+
+Report: **target** (redacted identifier), **baseline**, **actions actually taken**, **before/after state**, **verification evidence**, **blocked steps**, and **remaining risk**. Do not include passwords, tokens, clipboard contents, notification text, browser profile data, private document names, or unrelated personal paths. Mark unknown values as unknown instead of guessing.
+
+##### Completion checklist
+
+- [ ] The exact target and user intent were confirmed.
+- [ ] No unrelated files, windows, settings, accounts, or devices were changed.
+- [ ] Any consequential step had explicit approval and a recoverable plan where possible.
+- [ ] The resulting state was independently verified.
+- [ ] Limitations, remaining risks, and the evidence used were reported accurately.
+
+---
+
+*Copyright (c) 2026 Luo Kai. All rights reserved for original material in this skill. Windows and third-party product names are used descriptively; their respective owners retain their rights.*
+
+## Unified discovery workflow
+
+1. Bind the request to the exact device, session, target, and one or more relevant domain profiles.
+
+2. Capture the baseline using the profile's native UI and bounded diagnostics.
+
+3. Follow that profile's original workflow and task-specific safety boundary.
+
+4. Stop when identity, permission, policy, or expected state is unclear.
+
+5. Obtain explicit approval before consequential or externally visible changes.
+
+6. Verify the result independently using the profile's stated evidence.
+
+7. Report actions, unchanged state, evidence, limitations, and remaining risk.
+
+## Stop conditions and recovery
+
+Stop if target identity is ambiguous, a command or control is unavailable without a documented fallback, policy blocks the action, unsaved work may be lost, or the observed state differs from expectations. Preserve the last known-good state and exact error. Use the relevant profile's recovery route; do not improvise destructive workarounds.
+
+## Privacy-safe evidence and handoff
+
+Use the evidence and handoff requirements in the selected profile. Redact passwords, tokens, private paths, account identifiers, IP addresses, clipboard contents, and unrelated personal information. Mark unknown values as unknown.
+
+## Completion checklist
+
+- [ ] The exact target and applicable profile(s) were confirmed.
+
+- [ ] Original domain-specific procedures and safety rules were followed.
+
+- [ ] No unrelated files, settings, accounts, devices, or processes were changed.
+
+- [ ] Any consequential action had explicit approval and a recoverable plan.
+
+- [ ] The resulting state was independently verified.
+
+- [ ] Limitations, remaining risks, and evidence were reported accurately.
+
+---
+
+Copyright (c) 2026 Luo Kai. All rights reserved for original material in this consolidated skill.

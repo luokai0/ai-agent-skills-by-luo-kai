@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>竞品调研报告 · {{调研目标}}</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #141820;
+      --panel-2: #1a1f2a;
+      --text: #e8edf5;
+      --muted: #95a2b6;
+      --line: #2a3241;
+      --good: #2ecc71;
+      --warn: #f39c12;
+      --bad: #ff4d4f;
+      --brand: #5b8cff;
+      --accent: #00d4ff;
+    }
+    [data-theme="obsidian-gold"] {
+      --bg: #0f0c06;
+      --panel: #1c1710;
+      --panel-2: #262013;
+      --text: #f4ecd9;
+      --muted: #b9ab8a;
+      --line: #4b3f26;
+      --good: #55d487;
+      --warn: #f0b44d;
+      --bad: #ff6b6b;
+      --brand: #d9a441;
+      --accent: #f4cf7a;
+    }
+    [data-theme="light-minimal"] {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel-2: #f0f3fa;
+      --text: #172033;
+      --muted: #5f6f8d;
+      --line: #dbe3f2;
+      --good: #1f9d62;
+      --warn: #c98913;
+      --bad: #d64545;
+      --brand: #3c6df0;
+      --accent: #2371ff;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      padding: 24px;
+      background: radial-gradient(ellipse 1200px 500px at 8% -6%, rgba(91,140,255,.18), transparent 60%),
+                  radial-gradient(ellipse 900px 400px at 98% 0%, rgba(0,212,255,.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+      line-height: 1.58;
+    }
+    body[data-theme="obsidian-gold"] {
+      background: radial-gradient(ellipse 1200px 500px at 8% -6%, rgba(217,164,65,.22), transparent 60%),
+                  radial-gradient(ellipse 900px 400px at 98% 0%, rgba(244,207,122,.12), transparent 55%),
+                  var(--bg);
+    }
+    body[data-theme="light-minimal"] {
+      background: radial-gradient(ellipse 1200px 500px at 8% -6%, rgba(60,109,240,.12), transparent 60%),
+                  radial-gradient(ellipse 900px 400px at 98% 0%, rgba(35,113,255,.08), transparent 55%),
+                  var(--bg);
+    }
+    .wrap { max-width: 1180px; margin: 0 auto; }
+    .theme-switch {
+      display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px;
+    }
+    .theme-btn {
+      border: 1px solid var(--line); background: var(--panel); color: var(--text);
+      border-radius: 999px; padding: 5px 10px; font-size: 12px; cursor: pointer;
+    }
+    .theme-btn.active {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--brand) 45%, transparent);
+    }
+    body.demo-mode .demo-hide { display: none !important; }
+    .demo-note {
+      display: none; margin: 0 0 10px; border: 1px dashed var(--line);
+      border-radius: 10px; padding: 8px 10px; color: var(--muted); font-size: 12px;
+      background: color-mix(in srgb, var(--panel) 86%, transparent);
+    }
+    body.demo-mode .demo-note { display: block; }
+
+    /* ---------- cover ---------- */
+    .cover {
+      position: relative; overflow: hidden; border: 1px solid var(--line);
+      border-radius: 14px; padding: 20px; margin-bottom: 12px;
+      background: linear-gradient(130deg, rgba(91,140,255,.22), rgba(0,212,255,.10) 45%, rgba(255,255,255,.02) 100%);
+      box-shadow: 0 14px 32px rgba(0,0,0,.28);
+    }
+    [data-theme="obsidian-gold"] .cover {
+      background: linear-gradient(130deg, rgba(217,164,65,.25), rgba(244,207,122,.13) 45%, rgba(255,255,255,.02) 100%);
+    }
+    [data-theme="light-minimal"] .cover {
+      background: linear-gradient(130deg, rgba(60,109,240,.10), rgba(35,113,255,.06) 45%, rgba(255,255,255,.95) 100%);
+      box-shadow: 0 8px 24px rgba(27,42,74,.10);
+    }
+    .cover::before {
+      content: ""; position: absolute; width: 320px; height: 320px;
+      right: -80px; top: -120px;
+      background: radial-gradient(circle, rgba(0,212,255,.18), transparent 65%);
+      pointer-events: none;
+    }
+    .cover-top { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; position:relative; z-index:1; }
+    .cover-kicker { font-size:12px; color:#d3ddf4; letter-spacing:.12em; text-transform:uppercase; }
+    .cover-title { font-size:34px; line-height:1.12; margin-top:6px; color:#f3f8ff; }
+    .cover-sub { color:#d4deef; margin-top:8px; }
+    [data-theme="light-minimal"] .cover-kicker,
+    [data-theme="light-minimal"] .cover-sub { color: #5b6a86; }
+    [data-theme="light-minimal"] .cover-title { color:#1b2740; }
+    .cover-side { min-width:160px; text-align:right; }
+    .cover-verdict {
+      display:inline-block; margin-top:10px; font-size:14px; font-weight:700;
+      padding:6px 16px; border-radius:999px; border:1px solid;
+    }
+    .cover-verdict.go { color:#b8f5cc; border-color:rgba(46,204,113,.55); background:rgba(46,204,113,.12); }
+    .cover-verdict.conditional { color:#ffd480; border-color:rgba(243,156,18,.55); background:rgba(243,156,18,.12); }
+    .cover-verdict.risk { color:#ffb4b4; border-color:rgba(255,77,79,.55); background:rgba(255,77,79,.12); }
+
+    .cover-metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:10px 0 0; }
+    .cover-metric {
+      border:1px solid var(--line); border-radius:10px; padding:8px 10px;
+      background:rgba(11,13,16,.45);
+    }
+    .cover-metric .k { color:var(--muted); font-size:11px; }
+    .cover-metric .v { color:#eaf2ff; font-size:14px; font-weight:600; margin-top:2px; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+    .tag { border:1px solid var(--line); border-radius:999px; padding:4px 11px; font-size:12px; color:var(--muted); background:rgba(255,255,255,.02); }
+    .ts { color:var(--muted); font-size:12px; white-space:nowrap; }
+
+    /* ---------- card ---------- */
+    .card { background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.008)); border:1px solid var(--line); border-radius:12px; padding:16px; box-shadow:0 4px 18px rgba(0,0,0,.22); margin-bottom:14px; }
+    .card h2 { font-size:16px; color:#f0f5ff; margin-bottom:10px; display:flex; align-items:center; gap:7px; }
+    [data-theme="light-minimal"] .card {
+      background: linear-gradient(180deg,#ffffff,#f9fbff);
+      box-shadow: 0 6px 18px rgba(28,42,70,.08);
+    }
+    [data-theme="light-minimal"] .card h2 { color:#203050; }
+
+    /* ---------- grid ---------- */
+    .g2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    @media(max-width:960px){
+      .g2 { grid-template-columns:1fr; }
+      .cover-top { flex-direction:column; }
+      .cover-side { text-align:left; min-width:unset; }
+      .cover-title { font-size:28px; }
+      .cover-metrics { grid-template-columns:1fr 1fr; }
+    }
+
+    /* ---------- table ---------- */
+    table { width:100%; border-collapse:collapse; font-size:13px; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    th,td { padding:9px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { background:var(--panel-2); color:#dbe6f7; font-weight:600; }
+    tr:last-child td { border-bottom:none; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; border:1px solid; }
+    .pill.bad { color:#ffb4b4; border-color:rgba(255,77,79,.5); background:rgba(255,77,79,.13); }
+    .pill.warn { color:#ffd89a; border-color:rgba(243,156,18,.5); background:rgba(243,156,18,.14); }
+    .pill.good { color:#b8f5cc; border-color:rgba(46,204,113,.45); background:rgba(46,204,113,.12); }
+    .pill.neutral { color:#b9d0ff; border-color:rgba(91,140,255,.45); background:rgba(91,140,255,.10); }
+
+    /* ---------- coverage ---------- */
+    .cov-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:8px; margin-top:8px; }
+    .cov-item {
+      border:1px solid var(--line); border-radius:8px; padding:8px 10px;
+      background:var(--panel); text-align:center; font-size:12px;
+    }
+    .cov-item .label { color:var(--muted); }
+    .cov-item .status { font-size:16px; margin-top:4px; }
+    .cov-item.covered .status { color:var(--good); }
+    .cov-item.missing .status { color:var(--bad); }
+    .cov-item.partial .status { color:var(--warn); }
+
+    /* ---------- benchmark table ---------- */
+    .bench { overflow-x:auto; margin-top:10px; }
+    .bench table { table-layout:fixed; min-width:900px; }
+    .bench col.c-target { width:12%; }
+    .bench col.c-scene { width:15%; }
+    .bench col.c-detail { width:30%; }
+    .bench col.c-diff { width:25%; }
+    .bench col.c-ev { width:8%; }
+
+    /* ---------- finding ---------- */
+    .finding { padding:10px 12px; border:1px dashed var(--line); border-radius:8px; margin:8px 0; font-size:14px; }
+    .finding .dim { color:var(--accent); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+    .finding strong { color:#b9d0ff; }
+
+    /* ---------- pattern ---------- */
+    .pattern { border:1px solid var(--line); border-radius:8px; padding:12px; margin-top:10px; background:var(--panel); }
+    .pattern .name { color:var(--accent); font-weight:700; font-size:14px; margin-bottom:6px; }
+    .pattern .meta { color:var(--muted); font-size:12px; }
+
+    /* ---------- action ---------- */
+    .al { padding-left:18px; }
+    .al li { margin:6px 0; }
+    .who { color:var(--accent); font-weight:600; }
+    .when { color:#ffcf88; font-weight:600; }
+    .pri { font-weight:700; }
+    .pri.high { color:var(--bad); }
+    .pri.medium { color:var(--warn); }
+    .pri.low { color:var(--muted); }
+
+    /* ---------- evidence ---------- */
+    .ev-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:10px; margin-top:8px; }
+    .ev-card {
+      border:1px solid var(--line); border-radius:8px; padding:10px;
+      background:var(--panel); font-size:12px;
+    }
+    .ev-card .ev-id { color:var(--accent); font-weight:700; }
+    .ev-card .ev-desc { color:var(--muted); margin-top:4px; }
+    .ev-card .ev-link { display:inline-block; margin-top:6px; color:var(--accent); font-size:12px; text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:2px 10px; transition:border-color .2s; }
+    .ev-card .ev-link:hover { border-color:var(--accent); }
+
+    /* ---------- separator ---------- */
+    .sep { border:none; border-top:1px solid var(--line); margin:18px 0; }
+    /* ---------- footer ---------- */
+    .ft { color:#5d6b82; font-size:11px; text-align:right; margin-top:10px; }
+  </style>
+  <script>
+    function setTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      document.querySelectorAll('.theme-btn[data-theme-btn]').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.themeBtn === theme);
+      });
+    }
+    function setViewMode(mode) {
+      document.body.classList.toggle('demo-mode', mode === 'demo');
+      document.querySelectorAll('.theme-btn[data-view-btn]').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.viewBtn === mode);
+      });
+    }
+  </script>
+</head>
+<body data-theme="biz-blue">
+<div class="wrap">
+  <div class="theme-switch">
+    <button class="theme-btn active" data-theme-btn="biz-blue" onclick="setTheme('biz-blue')">商务蓝</button>
+    <button class="theme-btn" data-theme-btn="obsidian-gold" onclick="setTheme('obsidian-gold')">黑金</button>
+    <button class="theme-btn" data-theme-btn="light-minimal" onclick="setTheme('light-minimal')">极简白</button>
+    <button class="theme-btn active" data-view-btn="full" onclick="setViewMode('full')">完整版</button>
+    <button class="theme-btn" data-view-btn="demo" onclick="setViewMode('demo')">演示模式</button>
+  </div>
+  <div class="demo-note">演示模式已开启：已隐藏详细对标表、Pattern 清单、证据索引等长内容。</div>
+
+  <!-- ==================== COVER ==================== -->
+  <section class="cover">
+    <div class="cover-top">
+      <div>
+        <div class="cover-kicker">Competitive Product Research</div>
+        <h1 class="cover-title">{{调研目标}}</h1>
+        <p class="cover-sub">{{一句话结论摘要}}</p>
+        <div class="tags">
+          <span class="tag">对标产品：{{对标产品数量}}款</span>
+          <span class="tag">覆盖端：{{覆盖平台}}</span>
+          <span class="tag">主题：{{覆盖主题}}</span>
+          <span class="tag">核心场景：{{核心场景}}</span>
+          <span class="tag">关注维度：{{关注维度}}</span>
+        </div>
+      </div>
+      <div class="cover-side">
+        <div class="ts">生成时间：{{生成时间}}</div>
+        <div class="cover-verdict {{结论样式}}">{{调研结论}}</div>
+      </div>
+    </div>
+  </section>
+  <div class="cover-metrics">
+    <div class="cover-metric"><div class="k">对标产品</div><div class="v">{{对标产品列表}}</div></div>
+    <div class="cover-metric"><div class="k">信息来源</div><div class="v">{{信息来源概要}}</div></div>
+    <div class="cover-metric"><div class="k">关键发现</div><div class="v">{{关键发现数量}}条</div></div>
+      <div class="cover-metric"><div class="k">执行建议分组</div><div class="v">{{执行建议概要}}</div></div>
+  </div>
+
+  <!-- ==================== 摘要结论 ==================== -->
+  <div class="card">
+    <h2>📋 摘要结论</h2>
+    <ol style="padding-left:18px;color:var(--text);font-size:14px">
+      {{#摘要列表}}<li style="margin:6px 0">{{结论}}</li>{{/摘要列表}}
+    </ol>
+    <div class="finding" style="margin-top:12px">
+      <strong>⚡ 建议首要动作：</strong>{{首要行动}}
+    </div>
+  </div>
+
+  <!-- ==================== 调研范围与信息来源 ==================== -->
+  <div class="g2">
+    <div class="card">
+      <h2>🎯 调研范围</h2>
+      <table>
+        <thead><tr><th>维度</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>调研目标</td><td>{{调研目标}}</td></tr>
+          <tr><td>核心场景</td><td>{{核心场景路径}}</td></tr>
+          <tr><td>对标产品</td><td>{{对标产品详情}}</td></tr>
+          <tr><td>覆盖端</td><td>{{覆盖平台详情}}</td></tr>
+          <tr><td>关注维度</td><td>{{关注维度详情}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>📦 信息来源</h2>
+      <p style="color:var(--muted);font-size:12px;margin-bottom:8px">📸 用户材料 · 🔗 公开信息 · 💡 行业经验</p>
+      <div class="cov-grid">
+        {{#信息来源列表}}
+        <div class="cov-item {{来源状态}}">
+          <div class="label">{{产品名}}</div>
+          <div class="status">{{来源图标}}</div>
+        </div>
+        {{/信息来源列表}}
+      </div>
+      {{#用户材料说明}}<div class="finding" style="margin-top:10px"><strong>📸 用户补充材料：</strong>{{用户材料说明}}</div>{{/用户材料说明}}
+    </div>
+  </div>
+
+  <!-- ==================== 对标总览表 ==================== -->
+  <div class="card demo-hide">
+    <h2>📊 对标总览表</h2>
+    <p style="color:var(--muted);font-size:12px;margin-bottom:8px">核心交付物 · 按场景×产品×维度对比</p>
+    <div class="bench">
+      <table>
+        <colgroup>
+          <col class="c-target"><col class="c-scene"><col class="c-detail">
+          <col class="c-diff"><col class="c-ev">
+        </colgroup>
+        <thead><tr><th>对标产品</th><th>场景/节点</th><th>做法与亮点</th><th>与我方差异</th><th>证据</th></tr></thead>
+        <tbody>
+          {{#对标总览列表}}<tr>
+            <td>{{产品名}}</td>
+            <td>{{场景节点}}</td>
+            <td>{{做法与亮点}}</td>
+            <td>{{与我方差异}}</td>
+            <td><span class="pill neutral">{{证据ID}}</span></td>
+          </tr>{{/对标总览列表}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ==================== 战略层分析（可选） ==================== -->
+  {{#战略层启用}}
+  <div class="card">
+    <h2>🧠 战略诊断（竞争格局 / SWOT / 五力 / PESTLE）</h2>
+
+    {{#竞争格局}}
+    <div class="finding" style="margin-bottom:10px">
+      <strong>竞争格局结论</strong>
+      <p style="margin-top:4px;color:var(--muted);font-size:13px">{{竞争格局摘要}}</p>
+      <div style="margin-top:6px"><span class="pill neutral">{{竞争格局证据}}</span></div>
+    </div>
+    {{/竞争格局}}
+
+    {{#SWOT}}
+    <h3 style="margin:8px 0 6px;font-size:14px">SWOT</h3>
+    <table>
+      <thead><tr><th>优势（S）</th><th>劣势（W）</th><th>机会（O）</th><th>威胁（T）</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>{{SWOT_S}}</td>
+          <td>{{SWOT_W}}</td>
+          <td>{{SWOT_O}}</td>
+          <td>{{SWOT_T}}</td>
+        </tr>
+      </tbody>
+    </table>
+    {{/SWOT}}
+
+    {{#五力}}
+    <h3 style="margin:10px 0 6px;font-size:14px">波特五力</h3>
+    <table>
+      <thead><tr><th>力量</th><th>现状与趋势</th><th>对我方影响</th><th>应对策略</th></tr></thead>
+      <tbody>
+        {{#五力列表}}<tr>
+          <td>{{力量名称}}</td>
+          <td>{{现状趋势}}</td>
+          <td>{{影响}}</td>
+          <td>{{策略}}</td>
+        </tr>{{/五力列表}}
+      </tbody>
+    </table>
+    {{/五力}}
+
+    {{#PESTLE}}
+    <h3 style="margin:10px 0 6px;font-size:14px">PESTLE</h3>
+    <table>
+      <thead><tr><th>维度</th><th>关键因素</th><th>影响</th><th>应对</th></tr></thead>
+      <tbody>
+        {{#PESTLE列表}}<tr>
+          <td>{{维度}}</td>
+          <td>{{关键因素}}</td>
+          <td>{{影响}}</td>
+          <td>{{应对}}</td>
+        </tr>{{/PESTLE列表}}
+      </tbody>
+    </table>
+    {{/PESTLE}}
+  </div>
+  {{/战略层启用}}
+
+  <!-- ==================== 关键发现 ==================== -->
+  <div class="card">
+    <h2>🔍 关键发现</h2>
+    {{#关键发现列表}}
+    <div class="finding">
+      <div class="dim">{{维度标签}}</div>
+      <strong>{{发现标题}}</strong>
+      <p style="margin-top:4px;color:var(--muted);font-size:13px">{{发现描述}}</p>
+      <div style="margin-top:6px">
+        <span class="pill neutral">{{影响说明}}</span>
+        <span class="pill neutral" style="margin-left:4px">{{证据ID}}</span>
+      </div>
+    </div>
+    {{/关键发现列表}}
+  </div>
+
+  <!-- ==================== 可复用 Pattern ==================== -->
+  <div class="card demo-hide">
+    <h2>🧩 可复用 Pattern</h2>
+    {{#Pattern列表}}
+    <div class="pattern">
+      <div class="name">{{Pattern名称}}</div>
+      <table style="margin-top:8px">
+        <thead><tr><th>适用场景</th><th>交互规则</th><th>视觉规则</th><th>边界/风险</th><th>证据</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>{{适用场景}}</td>
+            <td>{{交互规则}}</td>
+            <td>{{视觉规则}}</td>
+            <td>{{边界风险}}</td>
+            <td><span class="pill neutral">{{证据ID}}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    {{/Pattern列表}}
+  </div>
+
+  <!-- ==================== 落地建议 ==================== -->
+  <div class="card">
+    <h2>🚀 落地建议</h2>
+    <table>
+      <thead><tr><th>执行级别</th><th>动作项</th><th>预期影响</th><th>复杂度</th><th>依赖</th><th>Owner</th></tr></thead>
+      <tbody>
+        {{#落地建议列表}}<tr>
+          <td><span class="pri {{执行级别样式}}">{{执行级别}}</span></td>
+          <td>{{动作项}}</td>
+          <td>{{预期影响}}</td>
+          <td><span class="pill {{复杂度样式}}">{{复杂度}}</span></td>
+          <td>{{依赖}}</td>
+          <td><span class="who">{{Owner}}</span></td>
+        </tr>{{/落地建议列表}}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== 信息来源索引 ==================== -->
+  <div class="card demo-hide">
+    <h2>📎 信息来源索引</h2>
+    <p style="color:var(--muted);font-size:12px;margin-bottom:8px">📸 用户材料 · 🔗 公开信息 · 💡 行业经验</p>
+    <div class="ev-grid">
+      {{#来源索引列表}}
+      <div class="ev-card">
+        <div class="ev-id">{{来源ID}}</div>
+        <div class="ev-desc">{{来源类型}} · {{产品名}} · {{场景}} · {{说明}}</div>
+        {{#来源链接}}<a class="ev-link" href="{{来源链接}}" target="_blank" rel="noopener">🔗 查看来源</a>{{/来源链接}}
+      </div>
+      {{/来源索引列表}}
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <div class="ft">
+    由「竞品调研专家」生成 · {{生成时间}} · 对标产品：{{对标产品数量}}款 · 信息来源：{{信息来源概要}}
+  </div>
+</div>
+</body>
+</html>

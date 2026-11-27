@@ -1,0 +1,47 @@
+---
+name: "skill"
+description: "手动运行: node /Users/abc/.openclaw/workspace/skills/c-task-cleanup/handler.js"
+---
+
+
+<!-- Original nonstandard metadata retained for reference:
+## 🎯 功能
+
+1. **扫描 C 类任务池** - 读取已完成任务
+2. **4D 压缩高价值内容** - 提取洞察存入 MEMORY.md
+3. **清理已完成表格** - 清空"已完成"部分
+4. **生成清理报告** - 记录清理内容
+-->
+
+
+## 📋 清理规则
+
+| 内容 | 处理方式 |
+|------|---------|
+| **待办任务** | 不清理（继续保留） |
+| **已完成任务（<7 天）** | 4D 压缩后清理 |
+| **已完成任务（>7 天）** | 直接清理 |
+| **高价值洞察** | 4D 压缩 → MEMORY.md |
+
+---
+
+## 🔧 使用方法
+
+```bash
+# 手动运行
+node /Users/abc/.openclaw/workspace/skills/c-task-cleanup/handler.js
+
+# 自动运行（每周日 23:00）
+# Cron: /Users/abc/.openclaw/cron/c-task-cleanup.json
+```
+
+---
+
+## 📊 输出
+
+- **清理报告：** `~/Desktop/任务流/logs/c-task-cleanup-YYYY-MM-DD.md`
+- **MEMORY.md 更新：** 高价值洞察（4D 压缩）
+
+---
+
+*最后更新：2026-03-01 21:00*

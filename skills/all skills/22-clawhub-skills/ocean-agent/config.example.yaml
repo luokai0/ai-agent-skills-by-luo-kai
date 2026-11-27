@@ -1,0 +1,67 @@
+# Ocean Agent 配置参考
+# 本文件展示可配置项及其含义，供 AI Agent 参考使用。
+# 当前版本配置值硬编码在脚本中（v1.0.0 设计决策：减少依赖）。
+# 后续版本将通过 ~/.oceanbus-agent/config.yaml 读取用户自定义配置。
+
+# OceanBus L0 API 端点（可选，默认使用公共测试服务器）
+# oceanbus_base_url: "https://ai-t.ihaola.com.cn/api/l0"
+
+# ── 代理人档案 ──
+profile:
+  name: ""                # 姓名/称呼，显示在黄页
+  city: ""                # 主要服务城市，如 "北京"
+  district: ""            # 主要服务区域，如 "朝阳"
+  experience_years: 0     # 从业年限
+  specialties: []         # 擅长险种: 重疾险, 医疗险, 寿险, 意外险, 年金险, 车险
+  certifications: []      # 资质证书
+  service_feature: ""     # 服务特色，一句话描述
+  company: ""             # 所属保险公司（可选）
+
+# ── 黄页设置 ──
+yellow_pages:
+  # 自定义标签（会自动添加 insurance 前缀标签）
+  extra_tags: []
+  # 渠道标识（用于生成不同 OpenID 做获客归因）
+  # channel: "黄页"  # 可选: 黄页, 抖音, 小红书, 公众号
+
+# ── 线索承接 ──
+intake:
+  # 首次接触自动回复模板
+  # 变量: {name} = 代理人姓名, {company} = 公司名
+  auto_reply: |
+    您好！我是{name}，{company}保险顾问，从业{experience_years}年。
+    很高兴为您服务！
+
+    为了给您更精准的建议，想先了解几个信息：
+    ① 您主要关注哪方面的保障？（如重疾、医疗、意外、养老等）
+    ② 是为自己还是家人咨询？
+    ③ 之前是否有过商业保险？
+
+    期待您的回复！
+
+  # 线索分级规则
+  classification:
+    hot_keywords:      # 包含这些关键词 → 热线索
+      - "多少钱"
+      - "怎么买"
+      - "现在投保"
+      - "帮我推荐"
+      - "报价"
+      - "立刻"
+    warm_keywords:     # 包含这些关键词 → 温线索
+      - "了解一下"
+      - "想咨询"
+      - "对比"
+      - "看看"
+    # 其余为冷线索
+
+# ── 跟进管理 ──
+followup:
+  # 各阶段超时提醒阈值（天数）
+  reminder_days:
+    新线索: 1
+    需求采集中: 2
+    方案已发: 3
+    待成交: 2
+  # 每日线索摘要时间（HH:MM 格式，本地时间）
+  daily_summary_time: "09:00"

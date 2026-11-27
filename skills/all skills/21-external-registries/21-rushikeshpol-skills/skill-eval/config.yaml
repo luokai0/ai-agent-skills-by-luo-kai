@@ -1,0 +1,225 @@
+# ============================================================================
+# Skill Evaluation Configuration
+# ============================================================================
+# Each skill defines: what it does, how to judge it, and what benchmark
+# inputs to test against. Langfuse datasets are created from this config.
+# ============================================================================
+
+project:
+  name: "skill-eval"
+  description: "Evaluation harness for Cursor agent skills"
+  langfuse_project: "skill-eval"
+  # Benchmark input files are resolved relative to this workspace path.
+  # Skill files are resolved relative to ../cursor/skills/ within the repo.
+  benchmark_workspace: "~/Documents/Securitas/MyConnect"
+
+# ---------------------------------------------------------------------------
+# Model used for LLM-as-Judge evaluations
+# ---------------------------------------------------------------------------
+judge:
+  model: "claude-sonnet-4-20250514"
+  temperature: 0.0
+  max_tokens: 4096
+  runs_per_item: 3  # multiple runs for stable scoring (median used)
+
+# ---------------------------------------------------------------------------
+# Skills to evaluate
+# ---------------------------------------------------------------------------
+skills:
+
+  transcript-to-meeting-notes:
+    description: "Converts meeting transcripts into structured meeting summaries"
+    skill_path: "cursor/skills/transcript-to-meeting-notes/SKILL.md"
+    dataset_name: "transcript-to-notes-benchmarks"
+
+    # Quality dimensions and their weights (must sum to 1.0)
+    rubric:
+      dimensions:
+        decision_capture:
+          weight: 0.25
+          description: "All decisions explicitly stated in the transcript are captured in the Decisions Made table with correct attribution"
+          scoring: |
+            5: Every decision in the transcript appears in the table with correct speaker and accurate alternatives
+            4: All decisions captured, 1 minor attribution error
+            3: 1 decision missing OR 2+ attribution errors
+            2: 2+ decisions missing
+            1: Major decisions missing or fabricated decisions present
+
+        attribution_accuracy:
+          weight: 0.20
+          description: "Every claim is attributed to the correct speaker; no misattributions"
+          scoring: |
+            5: Every attribution verified correct against transcript
+            4: 1 minor misattribution (e.g., wrong timestamp, right speaker)
+            3: 1 speaker misattribution
+            2: 2-3 speaker misattributions
+            1: Systematic misattribution or unattributed claims presented as sourced
+
+        information_fidelity:
+          weight: 0.25
+          description: "No hallucinated facts, no invented details, no outside information added"
+          scoring: |
+            5: Every fact verifiable in transcript; TBDs properly marked
+            4: 1 minor inference presented as fact (but reasonable)
+            3: 1 hallucinated detail or outside information added
+            2: 2-3 hallucinated details
+            1: Significant fabrication or outside information injected
+
+        completeness:
+          weight: 0.15
+          description: "All major topics from the transcript are covered; no significant omissions"
+          scoring: |
+            5: All topics covered proportionally to transcript time spent
+            4: All topics present, 1 minor sub-point missing
+            3: 1 topic missing or significantly under-represented
+            2: 2+ topics missing
+            1: Major portions of transcript ignored
+
+        template_compliance:
+          weight: 0.15
+          description: "Output follows the template structure: header, decisions table, topics, know/don't-know, assumptions, open questions, next steps"
+          scoring: |
+            5: All 8 required sections present in correct order with proper formatting
+            4: All sections present, minor formatting deviation
+            3: 1 section missing or significantly malformed
+            2: 2+ sections missing
+            1: Does not follow template structure
+
+    benchmarks:
+      - id: "wfm-attestation-discovery"
+        input_file: "MySchedule/WFM_Timesheet_Attestation_Discovery_Readout.md"
+        input_description: "WFM attestation discovery session with Pat MacArthur"
+        gold_reference: null  # Will use the existing output as initial reference
+        expected_decisions: ["Payroll not blocked by attestation", "DM change triggers officer notification", "Rejection unauthorises timesheet"]
+        expected_topics: ["DM-initiated clock adjustments", "Payroll pipeline", "Officer-initiated discrepancy", "DM workload"]
+
+      - id: "wfm-requirements-jan15"
+        input_file: "MySchedule/WriteWFMRequirements_Meeting_Summary_20260115.md"
+        input_description: "Write WFM Requirements meeting with Lauren, Theo, Rushi"
+        gold_reference: null
+        expected_decisions: ["Oracle job board API insufficient", "HR transformation pushed to March", "WFM deep dive agenda set"]
+        expected_topics: ["Oracle API", "Geo P0", "UAT test users", "Meal break tracking", "AI spikes"]
+
+  generate-requirements:
+    description: "Generates Agile requirements from transcripts, PRDs, designs"
+    skill_path: "cursor/skills/generate-requirements/SKILL.md"
+    dataset_name: "generate-requirements-benchmarks"
+
+    rubric:
+      dimensions:
+        source_accuracy:
+          weight: 0.25
+          description: "Every (Source: SRC-N) citation is verifiable against the actual source document"
+          scoring: |
+            5: Every citation verified accurate; no source claims content it doesn't contain
+            4: 1 minor source stretch (partially accurate)
+            3: 1 inaccurate citation or unsourced claim presented as sourced
+            2: 2-3 inaccurate citations
+            1: Systematic source fabrication
+
+        requirement_purity:
+          weight: 0.20
+          description: "Requirements describe WHAT (capability), never HOW (implementation) or UI layout"
+          scoring: |
+            5: Every FR is a pure requirement; solutions and design in Implementation Notes/Open Questions
+            4: 1 FR contains a minor implementation hint
+            3: 1 FR prescribes implementation or UI layout
+            2: 2-3 FRs mix requirements with solutions
+            1: Requirements and solutions systematically mixed
+
+        no_hallucination:
+          weight: 0.25
+          description: "No business rules, field names, or constraints are invented; unknowns marked [TBD]"
+          scoring: |
+            5: Every business rule traced to source; all unknowns are [TBD] with stakeholder routing
+            4: 1 minor inference not marked as such
+            3: 1 invented business rule or constraint
+            2: 2-3 fabricated details
+            1: Significant fabrication of requirements content
+
+        completeness:
+          weight: 0.15
+          description: "All functional areas from the source material are covered as FRs"
+          scoring: |
+            5: All areas from sources covered; scope boundaries clearly stated
+            4: All major areas covered, 1 minor gap
+            3: 1 functional area missing
+            2: 2+ areas missing
+            1: Major source content ignored
+
+        template_compliance:
+          weight: 0.15
+          description: "Output follows Feature Requirements template with all required sections"
+          scoring: |
+            5: All sections present, proper FR structure, TBD routing, source attribution
+            4: All sections present, minor formatting issues
+            3: 1 section missing or FRs lack standard structure
+            2: 2+ sections missing
+            1: Does not follow template
+
+    benchmarks:
+      - id: "myschedule-from-discovery"
+        input_description: "Generate MySchedule requirements from discovery transcripts and FigJam"
+        input_files:
+          - "MySchedule/WFM_Timesheet_Attestation_Discovery_Readout.md"
+          - "MySchedule/WriteWFMRequirements_Meeting_Summary_20260115.md"
+          - "MySchedule/Timesheet_Discussion_Discovery_Summary_20260121.md"
+        gold_reference: "Product Artifacts/Feature Requirements/Schedule/Generated/Feature-Requirements-MySchedule.md"
+        expected_frs: ["Schedule view past weeks", "Schedule view this week", "Schedule view future weeks", "Shift detail", "Schedule change notification", "Always-available schedule"]
+        critical_constraints: ["Payroll never blocked", "Must-never-go-down service", "No time rounding California"]
+
+      - id: "attestation-from-discovery"
+        input_description: "Generate Timesheet Attestation requirements from discovery"
+        input_files:
+          - "MySchedule/WFM_Timesheet_Attestation_Discovery_Readout.md"
+          - "MySchedule/ETK_Meal_Rest_Break_Discovery_Summary_20260227.md"
+        gold_reference: "Product Artifacts/Feature Requirements/Schedule/Generated/Feature-Requirements-TimesheetAttestation.md"
+        expected_frs: ["Change notification", "Officer reviews change", "Officer approves", "Officer rejects", "Discrepancy channel", "Non-response handling", "DM receives response"]
+        critical_constraints: ["Payroll never blocked", "Audit trail required", "Attestation data to BI not clock string"]
+
+  validate-requirements:
+    description: "Validates requirements docs for semantic accuracy"
+    skill_path: "cursor/skills/validate-requirements/SKILL.md"
+    dataset_name: "validate-requirements-benchmarks"
+
+    rubric:
+      dimensions:
+        true_positive_rate:
+          weight: 0.30
+          description: "Real issues in the document are found and correctly categorized"
+          scoring: |
+            5: All seeded issues found with correct severity
+            4: 90%+ of seeded issues found
+            3: 70-89% of seeded issues found
+            2: 50-69% found
+            1: Less than 50% found
+
+        false_positive_rate:
+          weight: 0.25
+          description: "Findings are real issues, not spurious complaints"
+          scoring: |
+            5: 0 false positives
+            4: 1 false positive (nitpick misclassified as issue)
+            3: 2 false positives
+            2: 3-4 false positives
+            1: 5+ false positives or systematic false findings
+
+        actionability:
+          weight: 0.25
+          description: "Each finding tells you exactly what's wrong and how to fix it"
+          scoring: |
+            5: Every finding has: location, what's wrong, why, suggested fix
+            4: All findings actionable, 1 missing fix suggestion
+            3: 1 finding vague or unactionable
+            2: 2-3 findings vague
+            1: Findings are generic observations, not actionable
+
+        report_quality:
+          weight: 0.20
+          description: "Report follows template, scoring is consistent, overall assessment matches findings"
+          scoring: |
+            5: Template followed, scores consistent, assessment matches evidence
+            4: Minor template deviation
+            3: 1 inconsistency between scores and assessment
+            2: Multiple inconsistencies
+            1: Report structure broken or scores contradict evidence

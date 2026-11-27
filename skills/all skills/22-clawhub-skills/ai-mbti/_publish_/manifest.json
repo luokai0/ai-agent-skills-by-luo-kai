@@ -1,0 +1,12 @@
+{
+  "name": "AI人格MBTI测试",
+  "version": "1.2.1",
+  "description": "你跟AI聊天时的性格，和你在现实里完全不一样。6道题，1分半，测出你的两副面孔。",
+  "author": "huangjihua007-rgb",
+  "tags": ["MBTI", "人格测试", "AI时代", "社交", "趣味测试", "性格"],
+  "category": "entertainment",
+  "platform": ["openclaw"],
+  "requires_multi_agent": false,
+  "icon": "assets/icon.svg",
+  "entry": "skill.json"
+}

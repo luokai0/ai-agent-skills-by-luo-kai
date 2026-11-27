@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agentskills.io/schemas/manifest.v1.json",
+  "manifestVersion": "1.0",
+  "generatedAt": "2026-01-03T02:24:46.094996Z",
+  "generator": "skill-manifest-generator/1.0.0",
+  "skill": {
+    "name": "skill-validator",
+    "version": "1.0.0"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "2c48316df8cb9231cc24b1387e24ef96b1ff5d383af74caea719185841c2bf6f"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "size": 2586,
+      "sha256": "c662b1e1bc6846aeefe7cf06ad3be26518f2168bd4db68dfd38b9cb95bceabfe",
+      "type": "manifest"
+    },
+    {
+      "path": "scripts/validate_skill.py",
+      "size": 14502,
+      "sha256": "ebf57274d07bf593eab81cbf7b3455e406827960d0eec4e91831838411e39009",
+      "type": "script"
+    }
+  ],
+  "externalReferences": [],
+  "structure": {
+    "maxDepth": 1,
+    "totalFiles": 2,
+    "totalBytes": 17088,
+    "folders": [
+      "scripts"
+    ]
+  },
+  "license": {
+    "spdxId": "MIT"
+  }
+}

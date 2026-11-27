@@ -1,0 +1,10 @@
+{
+  "icon": "key",
+  "tags": [
+    "developer-tools"
+  ],
+  "integrations": [
+    "gmail",
+    "google_calendar"
+  ]
+}
